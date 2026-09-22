@@ -1,0 +1,17 @@
+{
+  "name": "Ragunauth Ramsaroop Executive Intelligence Profile",
+  "short_name": "Ragunauth Ramsaroop",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f1e7",
+  "theme_color": "#08271d",
+  "description": "Executive profile and professional intelligence record of Ragunauth Ramsaroop.",
+  "icons": [
+    {
+      "src": "/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}
