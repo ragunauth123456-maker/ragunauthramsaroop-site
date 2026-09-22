@@ -22,4 +22,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://www.ragunauthramsaroop.com/sitemap.xml
+Sitemap: https://ragunauthramsaroop.com/sitemap.xml
