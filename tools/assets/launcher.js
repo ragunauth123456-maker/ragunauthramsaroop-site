@@ -1,0 +1,1 @@
+(()=>{if(document.getElementById('rr-free-tools-launcher'))return;const a=document.createElement('a');a.id='rr-free-tools-launcher';a.href='/tools/';a.setAttribute('aria-label','Open free public tools');a.innerHTML='<span></span> Free Tools';document.body.appendChild(a)})();
