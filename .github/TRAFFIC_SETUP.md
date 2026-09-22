@@ -19,5 +19,5 @@ Do not install a paid analytics product or add tracking cookies. Never upload to
 ## SEO and QA
 Each tool has a dedicated page with original methodology text, FAQs, related links and a 1200×630 social preview.
 `python scripts/validate_site.py` runs locally and on GitHub Actions for pushes and PRs.
-A small external site availability check is scheduled weekly via GitHub Actions. This does not require ChatGPT to stay online.
+The weekly GitHub Actions workflow is prepared as `.github/rr-free-tools-qa.yml.example`. It is not yet active because the currently authorized GitHub OAuth token lacks the `workflow` scope. After explicit GitHub authorization, move the example into `.github/workflows/rr-free-tools-qa.yml`; it will then test pushes and pull requests and check public availability every Monday. Until then, run `python scripts/validate_site.py` and `python scripts/public_smoke.py` manually.
 Search impressions and clicks measure search discovery, not time spent, unique engagement actions or completed assessments. Do not equate them.

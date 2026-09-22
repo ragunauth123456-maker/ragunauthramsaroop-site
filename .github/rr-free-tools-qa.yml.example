@@ -1,0 +1,28 @@
+name: RR Free Tools QA
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate pages, downloads, structured data and social cards
+        run: python3 scripts/validate_site.py
+      - name: Check JavaScript syntax
+        run: |
+          node --check tools/assets/tools.js
+          node --check tools/assets/growth-tools.js
+          node --check tools/assets/launcher.js
+          node --check tools/assets/analytics-loader.js
+      - name: Check public website (scheduled runs only)
+        if: github.event_name == 'schedule'
+        run: python3 scripts/public_smoke.py
