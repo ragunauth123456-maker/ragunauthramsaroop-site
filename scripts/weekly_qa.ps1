@@ -16,8 +16,12 @@ try {
   if ($branch -ne 'main' -or $dirty) {
     $report.Add("Workspace not clean on main; checking existing files (branch=$branch).")
   } else {
-    git -C $repo pull --ff-only origin main 2>&1 | Out-Null
-    if ($LASTEXITCODE -ne 0) { $problems.Add('GitHub main sync failed.') }
+    $oldPref = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    $pullOutput = & git -C $repo pull --ff-only origin main 2>&1
+    $pullExit = $LASTEXITCODE
+    $ErrorActionPreference = $oldPref
+    if ($pullExit -ne 0) { $problems.Add('GitHub main sync failed: ' + ($pullOutput | Out-String)) }
   }
 } catch { $problems.Add("Git sync error: $($_.Exception.Message)") }
 try {
@@ -37,6 +41,12 @@ try {
   if ($LASTEXITCODE -ne 0) { $problems.Add("GitHub Pages API check failed: $raw") }
   else {
     $p = ($raw | Out-String | ConvertFrom-Json)
+    if ($p.status -in @('building','pending')) {
+      for ($retry=0; $retry -lt 8 -and $p.status -ne 'built'; $retry++) {
+        Start-Sleep -Seconds 12
+        $p = (gh api "repos/$remote/pages" | Out-String | ConvertFrom-Json)
+      }
+    }
     $report.Add("GitHub Pages status=$($p.status) HTTPS=$($p.https_enforced) cert=$($p.https_certificate.state)")
     if ($p.status -ne 'built' -or -not $p.https_enforced -or $p.https_certificate.state -ne 'approved') {
       $problems.Add('GitHub Pages deployment, HTTPS or certificate needs investigation.')
