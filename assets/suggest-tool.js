@@ -1,0 +1,5 @@
+(()=>{
+"use strict";
+const f=document.getElementById("suggest-form");if(!f)return;
+f.addEventListener("submit",e=>{e.preventDefault();const problem=document.getElementById("suggest-problem").value.trim(),user=document.getElementById("suggest-user").value.trim(),outcome=document.getElementById("suggest-outcome").value.trim(),context=document.getElementById("suggest-context").value.trim();const subject="Free tool suggestion for ragunauthramsaroop.com";const body=["PROBLEM TO SOLVE",problem,"","INTENDED USER",user||"Not specified","","USEFUL OUTPUT",outcome||"Not specified","","ASSUMPTIONS / SAFEGUARDS",context||"Not specified","","Sent from the Suggest a Free Tool page."].join("\n");if(window.rrTrack)window.rrTrack("feedback_opened",{feedback_type:"tool_suggestion"});location.href="mailto:ragunauthramsaroop@icloud.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body)});
+})();

@@ -102,6 +102,28 @@ try:
 except Exception as ex:
     issues.append((str(ROOT/"topics"/"sitemap.xml"),"invalid topic sitemap: "+str(ex)))
 
+# Public platform maturity checks.
+for rel in ("methodology/index.html","resources/index.html","start/index.html","evidence/index.html","roadmap/index.html","open-use/index.html","suggest-a-tool/index.html","guides/index.html"):
+    if not (ROOT/rel).exists():
+        issues.append((str(ROOT/rel),"required platform page missing"))
+try:
+    resource_index=json.loads((ROOT/"assets"/"resource-index.json").read_text(encoding="utf-8"))
+    if len(resource_index.get("resources",[]))<70:
+        issues.append((str(ROOT/"assets"/"resource-index.json"),"resource centre unexpectedly small"))
+except Exception as ex:
+    issues.append((str(ROOT/"assets"/"resource-index.json"),"invalid resource centre index: "+str(ex)))
+method_text=(ROOT/"methodology"/"index.html").read_text(encoding="utf-8",errors="replace") if (ROOT/"methodology"/"index.html").exists() else ""
+if method_text.count('class="method-card"')<20:
+    issues.append((str(ROOT/"methodology"/"index.html"),"methodology register unexpectedly incomplete"))
+if not (ROOT/"tools"/"assets"/"report-export.js").exists():
+    issues.append((str(ROOT/"tools"/"assets"/"report-export.js"),"report exporter missing"))
+llms=(ROOT/"llms.txt").read_text(encoding="utf-8",errors="replace") if (ROOT/"llms.txt").exists() else ""
+if "�" in llms or "https://www.ragunauthramsaroop.com/" in llms:
+    issues.append((str(ROOT/"llms.txt"),"llms.txt contains corrupted text or noncanonical www URLs"))
+keys=[x for x in ROOT.glob("*.txt") if re.fullmatch(r"[A-Za-z0-9-]{32,64}\.txt",x.name) and x.read_text(encoding="utf-8",errors="ignore").strip()==x.stem]
+if not keys:
+    issues.append((str(ROOT),"IndexNow verification key missing"))
+
 print("HTML_PAGES",len(html_pages))
 print("TOOL_INDEX_PAGES",len([p for p in html_pages if TOOLS in p.parents and p.name=="index.html"]))
 print("SHARE_IMAGES",len(imgs))

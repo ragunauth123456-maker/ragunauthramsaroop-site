@@ -1,0 +1,12 @@
+(()=>{
+"use strict";
+if(!location.pathname.startsWith("/tools/")||location.pathname==="/tools/"||location.pathname==="/tools/privacy/")return;
+function safe(s){return String(s||"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]))}
+function add(){
+ const result=document.querySelector("#tool-result");if(!result||result.querySelector(".rr-download-report"))return;
+ const actions=result.querySelector(".actions");if(!actions)return;
+ const b=document.createElement("button");b.type="button";b.className="btn alt rr-download-report";b.textContent="Download report";actions.appendChild(b);
+ b.onclick=()=>{const title=(document.querySelector("h1")?.textContent||document.title).trim(),slug=location.pathname.split("/").filter(Boolean).pop(),clone=result.cloneNode(true);clone.querySelectorAll(".actions").forEach(x=>x.remove());const report='<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+safe(title)+' report</title><style>body{font:16px/1.6 system-ui;max-width:860px;margin:40px auto;padding:0 24px;color:#173028}h1,h2,h3{color:#08271d}.meta{padding:14px;background:#eef3f0;border-left:4px solid #b8893b}.result{margin-top:22px}.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.metric{border:1px solid #dfe6e2;padding:14px;border-radius:10px}.metric strong{display:block;font-size:22px}.priority{display:flex;justify-content:space-between;border-bottom:1px solid #ddd;padding:8px 0}@media print{body{margin:0}.meta{break-inside:avoid}}</style></head><body><h1>'+safe(title)+'</h1><div class="meta"><b>Generated:</b> '+safe(new Date().toLocaleString())+'<br><b>Tool:</b> '+safe(location.href.split("?")[0])+'<br><b>Methodology:</b> https://ragunauthramsaroop.com/methodology/#'+safe(slug)+'<br><b>Status:</b> Screening / planning output. Verify assumptions before consequential use.</div><div class="result">'+clone.innerHTML+'</div><hr><p>RR Free Tools · ragunauthramsaroop.com · Free public-value resource</p></body></html>';const blob=new Blob([report],{type:"text/html;charset=utf-8"}),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="rr-"+slug+"-report.html";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);if(window.rrTrack)window.rrTrack("report_downloaded",{report_type:"html"})};
+}
+const mo=new MutationObserver(add);mo.observe(document.body,{childList:true,subtree:true});add();
+})();

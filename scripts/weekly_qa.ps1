@@ -31,6 +31,12 @@ try {
   Pop-Location
   $report.Add(($output | Out-String).Trim())
   if ($code -ne 0) { $problems.Add("Local site validation failed (exit $code).") }
+  foreach ($audit in @('scripts\accessibility_audit.py','scripts\performance_budget.py')) {
+    $auditOut = & python $audit 2>&1
+    $auditCode = $LASTEXITCODE
+    $report.Add(($auditOut | Out-String).Trim())
+    if ($auditCode -ne 0) { $problems.Add("Quality audit failed: $audit") }
+  }
   foreach ($file in @('tools/assets/tools.js','tools/assets/growth-tools.js','tools/assets/analytics-loader.js')) {
     $output = & node --check (Join-Path $repo $file) 2>&1
     if ($LASTEXITCODE -ne 0) { $problems.Add("JavaScript syntax failed: $file $output") }
@@ -76,5 +82,16 @@ try {
 Get-ChildItem -Path $logDir -Filter 'weekly-qa-*.log' -File |
   Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-90) } |
   Remove-Item -Force -ErrorAction SilentlyContinue
+if ($problems.Count -eq 0) {
+  try {
+    Push-Location $repo
+    $idx = & python scripts\indexnow_submit.py --changed-only 2>&1
+    $idxCode = $LASTEXITCODE
+    Pop-Location
+    $report.Add(($idx | Out-String).Trim())
+    Add-Content -Path $log -Value (($idx | Out-String).Trim())
+    if ($idxCode -ne 0) { Add-Content -Path $log -Value 'IndexNow notification failed but core QA passed.' }
+  } catch { Add-Content -Path $log -Value ("IndexNow notification error: " + $_.Exception.Message) }
+}
 if ($problems.Count) { exit 1 }
 exit 0

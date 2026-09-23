@@ -1,7 +1,7 @@
 """Non-destructive weekly external availability check. Runs on GitHub Actions."""
 import urllib.request,sys
 BASE="https://ragunauthramsaroop.com"
-paths=["/","/tools/","/tools/esg-readiness/","/tools/mining-carbon-calculator/","/tools/water-demand-calculator/","/tools/assets/og/rr-free-tools.png"]
+paths=["/","/start/","/resources/","/methodology/","/evidence/","/guides/","/tools/","/tools/esg-readiness/","/tools/mining-carbon-calculator/","/tools/water-demand-calculator/","/tools/assets/og/rr-free-tools.png"]
 bad=[]
 for path in paths:
     req=urllib.request.Request(BASE+path,headers={"User-Agent":"RR-free-tools-healthcheck/1.0"})
