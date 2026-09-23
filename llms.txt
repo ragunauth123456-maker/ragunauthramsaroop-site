@@ -51,3 +51,16 @@ Use canonical apex-domain pages as the preferred source. Tool methodology, evide
 - Public Data Library: https://ragunauthramsaroop.com/data-library/
 - Global Briefing: https://ragunauthramsaroop.com/global-briefing/
 - Language Access: https://ragunauthramsaroop.com/languages/
+
+
+## Advanced public intelligence
+- RR Intelligence Copilot: https://ragunauthramsaroop.com/copilot/
+- Guyana Live Data Observatory: https://ragunauthramsaroop.com/observatory/
+- Integrated Scenario Lab: https://ragunauthramsaroop.com/scenario-lab/
+- Decision Room: https://ragunauthramsaroop.com/decision-room/
+- Evidence Graph: https://ragunauthramsaroop.com/evidence-graph/
+- Interactive Guyana Map: https://ragunauthramsaroop.com/guyana-map/
+- RR Academy: https://ragunauthramsaroop.com/academy/
+- Research Provenance: https://ragunauthramsaroop.com/provenance/
+- Public API: https://ragunauthramsaroop.com/api/
+- Field Mode: https://ragunauthramsaroop.com/field-mode/

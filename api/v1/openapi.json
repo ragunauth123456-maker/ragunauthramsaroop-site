@@ -1,0 +1,49 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "RR Public API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://ragunauthramsaroop.com/api/v1"
+    }
+  ],
+  "paths": {
+    "/catalog.json": {
+      "get": {
+        "summary": "Tool catalog"
+      }
+    },
+    "/research.json": {
+      "get": {
+        "summary": "Public research and resource index"
+      }
+    },
+    "/methodology.json": {
+      "get": {
+        "summary": "Methodology register"
+      }
+    },
+    "/provenance.json": {
+      "get": {
+        "summary": "Integrity registry"
+      }
+    },
+    "/guyana.json": {
+      "get": {
+        "summary": "Guyana monitored data snapshot"
+      }
+    },
+    "/sources.json": {
+      "get": {
+        "summary": "Official-source monitor"
+      }
+    },
+    "/capabilities.json": {
+      "get": {
+        "summary": "Platform capability discovery"
+      }
+    }
+  }
+}

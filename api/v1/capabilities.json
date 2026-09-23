@@ -1,0 +1,39 @@
+{
+  "generated": "23 September 2026",
+  "architecture": "static-first-hybrid-ready",
+  "capabilities": {
+    "copilot": {
+      "mode": "local-source-bounded",
+      "edge_adapter": true
+    },
+    "observatory": {
+      "world_bank_live": true,
+      "scheduled_official_source_snapshots": true
+    },
+    "scenario_lab": {
+      "local": true,
+      "private_fragment_links": true
+    },
+    "decision_room": {
+      "local": true,
+      "private_fragment_links": true
+    },
+    "academy": {
+      "local_progress": true,
+      "completion_record_integrity": true
+    },
+    "field_mode": {
+      "offline_local_storage": true
+    },
+    "public_api": {
+      "static_json": true
+    },
+    "source_monitor": {
+      "github_actions": true
+    },
+    "edge_service": {
+      "configured": false,
+      "adapter_ready": true
+    }
+  }
+}

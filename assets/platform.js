@@ -1,5 +1,6 @@
 (()=>{
 "use strict";
+if(new URL(location.href).searchParams.get("embed")==="1"){document.documentElement.classList.add("rr-embed-mode")}
 const KEY="rrToolkitV1", esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("/service-worker.js").catch(()=>{}));
 document.addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();location.href="/search/"}});

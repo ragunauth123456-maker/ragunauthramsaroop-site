@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "name": "Guyana Bureau of Statistics",
+      "url": "https://statisticsguyana.gov.gy/",
+      "category": "economy",
+      "note": "National statistics and headline indicators."
+    },
+    {
+      "name": "Guyana Geology and Mines Commission",
+      "url": "https://www.ggmc.gov.gy/",
+      "category": "mining",
+      "note": "Mining regulation, geoscience and mineral data."
+    },
+    {
+      "name": "Guyana Energy Agency",
+      "url": "https://gea.gov.gy/",
+      "category": "energy",
+      "note": "Energy policy, licensing, statistics and renewable-energy information."
+    },
+    {
+      "name": "Guyana Ministry of Finance",
+      "url": "https://finance.gov.gy/",
+      "category": "fiscal",
+      "note": "Budget, mid-year reports and fiscal information."
+    },
+    {
+      "name": "World Bank Guyana indicators",
+      "url": "https://api.worldbank.org/v2/country/GUY?format=json",
+      "category": "international-data",
+      "note": "International development indicator source."
+    }
+  ]
+}

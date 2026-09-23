@@ -1,0 +1,180 @@
+{
+  "generated": "23 September 2026",
+  "algorithm": "SHA-256",
+  "resources": [
+    {
+      "path": "/white-papers/beyond-employment/index.html",
+      "sha256": "01de468a2218542b1647e7a3107804d828f6282b4028e4cb3e262e2bca39f8ea",
+      "bytes": 21137,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/carolyn-rodrigues-birkett-unsg/index.html",
+      "sha256": "612423f8974067d3b8717985c17ad836369e07d9f53d773350976db86e189f5f",
+      "bytes": 11411,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/critical-minerals-energy-security/index.html",
+      "sha256": "ff48aec52159cb63df60f78b9e28fde32cae2ef0cee79670f964b7f9beb0e838",
+      "bytes": 13215,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/fresh-water-next-strategic-commodity/index.html",
+      "sha256": "df5610bd9e9177eabad3561c9dc51b6db1a97f7700edcc71ac81ff475d2b0947",
+      "bytes": 14101,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/geopolitics-of-gold/index.html",
+      "sha256": "869f622c3934b9c801fdf06bf4b0e08af07e20c0d067f4bea4471c71839639d1",
+      "bytes": 11788,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/guyana-2040/index.html",
+      "sha256": "004479377401929a6b9e9cfe9c28ec68e3df4dfae5bb45befb557dd40defd960",
+      "bytes": 21270,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/guyana-development-bank/index.html",
+      "sha256": "d208979476c1f6f02e04580012174924826837109eb4867fe0b1a66f8deddc7e",
+      "bytes": 12319,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/guyana-economy-2030/index.html",
+      "sha256": "5c156d9c3806884338c18797b41ce91e2b70309f5ad312592e1ae350105b4a8c",
+      "bytes": 11404,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/guyana-power-demand-2030/index.html",
+      "sha256": "41091a428a0c88c44993514ae707b7b22ef257cda326470feda73e8b1c46e928",
+      "bytes": 12459,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/karpowership-guyana-2035/index.html",
+      "sha256": "7861f7d34fdd1b34e4dd0ed68a6f7de42130d96da2e9f508942226d27a4b4073",
+      "bytes": 11783,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/new-geography-globalization/index.html",
+      "sha256": "27d0fa1aac7a7283cd8052e57bbd5803dffa90a5f4e2b328271f39c17e68e1de",
+      "bytes": 11688,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/sovereign-ai/index.html",
+      "sha256": "7bfa8846eeffcd680b0664d90d1b037453fb27a8b2a85bad70f549fb451ec374",
+      "bytes": 11981,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/trust-deficit/index.html",
+      "sha256": "be7d35545b4a4b59053b1ca5ff6fbe9e08c5ec657cd33eade05244605511133d",
+      "bytes": 11950,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/white-papers/water-security-economic-security/index.html",
+      "sha256": "5681b071dbf67c249b9c632914527be1d24682dd2b36744acf7e43111505dbea",
+      "bytes": 11655,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/methodology/index.html",
+      "sha256": "27061bdbbe45245685518677e8a9300bff2afe98ceac5d6c8347dd0b9c7bc6e7",
+      "bytes": 21026,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/data/tool-catalog.csv",
+      "sha256": "9ae7e5db649edd8bd94a593b01e2a9149249f72e064a2aa642006bb42f01c4d5",
+      "bytes": 6641,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/data/tool-assumption-register.csv",
+      "sha256": "cf0dbe04b83caac6d4ba897cec3f1426f60bd36a1fda2950a5edb2f3fbfe2b3a",
+      "bytes": 909,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/data/methodology-register.csv",
+      "sha256": "438f848b1fae803da4dee5bfdd4ea094b73a252b445084bfad60f54684a35040",
+      "bytes": 3243,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/data/guyana-live.json",
+      "sha256": "1d0b02f0bafabe6d000db240813abd663fbb488dea89c233a4594cc4471c9037",
+      "bytes": 986,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/data/source-sources.json",
+      "sha256": "45a290c7736616e6add48410931562f5ee514b4cf84557af2f72f6e60eff1af4",
+      "bytes": 1070,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/assets/resource-index.json",
+      "sha256": "ea964bdd5be1bf4cb08b116355d1b46292e8df4001cdb896b362340b0263a419",
+      "bytes": 21608,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/assets/search-index.json",
+      "sha256": "4ccfe6ba9bed66f1e6af26d30b67e138761bbd2e7c6c84cff7f3c9f24c8c2316",
+      "bytes": 344167,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/capabilities.json",
+      "sha256": "bdbb62521991508f4a99be749ae84887f9fa6c8b4ea8415c8dc027079339142f",
+      "bytes": 876,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/catalog.json",
+      "sha256": "0aa51a82934f7c3a468cf64faedf0785d67ded5252160a73dfbdf08f3d00a038",
+      "bytes": 9987,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/guyana.json",
+      "sha256": "1d0b02f0bafabe6d000db240813abd663fbb488dea89c233a4594cc4471c9037",
+      "bytes": 986,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/methodology.json",
+      "sha256": "76f0c7f46d1c33de0ca6f95f23d8d081e56ef42a41c91c99d7bf65f42b7fed6b",
+      "bytes": 5943,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/openapi.json",
+      "sha256": "af52cfcefc3faef815cfdcffb435af658ebbbb4a8553471c2f259b44f8ce704e",
+      "bytes": 947,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/research.json",
+      "sha256": "ea964bdd5be1bf4cb08b116355d1b46292e8df4001cdb896b362340b0263a419",
+      "bytes": 21608,
+      "generated": "23 September 2026"
+    },
+    {
+      "path": "/api/v1/sources.json",
+      "sha256": "2f52e8b0d2fbbe80efe0d131788e767b2bee656fd64b0e7ec3079379a5950411",
+      "bytes": 1219,
+      "generated": "23 September 2026"
+    }
+  ]
+}
