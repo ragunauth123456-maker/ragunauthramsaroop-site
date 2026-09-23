@@ -34,7 +34,8 @@ def local_link(src,path):
 html_pages=list(ROOT.rglob("*.html"))
 for page in html_pages:
     text=page.read_text(encoding="utf-8",errors="replace")
-    if "/tools/assets/analytics-loader.js" not in text:
+    is_redirect=('http-equiv="refresh"' in text.lower() and 'This page has moved' in text)
+    if not is_redirect and "/tools/assets/analytics-loader.js" not in text:
         issues.append((str(page),"missing analytics consent loader"))
 robots_text=(ROOT/"robots.txt").read_text(encoding="utf-8",errors="replace")
 if "Sitemap: https://ragunauthramsaroop.com/tools/sitemap.xml" not in robots_text:

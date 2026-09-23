@@ -38,6 +38,8 @@ def map_changed(old,new):
         if name=="index.html":urls.add("https://ragunauthramsaroop.com/")
         elif name.endswith("/index.html"):
             urls.add("https://ragunauthramsaroop.com/"+name[:-10])
+        elif name.endswith(".html"):
+            urls.add("https://ragunauthramsaroop.com/"+name)
         elif name.startswith("tools/downloads/"):
             urls.add("https://ragunauthramsaroop.com/"+name)
     return sitemap_urls() if shared else sorted(urls)
