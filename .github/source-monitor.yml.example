@@ -1,0 +1,31 @@
+name: Refresh public intelligence sources
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 11 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: rr-public-source-monitor
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4
+      - run: python scripts/monitor_sources.py
+      - name: Commit public snapshots if changed
+        run: |
+          git config user.name "RR Public Source Monitor"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/source-monitor.json data/guyana-live.json api/v1/sources.json api/v1/guyana.json
+          if git diff --cached --quiet; then
+            echo "No snapshot changes"
+          else
+            git commit -m "Refresh monitored public-source snapshots"
+            git push
+          fi
