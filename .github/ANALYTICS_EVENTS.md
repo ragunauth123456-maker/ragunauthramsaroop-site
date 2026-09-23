@@ -13,6 +13,8 @@ The site records event names and non-sensitive page/tool identifiers only:
 - white_paper_opened
 - topic_opened
 - profile_opened
+- feedback_opened
+- report_downloaded
 
 Never add tool input values, resume text, grievance content, stakeholder names, contact details or other visitor-entered data to analytics parameters.
 
