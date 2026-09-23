@@ -3,7 +3,7 @@
    Advertising storage/signals remain disabled. */
 (function () {
   "use strict";
-  const MEASUREMENT_ID = "G-C5XK34RJNF";
+  const MEASUREMENT_ID = "G-28FHYG7T0G";
   const KEY = "rr_analytics_consent_v1";
 
   window.dataLayer = window.dataLayer || [];

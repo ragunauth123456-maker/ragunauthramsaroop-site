@@ -1,6 +1,6 @@
 # RR Free Tools engagement measurement
 
-GA4 measurement ID: G-C5XK34RJNF.
+GA4 measurement ID: G-28FHYG7T0G.
 
 The site records event names and non-sensitive page/tool identifiers only:
 
