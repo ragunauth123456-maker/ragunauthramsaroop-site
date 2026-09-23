@@ -1,1 +1,72 @@
-{"generated":"2026-09-23","metrics":[{"label":"Population","value":"878,674","period":"2022 Census","unit":"people","source":"https://statisticsguyana.gov.gy/"},{"label":"Unemployment rate","value":"6%","period":"4th Quarter 2025","unit":"rate","source":"https://statisticsguyana.gov.gy/"},{"label":"Exports (FOB)","value":"US$16 bn","period":"January–June 2026 provisional","unit":"USD","source":"https://statisticsguyana.gov.gy/"},{"label":"Imports (CIF)","value":"US$5 bn","period":"January–June 2026 provisional","unit":"USD","source":"https://statisticsguyana.gov.gy/"},{"label":"Real GDP growth","value":"19%","period":"2025","unit":"rate","source":"https://statisticsguyana.gov.gy/"},{"label":"Monthly average exchange mid-rate","value":"G$224","period":"June 2026","unit":"GYD per USD reference","source":"https://statisticsguyana.gov.gy/"},{"label":"Public-sector minimum wage","value":"G$102,346","period":"2025","unit":"GYD","source":"https://statisticsguyana.gov.gy/"}]}
+{
+  "generated": "2026-09-23T17:57:28+00:00",
+  "metrics": [
+    {
+      "label": "Population",
+      "value": "878,674",
+      "period": "2022 Census",
+      "unit": "people",
+      "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "Exports (FOB)",
+      "value": "US$ 16 bn",
+      "period": "January - June 2026 Provisional",
+      "unit": "USD",
+      "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "Imports (CIF)",
+      "value": "US$ 5 bn",
+      "period": "January - June 2026 Provisional",
+      "unit": "USD",
+      "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "Monthly average exchange mid-rate",
+      "value": "G$ 224",
+      "period": "June 2026",
+      "unit": "GYD reference",
+      "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "Public-sector minimum wage",
+      "value": "G$ 102,346",
+      "period": "2025",
+      "unit": "GYD",
+      "source": "https://statisticsguyana.gov.gy/"
+    },
+    {
+      "label": "World Bank GDP growth",
+      "value": 19.3360097091818,
+      "period": "2025",
+      "unit": "%",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "NY.GDP.MKTP.KD.ZG"
+    },
+    {
+      "label": "World Bank inflation",
+      "value": 3.32982339132475,
+      "period": "2025",
+      "unit": "%",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "FP.CPI.TOTL.ZG"
+    },
+    {
+      "label": "World Bank population",
+      "value": 835986,
+      "period": "2025",
+      "unit": "people",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "SP.POP.TOTL"
+    },
+    {
+      "label": "World Bank GDP",
+      "value": 27097477218.2254,
+      "period": "2025",
+      "unit": "USD",
+      "source": "https://data.worldbank.org/country/guyana",
+      "indicator": "NY.GDP.MKTP.CD"
+    }
+  ]
+}
