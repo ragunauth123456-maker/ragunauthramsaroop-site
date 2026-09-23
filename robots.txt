@@ -24,3 +24,4 @@ Allow: /
 
 Sitemap: https://ragunauthramsaroop.com/sitemap.xml
 Sitemap: https://ragunauthramsaroop.com/tools/sitemap.xml
+Sitemap: https://ragunauthramsaroop.com/topics/sitemap.xml
