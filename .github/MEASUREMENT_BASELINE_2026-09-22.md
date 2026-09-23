@@ -23,7 +23,8 @@ Google still showed impressions for historical .html and legacy intelligence/pro
 
 ## Measurement architecture
 - Google Search Console: organic search impressions, clicks, queries and positions
-- GA4 tag: G-C5XK34RJNF
+- GA4 tag at baseline: G-C5XK34RJNF (detected as the SmartStudyz property tag and therefore not suitable as the long-term measurement destination for this website)
+- Corrective action on 22 September 2026: created a dedicated Google Analytics 4 property for ragunauthramsaroop.com in the user-owned Ragunauth Analytics account, Guyana reporting time zone, USD currency, with measurement ID G-28FHYG7T0G. The website tag was changed to that dedicated property.
 - GA4 connector status in GSC Wizard on 22 September: not yet authorized for the current GSC Wizard account, so GA4 event reporting through that connector is not yet available
 - RR Free Tools content group: active
 - Public Resource Platform content group: active
