@@ -15,8 +15,8 @@ main{padding:36px 0 80px}.panel{background:#fff;border:1px solid var(--line);bor
 
 /* Purpose-led tool card visual system */
 .card{position:relative;display:flex;flex-direction:column;overflow:hidden;border-top:4px solid var(--tool-accent,#b8893b);padding-top:16px}
-.tool-preview-wrap{width:100%;aspect-ratio:1200/630;overflow:hidden;border-radius:10px;margin-bottom:13px;background:color-mix(in srgb,var(--tool-accent,#b8893b) 84%,#08271d);border:1px solid color-mix(in srgb,var(--tool-accent,#b8893b) 42%,#dfe6e2);box-shadow:0 10px 26px color-mix(in srgb,var(--tool-accent,#b8893b) 15%,transparent)}
-.card .tool-preview{display:block;width:100%;height:100%;margin:0;aspect-ratio:1200/630;object-fit:cover;mix-blend-mode:luminosity;filter:contrast(1.06)}
+.tool-preview-wrap{width:100%;aspect-ratio:1200/630;overflow:hidden;border-radius:10px;margin-bottom:13px;background:#fff;border:1px solid color-mix(in srgb,var(--tool-accent,#b8893b) 42%,#dfe6e2);box-shadow:0 10px 26px color-mix(in srgb,var(--tool-accent,#b8893b) 15%,transparent)}
+.card .tool-preview{display:block;width:100%;height:100%;margin:0;aspect-ratio:1200/630;object-fit:cover;object-position:center;mix-blend-mode:normal;filter:none;image-rendering:auto}
 .tool-category{margin:1px 0 2px;color:var(--tool-accent,#b8893b);font-size:10px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
 .card .num{color:var(--tool-accent,#b8893b)}
 .card .go{margin-top:auto;padding-top:10px;color:color-mix(in srgb,var(--tool-accent,#b8893b) 70%,#08271d)}
@@ -30,4 +30,4 @@ main{padding:36px 0 80px}.panel{background:#fff;border:1px solid var(--line);bor
 .card[href="/tools/diesel-cost-carbon/"]{--tool-accent:#a86b32}.card[href="/tools/solar-battery-sizing/"]{--tool-accent:#d7a21c}.card[href="/tools/community-investment-prioritizer/"]{--tool-accent:#b05d3c}
 .card[href="/tools/esg-materiality-matrix/"]{--tool-accent:#158064}.card[href="/tools/grievance-trend-analyzer/"]{--tool-accent:#c36c24}.card[href="/tools/executive-100-day-plan/"]{--tool-accent:#7a4058}
 .card[href="/tools/government-meeting-brief/"]{--tool-accent:#315f8c}.card[href="/tools/responsible-procurement-assessment/"]{--tool-accent:#4d7248}
-@supports not (color:color-mix(in srgb,#000 50%,#fff)){.tool-preview-wrap{background:#12382c;border-color:#dfe6e2}.card .go{color:var(--ink)}.card:hover{box-shadow:var(--shadow)}}
+@supports not (color:color-mix(in srgb,#000 50%,#fff)){.tool-preview-wrap{background:#fff;border-color:#dfe6e2}.card .go{color:var(--ink)}.card:hover{box-shadow:var(--shadow)}}
