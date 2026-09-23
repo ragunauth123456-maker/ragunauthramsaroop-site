@@ -12,3 +12,22 @@ main{padding:36px 0 80px}.panel{background:#fff;border:1px solid var(--line);bor
 @media print{.topbar,.actions,.footer,#rr-free-tools-launcher{display:none!important}.hero{background:#fff;color:#000;padding:20px 0}.hero p{color:#333}.panel{box-shadow:none}.wrap{width:100%}}
 
 .tool-preview{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:10px;margin-bottom:13px}.rr-guide details{padding:14px 0;border-bottom:1px solid #e0e5e1}.rr-guide summary{font-weight:750;cursor:pointer;color:#08271d}.rr-guide details p{margin:10px 0 0}.rr-guide a{text-decoration:underline;text-underline-offset:3px}
+
+/* Purpose-led tool card visual system */
+.card{position:relative;display:flex;flex-direction:column;overflow:hidden;border-top:4px solid var(--tool-accent,#b8893b);padding-top:16px}
+.tool-preview-wrap{width:100%;aspect-ratio:1200/630;overflow:hidden;border-radius:10px;margin-bottom:13px;background:color-mix(in srgb,var(--tool-accent,#b8893b) 84%,#08271d);border:1px solid color-mix(in srgb,var(--tool-accent,#b8893b) 42%,#dfe6e2);box-shadow:0 10px 26px color-mix(in srgb,var(--tool-accent,#b8893b) 15%,transparent)}
+.card .tool-preview{display:block;width:100%;height:100%;margin:0;aspect-ratio:1200/630;object-fit:cover;mix-blend-mode:luminosity;filter:contrast(1.06)}
+.tool-category{margin:1px 0 2px;color:var(--tool-accent,#b8893b);font-size:10px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.card .num{color:var(--tool-accent,#b8893b)}
+.card .go{margin-top:auto;padding-top:10px;color:color-mix(in srgb,var(--tool-accent,#b8893b) 70%,#08271d)}
+.card:hover{border-color:color-mix(in srgb,var(--tool-accent,#b8893b) 42%,#dfe6e2);box-shadow:0 20px 54px color-mix(in srgb,var(--tool-accent,#b8893b) 18%,transparent)}
+.card[href="/tools/esg-readiness/"]{--tool-accent:#0b6b53}.card[href="/tools/mining-carbon-calculator/"]{--tool-accent:#9a5b2e}.card[href="/tools/renewable-transition-calculator/"]{--tool-accent:#d99a16}
+.card[href="/tools/stakeholder-mapper/"]{--tool-accent:#8f5d43}.card[href="/tools/government-relations-risk/"]{--tool-accent:#24578a}.card[href="/tools/social-licence-health/"]{--tool-accent:#a45f3b}
+.card[href="/tools/executive-brief-generator/"]{--tool-accent:#6f334c}.card[href="/tools/board-question-generator/"]{--tool-accent:#553b72}.card[href="/tools/career-evidence-builder/"]{--tool-accent:#50647d}
+.card[href="/tools/job-fit-analyzer/"]{--tool-accent:#405d78}.card[href="/tools/speaking-question-generator/"]{--tool-accent:#7b4c73}.card[href="/tools/white-paper-navigator/"]{--tool-accent:#23636c}
+.card[href="/tools/guyana-investment-dashboard/"]{--tool-accent:#a66b00}.card[href="/tools/guyana-regulatory-navigator/"]{--tool-accent:#315f8c}.card[href="/tools/responsible-mining-assessment/"]{--tool-accent:#426b45}
+.card[href="/tools/executive-templates/"]{--tool-accent:#4a5f54}.card[href="/tools/water-demand-calculator/"]{--tool-accent:#168aad}.card[href="/tools/local-content-calculator/"]{--tool-accent:#c48716}
+.card[href="/tools/diesel-cost-carbon/"]{--tool-accent:#a86b32}.card[href="/tools/solar-battery-sizing/"]{--tool-accent:#d7a21c}.card[href="/tools/community-investment-prioritizer/"]{--tool-accent:#b05d3c}
+.card[href="/tools/esg-materiality-matrix/"]{--tool-accent:#158064}.card[href="/tools/grievance-trend-analyzer/"]{--tool-accent:#c36c24}.card[href="/tools/executive-100-day-plan/"]{--tool-accent:#7a4058}
+.card[href="/tools/government-meeting-brief/"]{--tool-accent:#315f8c}.card[href="/tools/responsible-procurement-assessment/"]{--tool-accent:#4d7248}
+@supports not (color:color-mix(in srgb,#000 50%,#fff)){.tool-preview-wrap{background:#12382c;border-color:#dfe6e2}.card .go{color:var(--ink)}.card:hover{box-shadow:var(--shadow)}}
