@@ -63,7 +63,7 @@ for path in html_pages:
     if TOOLS in path.parents and path.name=="index.html" and path.parent.name!="assets":
         if not p.canonical or not p.canonical.startswith("https://ragunauthramsaroop.com/tools/"):issues.append((str(path),"canonical mismatch"))
         if p.canonical not in locs:issues.append((str(path),"missing from root sitemap"))
-        if path.parent.name not in ("privacy",) and path.parent!=TOOLS:
+        if path.parent.parent==TOOLS and path.parent.name not in ("privacy","categories"):
             if "RR_GUIDE" not in s:issues.append((str(path),"missing editorial guide"))
             og=p.meta.get("og:image","")
             if not og.endswith("/"+path.parent.name+".png"):issues.append((str(path),"og:image not unique"))

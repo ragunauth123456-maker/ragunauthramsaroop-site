@@ -12,17 +12,33 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Validate pages, downloads, structured data and social cards
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Static site validation
         run: python3 scripts/validate_site.py
-      - name: Check JavaScript syntax
+      - name: Accessibility audit
+        run: python3 scripts/accessibility_audit.py
+      - name: Performance budget
+        run: python3 scripts/performance_budget.py
+      - name: Tools integrity
+        run: python3 scripts/tools_integrity.py
+      - name: JavaScript syntax
         run: |
-          node --check tools/assets/tools.js
-          node --check tools/assets/growth-tools.js
-          node --check tools/assets/launcher.js
-          node --check tools/assets/analytics-loader.js
-      - name: Check public website (scheduled runs only)
+          find assets tools -name "*.js" -print0 | xargs -0 -n1 node --check
+          node --check service-worker.js
+      - name: Machine-readable data
+        run: |
+          python3 -m json.tool api/v1/catalog.json > /dev/null
+          python3 -m json.tool data/tool-method-details.json > /dev/null
+          python3 -m json.tool assets/resource-index.json > /dev/null
+          python3 -m json.tool assets/search-index.json > /dev/null
+      - name: Public availability check
         if: github.event_name == 'schedule'
         run: python3 scripts/public_smoke.py

@@ -4,91 +4,91 @@
     {
       "title": "ESG Readiness Diagnostic",
       "url": "/tools/esg-readiness/",
-      "category": "ESG & Sustainability",
+      "category": "ESG & Governance",
       "description": "Assess governance, climate, social performance, stakeholder engagement and reporting readiness. Receive practical priorities and 90-day focus areas.",
       "methodology": "/methodology/#esg-readiness"
     },
     {
       "title": "Mining Carbon Calculator",
       "url": "/tools/mining-carbon-calculator/",
-      "category": "Mining & Carbon",
+      "category": "Mining & Operations",
       "description": "Estimate operational emissions from diesel and electricity, emissions intensity, renewable contribution and reduction scenarios using transparent assumptions.",
       "methodology": "/methodology/#mining-carbon-calculator"
     },
     {
       "title": "Renewable Energy Transition Calculator",
       "url": "/tools/renewable-transition-calculator/",
-      "category": "Energy Transition",
+      "category": "Energy & Climate",
       "description": "Estimate diesel displacement, fuel savings, avoided emissions and simple payback from solar and battery transition scenarios.",
       "methodology": "/methodology/#renewable-transition-calculator"
     },
     {
       "title": "Stakeholder Mapping Tool",
       "url": "/tools/stakeholder-mapper/",
-      "category": "Stakeholders & Social",
+      "category": "Community & Social",
       "description": "Map influence, interest and relationship strength, then generate a practical engagement priority list.",
       "methodology": "/methodology/#stakeholder-mapper"
     },
     {
       "title": "Government Relations Risk Mapper",
       "url": "/tools/government-relations-risk/",
-      "category": "Government Relations",
+      "category": "Government & Regulation",
       "description": "Structure institutional, regulatory, reputation and execution risks before government or regulator engagement.",
       "methodology": "/methodology/#government-relations-risk"
     },
     {
       "title": "Social Licence Health Check",
       "url": "/tools/social-licence-health/",
-      "category": "Community & Trust",
+      "category": "Community & Social",
       "description": "Review trust, grievances, local employment, procurement, commitments, communications and environmental concerns.",
       "methodology": "/methodology/#social-licence-health"
     },
     {
       "title": "Executive Brief Generator",
       "url": "/tools/executive-brief-generator/",
-      "category": "Executive Leadership",
+      "category": "Executive & Board",
       "description": "Turn a complex issue into a disciplined one-page executive brief covering decision required, facts, unknowns, stakeholders, risks and actions.",
       "methodology": "/methodology/#executive-brief-generator"
     },
     {
       "title": "Board Question Generator",
       "url": "/tools/board-question-generator/",
-      "category": "Board & Governance",
+      "category": "Executive & Board",
       "description": "Generate rigorous board and executive questions for ESG, governance, investment, risk, AI, energy and natural-resources decisions.",
       "methodology": "/methodology/#board-question-generator"
     },
     {
       "title": "Career Evidence Builder",
       "url": "/tools/career-evidence-builder/",
-      "category": "Career Development",
+      "category": "Career & Communication",
       "description": "Convert professional experience into evidence-based achievement statements using situation, action, evidence, outcome and lesson.",
       "methodology": "/methodology/#career-evidence-builder"
     },
     {
       "title": "Job Description Fit Analyzer",
       "url": "/tools/job-fit-analyzer/",
-      "category": "Career Development",
+      "category": "Career & Communication",
       "description": "Compare a job description with a professional profile locally in your browser. Identify aligned evidence, missing themes and interview preparation areas.",
       "methodology": "/methodology/#job-fit-analyzer"
     },
     {
       "title": "Public Speaking Question Generator",
       "url": "/tools/speaking-question-generator/",
-      "category": "Executive Communication",
+      "category": "Career & Communication",
       "description": "Generate moderator, audience and challenge questions for panels, conferences, interviews and executive speaking engagements.",
       "methodology": "/methodology/#speaking-question-generator"
     },
     {
       "title": "White Paper Research Navigator",
       "url": "/tools/white-paper-navigator/",
-      "category": "Research & Intelligence",
+      "category": "Research & Investment",
       "description": "Search Ragunauth Ramsaroop's public research library by topic and move directly to relevant white papers.",
       "methodology": "/methodology/#white-paper-navigator"
     },
     {
       "title": "Guyana Investment Intelligence Dashboard",
       "url": "/tools/guyana-investment-dashboard/",
-      "category": "Investment Intelligence",
+      "category": "Research & Investment",
       "description": "A structured decision dashboard for investors and researchers examining Guyana across mining, energy, infrastructure and institutional readiness.",
       "methodology": "/methodology/#guyana-investment-dashboard"
     },
@@ -102,84 +102,84 @@
     {
       "title": "Responsible Mining Self-Assessment",
       "url": "/tools/responsible-mining-assessment/",
-      "category": "Responsible Mining",
+      "category": "Mining & Operations",
       "description": "Review environmental, social, governance, workforce, community, procurement and institutional practices using a transparent self-assessment.",
       "methodology": "/methodology/#responsible-mining-assessment"
     },
     {
       "title": "Free Executive Templates Library",
       "url": "/tools/executive-templates/",
-      "category": "Executive Resources",
+      "category": "Executive & Board",
       "description": "Practical templates for stakeholder mapping, issue escalation, executive briefs, ESG action plans, grievance tracking and meeting preparation.",
       "methodology": "/methodology/#executive-templates"
     },
     {
       "title": "Water Demand & Storage Calculator",
       "url": "/tools/water-demand-calculator/",
-      "category": "Water & Resilience",
+      "category": "Energy & Climate",
       "description": "Estimate daily and annual water needs from people, per-person use and optional industrial use. Account for a planning loss factor, storage buffer and a user-selected demand-surge scenario.",
       "methodology": "/methodology/#water-demand-calculator"
     },
     {
       "title": "Local Content Value Calculator",
       "url": "/tools/local-content-calculator/",
-      "category": "Local Economic Development",
+      "category": "Local Content & Procurement",
       "description": "Enter total procurement, procurement with qualifying local suppliers, a target share, supplier count, workforce count and the local-worker count. The tool estimates shares and the extra local procurement needed to meet the scenario target.",
       "methodology": "/methodology/#local-content-calculator"
     },
     {
       "title": "Mining Diesel Cost & CO₂ Calculator",
       "url": "/tools/diesel-cost-carbon/",
-      "category": "Mining Operations",
+      "category": "Mining & Operations",
       "description": "Estimate fuel cost, operational diesel emissions, production intensity and the effect of a user-selected diesel-reduction scenario.",
       "methodology": "/methodology/#diesel-cost-carbon"
     },
     {
       "title": "Solar + Battery Sizing Screener",
       "url": "/tools/solar-battery-sizing/",
-      "category": "Solar & Storage",
+      "category": "Energy & Climate",
       "description": "Screen indicative solar DC capacity and nominal battery energy from daily demand, solar resource, losses and autonomy assumptions.",
       "methodology": "/methodology/#solar-battery-sizing"
     },
     {
       "title": "Community Investment Prioritizer",
       "url": "/tools/community-investment-prioritizer/",
-      "category": "Community Investment",
+      "category": "Community & Social",
       "description": "Compare community-investment options using transparent ratings for community evidence, impact, urgency, reach and feasibility.",
       "methodology": "/methodology/#community-investment-prioritizer"
     },
     {
       "title": "ESG Materiality Matrix Builder",
       "url": "/tools/esg-materiality-matrix/",
-      "category": "ESG & Materiality",
+      "category": "ESG & Governance",
       "description": "Structure a preliminary ESG issue matrix using stakeholder importance, business impact and evidence confidence.",
       "methodology": "/methodology/#esg-materiality-matrix"
     },
     {
       "title": "Grievance Trend Analyzer",
       "url": "/tools/grievance-trend-analyzer/",
-      "category": "Social Performance",
+      "category": "Community & Social",
       "description": "Analyse anonymised grievance categories, status, severity and days open directly in the browser without uploading personal data.",
       "methodology": "/methodology/#grievance-trend-analyzer"
     },
     {
       "title": "Executive 100-Day Plan Builder",
       "url": "/tools/executive-100-day-plan/",
-      "category": "Executive Leadership",
+      "category": "Executive & Board",
       "description": "Convert a mandate, priorities, stakeholders, risks and evidence into a structured first-100-days leadership plan.",
       "methodology": "/methodology/#executive-100-day-plan"
     },
     {
       "title": "Government Meeting Brief Builder",
       "url": "/tools/government-meeting-brief/",
-      "category": "Government Relations",
+      "category": "Government & Regulation",
       "description": "Prepare a disciplined brief covering meeting objective, verified facts, decision sought, sensitivities, commitment boundaries and follow-up.",
       "methodology": "/methodology/#government-meeting-brief"
     },
     {
       "title": "Responsible Procurement Self-Assessment",
       "url": "/tools/responsible-procurement-assessment/",
-      "category": "Responsible Procurement",
+      "category": "Local Content & Procurement",
       "description": "Review supplier integrity, environment, human rights, tender controls, local supplier development and procurement evidence.",
       "methodology": "/methodology/#responsible-procurement-assessment"
     }

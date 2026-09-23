@@ -1,0 +1,210 @@
+{
+  "esg-readiness": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Each dimension is rated from 1 to 5. The overall screening result is the arithmetic mean of entered ratings. The lowest-rated dimensions are surfaced as priorities.",
+    "units": "Scores are ordinal self-assessment ratings, not certification scores.",
+    "limitations": "Results depend on user judgement and evidence quality. The screen does not establish compliance with any reporting standard.",
+    "evidence": "Verify policies, governance records, metrics, audit evidence, stakeholder records and current reporting requirements."
+  },
+  "mining-carbon-calculator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Diesel emissions (tCO₂e) = diesel litres × entered diesel factor (kgCO₂e/L) ÷ 1,000. Grid emissions (tCO₂e) = grid kWh × entered grid factor (kgCO₂e/kWh) ÷ 1,000. Total = diesel + grid. Intensity = total ÷ entered production units. Renewable share = renewable kWh ÷ (renewable kWh + grid kWh) × 100.",
+    "units": "Fuel activity uses litres per year. Electricity uses kWh per year. Emissions are shown in tonnes CO₂e.",
+    "limitations": "The screen omits sources not entered, lifecycle emissions, uncertainty ranges and formal inventory boundary decisions.",
+    "evidence": "Verify fuel records, metered electricity, production data, reporting boundary and current emission factors."
+  },
+  "renewable-transition-calculator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Potential diesel displacement = the lower of annual diesel use and solar generation × entered generator fuel rate. Fuel saving = displaced litres × fuel price. Avoided emissions = displaced litres × entered diesel factor ÷ 1,000. Simple payback = entered project CAPEX ÷ annual fuel saving when both are positive.",
+    "units": "Diesel is litres per year, solar is kWh per year, fuel rate is litres per kWh, and avoided emissions are tonnes CO₂e.",
+    "limitations": "The screen does not model hourly dispatch, degradation, financing, O&M, curtailment, reserve margin or generator efficiency changes at partial load.",
+    "evidence": "Verify solar resource, hourly load profile, generator performance, delivered fuel cost, project cost and current emission factors."
+  },
+  "stakeholder-mapper": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool records influence, interest and relationship strength on a 1 to 5 scale, then uses those visible ratings to structure engagement priority.",
+    "units": "All ratings are ordinal planning inputs from 1 to 5.",
+    "limitations": "Stakeholder relationships are dynamic and context-specific. A matrix does not replace direct engagement or rights-holder analysis.",
+    "evidence": "Verify stakeholder identity, mandate, interests, influence, rights, current relationship and engagement history."
+  },
+  "government-relations-risk": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Each institutional and execution risk is rated from 1 to 5. The arithmetic mean provides an overall exposure screen. Highest-rated dimensions are surfaced first.",
+    "units": "Scores are ordinal exposure ratings from 1 to 5.",
+    "limitations": "The tool does not provide legal advice, political forecasting or an assessment of any public official.",
+    "evidence": "Verify current law, permit status, agency mandates, formal correspondence, policy documents and internal decision rights."
+  },
+  "social-licence-health": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool averages entered 1 to 5 ratings across trust, grievance response, local participation, commitments, communications and related dimensions. Lowest-rated areas are surfaced for follow-up.",
+    "units": "Scores are ordinal self-assessment ratings from 1 to 5.",
+    "limitations": "The screen is not a community survey and does not substitute for direct engagement, rights-based analysis or independent social research.",
+    "evidence": "Verify grievance data, commitments, engagement records, local employment and procurement evidence, environmental concerns and community feedback."
+  },
+  "executive-brief-generator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool structures user-entered information into decision required, context, facts, unknowns, stakeholders, risks, options and next action.",
+    "units": "",
+    "limitations": "The output reflects only information supplied by the user. It does not verify facts or choose a decision.",
+    "evidence": "Verify factual claims, decision authority, deadlines, stakeholders, risks and supporting documents before circulation."
+  },
+  "board-question-generator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool combines a user-selected decision area with a fixed set of governance, evidence, downside, stakeholder and follow-up questions.",
+    "units": "",
+    "limitations": "Questions are prompts for oversight and do not replace board papers, fiduciary duties, legal advice or specialist review.",
+    "evidence": "Verify the proposal, assumptions, downside case, decision rights, risk ownership and monitoring plan."
+  },
+  "career-evidence-builder": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool combines situation, action, evidence, verified outcome and lesson into an evidence-led achievement statement and interview structure.",
+    "units": "",
+    "limitations": "The tool does not verify employment history or outcomes. Users should avoid unsupported claims.",
+    "evidence": "Verify dates, role scope, metrics, documents, project records and attributable outcomes."
+  },
+  "job-fit-analyzer": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The browser compares predefined professional themes appearing in both the job description and profile text, then surfaces matched and missing themes. It intentionally avoids a percentage fit score.",
+    "units": "",
+    "limitations": "Keyword overlap does not measure leadership quality, selection probability or overall suitability.",
+    "evidence": "Verify role requirements, transferable experience, work authorization, language requirements and evidence for each claimed capability."
+  },
+  "speaking-question-generator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool combines topic, audience, format and context with a fixed set of evidence, trade-off, stakeholder and action-oriented question patterns.",
+    "units": "",
+    "limitations": "Questions are preparation prompts. They do not establish factual claims about the topic.",
+    "evidence": "Verify event context, audience needs, current evidence, sensitive issues and any statistics used in responses."
+  },
+  "white-paper-navigator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool searches a local index of public research titles and topic keywords in the browser and returns matching documents.",
+    "units": "",
+    "limitations": "The search index covers the published library on this site and is not a general web search.",
+    "evidence": "Review the source list, date and limitations inside each selected paper."
+  },
+  "guyana-investment-dashboard": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The dashboard presents structured diligence questions and official starting points by sector rather than a single investment score.",
+    "units": "",
+    "limitations": "Policies, incentives, fees and institutional procedures change. The dashboard is not investment advice.",
+    "evidence": "Verify current requirements with official agencies, qualified advisers, contracts, project data and current legislation."
+  },
+  "guyana-regulatory-navigator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The navigator matches user search terms to a curated list of public institutions and their broad administrative roles.",
+    "units": "",
+    "limitations": "Institutional mandates and procedures change. A listing does not confirm which approvals apply to a specific project.",
+    "evidence": "Verify current agency mandates, forms, fees, legislation, permit conditions and official contact channels."
+  },
+  "responsible-mining-assessment": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Each responsible-mining practice is rated from 1 to 5. The arithmetic mean provides an overall screen and the lowest-rated dimensions are surfaced as priorities.",
+    "units": "Scores are ordinal self-assessment ratings from 1 to 5.",
+    "limitations": "The screen is not an audit, certification or assurance engagement.",
+    "evidence": "Verify environmental, safety, workforce, community, human-rights, procurement, closure, governance and compliance records."
+  },
+  "executive-templates": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The library provides structured fields for recurring executive tasks such as issue escalation, stakeholder engagement, meeting preparation and action tracking.",
+    "units": "",
+    "limitations": "Templates require adaptation to the organisation, decision, jurisdiction and delegated authority.",
+    "evidence": "Verify owners, dates, decision rights, source documents, commitments and closure evidence."
+  },
+  "water-demand-calculator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "End-use demand (m³/day) = people × litres per person per day ÷ 1,000 + process use. Required supply = end-use demand ÷ (1 − loss rate). Stress supply = required supply × (1 + surge rate). Storage = required supply × buffer days.",
+    "units": "Population is people, consumption is litres/person/day, process use is m³/day, losses and surge are percentages, and storage is m³.",
+    "limitations": "The screen excludes source reliability, treatment, rainfall, fire reserve, drought duration, water quality and detailed hydraulic design.",
+    "evidence": "Verify demand records, seasonal variation, source yield, regulatory criteria, treatment requirements and emergency storage standards."
+  },
+  "local-content-calculator": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Local procurement share = qualifying local procurement ÷ total procurement × 100. Local workforce share = qualifying local workers ÷ total workforce × 100. Target local spend = total procurement × target share. Shortfall = max(0, target local spend − current qualifying local spend).",
+    "units": "Procurement values use the user-entered currency. Workforce values are counts. Shares are percentages.",
+    "limitations": "The tool does not define who or what qualifies as local and does not apply indirect economic multipliers.",
+    "evidence": "Verify the applicable legal or policy definition, supplier classification, spend recognition, workforce eligibility and reporting period."
+  },
+  "diesel-cost-carbon": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Annual fuel cost = litres × delivered price per litre. Annual diesel emissions = litres × entered emission factor ÷ 1,000. Reduction litres = litres × reduction rate. Reduction cost = reduction litres × price. Reduction emissions = reduction litres × factor ÷ 1,000.",
+    "units": "Fuel is litres/year, cost uses the entered currency, emission factor is kgCO₂e/L and emissions are tonnes CO₂e.",
+    "limitations": "The screen excludes fuel-price escalation, non-diesel sources, lifecycle emissions and detailed equipment duty cycles.",
+    "evidence": "Verify fuel reconciliations, delivered price, operating days, production definition, reporting boundary and current emission factor."
+  },
+  "solar-battery-sizing": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Indicative solar DC capacity = daily energy demand ÷ [peak-sun hours × (1 − loss rate)]. Average load = daily demand ÷ 24. Usable battery energy = average load × autonomy hours. Nominal battery energy = usable energy ÷ (usable depth of discharge × round-trip efficiency).",
+    "units": "Demand is kWh/day, solar capacity is kWp, load is kW and battery energy is kWh.",
+    "limitations": "The screen does not model hourly load shape, inverter clipping, temperature, degradation, curtailment, reserve margin, generator interaction or grid constraints.",
+    "evidence": "Verify measured load data, solar resource, equipment performance, operating philosophy, autonomy requirement and engineering design criteria."
+  },
+  "community-investment-prioritizer": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Priority score = community evidence × 25% + expected impact × 25% + urgency × 20% + reach × 15% + feasibility × 15%. Initiatives are sorted from highest to lowest score.",
+    "units": "Each component is an ordinal rating from 1 to 5. The weighted score is reported on the same 1 to 5 scale.",
+    "limitations": "Weights are planning choices rather than a universal standard. Ranking does not replace participation, rights-holder engagement or programme appraisal.",
+    "evidence": "Verify community-defined needs, affected groups, expected outcomes, cost, delivery capacity, rights impacts and monitoring evidence."
+  },
+  "esg-materiality-matrix": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Screening score = (stakeholder importance + business impact) ÷ 2. Evidence confidence is reported separately to show where higher scores rely on weaker evidence.",
+    "units": "Inputs and screening scores use an ordinal 1 to 5 scale.",
+    "limitations": "The screen does not establish formal impact materiality, financial materiality or double materiality under any reporting regime.",
+    "evidence": "Verify stakeholder evidence, impact assessments, financial analysis, reporting requirements and source confidence."
+  },
+  "grievance-trend-analyzer": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool counts records, identifies open or unresolved records, calculates average entered days, counts severity 4 to 5 records and ranks grievance categories by frequency.",
+    "units": "Severity is the user-entered scale. Days are calendar days as entered. Category results are counts.",
+    "limitations": "Frequency does not measure root cause, rights impact or seriousness by itself. Personal data should not be entered.",
+    "evidence": "Verify case status, category coding, severity definition, closure evidence, confidentiality controls and safeguarding requirements."
+  },
+  "executive-100-day-plan": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool structures a mandate, priorities, stakeholders, risks and available evidence into three phases: days 1 to 30, 31 to 60 and 61 to 100, followed by a day-100 review.",
+    "units": "",
+    "limitations": "The plan is a management template and does not verify organisational context, authority, resources or feasibility.",
+    "evidence": "Verify mandate, decision rights, baseline metrics, stakeholder expectations, constraints, owners and review cadence."
+  },
+  "government-meeting-brief": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "The tool structures agency context, meeting objective, verified facts, decision sought, sensitivities, commitment boundaries and follow-up into a disciplined meeting brief.",
+    "units": "",
+    "limitations": "The output does not verify legal authority, policy position or the accuracy of user-entered facts.",
+    "evidence": "Verify agency mandate, official correspondence, current law, approved organisational position, delegated authority and commitments."
+  },
+  "responsible-procurement-assessment": {
+    "version": "1.1",
+    "reviewed": "23 September 2026",
+    "logic": "Each procurement-control dimension is rated from 1 to 5. The arithmetic mean provides an overall self-assessment and the lowest-rated dimensions are surfaced as priority gaps.",
+    "units": "Scores are ordinal self-assessment ratings from 1 to 5.",
+    "limitations": "The screen is not a supplier audit, sanctions opinion, legal review or compliance certification.",
+    "evidence": "Verify supplier due diligence, conflicts controls, tender records, contract clauses, environmental and human-rights expectations, approval trails and audit evidence."
+  }
+}
