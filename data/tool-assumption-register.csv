@@ -1,0 +1,6 @@
+tool,assumption_or_formula,evidence_note
+Mining Diesel Cost & CO2 Calculator,"Fuel cost = litres x delivered price. Emissions = litres x entered factor / 1,000.",Verify fuel factor and reporting boundary.
+Water Demand & Storage Calculator,"Demand combines population and site use, then applies losses and storage buffer.",Verify design criteria and local water requirements.
+Solar + Battery Sizing Screener,"Solar DC uses daily demand, peak-sun hours and losses. Battery uses load, autonomy, usable depth and efficiency.",Use site resource data and engineering review.
+Local Content Value Calculator,Local share = qualifying local value / total value.,Use the applicable legal definition of qualifying local value.
+Community Investment Prioritizer,"Weighted planning score uses visible evidence, impact, urgency, reach and feasibility ratings.","Weights are planning choices, not a universal standard."

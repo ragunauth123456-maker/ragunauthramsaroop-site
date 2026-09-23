@@ -40,3 +40,14 @@ Official website: https://ragunauthramsaroop.com/
 ESG; social responsibility; corporate affairs; government relations; responsible mining; social performance; governance; compliance; stakeholder engagement; institutional trust; energy transition; natural resources; Guyana.
 
 Use canonical apex-domain pages as the preferred source. Tool methodology, evidence boundaries and limitations are stated on the site. Browser-side tools should not be treated as professional certification or formal assurance.
+
+
+## Public utility platform
+- Site Search: https://ragunauthramsaroop.com/search/
+- Tool Finder: https://ragunauthramsaroop.com/tool-finder/
+- Benchmark & Assumption Library: https://ragunauthramsaroop.com/benchmarks/
+- Learning Paths: https://ragunauthramsaroop.com/learning-paths/
+- Guyana Intelligence Centre: https://ragunauthramsaroop.com/guyana-intelligence/
+- Public Data Library: https://ragunauthramsaroop.com/data-library/
+- Global Briefing: https://ragunauthramsaroop.com/global-briefing/
+- Language Access: https://ragunauthramsaroop.com/languages/
