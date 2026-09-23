@@ -32,6 +32,20 @@ def local_link(src,path):
     if not target.suffix and not target.exists():target/= "index.html"
     return target
 html_pages=list(ROOT.rglob("*.html"))
+for page in html_pages:
+    text=page.read_text(encoding="utf-8",errors="replace")
+    if "/tools/assets/analytics-loader.js" not in text:
+        issues.append((str(page),"missing analytics consent loader"))
+robots_text=(ROOT/"robots.txt").read_text(encoding="utf-8",errors="replace")
+if "Sitemap: https://ragunauthramsaroop.com/tools/sitemap.xml" not in robots_text:
+    issues.append((str(ROOT/"robots.txt"),"tools sitemap not advertised"))
+try:
+    tool_map=ET.parse(TOOLS/"sitemap.xml").getroot()
+    tool_locs=[e.text for e in tool_map.iter() if e.tag.endswith("}loc") or e.tag=="loc"]
+    if len(tool_locs)<20:
+        issues.append((str(TOOLS/"sitemap.xml"),"unexpectedly small tools sitemap"))
+except Exception as ex:
+    issues.append((str(TOOLS/"sitemap.xml"),"invalid tools sitemap: "+str(ex)))
 sitemap=ET.parse(ROOT/"sitemap.xml").getroot()
 locs={e.text for e in sitemap.iter() if e.tag.endswith("}loc") or e.tag=="loc"}
 for path in html_pages:
