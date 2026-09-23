@@ -66,7 +66,7 @@ for path in html_pages:
             if "RR_GUIDE" not in s:issues.append((str(path),"missing editorial guide"))
             og=p.meta.get("og:image","")
             if not og.endswith("/"+path.parent.name+".png"):issues.append((str(path),"og:image not unique"))
-            if "tools/assets/tools.js" not in s and "tools/assets/growth-tools.js" not in s:issues.append((str(path),"missing tool runtime"))
+            if "tools/assets/tools.js" not in s and "tools/assets/growth-tools.js" not in s and "tools/assets/next-wave.js" not in s:issues.append((str(path),"missing tool runtime"))
     if "data-appdeploy-overlay" in s or "data-appdeploy-network-hook" in s:issues.append((str(path),"legacy AppDeploy overlay"))
 imgs=list((TOOLS/"assets"/"og").glob("*.png"))
 for p in imgs:
@@ -78,6 +78,30 @@ if not zipfile.is_zipfile(z):issues.append((str(z),"ZIP missing or invalid"))
 elif len(zipfile.ZipFile(z).namelist())<18:issues.append((str(z),"template pack unexpectedly incomplete"))
 for js in [TOOLS/"assets"/"tools.js",TOOLS/"assets"/"growth-tools.js"]:
     if "api-v2.appdeploy" in js.read_text(encoding="utf-8"):issues.append((str(js),"paid API dependency"))
+# AppDeploy dependency must remain fully removed.
+for needle in ("api-v2.appdeploy.ai","@appdeploy/client","ws-v2.appdeploy.ai"):
+    for f in list(ROOT.rglob("*.html"))+list((ROOT/"_next"/"static").rglob("*.js")):
+        try:
+            if needle in f.read_text(encoding="utf-8",errors="replace"):
+                issues.append((str(f),"legacy AppDeploy dependency: "+needle))
+        except Exception:
+            pass
+# Browser-side evidence assistant integrity.
+try:
+    idx=json.loads((ROOT/"assets"/"research-index.json").read_text(encoding="utf-8"))
+    if len(idx.get("documents",[]))<20:
+        issues.append((str(ROOT/"assets"/"research-index.json"),"research index unexpectedly small"))
+except Exception as ex:
+    issues.append((str(ROOT/"assets"/"research-index.json"),"invalid research index: "+str(ex)))
+if not (ROOT/"assets"/"research-assistant.js").exists():
+    issues.append((str(ROOT/"assets"/"research-assistant.js"),"local research assistant missing"))
+try:
+    topic_map=ET.parse(ROOT/"topics"/"sitemap.xml").getroot()
+    if len([e for e in topic_map.iter() if e.tag.endswith("}loc") or e.tag=="loc"])<7:
+        issues.append((str(ROOT/"topics"/"sitemap.xml"),"topic sitemap unexpectedly small"))
+except Exception as ex:
+    issues.append((str(ROOT/"topics"/"sitemap.xml"),"invalid topic sitemap: "+str(ex)))
+
 print("HTML_PAGES",len(html_pages))
 print("TOOL_INDEX_PAGES",len([p for p in html_pages if TOOLS in p.parents and p.name=="index.html"]))
 print("SHARE_IMAGES",len(imgs))
