@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-23T17:58:48+00:00",
+  "generated": "2026-09-24T12:00:14+00:00",
   "sources": [
     {
       "name": "Guyana Bureau of Statistics",
       "url": "https://statisticsguyana.gov.gy/",
       "category": "economy",
       "note": "National statistics and headline indicators.",
-      "checked_at": "2026-09-23T17:58:48+00:00",
+      "checked_at": "2026-09-24T12:00:14+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -18,43 +18,43 @@
       "url": "https://www.ggmc.gov.gy/",
       "category": "mining",
       "note": "Mining regulation, geoscience and mineral data.",
-      "checked_at": "2026-09-23T17:58:48+00:00",
+      "checked_at": "2026-09-24T12:00:14+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "6f4aa1f27aa6a831ee999a6e69a137b85dec586be69f4a3932f911659422b396",
-      "content_length": 415000
+      "content_length": 415003
     },
     {
       "name": "Guyana Energy Agency",
       "url": "https://gea.gov.gy/",
       "category": "energy",
       "note": "Energy policy, licensing, statistics and renewable-energy information.",
-      "checked_at": "2026-09-23T17:58:48+00:00",
+      "checked_at": "2026-09-24T12:00:14+00:00",
       "status": "ok",
       "changed": true,
       "http_status": 200,
-      "sha256": "21b4a442ffac715670e82f0902895ca3743c92c7d2ffb549e72972e0efc99d8f",
-      "content_length": 141547
+      "sha256": "dfd6ddc064d760219f3c70abe0c46c8e844844cfb2c2bf5e4cc1aefca00b5bf1",
+      "content_length": 141498
     },
     {
       "name": "Guyana Ministry of Finance",
       "url": "https://finance.gov.gy/",
       "category": "fiscal",
       "note": "Budget, mid-year reports and fiscal information.",
-      "checked_at": "2026-09-23T17:58:48+00:00",
-      "status": "ok",
-      "changed": false,
-      "http_status": 200,
-      "sha256": "6edab4fb0b44d085f8dbc39c6b2c3ced83f2b470fb678dc4cefc0c460ac7d768",
-      "content_length": 113514
+      "checked_at": "2026-09-24T12:00:14+00:00",
+      "status": "http-error",
+      "changed": true,
+      "http_status": 503,
+      "sha256": "f9f1c28e69af1837589ad4c11658e002fac02574afaa80ce4c011a48fe2cc014",
+      "content_length": 797
     },
     {
       "name": "World Bank Guyana indicators",
       "url": "https://api.worldbank.org/v2/country/GUY?format=json",
       "category": "international-data",
       "note": "International development indicator source.",
-      "checked_at": "2026-09-23T17:58:48+00:00",
+      "checked_at": "2026-09-24T12:00:14+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
