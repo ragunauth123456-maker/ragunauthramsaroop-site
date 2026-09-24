@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlparse, unquote
-import json, re, struct, sys, xml.etree.ElementTree as ET, zipfile
+import json, re, struct, sys, xml.etree.ElementTree as ET, zipfile, os
 ROOT=Path(__file__).resolve().parents[1];TOOLS=ROOT/"tools"
 issues=[]
 class AuditParser(HTMLParser):
@@ -31,7 +31,15 @@ def local_link(src,path):
     if target.is_dir():target/= "index.html"
     if not target.suffix and not target.exists():target/= "index.html"
     return target
-html_pages=list(ROOT.rglob("*.html"))
+SKIP_DIRS={"node_modules","skills","agent"}
+def keep_dir(name): return name not in SKIP_DIRS and (not name.startswith(".") or name==".well-known")
+def site_files(suffix):
+    out=[]
+    for base,dirs,files in os.walk(ROOT):
+        dirs[:]=[d for d in dirs if keep_dir(d)]
+        out.extend(Path(base)/f for f in files if f.endswith(suffix))
+    return out
+html_pages=site_files(".html")
 for page in html_pages:
     text=page.read_text(encoding="utf-8",errors="replace")
     is_redirect=('http-equiv="refresh"' in text.lower() and 'This page has moved' in text)
@@ -81,7 +89,7 @@ for js in [TOOLS/"assets"/"tools.js",TOOLS/"assets"/"growth-tools.js"]:
     if "api-v2.appdeploy" in js.read_text(encoding="utf-8"):issues.append((str(js),"paid API dependency"))
 # AppDeploy dependency must remain fully removed.
 for needle in ("api-v2.appdeploy.ai","@appdeploy/client","ws-v2.appdeploy.ai"):
-    for f in list(ROOT.rglob("*.html"))+list((ROOT/"_next"/"static").rglob("*.js")):
+    for f in html_pages+list((ROOT/"_next"/"static").rglob("*.js")):
         try:
             if needle in f.read_text(encoding="utf-8",errors="replace"):
                 issues.append((str(f),"legacy AppDeploy dependency: "+needle))

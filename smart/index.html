@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RR Smart Guide | Ragunauth Ramsaroop</title>
+<meta name="description" content="A browser-based intelligent guide for searching, understanding and navigating Ragunauth Ramsaroop's public tools, research and evidence.">
+<meta name="robots" content="index,follow,max-image-preview:large"><meta name="theme-color" content="#08271d">
+<link rel="canonical" href="https://ragunauthramsaroop.com/smart/">
+<link rel="stylesheet" href="/tools/assets/tools.css"><link rel="stylesheet" href="/assets/platform.css"><link rel="manifest" href="/site.webmanifest">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"RR Smart Guide","applicationCategory":"ResearchApplication","operatingSystem":"Any modern browser","url":"https://ragunauthramsaroop.com/smart/","description":"A browser-based intelligent guide for searching and navigating RR public tools, research and evidence.","isAccessibleForFree":true}</script>
+<script defer src="/tools/assets/analytics-loader.js"></script><script defer src="/tools/assets/engagement-tracking.js"></script><script defer src="/assets/accessibility.js"></script><script defer src="/assets/platform.js"></script><script defer src="/assets/site-brain.js"></script><script defer src="/assets/smart-guide.js"></script>
+</head><body>
+<header class="topbar"><div class="wrap"><a class="brand" href="/">Ragunauth Ramsaroop<small>Public-value intelligence</small></a><nav class="nav"><a href="/tools/">Tools</a><a href="/resources/">Resources</a><a href="/smart/">Smart Guide</a><a href="/methodology/">Methodology</a><a class="cta" href="/start/">Start</a></nav></div></header>
+<section class="hero"><div class="wrap"><div class="kicker">Local intelligence layer</div><h1>RR Smart Guide</h1><p>Search the public site, identify the likely decision context, receive source-linked recommendations, and optionally run semantic or local AI modes in your browser.</p><div class="badges"><span class="badge">No API key required</span><span class="badge">Local learning</span><span class="badge">Source-linked</span><span class="badge">Optional on-device AI</span></div></div></section>
+<main><div class="wrap">
+<section class="panel"><h2>Ask the site</h2><p>Use plain language. Examples: “How do I assess mining carbon?”, “What do I have on Guyana investment?”, or “Help me prepare for a government meeting.”</p>
+<div class="tool-form"><div class="field full"><label for="rr-smart-query">Your question or topic</label><input id="rr-smart-query" placeholder="What do you want to find, compare or prepare?"></div></div>
+<div class="actions"><button class="btn" id="rr-smart-run" type="button">Smart search</button><button class="btn alt" id="rr-semantic-run" type="button">Semantic rerank</button></div>
+<p class="muted" id="rr-smart-intent">Intent: waiting for your query</p><p class="muted" id="rr-smart-status"></p><p class="muted" id="rr-semantic-status">Semantic mode loads a small embedding model only when you select it.</p>
+<div class="rr-smart-grid" id="rr-smart-results"></div></section>
+
+<section class="panel"><div class="rr-smart-kicker">Optional local LLM</div><h2>Source-bounded local answer</h2><p>This mode uses WebGPU and WebLLM to run a small language model inside your browser. The first run downloads model files. The answer is grounded only in site sources selected by the Smart Guide.</p>
+<div class="actions"><button class="btn alt" id="rr-local-ai-run" type="button">Run local AI answer</button></div><p class="muted" id="rr-local-ai-status">Nothing downloads until you select the button.</p><div class="result"><pre id="rr-local-ai-output" class="rr-ai-output"></pre><div id="rr-local-sources"></div></div></section>
+
+<section class="panel"><h2>How the smart layer works</h2><div class="category-workflow"><div class="workflow-step"><strong>1. Understand intent</strong><p>The worker maps your query and current page to themes such as mining, energy, water, government, ESG, community, executive leadership and research.</p></div><div class="workflow-step"><strong>2. Retrieve evidence</strong><p>MiniSearch ranks the public index locally. A Web Worker keeps heavier processing off the page thread.</p></div><div class="workflow-step"><strong>3. Adapt locally</strong><p>IndexedDB stores a short history on this device so the site can recommend a more relevant next resource. No page history is sent to the server by this feature.</p></div></div></section>
+
+<section class="panel"><h2>Recent local learning</h2><p id="rr-smart-history">Loading local history…</p><div class="actions"><button class="btn alt" id="rr-smart-reset" type="button">Reset local learning</button></div></section>
+
+<section class="panel"><h2>Open-source components reviewed</h2><p>The smart layer uses locally vendored, audited browser libraries from GitHub: MiniSearch for full-text retrieval, Comlink for Web Worker communication, and idb-keyval for local IndexedDB memory. Optional AI modes load Hugging Face Transformers.js or MLC WebLLM only after a user selects them.</p><p><a href="/methodology/">Review methodology →</a></p></section>
+</div></main>
+<footer class="footer"><div class="wrap footer-grid"><div><strong>RR Public Intelligence Platform.</strong><p>Evidence-bounded tools, research and decision support.</p></div><div><a href="/smart/">Smart Guide</a><br><a href="/search/">Search</a><br><a href="/tools/">Tools</a></div><div><a href="/methodology/">Methodology</a><br><a href="/evidence/">Evidence</a><br><a href="/data-library/">Data</a></div></div></footer>
+<nav aria-label="Public resource platform" class="rr-platform-nav"><a href="/start/">Start</a><a href="/smart/">Smart Guide</a><a href="/search/">Search</a><a href="/tools/">Tools</a><a href="/resources/">Resources</a><a href="/methodology/">Methodology</a></nav>
+</body></html>

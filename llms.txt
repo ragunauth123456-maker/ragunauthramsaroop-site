@@ -64,3 +64,5 @@ Use canonical apex-domain pages as the preferred source. Tool methodology, evide
 - Research Provenance: https://ragunauthramsaroop.com/provenance/
 - Public API: https://ragunauthramsaroop.com/api/
 - Field Mode: https://ragunauthramsaroop.com/field-mode/
+
+- RR Smart Guide: https://ragunauthramsaroop.com/smart/

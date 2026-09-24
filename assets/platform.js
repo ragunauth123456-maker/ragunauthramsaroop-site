@@ -24,5 +24,7 @@ async function related(){
  try{const r=await fetch("/assets/search-index.json",{cache:"force-cache"}),j=await r.json(),title=(document.querySelector("h1")?.textContent||document.title).toLowerCase(),terms=title.split(/\W+/).filter(x=>x.length>4),rows=j.documents.filter(x=>x.url!==location.pathname).map(x=>({x,s:terms.reduce((n,t)=>n+(String(x.title+" "+x.description).toLowerCase().includes(t)?1:0),0)})).filter(z=>z.s>0).sort((a,b)=>b.s-a.s).slice(0,3);if(!rows.length)return;const main=document.querySelector("main .wrap")||document.querySelector("main");if(!main)return;const s=document.createElement("section");s.className="panel rr-related";s.innerHTML='<h2>Related resources</h2><div class="related-grid">'+rows.map(z=>'<a href="'+esc(z.x.url)+'"><strong>'+esc(z.x.title)+'</strong><span>'+esc(z.x.type)+'</span></a>').join("")+'</div>';main.appendChild(s)}catch{}
 }
 related();
+const startBrain=()=>import("/assets/site-brain.js").catch(()=>{});
+if("requestIdleCallback" in window)requestIdleCallback(startBrain,{timeout:3200});else setTimeout(startBrain,1800);
 window.RRSaveCurrentPage=savePage;
 })();

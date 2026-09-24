@@ -1,0 +1,20 @@
+{
+  "name": "rr-public-intelligence-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "search:index": "python scripts/build_pagefind_public.py && pagefind --site .pagefind-public --output-path pagefind",
+    "smart:index": "node scripts/build_semantic_index.mjs",
+    "smart:bundle": "esbuild assets/smart-search-source.js --bundle --format=esm --minify --outfile=assets/smart-search.js"
+  },
+  "devDependencies": {
+    "@huggingface/transformers": "4.3.0",
+    "@orama/orama": "3.1.18",
+    "comlink": "^4.4.2",
+    "esbuild": "0.28.2",
+    "idb-keyval": "^6.3.0",
+    "minisearch": "^7.2.0",
+    "pagefind": "1.5.2"
+  }
+}

@@ -1,6 +1,6 @@
 from pathlib import Path
 from html.parser import HTMLParser
-import re,sys
+import re,sys,os
 ROOT=Path(__file__).resolve().parents[1]
 class P(HTMLParser):
     def __init__(self):
@@ -16,7 +16,12 @@ class P(HTMLParser):
         if tag=="button":self.buttons.append(a)
         if tag=="a":self.links.append(a)
 issues=[];warnings=[]
-pages=list(ROOT.rglob("*.html"))
+SKIP_DIRS={"node_modules","skills","agent"}
+def keep_dir(name): return name not in SKIP_DIRS and (not name.startswith(".") or name==".well-known")
+pages=[]
+for base,dirs,files in os.walk(ROOT):
+    dirs[:]=[d for d in dirs if keep_dir(d)]
+    pages.extend(Path(base)/f for f in files if f.endswith(".html"))
 for f in pages:
     s=f.read_text(encoding="utf-8",errors="replace");p=P()
     try:p.feed(s)
