@@ -37,6 +37,6 @@ for(let i=0;i<docs.length;i+=batchSize){
   }
   console.log("embedded",Math.min(i+batch.length,docs.length),"/",docs.length);
 }
-const payload={version:1,generated:new Date().toISOString(),model,dimensions:384,quantization:"int8-per-vector-scale",documents:output};
+const payload={version:1,generated:String(input.updated||"source-index"),model,dimensions:384,quantization:"int8-per-vector-scale",documents:output};
 await fs.writeFile(path.join(root,"assets","semantic-index.json"),JSON.stringify(payload));
 console.log("wrote assets/semantic-index.json",output.length,"documents");
