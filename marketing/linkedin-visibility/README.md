@@ -1,0 +1,24 @@
+# Executive visibility workers
+
+Target: qualified visibility with CEOs, search firms, HR leaders, mining, energy and infrastructure decision-makers.
+
+Live page: https://ragunauthramsaroop.com/executive-search/
+
+Four working modules inside scripts/linkedin_visibility_worker.py:
+
+1. SEO auditor checks the public landing page, sitemap, profile links, structured data, social image and privacy-safe analytics loader.
+2. Editorial worker stages six differentiated professional posts for the official LinkedIn scheduler. An initial draft is prepared for 25 September, 08:30 Guyana time. A draft is not a scheduled post.
+3. Professional introduction worker generates separate, individualized CEO and executive-recruiter templates. It never scrapes private profiles, buys engagement, sends mass invitations or sends unsolicited bulk messages.
+4. Measurement worker processes an optional, user-supplied referral export and reports verified records without inventing traffic, impressions or conversions.
+
+Run: python scripts/linkedin_visibility_worker.py --output PATH
+
+Operations: the K1 daily audit refreshes local next-post and visibility reports while the device runs. No account token is stored in GitHub. No automated LinkedIn posting or messaging without an authorized integration.
+
+Open-source deployment path: gitroomhq/postiz-agent was downloaded to K1 for inspection, and the Postiz CLI is installed. Its current authentication check says not authenticated. The official LinkedIn native scheduler is the immediate posting route.
+
+Source of professional claims: reviewed public executive materials and the user's confirmed role. The figures in employer projects must remain clearly employer-reported and not attributed to personal production. Do not infer an endorsement, board seat, election preference or job authorization.
+
+Measures: search visibility in a working Search Console account, LinkedIn analytics exports, referral UTM campaigns, inbound conversations and qualified recruiting calls. Search Console's current plugin subscription has ended, so this campaign does not report live GSC numbers.
+
+Output files are local drafts and reports, not evidence of platform publication.
