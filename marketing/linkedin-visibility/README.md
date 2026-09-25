@@ -13,7 +13,7 @@ Four working modules inside scripts/linkedin_visibility_worker.py:
 
 Run: python scripts/linkedin_visibility_worker.py --output PATH
 
-Operations: the K1 daily audit refreshes local next-post and visibility reports while the device runs. No account token is stored in GitHub. No automated LinkedIn posting or messaging without an authorized integration.
+Operations: the K1 daily task runs scripts/run_executive_visibility.py. The coordinator fetches the latest GitHub main branch using fast-forward only, runs the SEO/editorial/measurement worker, checks Postiz authorization and submits changed site URLs through IndexNow only after GitHub Pages reports the current commit built. Local reports are kept outside GitHub. No account tokens are committed. No automated LinkedIn posting or messaging without an authorized integration.
 
 Open-source deployment path: gitroomhq/postiz-agent was downloaded to K1 for inspection, and the Postiz CLI is installed. Its current authentication check says not authenticated. The official LinkedIn native scheduler is the immediate posting route.
 
