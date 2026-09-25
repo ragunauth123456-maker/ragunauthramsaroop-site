@@ -2,7 +2,7 @@
 
 Target: qualified visibility with CEOs, search firms, HR leaders, mining, energy and infrastructure decision-makers.
 
-Live page: https://ragunauthramsaroop.com/executive-search/
+Live page: https://ragunauth123456-maker.github.io/executive-search/
 
 Four working modules inside scripts/linkedin_visibility_worker.py:
 
@@ -26,3 +26,5 @@ Output files are local drafts and reports, not evidence of platform publication.
 ## 24 September deployment
 
 The first LinkedIn executive introduction was scheduled for 25 September at 08:30 Guyana time. The LinkedIn interface confirmed scheduling. GitHub repository descriptions and discovery topics for the professional website and publications were updated. An original executive due diligence briefing was added at /executive-perspectives/ with an internal link from the executive search landing page, a sitemap entry and an RSS entry. These steps create searchable material and a verified publication queue, not guaranteed impressions or recruiter responses.
+
+Apex DNS alert: the custom domain resolves to 18.204.152.241 and yields an SSL protocol error. Until registrar A records are repaired, use the tested GitHub Pages fallback. The first native LinkedIn scheduled post was edited to use the fallback and confirmed by LinkedIn.

@@ -3,6 +3,7 @@ from pathlib import Path
 from datetime import datetime, timezone, timedelta
 import argparse, csv, json, re, struct
 from urllib.parse import urlparse
+from urllib.request import Request,urlopen
 ROOT=Path(__file__).resolve().parent.parent
 CAMPAIGN=ROOT/'marketing'/'linkedin-visibility'/'campaign.json'
 LOCAL_TIMEZONE=timezone(timedelta(hours=-4))
@@ -24,6 +25,13 @@ def check_site():
     checks['consent_loader_ok']='/tools/assets/analytics-loader.js' in html
     for k,v in checks.items():
         if not v:problems.append(k)
+    try:
+        req=Request('https://ragunauth123456-maker.github.io/executive-search/',headers={'User-Agent':'RandyVisibilityAudit/1.0'})
+        with urlopen(req,timeout=12) as response:
+            checks['verified_fallback_online']=response.status==200
+    except Exception:
+        checks['verified_fallback_online']=False
+    if not checks['verified_fallback_online']:problems.append('verified_fallback_offline')
     return checks,problems
 def editorial_queue(now):
     conf=json.loads(CAMPAIGN.read_text(encoding='utf-8'))
