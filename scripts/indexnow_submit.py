@@ -59,6 +59,11 @@ def main():
     if args.changed_only and old==head:
         print("INDEXNOW no new commit");return 0
     urls=map_changed(old,head) if args.changed_only and old else sitemap_urls()
+    if not urls:
+        STATE.parent.mkdir(parents=True,exist_ok=True)
+        STATE.write_text(head,encoding='utf-8')
+        print('INDEXNOW no public URLs changed')
+        return 0
     code,body=submit(urls,keyp)
     print("INDEXNOW",code,"URLS",len(urls),body[:300])
     if code in (200,202):
