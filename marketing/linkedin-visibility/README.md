@@ -2,7 +2,7 @@
 
 Target: qualified visibility with CEOs, search firms, HR leaders, mining, energy and infrastructure decision-makers.
 
-Live page: https://ragunauthramsaroop.com/executive-search/
+Live page: https://ragunauth123456-maker.github.io/executive-search/
 
 Four working modules inside scripts/linkedin_visibility_worker.py:
 
@@ -22,3 +22,5 @@ Source of professional claims: reviewed public executive materials and the user'
 Measures: search visibility in a working Search Console account, LinkedIn analytics exports, referral UTM campaigns, inbound conversations and qualified recruiting calls. Search Console's current plugin subscription has ended, so this campaign does not report live GSC numbers.
 
 Output files are local drafts and reports, not evidence of platform publication.
+
+Apex DNS alert: ragunauthramsaroop.com currently resolves to 18.204.152.241 and yields SSL protocol error. Until registrar A records are repaired, use the verified GitHub Pages fallback above. LinkedIn first scheduled post was updated to the fallback URL.
