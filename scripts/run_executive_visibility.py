@@ -39,8 +39,24 @@ def main():
     if postiz:
         auth=run([postiz,'auth:status'],timeout=15)
         auth_text=((auth.get('output') or '')+' '+(auth.get('error') or '')).lower()
-        report['postiz_authentication']='not_authenticated' if ('not authenticated' in auth_text or 'no authentication' in auth_text or auth['exit']!=0) else ('connected' if 'authenticated' in auth_text else 'unverified')
-    else:report['postiz_authentication']='not_installed'
+        integrations=run([postiz,'integrations:list'],timeout=20)
+        response=((integrations.get('output') or '')+' '+(integrations.get('error') or '')).lower()
+        if 'no subscription found' in response:
+            report['postiz_authentication']='device_authorized'
+            report['postiz_publishing']='blocked_hosted_subscription'
+        elif integrations['exit']==0 and 'no authentication' not in response and 'error' not in response:
+            report['postiz_authentication']='connected'
+            report['postiz_publishing']='integration_check_required'
+        elif 'not authenticated' in auth_text or 'no authentication' in response or 'invalid' in auth_text:
+            report['postiz_authentication']='not_authenticated_or_invalid'
+            report['postiz_publishing']='unavailable'
+        else:
+            report['postiz_authentication']='unverified'
+            report['postiz_publishing']='unavailable'
+    else:
+        report['postiz_authentication']='not_installed'
+        report['postiz_publishing']='unavailable'
+    report['free_native_linkedin_scheduler']='available_separately'
     if not x.no_indexnow:
         pages=run(['gh','api','repos/ragunauth123456-maker/ragunauthramsaroop-site/pages/builds/latest','--jq','{status,commit}'],timeout=20)
         try:build=json.loads(pages.get('output','')) if pages['exit']==0 else {}
