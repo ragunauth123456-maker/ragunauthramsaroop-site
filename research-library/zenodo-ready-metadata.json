@@ -1,0 +1,117 @@
+{
+  "status": "metadata_ready_not_deposited",
+  "license": "AUTHOR_SELECTION_REQUIRED",
+  "doi_policy": "Do not invent DOIs or request a duplicate DOI if the exact version has one",
+  "creator": {
+    "name": "Ramsaroop, Ragunauth",
+    "affiliation": "Independent researcher"
+  },
+  "deposits": [
+    {
+      "title": "Guyana 2040: From Resource Wealth to Strategic Statecraft",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "An independent framework for translating Guyana's resource wealth into enduring institutional, productive and national capabilities.",
+      "keywords": [
+        "Guyana",
+        "resource governance",
+        "institutional capacity"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "guyana-2040.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/guyana-2040.pdf",
+      "doi": null
+    },
+    {
+      "title": "Guyana Power Demand 2030",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "An evidence-led assessment that separates measured demand from development scenarios and evaluates generation and grid requirements through 2030.",
+      "keywords": [
+        "Guyana",
+        "electricity demand",
+        "power systems"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "guyana-power-demand-2030.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/guyana-power-demand-2030.pdf",
+      "doi": null
+    },
+    {
+      "title": "Critical Minerals Are the New Energy Security",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "A research monograph examining mining, processing concentration, trade, investment, circular supply and governance across strategic mineral value chains.",
+      "keywords": [
+        "critical minerals",
+        "supply chains",
+        "energy security"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "critical-minerals-energy-security.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/critical-minerals-energy-security.pdf",
+      "doi": null
+    },
+    {
+      "title": "Guyana Economy 2030",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "An independent analysis of the choices, assumptions and risks involved in converting exceptional resource revenue into durable national prosperity.",
+      "keywords": [
+        "Guyana",
+        "macroeconomics",
+        "public finance"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "guyana-economy-2030.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/guyana-economy-2030.pdf",
+      "doi": null
+    },
+    {
+      "title": "The New Geography of Globalization",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "A comparative study of trade, industrial policy, investment, technology and supply-chain restructuring in a period of geopolitical fragmentation.",
+      "keywords": [
+        "globalization",
+        "industrial policy",
+        "trade"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "new-geography-globalization.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/new-geography-globalization.pdf",
+      "doi": null
+    },
+    {
+      "title": "Water Security as Economic Security",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "A systems analysis of water risk across agriculture, energy, industry, AI infrastructure, finance, trade and national resilience to 2040.",
+      "keywords": [
+        "water security",
+        "economic resilience",
+        "infrastructure"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "water-security-economic-security.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/water-security-economic-security.pdf",
+      "doi": null
+    },
+    {
+      "title": "Guyana's Low Carbon Development Strategy 2030",
+      "resource_type": "publication / report",
+      "creator": "Ramsaroop, Ragunauth",
+      "description": "An independent evidence review of forest conservation, carbon finance, national development and governance accountability under Guyana's Low Carbon Development Strategy 2030.",
+      "keywords": [
+        "Guyana",
+        "LCDS 2030",
+        "forest finance",
+        "climate accountability"
+      ],
+      "publication_date": "2026-09-25",
+      "filename": "guyana-lcds-2030.pdf",
+      "source_url": "https://ragunauthramsaroop.com/research-papers/guyana-lcds-2030.pdf",
+      "doi": null
+    }
+  ]
+}
