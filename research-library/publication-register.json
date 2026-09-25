@@ -1,0 +1,166 @@
+{
+  "author": "Ragunauth Ramsaroop",
+  "website_release": "2026-09-25",
+  "rights": "Copyright Ragunauth Ramsaroop. Licence selection required for external repository deposits.",
+  "status": "self-hosted, pending external deposition",
+  "papers": [
+    {
+      "slug": "guyana-2040",
+      "source": "02_Guyana_2040_Strategic_Statecraft.pdf",
+      "title": "Guyana 2040: From Resource Wealth to Strategic Statecraft",
+      "date": "2026-09-12",
+      "category": "National strategy",
+      "old": "guyana-2040",
+      "keywords": [
+        "Guyana",
+        "resource governance",
+        "institutional capacity"
+      ],
+      "abstract": "An independent framework for translating Guyana's resource wealth into enduring institutional, productive and national capabilities.",
+      "pages": 25,
+      "bytes": 772942,
+      "sha256": "85cebfe4fb5b3d7a60676f25e1b7ddb2b6183228f96d5d02aeca10e0f514adec",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/guyana-2040.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/guyana-2040/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "guyana-power-demand-2030",
+      "source": "03_Guyana_Power_Demand_2030.pdf",
+      "title": "Guyana Power Demand 2030",
+      "date": "2026-09-15",
+      "category": "Energy and infrastructure",
+      "old": "guyana-power-demand-2030",
+      "keywords": [
+        "Guyana",
+        "electricity demand",
+        "power systems"
+      ],
+      "abstract": "An evidence-led assessment that separates measured demand from development scenarios and evaluates generation and grid requirements through 2030.",
+      "pages": 22,
+      "bytes": 5151536,
+      "sha256": "27f864c0c5118d209b3b4ae9e04850d7ae3e409c957a8bf926e64ad67d7806ad",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/guyana-power-demand-2030.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "critical-minerals-energy-security",
+      "source": "Critical_Minerals_Are_the_New_Energy_Security.pdf",
+      "title": "Critical Minerals Are the New Energy Security",
+      "date": "2026-09-17",
+      "category": "Mining and energy security",
+      "old": "critical-minerals-energy-security",
+      "keywords": [
+        "critical minerals",
+        "supply chains",
+        "energy security"
+      ],
+      "abstract": "A research monograph examining mining, processing concentration, trade, investment, circular supply and governance across strategic mineral value chains.",
+      "pages": 173,
+      "bytes": 1192808,
+      "sha256": "f7aeecd8f3ca6f8eb45c57b0ca0411bf9ba62740a83426592a50bb3217e426fb",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/critical-minerals-energy-security.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "guyana-economy-2030",
+      "source": "Guyana_Economy_2030.pdf",
+      "title": "Guyana Economy 2030",
+      "date": "2026-09-19",
+      "category": "Economic development",
+      "old": "guyana-economy-2030",
+      "keywords": [
+        "Guyana",
+        "macroeconomics",
+        "public finance"
+      ],
+      "abstract": "An independent analysis of the choices, assumptions and risks involved in converting exceptional resource revenue into durable national prosperity.",
+      "pages": 101,
+      "bytes": 1179788,
+      "sha256": "fa743d49ccbb0a4adc658f1d9be98f5751a3cca3149fba0782603e8a9cd3e649",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/guyana-economy-2030.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "new-geography-globalization",
+      "source": "The_New_Geography_of_Globalization.pdf",
+      "title": "The New Geography of Globalization",
+      "date": "2026-09-19",
+      "category": "Global trade and economic security",
+      "old": "new-geography-globalization",
+      "keywords": [
+        "globalization",
+        "industrial policy",
+        "trade"
+      ],
+      "abstract": "A comparative study of trade, industrial policy, investment, technology and supply-chain restructuring in a period of geopolitical fragmentation.",
+      "pages": 188,
+      "bytes": 1720228,
+      "sha256": "ac50cca5ee7405a0caca8980c92512692a71fb35ae0a133d9a01ab123c281f76",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/new-geography-globalization.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "water-security-economic-security",
+      "source": "Water_Security_as_Economic_Security.pdf",
+      "title": "Water Security as Economic Security",
+      "date": "2026-09-20",
+      "category": "Infrastructure and resilience",
+      "old": "water-security-economic-security",
+      "keywords": [
+        "water security",
+        "economic resilience",
+        "infrastructure"
+      ],
+      "abstract": "A systems analysis of water risk across agriculture, energy, industry, AI infrastructure, finance, trade and national resilience to 2040.",
+      "pages": 136,
+      "bytes": 1966258,
+      "sha256": "a1786f81a321d18b01c8c55c50996e8db7ae40b9efa2a00e5e3d1c6c0b5a8ea3",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/water-security-economic-security.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    },
+    {
+      "slug": "guyana-lcds-2030",
+      "source": "Guyana_LCDS_2030_Comprehensive_White_Paper.pdf",
+      "title": "Guyana's Low Carbon Development Strategy 2030",
+      "date": "2026-09-24",
+      "category": "Climate finance and forest governance",
+      "old": null,
+      "keywords": [
+        "Guyana",
+        "LCDS 2030",
+        "forest finance",
+        "climate accountability"
+      ],
+      "abstract": "An independent evidence review of forest conservation, carbon finance, national development and governance accountability under Guyana's Low Carbon Development Strategy 2030.",
+      "pages": 47,
+      "bytes": 1027901,
+      "sha256": "bab2dc306911044c7b7239c2ea961f2a15bef62c37a958f5d8ec05fe25a234d1",
+      "pdf_url": "https://ragunauthramsaroop.com/research-papers/guyana-lcds-2030.pdf",
+      "page_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/",
+      "doi": null,
+      "zenodo_status": "not_submitted",
+      "ssrn_status": "not_submitted"
+    }
+  ],
+  "excluded_sources": [
+    "09_Water_Security_as_Economic_Security.pdf (zero bytes; never publish)"
+  ]
+}
