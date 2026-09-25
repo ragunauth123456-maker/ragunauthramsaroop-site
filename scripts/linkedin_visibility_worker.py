@@ -29,13 +29,13 @@ def check_site():
         req=Request('https://ragunauth123456-maker.github.io/executive-search/',headers={'User-Agent':'RandyVisibilityAudit/1.0'})
         with urlopen(req,timeout=12) as response:
             checks['verified_fallback_online']=response.status==200
-    except Exception as error:
+    except Exception:
         checks['verified_fallback_online']=False
     if not checks['verified_fallback_online']:problems.append('verified_fallback_offline')
     return checks,problems
 def editorial_queue(now):
     conf=json.loads(CAMPAIGN.read_text(encoding='utf-8'))
-    pending=[p for p in conf['posts'] if p['status'] not in ('published','scheduled_native_linkedin')]
+    pending=[p for p in conf['posts'] if p['status'] in ('draft','ready_for_native_scheduling')]
     pending.sort(key=lambda p:p['date'])
     current=next((p for p in pending if p['date']>=now.isoformat()),pending[0] if pending else None)
     return conf,pending,current
@@ -58,7 +58,8 @@ def run(output_dir):
     traffic=measurable_traffic(output_dir/'utm_export.csv')
     report={'generated_at':now.isoformat(),'profile':campaign['profile'],
         'landing_page':campaign['landing_page'],'checks':checks,'issues':issues,
-        'drafts_pending':len(pending),'next_post_date':next_post['date'] if next_post else None,
+        'drafts_pending':len(pending),
+        'scheduled_verified':sum(p['status']=='scheduled_native_verified' for p in campaign['posts']),'next_post_date':next_post['date'] if next_post else None,
         'next_post_topic':next_post['topic'] if next_post else None,
         'next_post_status':next_post['status'] if next_post else None,
         'measurement':traffic,

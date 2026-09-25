@@ -7,7 +7,7 @@ Live page: https://ragunauth123456-maker.github.io/executive-search/
 Four working modules inside scripts/linkedin_visibility_worker.py:
 
 1. SEO auditor checks the public landing page, sitemap, profile links, structured data, social image and privacy-safe analytics loader.
-2. Editorial worker stages six differentiated professional posts for the official LinkedIn scheduler. An initial draft is prepared for 25 September, 08:30 Guyana time. A draft is not a scheduled post.
+2. Editorial worker stages six differentiated professional posts for the official LinkedIn scheduler. The first professional post was scheduled in the authenticated LinkedIn native composer for 25 September, 08:30 Guyana time. Other posts remain drafts. No other post should be described as scheduled before platform verification.
 3. Professional introduction worker generates separate, individualized CEO and executive-recruiter templates. It never scrapes private profiles, buys engagement, sends mass invitations or sends unsolicited bulk messages.
 4. Measurement worker processes an optional, user-supplied referral export and reports verified records without inventing traffic, impressions or conversions.
 
@@ -23,4 +23,8 @@ Measures: search visibility in a working Search Console account, LinkedIn analyt
 
 Output files are local drafts and reports, not evidence of platform publication.
 
-Apex DNS alert: ragunauthramsaroop.com currently resolves to 18.204.152.241 and yields SSL protocol error. Until registrar A records are repaired, use the verified GitHub Pages fallback above. LinkedIn first scheduled post was updated to the fallback URL.
+## 24 September deployment
+
+The first LinkedIn executive introduction was scheduled for 25 September at 08:30 Guyana time. The LinkedIn interface confirmed scheduling. GitHub repository descriptions and discovery topics for the professional website and publications were updated. An original executive due diligence briefing was added at /executive-perspectives/ with an internal link from the executive search landing page, a sitemap entry and an RSS entry. These steps create searchable material and a verified publication queue, not guaranteed impressions or recruiter responses.
+
+Apex DNS alert: the custom domain resolves to 18.204.152.241 and yields an SSL protocol error. Until registrar A records are repaired, use the tested GitHub Pages fallback. The first native LinkedIn scheduled post was edited to use the fallback and confirmed by LinkedIn.
