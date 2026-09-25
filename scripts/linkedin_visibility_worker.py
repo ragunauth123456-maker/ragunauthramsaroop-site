@@ -27,7 +27,7 @@ def check_site():
     return checks,problems
 def editorial_queue(now):
     conf=json.loads(CAMPAIGN.read_text(encoding='utf-8'))
-    pending=[p for p in conf['posts'] if p['status']!='published']
+    pending=[p for p in conf['posts'] if p['status'] in ('draft','ready_for_native_scheduling')]
     pending.sort(key=lambda p:p['date'])
     current=next((p for p in pending if p['date']>=now.isoformat()),pending[0] if pending else None)
     return conf,pending,current
@@ -50,7 +50,8 @@ def run(output_dir):
     traffic=measurable_traffic(output_dir/'utm_export.csv')
     report={'generated_at':now.isoformat(),'profile':campaign['profile'],
         'landing_page':campaign['landing_page'],'checks':checks,'issues':issues,
-        'drafts_pending':len(pending),'next_post_date':next_post['date'] if next_post else None,
+        'drafts_pending':len(pending),
+        'scheduled_verified':sum(p['status']=='scheduled_native_verified' for p in campaign['posts']),'next_post_date':next_post['date'] if next_post else None,
         'next_post_topic':next_post['topic'] if next_post else None,
         'next_post_status':next_post['status'] if next_post else None,
         'measurement':traffic,
