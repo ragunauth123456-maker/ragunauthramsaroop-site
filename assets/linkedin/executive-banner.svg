@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+<defs>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#061322"/><stop offset=".52" stop-color="#0D2540"/><stop offset="1" stop-color="#06172A"/></linearGradient>
+<linearGradient id="horizon" x1="0" x2="1"><stop stop-color="#224963" stop-opacity=".9"/><stop offset="1" stop-color="#071F35" stop-opacity="0"/></linearGradient>
+<pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0L0 0 0 38" fill="none" stroke="#77C6D2" stroke-opacity=".07"/></pattern>
+<clipPath id="left"><path d="M0 0H492V396H0Z"/></clipPath>
+</defs>
+<rect width="1584" height="396" fill="url(#bg)"/>
+<rect width="1584" height="396" fill="url(#grid)"/>
+<g clip-path="url(#left)">
+<path d="M-40 290 C70 178 125 207 210 151 C300 95 377 151 525 49" stroke="#49CED8" stroke-opacity=".20" stroke-width="1.5" fill="none"/>
+<path d="M-45 314 C70 205 128 243 226 179 C320 117 384 171 528 81" stroke="#49CED8" stroke-opacity=".17" stroke-width="1.5" fill="none"/>
+<path d="M-45 339 C69 231 128 267 240 207 C329 156 411 188 528 113" stroke="#49CED8" stroke-opacity=".13" stroke-width="1.5" fill="none"/>
+<path d="M0 315L105 245 168 268 240 195 312 228 419 139 492 174V396H0Z" fill="url(#horizon)"/>
+<g stroke="#55C5D2" stroke-opacity=".35" stroke-width="1.3" fill="none">
+<path d="M-11 394L279 254 493 285M-16 368L264 236 493 267M2 343L247 219 494 248"/>
+<path d="M33 389L22 344M104 385L92 316M179 385L165 285M253 387L240 255M330 388L318 260M410 388L399 277"/>
+</g>
+<circle cx="247" cy="162" r="109" fill="none" stroke="#58D3DE" stroke-opacity=".14"/>
+<circle cx="247" cy="162" r="75" fill="none" stroke="#DAB980" stroke-opacity=".24"/>
+<circle cx="247" cy="162" r="31" fill="none" stroke="#58D3DE" stroke-opacity=".35" stroke-width="2"/>
+<path d="M247 115v94M200 162h94" stroke="#5CC9D6" stroke-opacity=".22"/>
+</g>
+<path d="M0 0H1584" stroke="#7DE2E4" stroke-opacity=".25" stroke-width="3"/>
+<path d="M501 77V324" stroke="#D7B67A" stroke-width="3"/>
+<path d="M543 79H704" stroke="#66DEE4" stroke-width="3"/>
+<text x="542" y="134" fill="#F5F8FB" font-family="Inter,DejaVu Sans,sans-serif" font-size="45" font-weight="700" letter-spacing="1.2">RAGUNAUTH RAMSAROOP</text>
+<text x="544" y="175" fill="#DAB980" font-family="Inter,DejaVu Sans,sans-serif" font-size="16.5" font-weight="700" letter-spacing="3.5">DIRECTOR-LEVEL LEADERSHIP</text>
+<text x="543" y="229" fill="#F1F5F8" font-family="Inter,DejaVu Sans,sans-serif" font-size="24" font-weight="600">ESG  /  CORPORATE AFFAIRS  /  GOVERNMENT RELATIONS</text>
+<text x="543" y="274" fill="#AFC8D7" font-family="Inter,DejaVu Sans,sans-serif" font-size="18" font-weight="400">Mining  •  Energy  •  Infrastructure  •  Stakeholder Strategy</text>
+<path d="M543 299H1450" stroke="#6DBDCE" stroke-opacity=".26"/>
+<text x="543" y="337" fill="#72D9E4" font-family="Inter,DejaVu Sans,sans-serif" font-size="18.5" font-weight="600" letter-spacing=".5">ragunauthramsaroop.com</text>
+<text x="1439" y="337" text-anchor="end" fill="#98B2C5" font-family="Inter,DejaVu Sans,sans-serif" font-size="13" letter-spacing="1.7">GEORGETOWN  •  GUYANA</text>
+<path d="M1541 55v43M1519 77h43" stroke="#DAB980" stroke-width="1.5" opacity=".35"/>
+</svg>
