@@ -53,8 +53,11 @@ check('const V="rr-public-v6"' in sw, "Service worker version must be v6")
 check('k.startsWith("rr-public-v")' in sw, "Only RR-managed caches should be deleted")
 
 platform = (ROOT / "assets/platform.js").read_text(encoding="utf-8")
-check("afterLoadIdle" in platform and 'location.pathname !== "/"' in platform,
-      "Site Brain must defer, and must not load automatically on the homepage")
+non_home = re.search(r'else if\\s*\\(\\s*location\\.pathname\\s*!==\\s*"/"\\s*\\)\\s*afterLoadIdle\\(startBrain,\\s*(\\d+)\\)', platform)
+home = re.search(r'else\\s+afterLoadIdle\\(startBrain,\\s*(\\d+)\\)', platform)
+check("afterLoadIdle" in platform and bool(non_home) and bool(home)
+      and int(non_home.group(1)) >= 4000 and int(home.group(1)) >= 8000,
+      "Defer Site Brain at least 4 seconds on secondary pages and 8 seconds on homepage")
 analytics = (ROOT / "tools/assets/analytics-loader.js").read_text(encoding="utf-8")
 check('if (saved === "granted") loadAnalytics()' in analytics,
       "Third-party analytics must not load before consent")
