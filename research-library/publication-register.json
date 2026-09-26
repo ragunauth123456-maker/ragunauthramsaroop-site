@@ -1,8 +1,8 @@
 {
   "author": "Ragunauth Ramsaroop",
   "website_release": "2026-09-25",
-  "rights": "Copyright Ragunauth Ramsaroop. Licence selection required for external repository deposits.",
-  "status": "self-hosted, pending external deposition",
+  "rights": "Copyright Ragunauth Ramsaroop; All Rights Reserved for SSRN submissions. No Zenodo licence selected.",
+  "status": "Seven full-text PDFs self-hosted; all seven SSRN preprints received, awaiting screening; Google Scholar crawling prepared, indexing unverified; Zenodo not submitted",
   "papers": [
     {
       "slug": "guyana-2040",
@@ -24,11 +24,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-2040/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-2040/full-text.pdf",
       "scholar_pdf_bytes": 772942,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526419",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526419",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "guyana-power-demand-2030",
@@ -50,11 +54,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/full-text.pdf",
       "scholar_pdf_bytes": 5035612,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526458",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526458",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "critical-minerals-energy-security",
@@ -76,11 +84,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/full-text.pdf",
       "scholar_pdf_bytes": 1192808,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526438",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526438",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "guyana-economy-2030",
@@ -102,11 +114,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/full-text.pdf",
       "scholar_pdf_bytes": 1179788,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526478",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526478",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "new-geography-globalization",
@@ -128,11 +144,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/full-text.pdf",
       "scholar_pdf_bytes": 1720228,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526518",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526518",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "water-security-economic-security",
@@ -154,11 +174,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/full-text.pdf",
       "scholar_pdf_bytes": 1966258,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526538",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526538",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "guyana-lcds-2030",
@@ -181,7 +205,7 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "submitted_awaiting_moderation",
+      "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/full-text.pdf",
       "scholar_pdf_bytes": 1027901,
       "scholar_status": "crawl_ready_not_index_verified",
@@ -190,7 +214,8 @@
       "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526418",
       "ssrn_submitted_at": "2026-09-26T00:43:41.965719+00:00",
       "ssrn_license": "All Rights Reserved",
-      "ssrn_content_type": "Preprint"
+      "ssrn_content_type": "Preprint",
+      "ssrn_submission_date_local": "2026-09-25"
     }
   ],
   "excluded_sources": [
