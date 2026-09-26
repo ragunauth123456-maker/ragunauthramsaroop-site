@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-09-26",
+  "paper": "Guyana Power Demand 2030",
+  "original_pdf_url": "https://ragunauthramsaroop.com/research-papers/guyana-power-demand-2030.pdf",
+  "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/full-text.pdf",
+  "approved_original_sha256": "27f864c0c5118d209b3b4ae9e04850d7ae3e409c957a8bf926e64ad67d7806ad",
+  "optimized_sha256": "367d750f9b167b10397006ff811bce6f0cc4862943bef2a3ecb21f8ed0552924",
+  "original_bytes": 5151536,
+  "optimized_bytes": 4845001,
+  "scholar_size_limit_bytes": 5000000,
+  "original_pdf_untouched": true,
+  "pages": 22,
+  "all_page_text_exact": true,
+  "all_page_links_exact": true,
+  "page_dimensions_and_toc_exact": true,
+  "render_max_mean_difference": 0.7944,
+  "render_max_rms_difference": 5.4993,
+  "method": "Pypdf: one 8478x4353 RGB figure re-encoded as an indexed 256-colour image with its original alpha mask unchanged; slight colour quantization; full-resolution approved original separately retained.",
+  "google_scholar_indexing": "not independently verified"
+}

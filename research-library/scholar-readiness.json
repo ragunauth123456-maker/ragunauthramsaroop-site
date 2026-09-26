@@ -1,7 +1,7 @@
 {
-  "checked_at": "2026-09-25",
-  "google_scholar_submission": "Automatic crawler only, no direct submission available",
-  "scholar_indexing": "not verified",
+  "checked_at": "2026-09-26",
+  "google_scholar_submission": "Automatic crawler only; no direct inclusion guarantee.",
+  "scholar_indexing": "not independently verified",
   "robots": "public crawler allowed",
   "sitemap": "https://ragunauthramsaroop.com/sitemap.xml",
   "papers": [
@@ -14,10 +14,15 @@
     },
     {
       "slug": "guyana-power-demand-2030",
-      "pdf_bytes": 5035612,
+      "pdf_bytes": 4845001,
       "abstract_chars": 6372,
       "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "crawl_ready": true,
+      "original_pdf_bytes": 5151536,
+      "optimized_pdf_sha256": "367d750f9b167b10397006ff811bce6f0cc4862943bef2a3ecb21f8ed0552924",
+      "source_pdf_sha256": "27f864c0c5118d209b3b4ae9e04850d7ae3e409c957a8bf926e64ad67d7806ad",
+      "original_pdf_retained": true,
+      "optimization_audit_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/optimization-audit.json"
     },
     {
       "slug": "critical-minerals-energy-security",
@@ -82,5 +87,6 @@
       "metadata": "title, author, publication date and same-directory PDF",
       "crawl_ready": true
     }
-  ]
+  ],
+  "pdf_size_audit": "All 11 linked scholarly PDFs are under 5,000,000 bytes."
 }

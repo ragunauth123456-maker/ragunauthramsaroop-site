@@ -1,0 +1,34 @@
+name: Google Scholar PDF integrity
+on:
+  pull_request:
+    paths:
+      - 'research-library/**'
+      - 'research-papers/**'
+      - 'scripts/**'
+      - 'sitemap.xml'
+      - 'index.html'
+  push:
+    branches: [main]
+    paths:
+      - 'research-library/**'
+      - 'research-papers/**'
+      - 'scripts/**'
+      - 'sitemap.xml'
+      - 'index.html'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-scholar-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF parser
+        run: python -m pip install "pymupdf>=1.26,<2"
+      - name: Audit all scholarly PDFs, metadata and internal links
+        run: python scripts/audit_scholar_pdfs.py
+      - name: Validate entire static site
+        run: python scripts/validate_site.py

@@ -56,13 +56,17 @@
       "zenodo_status": "not_submitted",
       "ssrn_status": "received_pending_screening",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/full-text.pdf",
-      "scholar_pdf_bytes": 5035612,
+      "scholar_pdf_bytes": 4845001,
       "scholar_status": "crawl_ready_not_index_verified",
       "abstract_source": "Full author-written abstract or executive overview from the original PDF",
       "ssrn_abstract_id": "7526458",
       "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526458",
       "ssrn_license": "All Rights Reserved",
-      "ssrn_submission_date_local": "2026-09-25"
+      "ssrn_submission_date_local": "2026-09-25",
+      "scholar_pdf_sha256": "367d750f9b167b10397006ff811bce6f0cc4862943bef2a3ecb21f8ed0552924",
+      "scholar_pdf_optimized": true,
+      "scholar_original_pdf_sha256": "27f864c0c5118d209b3b4ae9e04850d7ae3e409c957a8bf926e64ad67d7806ad",
+      "scholar_optimization_audit_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/optimization-audit.json"
     },
     {
       "slug": "critical-minerals-energy-security",
