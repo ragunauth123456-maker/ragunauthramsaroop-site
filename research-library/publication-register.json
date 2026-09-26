@@ -28,7 +28,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-2040/full-text.pdf",
       "scholar_pdf_bytes": 772942,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/guyana-2040/",
+      "scholar_full_abstract_chars": 661
     },
     {
       "slug": "guyana-power-demand-2030",
@@ -54,7 +57,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/full-text.pdf",
       "scholar_pdf_bytes": 5035612,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/",
+      "scholar_full_abstract_chars": 6371
     },
     {
       "slug": "critical-minerals-energy-security",
@@ -80,7 +86,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/full-text.pdf",
       "scholar_pdf_bytes": 1192808,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/",
+      "scholar_full_abstract_chars": 3556
     },
     {
       "slug": "guyana-economy-2030",
@@ -106,7 +115,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/full-text.pdf",
       "scholar_pdf_bytes": 1179788,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/",
+      "scholar_full_abstract_chars": 5982
     },
     {
       "slug": "new-geography-globalization",
@@ -132,7 +144,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/full-text.pdf",
       "scholar_pdf_bytes": 1720228,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/",
+      "scholar_full_abstract_chars": 5413
     },
     {
       "slug": "water-security-economic-security",
@@ -158,7 +173,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/full-text.pdf",
       "scholar_pdf_bytes": 1966258,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/",
+      "scholar_full_abstract_chars": 5200
     },
     {
       "slug": "guyana-lcds-2030",
@@ -185,7 +203,10 @@
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/full-text.pdf",
       "scholar_pdf_bytes": 1027901,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "google_scholar_status": "crawl_ready_not_indexed",
+      "scholar_html_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/",
+      "scholar_full_abstract_chars": 7171
     }
   ],
   "excluded_sources": [

@@ -1,58 +1,85 @@
 {
-  "checked_at": "2026-09-25",
-  "google_scholar_submission": "Automatic crawler only, no direct submission available",
-  "scholar_indexing": "not verified",
-  "robots": "public crawler allowed",
-  "sitemap": "https://ragunauthramsaroop.com/sitemap.xml",
+  "verified_at": "2026-09-25",
+  "status": "eligible_for_automatic_crawling_not_indexing_confirmed",
+  "google_scholar_submission_route": "Google Scholar crawler, not direct upload",
+  "guidelines": "https://scholar.google.com/intl/en/scholar/inclusion.html",
   "papers": [
     {
       "slug": "guyana-2040",
+      "html": "https://ragunauthramsaroop.com/research-library/guyana-2040/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/guyana-2040/full-text.pdf",
       "pdf_bytes": 772942,
-      "abstract_chars": 661,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 661,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "guyana-power-demand-2030",
+      "html": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/guyana-power-demand-2030/full-text.pdf",
       "pdf_bytes": 5035612,
-      "abstract_chars": 6372,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": false,
+      "original_abstract_chars": 6371,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "critical-minerals-energy-security",
+      "html": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/critical-minerals-energy-security/full-text.pdf",
       "pdf_bytes": 1192808,
-      "abstract_chars": 3556,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 3556,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "guyana-economy-2030",
+      "html": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/guyana-economy-2030/full-text.pdf",
       "pdf_bytes": 1179788,
-      "abstract_chars": 5982,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 5982,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "new-geography-globalization",
+      "html": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/new-geography-globalization/full-text.pdf",
       "pdf_bytes": 1720228,
-      "abstract_chars": 5414,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 5413,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "water-security-economic-security",
+      "html": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/water-security-economic-security/full-text.pdf",
       "pdf_bytes": 1966258,
-      "abstract_chars": 5200,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 5200,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     },
     {
       "slug": "guyana-lcds-2030",
+      "html": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/",
+      "pdf": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/full-text.pdf",
       "pdf_bytes": 1027901,
-      "abstract_chars": 7171,
-      "metadata": "title, author, publication date and same-directory PDF",
-      "crawl_ready": true
+      "under_5_mib": true,
+      "under_5_mb_decimal": true,
+      "original_abstract_chars": 7171,
+      "author": "Ragunauth Ramsaroop",
+      "citation_metadata": true
     }
   ]
 }
