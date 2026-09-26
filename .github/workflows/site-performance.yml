@@ -1,0 +1,51 @@
+name: Website performance and integrity
+on:
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'service-worker.js'
+      - 'assets/**'
+      - 'tools/assets/**'
+      - 'scripts/**'
+      - '.github/workflows/site-performance.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'service-worker.js'
+      - 'assets/**'
+      - 'tools/assets/**'
+      - 'scripts/**'
+      - '.github/workflows/site-performance.yml'
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  performance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Guard homepage, caching and third-party budgets
+        run: python scripts/site_performance_guard.py
+      - name: Check browser script syntax
+        run: |
+          node --check service-worker.js
+          node --check assets/platform.js
+          node --check tools/assets/analytics-loader.js
+      - name: Validate site links, metadata and site resources
+        run: python scripts/validate_site.py
+      - name: Audit image and HTML sizes
+        run: python scripts/performance_budget.py
+      - name: Check accessibility baseline
+        run: python scripts/accessibility_audit.py
+      - name: Verify free tools integrity
+        run: python scripts/tools_integrity.py

@@ -20,17 +20,23 @@
     security_storage: "granted",
     wait_for_update: 500
   });
-  gtag("js", new Date());
-  gtag("config", MEASUREMENT_ID, {
-    send_page_view: true,
-    allow_google_signals: false,
-    allow_ad_personalization_signals: false
-  });
-
-  const tag = document.createElement("script");
-  tag.async = true;
-  tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(MEASUREMENT_ID);
-  document.head.appendChild(tag);
+  // Initialize third-party analytics only after explicit opt-in.
+  let tagStarted = false;
+  function loadAnalytics() {
+    if (tagStarted) return;
+    tagStarted = true;
+    gtag("js", new Date());
+    gtag("config", MEASUREMENT_ID, {
+      send_page_view: true,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false
+    });
+    const tag = document.createElement("script");
+    tag.async = true;
+    tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(MEASUREMENT_ID);
+    document.head.appendChild(tag);
+  }
+  if (saved === "granted") loadAnalytics();
 
   function update(value) {
     try { localStorage.setItem(KEY, value); } catch (_) {}
@@ -40,6 +46,7 @@
       ad_user_data: "denied",
       ad_personalization: "denied"
     });
+    if (value === "granted") loadAnalytics();
     const el = document.getElementById("rr-analytics-choice");
     if (el) el.remove();
   }

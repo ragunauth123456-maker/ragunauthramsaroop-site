@@ -23,8 +23,32 @@ async function related(){
  if(document.querySelector(".rr-related")||location.pathname==="/")return;
  try{const r=await fetch("/assets/search-index.json",{cache:"force-cache"}),j=await r.json(),title=(document.querySelector("h1")?.textContent||document.title).toLowerCase(),terms=title.split(/\W+/).filter(x=>x.length>4),rows=j.documents.filter(x=>x.url!==location.pathname).map(x=>({x,s:terms.reduce((n,t)=>n+(String(x.title+" "+x.description).toLowerCase().includes(t)?1:0),0)})).filter(z=>z.s>0).sort((a,b)=>b.s-a.s).slice(0,3);if(!rows.length)return;const main=document.querySelector("main .wrap")||document.querySelector("main");if(!main)return;const s=document.createElement("section");s.className="panel rr-related";s.innerHTML='<h2>Related resources</h2><div class="related-grid">'+rows.map(z=>'<a href="'+esc(z.x.url)+'"><strong>'+esc(z.x.title)+'</strong><span>'+esc(z.x.type)+'</span></a>').join("")+'</div>';main.appendChild(s)}catch{}
 }
-related();
+/* Related results need a large index. Delay work until after first paint. */
+function afterLoadIdle(fn, delay) {
+  const schedule=()=>{
+    setTimeout(()=>{
+      const run=()=>{
+        if(document.visibilityState!=="visible"){
+          const onVisible=()=>{
+            if(document.visibilityState==="visible"){
+              document.removeEventListener("visibilitychange",onVisible);
+              fn();
+            }
+          };
+          document.addEventListener("visibilitychange",onVisible);
+        }else fn();
+      };
+      if("requestIdleCallback" in window) requestIdleCallback(run,{timeout:7000});
+      else run();
+    },delay);
+  };
+  if(document.readyState==="complete")schedule();
+  else addEventListener("load",schedule,{once:true});
+}
+if(!["/","/smart/","/search/"].includes(location.pathname))afterLoadIdle(related,2200);
 const startBrain=()=>import("/assets/site-brain.js").catch(()=>{});
-if("requestIdleCallback" in window)requestIdleCallback(startBrain,{timeout:3200});else setTimeout(startBrain,1800);
+if(["/smart/","/search/"].includes(location.pathname))startBrain();
+else if(location.pathname!=="/")afterLoadIdle(startBrain,4500);
+else afterLoadIdle(startBrain,12000);
 window.RRSaveCurrentPage=savePage;
 })();
