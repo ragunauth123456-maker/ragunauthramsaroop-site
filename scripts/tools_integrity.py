@@ -4,6 +4,9 @@ import json,sys
 ROOT=Path(__file__).resolve().parents[1];TOOLS=ROOT/"tools";issues=[]
 catalog=json.loads((ROOT/"api/v1/catalog.json").read_text(encoding="utf-8"))
 if len(catalog.get("tools",[]))!=26:issues.append("catalog must contain 26 tools")
+integrations=catalog.get("integrations",[])
+if len(integrations)!=1 or integrations[0].get("url")!="/tools/geolibre/" or integrations[0].get("type")!="third-party-integration":issues.append("GeoLibre independent integration missing from catalog")
+if not (ROOT/"tools/geolibre/index.html").exists():issues.append("GeoLibre integration page missing")
 for t in catalog.get("tools",[]):
  p=ROOT/t["url"].lstrip("/")/"index.html" if not t["url"].endswith("/") else ROOT/t["url"].lstrip("/")/"index.html"
  if not p.exists():issues.append("missing "+t["url"]);continue
