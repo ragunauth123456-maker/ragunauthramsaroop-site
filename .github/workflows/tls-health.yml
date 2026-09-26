@@ -1,0 +1,40 @@
+name: Public HTTPS and certificate health
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/tls-health.yml'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tls-health.yml'
+  schedule:
+    - cron: '17 8,20 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify HTTPS and site content on apex and www
+        shell: bash
+        run: |
+          set -euo pipefail
+          for host in ragunauthramsaroop.com www.ragunauthramsaroop.com; do
+            echo "Checking HTTPS for ${host}"
+            body="/tmp/${host//./_}.html"
+            curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
+              "https://${host}/" --output "$body"
+            grep -qi 'Ragunauth Ramsaroop' "$body"
+            echo "${host}: HTTPS certificate trusted, page returned expected content" >> "$GITHUB_STEP_SUMMARY"
+          done
+      - name: Warn when certificate expires within seven days
+        shell: bash
+        run: |
+          set -euo pipefail
+          for host in ragunauthramsaroop.com www.ragunauthramsaroop.com; do
+            echo | openssl s_client -servername "$host" -connect "$host:443" 2>/dev/null \
+              | openssl x509 -noout -checkend 604800
+            echo "${host}: certificate valid for at least seven more days" >> "$GITHUB_STEP_SUMMARY"
+          done
