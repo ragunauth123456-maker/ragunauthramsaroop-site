@@ -53,6 +53,34 @@
       "abstract_chars": 7171,
       "metadata": "title, author, publication date and same-directory PDF",
       "crawl_ready": true
+    },
+    {
+      "slug": "guyana-carbon-credits",
+      "pdf_bytes": 1197398,
+      "abstract_chars": 2894,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "guyana-global-biodiversity-alliance",
+      "pdf_bytes": 908306,
+      "abstract_chars": 6861,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "who-pays-energy-transition",
+      "pdf_bytes": 708300,
+      "abstract_chars": 8103,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "omai-gold-2026-pea",
+      "pdf_bytes": 858567,
+      "abstract_chars": 6404,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
     }
   ]
 }
