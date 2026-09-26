@@ -39,9 +39,38 @@ assert 'rel="noopener noreferrer"' in page, "External tab links must be safe"
 
 home = (ROOT / "tools/index.html").read_text(encoding="utf-8")
 assert '/tools/geolibre/' in home, "GIS link missing from tools directory"
+# The link must be a directory card, not merely a featured link outside the searchable grid.
+grid = home.split('id="tool-grid">', 1)[1].split("</section>", 1)[0]
+listing = Audit()
+listing.feed(grid)
+geo_cards = [a for tag, a in listing.tags if tag == "a"
+             and a.get("data-slug") == "geolibre"
+             and a.get("href") == "/tools/geolibre/"
+             and a.get("data-group") == "Research & Investment"
+             and "card" in a.get("class", "").split()]
+assert len(geo_cards) == 1, "Exactly one GeoLibre card must appear in the searchable grid"
+assert "GeoLibre GIS Workspace" in grid, "GeoLibre card needs searchable text"
+assert 'id="visible-tool-count">27</strong>' in home, "Directory count must include the integration"
+assert '1 independent GIS integration' in home, "Do not misrepresent GeoLibre as an RR-developed tool"
+assert 'position":27' in home, "Directory structured data must include GeoLibre"
+hub = (ROOT / "tools/assets/tools-hub.js").read_text(encoding="utf-8")
+assert 'document.querySelectorAll("#tool-grid .card")' in hub
+assert 'c.textContent' in hub and 'c.dataset.slug' in hub, "Search must include card names"
+
+category_page = (ROOT / "tools/categories/research-investment/index.html").read_text(encoding="utf-8")
+assert 'data-slug="geolibre"' in category_page, "Research category must list GeoLibre"
+import json
+catalog = json.loads((ROOT / "api/v1/catalog.json").read_text(encoding="utf-8"))
+assert len(catalog["tools"]) == 26, "Existing 26 tools must remain unchanged"
+integration = [x for x in catalog.get("integrations", []) if x.get("url") == "/tools/geolibre/"]
+assert len(integration) == 1 and integration[0].get("type") == "third-party-integration", "Independent GIS attribution missing"
+index = json.loads((ROOT / "assets/search-index.json").read_text(encoding="utf-8"))
+search_results = [x for x in index.get("documents", []) if x.get("url") == "/tools/geolibre/"]
+assert len(search_results) == 1 and search_results[0].get("type") == "Tool", "GeoLibre missing from global search"
+
 for sitemap in ("sitemap.xml", "tools/sitemap.xml"):
     root = ET.parse(ROOT / sitemap).getroot()
     locations = [node.text or "" for node in root.iter() if node.tag.endswith("loc")]
     assert URL in locations, "GIS URL missing from " + sitemap
 
-print("PASS GeoLibre: discoverable route, canonical URL, user-triggered iframe and safe fallbacks")
+print("PASS GeoLibre: searchable directory card, 27-resource count, research category, global index, third-party attribution and lazy iframe")
