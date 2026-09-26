@@ -11,7 +11,7 @@
 <meta property="og:title" content="GeoLibre GIS Workspace | RR Free Tools">
 <meta property="og:description" content="An independently maintained launch page for the open-source GeoLibre GIS workspace. The interactive application starts only when you choose to open it.">
 <meta property="og:url" content="https://ragunauthramsaroop.com/tools/geolibre/">
-<meta property="og:image" content="https://ragunauthramsaroop.com/assets/preview.png">
+<meta property="og:image" content="https://ragunauthramsaroop.com/tools/assets/og/geolibre.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon-96.png">
 <link rel="stylesheet" href="/tools/assets/tools.css">
@@ -28,6 +28,7 @@
 @media(max-width:800px){.gis-examples{grid-template-columns:1fr}.gis-stage iframe{height:68vh;min-height:480px}.gis-actions .btn{width:100%}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GeoLibre GIS Workspace","description":"An independent gateway to the open-source GeoLibre mapping and geoprocessing application.","url":"https://ragunauthramsaroop.com/tools/geolibre/","isBasedOn":"https://geolibre.app/","isPartOf":{"@type":"WebSite","name":"Ragunauth Ramsaroop","url":"https://ragunauthramsaroop.com/"}}</script>
+<script defer src="/tools/assets/analytics-loader.js"></script>
 <script defer src="/tools/geolibre/geolibre.js"></script>
 </head>
 <body>
@@ -58,7 +59,8 @@
 <p class="gis-status" id="gis-status" role="status" aria-live="polite">No external GIS resources loaded.</p>
 <noscript><p>JavaScript is required for the embedded workspace. <a href="https://web.geolibre.app/" target="_blank" rel="noopener noreferrer">Open GeoLibre directly</a>.</p></noscript>
 </section>
-<section class="panel" aria-labelledby="gis-use">
+<!-- RR_GUIDE: GIS workflows, methods and third-party limitations -->
+<section class="panel rr-guide" aria-labelledby="gis-use">
 <h2 id="gis-use">What you can investigate</h2>
 <div class="gis-examples">
 <div class="gis-example"><strong>Mining and responsible land use</strong><p>Explore public elevation, drainage and land-cover datasets. Combine verified concession or protected-area boundaries where permitted.</p></div>
