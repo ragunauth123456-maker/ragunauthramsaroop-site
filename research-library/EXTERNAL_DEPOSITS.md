@@ -1,7 +1,7 @@
 # External repository submission register
 
 As of 25 September 2026, Guyana time, SSRN confirmed receipt of all seven independent preprints.
-Each submission contains a research-integrity disclosure of AI assistance, a personal-funding statement, an employer-interest declaration and the All Rights Reserved licence chosen by the author.
+All seven submitted PDFs contain an AI-assistance disclosure and use the author's All Rights Reserved licence. The six submissions completed after the author's funding confirmation contain explicit personal-funding and employer-interest statements; the first Guyana LCDS pilot was submitted earlier, and its original funding-field wording has not yet been independently rechecked.
 These are **received submissions awaiting SSRN screening**, not confirmed public postings, peer-reviewed journal publications or assigned DOIs. The links below may remain unavailable to unauthenticated visitors until SSRN completes screening.
 All seven original PDFs remain available from https://ragunauthramsaroop.com/research-library/.
 Zenodo deposit: **not submitted**; its own licence selection remains outstanding.
