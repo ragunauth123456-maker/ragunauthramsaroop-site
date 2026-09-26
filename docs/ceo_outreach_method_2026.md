@@ -10,7 +10,7 @@ Source: https://fortune.com/ranking/global500/
 2. Document a dated primary source for a strategic company priority.
 3. Write the Minto thesis first. Add two to four business-specific supporting reasons, followed by approved CV evidence.
 4. Build a restrained two- or three-page company-inspired CV, plus a one-page proposal with clickable primary-source links. Never use a company logo or imply employment or endorsement.
-5. Use a verified publicly listed work contact or a clearly identified corporate or country office. Request forwarding when the address is not the CEO's verified professional email. No guessed personal addresses or misdirected investor, press or whistleblower mail.
+5. CEO first: email a verified professional CEO address when available. Otherwise, address a documented executive or corporate office and CC a named, current, relevant deputy (COO, president, head of corporate affairs or equivalent) only when their professional mailbox and position have reliable sources. If no verified deputy email is available, hold the message for further research. Never invent addresses, re-send duplicate introductions, misuse press/investor/whistleblower inboxes or disregard restrictions on unsolicited CVs.
 6. Search the private sent ledger for duplicates before contacting any company. Check the sender, both attachments, and evidence sources.
 7. Send through the authorized Gmail connection. Use the verified iCloud sending identity where available. Record actual SENT confirmation and Gmail message ID privately.
 8. Review replies and bounces before sending one relevant follow-up. Stop on opt-out.
