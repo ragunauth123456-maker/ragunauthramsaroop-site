@@ -7,6 +7,10 @@ on:
       - 'assets/**'
       - 'tools/assets/**'
       - 'scripts/**'
+      - 'tools/geolibre/**'
+      - 'tools/index.html'
+      - 'tools/sitemap.xml'
+      - 'sitemap.xml'
       - '.github/workflows/site-performance.yml'
   push:
     branches: [main]
@@ -16,6 +20,10 @@ on:
       - 'assets/**'
       - 'tools/assets/**'
       - 'scripts/**'
+      - 'tools/geolibre/**'
+      - 'tools/index.html'
+      - 'tools/sitemap.xml'
+      - 'sitemap.xml'
       - '.github/workflows/site-performance.yml'
   schedule:
     - cron: '0 12 * * 1'
@@ -41,6 +49,9 @@ jobs:
           node --check service-worker.js
           node --check assets/platform.js
           node --check tools/assets/analytics-loader.js
+          node --check tools/geolibre/geolibre.js
+      - name: Verify opt-in GeoLibre GIS integration
+        run: python scripts/test_geolibre_integration.py
       - name: Validate site links, metadata and site resources
         run: python scripts/validate_site.py
       - name: Audit image and HTML sizes

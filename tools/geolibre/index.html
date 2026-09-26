@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GeoLibre GIS Workspace | RR Free Tools</title>
+<meta name="description" content="Open GeoLibre's free browser-based GIS from the RR tools site. Explore mapping, vector and raster analysis, terrain, watersheds and remote sensing.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://ragunauthramsaroop.com/tools/geolibre/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GeoLibre GIS Workspace | RR Free Tools">
+<meta property="og:description" content="An independently maintained launch page for the open-source GeoLibre GIS workspace. The interactive application starts only when you choose to open it.">
+<meta property="og:url" content="https://ragunauthramsaroop.com/tools/geolibre/">
+<meta property="og:image" content="https://ragunauthramsaroop.com/tools/assets/og/geolibre.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon-96.png">
+<link rel="stylesheet" href="/tools/assets/tools.css">
+<style>
+.gis-intro{max-width:780px}.gis-actions{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.gis-actions .btn{display:inline-flex;align-items:center;text-align:center;justify-content:center;text-decoration:none;min-height:46px}
+.gis-stage{position:relative;min-height:240px;border:1px solid #cad8d1;border-radius:16px;overflow:hidden;background:#f1f6f2}
+.gis-placeholder{display:grid;place-items:center;text-align:center;min-height:240px;padding:30px;gap:12px;color:#214437}
+.gis-placeholder p{margin:0;max-width:600px}.gis-stage iframe{display:block;width:100%;height:min(800px,78vh);min-height:520px;border:0;background:white}
+.gis-examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.gis-example{padding:17px;border-radius:14px;background:#f5f9f6;border:1px solid #dae6de}.gis-example strong{display:block;color:#0d3e30}.gis-example p{margin:9px 0 0}
+.gis-note{padding:15px 19px;border-left:4px solid #b8893b;background:#fcf8ef;border-radius:8px}
+.gis-status{font-size:14px;color:#315846}
+.gis-credits{font-size:14px;color:#4c6055}.gis-credits a,.gis-note a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:800px){.gis-examples{grid-template-columns:1fr}.gis-stage iframe{height:68vh;min-height:480px}.gis-actions .btn{width:100%}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"GeoLibre GIS Workspace","description":"An independent gateway to the open-source GeoLibre mapping and geoprocessing application.","url":"https://ragunauthramsaroop.com/tools/geolibre/","isBasedOn":"https://geolibre.app/","isPartOf":{"@type":"WebSite","name":"Ragunauth Ramsaroop","url":"https://ragunauthramsaroop.com/"}}</script>
+<script defer src="/tools/assets/analytics-loader.js"></script>
+<script defer src="/tools/geolibre/geolibre.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#gis-workspace">Skip to GIS workspace</a>
+<header class="topbar"><div class="wrap">
+<a class="brand" href="/">Ragunauth Ramsaroop<small>Free public tools</small></a>
+<nav class="nav" aria-label="Main navigation"><a href="/tools/">All tools</a><a href="/white-papers/">Research</a><a href="/tools/guyana-investment-dashboard/">Guyana</a><a class="cta" href="/tools/">Free Tools</a></nav>
+</div></header>
+<section class="hero"><div class="wrap">
+<div class="kicker">Geospatial analysis · Independent open-source integration</div>
+<h1>GeoLibre GIS Workspace</h1>
+<p class="gis-intro">Work with maps, satellite imagery, terrain, watersheds, vector data and spatial analysis using GeoLibre, developed by Professor Qiusheng Wu and the open-source community.</p>
+<div class="badges"><span class="badge">Free and open source</span><span class="badge">Browser GIS</span><span class="badge">1,000+ processing tools</span><span class="badge">Loads on request</span><span class="badge">Powered by GeoLibre</span></div>
+</div></section>
+<main id="gis-workspace"><div class="wrap">
+<section class="panel" aria-labelledby="gis-heading">
+<h2 id="gis-heading">Open the GIS workspace</h2>
+<p>Choose the embedded workspace for desktop mapping or open the full GeoLibre application in a separate tab. The embedded application is not downloaded until you select the launch button.</p>
+<div class="gis-note"><strong>Before opening:</strong> The application runs on <a href="https://web.geolibre.app/" target="_blank" rel="noopener noreferrer">GeoLibre's website</a>, not on our servers. The hosted application records page visits. Mapping services or public datasets you select may contact other providers. Avoid loading confidential project data without your organisation's approval.</div>
+<div class="gis-actions">
+<button class="btn" id="launch-geolibre" type="button" aria-controls="gis-stage" aria-expanded="false">Launch GeoLibre here</button>
+<a class="btn alt" href="https://web.geolibre.app/?layout=compact" target="_blank" rel="noopener noreferrer">Open full-screen application ↗</a>
+<button class="btn alt" id="close-geolibre" type="button" hidden>Close embedded map</button>
+</div>
+<div class="gis-stage" id="gis-stage" aria-label="GeoLibre GIS map and processing workspace">
+<div class="gis-placeholder"><strong>Interactive map is not loaded yet.</strong><p>Launch the workspace above to work with GeoLibre's mapping and geospatial processing tools. On smaller screens, use the full-screen link.</p></div>
+</div>
+<p class="gis-status" id="gis-status" role="status" aria-live="polite">No external GIS resources loaded.</p>
+<noscript><p>JavaScript is required for the embedded workspace. <a href="https://web.geolibre.app/" target="_blank" rel="noopener noreferrer">Open GeoLibre directly</a>.</p></noscript>
+</section>
+<!-- RR_GUIDE: GIS workflows, methods and third-party limitations -->
+<section class="panel rr-guide" aria-labelledby="gis-use">
+<h2 id="gis-use">What you can investigate</h2>
+<div class="gis-examples">
+<div class="gis-example"><strong>Mining and responsible land use</strong><p>Explore public elevation, drainage and land-cover datasets. Combine verified concession or protected-area boundaries where permitted.</p></div>
+<div class="gis-example"><strong>Water and climate resilience</strong><p>Use terrain and hydrology processing for initial watershed, flood-exposure and surface-water studies. Validate results with qualified specialists.</p></div>
+<div class="gis-example"><strong>Infrastructure and eco-tourism</strong><p>Visualise public roads, settlements, satellite layers and candidate routes. Check mapping dates, positional accuracy and data rights.</p></div>
+</div>
+<div class="gis-actions"><a class="btn alt" href="https://web.geolibre.app/?tool=adaptive_filter" target="_blank" rel="noopener noreferrer">Explore the processing toolbox ↗</a><a class="btn alt" href="https://geolibre.app/user-guide/embedding/" target="_blank" rel="noopener noreferrer">Official user guide ↗</a></div>
+</section>
+<section class="panel"><h2>Attribution and limits</h2>
+<p class="gis-credits">GeoLibre is an independent MIT-licensed open-source project by Qiusheng Wu and contributors. This website provides an integration and does not claim to have developed or operate the GeoLibre application. Review <a href="https://github.com/opengeos/GeoLibre" target="_blank" rel="noopener noreferrer">the source and MIT licence</a> and <a href="https://geolibre.app/" target="_blank" rel="noopener noreferrer">GeoLibre's documentation</a>.</p>
+<p>Third-party availability, map-tile terms and optional cloud integrations are governed by their respective providers. This gateway does not upload GIS files to Ragunauth Ramsaroop's website.</p>
+<p><a href="/tools/">← All tools</a> · <a href="/tools/guyana-investment-dashboard/">Guyana investment dashboard</a> · <a href="/tools/privacy/">Website privacy</a></p>
+</section>
+</div></main>
+<footer class="footer"><div class="wrap"><p>Independent GeoLibre gateway · <a href="/tools/">Free Tools</a> · <a href="/white-papers/">Research</a> · <a href="/contact/">Contact</a></p></div></footer>
+</body></html>

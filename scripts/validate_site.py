@@ -75,7 +75,7 @@ for path in html_pages:
             if "RR_GUIDE" not in s:issues.append((str(path),"missing editorial guide"))
             og=p.meta.get("og:image","")
             if not og.endswith("/"+path.parent.name+".png"):issues.append((str(path),"og:image not unique"))
-            if "tools/assets/tools.js" not in s and "tools/assets/growth-tools.js" not in s and "tools/assets/next-wave.js" not in s:issues.append((str(path),"missing tool runtime"))
+            if "tools/assets/tools.js" not in s and "tools/assets/growth-tools.js" not in s and "tools/assets/next-wave.js" not in s and not (path.parent.name=="geolibre" and "/tools/geolibre/geolibre.js" in s):issues.append((str(path),"missing tool runtime"))
     if "data-appdeploy-overlay" in s or "data-appdeploy-network-hook" in s:issues.append((str(path),"legacy AppDeploy overlay"))
 imgs=list((TOOLS/"assets"/"og").glob("*.png"))
 for p in imgs:
