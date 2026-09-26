@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-09-25",
+  "google_scholar_submission": "Automatic crawler only, no direct submission available",
+  "scholar_indexing": "not verified",
+  "robots": "public crawler allowed",
+  "sitemap": "https://ragunauthramsaroop.com/sitemap.xml",
+  "papers": [
+    {
+      "slug": "guyana-2040",
+      "pdf_bytes": 772942,
+      "abstract_chars": 661,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "guyana-power-demand-2030",
+      "pdf_bytes": 5035612,
+      "abstract_chars": 6372,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "critical-minerals-energy-security",
+      "pdf_bytes": 1192808,
+      "abstract_chars": 3556,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "guyana-economy-2030",
+      "pdf_bytes": 1179788,
+      "abstract_chars": 5982,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "new-geography-globalization",
+      "pdf_bytes": 1720228,
+      "abstract_chars": 5414,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "water-security-economic-security",
+      "pdf_bytes": 1966258,
+      "abstract_chars": 5200,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    },
+    {
+      "slug": "guyana-lcds-2030",
+      "pdf_bytes": 1027901,
+      "abstract_chars": 7171,
+      "metadata": "title, author, publication date and same-directory PDF",
+      "crawl_ready": true
+    }
+  ]
+}
