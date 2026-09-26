@@ -2,7 +2,7 @@
   "author": "Ragunauth Ramsaroop",
   "website_release": "2026-09-25",
   "rights": "Copyright Ragunauth Ramsaroop; All Rights Reserved for SSRN submissions. No Zenodo licence selected.",
-  "status": "Eleven complete PDFs publicly hosted; seven SSRN submissions received, four preprints prepared, all pending independent review; Google Scholar indexing not verified; Zenodo not submitted",
+  "status": "Eleven complete PDFs publicly hosted; all eleven SSRN preprints received, awaiting independent SSRN screening; Google Scholar crawling prepared but indexing unverified; Zenodo not submitted",
   "papers": [
     {
       "slug": "guyana-2040",
@@ -238,12 +238,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-carbon-credits/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "prepared_not_submitted",
+      "ssrn_status": "received_pending_screening",
       "ssrn_license": "All Rights Reserved",
       "scholar_status": "crawl_ready_not_index_verified",
       "source": "Guyana_Carbon_Credits_White_Paper_Ragunauth_Ramsaroop.pdf",
       "abstract": "Independent research into Guyana's jurisdictional forest-carbon programme, accounting integrity, commercial agreements, revenue governance and long-term climate accountability.",
-      "scholar_pdf_bytes": 1197398
+      "scholar_pdf_bytes": 1197398,
+      "ssrn_abstract_id": "7526580",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526580",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "guyana-global-biodiversity-alliance",
@@ -266,12 +269,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-global-biodiversity-alliance/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "prepared_not_submitted",
+      "ssrn_status": "received_pending_screening",
       "ssrn_license": "All Rights Reserved",
       "scholar_status": "crawl_ready_not_index_verified",
       "source": "Guyana_Global_Biodiversity_Alliance_White_Paper_Ragunauth_Ramsaroop.pdf",
       "abstract": "An independent review of Guyana's Global Biodiversity Alliance, its governance, financing arrangements, biodiversity measurement, Indigenous participation and implementation questions.",
-      "scholar_pdf_bytes": 908306
+      "scholar_pdf_bytes": 908306,
+      "ssrn_abstract_id": "7526599",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526599",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "who-pays-energy-transition",
@@ -294,12 +300,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/who-pays-energy-transition/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "prepared_not_submitted",
+      "ssrn_status": "received_pending_screening",
       "ssrn_license": "All Rights Reserved",
       "scholar_status": "crawl_ready_not_index_verified",
       "source": "Who_Pays_for_the_Energy_Transition_AUDITED_FINAL_2026.pdf",
       "abstract": "An independent decision framework for assessing who finances energy-transition infrastructure, who carries risk and how to evaluate affordability, reliability and public outcomes.",
-      "scholar_pdf_bytes": 708300
+      "scholar_pdf_bytes": 708300,
+      "ssrn_abstract_id": "7526618",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526618",
+      "ssrn_submission_date_local": "2026-09-25"
     },
     {
       "slug": "omai-gold-2026-pea",
@@ -322,12 +331,15 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/omai-gold-2026-pea/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "prepared_not_submitted",
+      "ssrn_status": "received_pending_screening",
       "ssrn_license": "All Rights Reserved",
       "scholar_status": "crawl_ready_not_index_verified",
       "source": "Omai_Gold_2026_White_Paper_Cover_Corrected.pdf",
       "abstract": "An independent technical, financial and environmental review of Omai Gold's August 2026 preliminary economic assessment; not a certified mineral reserve estimate or investment recommendation.",
-      "scholar_pdf_bytes": 858567
+      "scholar_pdf_bytes": 858567,
+      "ssrn_abstract_id": "7526619",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526619",
+      "ssrn_submission_date_local": "2026-09-25"
     }
   ],
   "excluded_sources": [
