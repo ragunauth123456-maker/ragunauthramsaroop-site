@@ -28,19 +28,19 @@ async function remember(cache,request,response){
   }catch{}
 }
 
-async function navigation(request){
+async function navigation(request,event){
   const cache=await caches.open(V);
   // Prefer the network for fresh content after every deployment.
   try{
     const response=await fetch(request);
-    if(response.ok)remember(cache,request,response.clone());
+    if(response.ok)event.waitUntil(remember(cache,request,response.clone()));
     return response;
   }catch{
     return await cache.match(request)||await cache.match("/start/")||Response.error();
   }
 }
 
-async function asset(request,immutable){
+async function asset(request,immutable,event){
   const cache=await caches.open(V);
   if(immutable){
     const hit=await cache.match(request);
@@ -48,7 +48,7 @@ async function asset(request,immutable){
   }
   try{
     const response=await fetch(request);
-    if(response.ok)remember(cache,request,response.clone());
+    if(response.ok)event.waitUntil(remember(cache,request,response.clone()));
     return response;
   }catch{
     return await cache.match(request)||Response.error();
@@ -61,9 +61,9 @@ self.addEventListener("fetch",event=>{
   const url=new URL(request.url);
   if(url.origin!==self.location.origin)return;
   if(request.mode==="navigate"){
-    event.respondWith(navigation(request));
+    event.respondWith(navigation(request,event));
   }else if(/\.(?:js|css|json|png|jpg|jpeg|webp|avif|svg|ico|woff2|wasm)$/.test(url.pathname)){
-    event.respondWith(asset(request,url.pathname.startsWith("/_next/static/")));
+    event.respondWith(asset(request,url.pathname.startsWith("/_next/static/"),event));
   }
 });
 
