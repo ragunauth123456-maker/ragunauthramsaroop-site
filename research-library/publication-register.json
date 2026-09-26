@@ -181,11 +181,16 @@
       "page_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/",
       "doi": null,
       "zenodo_status": "not_submitted",
-      "ssrn_status": "not_submitted",
+      "ssrn_status": "submitted_awaiting_moderation",
       "scholar_pdf_url": "https://ragunauthramsaroop.com/research-library/guyana-lcds-2030/full-text.pdf",
       "scholar_pdf_bytes": 1027901,
       "scholar_status": "crawl_ready_not_index_verified",
-      "abstract_source": "Full author-written abstract or executive overview from the original PDF"
+      "abstract_source": "Full author-written abstract or executive overview from the original PDF",
+      "ssrn_abstract_id": "7526418",
+      "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526418",
+      "ssrn_submitted_at": "2026-09-26T00:43:41.965719+00:00",
+      "ssrn_license": "All Rights Reserved",
+      "ssrn_content_type": "Preprint"
     }
   ],
   "excluded_sources": [
