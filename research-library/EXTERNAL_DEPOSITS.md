@@ -17,6 +17,11 @@ Google Scholar: site and citation metadata configured for automatic crawling; Sc
 - Water Security as Economic Security: [SSRN Abstract 7526538](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526538) — received, awaiting screening; no DOI verified.
 - Guyana's Low Carbon Development Strategy 2030: [SSRN Abstract 7526418](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7526418) — received, awaiting screening; no DOI verified.
 
-## Further papers awaiting website transfer
+## Four additional independently authored white papers
 
-Additional 25 September publications awaiting transfer of the latest audited PDF to K1: Guyana Carbon Credits; Guyana and the Global Biodiversity Alliance; Who Pays for the Energy Transition; Omai Gold. Do not mistake a missing local source for publication.
+The four source PDFs have been checksum-verified against the author’s approved transfer pack and added to the public research library. SSRN preprint versions with AI-assistance, personal-funding and employer-interest disclosures are prepared, but not submitted at this checkpoint. All Rights Reserved. No DOI or Scholar indexing claimed.
+
+- Guyana's Forest Carbon Economy: Carbon Credits, National Development, Market Integrity and Long-Term Climate Accountability: [complete PDF](https://ragunauthramsaroop.com/research-library/guyana-carbon-credits/full-text.pdf) — SSRN pending.
+- Guyana's Global Biodiversity Alliance: From the Georgetown Declaration to a Global Architecture for Nature Finance, Biodiversity Data and 30x30 Delivery: [complete PDF](https://ragunauthramsaroop.com/research-library/guyana-global-biodiversity-alliance/full-text.pdf) — SSRN pending.
+- Who Pays for the Energy Transition? A Decision Framework for Fair Costs, Reliable Power, Fiscal Durability and Measurable Results: [complete PDF](https://ragunauthramsaroop.com/research-library/who-pays-energy-transition/full-text.pdf) — SSRN pending.
+- Omai Gold 2026 PEA: From Preliminary Economics to Verifiable Development Readiness: [complete PDF](https://ragunauthramsaroop.com/research-library/omai-gold-2026-pea/full-text.pdf) — SSRN pending.
