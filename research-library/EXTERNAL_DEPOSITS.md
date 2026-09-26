@@ -12,6 +12,6 @@ SSRN official submissions: https://www.ssrn.com/index.cfm/en/submit/
 - Guyana Economy 2030: website PDF hosted; Zenodo not submitted; SSRN not submitted; DOI not assigned.
 - The New Geography of Globalization: website PDF hosted; Zenodo not submitted; SSRN not submitted; DOI not assigned.
 - Water Security as Economic Security: website PDF hosted; Zenodo not submitted; SSRN not submitted; DOI not assigned.
-- Guyana's Low Carbon Development Strategy 2030: website PDF hosted; Zenodo not submitted; SSRN not submitted; DOI not assigned.
+- Guyana's Low Carbon Development Strategy 2030: website PDF hosted; Zenodo not submitted; SSRN preprint submitted as abstract 7526418, awaiting moderation; DOI allocation not yet verified.
 
 Additional 25 September publications awaiting transfer of the latest audited PDF to K1: Guyana Carbon Credits; Guyana and the Global Biodiversity Alliance; Who Pays for the Energy Transition; Omai Gold. Do not mistake a missing local source for publication.
