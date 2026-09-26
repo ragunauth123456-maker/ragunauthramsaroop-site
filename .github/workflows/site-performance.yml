@@ -50,6 +50,8 @@ jobs:
           node --check assets/platform.js
           node --check tools/assets/analytics-loader.js
           node --check tools/geolibre/geolibre.js
+      - name: Verify route-safe service worker offline behavior
+        run: node scripts/test_service_worker_navigation.cjs
       - name: Verify opt-in GeoLibre GIS integration
         run: python scripts/test_geolibre_integration.py
       - name: Validate site links, metadata and site resources
