@@ -47,6 +47,22 @@ def assess(dossier, root, sent):
         errors.append("The office/contact route must have public source evidence.")
     if route.get("type") == "verified-professional-ceo" and not route.get("direct_verified"):
         errors.append("Never claim direct CEO access without verification.")
+    if d.get("outreach_restricted") or d.get("opted_out"):
+        errors.append("Company restriction or opt-out prevents outreach.")
+    if route.get("type") != "verified-professional-ceo":
+        cc = d.get("cc_contact") or {}
+        deputy = str(cc.get("address") or "").strip().lower()
+        if (not EMAIL.fullmatch(deputy) or deputy == address
+            or deputy.rsplit("@", 1)[-1] in PERSONAL
+            or not cc.get("full_name") or not cc.get("current_role")
+            or not cc.get("professional_email_verified")
+            or not cited_url(cc.get("email_source_url"))
+            or not cited_url(cc.get("role_source_url"))):
+            errors.append("No direct CEO contact: CC a named, publicly verified senior executive.")
+        if str(d.get("cc") or "").strip().lower() != deputy:
+            errors.append("CC must match the verified senior executive.")
+    if d.get("to") and str(d["to"]).strip().lower() != address:
+        errors.append("To must match the documented professional route.")
     if (company.casefold(), address) in sent or d.get("status") == "Sent":
         errors.append("Duplicate outreach blocked.")
     if not d.get("subject") or not d.get("message"):

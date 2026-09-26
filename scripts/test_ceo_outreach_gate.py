@@ -17,6 +17,12 @@ class OutreachGateTests(unittest.TestCase):
             "contact_route":{"address":"office@company.test",
                              "type":"published-corporate-office",
                              "source_url":"https://company.test/contact"},
+            "to":"office@company.test", "cc":"deputy@company.test",
+            "cc_contact":{"full_name":"Deputy Example","current_role":"EVP Corporate Affairs",
+                          "address":"deputy@company.test",
+                          "professional_email_verified":True,
+                          "email_source_url":"https://company.test/contact",
+                          "role_source_url":"https://company.test/leadership"},
             "subject":"Company value discussion", "message":"The specific Minto email.",
             "attachments":{"cv_pdf":"cv.pdf","value_brief_pdf":"brief.pdf"},
             "status":"Ready"}
@@ -38,5 +44,13 @@ class OutreachGateTests(unittest.TestCase):
         self.assertTrue(any("duplicate" in x.lower() for x in issues))
         self.assertTrue(any("verification" in x.lower() for x in issues))
 
+    def test_indirect_route_without_verified_cc_fails(self):
+        d=self.dossier()
+        d.pop("cc_contact")
+        self.assertTrue(any("CC a named" in e for e in assess(d,Path("."),set())))
+    def test_opt_out_blocks_even_verified_route(self):
+        d=self.dossier()
+        d["opted_out"]=True
+        self.assertTrue(any("opt-out" in e for e in assess(d,Path("."),set())))
 if __name__=="__main__":
     unittest.main()
