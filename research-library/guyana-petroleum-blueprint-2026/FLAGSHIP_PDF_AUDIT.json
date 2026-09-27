@@ -1,0 +1,21 @@
+{
+  "document": "guyana-petroleum-transformation-flagship-2026.pdf",
+  "edition": "1.0",
+  "stage": "flagship_publication",
+  "evidence_cutoff": "2026-09-27",
+  "pages_actual": 518,
+  "substantive_pages_at_least_100_words": 484,
+  "near_blank_pages": 1,
+  "source_records": 86,
+  "core_parts": 10,
+  "technical_annexes": 13,
+  "evidence_workbooks": 17,
+  "research_words_before_deduplication": 89140,
+  "exact_duplicate_long_paragraphs_in_source_corpus": 0,
+  "sha256": "d5978f08fc0ee2ca778b37447424164462ee691bc20d08c7af8034b1e72a9e01",
+  "citations_embedded": true,
+  "searchable_text": true,
+  "external_peer_review": "not_claimed",
+  "political_ranking": "none",
+  "publication_complete": true
+}
