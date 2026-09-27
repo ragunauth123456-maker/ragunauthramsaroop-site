@@ -26,7 +26,7 @@ def one_period(volume,price,opening_bank,new_cost):
             "government_profit_value_usd":gov_profit,
             "contractor_profit_value_usd":contractor_profit,
             "illustrative_government_total_usd":royalty+gov_profit,
-            "government_share_gross_pct":(royalty+gov_profit)/gross*100}
+            "government_share_gross_pct":(royalty+gov_profit)/gross*100 if gross else None}
 def cashout(data,scenario):
     rows=[]
     bank=D("0")
@@ -71,7 +71,7 @@ target=BASE/"EDITION2_SYNTHETIC_FISCAL_SCENARIOS.csv"
 with target.open("w",newline="",encoding="utf-8") as f:
     fieldnames=list(rows[0].keys())
     w=csv.DictWriter(f,fieldnames=fieldnames);w.writeheader()
-    for row in rows:w.writerow({k:str(v) if isinstance(v,D) else v for k,v in row.items()})
+    for row in rows:w.writerow({k:str(v) if isinstance(v,D) else ("not_applicable" if v is None else v) for k,v in row.items()})
 def rnd(x):return str(D(x).quantize(D("0.01"),rounding=ROUND_HALF_UP))
 summary={"model":"transparent synthetic mechanical illustration, not government revenue forecast",
          "contract_mechanic_sources":["S02","S15"],
