@@ -930,3 +930,227 @@ For a newcomer, the operating model should therefore link four ledgers:
 The country should be able to trace one petroleum dollar through all four.
 
 That is the standard required for true resource-to-wealth accountability.
+
+
+## Edition 2.0 evidence deepening: the year-by-year NRF record
+
+### Analytical section 120P. The NRF should be read as a continuous ledger
+
+Edition 2.0 adds `NRF_ANNUAL_LEDGER.csv` because the sovereign-fund story is best understood as a continuous stock-flow account rather than a sequence of press releases.
+
+The table separates:
+- opening balance;
+- petroleum and other eligible inflows;
+- investment return;
+- withdrawals;
+- closing balance;
+- accounting basis;
+- reconciliation status.
+
+This immediately reveals whether an apparent change in the fund is driven by petroleum revenue, financial return, withdrawal or accounting timing.
+
+### Analytical section 120Q. 2020: the first accounting year
+
+The early NRF record contains an important accounting lesson.
+
+The 2020 Q4 reporting shows both cash and a profit-oil receivable. That means a cargo-related amount could belong to the economic activity of one period while cash settlement occurred in the next. [S45]
+
+The final historical ledger should therefore preserve receivables rather than treating every year-end balance as cash physically received by 31 December.
+
+This is why the 2020 and 2021 rows remain explicitly marked as provisional early-year bridges until the audited annual statements are transcribed line by line into the master dataset.
+
+The choice to label an early row provisional is a strength, not a weakness.
+
+It prevents false precision.
+
+### Analytical section 120R. 2021: accumulation before withdrawals
+
+The 2021 year-end fund balance increased materially while the fund had not yet entered the later period of large budget transfers.
+
+This provides a useful baseline for evaluating the transition from accumulation to withdrawal.
+
+The institutional question is not whether withdrawal is inherently better or worse than accumulation.
+
+It is whether the transition occurs through the legal budget process and whether the assets financed by withdrawals can be traced.
+
+### Analytical section 120S. 2022: the first full withdrawal cycle
+
+The 2022 record is the first clear example in the ledger of large petroleum inflows occurring alongside material withdrawals.
+
+Official reporting records approximately US$607.65 million transferred to the Consolidated Fund during the year and a year-end fund value around US$1.43 billion. [S44, S47]
+
+This is the point at which sovereign-fund governance and public-investment governance become inseparable.
+
+The fund can remain correctly accounted for while the development value of the withdrawal depends on a separate budget and project-delivery system.
+
+### Analytical section 120T. 2023: the importance of accounting basis
+
+The 2023 annual reporting states petroleum inflows around US$1.608 billion, withdrawals around US$1.002 billion and investment return around US$86.84 million, with a year-end market value around US$2.122 billion. [S44]
+
+A separate public oversight source reported a lower closing figure in a different context.
+
+This discrepancy is analytically useful.
+
+A responsible publication should not silently choose the number that best fits the narrative.
+
+It should first determine whether the difference reflects:
+- cash versus accrual;
+- receivables;
+- reporting date;
+- market value versus cash;
+- transcription.
+
+Edition 2.0 therefore treats the Bank of Guyana fund statement as the controlling financial source and records the alternate figure as a reconciliation note until the basis is fully matched.
+
+### Analytical section 120U. 2024: simultaneous high inflow and high withdrawal
+
+The 2024 year illustrates why a closing balance cannot be read without the flow statement.
+
+Official reporting records annual petroleum inflows of approximately US$2.568 billion and withdrawals of approximately US$1.586 billion. The year-end market value was approximately US$3.246 billion. [S44]
+
+Using the official GYD stock-flow figures, the implied annual investment result is approximately US$141 million, consistent with public reporting on interest income.
+
+The publication labels that annual return as derived from the official identity unless and until the exact annual line is transcribed from the final annual statement.
+
+That disclosure matters because a derived figure should not be represented as a direct quote.
+
+### Analytical section 120V. 2025: withdrawals approach annual inflows
+
+The 2025 record is particularly important for long-run fiscal analysis.
+
+Annual reporting records inflows of approximately US$2.510 billion, investment income around US$142.13 million and withdrawals around US$2.463 billion, with a year-end fund value around US$3.435 billion. [S88, S109]
+
+The key observation is not that the fund balance still rose.
+
+It is that annual withdrawals were close in magnitude to annual petroleum inflows.
+
+A fiscal sustainability analysis should therefore ask:
+- Is this level of withdrawal temporary or structural?
+- How much recurrent spending does it support?
+- What happens if oil price or production falls?
+- How much is being converted into productive assets?
+- How quickly is the fund expected to grow under stress?
+
+Those are forward-looking policy questions.
+
+The ledger supplies the historical evidence needed to model them.
+
+### Analytical section 120W. H1 2026: partial-year data must stay partial
+
+The H1 2026 official mid-year reporting records government petroleum receipts and a June 30 fund balance after first-half withdrawals. [S07]
+
+The book should resist a common analytical shortcut: doubling the first-half number and calling it an annual result.
+
+Second-half production, cargo timing, prices, startup schedules and withdrawals can differ materially.
+
+The row is therefore labelled H1 2026 and remains visibly separate from audited full-year rows.
+
+### Analytical section 120X. The withdrawal-to-inflow ratio is a useful but incomplete indicator
+
+One useful annual indicator is:
+
+withdrawals / petroleum inflows.
+
+A rising ratio shows that a larger share of current-year petroleum revenue is being transferred to the budget.
+
+The indicator does not answer whether the withdrawal is prudent.
+
+It must be read with:
+- fund stock;
+- expected future revenue;
+- public debt;
+- non-oil primary balance;
+- investment quality;
+- recurrent spending.
+
+It is a diagnostic, not a policy verdict.
+
+### Analytical section 120Y. The fund-to-budget ratio should be paired with capital execution
+
+A second indicator is petroleum-funded budget transfer relative to total central-government expenditure or capital expenditure.
+
+This shows the fiscal importance of the fund.
+
+Again, the ratio is not sufficient.
+
+If capital execution is weak or projects are delayed, a high transfer may increase domestic liquidity faster than productive capacity.
+
+The fiscal dashboard should therefore pair:
+- withdrawal;
+- capital appropriation;
+- capital execution;
+- commissioned assets.
+
+### Analytical section 120Z. The NRF ledger should reconcile to petroleum entitlement
+
+The fund ledger begins at the point of revenue deposit.
+
+The petroleum revenue chain begins earlier.
+
+Edition 2.0 should ultimately connect:
+- government cargo entitlement;
+- sale;
+- royalty invoice;
+- settlement;
+- NRF deposit.
+
+If a government cargo is lifted in December and paid in January, the bridge should show that timing.
+
+This creates one continuous chain from physical petroleum to sovereign financial asset.
+
+### Analytical section 120AA. The ledger should be reproducible by an outside reviewer
+
+The final dataset should provide:
+- source document;
+- table/page;
+- GYD figure;
+- USD figure;
+- exchange rate where relevant;
+- accounting basis;
+- whether direct or derived;
+- formula.
+
+An outside reviewer should be able to reconstruct the annual identity without asking the author for a private spreadsheet.
+
+### Analytical section 120AB. A fund can grow while fiscal dependence also grows
+
+This is one of the most important conceptual points in resource governance.
+
+A larger year-end fund balance can coexist with:
+- higher annual withdrawals;
+- a wider non-oil deficit;
+- higher recurrent expenditure;
+- larger public investment;
+- rising dependence on petroleum transfers.
+
+The fund stock and the fiscal flow answer different questions.
+
+A country can be accumulating financial assets and increasing budget dependence at the same time.
+
+### Analytical section 120AC. The long-run stress model should start from the reconciled history
+
+Illustrative future scenarios should not begin from an arbitrary opening balance.
+
+They should begin from the most recent verified closing fund balance.
+
+They should then model:
+- petroleum receipts;
+- investment return;
+- withdrawal rule;
+- expenditure adjustment;
+- production delay;
+- price shock.
+
+This makes the scenario model auditable.
+
+The synthetic stress tables already in the repository should therefore be linked to the NRF annual ledger in the final Edition 2.0 methods appendix.
+
+### Analytical section 120AD. Evidence conclusion
+
+The year-by-year ledger changes Part IV from an institutional description into a financial history.
+
+It shows exactly why fund governance should be judged through both stock and flow.
+
+The final book should continue this record annually.
+
+A sovereign-fund system becomes more credible when every new year can be added to the same reconciliation without changing definitions.
