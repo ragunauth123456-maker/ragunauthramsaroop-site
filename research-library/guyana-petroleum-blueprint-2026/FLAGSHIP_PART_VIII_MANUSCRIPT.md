@@ -81,3 +81,256 @@ This cycle is more transferable than any single petroleum contract or fund-withd
 Guyana's public record shows a growing network of petroleum disclosure, fund reporting, audit material, parliamentary lawmaking, court review and EITI engagement. The same record also contains unresolved audit disputes, an ongoing EITI validation at the research cut-off, legal questions requiring primary judgment review and statistical gaps affecting social analysis. These facts belong together.
 
 The blueprint value lies in the structure of verification. A new producer should design for reconciliation, version control, challenge and correction from the start. Institutional maturity is not the absence of disputes. It is the ability to record them, resolve them through lawful procedures and preserve evidence of what changed.
+
+## Edition 2.0 deepening: accountability as a system of reconciled public ledgers
+
+### Analytical section 43A. Transparency should be designed for reconciliation
+
+Publication is necessary but not sufficient.
+
+A resource state can publish contracts, production data, fund reports and budgets while still making it difficult for an outside reviewer to connect one record to another.
+
+The stronger standard is reconcilability.
+
+A reviewer should be able to move from:
+licence  
+to production  
+to state entitlement  
+to sale  
+to cash receipt  
+to NRF deposit  
+to budget withdrawal  
+to procurement  
+to completed asset.
+
+Each transition should have a dated identifier.
+
+This is the difference between disclosure and an auditable public operating system.
+
+### Analytical section 43B. Beneficial ownership belongs in both licensing and procurement
+
+Beneficial ownership is often treated as an extractive-industry disclosure issue.
+
+Its relevance is wider.
+
+Government should understand who ultimately controls:
+- licence holders;
+- joint-venture partners;
+- petroleum suppliers;
+- public contractors;
+- companies receiving local-content preferences.
+
+The purpose is not to stigmatize complex ownership.
+
+It is to identify conflicts, related-party transactions, concentration and hidden control.
+
+The same ownership identifier should be usable across petroleum, company-registration and procurement systems where law permits.
+
+### Analytical section 43C. Conflict-of-interest controls should attach to decisions
+
+A generic ethics code is not enough for high-value petroleum decisions.
+
+Each major decision file should record:
+- decision-maker;
+- declared interests;
+- recusal if any;
+- adviser conflicts;
+- contractor relationships;
+- cooling-off restrictions where applicable.
+
+This should apply to:
+- licence awards;
+- contract negotiation;
+- audit procurement;
+- cargo marketing;
+- environmental permitting;
+- major public-investment awards.
+
+The public disclosure level may vary.
+
+The internal control should not.
+
+### Analytical section 43D. EITI is most valuable when it becomes part of routine government data
+
+EITI reporting can operate as a periodic reconciliation exercise.
+
+The higher institutional standard is systematic disclosure.
+
+Production, licence, ownership and revenue data should increasingly come from regular government systems rather than be recreated only for an EITI cycle.
+
+At the September 2026 evidence cut-off, Guyana's Validation remained ongoing, and EITI committee records show continuing process review. [S89, S104]
+
+The correct lesson for a newcomer is not to design transparency around one external assessment date.
+
+It is to make the underlying data routine enough that an external assessment can test an already functioning system.
+
+### Analytical section 43E. Audit findings need a status taxonomy
+
+Public debate often compresses all audit numbers into "money owed".
+
+A better taxonomy distinguishes:
+1. potential exception;
+2. formal audit finding;
+3. contractor response;
+4. government position;
+5. dispute;
+6. expert or judicial determination;
+7. accounting adjustment;
+8. cash recovery.
+
+This taxonomy should be used in every public update.
+
+It prevents a disputed cost from being represented as recovered public revenue before the contractual process is complete.
+
+### Analytical section 43F. Parliamentary oversight needs transaction-level support
+
+Parliamentary debate is stronger when members receive reconciled data rather than headline totals.
+
+An annual petroleum accountability package could include:
+- production by project;
+- government lifts;
+- realized public petroleum receipts;
+- NRF opening and closing balance;
+- withdrawals;
+- outstanding cost-audit disputes;
+- public investment funded from withdrawals;
+- major environmental incidents;
+- local-content outcomes.
+
+The package should use definitions consistent with audited financial statements and regulator data.
+
+### Analytical section 43G. Judicial review works best when administrative records are complete
+
+Courts should not have to reconstruct the factual record from press statements.
+
+A regulator's decision file should preserve:
+- legal authority;
+- technical evidence;
+- consultation;
+- reasons;
+- conditions;
+- financial-assurance analysis;
+- internal review.
+
+This improves both accountability and institutional defensibility.
+
+The environmental financial-assurance litigation demonstrates why the quality of the administrative record matters even when the ultimate legal interpretation remains contested. [S101, S103, S105]
+
+### Analytical section 43H. Freedom-of-information capability should include data architecture
+
+A transparency regime can be overwhelmed if records are poorly indexed.
+
+Petroleum records should therefore have:
+- document type;
+- project;
+- date;
+- version;
+- responsible agency;
+- confidentiality status;
+- retention period.
+
+Good records management reduces the cost of both public disclosure and internal decision-making.
+
+### Analytical section 43I. Statistical independence depends on revision discipline
+
+Fast-growing resource economies experience frequent revisions.
+
+The credibility question is not whether revisions occur.
+
+It is whether the revision process is transparent.
+
+Every major statistical series should retain:
+- previous release;
+- revised value;
+- reason;
+- methodology;
+- effective date.
+
+This applies to national accounts, production, trade and public finance.
+
+### Analytical section 43J. Public dashboards should publish definitions before graphics
+
+A dashboard can increase confusion if users do not know what a number means.
+
+Every dashboard should define:
+- unit;
+- time period;
+- source;
+- gross or net;
+- nominal or real;
+- cash or accrual;
+- provisional or final.
+
+The definition should be visible without downloading a technical appendix.
+
+### Analytical section 43K. Independent scrutiny needs access to machine-readable data
+
+PDF reports are valuable for narrative and legal record.
+
+Auditors and researchers also need structured data.
+
+A mature disclosure system should publish:
+- CSV or API production series;
+- machine-readable budget data;
+- contract metadata;
+- permit metadata;
+- beneficial-ownership fields where lawful;
+- procurement records.
+
+This allows external parties to reproduce calculations rather than manually transcribe tables.
+
+### Analytical section 43L. A corrections register is a governance instrument
+
+Institutions sometimes resist public correction because correction is perceived as failure.
+
+The stronger practice is to make correction routine.
+
+A correction register should show:
+- original release;
+- corrected value or wording;
+- reason;
+- date;
+- effect on prior conclusions.
+
+The publication itself now uses this principle.
+
+The same logic should apply to government data.
+
+### Analytical section 43M. Institutional memory should survive political transition
+
+Petroleum systems operate across administrations.
+
+A licence can outlast a government.
+
+A cost audit can span several years.
+
+A decommissioning obligation can persist for decades.
+
+Institutional records should therefore be designed to survive political turnover.
+
+This means:
+- permanent file structures;
+- documented delegations;
+- version-controlled models;
+- handover protocols;
+- protected archives.
+
+The objective is not to eliminate policy change.
+
+It is to ensure that later decision-makers inherit the evidence needed to change policy intelligently.
+
+### Analytical section 43N. Expanded Part VIII conclusion
+
+Accountability should not be evaluated through the number of reports published.
+
+The stronger test is whether the public record can be reconciled across institutions and across time.
+
+Guyana's petroleum, fund, EITI, budget, audit and judicial records provide a substantial documentary base. [S18, S41-S47, S69-S73, S81-S89, S104]
+
+The next step is integration.
+
+For a newcomer, the blueprint is to build one common data architecture across legal, production, revenue, cost, fund, procurement, social and environmental systems.
+
+Every material figure should have a source owner, observation date, revision history and transaction boundary.
+
+That architecture makes scrutiny cheaper, dispute resolution faster and institutional learning more durable.
