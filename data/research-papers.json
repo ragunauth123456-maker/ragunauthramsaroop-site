@@ -1,0 +1,72 @@
+{
+  "updated": "2026-09-26",
+  "disclosure": "Original documents belong to the published research library. Page extracts are created from publicly available PDFs and have been truncated for search preview.",
+  "papers": [
+    {
+      "slug": "guyana-2040",
+      "title": "Guyana 2040: Strategic Development",
+      "pdf": "/research-library/guyana-2040/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "guyana-power-demand-2030",
+      "title": "Guyana Power Demand 2030",
+      "pdf": "/research-library/guyana-power-demand-2030/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "critical-minerals-energy-security",
+      "title": "Critical Minerals and Energy Security",
+      "pdf": "/research-library/critical-minerals-energy-security/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "guyana-economy-2030",
+      "title": "Guyana Economy 2030",
+      "pdf": "/research-library/guyana-economy-2030/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "new-geography-globalization",
+      "title": "The New Geography of Globalization",
+      "pdf": "/research-library/new-geography-globalization/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "water-security-economic-security",
+      "title": "Water Security and Economic Security",
+      "pdf": "/research-library/water-security-economic-security/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "guyana-lcds-2030",
+      "title": "Guyana LCDS 2030",
+      "pdf": "/research-library/guyana-lcds-2030/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "guyana-carbon-credits",
+      "title": "Guyana Carbon Credits",
+      "pdf": "/research-library/guyana-carbon-credits/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "guyana-global-biodiversity-alliance",
+      "title": "Global Biodiversity Alliance",
+      "pdf": "/research-library/guyana-global-biodiversity-alliance/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "who-pays-energy-transition",
+      "title": "Who Pays for the Energy Transition?",
+      "pdf": "/research-library/who-pays-energy-transition/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    },
+    {
+      "slug": "omai-gold-2026-pea",
+      "title": "Omai Gold PEA",
+      "pdf": "/research-library/omai-gold-2026-pea/full-text.pdf",
+      "description": "Published independent research. Open the original PDF for the full methodology and qualifications."
+    }
+  ]
+}
