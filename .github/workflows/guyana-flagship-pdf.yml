@@ -66,11 +66,34 @@ jobs:
             research-library/guyana-petroleum-blueprint-2026/_flagship_preview_*.png
       - name: Commit audited flagship to research branch
         run: |
+          set -e
+          D="research-library/guyana-petroleum-blueprint-2026"
+          TMP="$(mktemp -d)"
+          cp "$D/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf" "$TMP/"
+          cp "$D/FLAGSHIP_PDF_AUDIT.json" "$TMP/"
+          cp "$D/RESEARCH_INTEGRITY_AUDIT.json" "$TMP/"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
-          git add research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
-          git add research-library/guyana-petroleum-blueprint-2026/RESEARCH_INTEGRITY_AUDIT.json
-          if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
-          git commit -m "research: publish internally audited Guyana Edition 1.1 candidate [skip ci]"
-          git push origin HEAD:research/guyana-petroleum-blueprint-2026
+          for attempt in 1 2 3; do
+            git fetch origin research/guyana-petroleum-blueprint-2026
+            git reset --hard origin/research/guyana-petroleum-blueprint-2026
+            cp "$TMP/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf" "$D/"
+            cp "$TMP/FLAGSHIP_PDF_AUDIT.json" "$D/"
+            cp "$TMP/RESEARCH_INTEGRITY_AUDIT.json" "$D/"
+            git add "$D/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf"
+            git add "$D/FLAGSHIP_PDF_AUDIT.json"
+            git add "$D/RESEARCH_INTEGRITY_AUDIT.json"
+            if git diff --cached --quiet; then
+              echo "No artifact changes"
+              exit 0
+            fi
+            git commit -m "research: publish internally audited Guyana Edition 1.1 candidate [skip ci]"
+            if git push origin HEAD:research/guyana-petroleum-blueprint-2026; then
+              exit 0
+            fi
+            echo "Branch moved during publish, retrying ($attempt/3)"
+            sleep 2
+          done
+          echo "Unable to publish audited artifact after retries"
+          exit 1
+
