@@ -25,14 +25,14 @@
   ],
   "core_registered_source_refs": 78,
   "core_unknown_source_refs": [],
-  "high_risk_claims": 45,
-  "high_risk_claim_source_refs": 64,
+  "high_risk_claims": 50,
+  "high_risk_claim_source_refs": 74,
   "high_risk_claim_source_refs_valid": true,
   "open_or_limited_high_risk_claims": [
     "C021",
-    "C022",
     "C023",
-    "C025"
+    "C025",
+    "C048"
   ],
   "external_peer_review": "pending"
 }
