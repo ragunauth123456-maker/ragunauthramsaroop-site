@@ -20,7 +20,8 @@ from reportlab.platypus.tableofcontents import TableOfContents
 import fitz
 
 BASE=Path(__file__).resolve().parent
-OUT=BASE/"guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf"
+OUT=BASE/"guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf"
+MANIFEST=BASE/"PUBLICATION_MANIFEST.json"
 AUDIT=BASE/"FLAGSHIP_PDF_AUDIT.json"
 NAVY=colors.HexColor("#102A43"); FOREST=colors.HexColor("#17624F"); SAGE=colors.HexColor("#E4F0EA")
 TEXT=colors.HexColor("#243B53"); GRAY=colors.HexColor("#627D98"); PALE=colors.HexColor("#F4F8F6")
@@ -163,7 +164,8 @@ evidence=[
 "PART_V_ENVIRONMENT_CLIMATE_AND_SPILL_DOSSIER.md","PART_VI_LOCAL_CONTENT_AND_SOCIAL_OUTCOMES_DOSSIER.md",
 "PART_VII_ECONOMIC_TRANSFORMATION_DOSSIER.md","PART_VIII_ACCOUNTABILITY_AND_INSTITUTIONAL_LEARNING_DOSSIER.md",
 "PART_IX_COMPARATIVE_CASES_DOSSIER.md","PART_X_NEW_PRODUCER_OPERATING_MANUAL.md",
-"NRF_RECONCILIATION_WORKBOOK.md","ENVIRONMENTAL_PERMIT_AND_RISK_REGISTER.md","MODEL_METHODS_AND_LIMITATIONS.md"]
+"NRF_RECONCILIATION_WORKBOOK.md","ENVIRONMENTAL_PERMIT_AND_RISK_REGISTER.md","MODEL_METHODS_AND_LIMITATIONS.md",
+"LEGAL_EVIDENCE_LEDGER.md","CORRECTIONS_REGISTER.md"]
 annex=sorted(p.name for p in BASE.glob("TECHNICAL_ANNEX_*.md"))
 hardening=(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")
 adversarial=(BASE/"ADVERSARIAL_PUBLICATION_AUDIT.md").read_text(encoding="utf-8")
@@ -174,7 +176,7 @@ core_section_count=sum(len(re.findall(r"^###\s+Chapter\s+\d+\.",all_text[n],flag
 brief=(BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
 sources=(BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
 gates=(BASE/"PUBLICATION_REVIEW_GATES.md").read_text(encoding="utf-8")
-source_rows=src_rows(sources); assert len(source_rows)>=95
+source_rows=src_rows(sources); assert len(source_rows)>=106
 
 # exact duplicate long-paragraph audit in source corpus
 paras=[]
@@ -188,7 +190,7 @@ story=[Spacer(1,22*mm),Paragraph("GUYANA | EXPLORATION TO PRODUCTION",s["CoverK"
        Paragraph("GUYANA'S PETROLEUM<br/>TRANSFORMATION",s["CoverT"]),Rule(),Spacer(1,7*mm),
        Paragraph("The Guyana Sequence: exploration, contracts, first oil, sovereign wealth, environmental stewardship, national development and a transferable blueprint for emerging producers",s["CoverS"]),
        Spacer(1,9*mm),Paragraph("Independent research by Ragunauth Ramsaroop",s["H2F"]),
-       Paragraph("Edition 1.1 | Internally audited publication candidate | Evidence cut-off: 27 September 2026",s["BodyF"]),
+       Paragraph("Edition 1.2 | Scrutiny-hardened publication candidate | Evidence cut-off: 27 September 2026",s["BodyF"]),
        Paragraph("Independent research. No political or electoral ranking. Government, operator, multilateral, judicial and stakeholder positions are attributed. External peer review remains pending.",s["SmallF"]),
        PageBreak(),h1("Contents")]
 toc=TableOfContents(); toc.levelStyles=[s["TOCF"],s["TOCF"]]; story.extend([toc,PageBreak(),h1("Executive brief")])
@@ -271,7 +273,7 @@ assert duplicate_long<=25, f"Source corpus contains too many exact long-paragrap
 sha=hashlib.sha256(OUT.read_bytes()).hexdigest()
 word_counts={k:len(v.split()) for k,v in all_text.items()}
 audit={
- "document":OUT.name,"edition":"1.1-candidate","stage":"publication_candidate",
+ "document":OUT.name,"edition":"1.2-scrutiny-candidate","stage":"publication_candidate",
  "evidence_cutoff":"2026-09-27","pages_actual":pages,
  "substantive_pages_at_least_100_lexical_words":substantive,"near_blank_pages":blank,
  "core_integrated_pages":core_pages,"core_integrated_lexical_words":core_lexical_words,"core_analytical_sections":core_section_count,
@@ -280,11 +282,42 @@ audit={
  "exact_duplicate_long_paragraphs_in_source_corpus":duplicate_long,
  "sha256":sha,"citations_embedded":True,"searchable_text":len(flat)>100000,
  "tables_redesigned_for_readability":True,"tagged_pdf_accessibility":False,
- "internal_adversarial_audit":"completed_with_open_gates",
+ "internal_adversarial_audit":"completed_with_open_gates","pinpoint_legal_evidence_ledger":True,"corrections_register":True,
  "external_peer_review":"pending","political_ranking":"none",
  "publication_complete":False
 }
 AUDIT.write_text(json.dumps(audit,indent=2)+"\n",encoding="utf-8")
+manifest_files=[
+ OUT,
+ AUDIT,
+ BASE/"SOURCE_REGISTER.md",
+ BASE/"CLAIM_SOURCE_MATRIX.md",
+ BASE/"LEGAL_EVIDENCE_LEDGER.md",
+ BASE/"CORRECTIONS_REGISTER.md",
+ BASE/"RESEARCH_INTEGRITY_AUDIT.json",
+ BASE/"ILLUSTRATIVE_SCENARIOS.csv",
+ BASE/"ILLUSTRATIVE_PRODUCTION_SHOCKS.csv",
+ BASE/"ILLUSTRATIVE_FUND_STRESS.csv",
+]
+file_hashes={}
+for path in manifest_files:
+    if path.exists():
+        file_hashes[path.name]=hashlib.sha256(path.read_bytes()).hexdigest()
+manifest={
+ "edition":"1.2-scrutiny-candidate",
+ "evidence_cutoff":"2026-09-27",
+ "publication_status":"candidate",
+ "external_peer_review":"pending",
+ "pdf":OUT.name,
+ "pdf_sha256":sha,
+ "source_records":len(source_rows),
+ "high_risk_claim_matrix":"CLAIM_SOURCE_MATRIX.md",
+ "legal_evidence_ledger":"LEGAL_EVIDENCE_LEDGER.md",
+ "corrections_register":"CORRECTIONS_REGISTER.md",
+ "open_evidence_items_preserved":True,
+ "file_sha256":file_hashes
+}
+MANIFEST.write_text(json.dumps(manifest,indent=2)+"\n",encoding="utf-8")
 for no in sorted(set([0,1,2,10,pages//4,pages//2,(3*pages)//4,pages-2,pages-1])):
     pix=pdf[no].get_pixmap(matrix=fitz.Matrix(1.25,1.25)); pix.save(str(BASE/f"_flagship_preview_{no+1}.png"))
 pdf.close()
