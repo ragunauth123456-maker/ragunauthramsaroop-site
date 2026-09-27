@@ -551,3 +551,262 @@ Cash is not budget spending.
 A newcomer country that preserves these distinctions gains a traceable petroleum system.
 
 That traceability becomes the foundation for sovereign wealth management, environmental oversight and public accountability in the later parts of this study.
+
+
+## Edition 2.0 deepening: production scale-up as an integrated control system
+
+### Analytical section 80A. First oil should be decomposed into a readiness sequence
+
+"First oil" compresses many separate events into one phrase.
+
+Before production begins, a state has already had to approve or monitor:
+- appraisal;
+- commerciality;
+- field-development design;
+- production licence;
+- environmental authorization;
+- FPSO construction and commissioning;
+- subsea installation;
+- metering;
+- lifting procedures;
+- customs and import treatment;
+- emergency arrangements;
+- revenue custody.
+
+The correct readiness test is therefore not whether the FPSO can produce.
+
+It is whether the state can independently account for the first barrel from reservoir to public receipt.
+
+A new producer should conduct a full simulated production month before startup. The exercise should create synthetic daily production, meter data, cargo nominations, lifting statements, benchmark pricing, royalty calculations, cost-recovery entries, government entitlement and a mock NRF deposit.
+
+Every responsible institution should sign off on the same transaction.
+
+### Analytical section 80B. FPSO-by-FPSO expansion changes regulatory complexity
+
+Guyana moved from the Liza Destiny to additional FPSOs in a short period. The production dashboard and project records allow each startup to be dated separately. [S81-S85]
+
+The policy significance is not only higher capacity.
+
+Each additional FPSO creates another operating system with:
+- production meters;
+- maintenance schedules;
+- flare and emissions records;
+- tanker traffic;
+- helicopter and marine support;
+- environmental monitoring;
+- emergency-response requirements;
+- cargo schedules;
+- project-specific cost accounts.
+
+A regulator that was adequate for one project may not remain adequate for four or more.
+
+Capacity planning should therefore use project count and control points, not only barrels per day.
+
+### Analytical section 80C. Installed capacity, observed output and annual production are different measures
+
+An FPSO's nameplate capacity is an engineering design parameter.
+
+Observed daily production is a point-in-time operating result.
+
+Monthly production is an aggregation of realized output.
+
+Annual production incorporates ramp-up, downtime, maintenance and reservoir performance.
+
+These measures should never be substituted for one another.
+
+The distinction becomes especially important during rapid scale-up. A new vessel may add large installed capacity but contribute only part of a year's production because of startup timing.
+
+Forecasting should therefore be done monthly, project by project.
+
+The public dashboard should display capacity and realized production on separate axes.
+
+### Analytical section 80D. Metering is the first line of revenue assurance
+
+Revenue assurance begins before price and cost recovery.
+
+It begins with volume.
+
+The state needs confidence in:
+- meter specification;
+- calibration;
+- proving;
+- failure procedures;
+- correction factors;
+- custody-transfer points;
+- data retention.
+
+If a production meter fails, the agreement and licence should define how production is reconstructed.
+
+The regulator should preserve calibration certificates and exception logs.
+
+This is not an engineering detail separate from fiscal governance.
+
+A systematic measurement error becomes a revenue error.
+
+### Analytical section 80E. Cargo accounting is a bridge between reservoir and treasury
+
+The public revenue chain should be reproducible at cargo level.
+
+For each cargo, government should be able to connect:
+- production period;
+- entitlement calculation;
+- lifting date;
+- volume;
+- quality;
+- buyer;
+- pricing formula;
+- realized price;
+- settlement date;
+- cash receipt;
+- NRF deposit.
+
+This table should not expose legitimate commercial secrets unnecessarily.
+
+It should exist inside government.
+
+A summarized public version can then reconcile total government cargoes to reported petroleum receipts.
+
+The advantage of cargo-level accounting is that timing differences become visible. Production in one month may generate a sale in another and a cash receipt later still.
+
+### Analytical section 80F. Production forecasting should be probabilistic
+
+A single production forecast hides operational risk.
+
+A more useful framework separates:
+- base production;
+- planned maintenance;
+- startup ramp;
+- reservoir decline;
+- unplanned downtime;
+- new project contribution.
+
+Government revenue forecasting should then run at least three production cases.
+
+The low case should not be an arbitrary percentage reduction. It should represent plausible operational conditions such as delayed startup or extended maintenance.
+
+This produces a more credible fiscal contingency range.
+
+### Analytical section 80G. Maintenance is part of sovereign revenue risk
+
+As an offshore province matures, maintenance becomes economically material.
+
+Shutdowns affect:
+- production;
+- cargo timing;
+- cost recovery;
+- government revenue;
+- service demand;
+- safety risk.
+
+The state should therefore distinguish planned from unplanned downtime.
+
+A public production series can show the output effect.
+
+The regulator's internal record should also preserve the reason for material outages where legally reportable.
+
+This matters because repeated operational interruptions can signal a different risk from one scheduled maintenance campaign.
+
+### Analytical section 80H. Production data should be governed as public infrastructure
+
+A production dashboard is not merely a communications product.
+
+It is part of national statistical infrastructure.
+
+The series should have:
+- documented units;
+- project identifiers;
+- revision policy;
+- observation frequency;
+- publication lag;
+- metadata;
+- archival versions.
+
+If historical values are revised, the state should preserve the earlier release and explain the revision.
+
+This makes the dataset usable for fiscal analysis, academic work and public accountability.
+
+The official Guyana production series through July 2026 provides a foundation for this approach. [S81]
+
+### Analytical section 80I. Production and cost data should meet at project level
+
+A national production total is not enough for petroleum economics.
+
+The state should be able to associate each project with:
+- cumulative production;
+- development cost;
+- operating cost;
+- recoverable-cost balance;
+- government entitlement;
+- environmental obligations;
+- decommissioning estimate.
+
+This creates a project economics ledger.
+
+The ledger helps distinguish whether lower government profit petroleum results from price, production, cost recovery or project mix.
+
+### Analytical section 80J. Rapid scale creates a regulator financing question
+
+A producing state should ask how regulatory capacity is funded.
+
+If the regulator depends entirely on annual general-budget appropriations, staffing may lag sector growth.
+
+Alternative mechanisms can include lawful licence fees, regulatory charges or dedicated appropriations.
+
+The design must preserve independence and public accountability.
+
+The key principle is that the state should not be forced to supervise a multibillion-dollar industry with a staffing model designed for a pre-production frontier.
+
+### Analytical section 80K. Production expansion should trigger emergency-response scaling
+
+Every additional offshore project changes the response problem.
+
+Response planning should account for:
+- simultaneous operations;
+- distance between installations;
+- capping-resource availability;
+- vessel capacity;
+- aviation capacity;
+- medical evacuation;
+- shoreline sensitivity;
+- regional assistance.
+
+The emergency plan should test concurrent incidents rather than assume only one project can fail at a time.
+
+This links Part III directly to the environmental analysis in Part V.
+
+### Analytical section 80L. Mature production requires decline planning
+
+A petroleum strategy should not focus only on startup.
+
+Every field eventually declines.
+
+The state should monitor:
+- reservoir performance;
+- water cut;
+- gas handling;
+- infill drilling;
+- enhanced-recovery proposals;
+- operating-cost changes;
+- cessation-of-production planning.
+
+A late-stage field may produce fewer barrels while carrying higher operating cost.
+
+That can affect both cost recovery and government cash.
+
+A country should therefore begin decline and decommissioning analysis while production is still growing.
+
+### Analytical section 80M. Expanded Part III conclusion
+
+Guyana's rapid production scale-up makes the country especially useful for a newcomer blueprint because institutional stress becomes visible quickly.
+
+The transition from one FPSO to several projects compressed regulatory learning into a few years. [S81-S85]
+
+The central control principle is traceability.
+
+Every barrel should pass through a chain of measurement, entitlement, sale, receipt and public accounting.
+
+Every project should have a corresponding chain of licence, environmental authorization, operating data, cost account and decommissioning estimate.
+
+The production chapter should therefore be read as a data-governance chapter as much as an engineering chapter.
+
+A newcomer that builds these controls before first oil creates the evidence base needed for every later question in the book: fiscal performance, environmental impact, local content, public investment and intergenerational wealth.
