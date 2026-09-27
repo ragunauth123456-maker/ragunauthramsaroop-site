@@ -1,3 +1,38 @@
+# CURRENT EDITION 2.0 STATUS — 27 SEPTEMBER 2026
+
+This status supersedes the historical word/source counts below. It was verified from the live ten integrated manuscripts and source register on the research branch, not inferred from the older Edition 1.2 PDF.
+
+**Integrated core manuscript:** 66,605 whitespace-delimited words across ten Parts. Target 120,000–150,000 non-repetitive substantive core words before supporting annexes; minimum remaining 53,395 words. This is a quantitative measure, not proof that every paragraph has passed external substantive review.
+
+| Part | Current integrated manuscript words |
+|---|---:|
+| I | 7,666 |
+| II | 8,228 |
+| III | 5,134 |
+| IV | 7,059 |
+| V | 7,649 |
+| VI | 7,222 |
+| VII | 6,572 |
+| VIII | 4,905 |
+| IX | 5,142 |
+| X | 7,028 |
+
+**Source register:** 141 entries (S01–S141). Registry count does not establish that all URLs are live, all citation pinpoints have been independently validated, or all source claims have passed legal/expert review.
+
+**Structured datasets:** NRF annual stock-flow ledger, offshore project register, master chronology, local-content value-added framework, comparator mechanism matrix, public-investment delivery register, offshore environmental assurance matrix, PSA clause crosswalk, readiness checklist, governance RACI, and adverse-scenario playbook are in the research branch. Some are specification frameworks or contain unresolved source/reconciliation gaps, not completed audited datasets.
+
+**Known material numerical blocker:** The H1 2026 NRF reconciliation is OPEN. Government receipts and fund accounting contain different cutoffs. Approximate USD 184.23 million difference between reported receipts and the rounded cash/IFRS stock-flow bridge has a plausible receivable-timing explanation but exact transaction mapping, accrual recognition and rounding remain to be proved. Treat as unresolved, not reconciled.
+
+**PDF:** The latest built PDF remains Edition 1.2 and is an older publication candidate. Edition 2.0 has not been built or visually audited as a PDF. The Edition 1.2 CI release workflow has been switched to manual dispatch so automatic pushes do not make the old PDF appear newly completed.
+
+**Remaining substantive work:** At least 53,395 additional non-repetitive core words; highest relative deficits currently Parts VIII–X and III/VII. Finish source-specific claim reviews, exact legal/source pinpoints, live URL checks, independent environmental/social evidence, NRF and public-investment reconciliation, quality original exhibits and maps, near-duplicate analysis, coherent cross-Part editing, Edition 2-specific CI, audited PDF build and visual QA.
+
+**External peer review:** Pending. **Edition 2.0 final:** Not complete. **PR #61:** Draft. **Issue #60:** Open. No unattended book-writing agent or scheduled background process is claimed.
+
+---
+
+## HISTORICAL TRACKER ENTRIES (earlier milestones, not current live counts)
+
 # FLAGSHIP PROGRESS TRACKER
 
 Publication target: 520-560 substantive pages  
