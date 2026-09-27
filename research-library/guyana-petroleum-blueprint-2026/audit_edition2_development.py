@@ -106,6 +106,20 @@ implied=c-o+w-ret; gap=gov-implied
 assert abs(implied-D("1812.77"))<=D("0.03"),f"unexpected H1 implied inflows: {implied}"
 assert abs(gap-D("184.23"))<=D("0.03"),f"unexpected H1 recognition gap: {gap}"
 assert abs(D(h1["receipt_to_implied_inflow_gap_usd_m"])-gap)<=D("0.03")
+# Keep audit exceptions, government positions and actual cash recovery in separate fields.
+with (BASE/"PETROLEUM_COST_AUDIT_STATUS.csv").open(newline="",encoding="utf-8") as f:
+    cost_audits=list(csv.DictReader(f))
+assert {r["audit_period"] for r in cost_audits}=={"1999-2017","2018-2020","2021-2023"}, "Audit-period register incomplete"
+for row in cost_audits:
+    if row["reported_government_exception_usd"]:
+        audited=D(row["reported_submitted_costs_usd"])
+        challenged=D(row["reported_government_exception_usd"])
+        pct=challenged/audited*100
+        assert abs(pct-D(row["reported_exception_share_of_claims_pct"]))<=D("0.02"),f"Audit ratio mismatch {row['audit_period']}"
+    assert row["what_is_not_established"],"Audit-period evidence limits must remain explicit"
+third=next(r for r in cost_audits if r["audit_period"]=="2021-2023")
+assert not third["reported_government_exception_usd"],"Do not invent 2021-2023 dispute amount"
+
 required=["OFFSHORE_PROJECT_REGISTER.csv","MASTER_CHRONOLOGY.csv",
 "LOCAL_CONTENT_VALUE_ADDED_FRAMEWORK.csv","COMPARATOR_MECHANISM_MATRIX.csv",
 "PUBLIC_INVESTMENT_DELIVERY_REGISTER.csv","OFFSHORE_ENVIRONMENTAL_ASSURANCE_MATRIX.csv",
@@ -122,7 +136,8 @@ audit={
  "core_sources_by_part":{k:len(v) for k,v in core_refs.items()},
  "high_risk_claims":len(claim_rows),"exact_repeated_long_paragraphs":exact_repeat,
  "near_duplicate_leading_phrase_candidates":len(near_repeat_candidates),
- "csv_files_validated":len(datasets),"nrf_rounded_residual_usd_m":residuals,
+ "csv_files_validated":len(datasets),"cost_audit_periods_checked":len(cost_audits),
+ "cost_audit_final_recovery_verified":False,"nrf_rounded_residual_usd_m":residuals,
  "nrf_2026_h1_implied_inflows_usd_m":str(implied),
  "nrf_2026_h1_unreconciled_recognition_gap_usd_m":str(gap),
  "nrf_2026_h1_reconciled":False,
