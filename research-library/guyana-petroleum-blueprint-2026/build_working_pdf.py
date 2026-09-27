@@ -243,6 +243,8 @@ def build() -> None:
     manuscript = (BASE/"MANUSCRIPT_WORKING_DRAFT.md").read_text(encoding="utf-8")
     brief = (BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
     playbook = (BASE/"COUNTRY_PLAYBOOK.md").read_text(encoding="utf-8")
+    newcomer = (BASE/"NEW_PRODUCER_BLUEPRINT.md").read_text(encoding="utf-8")
+    comparators = (BASE/"COMPARATIVE_CASES.md").read_text(encoding="utf-8")
     sources = (BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
     assert len(manuscript.split()) > 6500, "Do not render an empty/placeholder manuscript"
 
@@ -280,6 +282,10 @@ def build() -> None:
     story.extend([PageBreak(), top_heading("Transferable country handbook")])
     # The handbook is an original substantive companion annex, not repeated boilerplate.
     story.extend(markdown_flow(playbook))
+    story.extend([PageBreak(), top_heading("New producer implementation blueprint")])
+    story.extend(markdown_flow(newcomer))
+    story.extend([PageBreak(), top_heading("Comparative cases and transfer limits")])
+    story.extend(markdown_flow(comparators))
     story.extend([PageBreak(), top_heading("Source register"),
                   Paragraph("Dated source IDs correspond to citations in the manuscript. "
                             "Public URLs link to originals. Key unresolved verification "
@@ -313,7 +319,9 @@ def build() -> None:
     qa = {"document": out.name, "version": "0.1", "stage": "working_research",
           "pages_actual": pages, "manuscript_words": len(manuscript.split()),
           "playbook_words": len(playbook.split()),
-          "combined_research_words": len(manuscript.split()) + len(playbook.split()),
+          "newcomer_blueprint_words": len(newcomer.split()),
+          "comparative_cases_words": len(comparators.split()),
+          "combined_research_words": len(manuscript.split()) + len(playbook.split()) + len(newcomer.split()) + len(comparators.split()),
           "brief_words": len(brief.split()), "source_records": len(source_rows),
           "substantive_pages_at_least_100_words": substantive,
           "sha256": sha, "citations_embedded": True,
