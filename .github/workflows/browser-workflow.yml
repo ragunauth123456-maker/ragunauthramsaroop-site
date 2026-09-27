@@ -1,0 +1,53 @@
+name: Browser workflow regression
+on:
+  pull_request:
+    paths:
+      - 'start/**'
+      - 'resources/**'
+      - 'project-workspace/**'
+      - 'research-explorer/**'
+      - 'observatory/**'
+      - 'executive-engagement/**'
+      - 'subscribe/**'
+      - 'academy/**'
+      - 'assets/**'
+      - 'tools/geolibre/**'
+      - 'tools/assets/**'
+      - 'tools/index.html'
+      - 'scripts/browser_smoke_test.py'
+      - '.github/workflows/browser-workflow.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'start/**'
+      - 'resources/**'
+      - 'project-workspace/**'
+      - 'research-explorer/**'
+      - 'observatory/**'
+      - 'executive-engagement/**'
+      - 'subscribe/**'
+      - 'academy/**'
+      - 'assets/**'
+      - 'tools/geolibre/**'
+      - 'tools/assets/**'
+      - 'tools/index.html'
+      - 'scripts/browser_smoke_test.py'
+      - '.github/workflows/browser-workflow.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  user-journeys:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Chromium browser testing
+        run: |
+          python -m pip install 'playwright==1.56.0'
+          python -m playwright install --with-deps chromium
+      - name: Test actual browser interactions across six workspaces
+        run: python scripts/browser_smoke_test.py

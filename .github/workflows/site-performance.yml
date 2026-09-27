@@ -12,6 +12,17 @@ on:
       - 'tools/categories/research-investment/index.html'
       - 'tools/index.html'
       - 'tools/sitemap.xml'
+      - 'start/index.html'
+      - 'resources/index.html'
+      - 'academy/**'
+      - 'observatory/**'
+      - 'executive-engagement/**'
+      - 'project-workspace/**'
+      - 'research-explorer/**'
+      - 'subscribe/**'
+      - 'data/research-papers.json'
+      - 'data/research-pages.json'
+      - 'data/academy-assessments.json'
       - 'sitemap.xml'
       - '.github/workflows/site-performance.yml'
   push:
@@ -27,6 +38,17 @@ on:
       - 'tools/categories/research-investment/index.html'
       - 'tools/index.html'
       - 'tools/sitemap.xml'
+      - 'start/index.html'
+      - 'resources/index.html'
+      - 'academy/**'
+      - 'observatory/**'
+      - 'executive-engagement/**'
+      - 'project-workspace/**'
+      - 'research-explorer/**'
+      - 'subscribe/**'
+      - 'data/research-papers.json'
+      - 'data/research-pages.json'
+      - 'data/academy-assessments.json'
       - 'sitemap.xml'
       - '.github/workflows/site-performance.yml'
   schedule:
@@ -54,10 +76,18 @@ jobs:
           node --check assets/platform.js
           node --check tools/assets/analytics-loader.js
           node --check tools/geolibre/geolibre.js
+          node --check assets/project-workspace.js
+          node --check assets/research-explorer.js
+          node --check assets/indicator-explorer.js
+          node --check assets/executive-engagement.js
+          node --check assets/subscribe.js
+          node --check assets/academy-learning-lab.js
       - name: Verify route-safe service worker offline behavior
         run: node scripts/test_service_worker_navigation.cjs
       - name: Verify opt-in GeoLibre GIS integration
         run: python scripts/test_geolibre_integration.py
+      - name: Verify six connected workspaces and evidence indexes
+        run: python scripts/test_six_workspaces.py
       - name: Validate site links, metadata and site resources
         run: python scripts/validate_site.py
       - name: Audit image and HTML sizes
