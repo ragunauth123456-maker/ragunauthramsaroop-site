@@ -14,5 +14,11 @@
   "sha256": "e538859a93899f26e94fb1eb399d251d6fc1e49f1f278248570645a7eb260bf3",
   "citations_embedded": true,
   "external_peer_review": "pending",
-  "full_volume_complete": false
+  "full_volume_complete": false,
+  "flagship_target_pages_min": 520,
+  "flagship_target_pages_max": 560,
+  "flagship_architecture": "MASTER_PUBLICATION_ARCHITECTURE.md",
+  "flagship_progress_tracker": "FLAGSHIP_PROGRESS_TRACKER.md",
+  "working_pdf_is_flagship": false,
+  "scope_note": "The working PDF is a preliminary research edition. Final flagship requires 520-560 substantive pages after repetition and evidence audit."
 }
