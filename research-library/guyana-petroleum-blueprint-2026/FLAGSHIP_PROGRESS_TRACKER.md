@@ -73,8 +73,10 @@ Status legend: FOUNDATION, RESEARCHING, DRAFTED, SOURCE-AUDITED, MODEL-AUDITED, 
 ## Current quantitative baseline
 
 - Working PDF: 56 pages.
-- Current combined research text in the audited working set: 15,128 words.
-- Current source register in the working audit: 34 records.
+- Existing 56-page working PDF research set at its earlier audit: 15,128 words.
+- Current measured Markdown research package on this branch: 48,001 words.
+- Source records embedded in the existing working PDF audit: 34.
+- Current live branch source register: 86 records.
 - Flagship target: 520-560 substantive pages.
 - External peer review: pending.
 - Final publication status: not complete.
@@ -89,3 +91,33 @@ Status legend: FOUNDATION, RESEARCHING, DRAFTED, SOURCE-AUDITED, MODEL-AUDITED, 
 6. Expand local-content and social-outcome evidence.
 7. Extend comparator dataset.
 8. Rebuild the PDF only after substantive manuscript expansion, not as a page-count exercise.
+
+
+## Measured branch expansion, 27 September 2026
+
+The 520-560-page mandate has now been translated into ten research parts and technical workbooks.
+
+Completed research-stage dossiers now exist for:
+- Part I, pre-discovery foundations;
+- Part II, contracts and cost recovery;
+- Part III, pre-first-oil preparation and production;
+- Part IV, NRF and national balance sheet;
+- Part V, environment, spill risk and climate;
+- Part VI, local content and social outcomes;
+- Part VII, economic transformation;
+- Part VIII, accountability and institutional learning;
+- Part IX, international comparators;
+- Part X, staged operating manual for new producers.
+
+Technical work now also includes:
+- NRF reconciliation workbook;
+- environmental permit/risk register;
+- model methods and limitations;
+- expanded contract sensitivity scenarios;
+- combined production shock scenarios;
+- synthetic sovereign-fund stress scenarios.
+
+Measured Markdown package: 48,001 words.
+Live source register: 86 records.
+Working PDF remains a preliminary edition and is not the flagship.
+The final 520-560 substantive-page count will be measured only after complete manuscript integration, rendering, repetition audit and visual QA.
