@@ -503,3 +503,359 @@ Before first oil, test revenue custody, metering, auditing and emergency respons
 After production begins, scale institutions with the number and complexity of projects rather than with the age of the petroleum sector.
 
 Guyana's pre-discovery history is valuable not because it offers a perfect model. It is valuable because it shows that petroleum governance begins long before oil reaches a production vessel.
+
+
+## Edition 2.0 frontier-state deepening: how to govern uncertainty before geology becomes wealth
+
+### Analytical section 15M. Exploration policy should price uncertainty honestly
+
+Before a commercial discovery, the state is not allocating proven petroleum wealth.
+
+It is allocating the right to spend capital under uncertainty.
+
+That distinction changes the bargaining problem.
+
+An explorer bears:
+- geological risk;
+- drilling cost;
+- schedule risk;
+- capital at risk if no commercial discovery occurs.
+
+The state bears different risks:
+- weak terms if a large discovery occurs;
+- lost time if acreage is warehoused;
+- incomplete data if work obligations are weak;
+- environmental exposure;
+- institutional distraction.
+
+A licensing system should therefore balance investor risk with state optionality.
+
+The correct question before discovery is not "How much revenue will government receive?"
+
+It is "What value does the state receive in every possible outcome, including a dry hole?"
+
+### Analytical section 15N. Work obligations are the frontier-state consideration
+
+In an early exploration basin, a signature bonus can be visible but geological work can be more valuable.
+
+A strong work programme can require:
+- seismic acquisition;
+- reprocessing;
+- geological studies;
+- exploration wells;
+- minimum expenditure;
+- relinquishment.
+
+The benefit to the state survives even if the contractor exits, provided the data are delivered and preserved.
+
+This is why data ownership and work obligations should be modelled as part of licence value.
+
+### Analytical section 15O. Acreage should not be allowed to become dormant inventory
+
+An exploration licence can block competing investment if the work programme is weak or extensions become routine.
+
+The state should therefore track:
+- award date;
+- work commitments;
+- milestones;
+- expenditure;
+- extensions;
+- relinquishment;
+- reason for delay.
+
+A licence extension may be rational if the contractor has made substantial progress or external conditions changed.
+
+It should still be documented.
+
+This creates a historical record of how efficiently the state converted acreage into information.
+
+### Analytical section 15P. Relinquishment is an information-recycling mechanism
+
+Relinquishment is often understood only as returning land or offshore acreage.
+
+Its deeper function is to recycle exploration opportunity.
+
+When acreage returns to the state, the government should already possess:
+- seismic;
+- wells;
+- interpretations required under the licence;
+- environmental information;
+- final technical report.
+
+The next licensing round can then begin with better information.
+
+This reduces the information advantage of the previous contractor.
+
+### Analytical section 15Q. Frontier fiscal terms should be analysed with geological probability
+
+A fiscal regime that looks generous after a large discovery may have been negotiated when discovery probability was low.
+
+That does not automatically make the earlier terms optimal.
+
+It does mean that historical evaluation should include the information set at the negotiation date.
+
+The correct counterfactual is:
+What terms could the state plausibly have obtained from credible investors under the geological and market conditions then known?
+
+This question is harder than comparing an early contract to terms adopted after billions of barrels had been discovered.
+
+It is also fairer analytically.
+
+### Analytical section 15R. Discovery changes the state's reservation value
+
+Once a basin has demonstrated commercial petroleum, later acreage is not the same asset.
+
+The state can reasonably reassess:
+- royalty;
+- tax;
+- cost recovery;
+- bonus;
+- work commitments;
+- relinquishment;
+- state participation;
+- local content.
+
+This is one reason later model terms should be expected to differ from early frontier terms.
+
+The change itself is not proof that the earlier contract can or should be retroactively rewritten.
+
+It shows that geological information has economic value.
+
+### Analytical section 15S. Institutional learning should be priced into later licensing
+
+A second licensing round benefits from more than geology.
+
+The state has learned:
+- how long approvals take;
+- what data operators request;
+- which clauses create audit burden;
+- what skills are scarce;
+- how environmental review operates.
+
+Later model agreements should therefore reflect both better geology and better government knowledge.
+
+A change log should identify which revisions respond to:
+- market conditions;
+- contract administration;
+- legal reform;
+- environmental experience;
+- political policy.
+
+### Analytical section 15T. The exploration data room is a governance institution
+
+A modern data room should provide investors with controlled access while preserving:
+- confidentiality;
+- source provenance;
+- version;
+- user access;
+- download log.
+
+The state should know which data were made available to each bidder.
+
+This supports fairness in a competitive round.
+
+It also protects against later claims that bidders were using materially different information sets.
+
+### Analytical section 15U. Geological uncertainty should be communicated to the public
+
+Before discovery, resource estimates can be misunderstood as reserves.
+
+After a discovery, early estimates can be misunderstood as recoverable or commercial barrels.
+
+The public communication protocol should distinguish:
+- prospect;
+- resource;
+- contingent resource;
+- reserve;
+- recoverable estimate;
+- production forecast.
+
+The state should avoid building fiscal expectations on speculative resource numbers.
+
+### Analytical section 15V. Commerciality is a legal and economic threshold
+
+A discovery can contain petroleum without being commercially developable.
+
+Commerciality depends on:
+- reservoir;
+- recoverable volume;
+- development cost;
+- oil/gas price;
+- technology;
+- infrastructure;
+- fiscal terms;
+- financing.
+
+The state's technical team should independently understand the commerciality case before a development path becomes irreversible.
+
+### Analytical section 15W. The first development creates infrastructure path dependence
+
+An offshore province's first project can influence later choices in:
+- shore bases;
+- marine routes;
+- aviation;
+- warehouses;
+- training;
+- pipeline corridors.
+
+These investments create path dependence.
+
+The first project should therefore be reviewed not only as a standalone development but as a possible foundation for a basin.
+
+This does not justify overbuilding speculative infrastructure.
+
+It justifies considering shared use and future compatibility.
+
+### Analytical section 15X. Local-content expectations should begin with a capability inventory
+
+Before imposing targets, government should know the starting economy.
+
+The pre-discovery or early-discovery capability inventory should map:
+- marine services;
+- fabrication;
+- construction;
+- food supply;
+- legal;
+- accounting;
+- logistics;
+- engineering;
+- safety;
+- training.
+
+The inventory becomes the baseline against which local-content progress is measured.
+
+Without a baseline, later claims of transformation are difficult to verify.
+
+### Analytical section 15Y. Fiscal expectations can destabilize policy before first oil
+
+A commercial discovery can immediately change public expectations even though production cash may be years away.
+
+The state should therefore publish a simple fiscal timeline showing:
+- discovery;
+- appraisal;
+- development approval;
+- construction;
+- expected first oil;
+- expected first revenue;
+- uncertainty.
+
+This can reduce pressure to borrow or make permanent commitments against revenue that has not yet arrived.
+
+### Analytical section 15Z. Pre-first-oil debt needs a petroleum-risk lens
+
+Debt taken before first oil can create a mismatch.
+
+The country owes debt on a fixed schedule.
+
+Petroleum revenue remains uncertain.
+
+A debt sustainability test should therefore run:
+- delayed startup;
+- lower price;
+- higher development cost if state participation exists;
+- slower ramp-up.
+
+The state should know whether ordinary non-petroleum revenue can service the debt if the oil project is delayed.
+
+### Analytical section 15AA. Petroleum revenue should not erase ordinary revenue reform
+
+A future oil windfall can weaken incentives to improve tax administration.
+
+That creates long-run risk.
+
+A durable fiscal state should continue to strengthen:
+- income tax;
+- VAT;
+- customs;
+- property or other lawful domestic revenue systems;
+- compliance.
+
+Petroleum revenue should expand fiscal capacity, not replace the administrative relationship between citizens, firms and the state.
+
+### Analytical section 15AB. Environmental institutions should receive pre-first-oil capital
+
+Environmental regulation becomes more expensive after development begins.
+
+The authority may need:
+- offshore training;
+- marine scientists;
+- monitoring equipment;
+- legal capacity;
+- emergency planning;
+- data systems.
+
+These are legitimate pre-first-oil investments.
+
+The state should budget for them before permit workload multiplies.
+
+### Analytical section 15AC. Coast guard and maritime administration are petroleum institutions too
+
+Offshore petroleum increases the importance of:
+- navigation safety;
+- exclusion zones;
+- emergency response;
+- vessel monitoring;
+- pollution reporting;
+- search and rescue.
+
+The petroleum institutional map should therefore include maritime agencies rather than treating them as external to the sector.
+
+### Analytical section 15AD. First discovery should trigger a whole-of-government risk register
+
+The risk register should include:
+- geological;
+- commercial;
+- fiscal;
+- environmental;
+- social;
+- labour;
+- infrastructure;
+- legal;
+- corruption/conflict;
+- maritime;
+- macroeconomic.
+
+Each risk should have:
+- owner;
+- probability range;
+- consequence;
+- mitigation;
+- trigger;
+- review date.
+
+This becomes the bridge from exploration policy to national development policy.
+
+### Analytical section 15AE. The national narrative should distinguish luck from governance
+
+A major discovery depends partly on geology that the state did not create.
+
+Governance determines what happens around that discovery.
+
+A serious case study should therefore avoid attributing geological abundance to policy skill.
+
+The policy questions begin with:
+- how acreage was managed;
+- how terms were negotiated;
+- how data were retained;
+- how approvals were handled;
+- how revenue was governed;
+- how risks were managed.
+
+This distinction makes the case transferable to countries whose geology is less favourable.
+
+### Analytical section 15AF. Pre-discovery conclusion
+
+A newcomer cannot control whether a basin contains a giant field.
+
+It can control whether:
+- rights are clearly allocated;
+- data are preserved;
+- exploration obligations are enforced;
+- public institutions learn;
+- environmental baselines exist;
+- maritime risks are mapped;
+- fiscal expectations remain conservative.
+
+Those institutions create value even if no commercial oil is found.
+
+That is the strongest justification for pre-discovery governance.
