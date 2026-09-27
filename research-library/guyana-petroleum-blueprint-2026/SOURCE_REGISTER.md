@@ -100,7 +100,7 @@ Last verified through web access: 27 September 2026. URLs are source addresses, 
 | S85 | ExxonMobil, 900,000 bpd milestone, 12 November 2025 | Operator reports a daily production milestone after Yellowtail ramp-up | One-day/point-in-time output is not a full-year average | https://corporate.exxonmobil.com/locations/guyana/news-releases/11122025-daily-oil-production-hits-900000-barrels-in-guyanas-stabroek-block |
 | S86 | Petroleum Management Programme, Liza Phase 1 Production Licence and Phase 2 Addendum | Official production-licence publication provides legal project authorization documents for Liza developments | Licence conditions require document-level review and do not establish realized performance | https://petroleum.gov.gy/docs-and-pubs/liza-phase-1-petroleum-production-licence-and-phase-2-addendum/ |
 
-### Priority unresolved checks before final publication
+### Priority evidence items for future revision and external review
 1. Obtain authenticated PDF text of the May 2026 Court of Appeal judgment and any later appeal.
 2. Verify whether the 2025 spill act was commenced after the June 2026 reporting cut-off and before 27 September 2026.
 3. Reconcile public Bank of Guyana fund statements to Ministry of Finance June 2026 balance, petroleum deposit and interest categories.
