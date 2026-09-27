@@ -1,5 +1,14 @@
 name: Executive careers — public research and offline QA
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/executive_careers_worker.py'
+      - 'scripts/executive_careers_sources.json'
+      - 'scripts/test_executive_careers_worker.py'
+      - 'scripts/ceo_outreach_gate.py'
+      - 'scripts/test_ceo_outreach_gate.py'
+      - '.github/workflows/executive-careers-research.yml'
   pull_request:
     paths:
       - 'scripts/executive_careers_worker.py'
