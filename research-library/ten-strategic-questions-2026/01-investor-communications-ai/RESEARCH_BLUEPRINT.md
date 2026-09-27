@@ -1,6 +1,6 @@
 # The Accountable Investor Communication System
 
-**Independent ten-volume research series, September 2026. Prepared for Ragunauth Ramsaroop.**
+**Independent ten-volume research series, September 2026. Prepared by Ragunauth Ramsaroop.**
 
 Status: phase-one dossier prepared (17-page PDF and editable manuscript in the author delivery archive). This GitHub folder currently contains the research blueprint, not that PDF or full manuscript. The target 125-page flagship edition remains under development and requires additional empirical evidence and independent technical review.
 
