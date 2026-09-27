@@ -271,3 +271,235 @@ Fifth, the commercial discovery created a new scale and speed of institutional d
 For a newcomer state, the strongest lesson from this opening period is chronological discipline. Build what remains useful even if no oil is found. Preserve national data. Clarify legal authority. Measure the environment and economy before the shock. Scale specialist capacity as commercial certainty rises. Do not spend revenue before it exists.
 
 These are administrative design principles. They do not determine a country's political choices about ownership, taxation, extraction pace or the use of future public revenue.
+
+
+## Edition 2.0 deepening: the pre-discovery state was built through repeated cycles
+
+### Analytical section 15A. The 1980s petroleum project as institutional prehistory
+
+The modern petroleum story should not begin with the 2015 Liza discovery. It should begin much earlier, when the state was trying to decide whether an uncertain petroleum endowment justified investment in law, data and specialist capacity.
+
+The World Bank's Project Completion Report for the Petroleum Exploration Promotion Project gives unusually useful evidence because it records both the intended design and the shortcomings of an early petroleum-capacity programme. Credit 1208-GUA was approved in 1982. The project sought to attract foreign exploration, examine heavy-oil potential and strengthen the government's ability to administer the petroleum sector. The historical value of this record is not that the project produced oil. It did not. Its importance is that the state had already begun to assemble the institutional components that later became relevant when commercial discovery finally occurred. [S107]
+
+The project supported a Petroleum Unit, petroleum-potential studies, promotional activity, training and the legal framework needed to negotiate with international companies. The completion report records four exploration contracts negotiated with international firms and describes petroleum legislation being enacted under separate financing. It also records implementation problems, including delays, incomplete components and a capacity-building approach that the Bank considered too weighted toward academic training. [S107]
+
+This makes the project a useful case in institutional sequencing. Capacity created before a discovery can appear underutilized for years. Yet a frontier state that waits for a commercial discovery before building even basic legal and geological capability will enter negotiations at the exact moment when bargaining pressure and information asymmetry become greatest.
+
+The lesson is not that every frontier state should create a large petroleum bureaucracy before hydrocarbons are proven. The lesson is to build scalable capability whose value survives a dry-hole outcome. A small geological data unit, a clear licensing law, a model data-room protocol, trained public lawyers and a documented regulator map can be justified even if exploration never becomes commercial.
+
+### Analytical section 15B. Exploration promotion and the problem of credible commitment
+
+A frontier petroleum state faces a strategic contradiction. It wants to attract high-risk capital, but it also wants to preserve the ability to regulate, tax and supervise a discovery if one occurs.
+
+The World Bank completion report shows that this problem was already visible in Guyana's early petroleum programme. The project sought a legal and fiscal structure capable of attracting foreign exploration while preserving a framework for government administration. The report records debate over complex sliding-scale approaches and the need for a structure flexible enough to accommodate different agreement types. [S107]
+
+For a new producer, the deeper issue is credible commitment. Before discovery, the state needs investors to believe that exploration rights, data obligations and development rights are sufficiently clear for capital to be risked. After discovery, citizens need confidence that the same legal system can protect public revenue, environmental obligations and national interests.
+
+These are not opposing objectives if the framework is designed well. A credible petroleum regime should specify what is stable and what is subject to ordinary law. It should define the process for licence renewal, discovery declaration, appraisal, development approval, assignment, unitisation, decommissioning and termination. It should also distinguish fiscal commitments from the state's continuing authority over safety, environment, reporting and emergency response.
+
+The pre-discovery period is therefore the best time to decide which issues belong in statute, which belong in regulation, which belong in the contract and which require case-specific permit conditions.
+
+### Analytical section 15C. Data sovereignty is a national asset
+
+Geological and geophysical data can be more durable than any single licence.
+
+The historical petroleum-promotion programme recognized data as an economic and institutional asset. The state sought to synthesize exploration information, use it to promote acreage and retain the ability to support later licensing decisions. [S35, S107]
+
+This principle becomes more important after repeated exploration cycles. A company may leave a basin after drilling one unsuccessful well. The well still produces national information. Seismic processing may be superseded by later technology, but the underlying acquisition remains useful. Core samples, logs, mud reports, pressure data, geochemical results and well-location records can all reduce uncertainty for later explorers and improve government negotiating capacity.
+
+A national petroleum data regime should therefore answer six questions.
+
+First, who owns raw exploration data?
+
+Second, when must contractors submit data to government?
+
+Third, how long may data remain confidential?
+
+Fourth, who is responsible for long-term preservation and metadata quality?
+
+Fifth, under what conditions can the state re-license or commercialize historical data?
+
+Sixth, how are consultants prevented from becoming the only holders of institutional memory?
+
+The state does not need to perform every interpretation itself. It does need to preserve the inputs required for independent interpretation.
+
+### Analytical section 15D. Failed exploration is part of the institutional record
+
+A serious case study should account for failed and interrupted exploration rather than tell the story backward from success.
+
+Guyana's record included early wells, periods of inactivity, investor withdrawals, financing constraints and border-related interruptions before Liza. The official exploration history records repeated pauses and restarts across decades. [S35]
+
+This matters because a state can learn from dry holes in at least four ways.
+
+A geological lesson changes basin understanding.
+
+A contractual lesson changes acreage design or work commitments.
+
+A regulatory lesson changes the way licences and reporting obligations are administered.
+
+An institutional lesson changes how much permanent capacity is justified.
+
+A newcomer country should therefore maintain a "failed exploration archive". It should record why each licence ended, which work obligations were completed, what data was produced, whether environmental obligations were closed, and whether any contingent liabilities remain.
+
+That archive prevents a future licensing round from treating the basin as if institutional history began with the current investor.
+
+### Analytical section 15E. Maritime boundaries are economic infrastructure
+
+Maritime boundaries are often discussed as questions of sovereignty and international law. For offshore petroleum they are also a form of investment infrastructure.
+
+A block cannot be assessed only by geology. Investors need confidence that the state granting the licence has jurisdiction over the acreage and that drilling can proceed without interruption. Guyana's history includes the 2000 CGX incident with Suriname and the subsequent arbitration process, which became part of the operating context for offshore exploration. [S35, S40]
+
+The transferable lesson is not that all boundary uncertainty must be eliminated before a country conducts any offshore work. Some states explore while boundaries remain contested. The lesson is that boundary risk should be explicit in the petroleum-risk register.
+
+A frontier government should map:
+- undisputed acreage;
+- overlapping claims;
+- areas subject to judicial or arbitral process;
+- navigation and fisheries implications;
+- coast-guard and maritime-security capability;
+- force-majeure implications for contracts;
+- insurance implications for operators and contractors.
+
+If acreage is disputed, the economic model should include the possibility of delay, suspension or exclusion.
+
+### Analytical section 15F. The institutional minimum viable state
+
+The pre-discovery experience suggests that a new producer does not need every institution at full scale before exploration. It needs a minimum viable petroleum state.
+
+That minimum should include:
+- a legally identified licensing authority;
+- a geological data custodian;
+- public-sector access to petroleum legal expertise;
+- a tax authority capable of identifying petroleum-specific risks;
+- an environmental authority with offshore jurisdiction;
+- a finance ministry able to model contingent future revenue rather than assume it;
+- a maritime authority able to coordinate offshore safety and incident response;
+- an audit trail for licences, amendments and work obligations.
+
+The institution can be small. What matters is that mandates are clear.
+
+A common failure mode in small states is to compensate for limited staffing by creating committees without assigning ownership. A committee can coordinate work. It cannot substitute for a named institution responsible for a statutory decision.
+
+### Analytical section 15G. Capacity should scale with decision risk
+
+Petroleum staffing should not be sized only to production volume.
+
+Before discovery, a handful of specialists may be adequate if the country has limited active acreage.
+
+After a commercial discovery, the state faces a step-change in decision risk. It must review appraisal plans, development economics, field-development concepts, petroleum metering, environmental studies, cost-recovery systems, decommissioning assumptions, marketing arrangements and sovereign-revenue preparation.
+
+This is why discovery should trigger a pre-defined capacity escalation plan.
+
+The plan should identify:
+- positions that must become permanent;
+- functions that can be outsourced temporarily;
+- conflicts that prevent one adviser from serving multiple roles;
+- knowledge-transfer requirements;
+- records that remain state property;
+- the date by which external advisers must be replaced or shadowed by national staff.
+
+The World Bank's earlier finding that academic training alone was insufficient remains relevant. Capacity is not the number of degrees funded. Capacity is the ability to make, document, challenge and repeat a decision under real operating conditions. [S107]
+
+### Analytical section 15H. Environmental baselines should precede the investment shock
+
+Environmental baseline work becomes harder after commercial discovery because development pressure accelerates.
+
+The best baseline is created before the location of production infrastructure, support bases, pipelines and tanker routes becomes politically and commercially salient.
+
+For an offshore frontier, baseline ownership should include:
+- marine mammals;
+- fish and spawning areas;
+- seabed conditions;
+- water and sediment quality;
+- coastal habitats;
+- fisheries effort;
+- port traffic;
+- shoreline sensitivity;
+- protected areas;
+- disaster-response resources.
+
+The state does not need to measure every variable continuously before a discovery. It should know what data exists, who owns it, whether methods are reproducible and which gaps would become material if development moves forward.
+
+Guyana's pre-existing environmental statute and later project-specific EIA framework make it possible to distinguish law that existed before the petroleum boom from systems created in response to the scale of development. [S39, S48-S56]
+
+### Analytical section 15I. Natural capital should be on the same balance sheet as petroleum
+
+A resource-discovery narrative can become distorted if petroleum is treated as the only national asset.
+
+Guyana entered the oil era with forests, biodiversity, freshwater, agriculture, mineral resources and a pre-existing low-carbon strategy. The LCDS and forest-finance architecture therefore belong in the petroleum case study because they demonstrate that the country was already attempting to assign economic value to natural capital before first oil. [S22]
+
+The accounting principle is broader than any specific carbon programme.
+
+A country converts underground petroleum into financial and physical assets. It should simultaneously track whether extraction, infrastructure and associated growth reduce other forms of wealth.
+
+A complete national balance sheet should therefore ask:
+- what petroleum stock is being depleted;
+- what financial assets are accumulating;
+- what infrastructure is being created;
+- what human capital is improving;
+- what ecosystems are being degraded or protected;
+- what future liabilities are being created.
+
+This is the bridge between resource governance and sustainable development.
+
+### Analytical section 15J. The discovery shock should trigger a formal readiness review
+
+The moment of discovery is often treated as a celebration or a geological milestone. Administratively, it should trigger a structured readiness review.
+
+Within ninety days of a commercial discovery, a small state should reassess:
+- petroleum law and regulations;
+- contract administration;
+- environmental authority;
+- fiscal modelling;
+- tax administration;
+- sovereign-revenue custody;
+- procurement rules;
+- beneficial ownership;
+- emergency response;
+- labour and immigration;
+- infrastructure demand;
+- public communication.
+
+The output should be a gap register with owners, deadlines and budget.
+
+This is preferable to creating institutions reactively as each new problem appears.
+
+### Analytical section 15K. The strongest pre-discovery lesson is optionality
+
+Good pre-discovery institutions preserve national options.
+
+A state with organized data can run a better licensing round.
+
+A state with clear law can choose among fiscal structures with less legal uncertainty.
+
+A state with environmental baselines can compare development options.
+
+A state with trained negotiators can decide when independent advice is necessary.
+
+A state with a maritime-risk map can sequence acreage.
+
+A state with conservative fiscal rules can avoid spending against unproven revenue.
+
+Optionality matters because the state does not know whether the basin will remain marginal, produce one discovery or become a major province.
+
+The best early institutions are therefore those that remain useful across all three outcomes.
+
+### Analytical section 15L. Expanded Part I conclusion
+
+The deeper historical record changes the interpretation of Guyana's petroleum rise.
+
+Commercial success arrived quickly after Liza, but the institutional prehistory was long. Petroleum promotion, legislation, geological data management, exploration contracting and public-sector training had been attempted decades earlier. The World Bank project of the 1980s did not solve every institutional problem and did not create a complete petroleum state. It did create a record of how a small frontier country tried to build petroleum capability before commercial certainty. [S107]
+
+That earlier period also reveals a recurring constraint that matters today: institutional capacity is not static. The skills needed to attract an explorer are different from those needed to audit a multibillion-dollar development. The staff required to manage one exploration licence are different from those required to oversee several FPSOs, large petroleum receipts and complex environmental exposure.
+
+For a newcomer, the practical standard is therefore staged readiness.
+
+Before discovery, build the legal map, preserve data and establish environmental and maritime baselines.
+
+After discovery, expand fiscal, legal, engineering and environmental capability before irreversible approvals.
+
+Before first oil, test revenue custody, metering, auditing and emergency response.
+
+After production begins, scale institutions with the number and complexity of projects rather than with the age of the petroleum sector.
+
+Guyana's pre-discovery history is valuable not because it offers a perfect model. It is valuable because it shows that petroleum governance begins long before oil reaches a production vessel.
