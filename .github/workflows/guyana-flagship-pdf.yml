@@ -6,6 +6,7 @@ on:
       - 'research-library/guyana-petroleum-blueprint-2026/*.md'
       - 'research-library/guyana-petroleum-blueprint-2026/*.csv'
       - 'research-library/guyana-petroleum-blueprint-2026/build_flagship_pdf.py'
+      - 'research-library/guyana-petroleum-blueprint-2026/audit_research_integrity.py'
       - '.github/workflows/guyana-flagship-pdf.yml'
   workflow_dispatch:
 permissions:
@@ -67,6 +68,9 @@ jobs:
             research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf
             research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/RESEARCH_INTEGRITY_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/PUBLICATION_MANIFEST.json
+            research-library/guyana-petroleum-blueprint-2026/LEGAL_EVIDENCE_LEDGER.md
+            research-library/guyana-petroleum-blueprint-2026/CORRECTIONS_REGISTER.md
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
