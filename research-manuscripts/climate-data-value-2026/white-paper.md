@@ -3,7 +3,7 @@
 ### An evidence-led decision framework for financial institutions, capital-intensive companies and emerging markets
 
 **Ragunauth Ramsaroop**  
-Independent research white paper | September 2026 | Version 1.0 research manuscript  
+Independent research white paper | September 2026 | Expanded edition 1.1 research manuscript  
 Copyright © 2026 Ragunauth Ramsaroop. All rights reserved.
 
 **Research status:** Independent synthesis of cited public standards and publications, coupled with explicitly illustrative original analytical frameworks. This work has not undergone external peer review or independent assurance. Examples and financial models in this document are hypothetical unless identified otherwise. No affiliation, endorsement or joint authorship by McKinsey & Company is claimed.
@@ -264,9 +264,34 @@ A credible business case for sustainability emerges from decisions which remain 
 
 ---
 
+
+# 12. Regulatory evidence and the European banking case
+
+An assessment published by the European Central Bank in January 2024 examined 95 banks covering about 75% of euro-area loans. The ECB reported elevated transition risk for roughly 90% of the banks in that assessed population, based on the alignment of companies' planned production with climate pathways [13]. The measure is an analysis of specified euro-area exposures and does not establish observed defaults, a global percentage or the failure of every climate target. The appropriate institutional response is to test client production pathways against cash-flow forecasts, debt service, collateral and investment commitments rather than interpret an attributed emissions total as a credit rating.
+
+The European Banking Authority issued final guidelines for managing environmental, social and governance risks in January 2025. They apply from 11 January 2026, with the additional transition period for small and non-complex institutions ending by 11 January 2027 [14]. Separate EBA guidelines on environmental scenario analysis apply from 1 January 2027 [15]. Distinguish institutions covered by these EU requirements from banks operating in other jurisdictions. For covered institutions, record the relationship between prudential transition planning, board oversight, risk appetite, forward-looking analysis and existing capital and liquidity processes.
+
+The model-risk lesson is equally important. The NGFS November 2025 scenario guide supports disciplined forward-looking analysis, while its December 2025 statement identified material uncertainties affecting certain Phase V physical-damage estimates [12,18]. Users should preserve the model vintage and uncertainty range rather than treat one reference scenario as a precise forecast. A bank's risk decision should show whether the new information changes pricing, underwriting, tenor, lending conditions or approved client engagement. Without a documented decision and ex-post results, the institution has improved information but has not demonstrated incremental financial value.
+
+# 13. Transition finance, emerging markets and adverse tests
+
+The IEA's October 2025 transition-finance analysis examines investment in emissions-intensive companies and sectors where credible projects may lower future emissions [16]. A transaction's financing label is not evidence of environmental additionality. An institution should assess project eligibility, technical design, sector pathway, execution funding, possible carbon lock-in, safeguards, source records, contractual milestones and an independent verification plan. Where causality is unsupported, describe the lender as financing the borrower rather than claiming sole responsibility for the borrower's operational reductions.
+
+The IEA's September 2025 Cost of Capital Observatory identifies country, currency, sector and project risks affecting financing terms in emerging and developing economies [17]. Any project model should specify the borrowing and revenue currencies, inflation assumptions, discount rate, construction contingency, grid access, contract tenor, refinancing and debt-service requirements. A guarantee or concessional tranche can move risk from the project sponsor to a public counterparty. Report that transfer instead of suggesting the original risk disappeared.
+
+An adverse review should test together: lower operating demand; reduced fuel savings; delayed construction; higher financing costs; accelerated storage degradation; increased insurance deductibles; physical disruptions; changed accounting factors; and delayed client transition milestones. Scenarios express conditional consequences, not numerical predictions. Retain the environmental and social ledger when an alternative looks cheaper in financial terms alone.
+
+# 14. Assurance protocol and publication limitations
+
+Separate a source register, calculation register and public-claims register. The source register should preserve original file hashes, accounting entity, measurement unit, source owner, collection date, permissions and transformation history. The calculation register should show formulas, assumptions, model vintage and independent numerical checks. The public-claims register should connect a statement to its period, population, primary source, uncertainty, responsible sign-off and any subsequent restatement.
+
+The IAASB published ISSA 5000 in November 2024. Its international effective date is 15 December 2026, subject to jurisdictional adoption and the relevant reporting period [10]. The publication of an international assurance standard neither assures this paper nor certifies any operating company's claims. This work is independent research synthesis supported by checked public sources and explicitly fictional arithmetic. Independent academic peer review, external sustainability assurance, real-company engineering verification and jurisdiction-specific legal assessment remain separate engagements. The companion technical supplement records model assumptions, source crosswalk and unresolved limitations.
+
+---
+
 # Public source references
 
-[1] McKinsey & Company, "Turning sustainability from regulatory compliance into a competitive edge", 26 June 2026. https://www.mckinsey.com/industries/financial-services/our-insights/turning-sustainability-from-regulatory-compliance-into-a-competitive-edge (industry analysis; not independent verification of specific client returns).
+[1] McKinsey & Company, "Turning sustainability from regulatory compliance into a competitive edge", 26 June 2026; revised 13 July 2026. https://www.mckinsey.com/industries/financial-services/our-insights/turning-sustainability-from-regulatory-compliance-into-a-competitive-edge (industry analysis; not independent verification of specific client returns).
 
 [2] International Energy Agency (IEA), "World Energy Investment 2026", 28 May 2026. https://www.iea.org/reports/world-energy-investment-2026 and https://www.iea.org/reports/world-energy-investment-2026/regional-dashboards (global 2026 forecasts; not institution-specific).
 
@@ -291,3 +316,15 @@ A credible business case for sustainability emerges from decisions which remain 
 [12] Network for Greening the Financial System, "Updated Guide on Climate Scenario Analysis", 13 November 2025; 2025 long-term scenario explanatory notes. https://www.ngfs.net/en/press-release/ngfs-publishes-updated-guide-climate-scenario-analysis and https://www.ngfs.net/en/publications-and-statistics/publications/explanatory-notes-ngfs-long-term-climate-scenarios
 
 **Source verification cut-off:** 27 September 2026. Specific national laws and regulatory transpositions are deliberately not asserted without jurisdiction-by-jurisdiction verification.
+
+[13] European Central Bank, "Failing to plan is planning to fail", 23 January 2024. https://www.bankingsupervision.europa.eu/press/blog/2024/html/ssm.blog240123~5471c5f63e.en.html (95 euro-area banks, specified alignment analysis).
+
+[14] European Banking Authority, final ESG-risk management guidelines, 9 January 2025. https://eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-management-esg-risks (2026/2027 staged application).
+
+[15] European Banking Authority, final environmental-scenario guidelines, 5 November 2025. https://eba.europa.eu/publications-and-media/press-releases/eba-publishes-its-final-guidelines-environmental-scenario-analysis (effective 1 January 2027).
+
+[16] International Energy Agency, "Scaling Up Transition Finance", 16 October 2025. https://www.iea.org/reports/scaling-up-transition-finance
+
+[17] International Energy Agency, "Cost of Capital Observatory", 26 September 2025. https://www.iea.org/reports/cost-of-capital-observatory
+
+[18] Network for Greening the Financial System, "Statement regarding physical risk estimates in Phase V", 3 December 2025. https://www.ngfs.net/en/press-release/statement-regarding-physical-risk-estimates-phase-v-ngfs-long-term-scenarios
