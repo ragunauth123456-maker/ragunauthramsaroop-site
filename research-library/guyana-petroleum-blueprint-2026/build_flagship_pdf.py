@@ -102,8 +102,10 @@ def flow(text, dedupe=None, toc=True):
             if toc: p.toc_level=0
             story.append(p)
         elif v.startswith("### "):
-            flush(); p=Paragraph(mk(v[4:]),s["H2F"])
-            if toc: p.toc_level=1
+            flush(); title=v[4:]
+            if re.match(r"^Chapter\\s+\\d+\\.",title):
+                title=re.sub(r"^Chapter","Analytical section",title,count=1)
+            p=Paragraph(mk(title),s["H2F"])
             story.append(p)
         elif v.startswith("#### "):
             flush(); story.append(Paragraph(mk(v[5:]),s["H3F"]))
@@ -167,7 +169,7 @@ hardening=(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")
 adversarial=(BASE/"ADVERSARIAL_PUBLICATION_AUDIT.md").read_text(encoding="utf-8")
 claim_matrix=(BASE/"CLAIM_SOURCE_MATRIX.md").read_text(encoding="utf-8")
 assert len(core)==10 and len(annex)>=13
-all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}
+all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}\ncore_section_count=sum(len(re.findall(r"^###\\s+Chapter\\s+\\d+\\.",all_text[n],flags=re.M)) for n in core)
 brief=(BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
 sources=(BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
 gates=(BASE/"PUBLICATION_REVIEW_GATES.md").read_text(encoding="utf-8")
@@ -267,7 +269,7 @@ audit={
  "document":OUT.name,"edition":"1.1-candidate","stage":"publication_candidate",
  "evidence_cutoff":"2026-09-27","pages_actual":pages,
  "substantive_pages_at_least_100_lexical_words":substantive,"near_blank_pages":blank,
- "core_integrated_pages":core_pages,"core_integrated_lexical_words":core_lexical_words,
+ "core_integrated_pages":core_pages,"core_integrated_lexical_words":core_lexical_words,"core_analytical_sections":core_section_count,
  "source_records":len(source_rows),"core_parts":len(core),"technical_annexes":len(annex),
  "evidence_workbooks":len(evidence),"research_words_before_deduplication":sum(word_counts.values())+len(brief.split())+len(sources.split())+len(gates.split())+len(hardening.split())+len(adversarial.split()),
  "exact_duplicate_long_paragraphs_in_source_corpus":duplicate_long,
