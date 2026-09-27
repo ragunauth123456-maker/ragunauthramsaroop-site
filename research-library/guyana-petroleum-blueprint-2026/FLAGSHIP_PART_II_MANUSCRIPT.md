@@ -1313,3 +1313,296 @@ It provides an audit map from mechanism to clause to model consequence.
 The remaining legal task is to deepen selected provisions with exact subsection/page pinpoints and independent petroleum-law review.
 
 That external legal review remains a release gate rather than being simulated by the author.
+
+
+## Edition 2.0 fiscal deepening: how contract design becomes cash
+
+### Analytical section 50AE. Fiscal modelling should have three views
+
+A petroleum fiscal model should produce three different views.
+
+**Project economics** asks whether the development generates sufficient contractor return.
+
+**Government take** asks how much economic rent or project cash flows to government through all fiscal instruments.
+
+**Government cash flow** asks when cash actually becomes available to the budget or sovereign fund.
+
+These views are related but not interchangeable.
+
+A regime can have a high lifetime government take but low early cash because development cost is being recovered.
+
+A regime can generate large early cash at high oil prices while long-run government take remains sensitive to cost.
+
+The book should state which view is being discussed every time it uses a percentage.
+
+### Analytical section 50AF. Nominal and discounted government take answer different questions
+
+An undiscounted lifetime share treats a dollar received twenty years from now like a dollar received today.
+
+A discounted measure reflects timing.
+
+The discount rate is itself an assumption.
+
+A fair comparison should therefore publish both:
+- nominal undiscounted government take;
+- discounted government take at stated rates.
+
+This avoids using one selected rate to create an impression of precision.
+
+### Analytical section 50AG. The fiscal model should show contractor cash too
+
+A government-only model can hide the economic trade-off that made investment possible.
+
+The model should show:
+- contractor capital;
+- operating cost;
+- cost recovery;
+- contractor profit petroleum;
+- tax treatment;
+- net cash.
+
+This allows readers to understand how changes in fiscal terms affect investment return and state revenue together.
+
+### Analytical section 50AH. The model should separate sunk and future cost
+
+Once a project is producing, some capital has already been spent.
+
+A decision about a later expansion or contract amendment should distinguish:
+- sunk historical cost;
+- committed future cost;
+- avoidable future cost.
+
+This matters for bargaining.
+
+The contractor's investment decision before FID is different from its economic position after billions have been sunk.
+
+### Analytical section 50AI. Oil price should be modelled as a path, not a constant
+
+A single flat price can be useful for illustration.
+
+A full model should also test:
+- low early price;
+- high early price;
+- boom then decline;
+- persistent low price.
+
+Timing matters because cost recovery is concentrated in particular years.
+
+Two price paths with the same average can produce different government cash timing.
+
+### Analytical section 50AJ. Inflation should be explicit
+
+Development and operating costs can rise with inflation.
+
+If the fiscal model uses nominal oil price but constant real cost, the result is inconsistent.
+
+The model should specify whether each input is:
+- nominal;
+- real;
+- indexed;
+- fixed.
+
+This is especially important when comparing projects sanctioned in different years.
+
+### Analytical section 50AK. Financing costs require contract-specific treatment
+
+Petroleum projects can be financed through parent funding, affiliate loans, external debt or internal cash.
+
+Whether interest is recoverable or deductible depends on the governing contract and tax rules.
+
+The audit should therefore identify:
+- lender;
+- rate;
+- principal;
+- purpose;
+- related-party status;
+- recoverability;
+- tax treatment.
+
+A high interest charge can affect project economics even when production is unchanged.
+
+### Analytical section 50AL. Overhead should be audited as a service, not a percentage alone
+
+Head-office and affiliate overhead can be difficult to verify because the service is delivered outside the host country.
+
+The audit should ask:
+- what service was performed;
+- for which project;
+- allocation key;
+- whether the cost is already charged elsewhere;
+- contract cap or formula.
+
+Annex C should be the controlling accounting reference. [S02]
+
+### Analytical section 50AM. Shared cost should have a transparent allocation rule
+
+A contractor may use one service for several fields or blocks.
+
+Shared cost should be allocated using a documented driver such as:
+- time;
+- headcount;
+- equipment use;
+- production;
+- activity.
+
+The choice of driver can materially affect recoverable cost.
+
+The audit should test whether the driver is consistent and economically reasonable.
+
+### Analytical section 50AN. Cost forecasting should show committed versus forecast cost
+
+A cost bank includes actual eligible cost.
+
+Government forecasting also needs future expected cost.
+
+Those are different evidence classes.
+
+The model should separate:
+- audited actual;
+- unaudited actual;
+- committed contract;
+- operator forecast;
+- government forecast;
+- contingency.
+
+This makes revisions easier to explain.
+
+### Analytical section 50AO. Development cost overruns should trigger causal review
+
+If a project cost increases materially, the state should identify why.
+
+Possible drivers include:
+- scope change;
+- inflation;
+- supply chain;
+- engineering;
+- delay;
+- exchange rate;
+- additional wells.
+
+An overrun is not automatically evidence of improper cost.
+
+It is a signal that the cost-recovery forecast and project economics need to be updated.
+
+### Analytical section 50AP. Reserve revisions should feed the fiscal model
+
+A development may recover more or less petroleum than originally forecast.
+
+Reserve or resource revisions affect:
+- production life;
+- unit cost;
+- decommissioning timing;
+- government revenue.
+
+The state should therefore maintain its own versioned production and reserves model.
+
+### Analytical section 50AQ. Fiscal sensitivity should be presented as a surface
+
+Instead of one low, base and high case, the final book can present a matrix.
+
+For example:
+rows = oil price  
+columns = recoverable-cost share.
+
+Each cell shows government cash share for the period.
+
+This reveals which variable dominates the result.
+
+It also makes the 14.5% binding-cap example easier to understand as one specific cell rather than a universal government take. [S15]
+
+### Analytical section 50AR. The 14.5% example should be taught carefully
+
+GRA explains that when the 75% cost ceiling binds, the government's 12.5% share of the remaining profit petroleum plus the 2% royalty produces a 14.5% gross-revenue share under that simplified condition. [S15]
+
+That number is useful pedagogically.
+
+It should not be described as:
+- lifetime government take;
+- minimum cash in every month;
+- total fiscal burden.
+
+As costs fall, more production becomes profit petroleum and the government share changes.
+
+Tax treatment and other flows also need separate analysis.
+
+### Analytical section 50AS. Tax certificates and sovereign cash should be separately reconciled
+
+The pay-on-behalf arrangement creates an accounting relationship between contractor tax, government profit petroleum and tax certification.
+
+The book should present a flowchart showing:
+- contractor taxable income;
+- GRA assessment;
+- ministerial/government pay-on-behalf treatment;
+- tax certificate;
+- effect on government share/accounting.
+
+The flowchart should be reviewed by a petroleum tax specialist before final publication.
+
+### Analytical section 50AT. Ring-fencing analysis should use a two-project numeric example
+
+The final fiscal appendix should model:
+- Project A producing with low remaining cost;
+- Project B under development with high recoverable cost.
+
+The model then tests whether Block-level aggregation allows Project B costs to reduce profit petroleum generated from Project A production.
+
+The result should be derived from the executed agreement's accounting procedure.
+
+This turns a contested policy phrase into reproducible arithmetic.
+
+### Analytical section 50AU. Decommissioning should appear in both fiscal and environmental models
+
+Decommissioning has at least three dimensions:
+- recoverable cost;
+- secured funding;
+- physical environmental obligation.
+
+The fiscal model should show when cost is recognized or funded.
+
+The environmental register should show the actual closure obligation.
+
+The two should reconcile.
+
+### Analytical section 50AV. Government negotiation should use a shadow model
+
+Before accepting a contractor fiscal model, the state should maintain an independent shadow model.
+
+It does not have to reproduce every corporate financing detail.
+
+It should be capable of:
+- project cash flow;
+- cost recovery;
+- profit share;
+- tax;
+- price sensitivity;
+- production sensitivity;
+- decommissioning.
+
+The state cannot negotiate effectively if it only observes the contractor's result.
+
+### Analytical section 50AW. Model governance needs its own audit trail
+
+Fiscal models change.
+
+Every version should record:
+- author;
+- date;
+- data source;
+- assumptions changed;
+- formula changes;
+- reviewer;
+- approval.
+
+A spreadsheet without version control can become a hidden policy instrument.
+
+### Analytical section 50AX. Fiscal deepening conclusion
+
+The fiscal chapter should make one idea unavoidable:
+
+Contract terms do not generate public wealth automatically.
+
+They generate formulas and rights.
+
+Institutions convert those formulas into cash through measurement, valuation, accounting, audit, dispute resolution and fund custody.
+
+Edition 2.0 should therefore present the Stabroek regime as a complete operating system with explicit data lineage from clause to model to ledger.
