@@ -1,6 +1,6 @@
 # Why Operating Model Transformations Fail
 
-**Independent ten-volume research series, September 2026. Prepared for Ragunauth Ramsaroop.**
+**Independent ten-volume research series, September 2026. Prepared by Ragunauth Ramsaroop.**
 
 Status: phase-one dossier prepared (17-page PDF and editable manuscript in the author delivery archive). This GitHub folder contains the research blueprint, not that PDF or full manuscript. The target 125-page flagship edition remains subject to further empirical work and independent technical review.
 
