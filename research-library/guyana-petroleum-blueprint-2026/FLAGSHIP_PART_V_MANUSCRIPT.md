@@ -1130,3 +1130,300 @@ For a newcomer, the blueprint is therefore to build five linked registers:
 - financial-assurance register.
 
 Together they turn environmental governance from a set of documents into an operating assurance system.
+
+
+## Edition 2.0 project deepening: seven projects, seven assurance files
+
+### Analytical section 171R. The environmental chapter should be read project by project
+
+Edition 2.0 adds `OFFSHORE_ENVIRONMENTAL_ASSURANCE_MATRIX.csv` because a basin-level description can hide important differences between project authorizations.
+
+For each development, the matrix separates:
+- licence and permit;
+- EIA and management documents;
+- financial assurance;
+- spill response;
+- observed performance;
+- unresolved evidence.
+
+This prevents evidence from one development from being generalized to another.
+
+### Analytical section 171S. Liza Phase 1 is the baseline permit case
+
+The Liza Phase 1 authorization record is especially important because it is the first production project and the source of later financial-assurance litigation.
+
+The official project record shows the permit history and incorporation of environmental and social management, oil-spill response and wildlife-response materials. [S100]
+
+The authenticated 2024 CCJ reasons identify the litigation concerning renewed permit condition 14 and the Environmental Protection Act framework. [S103]
+
+The analytical lesson is not a legal verdict.
+
+It is that permit wording, regulator discretion, insurance, guarantee instruments and liability can become distinct legal questions.
+
+The book should preserve all five layers.
+
+### Analytical section 171T. Permit modification should be treated as version control
+
+An environmental permit can change over time.
+
+The regulator and publication should therefore maintain:
+- original permit;
+- modification date;
+- modified text;
+- reason;
+- conditions affected;
+- transition arrangements.
+
+A later permit should not be quoted as if it was the condition in force at an earlier date.
+
+This is the environmental equivalent of contract-version control.
+
+### Analytical section 171U. Liza Phase 2 and Payara should be compared with the first-project baseline
+
+The second and third developments create an opportunity to test institutional learning.
+
+A project comparison should ask whether later permits became more specific on:
+- flaring;
+- monitoring;
+- spill response;
+- financial assurance;
+- reporting;
+- wildlife;
+- decommissioning.
+
+A stronger later condition may reflect a different project, new evidence, legal evolution or a regulatory lesson.
+
+The comparison should not assume one cause without documentary support.
+
+### Analytical section 171V. Yellowtail marks the shift to basin-scale cumulative impact
+
+By the fourth producing development, cumulative effects become harder to treat as incidental.
+
+The environmental question expands from "What is the impact of this FPSO?" to:
+- What is the total vessel traffic?
+- What is the cumulative produced-water discharge?
+- What is aggregate flaring?
+- How much response equipment is shared?
+- What is the total area affected by exclusion zones?
+- How does monitoring distinguish project signal from basin background?
+
+This is why strategic assessment must sit above project EIAs.
+
+### Analytical section 171W. Uaru provides the clearest financial-assurance pinpoints
+
+The Uaru permit is useful because it provides explicit financial-assurance architecture.
+
+Condition 14.3 addresses credible-cost estimation.
+
+Condition 14.4 requires liability insurance including environmental liability insurance.
+
+Condition 14.5 addresses parent or affiliate guarantee arrangements and resource availability following default. [S99]
+
+These conditions should be quoted or paraphrased carefully in the final legal annex with page and condition pinpoints.
+
+They establish the obligation structure.
+
+They do not establish:
+- the exact current policy limit;
+- every exclusion;
+- guarantor liquidity;
+- actual draw mechanics under a future event.
+
+The book should state that distinction prominently.
+
+### Analytical section 171X. Financial assurance should be stress-tested, not merely checked for existence
+
+A document can exist and still be inadequate for a defined scenario.
+
+A regulator should stress-test financial assurance against:
+- small operational spill;
+- prolonged cleanup;
+- fisheries interruption;
+- shoreline impact;
+- cross-border claim;
+- well-control event;
+- contractor insolvency.
+
+For each scenario, the state should identify:
+- first source of cash;
+- insurer response;
+- deductible;
+- guarantee trigger;
+- government emergency liquidity;
+- later recovery route.
+
+The purpose is to identify timing gaps.
+
+### Analytical section 171Y. Whiptail is a pre-production assurance opportunity
+
+Whiptail was under development at the evidence cutoff. [S126]
+
+That creates an opportunity to test the full assurance system before production.
+
+The regulator can verify:
+- baseline completeness;
+- permit matrix;
+- response plan;
+- insurance;
+- guarantee;
+- commissioning drill;
+- monitoring equipment.
+
+The value of a pre-start audit is that deficiencies can be corrected before operating risk begins.
+
+### Analytical section 171Z. Hammerhead should be evaluated under the evolved regulatory system
+
+Hammerhead is the seventh approved Stabroek development, with production expected later in the decade. [S127, S128]
+
+A mature regulator should be able to demonstrate how the environmental review for the seventh project incorporates lessons from earlier projects.
+
+The final Edition 2.0 project profile should therefore compare Hammerhead's:
+- EIA scope;
+- permit conditions;
+- financial assurance;
+- spill response;
+- monitoring;
+- decommissioning.
+
+This comparison should be documentary, not rhetorical.
+
+### Analytical section 171AA. Compliance evidence should be condition-specific
+
+A statement that "the project is compliant" is too broad.
+
+Compliance should be reported as:
+- condition;
+- reporting period;
+- evidence submitted;
+- regulator finding;
+- corrective action.
+
+A project can comply with one condition and have an open issue under another.
+
+This structure is both fairer and more auditable.
+
+### Analytical section 171AB. Inspection results should be separated from operator self-reporting
+
+Operator reports are necessary because the operator controls much of the operating data.
+
+Regulatory inspection provides a different evidence class.
+
+Independent sampling provides another.
+
+The publication should label the evidence source.
+
+A claim based on operator monitoring should not be described as independent verification unless a separate verifier performed the measurement.
+
+### Analytical section 171AC. Environmental incidents should have a common reporting schema
+
+The basin incident register should record:
+- date;
+- project;
+- incident type;
+- quantity;
+- affected medium;
+- immediate response;
+- regulator notification;
+- investigation;
+- corrective action;
+- public disclosure.
+
+The schema should include near misses where legally reportable.
+
+Near misses can reveal control weaknesses before harm occurs.
+
+### Analytical section 171AD. Flaring should be linked to cause and duration
+
+A flaring total can be misleading.
+
+A high figure caused by temporary commissioning has a different regulatory implication from repeated equipment failure.
+
+The environmental dataset should therefore classify flare events by:
+- commissioning;
+- maintenance;
+- safety;
+- equipment failure;
+- gas-system constraint;
+- other.
+
+This creates a performance trend rather than a single emissions number.
+
+### Analytical section 171AE. Marine monitoring should preserve raw data
+
+Environmental interpretation changes over time.
+
+The state should therefore retain raw monitoring data, not only annual summaries.
+
+Raw data allow:
+- reanalysis;
+- method comparison;
+- cumulative trend assessment;
+- independent research.
+
+Metadata should identify station, depth, method, laboratory and quality control.
+
+### Analytical section 171AF. Fisheries evidence should include effort and income
+
+A decline in fish landings can reflect:
+- stock condition;
+- weather;
+- fuel cost;
+- market price;
+- effort;
+- access restriction.
+
+The fisheries baseline should therefore include vessel activity and economic variables as well as biological data.
+
+This avoids attributing every change to offshore petroleum without causal evidence.
+
+### Analytical section 171AG. Spill modelling should be treated as a scenario, not a forecast
+
+Oil-spill trajectory models are useful for planning.
+
+They are sensitive to:
+- release location;
+- volume;
+- current;
+- wind;
+- weather;
+- oil characteristics.
+
+The result is a scenario distribution.
+
+It should not be described as a prediction of where oil "will" travel in a future incident.
+
+### Analytical section 171AH. Cross-border response should be pre-negotiated
+
+Offshore spills can cross maritime boundaries or require foreign equipment.
+
+A national plan should therefore pre-negotiate:
+- customs clearance;
+- aviation;
+- vessel entry;
+- command liaison;
+- data sharing;
+- claims cooperation.
+
+The time to resolve those issues is before an incident.
+
+### Analytical section 171AI. Environmental assurance conclusion
+
+The project matrix makes the evidence standard concrete.
+
+The state should be able to open one file for each development and answer:
+
+What was approved?
+
+What was required?
+
+What financial protection existed?
+
+What monitoring occurred?
+
+What incidents occurred?
+
+What did the regulator conclude?
+
+What remains unresolved?
+
+That is a much stronger basis for scrutiny than either the claim that permits prove good performance or the opposite claim that development necessarily proves regulatory failure.
