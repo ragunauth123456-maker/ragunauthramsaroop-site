@@ -1,0 +1,146 @@
+"""End-to-end smoke tests of critical public workflows in headless Chromium."""
+import http.server
+import json
+from pathlib import Path
+from threading import Thread
+
+from playwright.sync_api import sync_playwright, expect
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class Quiet(http.server.SimpleHTTPRequestHandler):
+    def log_message(self, *_):
+        return
+
+
+def main():
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Quiet)
+    Thread(target=server.serve_forever, daemon=True).start()
+    base = f"http://127.0.0.1:{server.server_port}"
+    results = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
+        context = browser.new_context(accept_downloads=True, service_workers="block")
+        context.set_default_timeout(15000)
+        page = context.new_page()
+        try:
+            page.goto(base + "/start/", wait_until="domcontentloaded")
+            routes = [
+                "/project-workspace/", "/research-explorer/", "/observatory/explorer/",
+                "/executive-engagement/", "/subscribe/", "/academy/learning-lab/"
+            ]
+            for route in routes:
+                expect(page.locator(f'a[href="{route}"]').first).to_be_visible()
+            results.append("PASS start page advertises all six real workspaces")
+
+            page.goto(base + "/project-workspace/", wait_until="domcontentloaded")
+            expect(page.locator("#work-report")).to_be_visible()
+            expect(page.locator("#work-metrics .work-metrics")).to_have_count(0)
+            expect(page.locator("#work-metrics div")).to_have_count(6)
+            page.locator("#work-name").fill("QA demonstration")
+            page.locator("#work-run").click()
+            expect(page.locator("#work-report-meta")).to_contain_text("QA demonstration")
+            geo = b'{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-58.2,6.1],[-58.3,6.2]]},"properties":{}}]}'
+            page.locator("#work-geodata").set_input_files(
+                {"name": "qa.geojson", "mimeType": "application/geo+json", "buffer": geo}
+            )
+            expect(page.locator("#work-geo-status")).to_contain_text("Loaded 1 features")
+            with page.expect_download() as project_download:
+                page.locator("#work-export").click()
+            assert project_download.value.suggested_filename == "project-screening.json"
+            results.append("PASS project calculator, local GeoJSON and JSON export")
+
+            page.goto(base + "/research-explorer/", wait_until="domcontentloaded")
+            expect(page.locator("#research-list button")).to_have_count(11)
+            expect(page.locator("#research-pdf")).to_have_attribute(
+                "href", "/research-library/guyana-2040/full-text.pdf"
+            )
+            page.locator("#research-query").fill("Guyana")
+            page.locator("#research-ask").click()
+            expect(page.locator("#research-response article").first).to_be_visible(timeout=30000)
+            href = page.locator("#research-response article a").first.get_attribute("href")
+            assert "#page=" in href, f"Missing authentic PDF page reference: {href}"
+            results.append("PASS real indexed paper search links to an original PDF page")
+
+            def wb_route(route):
+                route.fulfill(
+                    status=200,
+                    content_type="application/json",
+                    headers={"Access-Control-Allow-Origin": "*"},
+                    body=json.dumps([{}, [
+                        {"date": "2024", "value": 17.8},
+                        {"date": "2023", "value": 12.4},
+                    ]]),
+                )
+
+            page.route("https://api.worldbank.org/**", wb_route)
+            page.goto(base + "/observatory/explorer/", wait_until="domcontentloaded")
+            expect(page.locator("#ob-cards .ob-card")).to_have_count(1, timeout=20000)
+            expect(page.locator("#ob-cards")).to_contain_text("2024")
+            with page.expect_download() as indicator_download:
+                page.locator("#ob-csv").click()
+            assert indicator_download.value.suggested_filename == "guyana-official-data.csv"
+            results.append("PASS source-year observatory, chart and CSV export")
+
+            page.goto(base + "/executive-engagement/", wait_until="domcontentloaded")
+            page.locator("#exec-purpose").select_option("board")
+            page.locator("#exec-focus").select_option("mining")
+            page.locator("#exec-build").click()
+            expect(page.locator("#exec-brief")).to_be_visible()
+            expect(page.locator("#exec-sources a").first).to_have_attribute("href", "/case-studies/")
+            results.append("PASS tailored executive engagement brief and public evidence links")
+
+            page.goto(base + "/subscribe/", wait_until="domcontentloaded")
+            page.locator("#sub-email").fill("bad-email")
+            page.locator('input[name="rr-topic"]').first.check()
+            page.locator("#sub-consent").check()
+            page.locator("#sub-send").click()
+            expect(page.locator("#sub-status")).to_contain_text("valid email")
+            expect(page.locator('a[href="/feed.xml"]')).to_be_visible()
+            results.append("PASS subscription validation and immediate RSS route, no automatic sending")
+
+            page.goto(base + "/academy/learning-lab/", wait_until="domcontentloaded")
+            expect(page.locator("#lab-courses button")).to_have_count(8, timeout=20000)
+            expect(page.locator("#lab-questions fieldset")).to_have_count(4)
+            data = json.loads((ROOT / "data/academy-assessments.json").read_text(encoding="utf-8"))
+            quiz = data["assessments"][0]
+            for question in quiz["questions"]:
+                page.locator(
+                    'input[name="' + question["id"] + '"][value="' +
+                    str(question["answer"]) + '"]'
+                ).check()
+            page.locator("#lab-submit").click()
+            expect(page.locator("#lab-completion")).to_be_visible()
+            expect(page.locator("#lab-progress")).to_contain_text("1 of 8")
+            with page.expect_download() as academy_download:
+                page.locator("#lab-export").click()
+            assert academy_download.value.suggested_filename == "rr-academy-self-study-progress.json"
+            results.append("PASS Academy four-question marking, completion and progress export")
+
+            page.goto(base + "/tools/?q=geolibre", wait_until="domcontentloaded")
+            expect(page.locator("#visible-tool-count")).to_have_text("1")
+            expect(page.locator('#tool-grid [data-slug="geolibre"]')).to_be_visible()
+            page.goto(base + "/tools/geolibre/", wait_until="domcontentloaded")
+            expect(page.locator("#gis-stage iframe")).to_have_count(0)
+            page.route(
+                "https://web.geolibre.app/**",
+                lambda route: route.fulfill(
+                    status=200, content_type="text/html",
+                    body="<html><body>Test GIS frame</body></html>"
+                ),
+            )
+            page.locator("#launch-geolibre").click()
+            expect(page.locator("#gis-stage iframe")).to_have_count(1)
+            results.append("PASS GIS discovery and user-triggered third-party loading")
+        finally:
+            browser.close()
+            server.shutdown()
+
+    for line in results:
+        print(line)
+    print("PASS all eight critical browser workflows")
+
+
+if __name__ == "__main__":
+    main()
