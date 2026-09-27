@@ -7,7 +7,7 @@ BASE=Path(__file__).resolve().parent
 src=(BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
 claims=(BASE/"CLAIM_SOURCE_MATRIX.md").read_text(encoding="utf-8")
 core="\n".join((BASE/f"FLAGSHIP_PART_{x}_MANUSCRIPT.md").read_text(encoding="utf-8") for x in ["I","II","III","IV","V","VI","VII","VIII","IX","X"])
-core+="\n"+(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")
+core+="\n"+(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")\nledger=(BASE/"LEGAL_EVIDENCE_LEDGER.md").read_text(encoding="utf-8")\ncorrections=(BASE/"CORRECTIONS_REGISTER.md").read_text(encoding="utf-8")
 
 rows=[]
 for line in src.splitlines():
@@ -17,7 +17,7 @@ for line in src.splitlines():
         rows.append(cells)
 ids=[r[0] for r in rows]
 nums=[int(x[1:]) for x in ids]
-assert len(ids)==len(set(ids)), "duplicate source IDs"
+assert len(ids)>=106, f"source register below scrutiny gate: {len(ids)}"\nassert len(ids)==len(set(ids)), "duplicate source IDs"
 assert nums==list(range(min(nums),max(nums)+1)), "source IDs are not sequential"
 urls=[r[4] for r in rows]
 url_syntax=[]
@@ -53,8 +53,8 @@ for line in claims.splitlines():
         for n in re.findall(r"S(\d{2,3})",source_cell):claim_source_refs.add(f"S{int(n):02d}")
         if "OPEN" in cells[3].upper() or "PARTIAL" in cells[3].upper() or "LIMITED" in cells[3].upper():
             open_claims.append(cells[0])
-unknown_claim_sources=sorted(claim_source_refs-registered)
-assert not unknown_claim_sources, f"unknown sources in claim matrix: {unknown_claim_sources}"
+assert len(claim_rows)>=50, f"high-risk claim matrix below scrutiny gate: {len(claim_rows)}"\nunknown_claim_sources=sorted(claim_source_refs-registered)
+assert not unknown_claim_sources, f"unknown sources in claim matrix: {unknown_claim_sources}"\nledger_ids=sorted(set(re.findall(r"\\bL\\d{3}\\b",ledger)))\nassert len(ledger_ids)>=14, f"legal evidence ledger below scrutiny gate: {len(ledger_ids)}"\ncorrection_ids=sorted(set(re.findall(r"\\bR\\d{3}\\b",corrections)))\nassert len(correction_ids)>=16, f"corrections register below scrutiny gate: {len(correction_ids)}"
 
 dup_urls=sorted({u for u in urls if urls.count(u)>1})
 audit={
