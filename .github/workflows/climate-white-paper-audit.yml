@@ -26,7 +26,7 @@ jobs:
           base=Path('research-manuscripts/climate-data-value-2026')
           s=(base/'white-paper.md').read_text()
           a=(base/'AUDIT_LOG.md').read_text()
-          t=(base/'TECHNICAL_SUPPLEMENT.md').read_text()
+          t=(base/'technical-appendices.md').read_text()
           refs=set(map(int,re.findall(r'^\[(\d+)\]',s,flags=re.M)))
           assert set(range(1,19)) <= refs, f"Missing source ids: {set(range(1,19))-refs}"
           for term in ('hypothetical','financed emissions','uncertainty'):
@@ -34,4 +34,6 @@ jobs:
           assert 'independent assurance' in s.lower()
           assert 'No' in a and 'third-party' in a
           print('PASS source register, research boundaries, and accompanying files')
+      - name: Run full offline editorial and numerical audit
+        run: python scripts/audit_climate_data_value.py
           PY
