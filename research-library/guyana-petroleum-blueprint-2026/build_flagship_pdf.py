@@ -253,10 +253,14 @@ def page_of(needle):
     for i,t in enumerate(texts):
         if needle in t:return i
     return None
-core_start=page_of("Part I-X | Integrated flagship manuscript")
-evidence_start=page_of("Evidence dossiers and implementation workbooks")
+core_hits=[i for i,t in enumerate(texts) if "Part I-X | Integrated flagship manuscript" in t]
+core_start=max(core_hits) if core_hits else None
+evidence_hits=[i for i,t in enumerate(texts) if "Supporting dossiers preserve detailed research notes" in t]
+evidence_start=max(evidence_hits) if evidence_hits else None
 core_pages=(evidence_start-core_start) if core_start is not None and evidence_start is not None else None
 core_lexical_words=sum(lex(t) for t in texts[core_start:evidence_start]) if core_pages is not None else None
+assert core_pages is not None and core_pages>=100, f"Core manuscript boundary audit failed: {core_pages}"
+assert core_lexical_words is not None and core_lexical_words>=20000, f"Core manuscript word audit failed: {core_lexical_words}"
 assert all(row[0] in flat for row in source_rows)
 assert "Natural Resource Fund" in flat and "Oil Pollution" in flat and "Timor-Leste" in flat
 assert "Petroleum Activities Act" in flat and "International Court of Justice" in flat
