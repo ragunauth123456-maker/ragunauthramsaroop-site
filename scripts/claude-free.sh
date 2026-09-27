@@ -40,6 +40,8 @@ python3 "$SCRIPT_DIR/claude_free_preflight.py" "$MODEL"
 
 export ANTHROPIC_BASE_URL="https://openrouter.ai/api"
 export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
+# Retain only the gateway credential needed by Claude Code, not a second copy.
+unset OPENROUTER_API_KEY
 export ANTHROPIC_API_KEY=""
 export ANTHROPIC_MODEL="$MODEL"
 export ANTHROPIC_DEFAULT_OPUS_MODEL="$MODEL"
