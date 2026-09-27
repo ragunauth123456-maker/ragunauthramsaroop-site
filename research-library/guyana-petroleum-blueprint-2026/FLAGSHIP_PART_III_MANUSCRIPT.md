@@ -810,3 +810,300 @@ Every project should have a corresponding chain of licence, environmental author
 The production chapter should therefore be read as a data-governance chapter as much as an engineering chapter.
 
 A newcomer that builds these controls before first oil creates the evidence base needed for every later question in the book: fiscal performance, environmental impact, local content, public investment and intergenerational wealth.
+
+
+## Edition 2.0 project deepening: seven development decisions as one evolving system
+
+### Analytical section 80N. Liza Phase 1 as the institutional first test
+
+Liza Phase 1 should be treated as more than the first production project.
+
+It was the first time the state had to apply the new offshore petroleum system to a commercial deep-water development.
+
+The project created simultaneous demands for:
+- development-plan review;
+- production licensing;
+- environmental authorization;
+- metering;
+- cargo accounting;
+- royalty administration;
+- cost recovery;
+- emergency response;
+- public revenue custody.
+
+First oil on 20 December 2019 therefore marks the beginning of a new operating regime, not simply a production milestone. [S01, S81, S86]
+
+The project is useful for audit because it establishes the baseline against which later changes can be measured.
+
+For every major rule or institutional improvement introduced later, the book should ask whether the control existed at Liza Phase 1 startup or was added after operating experience.
+
+This produces an institutional learning timeline.
+
+### Analytical section 80O. Liza Phase 2 as the first scale replication test
+
+Liza Phase 2 reached first oil on 11 February 2022. [S82]
+
+The significance of the second development is that a country no longer has the excuse of first-project novelty.
+
+The regulator should be able to compare:
+- permit conditions;
+- development cost;
+- production capacity;
+- project schedule;
+- environmental monitoring;
+- metering architecture;
+- local content;
+- startup ramp;
+- operating incidents.
+
+A second project creates the first true benchmark.
+
+If a requirement changed between Phase 1 and Phase 2, the state should be able to explain whether the change resulted from new evidence, different project design or policy reform.
+
+### Analytical section 80P. Payara as the multi-project transition
+
+Payara's first oil in November 2023 marked the transition from a two-project system to a multi-project basin. [S83]
+
+This changes the regulator's workload non-linearly.
+
+Several projects can now:
+- submit cost statements simultaneously;
+- schedule maintenance at overlapping times;
+- compete for response resources;
+- use the same supply base;
+- employ the same contractors;
+- affect the same fisheries and marine environment.
+
+The state should therefore stop treating projects as isolated administrative files.
+
+It needs portfolio management.
+
+A portfolio dashboard should show the cumulative effect of all approved developments on:
+- production;
+- cost bank;
+- regulator staffing;
+- marine traffic;
+- emergency resources;
+- local labour;
+- public revenue.
+
+### Analytical section 80Q. Yellowtail as the rapid-capacity step
+
+Yellowtail began production on 8 August 2025, becoming the fourth producing project. [S84]
+
+The later November 2025 operator report that production reached a daily milestone of 900,000 barrels should be treated as a point observation. [S85]
+
+This is a useful example of the distinction between capacity and realized output.
+
+The correct time series should preserve:
+- startup date;
+- monthly output;
+- daily maximum where relevant;
+- maintenance periods;
+- national total.
+
+A newcomer should resist the temptation to convert a production milestone into an annual revenue assumption without accounting for ramp-up and downtime.
+
+### Analytical section 80R. Uaru as the cutoff-date discipline test
+
+Uaru is particularly important for the current edition because it demonstrates why an evidence cutoff matters.
+
+The Errea Wittu FPSO arrived in Guyana in August 2026. Government and contractor sources described commissioning work ahead of first oil and identified a design capacity around 250,000 barrels per day. [S124, S125]
+
+At the 27 September 2026 evidence cutoff used by this publication, the source set reviewed here does not establish an observed first-oil event.
+
+The book should therefore say "commissioning ahead of first oil" rather than convert an expected September or fourth-quarter startup into an observed event.
+
+This may become outdated immediately after publication.
+
+That is acceptable.
+
+A dated publication should prefer a correct cutoff over a premature milestone.
+
+The corrections register can record the eventual startup in a later edition.
+
+### Analytical section 80S. Whiptail as an under-construction comparison
+
+Whiptail provides a useful case because the state can observe development while another project is still being commissioned.
+
+The 2026 maritime record confirms continuing offshore development activity, while project reporting identifies the Jaguar FPSO and a planned capacity around 250,000 barrels per day. [S126]
+
+The correct analytical treatment is prospective.
+
+The book can examine:
+- approved project design;
+- construction;
+- subsea installation;
+- expected capacity;
+- stated startup target.
+
+It should not include future Whiptail barrels in observed production.
+
+This distinction becomes crucial in fiscal forecasting.
+
+### Analytical section 80T. Hammerhead as the seventh-development governance test
+
+Hammerhead received development approval and a production licence in September 2025. Government and operator sources describe an estimated US$6.8 billion project, planned production capacity of approximately 150,000 barrels per day and an anticipated 2029 startup. [S127, S128]
+
+The project's analytical significance is that the state was approving a seventh development roughly a decade after the original Liza discovery.
+
+This raises a cumulative governance question.
+
+How should fiscal terms, environmental controls, financial assurance, local content and data requirements evolve as geological uncertainty declines and institutional experience increases?
+
+The answer should be based on executed legal instruments and project-specific approvals.
+
+It should not assume that later policy preferences automatically alter earlier contractual rights.
+
+### Analytical section 80U. Project approval should create a national commitments register
+
+Each approved project creates future commitments for both operator and state.
+
+The register should include:
+- approved capital estimate;
+- well count;
+- FPSO;
+- design capacity;
+- startup target;
+- production licence conditions;
+- environmental permit;
+- financial assurance;
+- local-content plan;
+- decommissioning plan;
+- expected regulator staffing.
+
+This allows government to see the full forward workload created by cumulative project approvals.
+
+### Analytical section 80V. Project cost should be normalized before comparison
+
+Headline project costs cannot be compared without context.
+
+A useful comparison should consider:
+- design capacity;
+- number of wells;
+- water depth;
+- subsea complexity;
+- inflation;
+- supply-chain conditions;
+- construction timing;
+- storage capacity;
+- gas handling;
+- local-content requirements.
+
+The purpose is not to determine automatically whether one project is expensive.
+
+It is to identify the drivers of cost.
+
+This also improves cost-recovery forecasting.
+
+### Analytical section 80W. Production capacity should be connected to environmental capacity
+
+Every new FPSO adds production capacity.
+
+The environmental system must also add:
+- monitoring capacity;
+- inspection capacity;
+- incident response;
+- financial assurance;
+- data review.
+
+A country should therefore maintain an "environmental regulatory capacity per active project" indicator.
+
+Possible measures include:
+- inspectors per producing project;
+- permit reports reviewed on time;
+- drills completed;
+- independent samples;
+- unresolved permit findings.
+
+This does not create a universal staffing ratio.
+
+It makes regulator scaling visible.
+
+### Analytical section 80X. Marine traffic should be part of the project register
+
+Offshore development changes tanker, supply-vessel, helicopter and support traffic.
+
+The project register should therefore connect each development to:
+- cargo frequency;
+- support-vessel requirements;
+- aviation demand;
+- shore-base demand;
+- navigational notices.
+
+This helps quantify cumulative maritime exposure.
+
+### Analytical section 80Y. Development plans should include data-delivery obligations
+
+The development approval should specify the data government expects during construction and operation.
+
+At minimum:
+- well data;
+- reservoir model updates;
+- cost forecasts;
+- procurement;
+- schedule;
+- installation progress;
+- commissioning;
+- production;
+- maintenance;
+- incidents;
+- decommissioning estimate.
+
+A government that receives only final summary reports cannot independently update its own national model.
+
+### Analytical section 80Z. Startup readiness should be project-specific
+
+A national first-oil system can be reused.
+
+Each project still needs its own startup certification.
+
+The checklist should confirm:
+- permit conditions satisfied;
+- metering commissioned;
+- emergency plans tested;
+- financial assurance valid;
+- cargo and valuation protocols ready;
+- government entitlement system configured;
+- reporting templates active.
+
+This avoids assuming that readiness for Liza automatically proves readiness for Uaru or Whiptail.
+
+### Analytical section 80AA. The project portfolio should be stress-tested as a system
+
+A multi-project basin can experience common shocks.
+
+Examples include:
+- hurricane or severe weather affecting several facilities;
+- helicopter-service constraint;
+- port disruption;
+- contractor failure;
+- common equipment defect;
+- cyber incident;
+- shortage of specialist personnel.
+
+The regulator should therefore run portfolio-level stress scenarios in addition to project-specific ones.
+
+### Analytical section 80AB. The offshore project register is now a core publication dataset
+
+Edition 2.0 adds `OFFSHORE_PROJECT_REGISTER.csv` as a machine-readable control.
+
+The register classifies each major project by observed or planned status.
+
+Its most important rule is simple:
+
+A planned startup remains planned until a dated source establishes production.
+
+This rule should govern every chart, narrative and fiscal scenario in the final publication.
+
+### Analytical section 80AC. Project-level conclusion
+
+The seven-development sequence shows why Guyana cannot be described only as a story of rapid production growth.
+
+It is also a story of repeated development approvals, each adding another layer of fiscal, environmental, operational and administrative exposure.
+
+For a newcomer, the key lesson is to build a project portfolio system before the second development is approved.
+
+The state should be able to compare projects on common fields, identify cumulative burdens and preserve a dated record of what was forecast versus what actually occurred.
+
+That is how rapid development becomes an auditable institutional learning process rather than a succession of isolated announcements.
