@@ -692,3 +692,361 @@ The NRF and cargo records show how contract entitlement eventually becomes publi
 The case does not yield one political verdict.
 
 It yields a set of technical questions that every new producer should answer before signing, before first oil and throughout production.
+
+
+## Edition 2.0 deepening: from headline fiscal terms to an operating petroleum revenue system
+
+### Analytical section 50A. A production-sharing agreement is an operating constitution for the field
+
+A petroleum agreement is often reduced in public discussion to a royalty percentage, a cost-recovery ceiling and a profit split.
+
+Those numbers matter, but they do not describe the whole economic system.
+
+A production-sharing agreement also governs:
+- when costs become recoverable;
+- which costs are excluded;
+- how affiliate charges are tested;
+- when audit rights expire;
+- how petroleum is valued;
+- how production is measured;
+- which currency is used;
+- how tax obligations are treated;
+- how assets are transferred or decommissioned;
+- how disputes are escalated;
+- how assignments are approved;
+- how stabilization and change-of-law provisions interact with later legislation.
+
+The fiscal result is therefore produced by a chain of clauses rather than one percentage.
+
+For audit purposes, every contract analysis should begin with a clause map. The clause map identifies the economic effect of each provision, the institution responsible for administering it, the data needed to test compliance and the time limit for challenge.
+
+The executed 2016 Stabroek agreement remains the controlling baseline for that contract. Later model terms provide evidence of later policy design, not a substitute for the executed agreement. [S02, S112]
+
+### Analytical section 50B. Contract economics should be modelled as a waterfall
+
+The most reliable way to explain a production-sharing agreement is to model it as a waterfall.
+
+Start with gross production.
+
+Subtract volumes that do not reach sale because of operational use, loss or other contractually recognized treatment.
+
+Apply the valuation rule to saleable petroleum.
+
+Calculate royalty on the correct base.
+
+Determine the amount of recoverable cost subject to the contractual ceiling.
+
+Calculate the residual profit petroleum.
+
+Apply the profit split.
+
+Add tax treatment.
+
+Then bridge the state's physical entitlement to the timing of actual sale proceeds and cash receipts.
+
+This sequence should be performed for each accounting period.
+
+A single annual average can hide timing effects. A high-cost month, a delayed cargo or a large development expenditure can change the period result even when annual production remains strong.
+
+The teaching value of a waterfall is that it makes every assumption visible.
+
+### Analytical section 50C. The cost bank is a balance-sheet item, not a rhetorical category
+
+Cost recovery is frequently discussed as if recovered cost disappears.
+
+In accounting terms, unrecovered cost is better understood as a stock carried forward subject to the agreement.
+
+The opening cost bank increases with eligible current-period cost and may also reflect allowed carry-forward treatment.
+
+It decreases when cost oil is allocated.
+
+The closing cost bank becomes an input into future periods.
+
+This creates an intertemporal link between today's investment and tomorrow's government profit petroleum.
+
+A major new development can therefore increase production capacity while simultaneously increasing the stock of recoverable cost.
+
+The state needs to forecast both.
+
+A petroleum revenue model should report:
+- opening recoverable-cost balance;
+- current eligible cost;
+- adjustments and audit disallowances;
+- amount recovered in period;
+- closing recoverable-cost balance.
+
+Without this table, a public forecast can make government revenue appear to move mysteriously when the real driver is the cost bank.
+
+### Analytical section 50D. Audit rights are perishable assets
+
+An audit right that expires unused has no economic value.
+
+The GRA account of the inaugural cost audit is important because it shows how audit administration actually works. The audit covered pre-contract and exploration/development costs through 31 December 2017. Guyanese officials from several agencies worked with IHS Markit, and the process included draft findings, government review, auditee response and later dispute over the quality and finality of the audit product. [S111]
+
+The administrative lesson is that an audit is not a single event.
+
+It has at least eight stages:
+1. define the audit population;
+2. preserve records;
+3. test invoices and allocation;
+4. identify exceptions;
+5. obtain auditee response;
+6. evaluate supporting evidence;
+7. settle or dispute findings;
+8. update the recoverable-cost ledger.
+
+Every stage requires ownership.
+
+A country can have a strong audit clause and still lose value through late mobilisation, incomplete records, weak specialist support or poor dispute tracking.
+
+### Analytical section 50E. Audit scope should follow risk rather than invoice volume
+
+Petroleum auditing should not treat every dollar as equally risky.
+
+A risk-based audit plan should prioritize:
+- affiliate charges;
+- shared-service allocations;
+- head-office overhead;
+- procurement from related entities;
+- financing costs if recoverable;
+- inventory and asset transfers;
+- pre-contract cost;
+- abandonment and decommissioning accruals;
+- costs allocated across projects or blocks;
+- costs incurred outside the country but charged to the operation;
+- abnormal or non-routine events.
+
+The state should maintain a petroleum audit risk register updated after each audit.
+
+Recurring findings should change future audit procedures.
+
+If the same category of cost repeatedly produces disputes, the response should not be another isolated exception. The state should consider clearer guidance, standardized supporting schedules or contract amendments where legally available.
+
+### Analytical section 50F. Affiliate transactions require an arm's-length control system
+
+Integrated petroleum groups purchase significant services from affiliated entities.
+
+An affiliate transaction is not automatically improper.
+
+The audit question is whether the charge is permitted, correctly allocated and consistent with the contract's accounting rules.
+
+A robust system should test:
+- service description;
+- actual service delivery;
+- allocation key;
+- markup;
+- transfer-pricing basis;
+- duplication;
+- relationship between payer and supplier;
+- whether the same cost appears in another block or project.
+
+The state's petroleum audit team and tax authority should coordinate without conflating their legal mandates.
+
+A cost can be deductible for one purpose and non-recoverable for another, depending on the governing rules.
+
+### Analytical section 50G. Petroleum valuation deserves its own control framework
+
+Government entitlement is sensitive not only to volume but also to value.
+
+A valuation system should identify:
+- crude grade;
+- quality adjustment;
+- benchmark;
+- differential;
+- freight;
+- timing;
+- related-party sales;
+- destination;
+- sales-agent fee where applicable.
+
+If the government takes physical profit oil and sells its own cargoes, the state also needs a transparent sales protocol.
+
+The sales record should preserve bids, counterparty selection, pricing formula, settlement terms and realized price.
+
+This creates a second audit chain alongside cost recovery.
+
+One chain protects the cost base.
+
+The other protects the value of petroleum sold.
+
+### Analytical section 50H. Government take should be reported as a range with assumptions
+
+There is no single government-take number that describes a petroleum agreement under all conditions.
+
+Government take varies with:
+- oil price;
+- recoverable cost;
+- production;
+- tax treatment;
+- project timing;
+- discount rate;
+- financing structure;
+- decommissioning;
+- treatment of bonuses and rentals;
+- state participation where applicable.
+
+A defensible fiscal comparison should therefore publish assumptions before the result.
+
+At minimum, a comparative table should use a common oil price path, cost schedule, production profile and discount rate.
+
+The same model should then run both contract systems.
+
+This is especially important when comparing the 2016 Stabroek agreement with the later model PSA. The model agreement includes different fiscal and contractual architecture, including later-generation provisions on financial guarantees, insurance, decommissioning, audit and other matters. [S112]
+
+A difference between the contracts is evidence of policy evolution. It does not establish that both sets of terms were available under the same geological information and market conditions.
+
+### Analytical section 50I. Stabilization clauses should be interpreted narrowly and precisely
+
+Stabilization is often discussed in absolute language.
+
+The real legal effect depends on the wording of the clause, the governing law, the type of government action and the available remedy.
+
+A responsible case study should therefore avoid statements such as "the contract freezes all law" unless the text actually supports that conclusion.
+
+The analytical questions are:
+- which laws are covered;
+- what counts as an adverse change;
+- whether environmental and safety measures are treated differently;
+- whether the remedy is compensation, renegotiation or another mechanism;
+- whether international law limits the clause;
+- how the clause interacts with later statutes.
+
+The same discipline applies to tax provisions.
+
+Legal characterization should begin with the executed text.
+
+### Analytical section 50J. Decommissioning is a present fiscal issue even when closure is decades away
+
+Decommissioning is often deferred in public debate because production is still expanding.
+
+Financially, it begins much earlier.
+
+The state should understand:
+- estimated abandonment cost;
+- timing of contributions to any decommissioning fund;
+- whether contributions are recoverable;
+- asset-transfer obligations;
+- residual environmental liability;
+- security if a contractor exits or becomes insolvent;
+- treatment of unused funds.
+
+A late decommissioning framework creates intergenerational risk.
+
+The public may receive revenue for years and then inherit a liability after production declines.
+
+The later model PSA contains explicit decommissioning architecture that can be compared with the executed Stabroek framework, but the comparison must preserve contract version. [S112]
+
+### Analytical section 50K. Negotiation files are national institutional memory
+
+A petroleum agreement records the final bargain.
+
+It does not record all options considered.
+
+For future accountability and learning, the state should retain a negotiation file containing:
+- government objectives;
+- fiscal model versions;
+- adviser reports;
+- risk assumptions;
+- marked-up drafts;
+- legal issues;
+- decision memoranda;
+- approvals;
+- conflict declarations.
+
+Some documents may require lawful confidentiality.
+
+That does not justify institutional amnesia.
+
+A later government should be able to reconstruct why a clause was accepted and what information was available at the time.
+
+This is essential for distinguishing hindsight from genuine process failure.
+
+### Analytical section 50L. Contract administration needs a calendar, not just a filing cabinet
+
+The contract should be converted into a compliance calendar.
+
+Every recurring obligation should have:
+- responsible institution;
+- due date;
+- data input;
+- review procedure;
+- escalation path;
+- retention rule.
+
+The calendar should cover:
+- work programmes;
+- budgets;
+- cost statements;
+- production reports;
+- royalty;
+- audit windows;
+- training obligations;
+- local content;
+- insurance;
+- guarantees;
+- decommissioning updates;
+- assignment approvals.
+
+A state that administers the contract only when a dispute arises has already lost leverage.
+
+### Analytical section 50M. A petroleum contract should be tested against an adverse case before signature
+
+The fiscal model should not use only a base case.
+
+Before signature, the state should test:
+- low oil price;
+- high development cost;
+- two-year delay;
+- dry appraisal;
+- rapid cost escalation;
+- major outage;
+- high decommissioning cost;
+- contractor insolvency;
+- disputed affiliate charges;
+- major environmental event.
+
+The purpose is not to predict these events.
+
+The purpose is to identify which risks remain with the contractor, which move to the state and which become shared.
+
+A contract that looks strong in a single central scenario can behave very differently under stress.
+
+### Analytical section 50N. Later model terms should be used as a reform crosswalk
+
+The 2023 draft model PSA is valuable because it shows a later policy architecture in a basin with more geological information and a different institutional setting. It includes explicit articles on financial guarantees, liability and insurance, local content, cost recovery, taxation and royalty, decommissioning, audits, dispute resolution and stabilization. [S112]
+
+A rigorous crosswalk should classify each change into one of five categories:
+1. fiscal;
+2. administrative;
+3. risk allocation;
+4. transparency and reporting;
+5. end-of-life responsibility.
+
+The crosswalk should then ask whether the change arose from:
+- stronger geological knowledge;
+- lessons from contract administration;
+- changed market conditions;
+- public-policy reform;
+- a different licensing strategy.
+
+This produces more insight than a simple "old versus new" percentage table.
+
+### Analytical section 50O. Expanded Part II conclusion
+
+The contract chapter should leave the reader with one central idea: petroleum revenue is administered, not merely received.
+
+The agreement creates rights, but government value depends on institutions converting those rights into measured production, validated costs, priced cargoes, settled disputes and reconciled cash.
+
+Guyana's cost-audit history illustrates both the importance and difficulty of this work. The GRA account shows that government agencies had to coordinate with external specialists, challenge audit methodology, provide the contractor a response process and continue working through unresolved issues. [S111]
+
+The later model PSA shows how contract architecture can evolve as a petroleum province matures. [S112]
+
+For a newcomer, the practical blueprint is therefore to build four systems before first oil:
+- a contract register;
+- a cost-recovery ledger;
+- a valuation and cargo-sales ledger;
+- an audit and dispute calendar.
+
+The state should then reconcile those systems to the sovereign revenue account.
+
+If that chain cannot be reproduced, headline fiscal terms provide less protection than they appear to offer.
