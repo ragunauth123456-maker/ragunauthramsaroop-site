@@ -1,0 +1,49 @@
+name: Executive careers — public research and offline QA
+on:
+  pull_request:
+    paths:
+      - 'scripts/executive_careers_worker.py'
+      - 'scripts/executive_careers_sources.json'
+      - 'scripts/test_executive_careers_worker.py'
+      - 'scripts/ceo_outreach_gate.py'
+      - 'scripts/test_ceo_outreach_gate.py'
+      - '.github/workflows/executive-careers-research.yml'
+  schedule:
+    - cron: '37 11 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    name: Offline source parsing and outreach quality-gate tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify public-research worker and existing CEO outreach gate
+        run: |
+          python -m unittest discover -s scripts -p 'test_executive_careers_worker.py' -v
+          python -m unittest discover -s scripts -p 'test_ceo_outreach_gate.py' -v
+  research:
+    name: Read public official careers pages — no email or applications
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch approved public careers pages and collect possible senior-role links
+        run: python scripts/executive_careers_worker.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: executive-careers-public-research
+          if-no-files-found: error
+          retention-days: 7
+          path: executive-careers-artifacts/public_research.json
