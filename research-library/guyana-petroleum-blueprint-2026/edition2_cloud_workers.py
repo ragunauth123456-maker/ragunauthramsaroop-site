@@ -126,7 +126,7 @@ def check_one(item):
             status=resp.status
     except urllib.error.HTTPError as e:
         status=e.code
-        if status in (405,501):
+        if status in (403,404,405,410,429,501):
             try:
                 req=urllib.request.Request(url,method="GET",headers={"Range":"bytes=0-0","User-Agent":"Edition2-Source-Availability-Audit/1.0"})
                 with opener.open(req,timeout=11) as response:
