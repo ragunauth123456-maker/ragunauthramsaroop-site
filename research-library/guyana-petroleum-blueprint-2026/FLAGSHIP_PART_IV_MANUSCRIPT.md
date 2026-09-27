@@ -636,3 +636,297 @@ A clean fund without effective public investment leaves development opportunitie
 Large public investment without financial control risks converting a finite resource into weak assets.
 
 The purpose of the system is to convert depleting petroleum into a durable national balance sheet.
+
+
+## Edition 2.0 deepening: the Natural Resource Fund as one account inside a national wealth system
+
+### Analytical section 120A. A sovereign resource fund should solve a defined problem
+
+A resource fund can serve several purposes, but those purposes should not be blurred.
+
+It can:
+- stabilize the budget;
+- save for future generations;
+- separate volatile petroleum receipts from annual spending decisions;
+- preserve foreign assets;
+- improve transparency;
+- create a rules-based bridge into the national budget.
+
+These objectives can conflict.
+
+A rule optimized for stabilization may not maximize long-run saving.
+
+A rule designed to build financial assets may constrain near-term development spending.
+
+A state with large infrastructure gaps may decide to spend more than a mature high-income producer.
+
+The design question is therefore not whether a country should "save" or "spend".
+
+The question is how much can be spent productively without creating macroeconomic instability, weak projects or permanent expenditure commitments that outlive volatile petroleum revenue.
+
+### Analytical section 120B. The fund should be reconstructed as a stock-flow identity
+
+The cleanest audit of a sovereign fund uses a simple identity:
+
+opening balance  
+plus petroleum inflows  
+plus investment income  
+plus or minus valuation and currency effects  
+minus lawful withdrawals  
+equals closing balance.
+
+Every annual and quarterly report should reconcile to this identity.
+
+The Bank of Guyana reporting architecture makes it possible to reconstruct the NRF across audited annual statements and quarterly or monthly reports. [S44-S47, S88, S109-S110]
+
+The value of the reconstruction is not only arithmetic.
+
+It separates four concepts that are often confused:
+- petroleum revenue;
+- investment return;
+- withdrawal;
+- fund balance.
+
+A large withdrawal can occur in a year when petroleum receipts are also large.
+
+A lower closing balance does not automatically mean the fund "lost" money.
+
+The explanation may be lawful transfers to the Consolidated Fund.
+
+### Analytical section 120C. Cash and accrual accounting should not be mixed casually
+
+Petroleum cash flows can straddle reporting periods.
+
+A cargo lifted in December can be paid in January.
+
+A quarterly report may recognize an accrual before the cash reaches the bank account.
+
+A government budget may refer to expected receipts for a full year.
+
+These are different accounting boundaries.
+
+The Q4 2025 NRF report explicitly describes accrual accounting and notes petroleum payments due after year-end for some December lifts. [S109]
+
+This is a valuable teaching example.
+
+A publication should never add an accrual figure to a later cash receipt without checking whether they refer to the same transaction.
+
+The NRF reconciliation workbook should therefore include:
+- transaction date;
+- recognition date;
+- cash receipt date;
+- accounting basis;
+- source report.
+
+### Analytical section 120D. The custody chain is part of sovereign risk management
+
+The resource fund is not simply a line in the budget.
+
+It is a custody arrangement.
+
+The state should know:
+- where the assets are held;
+- who can authorize transfers;
+- who reconciles the account;
+- who audits the financial statements;
+- what investment mandate applies;
+- what operational controls prevent unauthorized movement.
+
+Bank of Guyana reporting identifies the central bank's operational role and the investment mandate. [S109]
+
+A new producer should test the entire custody chain before the first material petroleum receipt.
+
+A simulated transfer should verify bank instructions, dual authorization, accounting entries, reconciliation and audit evidence.
+
+### Analytical section 120E. Investment policy should match the purpose and horizon of the fund
+
+A fund that may be used heavily for development spending has a different liquidity need from a mature intergenerational fund.
+
+Investment policy should therefore distinguish:
+- liquidity reserve;
+- near-term withdrawal needs;
+- long-duration savings;
+- currency exposure;
+- market risk;
+- operational risk.
+
+A conservative early-stage mandate can be rational when withdrawal needs are uncertain and institutions are still maturing.
+
+Over time, the state can decide whether a diversified portfolio is appropriate.
+
+The decision should be based on explicit risk tolerance, not a desire to imitate another sovereign fund.
+
+### Analytical section 120F. Withdrawal rules should be tested against revenue volatility
+
+A withdrawal formula can look prudent under a high-price base case and become procyclical under stress.
+
+The rule should therefore be tested under:
+- oil price decline;
+- delayed startup;
+- major outage;
+- cost-recovery increase;
+- global recession;
+- domestic disaster;
+- investment-market loss.
+
+The question is not only whether the formula is legal.
+
+The question is whether the resulting budget path remains sustainable.
+
+A country should know how quickly public spending would need to adjust if petroleum receipts fall.
+
+### Analytical section 120G. The non-oil primary balance is the key macro bridge
+
+The fund balance alone does not show the fiscal impulse delivered to the domestic economy.
+
+The non-oil primary balance is useful because it asks how large the fiscal position would be without petroleum revenue and interest.
+
+A rapidly widening non-oil deficit can be sustainable for a period if the state is deliberately converting resource wealth into high-return public assets.
+
+It becomes risky when spending growth exceeds implementation capacity or creates permanent recurrent obligations without future financing.
+
+The indicator should therefore be read with public-investment quality, not in isolation.
+
+### Analytical section 120H. Absorptive capacity is measurable
+
+"Absorptive capacity" should not remain a vague warning.
+
+A government can track it through:
+- project completion delays;
+- procurement lead times;
+- construction-cost inflation;
+- skilled-labour vacancies;
+- imported construction inputs;
+- contractor concentration;
+- project redesign;
+- maintenance backlogs;
+- land and housing prices.
+
+If these indicators deteriorate as public capital spending rises, the marginal return on additional spending may be falling.
+
+The response is not necessarily to stop investment.
+
+It may be to sequence projects, expand engineering capacity, improve procurement and prioritize maintenance.
+
+### Analytical section 120I. Public investment should be tracked through an asset register
+
+A budget appropriation is not a national asset.
+
+A completed structure is not necessarily an operating public service.
+
+The public-investment chain should therefore record:
+1. project concept;
+2. appraisal;
+3. budget;
+4. procurement;
+5. contract;
+6. construction progress;
+7. commissioning;
+8. operating agency;
+9. maintenance plan;
+10. service outcome.
+
+For a resource-rich state, this asset register is the other half of the sovereign fund.
+
+The NRF records financial wealth.
+
+The public asset register records what withdrawals became.
+
+### Analytical section 120J. Maintenance converts construction into durable wealth
+
+Resource booms create incentives to build visible capital projects.
+
+The less visible question is whether those assets can be operated and maintained.
+
+Every major public project should therefore have a lifecycle-cost estimate before construction begins.
+
+The estimate should include:
+- staffing;
+- utilities;
+- spare parts;
+- periodic rehabilitation;
+- digital systems;
+- insurance;
+- replacement cycle.
+
+A hospital without recurrent staffing or a road without maintenance is not equivalent to a durable increase in national wealth.
+
+### Analytical section 120K. Human capital belongs in the wealth-conversion ledger
+
+Petroleum revenue can finance education and health, but expenditure is not the same as human-capital formation.
+
+The state should track:
+- learning outcomes;
+- tertiary completion;
+- technical certification;
+- health access;
+- mortality and morbidity indicators;
+- labour-force participation;
+- occupational shortages.
+
+The public wealth framework should therefore include financial, physical and human capital.
+
+This makes it possible to compare competing uses of a finite resource.
+
+### Analytical section 120L. Natural capital prevents false accounting
+
+A state can increase financial assets while degrading ecosystems.
+
+A comprehensive wealth framework should record major natural-capital changes alongside fiscal assets.
+
+For Guyana this is especially relevant because petroleum development coexists with forest-carbon policy, biodiversity assets, freshwater systems and coastal vulnerability.
+
+The objective is not to reduce every ecological value to one monetary number.
+
+The objective is to prevent the public balance sheet from treating natural assets as if they were free.
+
+### Analytical section 120M. A national wealth statement would improve accountability
+
+An annual national wealth statement could present five accounts:
+- petroleum depletion;
+- NRF financial assets;
+- public physical assets;
+- human-capital indicators;
+- natural-capital indicators.
+
+The statement would not need to claim perfect valuation.
+
+Its value would be conceptual discipline.
+
+Citizens could see whether petroleum extraction is being matched by growth in other durable assets.
+
+This is a stronger intergenerational test than the size of the NRF alone.
+
+### Analytical section 120N. The 2025 NRF record shows why reconciliation matters
+
+The Bank of Guyana's Q4 2025 report provides a useful case because it records the year-end market value, quarterly inflows, transfers, investment return and the investment mandate in one report. [S109]
+
+A reader can therefore observe that fund performance is affected simultaneously by new petroleum revenue, investment income and withdrawals.
+
+This is exactly why political or media discussion should not infer fund performance from one number.
+
+The same discipline should be carried into 2026 using the monthly reports and Ministry of Finance mid-year reporting. [S07, S110]
+
+### Analytical section 120O. Expanded Part IV conclusion
+
+The Natural Resource Fund should be treated as a control account in a much larger national wealth system.
+
+Its first job is to record and safeguard petroleum receipts under law.
+
+Its second job is to create a disciplined interface with the budget.
+
+Its third job is to preserve evidence about how much of a finite resource has been converted into financial assets.
+
+But the development question begins after the withdrawal.
+
+A state ultimately succeeds only if withdrawals become productive, maintained and socially valuable assets without destabilizing the economy.
+
+For a newcomer, the operating model should therefore link four ledgers:
+- petroleum entitlement;
+- sovereign fund;
+- national budget;
+- public asset and outcome register.
+
+The country should be able to trace one petroleum dollar through all four.
+
+That is the standard required for true resource-to-wealth accountability.
