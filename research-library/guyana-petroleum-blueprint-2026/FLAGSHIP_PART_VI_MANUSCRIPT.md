@@ -724,3 +724,312 @@ Petroleum revenue, jobs and public investment need to be connected to current ho
 Where current representative data are absent, the white paper should preserve the gap instead of substituting an old figure.
 
 A newcomer country should build those measurement systems before the resource transition makes the baseline harder to reconstruct.
+
+
+## Edition 2.0 deepening: local content as capability formation, not only compliance
+
+### Analytical section 219A. Local content should be measured through retained domestic value
+
+A procurement value can overstate local economic contribution.
+
+A company registered in Guyana may import most of the goods it supplies.
+
+A contract awarded to a local firm may pass a large share of the revenue to foreign manufacturers, expatriate labour or imported equipment.
+
+The stronger metric is retained domestic value.
+
+For each procurement category, government should estimate:
+- local wages;
+- local ownership;
+- imported inputs;
+- domestic operating expenditure;
+- retained profit;
+- local tax contribution;
+- training expenditure;
+- technology or process capability retained after contract completion.
+
+This produces a domestic-value bridge rather than a gross-spend headline.
+
+The Local Content Secretariat's reporting framework already requires detailed information on expenditure, employment, salary scales, supplier participation, training and capacity development. [S108]
+
+The next analytical step is to convert those reporting fields into value-retention metrics.
+
+### Analytical section 219B. Local ownership should be verified economically, not only legally
+
+A company can meet formal registration requirements while exercising limited local economic control.
+
+A credible ownership test should therefore examine:
+- beneficial ownership;
+- voting rights;
+- management control;
+- financing;
+- profit distribution;
+- related-party arrangements;
+- operational capability.
+
+This does not imply that joint ventures or foreign capital are undesirable.
+
+It means that "local" should describe the economic relationship being measured.
+
+A transparent beneficial-ownership regime is therefore part of local-content governance.
+
+### Analytical section 219C. Category targets should reflect capability pathways
+
+Not every petroleum good or service should have the same localization strategy.
+
+Some categories can be localized quickly because the required capability already exists.
+
+Others require years of training, certification, capital or international partnership.
+
+A rational local-content plan should classify categories into:
+1. immediately competitive;
+2. competitive with certification or finance;
+3. competitive after workforce development;
+4. unlikely to be efficient at domestic scale;
+5. strategic capability worth developing despite a longer horizon.
+
+This avoids treating every target as a static percentage.
+
+The policy objective becomes capability progression.
+
+### Analytical section 219D. Supplier development should be tracked after the petroleum contract ends
+
+A supplier programme succeeds when firms become more capable, not merely when they win one petroleum contract.
+
+The audit should ask whether participating firms later:
+- won larger contracts;
+- exported services;
+- entered other sectors;
+- improved safety performance;
+- obtained international certification;
+- invested in equipment;
+- hired and trained permanent staff.
+
+This creates a longitudinal supplier dataset.
+
+The strongest local-content outcome is a firm that becomes competitive beyond the protected or targeted procurement category.
+
+### Analytical section 219E. Workforce localization should be occupation-specific
+
+A national employment percentage can hide skill concentration.
+
+The workforce dataset should distinguish:
+- executive and managerial;
+- petroleum engineering;
+- geoscience;
+- subsea;
+- marine;
+- process operations;
+- maintenance;
+- safety;
+- finance;
+- legal;
+- logistics;
+- administrative support.
+
+A country may have a high national employment share while specialist decision-making remains concentrated among expatriates.
+
+The succession plan should therefore be occupation-specific.
+
+### Analytical section 219F. Training should be evaluated by competence, not attendance
+
+Training expenditure and participant count are inputs.
+
+The output is demonstrated competence.
+
+A training programme should identify:
+- role;
+- required competency;
+- training method;
+- assessment;
+- supervised practice;
+- certification;
+- date of independent responsibility.
+
+This is especially important for safety-critical and technical roles.
+
+A scholarship can contribute to long-term capability.
+
+It is not the same as operational qualification.
+
+### Analytical section 219G. The public sector competes for the same scarce skills
+
+A petroleum boom can improve private wages while weakening regulators, utilities and ministries if scarce specialists leave.
+
+The workforce strategy should therefore track vacancies and turnover in:
+- environmental regulation;
+- tax administration;
+- public engineering;
+- power utilities;
+- maritime authorities;
+- statistics;
+- public procurement.
+
+If public institutions cannot retain critical staff, localization inside the private petroleum sector may coexist with weaker state capacity.
+
+Compensation reform, specialist career tracks and targeted secondments may be required.
+
+### Analytical section 219H. Migration is part of the labour-market response
+
+A small economy cannot always train workers fast enough to meet a sudden investment boom.
+
+Migration can relieve labour shortages.
+
+It can also increase demand for housing, transport, health care and schools.
+
+The labour-market chapter should therefore track:
+- work permits;
+- occupation;
+- duration;
+- housing pressure;
+- remittance flows;
+- transition to local workers.
+
+The objective is not to treat migration as success or failure.
+
+It is to include it in capacity planning.
+
+### Analytical section 219I. Wage growth should be interpreted with prices
+
+Nominal wage growth does not establish improved household welfare.
+
+Real household conditions depend on:
+- rent;
+- food;
+- transport;
+- utilities;
+- health costs;
+- household size;
+- employment stability.
+
+A petroleum boom can increase average wages while widening differences between households connected to the new economy and those facing higher prices without equivalent income gains.
+
+This is why current household data are essential.
+
+### Analytical section 219J. A rolling household survey system is part of resource governance
+
+A country experiencing rapid structural change should not wait many years between household surveys.
+
+A rolling system can combine:
+- annual labour-force data;
+- periodic household expenditure modules;
+- price surveys;
+- administrative social-protection data;
+- regional service indicators.
+
+The purpose is not to publish one poverty rate more frequently.
+
+It is to understand how the transition is distributed across income, geography and household type.
+
+The 2018/2019 household survey remains valuable as a baseline, but it should not be described as a current 2026 outcome. [S61]
+
+### Analytical section 219K. Regional equity should be measured through access and outcomes
+
+National averages can obscure geographic gaps.
+
+A regional dashboard should include:
+- household income or consumption;
+- electricity;
+- water;
+- internet;
+- travel time to health care;
+- school outcomes;
+- housing;
+- roads;
+- employment;
+- business registration.
+
+For hinterland and riverine areas, physical distance can make the same budget allocation produce different service access.
+
+This is especially relevant when national resource revenue expands rapidly.
+
+### Analytical section 219L. Indigenous and community benefit systems require transaction-level evidence
+
+Community allocations should be evaluated through a chain similar to public investment.
+
+The chain should record:
+- eligibility;
+- consultation;
+- decision;
+- allocation;
+- receipt;
+- procurement;
+- asset or service;
+- maintenance;
+- grievance;
+- outcome.
+
+Official programme documents and critical stakeholder accounts should remain distinguishable. [S62-S63, S93]
+
+The strongest evidence is village-level implementation that can be verified by the community and an independent reviewer.
+
+### Analytical section 219M. Grievance systems should generate data
+
+A grievance mechanism should not be a mailbox.
+
+It should produce a dataset containing:
+- category;
+- location;
+- date;
+- institution responsible;
+- resolution time;
+- outcome;
+- appeal;
+- recurrence.
+
+The data can reveal systemic issues in land access, employment, procurement, environmental impact or public services.
+
+Recurring grievances should trigger policy review.
+
+### Analytical section 219N. Gender analysis should move beyond participation rates
+
+A petroleum transition can affect women and men differently through:
+- occupational segregation;
+- unpaid care;
+- migration;
+- safety;
+- access to technical training;
+- entrepreneurship;
+- land ownership;
+- household price exposure.
+
+The analysis should therefore track not only labour-force participation but also occupational level, pay, training completion, business ownership and regional access.
+
+### Analytical section 219O. Local content should have an exit test
+
+A local-content rule should not be judged only by whether the target was met.
+
+It should also ask whether protection or preference remains necessary.
+
+An exit test can assess:
+- number of capable suppliers;
+- competitive pricing;
+- quality;
+- export success;
+- safety performance;
+- financing access.
+
+A mature category may eventually need less preference.
+
+A weak category may need a different intervention.
+
+This keeps local content focused on capability rather than permanent insulation from competition.
+
+### Analytical section 219P. Expanded Part VI conclusion
+
+Local content is one of the clearest places where petroleum policy can create durable capability, but only if the measurement moves beyond gross spend.
+
+The reporting architecture already collects many of the fields needed for a more rigorous system. [S108]
+
+The next-generation framework should reconcile procurement, employment, ownership, imports, wages, retained profit, training and supplier progression.
+
+The social side requires equally disciplined evidence.
+
+GDP growth, public expenditure and petroleum employment are not substitutes for current household and regional data.
+
+For a newcomer, the practical blueprint is to build three linked systems before first oil:
+- supplier and beneficial-ownership register;
+- occupation and skills ledger;
+- household and regional outcomes baseline.
+
+These systems make it possible to distinguish temporary boom participation from lasting national capability.
