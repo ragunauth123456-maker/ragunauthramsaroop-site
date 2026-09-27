@@ -31,7 +31,7 @@ jobs:
           assert set(range(1,19)) <= refs, f"Missing source ids: {set(range(1,19))-refs}"
           for term in ('hypothetical','financed emissions','uncertainty'):
               assert term in (s+' '+a+' '+t).lower()
-          assert 'independently assured' in s.lower()
+          assert 'independent assurance' in s.lower()
           assert 'No' in a and 'third-party' in a
           print('PASS source register, research boundaries, and accompanying files')
           PY
