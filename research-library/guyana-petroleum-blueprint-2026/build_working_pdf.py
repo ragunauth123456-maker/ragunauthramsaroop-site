@@ -97,6 +97,11 @@ class Report(BaseDocTemplate):
                                             onPage=self.page_background)])
         self.heading_counter = 0
 
+    def beforeDocument(self):
+        # multiBuild reuses this document instance across TOC layout passes.
+        # Stable heading keys are required for second-pass TOC convergence.
+        self.heading_counter = 0
+
     def page_background(self, canvas, doc):
         canvas.saveState()
         if doc.page == 1:
@@ -119,6 +124,12 @@ class Report(BaseDocTemplate):
             self.notify("TOCEntry", (flow.toc_level, flow.getPlainText(), self.page, name))
             self.canv.addOutlineEntry(flow.getPlainText()[:100], name,
                                       level=min(flow.toc_level, 1), closed=False)
+
+def top_heading(title: str) -> Paragraph:
+    heading = Paragraph(markup(title), s["H12"])
+    heading.toc_level = 0
+    return heading
+
 
 def markdown_flow(text: str, max_level=2) -> list:
     story, pending = [], []
@@ -256,16 +267,16 @@ def build() -> None:
     toc = TableOfContents()
     toc.levelStyles = [s["TocEntry2"], s["TocEntry2"]]
     story.extend([toc, PageBreak(),
-                  Paragraph("Executive research brief", s["H12"])])
+                  top_heading("Executive research brief")])
     story.extend(markdown_flow("\n".join(brief.splitlines()[3:])))
     story.append(PageBreak())
     add_snapshot(story)
     add_revenue_exhibit(story)
-    story.extend([PageBreak(), Paragraph("Substantive manuscript", s["H12"])])
+    story.extend([PageBreak(), top_heading("Substantive manuscript")])
     # Omit duplicated cover headings; start at the abstract.
     start = manuscript.find("### Abstract")
     story.extend(markdown_flow(manuscript[start:] if start != -1 else manuscript))
-    story.extend([PageBreak(), Paragraph("Source register", s["H12"]),
+    story.extend([PageBreak(), top_heading("Source register"),
                   Paragraph("Dated source IDs correspond to citations in the manuscript. "
                             "Public URLs link to originals. Key unresolved verification "
                             "tasks appear after the register.", s["Body2"])])
@@ -278,7 +289,7 @@ def build() -> None:
                  f'<link href="{safe_url}" color="#155847">{html.escape(url)}</link>')
         story.append(Paragraph(piece, s["Ref2"]))
     if "### Priority unresolved checks" in sources:
-        story.extend([Paragraph("Pending verification", s["H12"])] +
+        story.extend([top_heading("Pending verification")] +
                      markdown_flow("### Priority unresolved checks" +
                      sources.split("### Priority unresolved checks", 1)[1]))
 
