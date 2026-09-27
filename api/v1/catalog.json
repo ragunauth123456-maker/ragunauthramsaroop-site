@@ -183,5 +183,17 @@
       "description": "Review supplier integrity, environment, human rights, tender controls, local supplier development and procurement evidence.",
       "methodology": "/methodology/#responsible-procurement-assessment"
     }
+  ],
+  "integrations": [
+    {
+      "title": "GeoLibre GIS Workspace",
+      "url": "/tools/geolibre/",
+      "category": "Research & Investment",
+      "description": "Free independent open-source GIS for maps, terrain, satellite imagery, hydrology and geospatial processing. Launched only after visitor consent.",
+      "provider": "GeoLibre by Qiusheng Wu and contributors",
+      "type": "third-party-integration",
+      "source": "https://github.com/opengeos/GeoLibre",
+      "embed_on_demand": true
+    }
   ]
 }
