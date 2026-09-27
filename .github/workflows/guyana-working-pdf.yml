@@ -46,8 +46,13 @@ jobs:
           assert audit["full_volume_complete"] is False
           assert audit["external_peer_review"] == "pending"
           assert hashlib.sha256(pdf.read_bytes()).hexdigest() == audit["sha256"]
-          assert len((d/"ILLUSTRATIVE_SCENARIOS.csv").read_text().splitlines()) == 10
-          print("PASS: typeset PDF, current registered sources, 9 illustrative cases, checksum, draft disclaimers")
+          assert len((d/"ILLUSTRATIVE_SCENARIOS.csv").read_text().splitlines()) == 17
+          assert len((d/"ILLUSTRATIVE_PRODUCTION_SHOCKS.csv").read_text().splitlines()) == 19
+          assert len((d/"ILLUSTRATIVE_FUND_STRESS.csv").read_text().splitlines()) == 21
+          assert audit["source_records"] >= 80
+          assert audit.get("flagship_target_pages_min") == 520
+          assert audit.get("flagship_target_pages_max") == 560
+          print("PASS: typeset PDF, live source register, 54 illustrative stress rows, checksum, draft disclaimers")
           print("Actual working PDF pages:", audit["pages_actual"])
           PY
       - uses: actions/upload-artifact@v4
@@ -58,6 +63,8 @@ jobs:
             research-library/guyana-petroleum-blueprint-2026/working-research-edition.pdf
             research-library/guyana-petroleum-blueprint-2026/WORKING_PDF_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
             research-library/guyana-petroleum-blueprint-2026/_preview_*.png
       - name: Commit the independently audited working PDF to research branch
         if: github.event_name == 'push'
@@ -67,6 +74,8 @@ jobs:
           git add research-library/guyana-petroleum-blueprint-2026/working-research-edition.pdf
           git add research-library/guyana-petroleum-blueprint-2026/WORKING_PDF_AUDIT.json
           git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
+          git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
+          git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
           if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
-          git commit -m "research: add audited Guyana working PDF [skip ci]"
+          git commit -m "research: add validated Guyana working PDF [skip ci]"
           git push origin HEAD:research/guyana-petroleum-blueprint-2026
