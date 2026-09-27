@@ -1,0 +1,432 @@
+{
+  "updated": "2026-09-26",
+  "passing_answers": 3,
+  "questions_per_module": 4,
+  "disclosure": "Self-study only. No credential, identity verification or external accreditation.",
+  "assessments": [
+    {
+      "id": "responsible-mining",
+      "questions": [
+        {
+          "id": "responsible-mining-1",
+          "prompt": "What provides a defensible baseline for an environmental performance claim?",
+          "choices": [
+            "Measured and dated site evidence",
+            "A marketing slogan",
+            "A single unverified estimate",
+            "A future target"
+          ],
+          "answer": 0,
+          "explanation": "Observed, dated and traceable measurements support later comparison."
+        },
+        {
+          "id": "responsible-mining-2",
+          "prompt": "Who should be involved when assessing community impacts?",
+          "choices": [
+            "Only the contractor",
+            "Affected communities and relevant rights-holders",
+            "Only the project owner",
+            "Only the public relations team"
+          ],
+          "answer": 1,
+          "explanation": "Include affected people and rights-holders using appropriate and safe engagement."
+        },
+        {
+          "id": "responsible-mining-3",
+          "prompt": "A supplier due-diligence review should evaluate:",
+          "choices": [
+            "Price alone",
+            "Supplier logo design",
+            "Labour, environment, integrity and traceable controls",
+            "Follower counts"
+          ],
+          "answer": 2,
+          "explanation": "Supply-chain screening considers multiple verifiable risk dimensions."
+        },
+        {
+          "id": "responsible-mining-4",
+          "prompt": "An operational sustainability outcome is supported by:",
+          "choices": [
+            "An unsigned statement",
+            "A hidden spreadsheet",
+            "An untested forecast",
+            "Documented controls, measured outcomes and independent review where material"
+          ],
+          "answer": 3,
+          "explanation": "Controls, evidence and independent review improve the credibility of outcomes."
+        }
+      ]
+    },
+    {
+      "id": "esg-foundations",
+      "questions": [
+        {
+          "id": "esg-foundations-1",
+          "prompt": "What should an initial ESG materiality exercise distinguish?",
+          "choices": [
+            "Issue importance, business impact and evidence confidence",
+            "Font style and brand palette",
+            "Seniority and titles only",
+            "Only media coverage"
+          ],
+          "answer": 0,
+          "explanation": "Materiality screening separates effects, decision relevance and evidence strength."
+        },
+        {
+          "id": "esg-foundations-2",
+          "prompt": "A governance action plan requires:",
+          "choices": [
+            "Anonymous accountability",
+            "Clear owners, decision rights and review dates",
+            "No records",
+            "A single slogan"
+          ],
+          "answer": 1,
+          "explanation": "Named ownership and scheduled reviews support implementation."
+        },
+        {
+          "id": "esg-foundations-3",
+          "prompt": "Where should a reported performance figure originate?",
+          "choices": [
+            "An estimate without a source",
+            "A copied promotional post",
+            "A traceable source, boundary and observation period",
+            "A competitor's claims"
+          ],
+          "answer": 2,
+          "explanation": "Traceability supports audit and transparent interpretation."
+        },
+        {
+          "id": "esg-foundations-4",
+          "prompt": "A responsible grievance process should:",
+          "choices": [
+            "Publish private complaints publicly",
+            "Discard unresolved cases",
+            "Consider only simple complaints",
+            "Protect confidentiality and provide timely responses"
+          ],
+          "answer": 3,
+          "explanation": "Privacy and documented resolution processes help protect affected people."
+        }
+      ]
+    },
+    {
+      "id": "government-relations",
+      "questions": [
+        {
+          "id": "government-relations-1",
+          "prompt": "Before engaging a regulator, the briefing should establish:",
+          "choices": [
+            "The relevant legal mandate and verified facts",
+            "The desired headline only",
+            "An assumption of approval",
+            "An informal promise"
+          ],
+          "answer": 0,
+          "explanation": "Legal basis, institutional mandate and documented facts establish the context."
+        },
+        {
+          "id": "government-relations-2",
+          "prompt": "How should commitments made during a meeting be handled?",
+          "choices": [
+            "Leave ownership ambiguous",
+            "Record approved commitments, boundaries and responsible owners",
+            "Assume every suggestion is binding",
+            "Avoid minutes entirely"
+          ],
+          "answer": 1,
+          "explanation": "Accurate minutes and defined commitment authority improve compliance."
+        },
+        {
+          "id": "government-relations-3",
+          "prompt": "When requested information is uncertain, a representative should:",
+          "choices": [
+            "Invent a complete answer",
+            "Make a promise without authority",
+            "State the uncertainty and arrange a verified follow-up",
+            "Dismiss the question"
+          ],
+          "answer": 2,
+          "explanation": "Documenting uncertainty is preferable to asserting unsupported facts."
+        },
+        {
+          "id": "government-relations-4",
+          "prompt": "A potential conflict of interest should be:",
+          "choices": [
+            "Omitted from the record",
+            "Discussed only informally",
+            "Handled after the contract",
+            "Disclosed and managed through applicable controls"
+          ],
+          "answer": 3,
+          "explanation": "Conflicts require appropriate disclosure and documented management."
+        }
+      ]
+    },
+    {
+      "id": "stakeholder-engagement",
+      "questions": [
+        {
+          "id": "stakeholder-engagement-1",
+          "prompt": "A stakeholder map should first identify:",
+          "choices": [
+            "Affected parties, impacts and relevant rights",
+            "Only high-ranking officials",
+            "The largest supplier",
+            "The most active social account"
+          ],
+          "answer": 0,
+          "explanation": "Rights and actual exposure matter alongside influence."
+        },
+        {
+          "id": "stakeholder-engagement-2",
+          "prompt": "A trusted grievance channel should include:",
+          "choices": [
+            "Only a publicity response",
+            "Accessible reporting, confidentiality and follow-up",
+            "Mandatory public identification",
+            "No appeal route"
+          ],
+          "answer": 1,
+          "explanation": "Safe reporting and timely follow-up form the basis of a responsive channel."
+        },
+        {
+          "id": "stakeholder-engagement-3",
+          "prompt": "What validates whether engagement has been effective?",
+          "choices": [
+            "The number of photographs",
+            "An attendance total alone",
+            "Feedback and evidence of response to material concerns",
+            "A speech transcript"
+          ],
+          "answer": 2,
+          "explanation": "Outcomes require feedback and documented follow-through, not activity counts alone."
+        },
+        {
+          "id": "stakeholder-engagement-4",
+          "prompt": "When consultation identifies a high-impact concern, the project should:",
+          "choices": [
+            "Ignore it if unpopular",
+            "Hide it until completion",
+            "Replace evidence with assumptions",
+            "Record, evaluate, assign and communicate the response"
+          ],
+          "answer": 3,
+          "explanation": "A response process should track ownership, actions and communication."
+        }
+      ]
+    },
+    {
+      "id": "local-content",
+      "questions": [
+        {
+          "id": "local-content-1",
+          "prompt": "A local procurement percentage requires:",
+          "choices": [
+            "A published qualifying definition and consistent denominator",
+            "A headline number alone",
+            "Only supplier nationality labels",
+            "Counting all bids as spending"
+          ],
+          "answer": 0,
+          "explanation": "Definitions and denominators affect comparability."
+        },
+        {
+          "id": "local-content-2",
+          "prompt": "Why report both local spend and supplier participation?",
+          "choices": [
+            "They are identical measures",
+            "Spend concentration and supplier reach describe different outcomes",
+            "Supplier count always predicts value",
+            "One number replaces both"
+          ],
+          "answer": 1,
+          "explanation": "Spend share and participation indicate different economic dimensions."
+        },
+        {
+          "id": "local-content-3",
+          "prompt": "How should local supplier development be evaluated?",
+          "choices": [
+            "Only by announcements",
+            "Only by staff biographies",
+            "By skills, capacity, purchasing outcomes and continuity",
+            "By social impressions"
+          ],
+          "answer": 2,
+          "explanation": "Supplier capability and sustained commercial outcomes matter."
+        },
+        {
+          "id": "local-content-4",
+          "prompt": "What should an audit prevent in local-content reporting?",
+          "choices": [
+            "Annual review",
+            "Documented eligibility",
+            "Supplier training",
+            "Double-counted spending across categories"
+          ],
+          "answer": 3,
+          "explanation": "Avoid duplicate counting and retain transaction-level support."
+        }
+      ]
+    },
+    {
+      "id": "energy-transition",
+      "questions": [
+        {
+          "id": "energy-transition-1",
+          "prompt": "A solar and battery screening model needs:",
+          "choices": [
+            "A site-specific load profile and solar resource",
+            "Only nameplate megawatts",
+            "Only a publicity target",
+            "Only panel photographs"
+          ],
+          "answer": 0,
+          "explanation": "Load timing and resource data govern practical system design."
+        },
+        {
+          "id": "energy-transition-2",
+          "prompt": "An avoided-emissions calculation should use:",
+          "choices": [
+            "An unrelated global figure",
+            "A documented baseline, boundary and defensible emissions factors",
+            "A promotional estimate",
+            "Only the battery capacity"
+          ],
+          "answer": 1,
+          "explanation": "Baseline and boundary determine what displacement is attributable."
+        },
+        {
+          "id": "energy-transition-3",
+          "prompt": "What belongs in investment diligence beyond simple payback?",
+          "choices": [
+            "Color preferences",
+            "Follower counts",
+            "Lifecycle cost, reliability, maintenance and financing",
+            "Only first-year savings"
+          ],
+          "answer": 2,
+          "explanation": "Whole-life analysis is needed before an investment decision."
+        },
+        {
+          "id": "energy-transition-4",
+          "prompt": "A technical proposal should distinguish:",
+          "choices": [
+            "Installed capacity from verified generation and displacement",
+            "Panel count from procurement approval only",
+            "Solar voltage from website traffic",
+            "No material distinction"
+          ],
+          "answer": 0,
+          "explanation": "Nameplate capacity does not by itself establish annual production or displaced fuel."
+        }
+      ]
+    },
+    {
+      "id": "executive-briefing",
+      "questions": [
+        {
+          "id": "executive-briefing-1",
+          "prompt": "A decision brief should separate:",
+          "choices": [
+            "Verified facts from assumptions and unknowns",
+            "Contact details from logos",
+            "Charts from headlines only",
+            "Senior titles from job grades"
+          ],
+          "answer": 0,
+          "explanation": "Decision-makers need transparent evidence boundaries."
+        },
+        {
+          "id": "executive-briefing-2",
+          "prompt": "A useful action register should state:",
+          "choices": [
+            "Only the requested deadline",
+            "Owner, action, due date and evidence of completion",
+            "Only the most optimistic scenario",
+            "No review date"
+          ],
+          "answer": 1,
+          "explanation": "Defined accountability improves follow-up."
+        },
+        {
+          "id": "executive-briefing-3",
+          "prompt": "When evidence conflicts, the brief should:",
+          "choices": [
+            "Hide weaker evidence",
+            "Select a preferred narrative",
+            "Identify the discrepancy and what would resolve it",
+            "Remove all source references"
+          ],
+          "answer": 2,
+          "explanation": "Explicit uncertainty helps avoid misleading conclusions."
+        },
+        {
+          "id": "executive-briefing-4",
+          "prompt": "A decision recommendation should acknowledge:",
+          "choices": [
+            "Only desired results",
+            "Only publicity opportunities",
+            "Only historical success",
+            "Trade-offs, decision rights and material risks"
+          ],
+          "answer": 3,
+          "explanation": "Material trade-offs support informed executive judgement."
+        }
+      ]
+    },
+    {
+      "id": "guyana-intelligence",
+      "questions": [
+        {
+          "id": "guyana-intelligence-1",
+          "prompt": "A public economic indicator should display:",
+          "choices": [
+            "Its observation year, source and definition",
+            "Only a large number",
+            "Only a current timestamp",
+            "An unlabelled trend"
+          ],
+          "answer": 0,
+          "explanation": "Observation dates and measurement definitions prevent misleading comparisons."
+        },
+        {
+          "id": "guyana-intelligence-2",
+          "prompt": "Two economic series should be compared only after checking:",
+          "choices": [
+            "Their color palette",
+            "Compatible units, scope and statistical methods",
+            "Their popularity",
+            "Identical publication days"
+          ],
+          "answer": 1,
+          "explanation": "Differences in units or methodology can invalidate direct comparisons."
+        },
+        {
+          "id": "guyana-intelligence-3",
+          "prompt": "An official data revision should be handled by:",
+          "choices": [
+            "Silently overwriting prior claims",
+            "Ignoring corrections",
+            "Retaining source provenance and indicating revisions",
+            "Removing the source link"
+          ],
+          "answer": 2,
+          "explanation": "Revision records and provenance keep published analysis auditable."
+        },
+        {
+          "id": "guyana-intelligence-4",
+          "prompt": "When a current observation is unavailable, the dashboard should:",
+          "choices": [
+            "Interpolate silently",
+            "Repeat last year's value as current",
+            "Replace it with an unverified estimate",
+            "Label the last observed year and the data gap"
+          ],
+          "answer": 3,
+          "explanation": "Missing values must remain visible instead of being presented as current."
+        }
+      ]
+    }
+  ]
+}
