@@ -1,0 +1,51 @@
+name: Build research PDF page evidence
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_research_page_index.py'
+      - 'data/research-papers.json'
+      - 'research-library/**/full-text.pdf'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install trusted PDF text parser
+        run: python -m pip install 'pypdf>=5.9,<7'
+      - name: Extract real PDF text with actual page numbers
+        run: python scripts/build_research_page_index.py
+      - name: Verify index content and source paths
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          j=json.loads(pathlib.Path("data/research-pages.json").read_text())
+          assert j["papers"] and any(p["pages"] for p in j["papers"])
+          for paper in j["papers"]:
+              assert pathlib.Path(paper["pdf"].lstrip("/")).exists()
+              assert all(1<=page["page"]<=paper["page_count"] for page in paper["pages"])
+          print("PASS extracted indexed PDF source pages")
+          PY
+      - name: Publish verified static evidence index
+        run: |
+          git config user.name "rr-research-index[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/research-pages.json
+          if git diff --cached --quiet; then echo "No index changes"; exit 0; fi
+          git commit -m "Index actual public PDF pages for evidence explorer"
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "Index ready but upstream changed during publication" >&2
+          exit 1
