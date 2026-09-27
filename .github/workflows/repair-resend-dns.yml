@@ -1,0 +1,54 @@
+name: Owner-authorized Spaceship DNS repair
+on:
+  pull_request:
+    paths:
+      - 'scripts/apply_spaceship_resend_dns.mjs'
+      - 'scripts/test_apply_spaceship_resend_dns.mjs'
+      - '.github/workflows/repair-resend-dns.yml'
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'Plan reads DNS; apply adds only missing approved Resend records'
+        type: choice
+        required: true
+        default: plan
+        options:
+          - plan
+          - apply
+permissions:
+  contents: read
+concurrency:
+  group: owner-dns-repair
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test safe append-only DNS repair
+        run: node scripts/test_apply_spaceship_resend_dns.mjs
+  owner-dns:
+    if: github.event_name == 'workflow_dispatch'
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Inspect registrar DNS or apply four approved entries
+        env:
+          SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
+          SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
+          DNS_MODE: ${{ inputs.operation }}
+        run: |
+          if [ "$DNS_MODE" = "apply" ]; then
+            node scripts/apply_spaceship_resend_dns.mjs --apply
+          else
+            node scripts/apply_spaceship_resend_dns.mjs
+          fi
