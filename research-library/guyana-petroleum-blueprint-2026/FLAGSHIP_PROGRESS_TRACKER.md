@@ -140,3 +140,24 @@ These are substantive research-stage chapters, not page padding. The next PDF re
 ## Edition 1.0 publication build
 
 The flagship cloud build passed its PDF publication gate at 518 pages, 484 pages with at least 100 words, 86 source records, searchable text, and zero exact duplicate long paragraphs. The final source wording now treats remaining evidence items as future revision and external-review priorities rather than unpublished blockers. External peer review is not claimed.
+
+
+## Adversarial audit status, 27 September 2026
+
+Edition 1.0's former completion label has been superseded. Issue #60 is open and PR #61 is draft.
+
+Edition 1.1 controls now include:
+- 97-source register;
+- high-risk claim-to-source matrix;
+- Petroleum Activities Act 2023 legal addendum;
+- audited NRF 2025 baseline;
+- current EITI ongoing-status control;
+- ICJ territorial/maritime-risk module;
+- CORSIA and carbon-accounting boundaries;
+- independent critical Indigenous/carbon-market perspective;
+- redesigned scenario tables;
+- primary TOC limited to major parts rather than granular analytical sections;
+- publication_complete=false;
+- external_peer_review=pending.
+
+The publication remains an internally audited candidate until remaining legal, environmental, social and independent-review gates are evidenced.
