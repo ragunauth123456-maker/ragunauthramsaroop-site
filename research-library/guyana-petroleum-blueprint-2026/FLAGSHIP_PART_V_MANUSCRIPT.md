@@ -792,3 +792,341 @@ The blueprint lesson is equally precise.
 A newcomer should not wait until a spill to define response authority, and it should not treat a permit as the end of environmental governance.
 
 The environmental system should be designed to learn from operations, publish evidence, enforce conditions and finance the consequences of failure.
+
+
+## Edition 2.0 deepening: environmental governance as a lifecycle assurance system
+
+### Analytical section 171A. Environmental governance should begin before project approval
+
+An offshore environmental regime should be designed as a lifecycle system.
+
+The sequence begins with baseline data and strategic assessment.
+
+It continues through project EIA, permit conditions, monitoring, incident reporting, enforcement, financial assurance, emergency response and decommissioning.
+
+Each stage should answer a different question.
+
+The EIA asks what impacts are reasonably foreseeable before approval.
+
+The permit converts selected mitigation and monitoring requirements into enforceable obligations.
+
+Operational monitoring asks what is actually occurring.
+
+Incident reporting captures deviations and failures.
+
+Financial assurance asks whether the operator can finance the consequences of non-compliance or an accident.
+
+Decommissioning asks what remains after production ends.
+
+Treating any one of these as the complete environmental system creates a blind spot.
+
+### Analytical section 171B. Baseline quality determines the credibility of later impact claims
+
+A post-development environmental measurement has limited interpretive value if the pre-development condition is unknown.
+
+This is particularly important in marine systems because fish abundance, currents, water quality and species distribution can vary naturally.
+
+The baseline should therefore record:
+- methodology;
+- sampling locations;
+- season;
+- equipment;
+- detection limits;
+- uncertainty;
+- raw data ownership;
+- laboratory quality controls.
+
+A baseline is not credible merely because it exists in an EIA.
+
+It should be reproducible.
+
+Where monitoring methods change, the record should explain whether new and old series remain comparable.
+
+### Analytical section 171C. Strategic assessment is different from project assessment
+
+An EIA for one FPSO cannot answer every cumulative question created by a basin with several producing projects.
+
+Strategic environmental and social assessment asks system-level questions:
+- total tanker traffic;
+- aggregate flaring and emissions;
+- cumulative noise;
+- fisheries interaction;
+- waste handling;
+- shared support bases;
+- response capacity across simultaneous operations;
+- onshore infrastructure effects.
+
+The Guyana Oil and Gas Capacity Building Project's strategic-assessment terms identify many of these categories. [S94]
+
+The transferable lesson is that project-by-project authorization should be supplemented by basin-wide assessment as development scales.
+
+### Analytical section 171D. Permit conditions should be transformed into a compliance matrix
+
+A long environmental permit is difficult to administer if obligations remain embedded in prose.
+
+Each permit should be converted into a compliance matrix containing:
+- condition number;
+- obligation;
+- frequency;
+- responsible party;
+- evidence required;
+- regulator reviewer;
+- public disclosure status;
+- breach consequence.
+
+This makes compliance auditable.
+
+The matrix should distinguish one-time conditions from recurring conditions.
+
+A permit that requires annual reporting should generate an expected evidence item every year.
+
+If the evidence is missing, the regulator should know immediately.
+
+### Analytical section 171E. Financial assurance has multiple layers
+
+Financial assurance should not be reduced to a single headline guarantee.
+
+The Uaru permit provides a useful structure because conditions 14.3 to 14.5 distinguish credible-cost estimation, liability insurance and parent or affiliate guarantee obligations. [S99]
+
+These instruments serve different purposes.
+
+Insurance transfers defined risks to an insurer subject to coverage terms, exclusions and limits.
+
+A parent guarantee depends on the guarantor's obligation and financial capacity.
+
+Other financial-assurance instruments may address specific regulatory obligations.
+
+The audit questions are therefore:
+- what loss is covered;
+- what amount is available;
+- when can it be called;
+- who can draw;
+- what exclusions apply;
+- what happens if the instrument expires;
+- what happens if the obligor becomes insolvent.
+
+A stated liability principle is not the same thing as immediately available cash.
+
+### Analytical section 171F. The distinction between liability and financial security is fundamental
+
+An operator may have legal responsibility for environmental damage while the state still faces a separate question about how quickly money can be accessed after a major event.
+
+This is why legal liability and financial assurance should be reported separately.
+
+The 2026 appellate litigation illustrates the importance of this distinction. Government and contemporaneous reporting describe the Court of Appeal as overturning the earlier unlimited-guarantee order and treating financial assurance as distinct from unlimited liability. [S101, S105]
+
+The publication should remain narrow until authenticated full reasons are available.
+
+The transferable point does not depend on the outcome of one case.
+
+Every producer should distinguish:
+- liability;
+- insurance;
+- guarantee;
+- liquid emergency funding;
+- ultimate recovery.
+
+### Analytical section 171G. A national spill plan should be built around decision rights
+
+Oil-spill plans often contain equipment lists.
+
+The more important question is who decides.
+
+The plan should identify authority for:
+- incident command;
+- dispersant approval;
+- fishing closure;
+- shoreline protection;
+- public health advice;
+- international notification;
+- wildlife response;
+- claims administration;
+- termination of emergency status.
+
+These decisions should be exercised in drills.
+
+A plan that has never been tested across agencies is not equivalent to operational readiness.
+
+### Analytical section 171H. Response equipment should be assessed by deployment time
+
+An inventory can create false confidence.
+
+A capping stack or response vessel has little operational value if it cannot arrive within the scenario window assumed by the response plan.
+
+The state should therefore measure:
+- location;
+- mobilization time;
+- customs and border requirements;
+- vessel availability;
+- weather limits;
+- compatible connectors;
+- trained personnel;
+- maintenance status.
+
+For a small state, regional agreements may be essential.
+
+The response plan should show which resources are national, which are operator-owned and which depend on external assistance.
+
+### Analytical section 171I. Fisheries require both ecological and economic baselines
+
+A fisheries impact programme should not rely only on biological sampling.
+
+It should also document:
+- fishing grounds;
+- vessel types;
+- seasonality;
+- landing sites;
+- value chain;
+- household dependence;
+- exclusion zones;
+- navigation changes;
+- complaints.
+
+This creates the evidence needed to distinguish ecological change from access or economic disruption.
+
+If compensation is contemplated, the baseline should define eligibility before a dispute arises.
+
+### Analytical section 171J. Flaring should be treated as an operating-performance indicator
+
+Flaring has climate, air-quality and operational dimensions.
+
+The regulator should distinguish:
+- commissioning flaring;
+- routine flaring;
+- safety flaring;
+- equipment failure;
+- gas-injection constraints.
+
+A single annual flare total does not explain the cause.
+
+The operating record should therefore include duration, volume, reason and corrective action for material events.
+
+This helps distinguish a temporary startup condition from persistent system performance.
+
+### Analytical section 171K. Produced water and drilling waste need a mass-balance approach
+
+Environmental reporting becomes stronger when it moves from narrative statements to mass balance.
+
+For produced water, the record should track:
+- volume generated;
+- treatment;
+- discharge;
+- quality;
+- monitoring location.
+
+For drilling waste, it should track:
+- material type;
+- quantity;
+- treatment;
+- discharge or disposal;
+- destination.
+
+This creates an auditable environmental flow account.
+
+### Analytical section 171L. Incident transparency should use severity tiers
+
+Not every incident warrants the same reporting protocol.
+
+A national system can define severity tiers based on:
+- quantity released;
+- toxicity;
+- injury;
+- operational shutdown;
+- protected-area impact;
+- shoreline impact;
+- cross-border significance.
+
+Higher tiers should trigger faster public reporting and more detailed investigation.
+
+The system should preserve minor incidents as data rather than treating them as irrelevant.
+
+Patterns can matter even when individual events are small.
+
+### Analytical section 171M. Independent verification is most valuable where information asymmetry is highest
+
+Operator monitoring will always be a major source of environmental data.
+
+Independence matters most where:
+- the impact is difficult to observe;
+- the operator controls the measurement system;
+- consequences are large;
+- public trust is low;
+- disputes are likely.
+
+Independent sampling does not require the regulator to duplicate every operator measurement.
+
+It requires a risk-based verification programme.
+
+### Analytical section 171N. The 2025 pollution statute should be tracked from enactment to operation
+
+The Official Gazette confirms publication of Act 6 of 2025. [S98]
+
+That is a legal milestone.
+
+Operational readiness requires more.
+
+A complete implementation tracker should identify:
+- commencement;
+- regulations;
+- designated authorities;
+- national contingency arrangements;
+- claims procedures;
+- financial-assurance rules;
+- offences and penalties;
+- cross-border coordination.
+
+The document should use "published" or "enacted" where those facts are established and reserve "in force" or "operational" for provisions supported by authoritative commencement evidence.
+
+### Analytical section 171O. Decommissioning is an environmental project
+
+End-of-life planning should begin before facilities approach closure.
+
+The environmental decommissioning plan should address:
+- well abandonment;
+- subsea infrastructure;
+- residual contamination;
+- waste;
+- seabed recovery;
+- monitoring period;
+- liability after surrender.
+
+The financial model should connect decommissioning obligations to secured funding.
+
+A state should not assume that decades of production guarantee the operator or parent company will still have the same financial capacity at closure.
+
+### Analytical section 171P. Climate accounting should use explicit boundaries
+
+Guyana's forest-carbon programmes and petroleum production belong in the same national development story, but they use different accounting systems.
+
+Forest-carbon credits should not be presented as automatically cancelling petroleum lifecycle emissions.
+
+The paper should distinguish:
+- domestic operational emissions;
+- exported-fuel combustion;
+- national greenhouse-gas inventory treatment;
+- forest-carbon accounting;
+- buyer retirement claims;
+- corresponding adjustments where applicable.
+
+This avoids double counting and misleading equivalence. [S22, S95]
+
+### Analytical section 171Q. Expanded Part V conclusion
+
+A strong environmental regime is not defined by the number of permits issued.
+
+It is defined by the evidence chain from baseline to outcome.
+
+Guyana has statutory, project-level, spill-response, financial-assurance and later legislative components that can be documented. [S39, S48-S56, S98-S100]
+
+The next level of scrutiny is performance evidence.
+
+For each material permit condition, the state should be able to show what was required, what evidence was submitted, what the regulator concluded and what corrective action followed where necessary.
+
+For a newcomer, the blueprint is therefore to build five linked registers:
+- baseline register;
+- permit compliance matrix;
+- incident register;
+- response-capability register;
+- financial-assurance register.
+
+Together they turn environmental governance from a set of documents into an operating assurance system.
