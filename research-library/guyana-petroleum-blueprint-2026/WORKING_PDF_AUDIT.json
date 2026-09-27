@@ -14,5 +14,15 @@
   "sha256": "58dde2b82fa516f7cd6f7f885ec213e6cf98f5277a59c495e12a7f6c5b8d1bd7",
   "citations_embedded": true,
   "external_peer_review": "pending",
-  "full_volume_complete": false
+  "full_volume_complete": false,
+  "current_branch_markdown_words": 48001,
+  "current_branch_source_records": 86,
+  "current_branch_research_parts": 10,
+  "current_branch_models": [
+    "ILLUSTRATIVE_SCENARIOS.csv",
+    "ILLUSTRATIVE_PRODUCTION_SHOCKS.csv",
+    "ILLUSTRATIVE_FUND_STRESS.csv"
+  ],
+  "measurement_date": "2026-09-27",
+  "note": "Existing PDF audit metrics describe the preliminary working PDF. Live branch research has advanced beyond that PDF and must be rebuilt before any new page count is claimed."
 }
