@@ -242,6 +242,7 @@ def build() -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     manuscript = (BASE/"MANUSCRIPT_WORKING_DRAFT.md").read_text(encoding="utf-8")
     brief = (BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
+    playbook = (BASE/"COUNTRY_PLAYBOOK.md").read_text(encoding="utf-8")
     sources = (BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
     assert len(manuscript.split()) > 6500, "Do not render an empty/placeholder manuscript"
 
@@ -276,6 +277,9 @@ def build() -> None:
     # Omit duplicated cover headings; start at the abstract.
     start = manuscript.find("### Abstract")
     story.extend(markdown_flow(manuscript[start:] if start != -1 else manuscript))
+    story.extend([PageBreak(), top_heading("Transferable country handbook")])
+    # The handbook is an original substantive companion annex, not repeated boilerplate.
+    story.extend(markdown_flow(playbook))
     story.extend([PageBreak(), top_heading("Source register"),
                   Paragraph("Dated source IDs correspond to citations in the manuscript. "
                             "Public URLs link to originals. Key unresolved verification "
@@ -308,6 +312,8 @@ def build() -> None:
     sha = hashlib.sha256(out.read_bytes()).hexdigest()
     qa = {"document": out.name, "version": "0.1", "stage": "working_research",
           "pages_actual": pages, "manuscript_words": len(manuscript.split()),
+          "playbook_words": len(playbook.split()),
+          "combined_research_words": len(manuscript.split()) + len(playbook.split()),
           "brief_words": len(brief.split()), "source_records": len(source_rows),
           "substantive_pages_at_least_100_words": substantive,
           "sha256": sha, "citations_embedded": True,
