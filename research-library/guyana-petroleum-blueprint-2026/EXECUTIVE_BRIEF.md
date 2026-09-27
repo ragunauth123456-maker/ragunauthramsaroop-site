@@ -1,7 +1,10 @@
 # Senior-leadership research brief
 ## The Guyana Sequence: from exploration to national wealth conversion
-Working edition, 27 September 2026 | Ragunauth Ramsaroop | Independent author
-Read alongside MANUSCRIPT_WORKING_DRAFT.md and SOURCE_REGISTER.md. The final white paper is not yet externally reviewed or complete.
+Scrutiny-audit candidate, 27 September 2026 | Ragunauth Ramsaroop | Independent author
+Read alongside MANUSCRIPT_WORKING_DRAFT.md, SOURCE_REGISTER.md, ADVERSARIAL_PUBLICATION_AUDIT.md and CLAIM_SOURCE_MATRIX.md. Edition 1.1 has completed an internal adversarial review cycle. Independent external expert review remains pending.
+
+### Audit status
+Edition 1.1 is an internally audited publication candidate, not an externally peer-reviewed or independently validated publication. The internal audit identified and corrected publication-status, source-coverage, legal-scope, geopolitical-risk and PDF-design weaknesses. High-risk legal characterization remains deliberately narrow where an authenticated judgment, commencement instrument, insurance instrument or later dispute determination has not been located in the public sources reviewed. Guyana's 2026 EITI Validation remains ongoing at the evidence cut-off. The Bank of Guyana's audited 2025 NRF statements and current 2026 monthly reporting are now part of the evidence register. [S88-S89, S96]
 
 ### Purpose
 Reconstruct the institutional and commercial sequence behind Guyana's transition to a large offshore petroleum producer. Test where its history supplies documentary evidence for another country preparing for first oil, and where forest endowment, geological scale, fiscal terms and local political institutions limit direct transfer. The intended audience is senior officials, new petroleum regulators, central banks, finance ministries, environmental agencies, civil-society researchers and offshore investors.
@@ -41,4 +44,4 @@ Ghana's 2011 revenue law offers distinct stabilization and heritage funds and pu
 ### Publication acceptance conditions
 Complete the full multi-chapter manuscript and original, reproducible exhibits. Independently reconcile NRF period accounts, obtain the Court of Appeal judgment and original insurance and permitting instruments, resolve the legal commencement status of the 2025 spill act, incorporate final EITI 2026 status, document Indigenous stakeholder evidence, check page-specific citations and have relevant experts challenge fiscal, legal, environmental and social conclusions. Count only substantive PDF pages, inspect charts and citations, and describe independent external review as pending unless completed.
 
-Primary citations: S01-S27 in SOURCE_REGISTER.md. The manuscript is an initial researched deliverable, not a 140-160-page finished publication.
+Primary citations are maintained in SOURCE_REGISTER.md and the high-risk claim crosswalk in CLAIM_SOURCE_MATRIX.md. The 500-plus-page document is a research compendium and publication candidate. External peer review, authenticated resolution of open legal evidence, and documented responses to specialist reviewers remain separate release gates.
