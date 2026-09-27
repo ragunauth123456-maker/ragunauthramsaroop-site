@@ -164,6 +164,9 @@ Last verified through web access: 27 September 2026. URLs are source addresses, 
 | S135 | Parliament of Guyana, Natural Resource Fund Annual Report 2023, Appendix Table 3 | Dated transaction-level history of government profit-oil and royalty receipts since March 2020, including the 2020/2021 transition | Transaction receipt ledger is not automatically identical to year-end IFRS NAV or accrued investment income | https://www.parliament.gov.gy/documents/documents-laid/24802-annual_report_of_the_natural_resource_fund_2023.pdf |
 | S136 | Bank of Guyana, Natural Resource Fund quarterly reports portal (June 2026 Q2 listing) | Identifies Q1 and Q2 2026 quarterly reporting releases needed for the exact H1 IFRS bridge | Exact Q2 table transcription and method-matched reconciliation must be separately completed; portal listing alone is not a numeric source | https://bankofguyana.org.gy/bog3/publications/natural-resource-fund/quarterly-reports |
 
+
+| S137 | Bank of Guyana, December 2025 NRF monthly cash-basis statement | Shows year-end cash and equivalents GYD 677,711,491 thousand, approximately USD 3,250.41 million, distinct from the December audited accrual NAV including year-end receivables | Monthly statement expressly uses cash basis; do not compare directly with IFRS NAV without receivable bridge | https://bankofguyana.org.gy/bog/images/accounts_budgeting/natural_resource_fund/monthly/nrf-december2025-monthly.pdf |
+
 ### Priority evidence items for future revision and external review
 1. Obtain authenticated PDF text of the May 2026 Court of Appeal judgment and any later appeal.
 2. Verify whether the 2025 spill act was commenced after the June 2026 reporting cut-off and before 27 September 2026.
