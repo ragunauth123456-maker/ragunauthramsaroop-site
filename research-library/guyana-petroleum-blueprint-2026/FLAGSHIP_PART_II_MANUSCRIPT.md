@@ -1050,3 +1050,266 @@ For a newcomer, the practical blueprint is therefore to build four systems befor
 The state should then reconcile those systems to the sovereign revenue account.
 
 If that chain cannot be reproduced, headline fiscal terms provide less protection than they appear to offer.
+
+
+## Edition 2.0 clause deepening: reading the Stabroek agreement as an integrated fiscal machine
+
+### Analytical section 50P. Article 11 cannot be analysed without Article 13 and Article 15
+
+The cost-recovery formula does not operate on an abstract barrel.
+
+The agreement first needs a value.
+
+Article 13 provides the petroleum-valuation architecture.
+
+Article 15 provides royalty and tax treatment.
+
+Article 11 then determines cost recovery and production sharing. [S02]
+
+The fiscal model should therefore follow the contractual order.
+
+If valuation is wrong, the royalty base and profit calculation can also be wrong.
+
+If cost is wrong, the residual profit petroleum changes.
+
+If tax treatment is described incorrectly, government cash and tax accounting can be confused.
+
+The clause crosswalk now added to Edition 2.0 makes these dependencies explicit.
+
+### Analytical section 50Q. Article 11 is an intertemporal mechanism
+
+Article 11 and Annex C should be understood across time, not just within one month.
+
+When eligible recoverable costs exceed the amount that can be recovered from current production, the unrecovered balance carries forward under the agreement's accounting mechanics. [S02]
+
+That means a development sanctioned today can affect the state's share of profit petroleum in later periods.
+
+The fiscal model should therefore display the cost bank as a rolling stock.
+
+A snapshot of one month's government share cannot explain the economics of the block over its life.
+
+### Analytical section 50R. Article 13 creates a price-governance problem
+
+Petroleum valuation determines the monetary base on which fiscal flows are calculated.
+
+The audit team should therefore understand not only the contract wording but the actual commercial sale process.
+
+The controls should include:
+- benchmark selection;
+- quality differential;
+- cargo date;
+- loading window;
+- freight adjustment;
+- related-party transaction;
+- provisional versus final price.
+
+A state can have correct metering and still lose revenue if valuation is weak.
+
+### Analytical section 50S. Article 15 contains several distinct fiscal mechanisms
+
+Public discussion often compresses Article 15 into "2% royalty and taxes paid by government".
+
+The actual analysis should separate at least:
+- royalty;
+- income/corporation tax architecture;
+- pay-on-behalf mechanics;
+- statutory exemptions/orders;
+- contractor tax filing;
+- government accounting of tax certificates.
+
+GRA has separately clarified that the 2% royalty should not be treated as Cost Oil and has distinguished the tax regime from the cost-recovery regime. [S15]
+
+This is an important control because a payment can have different treatment in:
+- petroleum cost recovery;
+- corporate tax;
+- sovereign revenue reporting.
+
+### Analytical section 50T. Article 20 and environmental permits solve different problems
+
+Article 20 contains contract-level provisions concerning assets and insurance. [S02]
+
+Environmental permits create project-specific regulatory conditions.
+
+The Oil Pollution Act creates a later statutory layer.
+
+The paper should not use one as a substitute for another.
+
+A complete financial-protection assessment asks:
+- What does the petroleum contract require?
+- What does the permit require?
+- What does statute require?
+- What executed insurance or guarantee exists?
+- Which obligation applies to which type of loss?
+
+This is the legal architecture behind the environmental financial-assurance discussion in Part V.
+
+### Analytical section 50U. Article 23 is only useful if audit systems are operational
+
+A contractual accounting and audit right has to be translated into:
+- data access;
+- audit plan;
+- specialist staff;
+- deadline monitoring;
+- finding classification;
+- dispute management.
+
+The GRA account of the IHS audit shows that the first major audit required interagency participation, external expertise, drafts, responses and disagreements about the process. [S111]
+
+That history should be presented as an operating case.
+
+The lesson is not simply "audit earlier".
+
+It is "build the workflow needed to convert a contractual audit right into a settled accounting adjustment".
+
+### Analytical section 50V. Annex C is the economic grammar of cost recovery
+
+Annex C is not an administrative appendix of secondary importance.
+
+It defines how costs are classified, allocated and treated.
+
+The crosswalk should therefore identify:
+- exploration cost;
+- development cost;
+- operating cost;
+- service cost;
+- general and administrative cost;
+- overhead;
+- recoverable categories;
+- non-recoverable categories;
+- ministerial approval categories.
+
+A reviewer cannot evaluate the cost bank without understanding these classifications.
+
+### Analytical section 50W. Cost allocation across fields should be modelled explicitly
+
+Annex C allows field-level cost-recovery statements to feed the contractor's total allocation under the agreement's accounting procedure. [S02]
+
+This is the accounting issue often discussed publicly as ring-fencing.
+
+The book should define the mechanism rather than rely on the label.
+
+The fiscal question is whether costs associated with one development can reduce profit petroleum generated by production elsewhere within the contract area under the executed accounting system.
+
+The model should show the result numerically.
+
+This is more informative than describing "ring-fencing" as inherently good or bad.
+
+### Analytical section 50X. Article 26 creates a dispute timeline
+
+Arbitration is not just an end-stage legal remedy.
+
+Its existence affects how unresolved audit, stabilization or other contractual disputes are administered.
+
+The dispute register should show:
+- issue;
+- notice date;
+- negotiation period;
+- government position;
+- contractor position;
+- amount at issue;
+- accounting treatment while pending;
+- final resolution;
+- implementation.
+
+This prevents a disputed amount from disappearing from institutional memory.
+
+### Analytical section 50Y. Article 32 should be quoted with its remedial structure
+
+The official agreement text shows that Article 32 addresses increases in economic burden, materially adverse effects and remedial action, with a path that can proceed to arbitration if unresolved. [S02]
+
+That is more precise than saying "the contract freezes future law".
+
+The final legal chapter should reproduce a narrowly paraphrased sequence:
+- identify change;
+- assess material adverse economic effect;
+- notify;
+- negotiate remedial action;
+- use dispute process if unresolved.
+
+Whether a specific later law triggers that sequence is a legal question requiring the actual circumstances.
+
+### Analytical section 50Z. Later law creates a version-management obligation
+
+The Petroleum Activities Act 2023 is part of the modern legal framework. [S87]
+
+The executed Stabroek agreement predates it.
+
+Every legal proposition should therefore have a "governing date" field.
+
+The field should identify:
+- statute in force;
+- contract version;
+- licence;
+- permit;
+- later amendment;
+- transitional rule.
+
+This prevents anachronistic analysis.
+
+### Analytical section 50AA. Model PSA comparison should be clause by clause
+
+The 2023 draft model PSA has its own articles on financial guarantees, insurance, cost recovery, tax, royalty, local content, decommissioning, audit, dispute resolution and stabilization. [S112]
+
+The comparison should not be "2016 agreement versus 2023 agreement" as if they were signed under the same conditions.
+
+It should be:
+- clause;
+- 2016 mechanism;
+- 2023 model mechanism;
+- change in geological information;
+- change in policy;
+- change in risk allocation;
+- implementation consequence.
+
+This reveals where reform focused.
+
+### Analytical section 50AB. Contract transparency should include machine-readable metadata
+
+Publishing the PDF is important.
+
+A contract register should also provide structured fields:
+- parties;
+- block;
+- effective date;
+- term;
+- royalty;
+- cost ceiling;
+- profit split;
+- tax treatment;
+- audit period;
+- assignment rules;
+- stabilization;
+- dispute forum.
+
+The machine-readable layer does not replace the text.
+
+It makes comparison and monitoring easier.
+
+### Analytical section 50AC. A fiscal model should publish its clause map
+
+Every model assumption should have a contract source.
+
+For example:
+- royalty rate -> Article 15.6;
+- cost ceiling -> Article 11;
+- valuation -> Article 13;
+- tax treatment -> Article 15;
+- cost classification -> Annex C.
+
+This creates model lineage.
+
+If a clause interpretation changes, the analyst can identify which model cell is affected.
+
+### Analytical section 50AD. Clause-level audit conclusion
+
+Edition 2.0 adds `PSA_CLAUSE_CROSSWALK.csv` and the companion methodology note.
+
+This materially changes Part II.
+
+The chapter is no longer asking the reader to accept a summary of the contract.
+
+It provides an audit map from mechanism to clause to model consequence.
+
+The remaining legal task is to deepen selected provisions with exact subsection/page pinpoints and independent petroleum-law review.
+
+That external legal review remains a release gate rather than being simulated by the author.
