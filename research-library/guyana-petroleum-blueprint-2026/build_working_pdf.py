@@ -304,7 +304,7 @@ def build() -> None:
     text_by_page = [p.get_text() for p in pdf]
     flat = "\n".join(text_by_page)
     assert pages >= 18, f"PDF unexpectedly short: {pages} pages"
-    assert all(f"S{i:02d}" in flat for i in range(1, 28)), "Source entries missing in PDF"
+    assert all(row[0] in flat for row in source_rows), "One or more registered source IDs are missing in PDF"
     assert "Natural Resource Fund" in flat and "Environmental" in flat
     substantive = sum(len(p.split()) >= 100 for p in text_by_page[2:])
     assert substantive >= max(12, int((pages-2)*.70)), (
