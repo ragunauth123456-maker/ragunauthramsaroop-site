@@ -4,15 +4,15 @@
   "publication_status": "candidate",
   "external_peer_review": "pending",
   "pdf": "guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf",
-  "pdf_sha256": "d9c29be9f7f086198470c6672aec29f1a27b64fab66be9f476fde7224af33077",
+  "pdf_sha256": "e44eab798684d41fb08e5679b16b5b7a8ea5b9805ccbec3c911b901b716789e5",
   "source_records": 123,
   "high_risk_claim_matrix": "CLAIM_SOURCE_MATRIX.md",
   "legal_evidence_ledger": "LEGAL_EVIDENCE_LEDGER.md",
   "corrections_register": "CORRECTIONS_REGISTER.md",
   "open_evidence_items_preserved": true,
   "file_sha256": {
-    "guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf": "d9c29be9f7f086198470c6672aec29f1a27b64fab66be9f476fde7224af33077",
-    "FLAGSHIP_PDF_AUDIT.json": "d359685071322364bd9a361bbbfa06d211b121e1478bd41ee2902814a22caf3c",
+    "guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf": "e44eab798684d41fb08e5679b16b5b7a8ea5b9805ccbec3c911b901b716789e5",
+    "FLAGSHIP_PDF_AUDIT.json": "1fe446c3a77e51bd26f21ce39919d680a6eaf72c9a8bf19a1e892b1a8d074c9f",
     "SOURCE_REGISTER.md": "bb58c3117004b1e1f39689ec159cf6fa61e9bbf85bc331c814c8193b0ad0a7be",
     "CLAIM_SOURCE_MATRIX.md": "92dc404ecfa5e6bf50a232382d07aa9751b8ee7605f5b4aad466f9553e5ccfff",
     "LEGAL_EVIDENCE_LEDGER.md": "9303ac823491f2b070a23435398fdbacb2a3a2ebc7455590674df68af7dda268",
@@ -20,7 +20,7 @@
     "ILLUSTRATIVE_SCENARIOS.csv": "d3a69d225cd074c21152097a75d77d46c7a3039a045e6c8e95845be246024ef6",
     "ILLUSTRATIVE_PRODUCTION_SHOCKS.csv": "11319ab47d5da47680e624e25b1c3a0ab75d56176257186d1af5e214f69652a8",
     "ILLUSTRATIVE_FUND_STRESS.csv": "bd7aabbc14ef639eb25f7e417212f2396ba8a675a995c540a7e7069439f8af48",
-    "RESEARCH_INTEGRITY_AUDIT.json": "1ba3a6e1485708b93d9800367450bcea788289723e8b20131b806e1e3ea4b501"
+    "RESEARCH_INTEGRITY_AUDIT.json": "d2336b8742a21b7859e3dbb4457369f361deef1f1ed08c74ec125483dcec3214"
   },
   "integrity_audit_status": "passed",
   "high_risk_claims": 50,
