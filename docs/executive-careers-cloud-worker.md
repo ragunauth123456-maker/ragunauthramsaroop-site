@@ -1,6 +1,6 @@
 # Executive careers public-source cloud worker
 
-This read-only GitHub Actions worker runs offline QA on pull requests and checks three official, public employer careers pages daily after the workflow merges to the repository default branch. The initial source list covers Cardinal Health, Caterpillar and Bayer. Review and extend only with confirmed official employer career URLs.
+This read-only GitHub Actions worker runs offline QA on pull requests and checks five official, public employer careers pages daily after the workflow merges to the repository default branch. The initial source list covers Cardinal Health, Caterpillar, Bayer, HSBC and The Cigna Group. Review and extend only with confirmed official employer career URLs.
 
 The output artifact is `executive-careers-artifacts/public_research.json` and contains links **possibly** matching senior ESG, corporate affairs, sustainability, government relations and related roles. A link alone is not evidence of a live position, eligibility, visa sponsorship or company interest. JavaScript-only pages and rate-limited sites may produce no links. The workflow reports inaccessible sources rather than inventing job openings.
 

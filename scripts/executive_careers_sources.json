@@ -13,5 +13,15 @@
     "company": "Bayer",
     "url": "https://jobs.bayer.com/",
     "source": "Official employer application portal; public link research only"
+  },
+  {
+    "company": "HSBC",
+    "url": "https://www.hsbc.com/careers",
+    "source": "Official careers portal; public vacancy research only; direct CV submissions follow HSBC careers process"
+  },
+  {
+    "company": "The Cigna Group",
+    "url": "https://jobs.thecignagroup.com/us/en",
+    "source": "Official employer careers portal; public vacancy research only"
   }
 ]
