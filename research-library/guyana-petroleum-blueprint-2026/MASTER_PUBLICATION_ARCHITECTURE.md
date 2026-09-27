@@ -8,6 +8,10 @@ Research cut-off: 27 September 2026
 Flagship target: 520-560 substantive pages  
 Status: architecture approved for research build. Existing working edition remains preliminary.
 
+## Edition 1.1 structural note
+
+The original architecture used approximately 54 thematic chapter targets for research planning. The integrated manuscript subsequently expanded into ten major Parts containing 263 granular analytical sections. Edition 1.1 treats those granular units as analytical sections rather than separate chapters. The primary table of contents lists the major Parts and principal front/back matter; supporting dossiers and workbooks remain annex evidence rather than core chapters.
+
 ## Publication rule
 
 The flagship is not a longer version of the working paper. It is a reference work built from distinct evidence modules, original analytical exhibits, country comparisons, legal and fiscal crosswalks, environmental documentation, counterarguments, failure cases and an implementation handbook.
