@@ -1,47 +1,31 @@
-# CLOUD WORKER EXECUTION — 27 SEPTEMBER 2026
-
-Three cloud-only GitHub Actions jobs are now installed on the research branch via `.github/workflows/guyana-edition2-cloud-workers.yml`, implemented in `edition2_cloud_workers.py`: (1) editorial/source-reference/duplicate review and editable manuscript packaging plus the existing fiscal and overall development tests, (2) HTTP source-link availability (NOT document-content or claim verification), and (3) two source-labelled SVG draft exhibits. **All three jobs passed** in live workflow run [36352095764](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36352095764); rerun [36352446447](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36352446447) passed after the three documented source-link repairs.
-
-A separate **read-only, twice-weekly** scheduled workflow exists on default `main` at `.github/workflows/guyana-edition2-scheduled-workers.yml`: Monday and Thursday **11:23 UTC (07:23 Guyana)**, and manual dispatch. It checks out the research branch and executes the same jobs on GitHub-hosted runners. Its first push-triggered verification [36352122445](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36352122445) passed across all three jobs. An ordinary research-branch manuscript/CSV/source change also triggers the parallel branch workflow. Each run uploads a 30-day artifact; no unattended AI manuscript writing is implied.
-
-Current package audit (lexical regex): **62,800 core words**, distinct from earlier **66,605 whitespace-delimited words**. Neither count is a quality certificate; the threshold of 120,000 substantive original core words remains unmet. **141 registered source IDs**. The latest availability pass yielded 115 reachable URLs, 12 redirects not followed, 10 access blocked/rate-limited, 3 server/other outcomes and one HTTP 404 candidate (S71). HTTP availability is NOT authenticated-document verification. S105 and S135 updated to dated alternate links; original full-text 1993 World Bank S107 still requires accessible primary PDF. [#68](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/68) and [#69](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/69) track primary evidence recovery.
-
-Four **manual-only** custom GitHub Copilot profiles were committed to `.github/agents/` on both `main` and the research branch: Guyana Evidence Researcher, Guyana Fiscal Auditor, Guyana Core Editor and Guyana Publication Engineer. **None is executing as a paid AI agent.** The connected GitHub app returned HTTP 403 when asked to assign Copilot; the owner must enable/authorize a paid Copilot cloud agent in GitHub UI if desired. Scoped, currently unassigned agent-ready editorial tasks are [#65](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/65), [#66](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/66), and [#67](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/67).
-
-**Edition 2 full PDF not built or published. PR #61 remains draft, issue #60 remains open. External peer review, remaining 53,395 words by earlier whitespace measure, source-to-claim verification, complete NRF H1 bridge, authoritative legal evidence and full visual QA remain release gates.**
-
----
-
 # CURRENT EDITION 2.0 STATUS — 27 SEPTEMBER 2026
 
-This status supersedes the historical word/source counts below. It was verified from the live ten integrated manuscripts and source register on the research branch, not inferred from the older Edition 1.2 PDF.
+**Integrated core:** 68,525 whitespace-delimited words across ten manuscript Parts. Target 120,000–150,000 substantive, edited and non-repetitive core words before annexes. Minimum remaining: 51,475 words. The 1,920-word increase since the previous verified baseline is two original evidence-backed cases, not automatically AI-generated prose.
 
-**Integrated core manuscript:** 66,605 whitespace-delimited words across ten Parts. Target 120,000–150,000 non-repetitive substantive core words before supporting annexes; minimum remaining 53,395 words. This is a quantitative measure, not proof that every paragraph has passed external substantive review.
-
-| Part | Current integrated manuscript words |
+| Part | Current core words |
 |---|---:|
-| I | 7,666 |
-| II | 8,228 |
-| III | 5,134 |
-| IV | 7,059 |
-| V | 7,649 |
-| VI | 7,222 |
-| VII | 6,572 |
-| VIII | 4,905 |
-| IX | 5,142 |
-| X | 7,028 |
+| I — Exploration and institutional prehistory | 8,490 |
+| II — Contracts and cost-audit economics | 9,324 |
+| III — Production | 5,134 |
+| IV — NRF | 7,059 |
+| V — Environment | 7,649 |
+| VI — Local content | 7,222 |
+| VII — Diversification | 6,572 |
+| VIII — Accountability | 4,905 |
+| IX — Comparators | 5,142 |
+| X — New-producer manual | 7,028 |
 
-**Source register:** 141 entries (S01–S141). Registry count does not establish that all URLs are live, all citation pinpoints have been independently validated, or all source claims have passed legal/expert review.
+**Cloud workers:** The research-branch parallel GitHub Actions workflow and the separate scheduled main-branch workflow have each passed their first three specialist jobs. Scheduled checks run Monday/Thursday 11:23 UTC (07:23 Guyana). Research-file pushes additionally run branch-level checks. The workers audit, package and generate draft charts; **no unattended manuscript-writing AI agent is active**. Copilot issue assignment through the connected GitHub App returned 403; manual Copilot issue tasks #65–#67 await paid Copilot cloud-agent eligibility.
 
-**Structured datasets:** NRF annual stock-flow ledger, offshore project register, master chronology, local-content value-added framework, comparator mechanism matrix, public-investment delivery register, offshore environmental assurance matrix, PSA clause crosswalk, readiness checklist, governance RACI, and adverse-scenario playbook are in the research branch. Some are specification frameworks or contain unresolved source/reconciliation gaps, not completed audited datasets.
+**Evidence improvements in this continuation:** Official Ministry of Natural Resources HTML was substituted for the unavailable S71 full-PDF link with the distinction between published executive-summary claims and full-report review preserved; issue #69 remains OPEN. Recovered the public full-text World Bank 1993 petroleum project-completion report, added source/section pinpoint note, and updated issue #68. Its GitHub-hosted PDF byte download, checksum and original full-page visual audit remain OPEN.
 
-**Known material numerical blocker:** The H1 2026 NRF reconciliation is OPEN. Government receipts and fund accounting contain different cutoffs. Approximate USD 184.23 million difference between reported receipts and the rounded cash/IFRS stock-flow bridge has a plausible receivable-timing explanation but exact transaction mapping, accrual recognition and rounding remain to be proved. Treat as unresolved, not reconciled.
+**Original case writing:** Part I now has an archival case on the early petroleum programme's 1982–1993 chronology, 52.1% project-credit utilization and evidence limits. Part II now has a structured IHS/VHE/third-audit case distinguishing US$1.6778bn of audited submissions, US$214.4m disputed plus overhead, US$7.2bn later reviewed and US$65.1m then not accepted from later confirmed recovery. Added `PETROLEUM_COST_AUDIT_STATUS.csv` and mandatory arithmetic/unknown-outcome checks to the Edition 2 CI script.
 
-**PDF:** The latest built PDF remains Edition 1.2 and is an older publication candidate. Edition 2.0 has not been built or visually audited as a PDF. The Edition 1.2 CI release workflow has been switched to manual dispatch so automatic pushes do not make the old PDF appear newly completed.
+**Registered sources:** 141 S01–S141. Some official source URLs remain inaccessible from automated GitHub runners; URL reachability alone is not source validity.
 
-**Remaining substantive work:** At least 53,395 additional non-repetitive core words; highest relative deficits currently Parts VIII–X and III/VII. Finish source-specific claim reviews, exact legal/source pinpoints, live URL checks, independent environmental/social evidence, NRF and public-investment reconciliation, quality original exhibits and maps, near-duplicate analysis, coherent cross-Part editing, Edition 2-specific CI, audited PDF build and visual QA.
+**Important open gate:** First-half 2026 NRF approximately US$184.23m cash/accrual recognition bridge still requires exact transaction-level reconciliation; later disposition of petroleum cost audit exceptions similarly unverified. Professional independent peer review, final all-claims evidence validation, substantive target, near-duplicate editing and the fully redesigned Edition 2 PDF remain incomplete. Edition 1.2 is the last built PDF; draft PR #61 and issue #60 remain open.
 
-**External peer review:** Pending. **Edition 2.0 final:** Not complete. **PR #61:** Draft. **Issue #60:** Open. No unattended book-writing agent or scheduled background process is claimed.
+**Verified executions:** [scheduled cloud workers](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36352122445), [research-branch workers](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36352095764). [Source-recovery issues #68](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/68), [#69](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/issues/69).
 
 ---
 
