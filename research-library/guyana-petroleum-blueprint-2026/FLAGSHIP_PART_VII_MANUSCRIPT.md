@@ -630,3 +630,314 @@ Budget size and GDP growth are important evidence.
 They are not sufficient evidence of durable national wealth.
 
 The blueprint lesson is to measure the conversion, not only the windfall.
+
+
+## Edition 2.0 deepening: turning a petroleum boom into a second growth engine
+
+### Analytical section 263A. The development test is productivity outside petroleum
+
+Non-oil GDP growth is important, but it does not by itself establish diversification.
+
+Construction, retail, transport and professional services can expand because petroleum investment and public spending are increasing.
+
+A stronger diversification test asks whether the economy is building activities that can remain competitive when petroleum investment and revenue growth slow.
+
+The core indicators should therefore include:
+- non-oil exports;
+- labour productivity;
+- firm survival;
+- private investment outside petroleum;
+- energy intensity;
+- logistics cost;
+- export-market concentration;
+- technological capability.
+
+This distinguishes demand spillovers from structural transformation.
+
+### Analytical section 263B. Export diversification should be measured in foreign-exchange terms
+
+An economy can produce more goods and services domestically while remaining dependent on petroleum for foreign exchange.
+
+The diversification dashboard should therefore track:
+- petroleum export share;
+- gold and other mineral share;
+- agricultural exports;
+- manufactured exports;
+- tourism receipts;
+- business-service exports;
+- regional trade.
+
+The objective is not to reduce petroleum exports artificially.
+
+It is to create additional sources of foreign exchange before the petroleum cycle matures.
+
+### Analytical section 263C. Public infrastructure should reduce economy-wide transaction cost
+
+The development value of a road, bridge, port or airport is not the construction expenditure.
+
+It is the reduction in time, cost, risk or congestion experienced by users.
+
+Project evaluation should therefore estimate:
+- travel time;
+- freight cost;
+- reliability;
+- accident cost;
+- market access;
+- maintenance cost;
+- induced demand;
+- climate exposure.
+
+A project can be strategically valuable even when it does not generate direct cash revenue.
+
+The appraisal should still define the service outcome.
+
+### Analytical section 263D. Electricity is a cross-sector productivity input
+
+Reliable and affordable electricity affects:
+- manufacturing;
+- cold storage;
+- digital services;
+- mining;
+- hospitality;
+- household welfare;
+- public services.
+
+The energy transition should therefore be assessed through delivered system performance rather than installed megawatts alone.
+
+A national power dashboard should track:
+- demand;
+- available capacity;
+- outage frequency;
+- outage duration;
+- system loss;
+- fuel cost;
+- generation mix;
+- reserve margin;
+- customer tariff.
+
+Official Guyana energy planning and demand-side work provide inputs for this analysis. [S66-S67]
+
+### Analytical section 263E. Gas-to-energy should be evaluated as an integrated system
+
+A gas-to-energy project is not one asset.
+
+It can include:
+- offshore gas infrastructure;
+- pipeline;
+- processing;
+- power generation;
+- transmission;
+- distribution;
+- backup supply.
+
+The economic case depends on the performance of the full chain.
+
+The risk model should therefore test:
+- pipeline interruption;
+- plant outage;
+- demand forecast error;
+- fuel-price assumptions;
+- construction delay;
+- transmission constraints.
+
+A lower expected generation cost becomes a development benefit only when reliable power reaches users.
+
+### Analytical section 263F. Renewable energy and gas should be analysed through system reliability
+
+Energy policy should not reduce to a contest between technologies.
+
+A small system needs a portfolio that manages:
+- variable demand;
+- renewable intermittency;
+- fuel risk;
+- storage;
+- transmission;
+- reserve capacity;
+- climate resilience.
+
+The correct comparison is delivered reliability and lifecycle cost.
+
+### Analytical section 263G. Agriculture needs productivity, storage and market access
+
+Oil revenue can support agricultural infrastructure, but long-run competitiveness requires more than subsidy.
+
+The agricultural transformation chain includes:
+- drainage and irrigation;
+- seed and genetics;
+- extension;
+- mechanization;
+- storage;
+- processing;
+- standards;
+- logistics;
+- export market access.
+
+A country that expands primary production without storage or market access may create price volatility rather than durable value.
+
+### Analytical section 263H. Manufacturing requires scale and capability, not only cheaper power
+
+Lower electricity cost can improve manufacturing economics.
+
+It does not guarantee competitive industry.
+
+Manufacturing strategy should also assess:
+- domestic market size;
+- regional market access;
+- freight;
+- labour skill;
+- finance;
+- quality standards;
+- supplier networks;
+- imported input dependence.
+
+The most promising sectors may be those linked to existing resource and agricultural strengths rather than arbitrary import substitution.
+
+### Analytical section 263I. Tourism should be assessed against petroleum-era cost pressure
+
+A petroleum boom can raise wages, land prices and construction cost.
+
+Tourism competes for many of the same inputs.
+
+A tourism strategy should therefore model:
+- air access;
+- room inventory;
+- labour cost;
+- service quality;
+- nature assets;
+- safety;
+- seasonality;
+- marketing;
+- carrying capacity.
+
+High national income does not automatically create a competitive tourism sector.
+
+### Analytical section 263J. Digital services offer a different diversification pathway
+
+Digital exports are less dependent on physical freight.
+
+Their constraints are different:
+- connectivity;
+- power reliability;
+- skills;
+- data protection;
+- payment systems;
+- market access.
+
+A small state can therefore use digital services to diversify even when manufacturing scale is limited.
+
+The petroleum transition can finance the infrastructure and education required, but the sector still needs firms capable of competing internationally.
+
+### Analytical section 263K. Urban growth should be treated as infrastructure demand
+
+Rapid income and population changes affect:
+- housing;
+- land;
+- transport;
+- drainage;
+- waste;
+- water;
+- schools;
+- health care.
+
+Urban planning should therefore be integrated into the resource-conversion model.
+
+If housing and transport capacity lag, petroleum-driven income growth can create congestion and price pressure that reduce real welfare.
+
+### Analytical section 263L. Dutch-disease analysis should use evidence rather than labels
+
+The phrase "Dutch disease" is often used too loosely.
+
+A serious test should examine:
+- real exchange-rate pressure;
+- wages;
+- tradable-sector employment;
+- export performance;
+- import penetration;
+- productivity;
+- government spending;
+- migration.
+
+A decline in one sector is not sufficient by itself.
+
+The question is whether resource inflows are systematically reducing the competitiveness of non-resource tradables.
+
+IMF analysis has treated this as a risk requiring monitoring rather than a conclusion that can be inferred from GDP growth alone. [S68]
+
+### Analytical section 263M. Public investment can crowd in or crowd out private investment
+
+Infrastructure can crowd in private activity by lowering cost and risk.
+
+Large state spending can also crowd out firms through:
+- labour competition;
+- construction capacity;
+- credit;
+- land;
+- procurement concentration.
+
+The development model should track both effects.
+
+A public project that improves logistics may increase private investment.
+
+A poorly sequenced capital boom may make private construction prohibitively expensive.
+
+### Analytical section 263N. Debt policy should be integrated with the sovereign fund
+
+A country can simultaneously hold a large resource fund and borrow.
+
+That is not automatically contradictory.
+
+The correct comparison considers:
+- borrowing cost;
+- fund return;
+- liquidity;
+- project return;
+- currency;
+- maturity;
+- risk.
+
+Borrowing to preserve fund assets can be expensive if debt costs exceed the value of liquidity or the project return.
+
+Using the fund excessively can weaken future buffers.
+
+The optimal balance requires a consolidated public balance sheet.
+
+### Analytical section 263O. The second-engine test
+
+By the time petroleum production matures, the economy should be able to point to at least one additional growth engine capable of earning foreign exchange and raising productivity without relying primarily on new petroleum investment.
+
+That engine may be a portfolio rather than one sector.
+
+The test should ask:
+- Is it export capable?
+- Is productivity rising?
+- Can it attract private capital?
+- Does it employ skills developed during the petroleum era?
+- Does it remain viable under lower public spending?
+
+This is a more demanding standard than non-oil GDP growth.
+
+### Analytical section 263P. Expanded Part VII conclusion
+
+The economic-transformation chapter should connect petroleum wealth to the productive system that will remain after the boom.
+
+The key sequence is:
+resource revenue  
+to infrastructure and human capital  
+to lower transaction cost  
+to private investment and productivity  
+to competitive exports  
+to a broader tax base.
+
+If one link is weak, large public spending can still produce visible growth without equivalent long-run capability.
+
+For a newcomer, the blueprint is therefore to define the post-petroleum economy before peak revenue arrives.
+
+Every major infrastructure project should be able to explain which productivity constraint it removes.
+
+Every diversification programme should identify the market in which firms are expected to compete.
+
+Every permanent expenditure commitment should be tested against a lower petroleum-revenue future.
+
+The objective is not to predict the exact structure of the economy decades ahead.
+
+It is to ensure that petroleum finance expands national options rather than narrowing them.
