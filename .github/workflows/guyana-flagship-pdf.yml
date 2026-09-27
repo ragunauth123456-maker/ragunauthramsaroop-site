@@ -25,6 +25,8 @@ jobs:
         run: python -m pip install 'reportlab>=4,<5' 'pymupdf>=1.26,<2'
       - name: Build and audit flagship
         run: python research-library/guyana-petroleum-blueprint-2026/build_flagship_pdf.py
+      - name: Research integrity audit
+        run: python research-library/guyana-petroleum-blueprint-2026/audit_research_integrity.py
       - name: Verify publication gate
         run: |
           python - <<'PY'
@@ -42,6 +44,12 @@ jobs:
           assert a["internal_adversarial_audit"]=="completed_with_open_gates"
           assert a["searchable_text"] is True
           assert hashlib.sha256(p.read_bytes()).hexdigest()==a["sha256"]
+          i=json.loads((d/"RESEARCH_INTEGRITY_AUDIT.json").read_text())
+          assert i["source_records"]>=95
+          assert i["source_ids_unique"] is True
+          assert i["source_ids_sequential"] is True
+          assert i["source_url_syntax_valid"] is True
+          assert i["high_risk_claim_source_refs_valid"] is True
           print("PASS",json.dumps(a,indent=2))
           PY
       - uses: actions/upload-artifact@v4
@@ -51,6 +59,7 @@ jobs:
           path: |
             research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
             research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/RESEARCH_INTEGRITY_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
@@ -61,6 +70,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
           git add research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
+          git add research-library/guyana-petroleum-blueprint-2026/RESEARCH_INTEGRITY_AUDIT.json
           if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
           git commit -m "research: publish internally audited Guyana Edition 1.1 candidate [skip ci]"
           git push origin HEAD:research/guyana-petroleum-blueprint-2026
