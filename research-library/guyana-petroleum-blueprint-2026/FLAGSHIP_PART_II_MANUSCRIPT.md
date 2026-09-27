@@ -1606,3 +1606,46 @@ They generate formulas and rights.
 Institutions convert those formulas into cash through measurement, valuation, accounting, audit, dispute resolution and fund custody.
 
 Edition 2.0 should therefore present the Stabroek regime as a complete operating system with explicit data lineage from clause to model to ledger.
+
+
+## Edition 2.0 original case study: the dated 1999–2023 cost-audit pipeline
+
+### From a submitted expense to a lawful revenue adjustment
+
+The public dispute over offshore cost recovery offers a rare case in which three audit periods, three different procedural stages and the same overarching contractual accounting architecture can be observed. The relevant units must be kept separate. A contractor-submitted cost is an input to the accounting process. An auditor's exception is a challenge to that input. A government rejection or dispute is an institutional position. A contractual determination is a further step. A cost-bank adjustment changes subsequent entitlement calculations. Actual recovered cash, if any, is a final and different evidentiary category.
+
+A reader who combines these units can produce an apparently large number without demonstrating any fiscal transfer. Edition 2.0 therefore adds `PETROLEUM_COST_AUDIT_STATUS.csv`, a dated audit-status register that records reported submitted expenses, exceptions, procedural status and what remains unverified. The source distinction matters: the full IHS final PDF was unavailable to the GitHub-hosted source checker, whereas the Ministry of Natural Resources' April 2024 official executive-summary excerpt remains available on the Ministry's own website. The narrower public status update issued in May 2025 is independently usable for its then-current procedural account. [S71, S72]
+
+### The inaugural audit, 1999–2017: a disputed cost is not revenue recovered
+
+The official April 2024 publication notice describes an IHS Markit audit of US$1,677,774,727 in expenses submitted for the 1999–2017 period. The quoted executive summary reports reasonable grounds to dispute approximately US$214.4 million plus overhead adjustments. The indicated US$214.4 million alone is approximately 12.78 percent of the reported submission; this calculation is a ratio of **audit exceptions to reported submitted expenses**, not a measure of lost government revenue and not a final contractual disallowance. [S71]
+
+By the Ministry's May 2025 update, the Government reported that it had communicated the dispute to the co-venturers and that the parties had agreed to use the production-sharing agreement's sole-expert procedure. The Ministry reported nominations and a requested operator response by 31 May 2025. These facts establish the Government's stated procedural position at that point. They do not establish what a later expert decided or what amount, if any, was finally removed from the cost bank. [S72]
+
+That distinction also limits the book's language. The accurate formulation is a **government-disputed audit exception**, not “US$214.4 million recovered”. The full report, supporting schedules and later final disposition remain explicit evidence gaps under issue #69. Where the chapter discusses the scope of the inaugural audit itself, its documentary chain must include the published government excerpt, the GRA's earlier explanation of the audit process, and any subsequently authenticated full report rather than an inaccessible PDF link alone. [S71, S111]
+
+### The 2018–2020 audit: different period, different procedural posture
+
+The same Ministry status release reported that the second audit reviewed approximately US$7.2 billion in expenses incurred in 2018–2020. Government stated that US$65.1 million had not been accepted and that the co-venturers had furnished updated submissions still under review. The US$65.1 million is roughly 0.90 percent of the rounded stated audit population, but this percentage should not be turned into a judgment that the second period had less or more legitimate expense than the first. The project mix, accounting populations, maturity of developments, audit methods, identified issues and procedural status differ between periods. [S42, S72]
+
+For fiscal analysis, the useful unanswered questions are concrete. What portion of the US$65.1 million was supported after the revised submissions? Which exceptions were reclassified, accepted, disallowed or referred to dispute? Were costs associated with one field attributed to another under the applicable Annex C procedure? Did any adjustment affect government entitlement during a producing month, or did it change only a carry-forward cost balance? Until those records are publicly available, the model should use **open scenarios**, not a claimed final recovery.
+
+### The 2021–2023 audit: completion of contractor review is not completion of public process
+
+In the same dated 2025 release, the Ministry stated that the third cost audit covering 2021–2023 had been completed and submitted to Government, with the Guyana Revenue Authority reviewing the initial report. The release did not provide the same kind of settled exception and adjustment schedule for that period. [S72]
+
+This creates a third public category: **submitted report with government review underway**. A complete Edition 2.0 account should record the date of the first report, the dates of public responses, the scope and the resolution of exceptions when those materials become available. Until then, no exception amount should be invented or inferred from either of the previous audits.
+
+### Why the apparent percentages cannot be converted directly into a fiscal loss
+
+The public figures are tempting to add together. On the May 2025 account, US$214.4 million and US$65.1 million imply roughly US$279.5 million in reported exceptions or disputed/not-accepted expense **before any unknown overhead adjustment and later resolution**. That arithmetic says nothing directly about immediate cash recovery.
+
+Suppose, for illustration, that a US$1 million cost were ultimately disallowed. The fiscal effect depends on the accounting period, whether the cost had already been recovered, whether the 75 percent monthly cost ceiling was binding, the closing unrecovered-cost balance, later production and oil prices. If the cost sat in an unrecovered carry-forward balance, removal might affect future profit petroleum rather than today's cash. If an earlier producing period had been misallocated, the contractual adjustment process and time-value effects would matter. The book's synthetic fiscal model can demonstrate these mechanics without presenting a simulated outcome as an actual audit settlement. [S02, S15, S72]
+
+### Institutional learning from the three-period comparison
+
+The three periods show why the Government's audit system requires both continuity and independent technical capacity. The inaugural audit involved a contested interpretation of audit findings and the prospect of a sole expert. The second required government consideration of revised contractor submissions. The third had reached initial government review by the published May 2025 status date. [S72, S111]
+
+An auditable national cost-recovery register should therefore preserve, for every audit period, the original cost submission, audit team and methodology, draft findings, contractor response, reasoned government position, formal dispute notice, expert/arbitral disposition where used, cost-bank entries, and any proven revenue adjustment. The register should explicitly date the last confirmed status. Later silence in the public record is not proof of resolution or abandonment.
+
+This case offers a transferable lesson for a new producer: there is no single “cost-audit completion” event. An effective system separates technical fieldwork, government acceptance, contractual dispute procedure, accounting correction and cash realization, each with a different institution, deadline and evidence requirement. That is how a percentage-based production-sharing agreement becomes a genuinely enforceable public revenue system.
