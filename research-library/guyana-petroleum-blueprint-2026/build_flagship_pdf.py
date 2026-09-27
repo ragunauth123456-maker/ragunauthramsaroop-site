@@ -20,7 +20,7 @@ from reportlab.platypus.tableofcontents import TableOfContents
 import fitz
 
 BASE=Path(__file__).resolve().parent
-OUT=BASE/"guyana-petroleum-transformation-flagship-2026.pdf"
+OUT=BASE/"guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf"
 AUDIT=BASE/"FLAGSHIP_PDF_AUDIT.json"
 NAVY=colors.HexColor("#102A43"); FOREST=colors.HexColor("#17624F"); SAGE=colors.HexColor("#E4F0EA")
 TEXT=colors.HexColor("#243B53"); GRAY=colors.HexColor("#627D98"); PALE=colors.HexColor("#F4F8F6")
@@ -68,7 +68,7 @@ class Doc(BaseDocTemplate):
         else:
             c.setStrokeColor(SAGE); c.line(22*mm,14.5*mm,A4[0]-22*mm,14.5*mm)
             c.setFont(FONTA,7); c.setFillColor(GRAY)
-            c.drawString(22*mm,10*mm,"INDEPENDENT RESEARCH | FLAGSHIP REFERENCE EDITION | 27 SEP 2026")
+            c.drawString(22*mm,10*mm,"INDEPENDENT RESEARCH | AUDITED PUBLICATION CANDIDATE | 27 SEP 2026")
             c.drawRightString(A4[0]-22*mm,10*mm,str(d.page))
         c.restoreState()
     def afterFlowable(self,f):
@@ -80,12 +80,12 @@ class Doc(BaseDocTemplate):
 def h1(x):
     p=Paragraph(mk(x),s["H1F"]); p.toc_level=0; return p
 
-def flow(text, dedupe=None):
+def flow(text, dedupe=None, toc=True):
     story=[]; para=[]
     def flush():
         if not para:return
         raw=" ".join(para).strip(); para.clear()
-        norm=re.sub(r"\s+"," ",raw.lower())
+        norm=re.sub(r"\\s+"," ",raw.lower())
         if dedupe is not None and len(raw)>250:
             if norm in dedupe:return
             dedupe.add(norm)
@@ -94,22 +94,27 @@ def flow(text, dedupe=None):
         v=line.strip()
         if not v: flush(); continue
         if v.startswith("# "):
-            flush(); p=Paragraph(mk(v[2:]),s["H1F"]); p.toc_level=0; story.append(p)
+            flush(); p=Paragraph(mk(v[2:]),s["H1F"])
+            if toc: p.toc_level=0
+            story.append(p)
         elif v.startswith("## "):
-            flush(); p=Paragraph(mk(v[3:]),s["H1F"]); p.toc_level=0; story.append(p)
+            flush(); p=Paragraph(mk(v[3:]),s["H1F"])
+            if toc: p.toc_level=0
+            story.append(p)
         elif v.startswith("### "):
-            flush(); p=Paragraph(mk(v[4:]),s["H2F"]); p.toc_level=1; story.append(p)
+            flush(); p=Paragraph(mk(v[4:]),s["H2F"])
+            if toc: p.toc_level=1
+            story.append(p)
         elif v.startswith("#### "):
             flush(); story.append(Paragraph(mk(v[5:]),s["H3F"]))
         elif v.startswith(("- ","* ")):
             flush(); story.append(Paragraph("&#8226; "+mk(v[2:]),s["BulletF"]))
-        elif re.match(r"^\d+\.\s",v):
+        elif re.match(r"^\\d+\\.\\s",v):
             flush(); story.append(Paragraph(mk(v),s["BulletF"]))
         elif v.startswith("|"):
             flush()
         else: para.append(v)
     flush(); return story
-
 def src_rows(txt):
     out=[]
     for line in txt.splitlines():
@@ -118,18 +123,36 @@ def src_rows(txt):
             if len(cells)>=5:out.append(cells[:5])
     return out
 
-def add_csv_table(story,path,title):
-    story.extend([PageBreak(),h1(title)])
-    with path.open(encoding="utf-8",newline="") as f: rows=list(csv.reader(f))
-    if not rows:return
-    grid=[[Paragraph(mk(str(x)),s["SmallF"]) for x in row] for row in rows]
-    widths=[max(18*mm,min(45*mm,(164*mm)/max(1,len(rows[0])))) for _ in rows[0]]
-    total=sum(widths); widths=[w*(164*mm/total) for w in widths]
-    t=Table(grid,colWidths=widths,repeatRows=1,hAlign="LEFT")
-    t.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),SAGE),("GRID",(0,0),(-1,-1),0.25,colors.HexColor("#C8D8D1")),
-                           ("VALIGN",(0,0),(-1,-1),"TOP"),("TOPPADDING",(0,0),(-1,-1),5),("BOTTOMPADDING",(0,0),(-1,-1),5)]))
-    story.append(t)
+def _fmt_cell(field,value):
+    try: x=float(value)
+    except Exception: return str(value).replace("_"," ")
+    if field in ("government_share_of_gross","requested_cost_fraction","volume_factor","return_rate"):
+        return "{:.1f}%".format(x*100)
+    if field=="price_usd_per_barrel": return "${:,.0f}".format(x)
+    if field=="barrels_illustrative": return "{:.2f}m".format(x/1_000_000)
+    if field.endswith("_usd"):
+        scale=1_000_000_000 if abs(x)>=1_000_000_000 else 1_000_000
+        suffix="bn" if scale==1_000_000_000 else "m"
+        return "${:,.2f}{}".format(x/scale,suffix)
+    if field=="year_index": return str(int(x))
+    return "{:,.2f}".format(x)
 
+def add_csv_table(story,path,title,fields,labels,note):
+    story.extend([PageBreak(),h1(title),Paragraph(mk(note),s["SmallF"])])
+    with path.open(encoding="utf-8",newline="") as f: rows=list(csv.DictReader(f))
+    if not rows:return
+    grid=[[Paragraph(mk(x),s["SmallF"]) for x in labels]]
+    for row in rows:
+        grid.append([Paragraph(mk(_fmt_cell(field,row.get(field,""))),s["SmallF"]) for field in fields])
+    widths=[164*mm/len(fields)]*len(fields)
+    t=Table(grid,colWidths=widths,repeatRows=1,hAlign="LEFT")
+    t.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),SAGE),
+                           ("GRID",(0,0),(-1,-1),0.25,colors.HexColor("#C8D8D1")),
+                           ("VALIGN",(0,0),(-1,-1),"TOP"),
+                           ("FONTSIZE",(0,0),(-1,-1),7.2),
+                           ("TOPPADDING",(0,0),(-1,-1),4),
+                           ("BOTTOMPADDING",(0,0),(-1,-1),4)]))
+    story.append(t)
 core=[f"FLAGSHIP_PART_{x}_MANUSCRIPT.md" for x in ["I","II","III","IV","V","VI","VII","VIII","IX","X"]]
 evidence=[
 "MANUSCRIPT_WORKING_DRAFT.md","COUNTRY_PLAYBOOK.md","NEW_PRODUCER_BLUEPRINT.md","COMPARATIVE_CASES.md",
@@ -140,6 +163,9 @@ evidence=[
 "PART_IX_COMPARATIVE_CASES_DOSSIER.md","PART_X_NEW_PRODUCER_OPERATING_MANUAL.md",
 "NRF_RECONCILIATION_WORKBOOK.md","ENVIRONMENTAL_PERMIT_AND_RISK_REGISTER.md","MODEL_METHODS_AND_LIMITATIONS.md"]
 annex=sorted(p.name for p in BASE.glob("TECHNICAL_ANNEX_*.md"))
+hardening=(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")
+adversarial=(BASE/"ADVERSARIAL_PUBLICATION_AUDIT.md").read_text(encoding="utf-8")
+claim_matrix=(BASE/"CLAIM_SOURCE_MATRIX.md").read_text(encoding="utf-8")
 assert len(core)==10 and len(annex)>=13
 all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}
 brief=(BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
@@ -159,7 +185,7 @@ story=[Spacer(1,22*mm),Paragraph("GUYANA | EXPLORATION TO PRODUCTION",s["CoverK"
        Paragraph("GUYANA'S PETROLEUM<br/>TRANSFORMATION",s["CoverT"]),Rule(),Spacer(1,7*mm),
        Paragraph("The Guyana Sequence: exploration, contracts, first oil, sovereign wealth, environmental stewardship, national development and a transferable blueprint for emerging producers",s["CoverS"]),
        Spacer(1,9*mm),Paragraph("Independent research by Ragunauth Ramsaroop",s["H2F"]),
-       Paragraph("Flagship Reference Edition 1.0 | Evidence cut-off: 27 September 2026",s["BodyF"]),
+       Paragraph("Edition 1.1 | Internally audited publication candidate | Evidence cut-off: 27 September 2026",s["BodyF"]),
        Paragraph("This publication is independent research. It does not rank political actors or electoral choices. Government, operator, multilateral and stakeholder positions are attributed. External peer review is not claimed.",s["SmallF"]),
        PageBreak(),h1("Contents")]
 toc=TableOfContents(); toc.levelStyles=[s["TOCF"],s["TOCF"]]; story.extend([toc,PageBreak(),h1("Executive brief")])
