@@ -85,7 +85,7 @@ def flow(text, dedupe=None, toc=True):
     def flush():
         if not para:return
         raw=" ".join(para).strip(); para.clear()
-        norm=re.sub(r"\\s+"," ",raw.lower())
+        norm=re.sub(r"\s+"," ",raw.lower())
         if dedupe is not None and len(raw)>250:
             if norm in dedupe:return
             dedupe.add(norm)
@@ -103,7 +103,7 @@ def flow(text, dedupe=None, toc=True):
             story.append(p)
         elif v.startswith("### "):
             flush(); title=v[4:]
-            if re.match(r"^Chapter\\s+\\d+\\.",title):
+            if re.match(r"^Chapter\s+\d+\.",title):
                 title=re.sub(r"^Chapter","Analytical section",title,count=1)
             p=Paragraph(mk(title),s["H2F"])
             story.append(p)
@@ -111,7 +111,7 @@ def flow(text, dedupe=None, toc=True):
             flush(); story.append(Paragraph(mk(v[5:]),s["H3F"]))
         elif v.startswith(("- ","* ")):
             flush(); story.append(Paragraph("&#8226; "+mk(v[2:]),s["BulletF"]))
-        elif re.match(r"^\\d+\\.\\s",v):
+        elif re.match(r"^\d+\.\s",v):
             flush(); story.append(Paragraph(mk(v),s["BulletF"]))
         elif v.startswith("|"):
             flush()
@@ -169,7 +169,8 @@ hardening=(BASE/"FLAGSHIP_HARDENING_ADDENDUM.md").read_text(encoding="utf-8")
 adversarial=(BASE/"ADVERSARIAL_PUBLICATION_AUDIT.md").read_text(encoding="utf-8")
 claim_matrix=(BASE/"CLAIM_SOURCE_MATRIX.md").read_text(encoding="utf-8")
 assert len(core)==10 and len(annex)>=13
-all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}\ncore_section_count=sum(len(re.findall(r"^###\\s+Chapter\\s+\\d+\\.",all_text[n],flags=re.M)) for n in core)
+all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}
+core_section_count=sum(len(re.findall(r"^###\s+Chapter\s+\d+\.",all_text[n],flags=re.M)) for n in core)
 brief=(BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
 sources=(BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
 gates=(BASE/"PUBLICATION_REVIEW_GATES.md").read_text(encoding="utf-8")
