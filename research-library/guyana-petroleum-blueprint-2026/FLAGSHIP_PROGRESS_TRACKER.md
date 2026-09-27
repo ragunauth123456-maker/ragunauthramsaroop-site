@@ -74,7 +74,7 @@ Status legend: FOUNDATION, RESEARCHING, DRAFTED, SOURCE-AUDITED, MODEL-AUDITED, 
 
 - Working PDF: 56 pages.
 - Existing 56-page working PDF research set at its earlier audit: 15,128 words.
-- Current measured Markdown research package on this branch: 48,001 words.
+- Current measured Markdown research package on this branch before integrated Parts VIII-X: 48,001 words.
 - Source records embedded in the existing working PDF audit: 34.
 - Current live branch source register: 86 records.
 - Flagship target: 520-560 substantive pages.
@@ -117,7 +117,22 @@ Technical work now also includes:
 - combined production shock scenarios;
 - synthetic sovereign-fund stress scenarios.
 
-Measured Markdown package: 48,001 words.
+Measured Markdown package before integrated Parts VIII-X: 48,001 words.
+Integrated flagship Parts VIII-X added in this continuation: 6,179 words.
+Current minimum measured research package: 54,180 words, excluding later duplicate-count reconciliation.
 Live source register: 86 records.
 Working PDF remains a preliminary edition and is not the flagship.
 The final 520-560 substantive-page count will be measured only after complete manuscript integration, rendering, repetition audit and visual QA.
+
+
+## Integrated flagship manuscript expansion
+
+Integrated narrative manuscripts now exist for all ten flagship parts. Parts VIII-X were added after the 48,001-word branch measurement:
+
+- Part VIII, Accountability and Institutional Learning: 2,083 words.
+- Part IX, International Comparators and Transferability: 1,921 words.
+- Part X, New-Producer Operating Manual: 2,175 words.
+- Added integrated narrative: 6,179 words.
+- Minimum current research package: 54,180 words before a full repository-wide de-duplication count.
+
+These are substantive research-stage chapters, not page padding. The next PDF render must count actual pages only after integrating the new files and auditing repeated material.
