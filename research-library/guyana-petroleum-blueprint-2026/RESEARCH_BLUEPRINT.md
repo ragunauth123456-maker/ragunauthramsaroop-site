@@ -20,7 +20,12 @@ Explain the full sequence from early geological exploration to commercial discov
 ### Evidence standard
 Use directly linked laws, agreements, regulator permits, audited accounts, petroleum production records, published financial statements, EITI decisions, operator announcements, World Bank data, IMF reports, environmental judgments, methodology documents and independently documented stakeholder concerns. A government press release establishes what government announced, not the independent success of the announced programme. An operator forecast does not establish production achieved. An enacted act is not necessarily in force. A revenue deposit is not equivalent to investment return, budget spending or delivered social benefit. Do not treat a historical household poverty survey as current poverty. Record contradictory material and preserve an errata log.
 
-### Proposed full publication, substantive-page allocations (target 140-160 pages; NOT currently complete)
+### Flagship publication standard
+The final publication is now scoped as a 520-560 substantive-page international reference work. The existing working PDF is an evidence foundation only. Final pagination will count substantive analytical pages after rendering and repetition audit, not title leaves, blank pages or duplicated source matter.
+
+The detailed part/chapter architecture is maintained in `MASTER_PUBLICATION_ARCHITECTURE.md`. The earlier 140-160-page concept is superseded.
+
+### Legacy compact outline retained for topic traceability only
 - Front matter, abstract, methods and data caveats: 8 pages.
 - 1. Guyana before offshore oil: geology, external debt, commodity dependence and institutions: 10 pages.
 - 2. Exploration and discovery: licensing, geological evidence, seismic, Liza 2015: 10 pages.
@@ -37,7 +42,7 @@ Use directly linked laws, agreements, regulator permits, audited accounts, petro
 - 13. Adverse scenarios: lower oil price, cost audit disputes, spill, delayed gas project, infrastructure bottlenecks: 8 pages.
 - 14. Transferable implementation handbook for a new producing country: 10 pages.
 - Technical appendices: reproducible arithmetic and datasets, permitting checklist, source register, response capacity, rights protocol, legal crosswalk: 14 pages.
-Pagination is a design target only. Do not claim actual substantive page counts until PDF has been rendered, text extracted, figures checked and repetitive matter audited.
+The compact allocations above no longer define the final length. See `MASTER_PUBLICATION_ARCHITECTURE.md` for the 520-560-page structure. Do not claim actual substantive page counts until the final PDF has been rendered, text extracted, exhibits checked and repetitive matter audited.
 
 ### Cross-cutting research controls
 - All exhibits carry source, observation date, unit, geographic coverage, owner and calculation note.
