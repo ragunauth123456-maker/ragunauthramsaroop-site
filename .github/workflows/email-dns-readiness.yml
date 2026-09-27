@@ -1,0 +1,32 @@
+name: Resend DNS readiness
+on:
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: Fail if any required email DNS record is missing
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "15 12 * * *"
+  push:
+    paths:
+      - "data/resend-dns.json"
+      - "scripts/check_resend_dns.mjs"
+      - "scripts/test_resend_dns.mjs"
+      - ".github/workflows/email-dns-readiness.yml"
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test DNS matching logic without network
+        run: node scripts/test_resend_dns.mjs
+      - name: Inspect live public DNS without changing it
+        run: node scripts/check_resend_dns.mjs ${{ inputs.strict && '--strict' || '' }}
