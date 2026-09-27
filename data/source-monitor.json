@@ -1,12 +1,12 @@
 {
-  "generated": "2026-09-26T12:00:03+00:00",
+  "generated": "2026-09-27T15:38:32+00:00",
   "sources": [
     {
       "name": "Guyana Bureau of Statistics",
       "url": "https://statisticsguyana.gov.gy/",
       "category": "economy",
       "note": "National statistics and headline indicators.",
-      "checked_at": "2026-09-26T12:00:03+00:00",
+      "checked_at": "2026-09-27T15:38:32+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -18,31 +18,31 @@
       "url": "https://www.ggmc.gov.gy/",
       "category": "mining",
       "note": "Mining regulation, geoscience and mineral data.",
-      "checked_at": "2026-09-26T12:00:03+00:00",
+      "checked_at": "2026-09-27T15:38:32+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
       "sha256": "6f4aa1f27aa6a831ee999a6e69a137b85dec586be69f4a3932f911659422b396",
-      "content_length": 415000
+      "content_length": 415003
     },
     {
       "name": "Guyana Energy Agency",
       "url": "https://gea.gov.gy/",
       "category": "energy",
       "note": "Energy policy, licensing, statistics and renewable-energy information.",
-      "checked_at": "2026-09-26T12:00:03+00:00",
+      "checked_at": "2026-09-27T15:38:32+00:00",
       "status": "ok",
       "changed": true,
       "http_status": 200,
-      "sha256": "7c92892e62ef97e9e43e37d340a631b565a2ce3e08349e81306f57c329574bf8",
-      "content_length": 141499
+      "sha256": "1b52e51c299fb0df77a72ac7598a8b90b7e00360c80024c85bde4934f5ace250",
+      "content_length": 141505
     },
     {
       "name": "Guyana Ministry of Finance",
       "url": "https://finance.gov.gy/",
       "category": "fiscal",
       "note": "Budget, mid-year reports and fiscal information.",
-      "checked_at": "2026-09-26T12:00:03+00:00",
+      "checked_at": "2026-09-27T15:38:32+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
@@ -54,7 +54,7 @@
       "url": "https://api.worldbank.org/v2/country/GUY?format=json",
       "category": "international-data",
       "note": "International development indicator source.",
-      "checked_at": "2026-09-26T12:00:03+00:00",
+      "checked_at": "2026-09-27T15:38:32+00:00",
       "status": "ok",
       "changed": false,
       "http_status": 200,
