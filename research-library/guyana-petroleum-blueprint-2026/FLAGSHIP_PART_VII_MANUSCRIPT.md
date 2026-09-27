@@ -1246,3 +1246,54 @@ A project that is under construction in 2026 should become a commissioned asset 
 A commissioned asset should become an evidenced development outcome only when operating data support that conclusion.
 
 This is the same audit discipline used elsewhere in the publication, applied to national development.
+
+
+## A diversification test that distinguishes oil spillovers from durable export capability
+
+### Define the outcome before choosing the indicator
+
+A petroleum transformation can make non-oil sectors grow rapidly even when their ability to survive a lower-oil-revenue future has changed little. Construction expands when the state and petroleum operators build infrastructure. Wholesale trade grows as equipment and consumption imports rise. Transport and professional services gain petroleum and government clients. These activities provide genuine income and employment; they are not imaginary output. The analytical error occurs when every increase in non-oil GDP is treated as evidence that the economy has acquired a second, autonomous growth engine.
+
+Guyana's first-half 2026 mid-year reporting provides a particularly useful dated test. The Ministry of Finance reported an estimated 33.3% increase in overall real GDP for the first half, with 10.1% non-oil real growth. It also reported a 24.6% rise in non-oil exports to about US$1.146 billion, of which gold exports accounted for around US$826.2 million. The figures are official estimates for a defined half-year, not audited full-year outcomes. They should be reported together with that period and source limitation. [S07]
+
+These categories answer different questions. Overall GDP captures the extraordinary scale of petroleum output. Non-oil GDP excludes the direct oil sector but still contains petroleum-related services, construction and public-spending spillovers. Non-oil exports exclude petroleum but can contain gold and other minerals; they are not equivalent to exports from manufacturing, tourism or digital services. A GDP decomposition and an export decomposition are both needed before a claim of structural diversification can be tested.
+
+### A reproducible first-half export decomposition
+
+The reported non-oil export total of US$1.146 billion includes about US$826.2 million of gold. Expressed in the same rounded dollar units, gold therefore accounts for approximately 72% of reported non-oil exports and the residual is approximately US$319.8 million. These figures illustrate why the term "non-oil" should not be used as a synonym for "non-resource". Gold is a different extractive sector with its own price and production cycle. The reported total can accurately demonstrate expansion in exports outside oil, but it cannot by itself establish a broad-based manufactured export platform. [S07]
+
+The next analytical table should separate at least five mutually intelligible categories: petroleum; gold and other minerals; primary agriculture; manufactured and processed goods; and internationally traded services, including tourism. This division is not intended to rank economic sectors. It reveals exposure to different demand and price shocks. Gold may behave differently from crude during a global crisis. Agricultural exports may be constrained by rainfall or cold-chain logistics. Tourism receipts may respond to air connectivity and competition. Digital services depend on connectivity and international client acquisition.
+
+For each category, the book should carry nominal value, quantity where observable, price index, main destination, source, observation period and revisions. A value increase caused solely by a price spike is different from a quantity increase resulting from improved productivity. If reliable quantity data are missing, the publication should not infer productive capacity from dollar growth alone.
+
+### The counterfactual that matters
+
+The central diversification counterfactual is not a Guyana without oil. It is the same economy with weaker or more slowly growing petroleum-financed demand. Imagine a petroleum-price and startup shock that reduces expected resource receipts while previously approved public projects continue to demand imported construction materials and skilled labour. Construction firms could still be busy in the short term but face rising financing costs and a shrinking future order book. Restaurants and logistics firms connected to the boom could have profitable current operations but limited export customers. A manufacturing firm selling to the domestic construction sector could expand while becoming more dependent on imported components and public projects.
+
+An autonomous second growth engine should demonstrate at least some ability to maintain external sales, employment and productivity through this shock. That does not require complete independence from public infrastructure. All competitive economies rely on public goods. The question is whether the firm can sell outside a petroleum-driven demand cycle once roads, electricity, ports and workforce capability are in place.
+
+A research design should therefore follow a cohort of non-oil firms over time and record their sales by customer and destination. Relevant fields include domestic public procurement, petroleum-operator procurement, other domestic sales, regional export sales and wider international export sales. For firms established during a resource boom, the trajectory after an oil-price shock may be more informative than the initial growth rate. A cross-sector control group can reduce the risk of attributing all observed gains to petroleum policy.
+
+### Three distinct channels from petroleum revenue to other-sector productivity
+
+The first channel is **reliable physical infrastructure**. An energy investment supports diversification only to the extent that electricity reaches businesses at a competitive all-in cost with improved reliability. Installed generation capacity, plant commissioning, fuel availability, transmission capacity, distribution losses and outage metrics must be measured separately. A cheaper generation contract that does not reduce actual industrial outages may produce smaller short-term productivity gains than projected.
+
+The second channel is **human capability**. Petroleum can raise the demand for engineers, accountants, logistics specialists and safety professionals, but it can also attract them away from schools, utilities and regulators. A training programme should therefore measure portable technical competency and retention across sectors rather than counting attendance or certificates alone. For example, instrumentation, power engineering, welding procedures and data management may be deployed in petroleum today and manufacturing, renewable energy or maritime services later.
+
+The third channel is **market connectivity**. Roads, ports, bridges and digital infrastructure reduce transaction costs only when the full transport or communication network works. A road may be substantially complete yet deliver limited freight benefit until complementary bridges, customs procedures, cold storage or port handling are operational. Every major corridor should therefore have baseline and post-commissioning measures of journey time, freight reliability, accidents and delivered market access. The public-investment register should mark an allocation, a construction milestone and an operating outcome as three separate events. [S129, S130, S131, S133]
+
+### Inflation, labour scarcity and the non-tradables channel
+
+A boom creates a difficult comparison between nominal expansion and real productive efficiency. A construction contractor may report record revenue because material prices have risen. An urban household may receive higher wages but face faster rent increases. A qualified engineer may obtain a higher salary in petroleum while the national utility struggles to recruit staff. The result can be rising GDP and higher household purchasing power for some groups alongside weaker supply capacity or real welfare pressure for others.
+
+A credible policy case study should therefore monitor the distribution of inflation rather than rely only on the headline CPI. The indicators should include food, housing, transport, utilities and geographically differentiated prices. Occupational wage series and public-sector vacancies are needed to separate broadly shared income gains from resource-sector skill premiums. The latest representative household survey should be used only for the period it covers; the 2018/2019 baseline cannot become a current 2026 poverty or living-standard statistic by repetition. [S61, S68]
+
+The same principle applies to public investment. An increase in expenditure can be justified by infrastructure needs while still placing pressure on a relatively small pool of contractors, engineers and imported materials. The IMF's 2025 Guyana Article IV report describes the interaction of rapid resource growth, substantial infrastructure spending, diversification ambitions and macroeconomic risks. Its projections and policy recommendations are IMF staff assessments, not the author's judgment about a government. The official H1 2026 figures should be dated separately from that earlier assessment rather than combined as if they came from one period. [S68]
+
+### A practical scoreless dashboard
+
+Instead of producing a single national "diversification score", the book should publish a dashboard of independently interpretable series. One row should show non-oil real output growth; a second, the share and value of non-petroleum, non-mineral exports; a third, export customers and destination diversity; a fourth, electricity reliability and commercial energy cost; a fifth, labour productivity and occupational shortages; and a sixth, the share of surveyed firms with sales outside petroleum-linked public or private demand.
+
+Every series should disclose its observation date and boundary. A firm registry might count firms legally incorporated but not operating. A local-content procurement report counts gross contracts but not necessarily domestic value added. An export value may increase because of commodity prices rather than more diversified buyers. The dashboard's value lies in preventing one strong aggregate from silently standing in for all other outcomes.
+
+For a new island or coastal producer, the transferable design principle is to establish the non-oil baseline **before** petroleum cash becomes large. Select a tractable sample of firms, benchmark port and electricity reliability, and record current occupational shortages. Then update the same series after first oil and through at least one adverse petroleum scenario. This creates a credible basis for identifying which gains depend on a temporary boom and which represent durable productivity and external earning capacity.
