@@ -286,3 +286,361 @@ Fund readiness requires audited financial statements and lawful budget integrati
 The central principle of the operating manual is sequencing. A new producer should build evidence and institutional capacity before each irreversible stage: licence award, appraisal, development approval, first oil, first withdrawal and rapid scale-up.
 
 Guyana's experience is useful because several of these stages occurred in a compressed period and left a substantial documentary record. The transferable product is not a single contract or statute. It is a staged system for asking the right question before the cost of a mistake rises.
+
+## Edition 2.0 deepening: the operating manual as a sequence of irreversible gates
+
+### Analytical section 58. The five irreversible gates
+
+A newcomer petroleum state should organize readiness around five gates.
+
+**Gate 1: licence award.**  
+Before acreage is awarded, the state should know who has authority, what data exists, which work obligations are required, how beneficial ownership is checked and which environmental baseline obligations apply.
+
+**Gate 2: commercial discovery.**  
+Before the state accepts a commercial-development path, it should independently understand reserves, development cost, fiscal outcomes, infrastructure needs and environmental exposure.
+
+**Gate 3: final investment decision and development approval.**  
+Before irreversible capital is committed, the state should have completed legal, fiscal, environmental, decommissioning and emergency-response reviews.
+
+**Gate 4: first oil or first gas.**  
+Before production begins, the state should prove that metering, cost accounting, royalty, tax, sales, sovereign-revenue custody, incident command and public reporting systems function.
+
+**Gate 5: first major budget withdrawal.**  
+Before resource revenue is materially absorbed into the domestic economy, the state should have project appraisal, procurement, maintenance and macro-fiscal controls.
+
+Each gate should have evidence requirements and a named institution authorized to sign readiness.
+
+### Analytical section 59. A national petroleum RACI matrix
+
+Every major petroleum process should identify who is:
+- Responsible;
+- Accountable;
+- Consulted;
+- Informed.
+
+The matrix should cover:
+- licensing;
+- contract negotiation;
+- geological data;
+- reserves review;
+- development plan;
+- production licence;
+- EIA;
+- permit;
+- metering;
+- petroleum valuation;
+- cost audit;
+- tax;
+- cargo sale;
+- NRF custody;
+- budget withdrawal;
+- local content;
+- emergency response;
+- decommissioning.
+
+The purpose is to prevent shared responsibility from becoming no responsibility.
+
+### Analytical section 60. The discovery 100-day plan
+
+Within the first 100 days after a material commercial discovery, government should create a single readiness programme.
+
+Days 1-30:
+- preserve all geological and contractual records;
+- establish conflict controls;
+- commission independent resource and fiscal review;
+- freeze premature revenue assumptions in the budget;
+- map institutional gaps.
+
+Days 31-60:
+- create environmental and social baseline workplan;
+- define development-plan review team;
+- establish cost-accounting architecture;
+- begin sovereign-revenue design options;
+- create public communication protocol.
+
+Days 61-100:
+- publish the readiness gap register where lawful;
+- approve staffing and adviser strategy;
+- run fiscal stress tests;
+- establish first-oil data architecture;
+- begin emergency-response planning.
+
+The discovery should therefore trigger administration before it triggers spending.
+
+### Analytical section 61. The development-approval dossier
+
+A development approval should be supported by one consolidated government dossier containing:
+- resource estimate;
+- reservoir uncertainty;
+- development concept;
+- capital cost;
+- operating cost;
+- production forecast;
+- fiscal model;
+- cost-recovery forecast;
+- environmental assessment;
+- financial assurance;
+- emergency response;
+- local-content plan;
+- decommissioning concept;
+- public infrastructure requirements.
+
+The dossier should record both operator assumptions and independent government analysis.
+
+Material disagreements should remain visible.
+
+### Analytical section 62. The first-oil certification exercise
+
+Six months before first oil, government should run a full transaction test.
+
+The exercise should simulate:
+- daily production;
+- meter exception;
+- government entitlement;
+- cargo nomination;
+- benchmark price;
+- royalty;
+- tax;
+- cost recovery;
+- cash settlement;
+- NRF deposit;
+- public disclosure.
+
+A second exercise should simulate an incident occurring during the same period.
+
+Readiness is proven when institutions can perform the transaction under pressure, not when policy documents have been published.
+
+### Analytical section 63. The first-withdrawal certification exercise
+
+The first major petroleum-funded budget programme should also be tested.
+
+The government should demonstrate:
+- legal withdrawal authority;
+- transfer to the Consolidated Fund;
+- parliamentary appropriation;
+- project appraisal;
+- procurement;
+- contract management;
+- completion reporting;
+- maintenance funding.
+
+This makes the first withdrawal an institutional milestone rather than a simple cash movement.
+
+### Analytical section 64. A single national resource dashboard with layered access
+
+The state should maintain one integrated data model even if public access varies.
+
+Layer 1 can be fully public:
+- production;
+- revenue;
+- fund balance;
+- major permits;
+- public contracts;
+- key outcomes.
+
+Layer 2 can be regulator-access:
+- metering details;
+- cost records;
+- commercially sensitive data;
+- detailed environmental monitoring.
+
+Layer 3 can be restricted for security or privileged legal material.
+
+The important control is that all layers use consistent identifiers.
+
+### Analytical section 65. The minimum permanent specialist team
+
+A small state does not need a huge bureaucracy.
+
+It does need permanent capability in:
+- petroleum engineering;
+- geology/geophysics;
+- fiscal modelling;
+- petroleum accounting;
+- tax;
+- law;
+- environmental science;
+- emergency response;
+- data management;
+- procurement and public investment.
+
+External advisers can supplement this team.
+
+They should not become the only holders of state knowledge.
+
+### Analytical section 66. Adviser management protocol
+
+Every external adviser engagement should specify:
+- scope;
+- conflict check;
+- data ownership;
+- model ownership;
+- source-file delivery;
+- training requirement;
+- handover;
+- confidentiality;
+- publication rights.
+
+The state should receive editable models and working papers, not only a final PDF.
+
+This reduces dependence on the same adviser for future decisions.
+
+### Analytical section 67. A low-capacity state should prioritize control points
+
+When staffing is limited, not every process can receive equal attention.
+
+The highest-value control points are:
+- licence and contract;
+- reserves;
+- development cost;
+- metering;
+- petroleum valuation;
+- cost audit;
+- revenue custody;
+- environmental permit;
+- financial assurance;
+- emergency response;
+- budget withdrawal.
+
+A small regulator should secure these points before expanding into lower-risk administrative detail.
+
+### Analytical section 68. Island-state operating manual
+
+A small island producer should add six specific controls.
+
+1. **Tourism exposure map.** Identify beaches, reefs, ports and marine recreation.
+2. **Desalination and water-intake protection.** Model spill and shutdown scenarios.
+3. **Hurricane concurrency.** Test a petroleum incident during storm disruption.
+4. **Port redundancy.** Identify what happens if the primary port is unavailable.
+5. **Regional response agreements.** Pre-negotiate customs, aviation and equipment entry.
+6. **Small-labour-market strategy.** Protect regulators and utilities from specialist drain.
+
+These controls are not unique to islands, but concentration makes the consequences larger.
+
+### Analytical section 69. The no-oil scenario
+
+A petroleum strategy should still create value if commercial production never occurs.
+
+The state should ask which investments remain useful under a dry-hole outcome.
+
+Usually these include:
+- geological data;
+- maritime mapping;
+- environmental baselines;
+- beneficial-ownership systems;
+- procurement controls;
+- emergency coordination;
+- public financial management.
+
+This test prevents exploration optimism from creating stranded bureaucracy or debt.
+
+### Analytical section 70. The lower-price scenario
+
+The operating manual should assume that resource prices can remain below the planning case for several years.
+
+The state should identify:
+- protected essential services;
+- deferrable projects;
+- recurrent commitments;
+- debt service;
+- fund buffers;
+- exchange-rate exposure.
+
+The purpose is to decide before the shock which commitments are flexible.
+
+### Analytical section 71. The delayed-project scenario
+
+A two-year project delay affects more than future oil revenue.
+
+It can also affect:
+- public expectations;
+- infrastructure built for the project;
+- local suppliers;
+- labour;
+- debt;
+- regulator staffing.
+
+The contingency plan should therefore cover the wider economy.
+
+### Analytical section 72. The major-spill scenario
+
+The spill scenario should include:
+- immediate command;
+- operator action;
+- financial assurance;
+- public communication;
+- fisheries;
+- health;
+- cross-border notification;
+- evidence preservation;
+- claims;
+- independent investigation.
+
+The exercise should be timed.
+
+Decision delay should be treated as a risk variable.
+
+### Analytical section 73. The institutional-disruption scenario
+
+Institutions can face leadership change, litigation, cyber incidents, natural disaster or staff turnover.
+
+The petroleum system should remain operable.
+
+Business-continuity plans should identify:
+- delegated authority;
+- backup records;
+- credential recovery;
+- alternate office;
+- emergency signatories;
+- succession.
+
+This is administrative continuity, not a political judgment.
+
+### Analytical section 74. The annual resource-governance review
+
+Once production begins, the state should publish an annual integrated review covering:
+- production;
+- reserves;
+- revenue;
+- audits;
+- NRF;
+- budget use;
+- local content;
+- social indicators;
+- environmental performance;
+- incidents;
+- decommissioning;
+- unresolved disputes.
+
+The review should include corrections from prior years.
+
+### Analytical section 75. Independent readiness review
+
+Before each irreversible gate, government should commission an independent challenge review.
+
+The reviewer should not certify the political desirability of development.
+
+The reviewer should test whether the evidence and controls required for the decision exist.
+
+The final output should classify:
+- ready;
+- ready with conditions;
+- not evidenced.
+
+Any unresolved high-impact condition should have an owner and deadline.
+
+### Analytical section 76. Expanded Part X conclusion
+
+The operating manual should make the book usable on Monday morning, not only intellectually persuasive.
+
+Its central rule is simple:
+
+Do not move from one irreversible petroleum stage to the next merely because the commercial project is ready.
+
+Move when the state can also measure, regulate, account, respond and explain.
+
+The manual therefore converts the Guyana case and international comparators into a sequence of gates, ledgers, drills and evidence requirements.
+
+For a new producer, that sequence is the real blueprint.
+
+It preserves national optionality before discovery, bargaining power after discovery, revenue integrity after first oil and development discipline after the first large withdrawal.
