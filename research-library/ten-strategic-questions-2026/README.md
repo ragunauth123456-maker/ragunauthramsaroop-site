@@ -1,6 +1,6 @@
 # Ten Strategic Questions for the Next Decade
 
-Independent executive white-paper research program prepared for Ragunauth Ramsaroop | 26 September 2026 | All Rights Reserved.
+Independent executive white-paper research program prepared by Ragunauth Ramsaroop | 26 September 2026 | All Rights Reserved.
 
 **Actual status:** Ten topic-specific phase-one research manuscripts, each with ten opening chapters, five adversarial narratives, an original analytical framework, institutional source anchors, a fictional sensitivity model and a future full-volume plan, have been produced in the author's separate downloadable research archive. The ten PDF working editions each contain 17 pages including covers. The combined PDF contains 171 pages, including a series cover.
 
