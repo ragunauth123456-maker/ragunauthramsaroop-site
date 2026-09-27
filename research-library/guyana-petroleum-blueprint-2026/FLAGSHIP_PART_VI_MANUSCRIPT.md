@@ -1033,3 +1033,277 @@ For a newcomer, the practical blueprint is to build three linked systems before 
 - household and regional outcomes baseline.
 
 These systems make it possible to distinguish temporary boom participation from lasting national capability.
+
+
+## Edition 2.0 evidence deepening: from reported local spend to verified economic retention
+
+### Analytical section 219Q. The H1 2026 procurement figure is an input, not the conclusion
+
+The 2026 mid-year reporting provides a useful contemporary observation because it places a number on procurement within the categories prioritized for Guyanese participation. The reported first-half amount was approximately US$466.2 million. The comparable first-half 2025 figure cited in the same reporting cycle was lower. [S07]
+
+The correct analytical treatment is deliberately narrow.
+
+The figure demonstrates that substantial procurement activity is being routed through categories subject to local-content policy.
+
+It does not, by itself, establish:
+- how much of the contract value remained in Guyana;
+- how much represented imported equipment or material;
+- how much became Guyanese wages;
+- how much profit accrued to verified Guyanese beneficial owners;
+- how much capability remained after the contract ended.
+
+The final Edition 2.0 tables should therefore place reported procurement beside a second column labelled "retained domestic value: not yet independently reconciled" unless the underlying supplier data permit the calculation.
+
+This is an example of how the book should distinguish a valid government statistic from a broader economic inference that the statistic alone cannot support.
+
+### Analytical section 219R. Cumulative procurement needs consistent start dates
+
+Cumulative industry-spend figures are sensitive to the date from which the calculation begins.
+
+One source may measure spending since 2015.
+
+Another may measure spending since first oil in 2019.
+
+Another may measure spending since the Local Content Act came into force.
+
+These totals are not directly comparable.
+
+Every cumulative local-content statistic should therefore include:
+- start date;
+- end date;
+- included companies;
+- whether goods and services are gross or net of imports;
+- whether wages are included;
+- currency conversion method.
+
+A cumulative figure without those fields should be treated as a communications statistic rather than a full economic account.
+
+### Analytical section 219S. The supplier registry should be connected to contract outcomes
+
+The number of registered suppliers measures access to the system.
+
+It does not measure whether those suppliers received work.
+
+A stronger registry should connect each supplier to:
+- beneficial ownership;
+- capability category;
+- certifications;
+- bids submitted;
+- contracts won;
+- contract value;
+- contract performance;
+- training received;
+- later non-petroleum or export contracts.
+
+This would allow the state to distinguish registration growth from supplier development.
+
+It would also show whether procurement is concentrated among a small number of firms.
+
+### Analytical section 219T. Concentration is a local-content risk
+
+A local-content regime can meet aggregate targets while opportunities remain concentrated.
+
+The analysis should therefore calculate:
+- top-five supplier share;
+- top-ten supplier share;
+- median contract value;
+- number of first-time suppliers;
+- number of repeat suppliers;
+- region of supplier ownership;
+- sector of supplier capability.
+
+High concentration is not automatically evidence of failure.
+
+Some petroleum services require scale and certification.
+
+It is evidence that the policy should examine whether barriers to entry are technical, financial or informational.
+
+### Analytical section 219U. Procurement categories should be reviewed against cost and quality
+
+Local-content targets can create value when they accelerate learning and market formation.
+
+They can create cost when supply is constrained or firms exist only nominally.
+
+For each reserved or targeted category, government should periodically compare:
+- local price;
+- international benchmark;
+- quality;
+- delivery time;
+- safety performance;
+- number of qualified suppliers.
+
+The objective is to understand whether the category is moving toward competitive domestic capability.
+
+A category that remains structurally expensive after years of support may need a different strategy.
+
+### Analytical section 219V. Offshore catering is a useful micro-case
+
+Catering illustrates how a seemingly simple service can create a wider local value chain.
+
+The economic chain can include:
+- agriculture;
+- food processing;
+- cold storage;
+- transport;
+- hygiene standards;
+- offshore logistics;
+- workforce training.
+
+A procurement contract therefore has greater developmental value when local firms progressively capture more of the upstream chain rather than only the final service.
+
+The audit should ask what share of food was grown or processed domestically, which certifications were required and whether the supplier later gained access to other industrial clients.
+
+### Analytical section 219W. Fabrication illustrates the difference between assembly and capability
+
+Fabrication can range from basic metal work to high-specification components requiring welding procedures, traceability, non-destructive testing and international certification.
+
+A "local fabrication" statistic should therefore identify the technical level of the work.
+
+Capability indicators could include:
+- coded welders;
+- certified procedures;
+- quality-management systems;
+- pressure or structural classes;
+- client acceptance;
+- export qualification.
+
+This makes the local-content discussion relevant to industrial policy.
+
+### Analytical section 219X. Finance is a hidden constraint on supplier development
+
+A local company can have technical capability and still fail to win large petroleum contracts because it cannot finance:
+- inventory;
+- equipment;
+- insurance;
+- performance bonds;
+- long payment cycles.
+
+The policy toolkit should therefore distinguish a capability gap from a financing gap.
+
+Potential responses include:
+- receivables finance;
+- guarantee schemes;
+- supplier-development lending;
+- transparent contract pipelines;
+- prompt-payment standards.
+
+The risk is that public support socializes weak commercial decisions.
+
+Financial support should therefore be linked to verified contracts and capability.
+
+### Analytical section 219Y. Safety performance is part of local value
+
+A supplier that wins work but cannot meet petroleum safety standards is not durable local capacity.
+
+Supplier-development reporting should include:
+- safety training;
+- incident rates;
+- audit findings;
+- quality non-conformances;
+- corrective actions.
+
+This prevents local content from being treated as a separate objective from operational integrity.
+
+### Analytical section 219Z. Local content should be connected to the education system
+
+The workforce forecast should be shared with:
+- technical institutes;
+- universities;
+- apprenticeship programmes;
+- scholarship administrators.
+
+This does not mean training institutions should produce workers for only one sector.
+
+It means that labour-demand information should help shape course capacity and technical equipment.
+
+The strongest skills investment creates portable competencies useful in mining, power, construction, manufacturing and maritime services as well as petroleum.
+
+### Analytical section 219AA. Skills portability is the post-petroleum test
+
+A petroleum-specific skill can be valuable during production but vulnerable to sector decline.
+
+A portable skill creates a stronger national asset.
+
+The workforce strategy should therefore favour competencies such as:
+- electrical systems;
+- mechanical maintenance;
+- process control;
+- welding;
+- instrumentation;
+- marine operations;
+- data analysis;
+- safety management;
+- project management.
+
+The policy should measure where trained workers move over time.
+
+### Analytical section 219AB. Housing pressure belongs in the distribution analysis
+
+A resource boom can raise rents rapidly near employment centres.
+
+For households not receiving petroleum-linked wage gains, higher housing cost can reduce real welfare even while national income rises.
+
+The social dashboard should therefore include:
+- rent index;
+- house-price index;
+- household overcrowding;
+- commute time;
+- new housing supply.
+
+These indicators help explain why GDP and household experience can diverge.
+
+### Analytical section 219AC. Food-price exposure matters for lower-income households
+
+Imported demand, wage growth and logistics constraints can increase food prices.
+
+The distributional effect is larger for households that spend a high share of income on food.
+
+The paper should therefore present inflation by major household category where data permit rather than only the headline consumer-price index.
+
+### Analytical section 219AD. Regional investment should be tracked to service outcomes
+
+Resource revenue may finance roads, schools, health facilities or digital infrastructure outside the main economic corridor.
+
+The audit question is not only whether money was allocated.
+
+It is whether access improved.
+
+For each region, the public-investment register should track:
+- facility or infrastructure delivered;
+- operational status;
+- staffing;
+- utilization;
+- maintenance;
+- service outcome.
+
+This is the social equivalent of the petroleum transaction ledger.
+
+### Analytical section 219AE. A local-content annual account
+
+The final book should propose an annual local-content account with five statements.
+
+**Statement 1: Procurement.** Gross local procurement by category and contractor.
+
+**Statement 2: Domestic value.** Imported inputs, Guyanese wages, local profit, taxes and retained value.
+
+**Statement 3: Employment.** Guyanese employment by occupation and seniority.
+
+**Statement 4: Capability.** Training completion, certification, supplier progression and exports.
+
+**Statement 5: Distribution.** Regional supplier participation, household indicators and community outcomes.
+
+This would convert local content from a target-compliance exercise into a national capability account.
+
+### Analytical section 219AF. Evidence conclusion
+
+The existence of detailed reporting requirements is a strength because it means many of the required data fields already exist in the regulatory system. [S108]
+
+The analytical challenge is aggregation and verification.
+
+Edition 2.0 should therefore avoid both extremes.
+
+It should not dismiss official procurement numbers because they are not perfect measures of value added.
+
+It should not present them as proof that the entire amount remained in-country.
+
+The defensible position is to use the reported figure for what it measures and build the additional reconciliation needed to answer the deeper question.
