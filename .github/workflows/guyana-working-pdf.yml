@@ -6,6 +6,12 @@ on:
       - 'research-library/guyana-petroleum-blueprint-2026/*.md'
       - 'research-library/guyana-petroleum-blueprint-2026/*.py'
       - '.github/workflows/guyana-working-pdf.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/*.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.py'
+      - '.github/workflows/guyana-working-pdf.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -54,6 +60,7 @@ jobs:
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
             research-library/guyana-petroleum-blueprint-2026/_preview_*.png
       - name: Commit the independently audited working PDF to research branch
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
