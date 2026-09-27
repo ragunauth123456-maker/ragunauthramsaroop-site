@@ -48,6 +48,19 @@ class OutreachGateTests(unittest.TestCase):
         d=self.dossier()
         d.pop("cc_contact")
         self.assertTrue(any("CC a named" in e for e in assess(d,Path("."),set())))
+    def test_prior_company_different_email_still_duplicate(self):
+        d = self.dossier()
+        issues = assess(d, Path("."), {("ExampleCo", "other-office@company.test")})
+        self.assertTrue(any("Duplicate outreach" in issue for issue in issues))
+
+    def test_private_company_and_address_suppression(self):
+        d = self.dossier()
+        d["company"] = "Example Co"
+        by_name = assess(d, Path("."), set(), {"exampleco"})
+        self.assertTrue(any("suppression ledger" in issue for issue in by_name))
+        by_address = assess(d, Path("."), set(), {"office@company.test"})
+        self.assertTrue(any("suppression ledger" in issue for issue in by_address))
+
     def test_opt_out_blocks_even_verified_route(self):
         d=self.dossier()
         d["opted_out"]=True
