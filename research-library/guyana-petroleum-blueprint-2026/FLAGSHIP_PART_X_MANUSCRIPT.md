@@ -644,3 +644,406 @@ The manual therefore converts the Guyana case and international comparators into
 For a new producer, that sequence is the real blueprint.
 
 It preserves national optionality before discovery, bargaining power after discovery, revenue integrity after first oil and development discipline after the first large withdrawal.
+
+
+## Edition 2.0 tool deepening: converting the blueprint into auditable decision instruments
+
+### Analytical section 77. The readiness checklist is a decision gate, not a ceremonial checklist
+
+Edition 2.0 adds `NEW_PRODUCER_READINESS_CHECKLIST.csv`.
+
+The file is designed so that each readiness item has:
+- a decision gate;
+- a control area;
+- minimum evidence;
+- accountable institution;
+- independent challenge;
+- pass condition;
+- failure response.
+
+The final field is essential.
+
+A checklist that has no consequence for failure becomes ceremonial.
+
+For some items, failure should delay the decision.
+
+For others, it should create a condition, deadline or compensating control.
+
+The responsible authority should document why the response is proportionate to the risk.
+
+### Analytical section 78. Readiness evidence should be independently challengeable
+
+"Government says it is ready" is not a sufficient control.
+
+A readiness file should contain evidence that can be challenged by:
+- another agency;
+- an external technical reviewer;
+- auditor;
+- court where appropriate;
+- parliament;
+- public researcher for non-confidential material.
+
+This does not mean every decision requires consensus.
+
+It means the decision record should survive scrutiny.
+
+### Analytical section 79. The RACI solves overlapping mandates before they become disputes
+
+Edition 2.0 adds `PETROLEUM_GOVERNANCE_RACI.csv`.
+
+A RACI is useful in petroleum governance because multiple institutions legitimately touch the same transaction.
+
+For example, a government cargo can involve:
+- petroleum regulator;
+- marketing function;
+- finance ministry;
+- central bank;
+- legal advisers.
+
+The RACI distinguishes:
+- who performs the work;
+- who is finally accountable;
+- who must be consulted;
+- who must be informed.
+
+This prevents a multi-agency system from becoming an accountability vacuum.
+
+### Analytical section 80. The RACI should be anchored in law
+
+A RACI cannot override statute.
+
+The "accountable" field must reflect the institution legally empowered to make the decision.
+
+If the operational practice differs from the legal mandate, the solution is not to alter the spreadsheet.
+
+The legal framework or administrative delegation must be clarified.
+
+This is why the RACI should be reviewed by public-law counsel before adoption.
+
+### Analytical section 81. A readiness gate should have an evidence room
+
+Each irreversible gate should have an indexed evidence room.
+
+The file structure might contain:
+- legal authority;
+- technical analysis;
+- fiscal model;
+- environmental record;
+- financial assurance;
+- local content;
+- consultation;
+- decision memorandum;
+- approval;
+- conditions;
+- subsequent compliance.
+
+The evidence room can be digital.
+
+Its key feature is version control.
+
+A reviewer should know exactly which documents existed when the decision was taken.
+
+### Analytical section 82. The first-oil dry run should include an error
+
+A simulation that assumes everything works does not test resilience.
+
+The first-oil certification exercise should deliberately introduce:
+- meter failure;
+- incorrect invoice;
+- late cargo settlement;
+- exchange-rate mismatch;
+- missing cost document.
+
+The test is whether controls detect and correct the error.
+
+This is more realistic than a perfect transaction.
+
+### Analytical section 83. The spill drill should include unavailable equipment
+
+Emergency exercises should also introduce failure.
+
+Examples:
+- primary response vessel unavailable;
+- aviation grounded;
+- customs delay;
+- communications outage;
+- simultaneous shoreline concern.
+
+The after-action report should record:
+- decision time;
+- resource time;
+- information gaps;
+- unresolved authority.
+
+The response plan should then be revised.
+
+### Analytical section 84. The first-withdrawal test should follow one project end to end
+
+Rather than evaluating the entire public investment programme at once, a newcomer can choose one petroleum-funded project as a control case.
+
+The review follows:
+NRF withdrawal  
+to Consolidated Fund  
+to appropriation  
+to tender  
+to contract  
+to payment  
+to asset  
+to service outcome.
+
+This creates a model for later scaling.
+
+### Analytical section 85. The adverse-scenario playbook is cross-institutional
+
+Edition 2.0 adds `ADVERSE_SCENARIO_PLAYBOOK.csv`.
+
+The scenarios are deliberately cross-system.
+
+A price shock is not only a petroleum issue.
+
+It affects the budget, fund, debt and public investment.
+
+A spill is not only an environmental issue.
+
+It affects finance, fisheries, health, foreign relations and public communication.
+
+The playbook therefore tests institutional coordination.
+
+### Analytical section 86. The price-shock playbook
+
+A 40% price decline should trigger immediate recalculation of:
+- government entitlement;
+- NRF inflow;
+- withdrawal capacity;
+- medium-term fiscal balance;
+- debt financing;
+- project pipeline.
+
+The response should identify which expenditure is:
+- protected;
+- deferrable;
+- scalable;
+- one-off;
+- recurrent.
+
+This avoids improvised austerity after the shock occurs.
+
+### Analytical section 87. The project-delay playbook
+
+A two-year petroleum project delay affects more than production.
+
+Local suppliers may have invested based on forecast demand.
+
+Government may have built infrastructure.
+
+Workers may have trained for jobs not yet available.
+
+The playbook should therefore update:
+- revenue;
+- local-content demand;
+- labour;
+- public infrastructure timing;
+- borrowing.
+
+### Analytical section 88. The audit-dispute playbook
+
+A large audit dispute should trigger a controlled process rather than a public accounting shortcut.
+
+The register should show:
+- disputed amount;
+- cost category;
+- accounting treatment;
+- negotiation;
+- expert process;
+- arbitration if any;
+- final adjustment.
+
+Government cash should change only when the contractual/accounting process creates a cash or entitlement effect.
+
+### Analytical section 89. The major-spill playbook
+
+The spill playbook begins with life safety and source control.
+
+It then connects:
+- incident command;
+- environmental monitoring;
+- fisheries;
+- health;
+- financial assurance;
+- claims;
+- investigation;
+- public reporting.
+
+The state should know in advance which institution has authority to approve emergency actions and which entity initially pays.
+
+### Analytical section 90. The operator-distress playbook
+
+A petroleum regime should not assume all contractors and guarantors remain financially strong indefinitely.
+
+If a material credit concern arises, government should review:
+- outstanding obligations;
+- insurance;
+- guarantees;
+- decommissioning exposure;
+- assignment rights;
+- joint-venture obligations.
+
+The response should be based on verified financial evidence rather than speculation.
+
+### Analytical section 91. The public-investment overheating playbook
+
+The trigger is not simply "high spending".
+
+The trigger is a combination of:
+- cost escalation;
+- contractor concentration;
+- repeated delay;
+- material variation orders;
+- labour shortage.
+
+The response can include resequencing rather than cancellation.
+
+The objective is to restore delivery capacity.
+
+### Analytical section 92. The household-pressure playbook
+
+A resource boom can produce distributional stress even when aggregate growth is strong.
+
+The playbook should monitor:
+- food;
+- housing;
+- transport;
+- wage distribution;
+- regional prices.
+
+Temporary support should use current evidence and have a defined review or expiry point.
+
+### Analytical section 93. The maritime-incident playbook
+
+For a country with offshore boundary or territorial issues, petroleum operations should have a coordination protocol covering:
+- maritime security;
+- regulator;
+- foreign affairs;
+- operator;
+- insurers.
+
+The protocol should separate operational safety from legal/diplomatic claims.
+
+The book should not predict the merits of an international dispute.
+
+### Analytical section 94. The cyber playbook
+
+Petroleum revenue systems increasingly depend on digital records.
+
+A cyber incident could affect:
+- production reporting;
+- invoicing;
+- bank instructions;
+- permit systems;
+- public dashboards.
+
+The state should preserve an offline recovery path for critical transactions.
+
+Backups should be tested, not merely stored.
+
+### Analytical section 95. The small-state staffing model
+
+A small jurisdiction should distinguish three staffing layers.
+
+**Permanent sovereign core:** officials who own the decision.
+
+**Standing specialist pool:** national or regional experts available when needed.
+
+**Transaction-specific advisers:** external firms retained for a defined project or dispute.
+
+This model avoids the impossible goal of keeping every specialist on the public payroll.
+
+It also avoids outsourcing the sovereign decision itself.
+
+### Analytical section 96. Regional cooperation can create virtual scale
+
+Small states can share or coordinate:
+- spill-response equipment;
+- specialist training;
+- laboratory services;
+- petroleum tax expertise;
+- model contracts;
+- data standards.
+
+Regional cooperation should not erase national authority.
+
+It can reduce the cost of rare specialist capacity.
+
+### Analytical section 97. Adviser rotation and institutional learning
+
+A government that repeatedly hires the same external adviser gains continuity but may create dependence.
+
+The adviser-management system should track:
+- deliverables;
+- knowledge transfer;
+- model ownership;
+- staff trained;
+- successor capability.
+
+For critical functions, the state should be able to change advisers without losing its own records.
+
+### Analytical section 98. The national petroleum handbook should be a living document
+
+The operating manual should not end with first publication.
+
+It should be updated after:
+- each licence round;
+- each development approval;
+- first oil;
+- major audit;
+- major incident;
+- legal judgment;
+- statutory change.
+
+Each edition should preserve the old version.
+
+This creates institutional memory.
+
+### Analytical section 99. Readiness certification should not become a political score
+
+The readiness framework evaluates evidence for defined controls.
+
+It should not be converted into a score ranking governments or political actors.
+
+A decision can be:
+- evidenced;
+- evidenced with condition;
+- not evidenced.
+
+That is sufficient for operational governance.
+
+### Analytical section 100. Edition 2.0 implementation package
+
+The final Edition 2.0 newcomer package should contain:
+- readiness checklist;
+- RACI;
+- source register;
+- clause crosswalk;
+- project register;
+- environmental assurance matrix;
+- NRF ledger;
+- public-investment register;
+- local-value framework;
+- comparator matrix;
+- adverse-scenario playbook;
+- corrections register;
+- publication manifest.
+
+This is what turns the white paper into an operating reference.
+
+### Analytical section 101. Expanded operating-manual conclusion
+
+The strongest transfer from Guyana is not one contract clause or one fund rule.
+
+It is the ability to observe a compressed sequence of decisions and ask what institutions should exist before the next decision becomes irreversible.
+
+Edition 2.0 converts that observation into tools.
+
+A newcomer can replace Guyana's numbers with its own data while preserving the control logic.
+
+That is the standard for a genuinely transferable blueprint.
