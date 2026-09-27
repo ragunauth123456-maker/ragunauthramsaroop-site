@@ -42,12 +42,12 @@ jobs:
           assert pdf.is_file() and pdf.stat().st_size > 50_000
           assert audit["pages_actual"] >= 18
           assert audit["manuscript_words"] >= 6500
-          assert audit["source_records"] == 27
+          assert audit["source_records"] >= 34
           assert audit["full_volume_complete"] is False
           assert audit["external_peer_review"] == "pending"
           assert hashlib.sha256(pdf.read_bytes()).hexdigest() == audit["sha256"]
           assert len((d/"ILLUSTRATIVE_SCENARIOS.csv").read_text().splitlines()) == 10
-          print("PASS: typeset PDF, 27 registered sources, 9 illustrative cases, checksum, draft disclaimers")
+          print("PASS: typeset PDF, current registered sources, 9 illustrative cases, checksum, draft disclaimers")
           print("Actual working PDF pages:", audit["pages_actual"])
           PY
       - uses: actions/upload-artifact@v4
