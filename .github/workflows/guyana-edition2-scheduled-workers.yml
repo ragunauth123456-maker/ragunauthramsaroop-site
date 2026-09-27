@@ -1,0 +1,80 @@
+name: Guyana Edition 2 — scheduled cloud workers
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/guyana-edition2-scheduled-workers.yml']
+  schedule:
+    - cron: '23 11 * * 1,4'
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  D: research-library/guyana-petroleum-blueprint-2026
+jobs:
+  editorial-package:
+    name: Manuscript analysis, finance tests and editable package
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/guyana-petroleum-blueprint-2026
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" editorial
+      - run: python "$D/petroleum_fiscal_sensitivity.py"
+      - run: python "$D/audit_edition2_development.py"
+      - run: python "$D/edition2_cloud_workers.py" package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-scheduled-editable-package
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            edition2-worker-artifacts/edition2-editable-development-package.zip
+            edition2-worker-artifacts/manuscript_gap_audit.*
+            edition2-worker-artifacts/working_package_sha256.json
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PROGRESS_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_FISCAL_MODEL_AUDIT.json
+  sources:
+    name: Live-source URL availability (not factual verification)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/guyana-petroleum-blueprint-2026
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" sources
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-scheduled-source-status
+          if-no-files-found: error
+          retention-days: 30
+          path: edition2-worker-artifacts/source_availability_audit.*
+  exhibits:
+    name: Rebuild chapter and source-ledger SVG exhibits
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/guyana-petroleum-blueprint-2026
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" exhibits
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-scheduled-draft-figures
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            edition2-worker-artifacts/*.svg
+            edition2-worker-artifacts/exhibit_manifest.json
