@@ -25,12 +25,12 @@ This matrix is an audit control for Edition 1.1. It does not replace the full so
 | C017 | Government cost audits identified disputed items | S42, S71, S72 | VERIFIED AS AUDIT/DISPUTE STATUS | Audit exception is not recovered cash |
 | C018 | Guyana 2026 EITI Validation began 15 May and remained ongoing at cut-off | S16, S34, S69, S89 | VERIFIED | No final score or outcome should be stated |
 | C019 | EITI Board recorded concern about stakeholder confidence in civil-society selection | S16, S34, S69 | VERIFIED AS ATTRIBUTED EITI VIEW | Do not convert into author's political conclusion |
-| C020 | Oil Pollution Act 6 of 2025 was enacted and published | S19, S53, S54 | VERIFIED | Enactment does not establish every provision commenced |
-| C021 | Full commencement/implementing status of Act 6 of 2025 | S19, S53, S54 | OPEN | State only what authoritative instruments establish |
-| C022 | May 2026 Court of Appeal altered the earlier financial-assurance order | S20 | LIMITED VERIFIED SUMMARY | Authenticated judgment required for detailed ratio or interpretation |
-| C023 | Actual insurance/parent-guarantee terms and liquidity | S20, permit sources | OPEN | Do not infer coverage from headline figures |
-| C024 | EPA permits and EIAs exist for named projects | S48-S56 | VERIFIED DOCUMENT AVAILABILITY | Permit existence is not performance evidence |
-| C025 | Project-level environmental compliance, incidents and drill performance | S48-S56, S94 | PARTIAL / OPEN | Expand independent monitoring and incident evidence |
+| C020 | Oil Pollution Act 6 of 2025 was enacted and formally published in the Official Gazette | S19, S53, S54, S98 | VERIFIED | Gazetting does not establish commencement of every provision |
+| C021 | Full commencement/implementing status of Act 6 of 2025 | S19, S53, S54, S98 | OPEN AFTER TARGETED GAZETTE CHECK | Official Gazette publication located; no relied-upon commencement order or implementing-regulation instrument established in sources reviewed |
+| C022 | May 2026 Court of Appeal reversed the earlier unlimited-guarantee order and distinguished liability from financial assurance | S20, S101, S105 | VERIFIED AS ATTRIBUTED APPELLATE RESULT | Authenticated Court of Appeal reasons still required for detailed ratio or quotation |
+| C023 | Permits require insurance and parent/affiliate financial-assurance arrangements, while exact executed guarantee/insurance terms remain separate evidence | S31, S99, S100, S102, S103 | PARTIAL / OPEN | Permit clauses verified; executed guarantee amount, operative wording, policy limits and loss-event liquidity remain unreviewed |
+| C024 | EPA permits and EIAs exist for named projects | S48-S56, S99-S100 | VERIFIED DOCUMENT AVAILABILITY | Permit existence is not performance evidence |
+| C025 | Project-level environmental compliance, incidents and drill performance | S48-S56, S94, S99-S100 | PARTIAL / OPEN | Permit terms are better pinned down; independent compliance, incident and response-performance evidence still needs expansion |
 | C026 | Local Content Act 2021 created statutory framework | S57 | VERIFIED | Separate legal requirements from outcome claims |
 | C027 | Gross local procurement is not equivalent to domestic value added | S57-S60 | ANALYTICAL CONTROL | Build ownership/import/wage/profit bridge |
 | C028 | 2018/2019 HBS is historical, not a 2026 welfare measure | S61 | VERIFIED | Do not label old poverty or consumption data as current |
@@ -51,7 +51,13 @@ This matrix is an audit control for Edition 1.1. It does not replace the full so
 | C043 | Carbon-credit cash, issuance, transfer and retirement are separate accounting events | S23, S32, S95 | ANALYTICAL CONTROL | Keep petroleum and carbon ledgers separate |
 | C044 | Public investment allocation is not equivalent to delivered public service | S64, S65, S73 | ANALYTICAL CONTROL | Project-level completion and maintenance evidence required |
 | C045 | No external peer review has been completed | Publication records | VERIFIED | Must remain explicit until reviewers and response log exist |
+| C046 | Authenticated CCJ reasons identify the underlying Collins/Whyte litigation, Liza 1 permit condition 14 and Environmental Protection Act section 31 | S103 | VERIFIED WITH PARAGRAPH PINPOINTS | 2024 CCJ decision concerns intervention/procedure, not the May 2026 merits appeal |
+| C047 | EITI Validation Committee discussed preliminary Guyana mission findings in June 2026 | S104 | VERIFIED AS PROCESS STATUS | Not a final Validation decision |
+| C048 | Contemporary reporting says leave was later granted to challenge the May 2026 appellate result before the CCJ | S106 | ATTRIBUTED SECONDARY / OPEN FOR DOCKET CONFIRMATION | Do not describe as a current CCJ merits decision without official docket evidence |
+| C049 | Uaru permit conditions 14.3-14.5 distinguish credible-cost estimation, insurance and parent/affiliate guarantee obligations | S99 | VERIFIED WITH PERMIT PINPOINTS | Does not establish exact current guarantee amount or insurance limits |
+| C050 | Liza Phase 1 permit history confirms EIA, management plan and spill/wildlife-response materials are incorporated into the project authorization record | S100 | VERIFIED DOCUMENT INCORPORATION | Incorporation does not establish implementation quality or compliance |
+
 
 ## Pinpoint standard for Edition 1.1
 
-Every legal proposition should cite the section, clause or page of the controlling instrument where available. Every material number should carry observation date, currency/unit, source ID and accounting boundary. Every contested interpretation should identify the speaker or institution. Every unresolved matter should be marked OPEN rather than resolved by inference.
+Every legal proposition should cite the section, clause, paragraph or page of the controlling instrument where available. LEGAL_EVIDENCE_LEDGER.md is the controlling pinpoint crosswalk for the highest-risk legal and environmental propositions. Every material number should carry observation date, currency/unit, source ID and accounting boundary. Every contested interpretation should identify the speaker or institution. Every unresolved matter should be marked OPEN rather than resolved by inference.
