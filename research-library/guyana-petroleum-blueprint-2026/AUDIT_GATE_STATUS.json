@@ -1,0 +1,22 @@
+{
+  "edition": "1.1-candidate",
+  "audit_date": "2026-09-27",
+  "overall_status": "internal_adversarial_audit_open",
+  "publication_complete": false,
+  "external_peer_review": "pending",
+  "political_ranking": "none",
+  "gates": {
+    "chronology": {"status": "pass", "note": "Discovery, agreement, licence, fund and production dates are versioned and separated."},
+    "petroleum_contract": {"status": "conditional", "note": "Core mechanics verified; final clause-level pinpoints and open dispute outcomes remain."},
+    "production": {"status": "pass_with_reconciliation", "note": "Capacity, daily milestones and monthly realized output are separated; cargo-to-cash bridge remains a reconciliation task."},
+    "nrf": {"status": "conditional", "note": "Audited statements through 2025 added; 2026 monthly and mid-year bridge requires final reconciliation."},
+    "environment": {"status": "open", "note": "Permits and EIA records exist; commencement, financial assurance, compliance, incident and response evidence remain incomplete."},
+    "social_local_value": {"status": "open", "note": "Historic household survey limits and gross-procurement limitations are disclosed; independent current outcomes require more evidence."},
+    "climate_natural_capital": {"status": "conditional", "note": "Oil and forest-carbon ledgers are separated; CORSIA and Indigenous safeguard evidence expanded."},
+    "eiti_governance": {"status": "pass_as_of_cutoff", "note": "Validation accurately described as ongoing on 27 September 2026."},
+    "comparators": {"status": "pass_with_transfer_limits", "note": "Comparator mechanisms are sourced and no political ranking is used."},
+    "quantitative_models": {"status": "conditional", "note": "Models are illustrative with assumptions disclosed; publication tables require redesign for readability."},
+    "editorial_integrity": {"status": "conditional", "note": "Adversarial audit completed; source-to-claim matrix added; open evidence remains explicit."},
+    "pdf_qa": {"status": "open", "note": "Searchable and visually stable, but TOC hierarchy, scenario tables, candidate status and accessibility require rebuild."}
+  }
+}
