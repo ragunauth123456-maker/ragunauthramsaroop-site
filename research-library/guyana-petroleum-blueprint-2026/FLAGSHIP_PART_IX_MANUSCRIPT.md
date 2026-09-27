@@ -411,3 +411,296 @@ The transferable lesson is methodological.
 A newcomer should not ask "Which country should we copy?"
 
 It should ask "Which mechanism solves our specific problem, what prerequisites does it require, and how does it fail under stress?"
+
+
+## Edition 2.0 comparator deepening: mechanism-by-mechanism transfer tests
+
+### Analytical section 50P. Norway is primarily a sequencing and integration comparator
+
+Norway's relevance is often overstated through superficial reference to fund size.
+
+The more useful mechanisms are:
+- separation of petroleum cash flows from ordinary policy rhetoric;
+- integrated tax and state participation;
+- accumulation of foreign financial assets;
+- budget integration through a fiscal guideline;
+- long institutional continuity.
+
+The 3% guideline is context-specific. [S25, S74]
+
+A new producer with infrastructure gaps, lower income and a small initial fund should not copy that number.
+
+It can copy the discipline of linking withdrawal decisions to long-run fiscal capacity.
+
+### Analytical section 50Q. Ghana demonstrates purpose-separated funds
+
+Ghana's architecture distinguishes stabilization and heritage objectives. [S24, S75, S76]
+
+This is useful because the objectives are conceptually different.
+
+Stabilization addresses volatility faced by the current budget.
+
+Heritage saving addresses intergenerational transfer.
+
+A country that combines both purposes in one account can still function well, but the accounting should show how much of the fund is intended for each purpose.
+
+The transferable lesson is objective clarity.
+
+### Analytical section 50R. Ghana also shows why earmarks and rules require implementation evidence
+
+Formal law can specify allocations while later fiscal conditions create pressure for change.
+
+The comparative chapter should therefore examine both:
+- statutory formula;
+- actual transfer/withdrawal history.
+
+A rule's credibility is observed through its behavior under stress.
+
+This is why the Guyana chapter should not infer long-run discipline solely from the text of the NRF Act.
+
+### Analytical section 50S. Timor-Leste is the depletion comparator
+
+Timor-Leste's Petroleum Fund is especially relevant to small producers because the country demonstrates how a professionally reported fund can coexist with deep fiscal dependence on petroleum wealth. [S77, S78]
+
+The mechanism lesson is that investment management and fiscal sustainability are separate systems.
+
+A fund can be operationally well managed while withdrawals erode long-run wealth faster than sustainable income.
+
+The Guyana stress model should therefore include a "high permanent withdrawal" case even when near-term fund balances remain large.
+
+### Analytical section 50T. Trinidad and Tobago is a mature regional energy-economy comparator
+
+Trinidad and Tobago offers several relevant mechanisms:
+- long petroleum/gas history;
+- downstream industry;
+- Heritage and Stabilisation Fund;
+- mature energy labour market;
+- exposure to resource-cycle decline.
+
+Its industrial pathway depends on gas resources, infrastructure, market access and decades of accumulated capability.
+
+Guyana should therefore study downstream mechanisms without assuming the same industrial structure is automatically transferable.
+
+### Analytical section 50U. Suriname is the closest geographic pre-production comparator
+
+Suriname's GranMorgu project is useful because it provides a neighbouring first-oil preparation case with shared regional conditions but different institutions and state-company history. [S79]
+
+The comparison should focus on:
+- pre-production fiscal preparation;
+- Staatsolie role;
+- local content;
+- environmental regulation;
+- fund planning;
+- infrastructure.
+
+The key rule is to compare readiness while first oil is still future, not to present planned 2028 outcomes as achieved results.
+
+### Analytical section 50V. Senegal is a state-participation transparency comparator
+
+Senegal's EITI record highlights the need to reconcile state-company financing, production shares and resource-revenue flows after first oil. [S113, S114]
+
+A newcomer considering a national oil company should therefore publish:
+- equity interest;
+- financing;
+- carried interest if any;
+- debt;
+- dividends;
+- production share;
+- transactions with government.
+
+State participation can support national capability.
+
+It also creates an additional public balance sheet.
+
+### Analytical section 50W. Mauritania is a hydrocarbon-tax administration comparator
+
+Mauritania's technical-assistance record shows that hydrocarbon revenue administration is a specialist capability requiring deliberate development. [S115]
+
+This is especially relevant for gas/LNG because the commercial chain can include:
+- feed gas;
+- liquefaction;
+- transportation;
+- LNG sales;
+- related-party transactions;
+- multiple jurisdictions.
+
+The takeaway for Guyana's future gas developments is direct: petroleum audit capacity must expand beyond crude-oil cost recovery if the commercial structure changes.
+
+### Analytical section 50X. Uganda is a readiness-time comparator
+
+Uganda's long interval between discovery and production created a different institutional opportunity set. [S117, S118]
+
+It could develop:
+- petroleum authority;
+- national oil company;
+- petroleum fund;
+- local-content systems;
+- EITI participation;
+- environmental arrangements.
+
+The comparison should not claim that more preparation time automatically produces better outcomes.
+
+It demonstrates that time is a resource.
+
+A country with a longer pre-first-oil window should be held to a higher preparation standard.
+
+### Analytical section 50Y. Mozambique is a current fund-design comparator
+
+Mozambique's 2024 sovereign-fund law provides a contemporary case of designing a rule before very large LNG revenues fully mature. [S119, S120]
+
+The law explicitly combines development, stabilization and intergenerational objectives.
+
+This creates a useful design question for Guyana and other new producers:
+
+Should the resource fund itself have multiple objectives, or should some objectives be implemented through the budget?
+
+The answer depends on governance capacity and the desired separation between investment management and domestic spending.
+
+### Analytical section 50Z. Chile is the commodity-price smoothing comparator
+
+Chile's structural-balance framework is valuable because it addresses a problem common to commodity states: temporary revenue can look permanent during a price boom. [S121]
+
+The transfer principle is to estimate fiscal capacity using a structural or medium-term basis.
+
+The specific copper-price methodology need not be copied.
+
+For a petroleum producer, an analogous framework could use conservative long-term price, production and cost assumptions.
+
+### Analytical section 50AA. Botswana is the buffer-depletion comparator
+
+Botswana's Pula Fund and broader reserve management show how resource wealth can create large financial buffers. [S122]
+
+The more recent fiscal record shows that buffers can also decline when commodity revenue weakens and fiscal deficits persist. [S123]
+
+This is important because resource-governance literature often studies accumulation more than drawdown.
+
+Edition 2.0 should explicitly ask how Guyana's framework behaves when production matures or price falls.
+
+### Analytical section 50AB. Comparator mechanisms should be tested under the same stress
+
+To make the comparison operational, each mechanism should be tested against a common stress set:
+- 40% commodity price fall;
+- two-year development delay;
+- large public-investment programme;
+- disaster;
+- debt increase;
+- reserve depletion.
+
+The question is not which country "wins".
+
+The question is what each mechanism is designed to absorb.
+
+### Analytical section 50AC. State oil companies need a separate governance template
+
+Across the comparator set, national oil companies play different roles.
+
+A template should record:
+- regulator or commercial role;
+- equity participation;
+- borrowing authority;
+- government guarantee;
+- audited financials;
+- procurement;
+- dividend policy;
+- off-budget activity.
+
+Combining regulator and commercial operator roles can create conflicts that need explicit controls.
+
+### Analytical section 50AD. Fund governance should be compared separately from fiscal policy
+
+Two countries can have similarly professional sovereign-fund investment management but very different budget discipline.
+
+The comparator matrix should therefore separate:
+- fund operational governance;
+- deposit rule;
+- withdrawal rule;
+- medium-term fiscal rule;
+- debt policy.
+
+This prevents a well-managed investment portfolio from being treated as proof of a sustainable fiscal stance.
+
+### Analytical section 50AE. Local content should be compared by capability stage
+
+A 50% local target in one country is not comparable to 50% in another if the underlying categories differ.
+
+Comparator analysis should identify:
+- definition of local company;
+- ownership threshold;
+- categories;
+- employment levels;
+- reporting;
+- supplier capability.
+
+The transfer question is which capabilities are economically plausible at national scale.
+
+### Analytical section 50AF. Environmental comparison needs ecological context
+
+An offshore environmental regime in a large continental shelf system differs from one near reefs or dense coastal tourism.
+
+Transferability should therefore consider:
+- water depth;
+- currents;
+- shoreline sensitivity;
+- fisheries;
+- protected areas;
+- response distance;
+- disaster exposure.
+
+A legal clause cannot be transferred without ecological context.
+
+### Analytical section 50AG. Small islands need a concentration adjustment
+
+In a small island economy:
+- one port may dominate imports;
+- one airport may dominate evacuation;
+- one beach zone may dominate tourism;
+- one utility may dominate power.
+
+This concentration raises the consequence of disruption.
+
+The regulatory standard may therefore need more redundancy than the size of the petroleum industry alone would suggest.
+
+### Analytical section 50AH. A mechanism library is more useful than a best-practice list
+
+Edition 2.0 should organize comparator findings into a mechanism library.
+
+Each entry should contain:
+- problem;
+- mechanism;
+- prerequisite;
+- evidence;
+- known failure mode;
+- small-state adaptation;
+- conditions for rejection.
+
+This is more honest than calling a policy universally "best practice".
+
+### Analytical section 50AI. Comparator conclusion
+
+The widened comparator set confirms that no single producer supplies a complete blueprint.
+
+Norway is useful for fiscal integration.
+
+Ghana for distinct fund purposes.
+
+Timor-Leste for depletion and withdrawal dependence.
+
+Trinidad and Tobago for mature regional energy experience.
+
+Suriname for neighbouring pre-first-oil preparation.
+
+Senegal for new production and state participation.
+
+Mauritania for gas-revenue administration.
+
+Uganda for long pre-first-oil institution building.
+
+Mozambique for new sovereign-fund legislation.
+
+Chile for structural commodity smoothing.
+
+Botswana for buffer accumulation and depletion.
+
+The blueprint emerges by selecting mechanisms, testing prerequisites and adapting them to national scale.
+
+That is the comparative method Edition 2.0 should teach.
