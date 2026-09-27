@@ -97,3 +97,317 @@ This framework converts comparison into a disciplined method. A newcomer studies
 No comparator provides a universal template. Norway illustrates long-run financial saving and budget integration. Ghana separates stabilization and heritage functions. Timor-Leste shows the importance of depletion and withdrawal dependence for a small state. Suriname offers a live regional pre-first-oil comparison. Trinidad and Tobago provides a mature Caribbean petroleum and fund case. Guyana contributes a rapid discovery-to-scale sequence combined with a pre-existing forest-finance framework.
 
 The transferable value lies in the questions these cases force a newcomer to answer. How long might the resource last? How volatile is revenue? How strong is the non-resource tax base? Which institutions must function before first cash? How much public investment can the economy absorb? How concentrated is environmental exposure? How quickly can the state correct a weak rule? Those questions are more durable than any copied numerical formula.
+
+## Edition 2.0 deepening: a wider comparator universe
+
+### Analytical section 50A. Why the comparator set must extend beyond famous success cases
+
+Resource-governance comparison becomes misleading when every country is compared only with Norway.
+
+A useful comparator set should include:
+- a mature high-capacity producer;
+- a developing producer with petroleum funds;
+- a small state facing depletion;
+- a neighbouring pre-first-oil state;
+- a mature Caribbean producer;
+- recent African first-oil or first-gas states;
+- a pre-production state with a long preparation period;
+- non-petroleum commodity states with fiscal stabilization experience.
+
+The objective is mechanism comparison.
+
+It is not a country ranking.
+
+Each comparator should answer one defined question.
+
+### Analytical section 50B. Senegal: transparency after first oil and gas
+
+Senegal is useful because the transition from preparation to production occurred recently.
+
+EITI records the updated petroleum legal framework, oil and gas revenue-management law, PETROSEN's role, contract publication and local-content architecture. It also records the entry of Sangomar oil and Greater Tortue Ahmeyim gas into production. [S113-S114]
+
+The comparator value lies in the overlap between:
+- new hydrocarbon revenue;
+- state participation;
+- debt and financing questions;
+- contract review;
+- local content;
+- EITI-based public disclosure.
+
+The 2026 EITI Validation report highlights the importance of tracing state-participation financing and reconciling production-share revenues and related loans. [S114]
+
+For Guyana, this provides a useful external test of the principle that state participation creates an additional accounting chain.
+
+A national oil company or state equity stake does not replace the need for transparent budget and revenue accounting.
+
+It adds:
+- shareholder financing;
+- dividends;
+- debt service;
+- production entitlement;
+- related-party transfers.
+
+A newcomer considering state participation should therefore model both commercial upside and contingent public liabilities.
+
+### Analytical section 50C. Mauritania: building revenue-administration capacity around first gas
+
+Mauritania offers a different lesson because the Greater Tortue Ahmeyim gas project required revenue-administration capacity in a cross-border LNG development.
+
+IMF technical assistance in 2025 focused directly on hydrocarbon tax administration and a medium-term capacity-development plan. [S115]
+
+EITI's 2024 Validation also emphasized contract publication, national oil-company transparency, beneficial ownership and the need for stronger reporting around the hydrocarbon revenue fund. [S116]
+
+The transferable lesson is that first gas can be institutionally different from first oil.
+
+Gas projects often involve:
+- processing;
+- LNG pricing;
+- long-term sales contracts;
+- transportation;
+- shared cross-border infrastructure;
+- domestic gas allocation.
+
+A newcomer should therefore design tax and transfer-pricing capability for the actual commercial chain.
+
+A crude-oil audit model is not automatically sufficient for LNG.
+
+### Analytical section 50D. Uganda: a long pre-first-oil preparation period
+
+Uganda provides a useful contrast to Guyana's compressed discovery-to-production timeline.
+
+The country discovered commercial oil years before production, allowing a longer period for legal, institutional, infrastructure and local-content preparation.
+
+Uganda EITI documents a petroleum authority, national oil company, petroleum fund, cost-recovery framework, beneficial-ownership reforms, environmental-management systems and local-content arrangements while the sector remained pre-production. [S117-S118]
+
+This makes Uganda a valuable case for one question:
+
+What should a state do when it has time?
+
+A longer pre-first-oil window can support:
+- institutional staffing;
+- petroleum fund design;
+- contract-administration systems;
+- beneficial ownership;
+- procurement preparation;
+- environmental baseline work;
+- public communication.
+
+Long preparation does not guarantee strong operating outcomes.
+
+It does reduce the argument that institutions could not be built because production arrived too quickly.
+
+### Analytical section 50E. Mozambique: statutory sovereign-fund design before full revenue scale
+
+Mozambique's 2024 Sovereign Wealth Fund law provides a current example of formal rules designed around future petroleum and gas revenue.
+
+The statute establishes development, stabilization and intergenerational objectives, specifies eligible revenue, defines transfer rules and assigns roles to the budget and fund. [S119]
+
+Banco de Moçambique later documented operational management and initial capitalization. [S120]
+
+This comparator is useful because the law explicitly tries to combine near-term development finance with saving.
+
+For a newcomer, the mechanism questions are:
+- How is the revenue projection calculated?
+- How much goes to the budget?
+- How much remains in the fund?
+- What happens when actual revenue is below projection?
+- What is the role of parliament?
+- Which assets can the fund hold?
+
+These questions are transferable even when the numerical percentages are not.
+
+### Analytical section 50F. Chile: the structural-balance principle
+
+Chile is not a petroleum comparator.
+
+It is a resource-revenue stabilization comparator.
+
+Its fiscal framework uses a structural-balance concept to reduce the effect of cyclical commodity revenue on annual spending, supported by sovereign financial buffers. IMF analysis describes the interaction between the structural balance, stabilization fund and debt anchor. [S121]
+
+The transferable mechanism is the separation of permanent or structural fiscal capacity from temporary commodity conditions.
+
+For Guyana or another producer, the analogous question is whether annual expenditure is being set using a temporary petroleum-price and production peak or a more conservative medium-term resource envelope.
+
+The exact Chilean formula should not be transplanted.
+
+The principle of smoothing volatile revenue can be.
+
+### Analytical section 50G. Botswana: the risk of buffer depletion even after decades of resource income
+
+Botswana provides a useful non-petroleum case because the Pula Fund and long diamond history demonstrate that resource wealth can support financial buffers for decades. [S122]
+
+IMF analysis in 2024 also documents a different side of the story: mineral-revenue weakness and spending can reduce financial buffers even when public debt remains relatively low. [S123]
+
+The lesson is not that the earlier model failed.
+
+The lesson is that resource-management systems need to survive the mature and declining phases of the commodity cycle.
+
+A fund should not be judged only by how well it accumulates during high-revenue years.
+
+It should also be judged by how the fiscal system behaves when revenue weakens.
+
+### Analytical section 50H. Cross-border projects create a governance layer above the nation
+
+The Senegal-Mauritania GTA project demonstrates a governance issue that is increasingly relevant to small states.
+
+A petroleum or gas field can cross a maritime boundary or depend on shared infrastructure.
+
+This creates questions about:
+- unitization;
+- revenue allocation;
+- metering;
+- tax jurisdiction;
+- emergency response;
+- environmental liability;
+- domestic supply;
+- dispute resolution.
+
+A newcomer with a boundary-adjacent discovery should therefore prepare for treaty-level or intergovernmental arrangements in addition to domestic law.
+
+### Analytical section 50I. State participation should be treated as a financing decision
+
+Comparators differ in the role of national oil companies and state equity.
+
+The decision to take an equity share should be modelled like any other investment.
+
+The state should estimate:
+- capital contribution;
+- financing source;
+- cost of debt;
+- downside exposure;
+- dividend timing;
+- governance;
+- technical learning;
+- opportunity cost.
+
+Equity participation can create knowledge and revenue.
+
+It can also create contingent liabilities or obscure the boundary between commercial and sovereign functions if poorly governed.
+
+### Analytical section 50J. Sovereign funds should be compared by cash-flow function
+
+A fund comparison should not start with the fund's name.
+
+It should start with what cash flow the fund is designed to manage.
+
+A stabilization fund absorbs volatility.
+
+A savings fund transfers wealth across generations.
+
+A financing fund integrates resource revenue with the budget.
+
+A pension reserve has a different liability structure.
+
+Some funds combine several functions.
+
+The comparator table should therefore show:
+- deposit rule;
+- withdrawal rule;
+- investment objective;
+- budget integration;
+- audit;
+- governance;
+- escape clauses.
+
+This is more useful than comparing asset size.
+
+### Analytical section 50K. New producers should be compared by institutional timing
+
+The most important comparator question may be when an institution was created.
+
+For each country, the timeline should record:
+- discovery;
+- petroleum law;
+- model contract;
+- environmental law;
+- revenue fund;
+- beneficial-ownership rules;
+- local-content law;
+- first production;
+- first withdrawal.
+
+A country that creates a revenue framework before first oil is solving a different problem from one that reforms after years of production.
+
+The timing itself is a policy variable.
+
+### Analytical section 50L. Comparator failures are as valuable as successful mechanisms
+
+A responsible comparative chapter should not search only for practices to copy.
+
+It should identify failure modes.
+
+Common failure modes include:
+- rigid fund rules that are bypassed;
+- excessive withdrawal;
+- underinvestment in regulator capacity;
+- state-company debt opacity;
+- weak beneficial-ownership data;
+- delayed cost auditing;
+- infrastructure booms that exceed capacity;
+- environmental response designed too late.
+
+The point is not to label a country a failure.
+
+It is to isolate a mechanism that can break.
+
+### Analytical section 50M. Small-state concentration should be its own comparative variable
+
+A policy that works in a large diversified economy may behave differently in a country where one project dominates exports and public revenue.
+
+The comparator table should therefore include:
+- population;
+- non-resource GDP;
+- export concentration;
+- public-sector size;
+- labour force;
+- number of major ports;
+- disaster exposure;
+- reserve life.
+
+This makes the comparison more relevant to islands and small coastal states.
+
+### Analytical section 50N. A transferability scorecard without country rankings
+
+The publication should not rank political systems or governments.
+
+It can still assess whether a mechanism is transferable.
+
+Each mechanism can be tested against:
+- institutional complexity;
+- data requirement;
+- staffing requirement;
+- fiscal volatility;
+- market-size dependence;
+- ecological dependence;
+- legal dependence;
+- reversibility.
+
+The result is a mechanism profile.
+
+For example, a simple monthly petroleum ledger may have high transferability.
+
+A forest-carbon system requiring a large standing tropical forest has low transferability to a coral island.
+
+### Analytical section 50O. Expanded Part IX conclusion
+
+The wider comparator set changes the purpose of the book.
+
+Guyana is no longer being compared only with established petroleum producers.
+
+It is placed in a sequence that includes recent first-oil states, first-gas states, long pre-production preparations and non-petroleum commodity fiscal frameworks.
+
+Senegal shows the accounting complexity created by state participation and new production. [S113-S114]
+
+Mauritania shows the need to build revenue administration around a complex LNG chain. [S115-S116]
+
+Uganda shows what can be prepared during a long pre-first-oil window. [S117-S118]
+
+Mozambique shows a new statutory sovereign-fund architecture. [S119-S120]
+
+Chile and Botswana show that stabilization and buffer management can be studied outside petroleum. [S121-S123]
+
+The transferable lesson is methodological.
+
+A newcomer should not ask "Which country should we copy?"
+
+It should ask "Which mechanism solves our specific problem, what prerequisites does it require, and how does it fail under stress?"
