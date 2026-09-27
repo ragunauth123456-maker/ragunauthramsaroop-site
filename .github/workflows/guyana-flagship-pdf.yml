@@ -1,0 +1,63 @@
+name: Guyana flagship publication PDF
+on:
+  push:
+    branches: [research/guyana-petroleum-blueprint-2026]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/*.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.csv'
+      - 'research-library/guyana-petroleum-blueprint-2026/build_flagship_pdf.py'
+      - '.github/workflows/guyana-flagship-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-flagship:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF dependencies
+        run: python -m pip install 'reportlab>=4,<5' 'pymupdf>=1.26,<2'
+      - name: Build and audit flagship
+        run: python research-library/guyana-petroleum-blueprint-2026/build_flagship_pdf.py
+      - name: Verify publication gate
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          d=pathlib.Path("research-library/guyana-petroleum-blueprint-2026")
+          a=json.loads((d/"FLAGSHIP_PDF_AUDIT.json").read_text())
+          p=d/a["document"]
+          assert a["pages_actual"]>=500
+          assert a["source_records"]>=80
+          assert a["publication_complete"] is True
+          assert a["external_peer_review"]=="not_claimed"
+          assert a["political_ranking"]=="none"
+          assert a["searchable_text"] is True
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==a["sha256"]
+          print("PASS",json.dumps(a,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guyana-petroleum-flagship-publication
+          if-no-files-found: error
+          path: |
+            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-flagship-2026.pdf
+            research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
+            research-library/guyana-petroleum-blueprint-2026/_flagship_preview_*.png
+      - name: Commit audited flagship to research branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-flagship-2026.pdf
+          git add research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
+          if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
+          git commit -m "research: publish audited 500-page-plus Guyana flagship [skip ci]"
+          git push origin HEAD:research/guyana-petroleum-blueprint-2026
