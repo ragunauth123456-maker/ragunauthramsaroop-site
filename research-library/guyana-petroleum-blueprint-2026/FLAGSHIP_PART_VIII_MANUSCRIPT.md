@@ -334,3 +334,401 @@ For a newcomer, the blueprint is to build one common data architecture across le
 Every material figure should have a source owner, observation date, revision history and transaction boundary.
 
 That architecture makes scrutiny cheaper, dispute resolution faster and institutional learning more durable.
+
+
+## Edition 2.0 operating-accountability deepening: from disclosure to institutional assurance
+
+### Analytical section 43O. Every important number should have an institutional owner
+
+A public data system becomes fragile when a number is widely cited but no institution clearly owns the underlying record.
+
+Edition 2.0 therefore treats data ownership as an accountability question.
+
+For each major petroleum and development indicator, the government should identify:
+- producing institution;
+- approving institution;
+- publication frequency;
+- revision authority;
+- source system;
+- legal basis;
+- retention period.
+
+Examples include:
+- daily and monthly petroleum production;
+- government lifts;
+- royalty;
+- profit-oil receipts;
+- recoverable-cost balance;
+- NRF assets;
+- budget withdrawals;
+- local-content procurement;
+- permit compliance.
+
+A number should not migrate between institutions without retaining its original source identifier.
+
+### Analytical section 43P. The petroleum block register should be a legal index
+
+The official block register already provides key dates and licence information. [S03, S41]
+
+A mature register should also link:
+- executed agreement;
+- amendments;
+- exploration licence;
+- production licence;
+- assignments;
+- operator;
+- co-venturers;
+- beneficial ownership;
+- field-development approvals;
+- environmental permits.
+
+This allows a reviewer to navigate from acreage to operative legal instruments.
+
+### Analytical section 43Q. Production disclosure should carry revision history
+
+Production data can be revised because of late operator reporting, metering corrections or classification changes.
+
+The public series should therefore preserve:
+- release date;
+- original value;
+- revised value;
+- reason.
+
+A data series that silently overwrites history creates avoidable suspicion.
+
+Versioned data is more credible even when revisions are frequent.
+
+### Analytical section 43R. Revenue disclosure should reconcile physical and cash systems
+
+Government revenue reporting should answer three different questions.
+
+**Physical entitlement:** how much petroleum was due to government?
+
+**Commercial realization:** what cargoes were sold and at what value?
+
+**Cash receipt:** when did money enter the NRF?
+
+A strong disclosure package should show the bridge.
+
+This would make the public record more resilient to timing differences between production, lifting and settlement.
+
+### Analytical section 43S. The cost-audit register should show unresolved amounts without sensationalizing them
+
+Cost-audit transparency is difficult because large figures attract attention before disputes are resolved.
+
+A public audit-status register could show:
+- audit period;
+- amount reviewed;
+- exception amount;
+- operator response;
+- amount agreed;
+- amount disputed;
+- final adjustment;
+- status date.
+
+The register should avoid describing the gross exception as money already recovered.
+
+This protects both public accountability and procedural fairness.
+
+### Analytical section 43T. Audit capacity should be reported like production capacity
+
+A petroleum state should publish basic information about its audit capability:
+- number of specialist auditors;
+- audit periods open;
+- audit periods completed;
+- external specialists retained;
+- deadlines;
+- disputed findings.
+
+This does not reveal confidential audit strategy.
+
+It tells the public whether contractual rights are being exercised within time limits.
+
+### Analytical section 43U. The Auditor General and petroleum-specific audit functions are complementary
+
+The Auditor General audits public accounts and public entities under public law.
+
+Petroleum cost recovery requires technical and contractual review of contractor expenditure.
+
+Tax administration has another legal mandate.
+
+These functions should coordinate while retaining their distinct authorities.
+
+A common error is to assume that one audit institution covers the entire resource value chain.
+
+It does not.
+
+The accountability map should therefore show:
+- contractor cost audit;
+- tax audit;
+- NRF financial audit;
+- public expenditure audit;
+- performance audit.
+
+### Analytical section 43V. Public Accountability and Oversight Committee evidence should be integrated with the fund accounts
+
+Oversight reports can provide a different perspective from the financial statements.
+
+The strongest review compares:
+- Bank of Guyana fund statements;
+- Ministry withdrawal notifications;
+- parliamentary approvals;
+- oversight committee reporting.
+
+Differences in closing balance or terminology should be reconciled, not ignored.
+
+The 2023 example identified in the research illustrates why accounting basis must be explicit.
+
+### Analytical section 43W. Parliamentary authorization should be machine-traceable
+
+For each NRF withdrawal, the public record should identify:
+- statutory authority;
+- annual ceiling;
+- National Assembly approval;
+- date and amount of each transfer;
+- Consolidated Fund receipt;
+- budget programme.
+
+A reviewer should not have to search several PDFs to reconstruct the sequence.
+
+Edition 2.0's NRF ledger is designed to model this approach.
+
+### Analytical section 43X. Procurement disclosure should link planning to award to execution
+
+A public procurement record should show:
+- project ID;
+- budget;
+- tender;
+- bidders;
+- award;
+- beneficial owner;
+- contract value;
+- variations;
+- payments;
+- completion;
+- defects;
+- final account.
+
+This creates an audit trail from appropriation to asset.
+
+Where security or commercial confidentiality applies, the restriction should be specific rather than blanket.
+
+### Analytical section 43Y. Contract variations should be a separate risk indicator
+
+Large public projects often change after award.
+
+A variation is not automatically evidence of poor management.
+
+The dashboard should still track:
+- original contract value;
+- cumulative variation;
+- reason;
+- approval;
+- time extension.
+
+A high variation rate across a portfolio can indicate weak design, price volatility or contract-management problems.
+
+### Analytical section 43Z. Beneficial ownership should be linked to conflict screening
+
+Ownership data becomes more useful when connected to decision processes.
+
+Before a licence, procurement award or local-content certification, the responsible institution should be able to screen for:
+- politically exposed persons where legally relevant;
+- government official interests;
+- related parties;
+- sanctions;
+- debarment;
+- common control among nominal competitors.
+
+The output should support lawful conflict management, not political labeling.
+
+### Analytical section 43AA. Local-content verification requires ownership history
+
+A supplier can change shareholders after registration.
+
+The local-content registry should therefore preserve ownership history.
+
+This helps detect temporary structures designed only to qualify for preference.
+
+It also supports longitudinal analysis of whether Guyanese owners increase real control and capability over time.
+
+### Analytical section 43AB. Environmental disclosure should include regulator findings
+
+Publishing an operator environmental report is not the same as publishing regulator oversight.
+
+A public portal should distinguish:
+- operator report;
+- regulator inspection;
+- independent sample;
+- enforcement notice;
+- corrective action.
+
+This lets readers understand who generated the evidence.
+
+### Analytical section 43AC. Incident disclosure needs a clear threshold policy
+
+The public should know which environmental or safety events are disclosed automatically.
+
+The threshold policy should define:
+- severity;
+- timing;
+- minimum information;
+- update process;
+- investigation closure.
+
+This avoids inconsistent disclosure driven by media attention.
+
+### Analytical section 43AD. Statistical capacity is part of petroleum governance
+
+An economy changing as quickly as Guyana's places unusual pressure on national statistics.
+
+GDP weights change.
+
+Labour markets change.
+
+Prices and housing shift.
+
+Business formation accelerates.
+
+Migration can alter population assumptions.
+
+The statistical system therefore needs investment in:
+- household surveys;
+- business registers;
+- price collection;
+- labour-force data;
+- trade data;
+- regional statistics.
+
+Without those upgrades, fiscal data may become more precise while welfare evidence becomes less current.
+
+### Analytical section 43AE. Data gaps should have owners and closure dates
+
+A data-gap register should identify:
+- missing variable;
+- why it matters;
+- current proxy;
+- responsible institution;
+- planned collection;
+- expected date.
+
+This is better than repeatedly stating that "data are unavailable".
+
+The gap itself becomes a management item.
+
+### Analytical section 43AF. Open-data systems need archival durability
+
+Websites change.
+
+Links break.
+
+PDFs are replaced.
+
+A petroleum evidence system should therefore maintain an archival repository with:
+- permanent identifiers;
+- checksum;
+- publication date;
+- superseded version;
+- correction history.
+
+This publication's own manifest and corrections register model the same principle.
+
+### Analytical section 43AG. Civil-society participation should be evaluated through process evidence
+
+Participation should not be treated as a binary label.
+
+A process record can show:
+- notice;
+- eligibility;
+- selection;
+- meeting attendance;
+- submissions;
+- response;
+- grievance.
+
+EITI's 2026 process concerns are relevant because the global Board explicitly recorded concerns about confidence in civil-society representative selection. [S16, S34]
+
+The publication should attribute that concern to EITI and avoid turning it into an independent conclusion about broader political conditions.
+
+### Analytical section 43AH. EITI validation should be a dated institutional test
+
+At the evidence cutoff, Guyana's Validation remained ongoing. [S89]
+
+The book should therefore record:
+- validation start;
+- mission or committee activity;
+- final decision when eventually published;
+- corrective actions if any.
+
+A future edition can update the status without altering the historical record.
+
+### Analytical section 43AI. Judicial decisions should be indexed to the administrative decision they review
+
+For environmental and petroleum litigation, the legal database should connect:
+- permit;
+- administrative decision;
+- High Court proceeding;
+- Court of Appeal;
+- CCJ if applicable;
+- final status.
+
+This is particularly important when public commentary continues while appeals are pending.
+
+### Analytical section 43AJ. Correction is a sign of institutional maturity
+
+A system that never corrects public data is unlikely to be error-free.
+
+The goal should be visible correction.
+
+The correction record should preserve:
+- old value;
+- new value;
+- cause;
+- effect on previous analysis.
+
+Edition 2.0 should use the same rule for its own mistakes.
+
+### Analytical section 43AK. An annual integrated accountability statement
+
+Guyana could eventually publish one integrated resource-accountability statement containing:
+- block and ownership changes;
+- production;
+- cargoes and prices;
+- revenue;
+- cost audits;
+- NRF;
+- budget transfers;
+- public investment delivery;
+- local content;
+- environmental performance;
+- outstanding litigation.
+
+The statement would not replace specialist reports.
+
+It would reconcile them.
+
+### Analytical section 43AL. Accountability maturity should be evaluated by reproducibility
+
+The ultimate test is simple.
+
+Can an informed outside reviewer reproduce a material public claim from the underlying record?
+
+If the answer is yes, the system is moving toward auditability.
+
+If the answer requires private explanation, the public evidence architecture is incomplete.
+
+This standard is demanding but practical.
+
+### Analytical section 43AM. Expanded accountability conclusion
+
+Edition 2.0 treats transparency as an engineering problem.
+
+The resource system generates multiple ledgers.
+
+Accountability requires identifiers, reconciliations, version history, ownership and correction rules that allow those ledgers to connect.
+
+The result is not perfect consensus.
+
+Different institutions and stakeholders may still interpret the evidence differently.
+
+The achievement is that they are debating from a common factual record.
