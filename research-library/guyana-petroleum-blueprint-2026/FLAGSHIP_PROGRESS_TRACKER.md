@@ -136,3 +136,7 @@ Integrated narrative manuscripts now exist for all ten flagship parts. Parts VII
 - Minimum current research package: 54,180 words before a full repository-wide de-duplication count.
 
 These are substantive research-stage chapters, not page padding. The next PDF render must count actual pages only after integrating the new files and auditing repeated material.
+
+## Edition 1.0 publication build
+
+The flagship cloud build passed its PDF publication gate at 518 pages, 484 pages with at least 100 words, 86 source records, searchable text, and zero exact duplicate long paragraphs. The final source wording now treats remaining evidence items as future revision and external-review priorities rather than unpublished blockers. External peer review is not claimed.
