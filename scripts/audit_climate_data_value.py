@@ -8,7 +8,7 @@ main = (DIR / "white-paper.md").read_text(encoding="utf-8")
 appendix = (DIR / "technical-appendices.md").read_text(encoding="utf-8")
 refs = {int(n) for n in re.findall(r"(?m)^\[(\d+)\]\s", main)}
 used = {int(n) for n in re.findall(r"\[(\d+)\]", main + appendix)}
-assert refs == set(range(1, 13)), f"Unexpected source register: {refs}"
+assert refs == set(range(1, 19)), f"Unexpected source register: {refs}"
 assert not (used - refs), f"Unlisted references: {used - refs}"
 assert len(re.findall(r"https://", main)) >= 12
 assert all(w in main.lower() for w in ("counterfactual", "financed emissions", "four-ledger", "hypothetical", "2027", "external peer review"))
