@@ -246,6 +246,22 @@ def build() -> None:
     newcomer = (BASE/"NEW_PRODUCER_BLUEPRINT.md").read_text(encoding="utf-8")
     comparators = (BASE/"COMPARATIVE_CASES.md").read_text(encoding="utf-8")
     sources = (BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
+    expansion_files = [
+        "PART_I_FOUNDATIONS_RESEARCH_DOSSIER.md",
+        "PART_II_CONTRACT_AND_COST_RECOVERY_DOSSIER.md",
+        "PART_III_PRE_FIRST_OIL_AND_PRODUCTION_DOSSIER.md",
+        "PART_IV_NRF_AND_PUBLIC_BALANCE_SHEET_DOSSIER.md",
+        "PART_V_ENVIRONMENT_CLIMATE_AND_SPILL_DOSSIER.md",
+        "PART_VI_LOCAL_CONTENT_AND_SOCIAL_OUTCOMES_DOSSIER.md",
+        "PART_VII_ECONOMIC_TRANSFORMATION_DOSSIER.md",
+        "PART_VIII_ACCOUNTABILITY_AND_INSTITUTIONAL_LEARNING_DOSSIER.md",
+        "PART_IX_COMPARATIVE_CASES_DOSSIER.md",
+        "PART_X_NEW_PRODUCER_OPERATING_MANUAL.md",
+        "NRF_RECONCILIATION_WORKBOOK.md",
+        "ENVIRONMENTAL_PERMIT_AND_RISK_REGISTER.md",
+        "MODEL_METHODS_AND_LIMITATIONS.md",
+    ]
+    expansions = [(name, (BASE/name).read_text(encoding="utf-8")) for name in expansion_files]
     assert len(manuscript.split()) > 6500, "Do not render an empty/placeholder manuscript"
 
     story = [Spacer(1, 23*mm),
@@ -259,9 +275,9 @@ def build() -> None:
              Spacer(1, 11*mm),
              Paragraph("Independent research by Ragunauth Ramsaroop", s["H22"]),
              Paragraph("Working research edition | 27 September 2026", s["Body2"]),
-             Paragraph("First researched chapters and a documented source register. "
-                       "The full 140-160 substantive-page publication and external "
-                       "expert review remain pending.", s["Small2"]),
+             Paragraph("Expanded research compendium with ten research parts, technical "
+                       "workbooks and a documented source register. The final 520-560 "
+                       "substantive-page flagship and external expert review remain pending.", s["Small2"]),
              Spacer(1, 8*mm),
              Paragraph("Source evidence cut-off: 27 September 2026. "
                        "Observed 2026 financial data are through June unless indicated.", s["Small2"]),
@@ -286,6 +302,14 @@ def build() -> None:
     story.extend(markdown_flow(newcomer))
     story.extend([PageBreak(), top_heading("Comparative cases and transfer limits")])
     story.extend(markdown_flow(comparators))
+    story.extend([PageBreak(), top_heading("Expanded flagship research dossiers")])
+    story.append(Paragraph(
+        "The following sections are the current research-stage expansions for the "
+        "520-560-page flagship. They remain subject to integration, source-level "
+        "editing, independent review and final publication QA.", s["Body2"]))
+    for name, text in expansions:
+        story.append(PageBreak())
+        story.extend(markdown_flow(text))
     story.extend([PageBreak(), top_heading("Source register"),
                   Paragraph("Dated source IDs correspond to citations in the manuscript. "
                             "Public URLs link to originals. Key unresolved verification "
@@ -321,8 +345,11 @@ def build() -> None:
           "playbook_words": len(playbook.split()),
           "newcomer_blueprint_words": len(newcomer.split()),
           "comparative_cases_words": len(comparators.split()),
-          "combined_research_words": len(manuscript.split()) + len(playbook.split()) + len(newcomer.split()) + len(comparators.split()),
+          "combined_research_words": len(manuscript.split()) + len(playbook.split()) + len(newcomer.split()) + len(comparators.split()) + sum(len(text.split()) for _, text in expansions),
+          "expansion_words": sum(len(text.split()) for _, text in expansions),
+          "expansion_files": len(expansions),
           "brief_words": len(brief.split()), "source_records": len(source_rows),
+          "flagship_target_pages_min": 520, "flagship_target_pages_max": 560,
           "substantive_pages_at_least_100_words": substantive,
           "sha256": sha, "citations_embedded": True,
           "external_peer_review": "pending", "full_volume_complete": False}
