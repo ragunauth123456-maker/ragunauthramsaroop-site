@@ -1,3 +1,15 @@
+# Edition 2.0 PDF delivery — verified 27 September 2026
+
+**Delivered:** the first fully integrated Edition 2.0 WORKING PDF is now built and published on the research branch: [Open 332-page Edition 2 PDF](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/blob/research/guyana-petroleum-blueprint-2026/research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-edition-2-expanded-working-manuscript.pdf). It contains the complete ten-Part core, the 141-source register, original source-driven NRF bar chart, offshore project register exhibit and transparent NRF annual ledger exhibit. This is a development PDF, not the commissioned completed book.
+
+**Verified cloud CI:** [successful GitHub build and publication run 36358719912](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/actions/runs/36358719912). The cloud PDF audit reports 332 searchable pages, ten bookmarks, 141 rendered sources, zero blank pages, SHA-256 `b5f00b5ae80cca2c6b946d6c3bbb05bbd49fb6a896ac9eb0ea8c6987ae4e0683`.
+
+**Counting convention:** The PDF builder counts **64,752 lexical core words** (word-boundary tokenization); the development tracker below records **68,525 whitespace-delimited core words**. These are different counting methods applied to the expanded ten-Part manuscript, not additional pages or newly completed chapters. The substantive 120,000–150,000-word target remains unmet under either convention.
+
+**Release gates remain open:** Further non-duplicative substantive core writing; full claim-level citation/primary-source pinpoints; exact H1 2026 NRF recognition bridge; independent legal/environmental/social/economic expert review; detailed accessibility testing. PR #61 stays draft; issue #60 stays open. GitHub cloud workers are automated quality and figure-generation jobs, **not** autonomous AI research authors.
+
+---
+
 # CURRENT EDITION 2.0 STATUS — 27 SEPTEMBER 2026
 
 **Integrated core:** 68,525 whitespace-delimited words across ten manuscript Parts. Target 120,000–150,000 substantive, edited and non-repetitive core words before annexes. Minimum remaining: 51,475 words. The 1,920-word increase since the previous verified baseline is two original evidence-backed cases, not automatically AI-generated prose.
