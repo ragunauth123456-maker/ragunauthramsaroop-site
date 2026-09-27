@@ -33,8 +33,13 @@ def build():
         try:
             reader=PdfReader(str(pdf),strict=False)
             pages=[]
-            for pageno,page in enumerate(reader.pages[:MAX_PAGES],start=1):
-                raw=page.extract_text() or ""
+            for pageno,page in enumerate(reader.pages,start=1):
+                if pageno>MAX_PAGES:
+                    break
+                try:
+                    raw=page.extract_text() or ""
+                except Exception:
+                    continue
                 text=normalize(raw)
                 if len(text)>=40:
                     pages.append({"page":pageno,"text":text[:MAX_CHARS_PER_PAGE]})
