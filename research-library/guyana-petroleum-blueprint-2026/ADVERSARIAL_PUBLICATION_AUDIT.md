@@ -242,3 +242,24 @@ Edition 1.1 may be described as internally audited once Gates A-G pass.
 It should not be described as independently peer reviewed, externally validated or immune from future correction unless the corresponding external evidence exists.
 
 No publication can honestly be guaranteed to survive every conceivable criticism. The defensible standard is stronger: every material claim should be traceable, versioned, reproducible where quantitative, transparent about uncertainty and open to correction.
+
+
+## Remediation status after Edition 1.1 rebuild
+
+C1 Publication-status contradiction: REMEDIATED. Edition 1.1 is labelled an internally audited publication candidate. The audit record sets publication_complete=false and external_peer_review=pending.
+
+C2 Page-count overstatement: REMEDIATED IN METRICS. Total rendered pages, lexical-density pages, core integrated pages and core lexical words are now reported separately. Page count is no longer used as proof of research quality.
+
+C3 Architecture drift: REMEDIATED IN PRESENTATION. The ten-part structure remains primary. The 263 granular units are labelled analytical sections rather than chapters and are removed from the primary table of contents.
+
+C4 Source traceability: PARTIALLY REMEDIATED. The source register has expanded from 86 to 97 records and a 45-item high-risk claim-to-source matrix has been added. Full sentence-level pinpoints remain a continuing editorial control.
+
+C5 High-risk legal/regulatory evidence: OPEN. The paper uses narrow language where authenticated appellate text, commencement instruments, financial-assurance instruments or final dispute outcomes have not been established in public sources reviewed.
+
+C6 Scenario-table readability: REMEDIATED. Wide raw CSV dumps have been replaced by six-column human-readable scenario tables while the full CSVs remain machine-readable supplements.
+
+C7 Tagged-PDF accessibility: OPEN. Searchable text and reading order are present, but semantic PDF tagging is not claimed.
+
+C8 External expert review: OPEN. No external peer-review claim will be made until specialist reviews and response logs are completed.
+
+The internally audited candidate is therefore stronger than Edition 1.0, but the external-review and specified open-evidence gates remain visible rather than being masked by a completion label.
