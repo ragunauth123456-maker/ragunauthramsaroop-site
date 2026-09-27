@@ -32,21 +32,24 @@ jobs:
           d=pathlib.Path("research-library/guyana-petroleum-blueprint-2026")
           a=json.loads((d/"FLAGSHIP_PDF_AUDIT.json").read_text())
           p=d/a["document"]
-          assert a["pages_actual"]>=500
-          assert a["source_records"]>=80
-          assert a["publication_complete"] is True
-          assert a["external_peer_review"]=="not_claimed"
+          assert a["pages_actual"]>=400
+          assert a["source_records"]>=95
+          assert a["publication_complete"] is False
+          assert a["external_peer_review"]=="pending"
           assert a["political_ranking"]=="none"
+          assert a["stage"]=="publication_candidate"
+          assert a["tables_redesigned_for_readability"] is True
+          assert a["internal_adversarial_audit"]=="completed_with_open_gates"
           assert a["searchable_text"] is True
           assert hashlib.sha256(p.read_bytes()).hexdigest()==a["sha256"]
           print("PASS",json.dumps(a,indent=2))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: guyana-petroleum-flagship-publication
+          name: guyana-petroleum-edition-1.1-audited-candidate
           if-no-files-found: error
           path: |
-            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-flagship-2026.pdf
+            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
             research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
@@ -56,8 +59,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-flagship-2026.pdf
+          git add research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
           git add research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
           if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
-          git commit -m "research: publish audited 500-page-plus Guyana flagship [skip ci]"
+          git commit -m "research: publish internally audited Guyana Edition 1.1 candidate [skip ci]"
           git push origin HEAD:research/guyana-petroleum-blueprint-2026
