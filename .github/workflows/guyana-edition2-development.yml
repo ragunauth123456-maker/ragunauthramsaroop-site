@@ -1,0 +1,45 @@
+name: Guyana Edition 2 - manuscript and evidence audit
+on:
+  push:
+    branches: [research/guyana-petroleum-blueprint-2026]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PART_*_MANUSCRIPT.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.csv'
+      - 'research-library/guyana-petroleum-blueprint-2026/SOURCE_REGISTER.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/audit_edition2_development.py'
+      - '.github/workflows/guyana-edition2-development.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality-and-working-manuscript:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify source integrity, original core text and quantitative ledgers
+        run: python research-library/guyana-petroleum-blueprint-2026/audit_edition2_development.py
+      - name: Assemble editable development package
+        run: |
+          set -euo pipefail
+          D="research-library/guyana-petroleum-blueprint-2026"
+          mkdir -p /tmp/guyana-edition2-package
+          cp "$D"/FLAGSHIP_PART_*_MANUSCRIPT.md /tmp/guyana-edition2-package/
+          cp "$D"/*.csv /tmp/guyana-edition2-package/
+          cp "$D"/SOURCE_REGISTER.md "$D"/CLAIM_SOURCE_MATRIX.md "$D"/LEGAL_EVIDENCE_LEDGER.md /tmp/guyana-edition2-package/
+          cp "$D"/EDITION2_PROGRESS_AUDIT.json /tmp/guyana-edition2-package/
+          cp "$D"/EDITION_2_CORE_EXPANSION_STANDARD.md /tmp/guyana-edition2-package/
+          cd /tmp/guyana-edition2-package
+          zip -q -9 -r "$GITHUB_WORKSPACE/guyana-edition2-working-manuscripts.zip" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guyana-edition2-working-manuscript-and-evidence
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            guyana-edition2-working-manuscripts.zip
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PROGRESS_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PART_COVERAGE.csv
