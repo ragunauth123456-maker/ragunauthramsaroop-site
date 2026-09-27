@@ -941,3 +941,308 @@ Every permanent expenditure commitment should be tested against a lower petroleu
 The objective is not to predict the exact structure of the economy decades ahead.
 
 It is to ensure that petroleum finance expands national options rather than narrowing them.
+
+
+## Edition 2.0 evidence deepening: the resource-to-asset conversion test
+
+### Analytical section 263Q. Public investment needs a delivery taxonomy
+
+The development chapter should distinguish six stages of public investment.
+
+**Allocated** means parliament has authorized expenditure.
+
+**Contracted** means a procurement process has produced an enforceable agreement.
+
+**Under construction** means physical works have begun.
+
+**Commissioned** means the asset has been accepted for use.
+
+**Operational** means the asset has the staff, power, maintenance and systems required to function.
+
+**Outcome evidenced** means the public can observe a change in service, productivity, travel time, reliability, health access or another defined result.
+
+These stages should never be collapsed into one word such as "delivered".
+
+The distinction matters most during a rapid resource boom because expenditure can grow faster than the evidence systems used to track outcomes.
+
+### Analytical section 263R. The 2026 capital programme illustrates portfolio scale
+
+The 2026 budget contains large allocations across energy, transport, health and other public infrastructure. [S129]
+
+The analytical point is not that a large allocation is inherently positive or negative.
+
+The point is administrative scale.
+
+A state implementing many large projects simultaneously needs:
+- engineers;
+- procurement officers;
+- contract managers;
+- quantity surveyors;
+- auditors;
+- land administration;
+- environmental review;
+- maintenance planners.
+
+If the number and value of projects rise faster than those functions, the marginal risk of delay, variation or weak documentation also rises.
+
+The capital programme should therefore be accompanied by a public-sector delivery-capacity plan.
+
+### Analytical section 263S. The Auditor General provides the necessary counterweight
+
+The Auditor General's 2024 report examined hundreds of public contracts and recorded overpayments and contract-management findings, as well as later recovery or completion actions in the cases described. [S130]
+
+The significance for this publication is methodological.
+
+A budget document tells the reader what government intended to finance.
+
+An audit report tests whether transactions and works were administered correctly.
+
+A project-performance review asks whether the completed asset achieved its purpose.
+
+All three evidence types are needed.
+
+A serious resource-conversion assessment should therefore never rely only on budget speeches or commissioning announcements.
+
+### Analytical section 263T. Drainage and irrigation show why maintenance belongs in the wealth account
+
+The NDIA performance-audit material is particularly relevant to a country exposed to flooding and climate risk.
+
+The audit identified weaknesses in asset-management systems, documentation, staffing and verification of maintenance expenditure during the period reviewed. [S130]
+
+This is not merely an audit issue.
+
+It is a wealth-preservation issue.
+
+Drainage pumps, canals and related infrastructure can protect agriculture, housing and transport. Their economic value depends on availability when extreme rainfall occurs.
+
+A resource-rich state should therefore treat maintenance expenditure as protection of public capital rather than as a lower-status alternative to new construction.
+
+### Analytical section 263U. The bridge example needs both construction and post-opening evidence
+
+The Wismar-Mackenzie Bridge is useful because the evidence cutoff falls just before the reported opening period.
+
+Government reporting on 26 September 2026 described the US$35 million four-lane bridge as nearing opening. [S131]
+
+The correct Edition 2.0 classification at the cutoff is therefore pre-commissioning or near completion.
+
+The next edition should add:
+- actual opening date;
+- traffic volume;
+- travel time;
+- vehicle operating cost;
+- safety;
+- maintenance responsibility.
+
+This demonstrates the value of versioned project registers.
+
+A later operating outcome can be added without rewriting what was known on 27 September 2026.
+
+### Analytical section 263V. Hospital construction should be separated from health-service expansion
+
+Government reporting identifies several hospitals under construction and the 2026 budget allocates substantial health capital. [S129, S132]
+
+The health outcome should not be inferred from the construction contract.
+
+The service chain is:
+building  
+to equipment  
+to staffing  
+to supplies  
+to operating systems  
+to patient access  
+to quality and outcome.
+
+The book should therefore ask for:
+- opening date;
+- staffed beds;
+- diagnostic capability;
+- referral volume;
+- waiting time;
+- utilization;
+- operating cost;
+- maintenance.
+
+A hospital can be physically complete but not yet functioning at designed capacity.
+
+### Analytical section 263W. Road construction should be tested through logistics metrics
+
+The Linden-Mabura road project illustrates another conversion chain.
+
+Government reporting in April 2026 described substantial physical progress. [S133]
+
+Once completed, the relevant development metrics should include:
+- journey time;
+- freight cost;
+- wet-season reliability;
+- accident rates;
+- traffic volume;
+- maintenance condition;
+- cross-border trade.
+
+This is how a transport project enters the productivity analysis.
+
+The book should avoid claiming an increase in trade before the data exist.
+
+### Analytical section 263X. Infrastructure corridors create network value
+
+A bridge, highway or port can have greater value when it connects with other infrastructure.
+
+Network analysis should therefore identify:
+- origin and destination flows;
+- connection to ports;
+- connection to industrial areas;
+- border routes;
+- housing growth;
+- agriculture;
+- tourism.
+
+The value of one link may depend on completion of another.
+
+This creates a sequencing problem.
+
+A state should avoid building expensive links whose economic value is delayed because complementary infrastructure is not ready.
+
+### Analytical section 263Y. Capital project appraisal should include an uncertainty range
+
+A point estimate for project cost or benefit creates false precision.
+
+Appraisal should include uncertainty around:
+- construction cost;
+- completion date;
+- demand;
+- maintenance;
+- foreign exchange;
+- climate exposure.
+
+For large projects, the state should publish at least a base, high-cost and delayed case.
+
+This mirrors the adverse-scenario approach used for petroleum projects.
+
+### Analytical section 263Z. Project selection should be constrained by operating budgets
+
+A country can finance construction from temporary resource revenue while the completed asset creates permanent recurrent costs.
+
+Before approval, every project should identify:
+- annual staffing;
+- utilities;
+- maintenance;
+- insurance;
+- consumables;
+- periodic refurbishment.
+
+The medium-term budget should show how those costs will be financed under a lower petroleum-revenue scenario.
+
+### Analytical section 263AA. Procurement concentration can become a macroeconomic bottleneck
+
+A rapid public investment programme can concentrate contracts among a limited number of firms.
+
+That may reflect capability.
+
+It can also reduce competition.
+
+The public-investment dashboard should monitor:
+- bidders per tender;
+- repeat winners;
+- variation orders;
+- contract extensions;
+- contractor workload.
+
+A contractor carrying too many simultaneous projects can become a delivery risk even if each individual award was competitive.
+
+### Analytical section 263AB. Construction inflation should be separated from real asset growth
+
+A higher capital budget can reflect:
+- more projects;
+- larger projects;
+- higher material cost;
+- higher wages;
+- imported inflation;
+- exchange-rate effects.
+
+Real infrastructure expansion should therefore be analysed using physical output where possible.
+
+Kilometres of road, bridge capacity, hospital beds, megawatts and serviced lots are imperfect but useful complements to nominal spending.
+
+### Analytical section 263AC. Resource revenue should finance resilience as well as growth
+
+For Guyana, public investment must account for coastal and flood exposure.
+
+A road or hospital that is vulnerable to flood disruption may require additional upfront resilience investment.
+
+The appraisal should record:
+- design flood;
+- drainage;
+- elevation;
+- backup power;
+- access redundancy;
+- climate assumptions.
+
+This is a form of lifecycle insurance.
+
+### Analytical section 263AD. The public asset register should be linked to the national accounts carefully
+
+Public capital formation contributes to GDP during construction.
+
+That accounting contribution is not the same as the asset's long-run productivity effect.
+
+The publication should therefore keep three measures separate:
+- construction activity;
+- public asset stock;
+- service/productivity outcome.
+
+This prevents circular reasoning in which high public investment is used to prove both current growth and future productivity without independent evidence.
+
+### Analytical section 263AE. The "resource conversion ratio" should be a dashboard, not one number
+
+It is tempting to create one measure of how successfully resource revenue becomes national wealth.
+
+A single index would conceal too much.
+
+A better dashboard includes:
+- financial assets accumulated;
+- public capital commissioned;
+- maintenance funded;
+- human-capital outcomes;
+- non-oil productivity;
+- export diversification;
+- natural-capital condition.
+
+The dashboard can show movement over time without ranking governments or compressing unlike assets into an arbitrary score.
+
+### Analytical section 263AF. Edition 2.0 public-investment dataset
+
+The new `PUBLIC_INVESTMENT_DELIVERY_REGISTER.csv` records selected projects and programmes by:
+- sector;
+- budget or contract value;
+- status at cutoff;
+- delivery evidence;
+- outcome evidence;
+- maintenance evidence;
+- audit status.
+
+The register deliberately includes rows with "OPEN OUTCOME".
+
+That is not an error.
+
+It is a statement that the book knows the difference between expenditure and result.
+
+### Analytical section 263AG. Development conclusion
+
+The resource-to-asset chain is the practical test of whether petroleum revenue produces durable national wealth.
+
+The chain fails if any link is missing:
+- weak appraisal;
+- weak procurement;
+- poor construction;
+- delayed commissioning;
+- inadequate staffing;
+- no maintenance;
+- no measurable service improvement.
+
+The book should therefore follow selected investments across several editions.
+
+A project that is under construction in 2026 should become a commissioned asset only when the evidence supports the transition.
+
+A commissioned asset should become an evidenced development outcome only when operating data support that conclusion.
+
+This is the same audit discipline used elsewhere in the publication, applied to national development.
