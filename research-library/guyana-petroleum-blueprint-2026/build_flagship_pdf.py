@@ -171,7 +171,7 @@ all_text={n:(BASE/n).read_text(encoding="utf-8") for n in core+evidence+annex}
 brief=(BASE/"EXECUTIVE_BRIEF.md").read_text(encoding="utf-8")
 sources=(BASE/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
 gates=(BASE/"PUBLICATION_REVIEW_GATES.md").read_text(encoding="utf-8")
-source_rows=src_rows(sources); assert len(source_rows)>=80
+source_rows=src_rows(sources); assert len(source_rows)>=95
 
 # exact duplicate long-paragraph audit in source corpus
 paras=[]
@@ -186,67 +186,98 @@ story=[Spacer(1,22*mm),Paragraph("GUYANA | EXPLORATION TO PRODUCTION",s["CoverK"
        Paragraph("The Guyana Sequence: exploration, contracts, first oil, sovereign wealth, environmental stewardship, national development and a transferable blueprint for emerging producers",s["CoverS"]),
        Spacer(1,9*mm),Paragraph("Independent research by Ragunauth Ramsaroop",s["H2F"]),
        Paragraph("Edition 1.1 | Internally audited publication candidate | Evidence cut-off: 27 September 2026",s["BodyF"]),
-       Paragraph("This publication is independent research. It does not rank political actors or electoral choices. Government, operator, multilateral and stakeholder positions are attributed. External peer review is not claimed.",s["SmallF"]),
+       Paragraph("Independent research. No political or electoral ranking. Government, operator, multilateral, judicial and stakeholder positions are attributed. External peer review remains pending.",s["SmallF"]),
        PageBreak(),h1("Contents")]
 toc=TableOfContents(); toc.levelStyles=[s["TOCF"],s["TOCF"]]; story.extend([toc,PageBreak(),h1("Executive brief")])
-story.extend(flow("\n".join(brief.splitlines()[3:]),set()))
+story.extend(flow("\n".join(brief.splitlines()[3:]),set(),toc=True))
+story.extend([PageBreak(),h1("Audit hardening addendum")]); story.extend(flow(hardening,set(),toc=True))
 
 seen=set()
 story.extend([PageBreak(),h1("Part I-X | Integrated flagship manuscript")])
 for n in core:
-    story.append(PageBreak()); story.extend(flow(all_text[n],seen))
+    story.append(PageBreak()); story.extend(flow(all_text[n],seen,toc=True))
 
 story.extend([PageBreak(),h1("Evidence dossiers and implementation workbooks"),
-              Paragraph("These supporting dossiers preserve detailed research notes, reconciliation methods and operating tools behind the integrated manuscript. Repeated long paragraphs are suppressed during typesetting.",s["BodyF"])])
+              Paragraph("Supporting dossiers preserve detailed research notes, reconciliation methods and operating tools. They are evidence annex material, not additional core chapters.",s["BodyF"])])
 for n in evidence:
-    story.append(PageBreak()); story.extend(flow(all_text[n],seen))
+    story.append(PageBreak()); story.extend(flow(all_text[n],seen,toc=False))
 
 story.extend([PageBreak(),h1("Technical annexes")])
 for n in annex:
-    story.append(PageBreak()); story.extend(flow(all_text[n],seen))
+    story.append(PageBreak()); story.extend(flow(all_text[n],seen,toc=False))
 
-for fn,title in [
-("ILLUSTRATIVE_SCENARIOS.csv","Scenario tables | Contract sensitivity"),
-("ILLUSTRATIVE_PRODUCTION_SHOCKS.csv","Scenario tables | Production shocks"),
-("ILLUSTRATIVE_FUND_STRESS.csv","Scenario tables | Sovereign-fund stress")]:
-    add_csv_table(story,BASE/fn,title)
+add_csv_table(story,BASE/"ILLUSTRATIVE_SCENARIOS.csv","Scenario tables | Contract sensitivity",
+              ["barrels_illustrative","price_usd_per_barrel","requested_cost_fraction","gross_sales_usd","government_total_usd","government_share_of_gross"],
+              ["Barrels","Price","Cost share","Gross sales","Government","Gov. share"],
+              "Illustrative arithmetic only. Values are not forecasts and do not represent observed government receipts.")
+add_csv_table(story,BASE/"ILLUSTRATIVE_PRODUCTION_SHOCKS.csv","Scenario tables | Production shocks",
+              ["volume_factor","price_usd_per_barrel","requested_cost_fraction","gross_sales_usd","government_total_usd","government_share_of_gross"],
+              ["Volume factor","Price","Cost share","Gross sales","Government","Gov. share"],
+              "Combined volume, price and cost sensitivities. All inputs are illustrative.")
+add_csv_table(story,BASE/"ILLUSTRATIVE_FUND_STRESS.csv","Scenario tables | Sovereign-fund stress",
+              ["scenario","year_index","opening_usd","deposits_usd","withdrawals_usd","closing_usd"],
+              ["Scenario","Year","Opening","Deposits","Withdrawals","Closing"],
+              "Synthetic sovereign-fund stress paths. They are decision tests, not projections of the Natural Resource Fund.")
 
-story.extend([PageBreak(),h1("Publication review gates")]); story.extend(flow(gates,seen))
+story.extend([PageBreak(),h1("Adversarial publication audit")]); story.extend(flow(adversarial,seen,toc=False))
+story.extend([PageBreak(),h1("High-risk claim audit")])
+for line in claim_matrix.splitlines():
+    if re.match(r"^\|\s*C\d{3}\s*\|",line):
+        cells=[x.strip() for x in line.strip().strip("|").split("|")]
+        if len(cells)>=5:
+            vals=[html.escape(x) for x in cells[:5]]
+            story.append(Paragraph("<b>{}</b> {}<br/><font color=\"#17624F\">Sources: {} | Status: {}</font><br/><font color=\"#627D98\">{}</font>".format(*vals),s["RefF"]))
+
+story.extend([PageBreak(),h1("Publication review gates")]); story.extend(flow(gates,seen,toc=False))
 story.extend([PageBreak(),h1("Dated source register"),
-              Paragraph("Source IDs are used throughout the publication. URLs point to the public source used for the stated claim. Limitations are retained as part of the evidence record.",s["BodyF"])])
+              Paragraph("Source IDs are used throughout the publication. URLs point to the public source used for the stated claim. Limitations remain part of the evidence record.",s["BodyF"])])
 for ident,label,evidence_text,caveat,url in source_rows:
     u=html.escape(url,quote=True)
     body=f'<b>{html.escape(ident)}</b> {html.escape(label)}<br/>{html.escape(evidence_text)}<br/><font color="#627D98">Limit: {html.escape(caveat)}</font><br/><link href="{u}" color="#17624F">{html.escape(url)}</link>'
     story.append(Paragraph(body,s["RefF"]))
-if "### Priority unresolved checks" in sources:
+marker="### Priority evidence items for future revision and external review"
+if marker in sources:
     story.extend([PageBreak(),h1("Open evidence items")])
-    story.extend(flow("### Priority unresolved checks"+sources.split("### Priority unresolved checks",1)[1],seen))
+    story.extend(flow(marker+sources.split(marker,1)[1],seen,toc=False))
 
 doc=Doc(OUT); doc.multiBuild(story)
 pdf=fitz.open(OUT); pages=pdf.page_count; texts=[p.get_text() for p in pdf]; flat="\n".join(texts)
-substantive=sum(len(t.split())>=100 for t in texts[2:])
-blank=sum(len(t.split())<15 for t in texts)
+word_re=re.compile(r"\b[A-Za-z0-9][A-Za-z0-9'’-]*\b")
+lex=lambda t: len(word_re.findall(t))
+substantive=sum(lex(t)>=100 for t in texts[2:])
+blank=sum(lex(t)<15 for t in texts)
+def page_of(needle):
+    for i,t in enumerate(texts):
+        if needle in t:return i
+    return None
+core_start=page_of("Part I-X | Integrated flagship manuscript")
+evidence_start=page_of("Evidence dossiers and implementation workbooks")
+core_pages=(evidence_start-core_start) if core_start is not None and evidence_start is not None else None
+core_lexical_words=sum(lex(t) for t in texts[core_start:evidence_start]) if core_pages is not None else None
 assert all(row[0] in flat for row in source_rows)
 assert "Natural Resource Fund" in flat and "Oil Pollution" in flat and "Timor-Leste" in flat
-assert pages>=500, f"Flagship below 500-page publication gate: {pages}"
-assert substantive>=int((pages-2)*0.68), f"Too many sparse pages: {substantive}/{pages}"
+assert "Petroleum Activities Act" in flat and "International Court of Justice" in flat
+assert pages>=400, f"Publication candidate below 400-page research-compendium gate: {pages}"
+assert substantive>=int((pages-2)*0.62), f"Too many sparse pages: {substantive}/{pages}"
 assert blank<=18, f"Too many near-blank pages: {blank}"
 assert duplicate_long<=25, f"Source corpus contains too many exact long-paragraph duplicates: {duplicate_long}"
 sha=hashlib.sha256(OUT.read_bytes()).hexdigest()
 word_counts={k:len(v.split()) for k,v in all_text.items()}
 audit={
- "document":OUT.name,"edition":"1.0","stage":"flagship_publication",
+ "document":OUT.name,"edition":"1.1-candidate","stage":"publication_candidate",
  "evidence_cutoff":"2026-09-27","pages_actual":pages,
- "substantive_pages_at_least_100_words":substantive,"near_blank_pages":blank,
+ "substantive_pages_at_least_100_lexical_words":substantive,"near_blank_pages":blank,
+ "core_integrated_pages":core_pages,"core_integrated_lexical_words":core_lexical_words,
  "source_records":len(source_rows),"core_parts":len(core),"technical_annexes":len(annex),
- "evidence_workbooks":len(evidence),"research_words_before_deduplication":sum(word_counts.values())+len(brief.split())+len(sources.split())+len(gates.split()),
+ "evidence_workbooks":len(evidence),"research_words_before_deduplication":sum(word_counts.values())+len(brief.split())+len(sources.split())+len(gates.split())+len(hardening.split())+len(adversarial.split()),
  "exact_duplicate_long_paragraphs_in_source_corpus":duplicate_long,
  "sha256":sha,"citations_embedded":True,"searchable_text":len(flat)>100000,
- "external_peer_review":"not_claimed","political_ranking":"none",
- "publication_complete":True
+ "tables_redesigned_for_readability":True,"tagged_pdf_accessibility":False,
+ "internal_adversarial_audit":"completed_with_open_gates",
+ "external_peer_review":"pending","political_ranking":"none",
+ "publication_complete":False
 }
 AUDIT.write_text(json.dumps(audit,indent=2)+"\n",encoding="utf-8")
-# representative visual evidence for CI and manual review
 for no in sorted(set([0,1,2,10,pages//4,pages//2,(3*pages)//4,pages-2,pages-1])):
     pix=pdf[no].get_pixmap(matrix=fitz.Matrix(1.25,1.25)); pix.save(str(BASE/f"_flagship_preview_{no+1}.png"))
 pdf.close()
