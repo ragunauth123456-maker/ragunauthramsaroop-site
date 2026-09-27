@@ -1154,3 +1154,52 @@ It shows exactly why fund governance should be judged through both stock and flo
 The final book should continue this record annually.
 
 A sovereign-fund system becomes more credible when every new year can be added to the same reconciliation without changing definitions.
+
+
+## Case study: how a prior-year petroleum receivable can distort a current-year revenue narrative
+
+### The question an auditor must answer
+
+The central test in petroleum wealth accounting is whether the state can follow one underlying economic transaction through production entitlement, cargo lifting, sale, accrual recognition, cash receipt, sovereign-fund custody and budget transfer. The entries occur in different records and sometimes in different calendar years. In a fast-growing oil province, aggregate receipts can become large enough for a single delayed cargo to produce a material discrepancy between otherwise credible official reports. This is not necessarily an accounting error. It is a requirement for a documented timing bridge.
+
+Guyana's 2025 year-end and first-half 2026 Natural Resource Fund reports provide a concrete example. The Bank of Guyana's audited annual accounts establish the position at 31 December 2025. Its December monthly statement separately reports cash-basis holdings. The government's mid-year report describes cash received during January-June 2026, including settlement of some cargoes lifted in the last quarter of 2025. A researcher who treats all these amounts as new 2026 accrual revenue will double-count part of the economic flow. The case is important precisely because the primary sources, taken individually, can all be correct while an improperly assembled chart is not. [S07, S88, S134, S137]
+
+### What each primary record measures
+
+The December 2025 monthly statement reports about US$3,250.41 million of cash and cash equivalents. The audited year-end and subsequent Q1 comparative reports give a larger total fund position of approximately US$3,434.53 million because a receivable of GYD 38,387,708 thousand was recognized at year-end. At the report's stated GYD 208.5/US$ conversion, that receivable is about US$184.11 million. The equality between the audited position and cash plus receivables can be checked against the Bank's original GYD-thousand figures before any currency conversion. [S88, S134, S137]
+
+These are two legitimate measures with different boundaries. A monthly cash statement answers how much had reached the bank by a particular date. The year-end accrual position also includes amounts earned and recognized but not yet received in cash. Neither measure should be called a more current or more accurate version of the other without specifying the question.
+
+The Ministry's first-half 2026 report records US$1,778.6 million of government profit-oil cash receipts and US$218.4 million in royalties, or US$1,997.0 million combined. Its accompanying narrative says the profit-oil receipts include payments for three government lifts made in the final quarter of 2025 as well as receipts from 2026 lifts. The same report describes about US$66.9 million of first-half investment income, US$1,020 million of withdrawals and a US$4,294.2 million fund balance at 30 June. The Ministry's statement is a receipt-period account and should be cited as such. [S07]
+
+### Reproduce the apparent discrepancy before interpreting it
+
+Starting with the rounded audited 2025 closing position of US$3,434.53 million, suppose the full US$1,997.0 million of reported H1 cash receipts is entered again as 2026 fund inflow. Add US$66.9 million of return and subtract US$1,020 million of transfers. The resulting hypothetical closing balance is US$4,478.43 million. That is US$184.23 million higher than the reported June closing balance of US$4,294.2 million.
+
+It would be incorrect to present this US$184.23 million as money missing from the fund. The starting balance is an accrual-based stock that already contains a prior-period claim, while the supposed current-year inflow includes cash settlements of prior-period transactions. The legitimate reconciliation problem is to determine how much of the US$1,997 million represents settlement of an asset already recognized in the opening stock.
+
+Rearrange the stock-flow identity without inventing that missing detail. If the rounded values contain no other measurement adjustments, the inflow required to reproduce the closing balance is US$4,294.2m minus US$3,434.53m plus US$1,020m minus US$66.9m, or US$1,812.77 million. This is an *implied balancing inflow*, not an independently observed 2026 revenue figure. It is intentionally left separate from the government's US$1,997m cash-receipt total in the working ledger.
+
+The resulting US$184.23 million difference is extraordinarily close to the roughly US$184.11 million receivable shown by the 2025 closing and Q1 2026 comparative records. On rounded figures, the difference after accounting for that receivable is about US$0.12 million. A candidate explanation is therefore that collection of a prior-year profit-oil receivable in 2026 appears among the cash receipts described by the Ministry but was already present in the audited opening fund position. The Ministry's reference to three late-2025 lifts supports the timing hypothesis. It does not, by itself, identify every transaction in the bank ledger. [S07, S88, S134, S137]
+
+### The evidence needed to certify the bridge
+
+A final audit should match the three 2025 cargoes individually. For each, it should establish the production and entitlement period, lift date, sale invoice, valuation formula, receivable recognized at 31 December, cash settlement date, bank deposit posting and reporting-period classification. The aggregate should equal the reduction or realization of year-end receivables in the Q1 and Q2 2026 fund statements, subject to independently documented adjustments.
+
+The review must also compare like currency bases. The Bank reports original GYD-thousand values and a stated conversion rate in its monthly and quarterly materials. A Ministry report may use rounded US-dollar equivalents. A hundred thousand US dollars of apparent discrepancy can arise from rounding at several steps; but the reviewer should show the rounding calculation rather than simply assume it explains the difference.
+
+The independent check should use the exact Q1 and Q2 2026 Bank of Guyana financial summaries, not a government speech or secondary tracker in place of the bank's ledger. The Q1 report records its own opening balance, inflows, return, Consolidated Fund transfer and closing position in GYD thousands. That record can be verified directly against the previous quarter's closing balance and the subsequent quarter's opening balance. The Q2 report is listed in the Bank's public quarterly index; a page-specific extraction of its full original table remains a final-evidence task. [S134, S136]
+
+A prudent reviewer should also check whether the Ministry's reporting language refers strictly to deposits in the quarter, cash collections from cargo sales or revenue recognized during the period. That definition—not a conveniently chosen total—should govern the comparison. If the definition changed between reporting years, both series must be presented separately or restated with a documented method.
+
+### Consequences for the fiscal and development chapters
+
+A mislabeled revenue denominator propagates beyond the NRF table. If a current-year withdrawal ratio uses cash receipts while an annual fund accumulation calculation uses accrual income, the two indicators cannot be compared without a bridge. If a forecast assumes all late-year lifts settle before 31 December, its cash balance may overstate available end-year liquidity. A budget stress test based on the larger number could then exaggerate near-term financing space. These risks apply to any first-oil state with relatively few, large cargoes.
+
+The publication should therefore maintain three distinct petroleum series: **economic entitlement by production period**, **revenue recognized by financial reporting period**, and **cash deposited by settlement period**. Each series has a legitimate use. The first supports petroleum fiscal modeling and government-take analysis. The second supports audited financial statements. The third supports liquidity and budget cash management. The cargo-level reconciliation links them.
+
+This also clarifies how a resource fund should communicate its performance to citizens. A cash balance, total net assets, annual petroleum inflows, investment return and transfers are not interchangeable terms. An increase in audited assets can include receivables; a rise in cash received can include settlement of claims recognized the previous year; a large transfer to the budget may leave a different net asset trajectory. The public account should show the principal reconciliation entries alongside its headline figures.
+
+### Release disposition
+
+The Edition 2.0 working ledger flags its first-half 2026 stock-flow row **OPEN**. The 2025 receivable is a strongly evidenced candidate that accounts for nearly all the rounded apparent gap. Until the individual cargo settlements and exact GYD Q2 entries have been matched, neither the underlying revenue allocation nor the small residual should be described as independently reconciled. This narrower conclusion is more informative than either concealing the discrepancy or calling the difference an unexplained loss. It demonstrates the method the book expects other new producers to apply to their own petroleum receipts.
