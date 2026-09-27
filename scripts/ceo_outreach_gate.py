@@ -15,7 +15,7 @@ def cited_url(value):
     u = urlparse(value or "")
     return u.scheme == "https" and bool(u.hostname) and u.hostname not in {"example.com","example.org"}
 
-def assess(dossier, root, sent):
+def assess(dossier, root, sent, blocked=None):
     errors = []
     d = dossier
     company = str(d.get("company") or "").strip()
@@ -63,8 +63,14 @@ def assess(dossier, root, sent):
             errors.append("CC must match the verified senior executive.")
     if d.get("to") and str(d["to"]).strip().lower() != address:
         errors.append("To must match the documented professional route.")
-    if (company.casefold(), address) in sent or d.get("status") == "Sent":
-        errors.append("Duplicate outreach blocked.")
+    company_key = re.sub(r"[^a-z0-9]+", "", company.casefold())
+    already_sent = any(re.sub(r"[^a-z0-9]+", "", c.casefold()) == company_key
+                       or address == a.casefold() for c, a in sent)
+    if already_sent or d.get("status") == "Sent":
+        errors.append("Duplicate outreach blocked at company or recipient level.")
+    blocked = blocked or set()
+    if company_key in blocked or address in blocked:
+        errors.append("Private suppression ledger blocks this company or recipient.")
     if not d.get("subject") or not d.get("message"):
         errors.append("Missing subject or company-specific email.")
     attachments = d.get("attachments") or {}
@@ -92,6 +98,8 @@ def main():
     parser.add_argument("dossiers", type=Path, help="Private local JSON list, never commit.")
     parser.add_argument("--files-root", type=Path, default=Path("."))
     parser.add_argument("--sent-ledger", type=Path)
+    parser.add_argument("--blocked-ledger", type=Path,
+                        help="Private local JSON list of blocked companies or email addresses; never commit.")
     args = parser.parse_args()
     dossiers = json.loads(args.dossiers.read_text(encoding="utf-8"))
     if not isinstance(dossiers, list):
@@ -100,9 +108,16 @@ def main():
     if args.sent_ledger and args.sent_ledger.is_file():
         for row in json.loads(args.sent_ledger.read_text(encoding="utf-8")):
             sent.add((row["company"].casefold(), row["address"].casefold()))
+    blocked = set()
+    if args.blocked_ledger:
+        if not args.blocked_ledger.is_file():
+            raise SystemExit("Required private blocklist was not found.")
+        for value in json.loads(args.blocked_ledger.read_text(encoding="utf-8")):
+            text = str(value).strip().lower()
+            blocked.add(text if "@" in text else re.sub(r"[^a-z0-9]+", "", text))
     report = []
     for d in dossiers:
-        errors = assess(d, args.files_root, sent)
+        errors = assess(d, args.files_root, sent, blocked)
         report.append({"company": d.get("company"),
                        "status": "READY_FOR_HUMAN_REVIEW" if not errors else "BLOCKED",
                        "issues": errors})
