@@ -1,13 +1,6 @@
 name: Guyana flagship publication PDF
+# Edition 1.2 remains an archived reference; rebuild only by deliberate manual dispatch.
 on:
-  push:
-    branches: [research/guyana-petroleum-blueprint-2026]
-    paths:
-      - 'research-library/guyana-petroleum-blueprint-2026/*.md'
-      - 'research-library/guyana-petroleum-blueprint-2026/*.csv'
-      - 'research-library/guyana-petroleum-blueprint-2026/build_flagship_pdf.py'
-      - 'research-library/guyana-petroleum-blueprint-2026/audit_research_integrity.py'
-      - '.github/workflows/guyana-flagship-pdf.yml'
   workflow_dispatch:
 permissions:
   contents: write
