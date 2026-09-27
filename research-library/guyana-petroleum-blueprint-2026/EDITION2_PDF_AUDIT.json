@@ -3,7 +3,7 @@
   "publication_complete": false,
   "external_peer_review": "pending",
   "pdf": "guyana-petroleum-edition-2-expanded-working-manuscript.pdf",
-  "pages": 331,
+  "pages": 332,
   "ten_core_parts": true,
   "core_lexical_words": 64752,
   "core_word_minimum_met": false,
@@ -11,6 +11,6 @@
   "source_ids_rendered": true,
   "toc_entries": 10,
   "blank_pages": [],
-  "sha256": "43b53e29226185c332b84298f466ca203877dc3358031e72ba7637ec33571675",
+  "sha256": "b5f00b5ae80cca2c6b946d6c3bbb05bbd49fb6a896ac9eb0ea8c6987ae4e0683",
   "legal_and_nrf_review": "open"
 }
