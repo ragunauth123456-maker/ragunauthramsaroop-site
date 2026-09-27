@@ -859,3 +859,36 @@ It can control whether:
 Those institutions create value even if no commercial oil is found.
 
 That is the strongest justification for pre-discovery governance.
+
+
+## Edition 2.0 archival case: what Guyana's first petroleum-capacity project actually delivered
+
+### A seven-year institutional clock that began before Liza
+
+The original 1993 World Bank completion report supplies a dated counterweight to the idea that Guyana's petroleum administration appeared only after commercial discovery. The Bank's Credit 1208-GUA for the Petroleum Exploration Promotion Project was approved on 16 February 1982. The loan agreement was signed on 24 November 1982, but credit effectiveness came only on 30 March 1983. The project closed retroactively on 16 September 1987, with the final closure decision taken in 1991; the report itself was dated 16 November 1993. These dates describe a very different institutional environment from the post-2015 deepwater development period and should never be conflated with modern project licences. [S107]
+
+The chronology has explanatory value. The Bank's evaluation records initial constraints involving local counterpart funding, project-management staffing and delays in securing consultants, as well as difficulties coordinating external financing. Promotion seminars were eventually held in London and Houston in February 1986. The report attributes four negotiated exploration contracts to the promotion programme, but that does **not** mean that the programme discovered four commercial fields or created four producing operations. [S107]
+
+### Separate success in exploration promotion from unfinished components
+
+The report's original objectives were threefold: attract exploration investment, investigate shallow heavy-oil potential and strengthen the government's capacity to administer petroleum operations. The completion record presents evidence of progress in promotion and government institutional development while explicitly stating that the shallow-heavy-oil investigation was not performed. This distinction matters because the absence of a heavy-oil drilling result is not evidence that the drilling found nothing; the test was not completed under the credit. [S107]
+
+The project used consultants to assemble and interpret geological information, prepare marketing material, help negotiate contracts and strengthen state petroleum administration. Government also sought a modern legal framework and training in petroleum operations. The Bank's evaluation credits the Petroleum Unit and contemporary petroleum legislation as institutional products while also finding that the training allocation placed too much weight on longer academic education rather than immediately usable project and technical administration. That is the source's historical assessment, not an independent judgment about the officials involved. [S107]
+
+### A quantified implementation gap
+
+The credit was initially SDR 1.7 million, approximately US$2 million at approval. The World Bank preface states that only 52.1 percent of the credit had been disbursed and that 47.9 percent, recorded as SDR813,862, was cancelled. These percentages measure **credit utilization**, not geological outcomes, total petroleum-sector investment or the Government's own operating expenditure. The report separately explains that the ultimate cancellation amount in its dollar-equivalent presentation was affected by the credit's accounting and timing. A modern case study should preserve the original SDR records instead of multiplying a rounded dollar approval figure by a percentage and presenting the product as an exact historical cancellation. [S107]
+
+This expenditure gap does not erase the contracts negotiated or professional experience acquired. It does, however, demonstrate why a small frontier state's reform programme should be designed to survive delayed effectiveness, staffing constraints, financing interruptions and changes in the commercial environment.
+
+### The overlooked counterfactual: institutional value without commercial oil
+
+The economically interesting counterfactual is a country that never reaches first oil. What remains from a petroleum-promotion project if exploratory drilling fails? Geological records, stronger licensing law, trained public officers and a contractual archive may retain value. A large permanent operating company, major support-base investment or debt raised against imagined future production might not. Guyana's earlier World Bank project is particularly useful because its contemporary report was written before the 2015 Liza discovery; its contemporaneous observations therefore do not depend on hindsight about a giant oil province. [S107]
+
+For a new producer, the practical inference is to separate exploratory public goods from scale-contingent commitments. Build the geological and legal files that remain useful under a dry-hole scenario. Preserve every exploration well's data. Establish the public accounting unit before granting complex rights. Delay irreversible public investments that only make economic sense after a development plan is independently validated.
+
+### Source integrity and archival limitations
+
+The primary document is World Bank Report No. 12485 (1993), with the funding summary in the preface, institutional findings in the evaluation memorandum and evaluation summary, and detailed chronology in Part I. Its official public PDF text was retrieved for this revision, and the project appears independently in the World Bank Archives Catalogue under record 30370430. The underlying full-text URL remains difficult for GitHub-hosted source monitoring to retrieve, and no authenticated local byte copy with a checksum has yet been archived. The source's quoted or highly specific points must therefore retain their section references, with independent downloadable-PDF preservation still listed as an open evidence task under issue #68. [S107]
+
+This example illustrates the broader discipline required of the book: report an institution's documented accomplishments and limitations together, preserve what was known at the time, and avoid transforming a historic development-bank evaluation into a claim about modern petroleum governance.
