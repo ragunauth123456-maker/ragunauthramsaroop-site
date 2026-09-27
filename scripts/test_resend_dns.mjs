@@ -1,0 +1,17 @@
+import assert from "node:assert/strict";
+import {cleanTXT,normalizedName,matchesRecord} from "./check_resend_dns.mjs";
+import config from "../data/resend-dns.json" with {type:"json"};
+const [dkim,mx,spf,cname]=config.required;
+const fqdn=r=>r.host+"."+config.domain+".";
+assert.equal(cleanTXT('"p=AAA" "BBB"'),"p=AAABBB");
+assert.equal(normalizedName("EXAMPLE.COM."),"example.com");
+assert.equal(matchesRecord(dkim,[{name:fqdn(dkim),type:16,data:'"'+dkim.value+'"'}]),true);
+const chunked='"'+dkim.value.slice(0,96)+'" "'+dkim.value.slice(96)+'"';
+assert.equal(matchesRecord(dkim,[{name:fqdn(dkim),type:16,data:chunked}]),true);
+assert.equal(matchesRecord(dkim,[{name:fqdn(dkim),type:16,data:'"p=WRONG"'}]),false);
+assert.equal(matchesRecord(spf,[{name:fqdn(spf),type:16,data:'"'+spf.value+'"'}]),true);
+assert.equal(matchesRecord(mx,[{name:fqdn(mx),type:15,data:"10 feedback-smtp.us-east-1.amazonses.com."}]),true);
+assert.equal(matchesRecord(mx,[{name:fqdn(mx),type:15,data:"20 feedback-smtp.us-east-1.amazonses.com."}]),false);
+assert.equal(matchesRecord(cname,[{name:fqdn(cname),type:5,data:"send.forge.rmta.net."}]),true);
+assert.equal(matchesRecord(cname,[{name:fqdn(cname),type:5,data:"example.net."}]),false);
+console.log("PASS DKIM TXT chunking, SPF, MX priority and tracking CNAME matching");
