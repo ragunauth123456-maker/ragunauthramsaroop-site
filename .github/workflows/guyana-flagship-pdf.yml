@@ -35,7 +35,7 @@ jobs:
           a=json.loads((d/"FLAGSHIP_PDF_AUDIT.json").read_text())
           p=d/a["document"]
           assert a["pages_actual"]>=400
-          assert a["source_records"]>=95
+          assert a["source_records"]>=106
           assert a["publication_complete"] is False
           assert a["external_peer_review"]=="pending"
           assert a["political_ranking"]=="none"
@@ -45,19 +45,26 @@ jobs:
           assert a["searchable_text"] is True
           assert hashlib.sha256(p.read_bytes()).hexdigest()==a["sha256"]
           i=json.loads((d/"RESEARCH_INTEGRITY_AUDIT.json").read_text())
-          assert i["source_records"]>=95
+          assert i["source_records"]>=106
           assert i["source_ids_unique"] is True
           assert i["source_ids_sequential"] is True
           assert i["source_url_syntax_valid"] is True
           assert i["high_risk_claim_source_refs_valid"] is True
+          assert i["high_risk_claims"]>=50
+          assert i["legal_evidence_ledger_entries"]>=14
+          assert i["corrections_register_entries"]>=16
+          m=json.loads((d/"PUBLICATION_MANIFEST.json").read_text())
+          assert m["edition"]=="1.2-scrutiny-candidate"
+          assert m["integrity_audit_status"]=="passed"
+          assert m["pdf_sha256"]==a["sha256"]
           print("PASS",json.dumps(a,indent=2))
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: guyana-petroleum-edition-1.1-audited-candidate
+          name: guyana-petroleum-edition-1.2-scrutiny-candidate
           if-no-files-found: error
           path: |
-            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf
+            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf
             research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PDF_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/RESEARCH_INTEGRITY_AUDIT.json
             research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
@@ -69,25 +76,28 @@ jobs:
           set -e
           D="research-library/guyana-petroleum-blueprint-2026"
           TMP="$(mktemp -d)"
-          cp "$D/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf" "$TMP/"
+          cp "$D/guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf" "$TMP/"
           cp "$D/FLAGSHIP_PDF_AUDIT.json" "$TMP/"
           cp "$D/RESEARCH_INTEGRITY_AUDIT.json" "$TMP/"
+          cp "$D/PUBLICATION_MANIFEST.json" "$TMP/"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for attempt in 1 2 3; do
             git fetch origin research/guyana-petroleum-blueprint-2026
             git reset --hard origin/research/guyana-petroleum-blueprint-2026
-            cp "$TMP/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf" "$D/"
+            cp "$TMP/guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf" "$D/"
             cp "$TMP/FLAGSHIP_PDF_AUDIT.json" "$D/"
             cp "$TMP/RESEARCH_INTEGRITY_AUDIT.json" "$D/"
-            git add "$D/guyana-petroleum-transformation-edition-1.1-audited-candidate.pdf"
+            cp "$TMP/PUBLICATION_MANIFEST.json" "$D/"
+            git add "$D/guyana-petroleum-transformation-edition-1.2-scrutiny-candidate.pdf"
             git add "$D/FLAGSHIP_PDF_AUDIT.json"
             git add "$D/RESEARCH_INTEGRITY_AUDIT.json"
+            git add "$D/PUBLICATION_MANIFEST.json"
             if git diff --cached --quiet; then
               echo "No artifact changes"
               exit 0
             fi
-            git commit -m "research: publish internally audited Guyana Edition 1.1 candidate [skip ci]"
+            git commit -m "research: publish scrutiny-hardened Guyana Edition 1.2 candidate [skip ci]"
             if git push origin HEAD:research/guyana-petroleum-blueprint-2026; then
               exit 0
             fi
