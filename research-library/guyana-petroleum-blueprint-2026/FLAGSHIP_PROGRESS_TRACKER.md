@@ -1,3 +1,11 @@
+# Forensic integration build — 28 September 2026
+
+**Built into the PDF:** the verified forensic-review corrections are now rendered in the Edition 2 working PDF, not left as a separate audit memo. The integration corrects the Liza/Yellowtail chronology, preserves Uaru as pre-production at the 27 September cut-off, distinguishes sanctioned projects from proposed Longtail/Haimara, corrects the World Bank programme to a 1982-1987 project documented by a 1993 completion report, and preserves open NRF, legal, environmental, social and external-review gates.
+
+**Verified CI output:** 333 searchable pages, 147 registered sources, 10 bookmarks, zero blank pages. SHA-256 `6a2a302aa17ac93abfc1a292f4858b88784d524ca1a83f3530cfc6d0b5cdf829`. Publication status remains **WORKING / development edition**, with external peer review pending and legal/NRF review open.
+
+---
+
 # Edition 2.0 PDF delivery — verified 27 September 2026
 
 **Delivered:** the first fully integrated Edition 2.0 WORKING PDF is now built and published on the research branch: [Open 332-page Edition 2 PDF](https://github.com/ragunauth123456-maker/ragunauthramsaroop-site/blob/research/guyana-petroleum-blueprint-2026/research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-edition-2-expanded-working-manuscript.pdf). It contains the complete ten-Part core, the 141-source register, original source-driven NRF bar chart, offshore project register exhibit and transparent NRF annual ledger exhibit. This is a development PDF, not the commissioned completed book.
