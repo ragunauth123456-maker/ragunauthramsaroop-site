@@ -13,7 +13,11 @@ function urlFor(req) {
 }
 function makeCache(store) {
   return {
-    async add(req) { store.set(urlFor(req), new Response("Precached: " + urlFor(req))); },
+    async add(req) {
+      const url = urlFor(req);
+      const type = url.endsWith(".css") ? "text/css" : url.endsWith(".js") ? "application/javascript" : url.endsWith(".png") ? "image/png" : "text/html";
+      store.set(url, new Response("Precached: " + url, { headers: { "Content-Type": type } }));
+    },
     async match(req, options = {}) {
       const target = urlFor(req);
       let found = store.get(target);
@@ -66,8 +70,8 @@ async function eventFor(handler, request) {
 }
 
 (async () => {
-  assert.ok(source.includes('const V="rr-public-v7"'), "Version should replace v6");
-  stores.set("rr-public-v6", new Map());
+  assert.ok(source.includes('const V="rr-public-v8"'), "Version should replace v7");
+  stores.set("rr-public-v7", new Map());
   stores.set("some-other-app", new Map());
   const installWork = [];
   listeners.install({ waitUntil(p) { installWork.push(Promise.resolve(p)); } });
@@ -75,9 +79,9 @@ async function eventFor(handler, request) {
   const activateWork = [];
   listeners.activate({ waitUntil(p) { activateWork.push(Promise.resolve(p)); } });
   await Promise.all(activateWork);
-  assert.equal(stores.has("rr-public-v6"), false, "Retire old caches on upgrade");
+  assert.equal(stores.has("rr-public-v7"), false, "Retire old caches on upgrade");
   assert.equal(stores.has("some-other-app"), true, "Never delete unrelated caches");
-  const cache = await cacheAPI.open("rr-public-v7");
+  const cache = await cacheAPI.open("rr-public-v8");
   assert.ok(await cache.match("/start/"), "Start page should remain available offline");
   assert.ok(await cache.match("/tools/assets/tools.css"), "Critical tools CSS should work offline");
 
