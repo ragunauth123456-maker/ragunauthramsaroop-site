@@ -1,5 +1,5 @@
 /* Network-first pages, on-demand assets and a four-resource offline shell. */
-const V="rr-public-v7";
+const V="rr-public-v8";
 const CORE=["/","/start/","/assets/platform.css","/tools/assets/tools.css","/favicon-96.png"];
 const MAX_DYNAMIC_ENTRIES=100;
 
@@ -54,18 +54,29 @@ async function navigation(request,event){
   }
 }
 
+function validStaticResponse(response,pathname){
+  if(!response||!response.ok)return false;
+  const type=(response.headers.get("content-type")||"").toLowerCase();
+  if(pathname.endsWith(".css"))return type.includes("text/css");
+  if(pathname.endsWith(".js"))return type.includes("javascript");
+  return true;
+}
+
 async function asset(request,immutable,event){
   const cache=await caches.open(V);
+  const pathname=new URL(request.url).pathname;
   if(immutable){
     const hit=await cache.match(request);
-    if(hit)return hit;
+    if(hit&&validStaticResponse(hit,pathname))return hit;
+    if(hit)await cache.delete(request);
   }
   try{
     const response=await fetch(request);
-    if(response.ok)event.waitUntil(remember(cache,request,response.clone()));
+    if(validStaticResponse(response,pathname))event.waitUntil(remember(cache,request,response.clone()));
     return response;
   }catch{
-    return await cache.match(request)||Response.error();
+    const hit=await cache.match(request);
+    return hit&&validStaticResponse(hit,pathname)?hit:Response.error();
   }
 }
 
