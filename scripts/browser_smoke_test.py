@@ -25,6 +25,22 @@ def main():
         context.set_default_timeout(15000)
         page = context.new_page()
         try:
+            page.goto(base + "/", wait_until="domcontentloaded")
+            expect(page.locator("h1")).to_contain_text("Ragunauth")
+            expect(page.locator(".nav-links")).to_be_visible()
+            expect(page.locator(".hero-portrait img")).to_have_attribute("width", "800")
+            assert page.locator('link[href^="/assets/home.css"]').count() == 1
+            assert page.locator('script[src^="/_next/static/"]').count() == 0
+            resources = page.evaluate("performance.getEntriesByType('resource').map(e => e.name)")
+            assert not any("/_next/static/" in url for url in resources), resources
+            page.set_viewport_size({"width": 390, "height": 844})
+            expect(page.locator(".mobile-nav")).to_be_visible()
+            expect(page.locator(".nav-links")).to_be_hidden()
+            page.locator(".mobile-nav summary").click()
+            expect(page.locator(".mobile-nav a").first).to_be_visible()
+            page.set_viewport_size({"width": 1280, "height": 900})
+            results.append("PASS lightweight executive homepage on desktop and mobile without Next.js runtime")
+
             page.goto(base + "/start/", wait_until="domcontentloaded")
             routes = [
                 "/project-workspace/", "/research-explorer/", "/observatory/explorer/",
