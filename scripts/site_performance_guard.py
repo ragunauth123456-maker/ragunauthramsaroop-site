@@ -49,11 +49,12 @@ check(bool(match), "Service worker precache not found")
 check(len(urls) <= 8, f"Service worker precaches {len(urls)} resources; budget is 8")
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
-check('const V="rr-public-v7"' in sw, "Service worker version must be v7")
+check('const V="rr-public-v8"' in sw, "Service worker version must be v8")
 check("/tools/assets/tools.css" in urls, "Tools stylesheet must be available offline")
 check('cache.match("/start/")' not in sw, "Never serve the Start page as a fallback for unrelated URLs")
 check('status:503' in sw, "Unknown offline navigation must return an explicit 503")
 check('k.startsWith("rr-public-v")' in sw, "Only RR-managed caches should be deleted")
+check("validStaticResponse" in sw and 'type.includes("text/css")' in sw, "Cached CSS must be MIME-validated before reuse")
 
 platform = (ROOT / "assets/platform.js").read_text(encoding="utf-8")
 platform_compact = "".join(platform.split())
