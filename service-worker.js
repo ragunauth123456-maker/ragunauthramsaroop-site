@@ -1,4 +1,4 @@
-/* Network-first pages, on-demand assets and a four-resource offline shell. */
+/* Network-first pages, on-demand assets and a compact offline shell. */
 const V="rr-public-v10";
 const CORE=["/","/start/","/assets/home.css","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/favicon-96.png"];
 const MAX_DYNAMIC_ENTRIES=100;
