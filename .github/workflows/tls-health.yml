@@ -37,7 +37,7 @@ jobs:
             grep -Eqi '^content-type:[[:space:]]*text/css' "$css_headers"
             grep -q '.shell' "$css_body"
 
-            for asset in /assets/platform.css /tools/assets/launcher.css; do
+            for asset in /assets/site.css /assets/platform.css /tools/assets/launcher.css; do
               asset_name="$(basename "$asset")"
               asset_body="/tmp/${host//./_}-${asset_name}"
               asset_headers="/tmp/${host//./_}-${asset_name}.headers"
