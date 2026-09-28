@@ -44,7 +44,7 @@ S={
 }
 PARTS="I II III IV V VI VII VIII IX X".split()
 texts={p:(D/f"FLAGSHIP_PART_{p}_MANUSCRIPT.md").read_text(encoding="utf-8") for p in PARTS}
-src=(D/"SOURCE_REGISTER.md").read_text(encoding="utf-8")
+src=(D/"SOURCE_REGISTER.md").read_text(encoding="utf-8")\nforensic=(D/"FORENSIC_VERIFICATION_INTEGRATION_2026-09-28.md").read_text(encoding="utf-8")
 sources=[]
 for line in src.splitlines():
  if re.match(r"^\|\s*S\d{2,3}\s*\|",line):
@@ -123,7 +123,7 @@ story=[Spacer(1,26*mm),P("INDEPENDENT RESEARCH  /  27 SEPTEMBER 2026","small"),
        PageBreak(),H("Contents")]
 toc=TableOfContents();toc.levelStyles=[S["toc"]];story.extend([toc,PageBreak(),
  H("Research integrity and publication status"),
- P("This integrated development export contains the full ten-Part core manuscript and a dated source register. It replaces the much shorter integrated core of Edition 1.2. Research dossiers and wide technical CSVs remain editable in the companion cloud-worker package rather than being counted as additional core chapters."),
+ P("This integrated development export contains the full ten-Part core manuscript, a dated forensic-verification integration section and a dated source register. It replaces the much shorter integrated core of Edition 1.2. Research dossiers and wide technical CSVs remain editable in the companion cloud-worker package rather than being counted as additional core chapters."),
  P("Unresolved release gates: sufficient new substantive core research; full source-to-claim verification; precise first-half 2026 NRF cash/accrual bridge; direct legal, environmental and household outcome evidence; external specialist review; and the final graphic, accessibility and editorial QA."),
  P("Government-reported H1 2026 petroleum receipts and fund accounting use different timing boundaries. An approximately US$184 million difference has a likely December 2025 receivables explanation, but the last transaction-level reconciliation remains open."),
  P("The ten complete integrated Parts begin on the next page; the accompanying editable CSVs retain the complete technical detail.","small")])
@@ -184,7 +184,7 @@ story.append(table_from_csv("NRF_ANNUAL_LEDGER.csv",
  ["Period","Inflows","Withdrawals","Closing","Evidence status"],[24,27,27,27,60]))
 story.append(P("2020-21 and 2026-H1 carry explicit provisional/open statuses. The 2025 December receivable is not double-counted as fresh 2026 accrued revenue. Primary series: S44, S88, S109, S137.","small"))
 
-story.extend([PageBreak(),H("Evidence limits and corrections"),
+story.extend([PageBreak(),H("Forensic verification integration | 28 September 2026",toc=False)])\nstory.extend(parse_md(forensic))\nstory.extend([PageBreak(),H("Evidence limits and corrections"),
  P("2020–2021 NRF interest splits and the H1 2026 cash/accrual reconciliation remain provisional where labelled. Permit wording is not proof of executed insurance or compliance. EITI status is dated; legal appellate reasons and full oil-pollution commencement should be rechecked from authoritative records."),
  P("All scenarios in companion CSVs are explicitly illustrative and do not constitute forecasts of petroleum production, government cash or political outcomes."),
  PageBreak(),H(SOURCES_TITLE),
