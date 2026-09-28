@@ -1,4 +1,4 @@
-name: Public HTTPS and certificate health
+name: Public HTTPS and asset health
 on:
   pull_request:
     paths:
@@ -15,9 +15,9 @@ permissions:
 jobs:
   tls:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 8
     steps:
-      - name: Verify HTTPS and site content on apex and www
+      - name: Verify HTTPS, homepage and critical assets on apex and www
         shell: bash
         run: |
           set -euo pipefail
@@ -27,7 +27,27 @@ jobs:
             curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
               "https://${host}/" --output "$body"
             grep -qi 'Ragunauth Ramsaroop' "$body"
-            echo "${host}: HTTPS certificate trusted, page returned expected content" >> "$GITHUB_STEP_SUMMARY"
+
+            css_path="$(grep -oE '/_next/static/css/[A-Za-z0-9._-]+\.css' "$body" | head -n 1 || true)"
+            test -n "$css_path"
+            css_body="/tmp/${host//./_}-next.css"
+            css_headers="/tmp/${host//./_}-next.headers"
+            curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
+              -D "$css_headers" "https://${host}${css_path}" --output "$css_body"
+            grep -Eqi '^content-type:[[:space:]]*text/css' "$css_headers"
+            grep -q '.shell' "$css_body"
+
+            for asset in /assets/platform.css /tools/assets/launcher.css; do
+              asset_name="$(basename "$asset")"
+              asset_body="/tmp/${host//./_}-${asset_name}"
+              asset_headers="/tmp/${host//./_}-${asset_name}.headers"
+              curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
+                -D "$asset_headers" "https://${host}${asset}" --output "$asset_body"
+              grep -Eqi '^content-type:[[:space:]]*text/css' "$asset_headers"
+              test -s "$asset_body"
+            done
+
+            echo "${host}: homepage and critical CSS assets returned valid CSS over HTTPS" >> "$GITHUB_STEP_SUMMARY"
           done
       - name: Warn when certificate expires within seven days
         shell: bash
