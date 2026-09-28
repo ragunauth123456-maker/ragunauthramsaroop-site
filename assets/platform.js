@@ -1,5 +1,13 @@
 (()=>{
 "use strict";
+const RR_SITE_CSS="/assets/site.css?v=20260928-2";
+if(!document.querySelector('link[href^="/assets/site.css"]')){
+  const rrStyle=document.createElement("link");
+  rrStyle.rel="stylesheet";
+  rrStyle.href=RR_SITE_CSS;
+  rrStyle.dataset.rrFallback="1";
+  document.head.appendChild(rrStyle);
+}
 if(new URL(location.href).searchParams.get("embed")==="1"){document.documentElement.classList.add("rr-embed-mode")}
 const KEY="rrToolkitV1", esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 if("serviceWorker" in navigator) addEventListener("load",()=>navigator.serviceWorker.register("/service-worker.js").catch(()=>{}));
