@@ -70,8 +70,8 @@ async function eventFor(handler, request) {
 }
 
 (async () => {
-  assert.ok(source.includes('const V="rr-public-v8"'), "Version should replace v7");
-  stores.set("rr-public-v7", new Map());
+  assert.ok(source.includes('const V="rr-public-v9"'), "Version should replace v8");
+  stores.set("rr-public-v8", new Map());
   stores.set("some-other-app", new Map());
   const installWork = [];
   listeners.install({ waitUntil(p) { installWork.push(Promise.resolve(p)); } });
@@ -79,10 +79,11 @@ async function eventFor(handler, request) {
   const activateWork = [];
   listeners.activate({ waitUntil(p) { activateWork.push(Promise.resolve(p)); } });
   await Promise.all(activateWork);
-  assert.equal(stores.has("rr-public-v7"), false, "Retire old caches on upgrade");
+  assert.equal(stores.has("rr-public-v8"), false, "Retire old caches on upgrade");
   assert.equal(stores.has("some-other-app"), true, "Never delete unrelated caches");
-  const cache = await cacheAPI.open("rr-public-v8");
+  const cache = await cacheAPI.open("rr-public-v9");
   assert.ok(await cache.match("/start/"), "Start page should remain available offline");
+  assert.ok(await cache.match("/assets/site.css"), "Primary site CSS should remain available offline");
   assert.ok(await cache.match("/tools/assets/tools.css"), "Critical tools CSS should work offline");
 
   const geo = { url: "https://ragunauthramsaroop.com/tools/geolibre/", mode: "navigate", method: "GET" };
