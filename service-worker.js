@@ -1,6 +1,6 @@
 /* Network-first pages, on-demand assets and a four-resource offline shell. */
-const V="rr-public-v8";
-const CORE=["/","/start/","/assets/platform.css","/tools/assets/tools.css","/favicon-96.png"];
+const V="rr-public-v9";
+const CORE=["/","/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/favicon-96.png"];
 const MAX_DYNAMIC_ENTRIES=100;
 
 self.addEventListener("install",event=>{
