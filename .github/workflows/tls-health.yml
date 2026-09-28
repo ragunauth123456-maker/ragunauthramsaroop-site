@@ -28,8 +28,7 @@ jobs:
               "https://${host}/" --output "$body"
             grep -qi 'Ragunauth Ramsaroop' "$body"
 
-            css_path="$(grep -oE '/_next/static/css/[A-Za-z0-9._-]+\.css' "$body" | head -n 1 || true)"
-            test -n "$css_path"
+            css_path="/assets/site.css?v=20260928-2"
             css_body="/tmp/${host//./_}-next.css"
             css_headers="/tmp/${host//./_}-next.headers"
             curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
