@@ -29,7 +29,9 @@ def check(condition, message):
     if not condition:
         errors.append(message)
 
-check(len(page.scripts) <= 19, f"Homepage has {len(page.scripts)} scripts; budget is 19")
+check(len(page.scripts) <= 2, f"Homepage has {len(page.scripts)} external scripts; budget is 2")
+check(not any("/_next/static/" in path for path in page.scripts), "Next.js runtime must not load on the homepage")
+check((ROOT / "index.html").stat().st_size <= 25_000, "Homepage HTML exceeded 25 KB budget")
 for path in ("/tools/assets/distribution.js", "/tools/assets/report-export.js"):
     check(path not in page.scripts, f"Tool-only script unnecessarily loaded on homepage: {path}")
 
@@ -49,7 +51,8 @@ check(bool(match), "Service worker precache not found")
 check(len(urls) <= 8, f"Service worker precaches {len(urls)} resources; budget is 8")
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
-check('const V="rr-public-v9"' in sw, "Service worker version must be v9")
+check('const V="rr-public-v10"' in sw, "Service worker version must be v10")
+check("/assets/home.css" in urls, "Dedicated homepage stylesheet must be available offline")
 check("/assets/site.css" in urls, "Primary site stylesheet must be available offline")
 check("/tools/assets/tools.css" in urls, "Tools stylesheet must be available offline")
 check('cache.match("/start/")' not in sw, "Never serve the Start page as a fallback for unrelated URLs")
@@ -69,6 +72,8 @@ check('if (saved === "granted") loadAnalytics()' in analytics,
 check('if (value === "granted") loadAnalytics()' in analytics,
       "Analytics must initialize after consent")
 
+home_css = ROOT / "assets/home.css"
+check(home_css.exists() and home_css.stat().st_size <= 15_000, "Homepage CSS exceeded 15 KB budget")
 css = ROOT / "_next/static/css/5a81eca963785de4.css"
 check(css.exists() and css.stat().st_size <= 235_000, "Main CSS exceeded size baseline; review before shipping")
 search = ROOT / "assets/search-index.json"
@@ -79,4 +84,4 @@ if errors:
         print("FAIL", error)
     raise SystemExit(1)
 
-print(f"PASS: {len(page.scripts)} homepage scripts, {len(urls)} eager cache entries, priority hero, consent-gated analytics, deferred search")
+print(f"PASS: {len(page.scripts)} homepage external scripts, lightweight homepage CSS, {len(urls)} eager cache entries, priority hero, consent-gated analytics")
