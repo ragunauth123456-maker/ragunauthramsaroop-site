@@ -31,9 +31,8 @@ img{display:block;max-width:100%}
 .skip-link:focus{top:18px}
 .site-header{
   position:sticky;top:0;z-index:40;
-  background:rgba(246,244,238,.94);
-  border-bottom:1px solid rgba(16,38,31,.09);
-  backdrop-filter:blur(16px)
+  background:var(--paper);
+  border-bottom:1px solid rgba(16,38,31,.09)
 }
 .nav{
   width:min(calc(100% - 40px),var(--max));
@@ -95,6 +94,7 @@ img{display:block;max-width:100%}
 .mandate span{display:block;color:var(--gold);font-size:11px;font-weight:850;letter-spacing:.12em;text-transform:uppercase}
 .mandate strong{display:block;margin-top:7px;font-size:16px}
 .mandate p{margin:5px 0 0;color:var(--muted);font-size:13px}
+.section,.engage,.footer{content-visibility:auto;contain-intrinsic-size:auto 700px}
 .section{
   width:min(calc(100% - 40px),var(--max));
   margin:0 auto;padding:82px 0;border-top:1px solid var(--line)
