@@ -137,6 +137,10 @@ def main() -> None:
         raise SystemExit("Missing ICLOUD_SMTP_USER or ICLOUD_APP_PASSWORD.")
 
     payload = load_payload(Path(sys.argv[1]))
+    if payload.get("dry_run") is True:
+        print("Dry run validated. No email was sent.")
+        return
+
     build_cv_pdf(CV_SOURCE, CV_PDF)
     attachment = CV_PDF.read_bytes()
 
