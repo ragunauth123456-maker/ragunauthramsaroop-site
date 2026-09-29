@@ -49,8 +49,10 @@ vm.runInNewContext(source, {
   self: fakeSelf, caches: cacheAPI, URL, Response, Promise,
   async fetch(req) {
     if (!networkWorks) throw Error("Simulated TLS/network failure");
-    return new Response("Correct GIS page for " + urlFor(req), {
-      headers: { "Content-Type": "text/html" }
+    const url = urlFor(req);
+    const type = url.includes(".css") ? "text/css" : url.includes(".js") ? "application/javascript" : "text/html";
+    return new Response("Network response for " + url, {
+      headers: { "Content-Type": type }
     });
   }
 }, { filename: "service-worker.js" });
@@ -70,8 +72,8 @@ async function eventFor(handler, request) {
 }
 
 (async () => {
-  assert.ok(source.includes('const V="rr-public-v11"'), "Version should replace v10");
-  stores.set("rr-public-v10", new Map());
+  assert.ok(source.includes('const V="rr-public-v12"'), "Version should replace v11");
+  stores.set("rr-public-v11", new Map());
   stores.set("some-other-app", new Map());
   const installWork = [];
   listeners.install({ waitUntil(p) { installWork.push(Promise.resolve(p)); } });
@@ -79,17 +81,24 @@ async function eventFor(handler, request) {
   const activateWork = [];
   listeners.activate({ waitUntil(p) { activateWork.push(Promise.resolve(p)); } });
   await Promise.all(activateWork);
-  assert.equal(stores.has("rr-public-v10"), false, "Retire old caches on upgrade");
+  assert.equal(stores.has("rr-public-v11"), false, "Retire old caches on upgrade");
   assert.equal(stores.has("some-other-app"), true, "Never delete unrelated caches");
-  const cache = await cacheAPI.open("rr-public-v11");
-  assert.ok(await cache.match("/start/"), "Start page should remain available offline");
+  const cache = await cacheAPI.open("rr-public-v12");
+  assert.ok(await cache.match("/"), "Homepage shell should be precached");
   assert.ok(await cache.match("/assets/home.css"), "Homepage CSS should remain available offline");
+  assert.ok(await cache.match("/assets/home-runtime.js"), "Homepage runtime should remain available offline");
   assert.ok(await cache.match("/assets/accessibility.css"), "Accessibility CSS should remain available offline");
-  assert.ok(await cache.match("/assets/site.css"), "Primary site CSS should remain available offline");
-  assert.ok(await cache.match("/tools/assets/tools.css"), "Critical tools CSS should work offline");
+  assert.equal(await cache.match("/start/"), undefined, "Start page must not compete with homepage loading");
+  assert.equal(await cache.match("/assets/site.css"), undefined, "Large site CSS must be on demand");
+  assert.equal(await cache.match("/tools/assets/tools.css"), undefined, "Tools CSS must be on demand");
+
+  const home = { url: "https://ragunauthramsaroop.com/", mode: "navigate", method: "GET" };
+  let page = await eventFor(listeners.fetch, home);
+  assert.equal(page.status, 200, "Cached homepage should open immediately while offline");
+  assert.match(await page.text(), /Precached:/);
 
   const geo = { url: "https://ragunauthramsaroop.com/tools/geolibre/", mode: "navigate", method: "GET" };
-  let page = await eventFor(listeners.fetch, geo);
+  page = await eventFor(listeners.fetch, geo);
   assert.equal(page.status, 503, "A failed GIS request must be an explicit offline error");
   assert.match(await page.text(), /Connection unavailable/);
   assert.equal(page.headers.get("Cache-Control"), "no-store");
@@ -97,24 +106,31 @@ async function eventFor(handler, request) {
   networkWorks = true;
   page = await eventFor(listeners.fetch, geo);
   assert.equal(page.status, 200, "Successful requests must return the requested page");
-  assert.match(await page.text(), /Correct GIS page/);
+  assert.match(await page.text(), /Network response/);
 
   networkWorks = false;
   page = await eventFor(listeners.fetch, {
     ...geo, url: geo.url + "?reconnect=1"
   });
   assert.equal(page.status, 200, "Previously visited exact page should work offline");
-  assert.match(await page.text(), /Correct GIS page/);
+  assert.match(await page.text(), /Network response/);
 
   const unknown = await eventFor(listeners.fetch, {
     url: "https://ragunauthramsaroop.com/not-visited/", mode: "navigate", method: "GET"
   });
   assert.equal(unknown.status, 503, "No unrelated offline page substitution");
   assert.doesNotMatch(await unknown.text(), /What brought you here/);
-  const css = await eventFor(listeners.fetch, {
+  networkWorks = true;
+  let css = await eventFor(listeners.fetch, {
     url: "https://ragunauthramsaroop.com/tools/assets/tools.css",
     mode: "same-origin", method: "GET"
   });
-  assert.equal(css.status, 200, "CSS remains cached during offline failures");
-  console.log("PASS: offline route integrity, TLS failure fallback, critical CSS, cache migration, query handling");
+  assert.equal(css.status, 200, "Tool CSS should load on demand");
+  networkWorks = false;
+  css = await eventFor(listeners.fetch, {
+    url: "https://ragunauthramsaroop.com/tools/assets/tools.css",
+    mode: "same-origin", method: "GET"
+  });
+  assert.equal(css.status, 200, "Visited tool CSS should then work offline");
+  console.log("PASS: instant cached homepage, deferred platform assets, offline route integrity, cache migration");
 })().catch(err => { console.error(err); process.exitCode = 1; });
