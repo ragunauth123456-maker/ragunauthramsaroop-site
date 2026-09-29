@@ -73,6 +73,8 @@ jobs:
       - name: Check browser script syntax
         run: |
           node --check service-worker.js
+          node --check assets/home-runtime.js
+          node --check assets/accessibility.js
           node --check assets/platform.js
           node --check tools/assets/analytics-loader.js
           node --check tools/geolibre/geolibre.js
