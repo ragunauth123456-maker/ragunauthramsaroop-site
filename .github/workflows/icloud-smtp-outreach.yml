@@ -1,0 +1,79 @@
+name: iCloud SMTP executive outreach
+
+on:
+  push:
+    branches:
+      - main
+      - icloud-smtp-outreach
+    paths:
+      - 'outreach/icloud-outbox/*.json'
+  workflow_dispatch:
+    inputs:
+      payload_file:
+        description: 'Path to one approved JSON payload under outreach/icloud-outbox/'
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: icloud-smtp-outreach
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    env:
+      ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PDF dependency
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5'
+
+      - name: Resolve approved payload
+        id: payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PAYLOAD="${{ inputs.payload_file }}"
+          else
+            PAYLOAD="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-outbox/[^/]+\.json$' | head -n 1 || true)"
+          fi
+          if [ -z "$PAYLOAD" ]; then
+            echo "No outbox payload found in this change."
+            exit 0
+          fi
+          case "$PAYLOAD" in
+            outreach/icloud-outbox/*.json) ;;
+            *) echo "Refusing payload outside approved outbox."; exit 1 ;;
+          esac
+          if [ ! -f "$PAYLOAD" ]; then
+            echo "Payload file not found: $PAYLOAD"
+            exit 1
+          fi
+          echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Verify iCloud credential is configured
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          if [ -z "$ICLOUD_APP_PASSWORD" ]; then
+            echo "ICLOUD_APP_PASSWORD is not configured as a GitHub Actions secret."
+            exit 1
+          fi
+
+      - name: Send approved executive outreach through Apple iCloud SMTP
+        if: steps.payload.outputs.payload != ''
+        run: python scripts/send_icloud_smtp.py "${{ steps.payload.outputs.payload }}"
