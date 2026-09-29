@@ -40,10 +40,14 @@ def site_files(suffix):
         out.extend(Path(base)/f for f in files if f.endswith(suffix))
     return out
 html_pages=site_files(".html")
+home_runtime=(ROOT/"assets"/"home-runtime.js").read_text(encoding="utf-8",errors="replace") if (ROOT/"assets"/"home-runtime.js").exists() else ""
 for page in html_pages:
     text=page.read_text(encoding="utf-8",errors="replace")
     is_redirect=('http-equiv="refresh"' in text.lower() and 'This page has moved' in text)
-    if not is_redirect and "/tools/assets/analytics-loader.js" not in text:
+    analytics_loaded="/tools/assets/analytics-loader.js" in text
+    if page==ROOT/"index.html" and "/assets/home-runtime.js" in text:
+        analytics_loaded=analytics_loaded or "/tools/assets/analytics-loader.js" in home_runtime
+    if not is_redirect and not analytics_loaded:
         issues.append((str(page),"missing analytics consent loader"))
 robots_text=(ROOT/"robots.txt").read_text(encoding="utf-8",errors="replace")
 if "Sitemap: https://ragunauthramsaroop.com/tools/sitemap.xml" not in robots_text:
