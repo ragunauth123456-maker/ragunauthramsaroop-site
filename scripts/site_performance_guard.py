@@ -30,7 +30,7 @@ def check(condition, message):
     if not condition:
         errors.append(message)
 
-check(len(page.scripts) <= 2, f"Homepage has {len(page.scripts)} external scripts; budget is 2")
+check(page.scripts == ["/assets/home-runtime.js"], f"Homepage must load only the tiny idle runtime, found: {page.scripts}")
 check(not any("/_next/static/" in path for path in page.scripts), "Next.js runtime must not load on the homepage")
 check((ROOT / "index.html").stat().st_size <= 25_000, "Homepage HTML exceeded 25 KB budget")
 for path in ("/tools/assets/distribution.js", "/tools/assets/report-export.js"):
@@ -50,14 +50,23 @@ sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
 match = re.search(r"const CORE=\[([\s\S]*?)\];", sw)
 urls = re.findall(r'"(/[^"]+)"', match.group(1)) if match else []
 check(bool(match), "Service worker precache not found")
-check(len(urls) <= 8, f"Service worker precaches {len(urls)} resources; budget is 8")
+check(len(urls) <= 5, f"Service worker precaches {len(urls)} resources; budget is 5")
+for forbidden in ("/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/assets/preview.png"):
+    check(forbidden not in urls, f"Heavy or non-home asset must not be precached: {forbidden}")
+core_bytes = 0
+for url in urls:
+    target = ROOT / ("index.html" if url == "/" else url.lstrip("/"))
+    if target.exists():
+        core_bytes += target.stat().st_size
+check(core_bytes <= 30_000, f"Service worker eager shell is {core_bytes/1024:.1f} KB; budget is 30 KB")
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
-check('const V="rr-public-v11"' in sw, "Service worker version must be v11")
+check('const V="rr-public-v12"' in sw, "Service worker version must be v12")
 check("/assets/home.css" in urls, "Dedicated homepage stylesheet must be available offline")
 check("/assets/accessibility.css" in urls, "Accessibility stylesheet must be available offline")
-check("/assets/site.css" in urls, "Primary site stylesheet must be available offline")
-check("/tools/assets/tools.css" in urls, "Tools stylesheet must be available offline")
+check("/assets/home-runtime.js" in urls, "Homepage idle runtime must be available offline")
+check('url.pathname==="/"' in sw and "refresh.then" in sw, "Homepage must use cached shell with background refresh")
+check("STATIC_FIRST" in sw, "Critical homepage assets must use cache-first behavior")
 check('cache.match("/start/")' not in sw, "Never serve the Start page as a fallback for unrelated URLs")
 check('status:503' in sw, "Unknown offline navigation must return an explicit 503")
 check('k.startsWith("rr-public-v")' in sw, "Only RR-managed caches should be deleted")
@@ -69,6 +78,11 @@ check("afterLoadIdle" in platform
       and 'elseif(location.pathname!=="/")afterLoadIdle(startBrain,4500);' in platform_compact
       and 'elseafterLoadIdle(startBrain,12000);' in platform_compact,
       "Site Brain must defer on secondary pages and the homepage")
+runtime = (ROOT / "assets/home-runtime.js").read_text(encoding="utf-8")
+check(runtime.count("requestIdleCallback") >= 1, "Homepage runtime must defer noncritical work until idle")
+check("/assets/accessibility.js" in runtime and "/tools/assets/analytics-loader.js" in runtime,
+      "Homepage runtime must idle-load accessibility and analytics")
+check((ROOT / "assets/home-runtime.js").stat().st_size <= 1_500, "Homepage runtime exceeded 1.5 KB")
 accessibility = (ROOT / "assets/accessibility.js").read_text(encoding="utf-8")
 check('createElement("style")' not in accessibility, "Accessibility helper must not inject inline style under strict CSP")
 analytics = (ROOT / "tools/assets/analytics-loader.js").read_text(encoding="utf-8")
@@ -79,7 +93,10 @@ check('if (value === "granted") loadAnalytics()' in analytics,
 check('createElement("style")' not in analytics, "Analytics consent UI must not inject inline style under strict CSP")
 
 home_css = ROOT / "assets/home.css"
+home_css_text = home_css.read_text(encoding="utf-8") if home_css.exists() else ""
 check(home_css.exists() and home_css.stat().st_size <= 15_000, "Homepage CSS exceeded 15 KB budget")
+check("content-visibility:auto" in home_css_text, "Below-fold homepage sections must use content-visibility")
+check("backdrop-filter" not in home_css_text, "Homepage must avoid costly backdrop-filter compositing")
 css = ROOT / "_next/static/css/5a81eca963785de4.css"
 check(css.exists() and css.stat().st_size <= 235_000, "Main CSS exceeded size baseline; review before shipping")
 search = ROOT / "assets/search-index.json"
@@ -90,4 +107,4 @@ if errors:
         print("FAIL", error)
     raise SystemExit(1)
 
-print(f"PASS: {len(page.scripts)} homepage external scripts, lightweight homepage CSS, {len(urls)} eager cache entries, priority hero, consent-gated analytics")
+print(f"PASS: one idle homepage runtime, {core_bytes/1024:.1f} KB eager service-worker shell, cache-first home assets, deferred platform CSS, priority hero")
