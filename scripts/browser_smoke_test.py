@@ -25,25 +25,35 @@ def main():
         context.set_default_timeout(15000)
         page = context.new_page()
         try:
-            page.goto(base + "/", wait_until="domcontentloaded")
+            page.goto(base + "/", wait_until="load")
             expect(page.locator("h1")).to_contain_text("Ragunauth")
             expect(page.locator(".nav-links")).to_be_visible()
             expect(page.locator(".hero-portrait img")).to_have_attribute("width", "1200")
             expect(page.locator(".hero-portrait img")).to_have_attribute("src", "/assets/preview.png")
             assert page.locator('link[href^="/assets/home.css"]').count() == 1
+            assert page.locator('script[src]').count() == 1
+            expect(page.locator('script[src]')).to_have_attribute("src", "/assets/home-runtime.js")
             assert page.locator('script[src^="/_next/static/"]').count() == 0
             assert page.locator('script:not([src]):not([type="application/ld+json"])').count() == 0
             assert page.locator('meta[http-equiv="Content-Security-Policy"]').count() == 1
             resources = page.evaluate("performance.getEntriesByType('resource').map(e => e.name)")
             assert not any("/_next/static/" in url for url in resources), resources
             assert not any("ragunauth-ramsaroop.floot.app" in url for url in resources), resources
+            assert not any("/assets/site.css" in url for url in resources), resources
+            assert not any("/assets/platform.css" in url for url in resources), resources
+            assert not any("/tools/assets/tools.css" in url for url in resources), resources
+            assert not any("/tools/assets/analytics-loader.js" in url for url in resources), "Analytics entered the critical load window"
+            page.wait_for_timeout(3600)
+            delayed = page.evaluate("performance.getEntriesByType('resource').map(e => e.name)")
+            assert any("/assets/accessibility.js" in url for url in delayed), delayed
+            assert any("/tools/assets/analytics-loader.js" in url for url in delayed), delayed
             page.set_viewport_size({"width": 390, "height": 844})
             expect(page.locator(".mobile-nav")).to_be_visible()
             expect(page.locator(".nav-links")).to_be_hidden()
             page.locator(".mobile-nav summary").click()
             expect(page.locator(".mobile-nav a").first).to_be_visible()
             page.set_viewport_size({"width": 1280, "height": 900})
-            results.append("PASS self-hosted CSP-hardened executive homepage on desktop and mobile")
+            results.append("PASS fast homepage: one critical runtime, no platform CSS, delayed analytics, desktop and mobile")
 
             page.goto(base + "/start/", wait_until="domcontentloaded")
             routes = [
