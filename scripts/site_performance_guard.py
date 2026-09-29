@@ -48,9 +48,10 @@ check(any(x.get("class") == "portrait" and x.get("fetchpriority") == "high"
 
 sw = (ROOT / "service-worker.js").read_text(encoding="utf-8")
 match = re.search(r"const CORE=\[([\s\S]*?)\];", sw)
-urls = re.findall(r'"(/[^"]+)"', match.group(1)) if match else []
+urls = re.findall(r'"(/[^"]*)"', match.group(1)) if match else []
 check(bool(match), "Service worker precache not found")
 check(len(urls) <= 5, f"Service worker precaches {len(urls)} resources; budget is 5")
+check("/" in urls, "Homepage document must be part of the fast shell")
 for forbidden in ("/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/assets/preview.png"):
     check(forbidden not in urls, f"Heavy or non-home asset must not be precached: {forbidden}")
 core_bytes = 0
@@ -82,6 +83,7 @@ runtime = (ROOT / "assets/home-runtime.js").read_text(encoding="utf-8")
 check(runtime.count("requestIdleCallback") >= 1, "Homepage runtime must defer noncritical work until idle")
 check("/assets/accessibility.js" in runtime and "/tools/assets/analytics-loader.js" in runtime,
       "Homepage runtime must idle-load accessibility and analytics")
+check('serviceWorker.register("/service-worker.js")' in runtime, "Homepage runtime must install the fast cache immediately after load")
 check((ROOT / "assets/home-runtime.js").stat().st_size <= 1_500, "Homepage runtime exceeded 1.5 KB")
 accessibility = (ROOT / "assets/accessibility.js").read_text(encoding="utf-8")
 check('createElement("style")' not in accessibility, "Accessibility helper must not inject inline style under strict CSP")
