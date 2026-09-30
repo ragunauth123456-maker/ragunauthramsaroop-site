@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Forensic page-by-page visual alignment audit for the static public site."""
 from __future__ import annotations
-import argparse, asyncio, json, re, socketserver, threading
+import argparse, asyncio, json, re, socketserver, sys, threading
 from pathlib import Path
 from http.server import SimpleHTTPRequestHandler
 from urllib.parse import quote
@@ -22,6 +22,14 @@ EXEC_PREFIXES=(
 
 class Quiet(SimpleHTTPRequestHandler):
     def log_message(self,*_): pass
+
+class QuietServer(socketserver.ThreadingTCPServer):
+    allow_reuse_address=True
+    def handle_error(self, request, client_address):
+        exc=sys.exc_info()[1]
+        if isinstance(exc,(BrokenPipeError,ConnectionResetError)):
+            return
+        super().handle_error(request,client_address)
 
 def routes():
     out=[]
@@ -144,7 +152,7 @@ async def audit_one(browser,base,route,sem):
 
 async def main_async(strict=False):
     handler=lambda *a,**kw: Quiet(*a,directory=str(ROOT),**kw)
-    server=socketserver.ThreadingTCPServer(("127.0.0.1",0),handler)
+    server=QuietServer(("127.0.0.1",0),handler)
     threading.Thread(target=server.serve_forever,daemon=True).start()
     base=f"http://127.0.0.1:{server.server_address[1]}"
     async with async_playwright() as p:
