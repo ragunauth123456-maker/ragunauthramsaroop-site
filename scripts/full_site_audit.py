@@ -20,8 +20,16 @@ EXECUTIVE_PAGES={
     "leadership/index.html","professional-engagement/index.html","executive-engagement/index.html",
     "executive-search/index.html","engage/index.html","media/index.html","recognition-media/index.html",
     "case-studies/index.html","insights/index.html","executive-perspectives/index.html",
-    "research-library/index.html","white-papers/index.html","start/index.html","contact/index.html"
+    "research-library/index.html","white-papers/index.html","start/index.html","contact/index.html",
+    "evidence/index.html","authority/index.html","decision-brief/index.html","proof-in-practice/index.html",
+    "2126/index.html","2126/evidence/index.html","2126/timeline/index.html"
 }
+EXECUTIVE_SHELL_PAGES={
+    "executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html","leadership/index.html",
+    "engage/index.html","media/index.html","recognition-media/index.html","case-studies/index.html",
+    "insights/index.html","white-papers/index.html","authority/index.html","decision-brief/index.html","contact/index.html"
+}
+BRAND_MISSPELLINGS=re.compile(r"Ragnaunth|Ragnaumth|Ragnaauth|Ramaroop",re.I)
 EDITORIAL_RED_FLAGS=re.compile(
     r"\b(owner-ratified|without inflated|not a marketing|deserves a serious interview|contact book|"
     r"world[- ]class|visionary|guru|rockstar|dynamic professional|results[- ]driven|click here)\b", re.I
@@ -119,9 +127,24 @@ def static_audit(report_path:Path):
         if not parser.canonical: issues.append(("WARN",rel,"Missing canonical URL"))
         if PLACEHOLDERS.search(visible): issues.append(("ERROR",rel,"Placeholder/draft language visible"))
         if LEGACY.search(raw): issues.append(("ERROR",rel,"Legacy GitHub identity present"))
+        if BRAND_MISSPELLINGS.search(raw): issues.append(("ERROR",rel,"Executive name spelling inconsistency"))
         if rel in EXECUTIVE_PAGES:
             hit=EDITORIAL_RED_FLAGS.search(visible)
             if hit: issues.append(("ERROR",rel,f"Executive editorial red flag: {hit.group(0)}"))
+            if 'href="/./' in raw: issues.append(("ERROR",rel,'Noncanonical /./ link on executive page'))
+        if rel in EXECUTIVE_SHELL_PAGES:
+            required=('/executive-profile/','/leadership/','/evidence/','/research-library/','/media/','/resume.html','/engage/')
+            missing=[x for x in required if x not in raw]
+            if missing: issues.append(("ERROR",rel,f"Executive navigation missing: {', '.join(missing)}"))
+            if "RR_STATIC_TOOLS_LINK" in raw or "RR_PLATFORM_NAV" in raw:
+                issues.append(("ERROR",rel,"Platform navigation chrome remains on executive page"))
+            if rel in {"executive-profile/index.html","contact/index.html"} and "30 September 2026" not in raw:
+                issues.append(("ERROR",rel,"Executive record review date not current"))
+        if rel=="index.html":
+            if "/assets/randy-portrait.jpg" not in raw: issues.append(("ERROR",rel,"Self-hosted executive portrait missing from homepage"))
+        if rel=="executive-profile/index.html":
+            if 'class="exec-headshot"' not in raw or "/assets/randy-portrait.jpg" not in raw:
+                issues.append(("ERROR",rel,"Executive profile portrait missing") )
         min_words=55 if rel in {"contact.html","brief-me.html"} or rel.startswith(("contact/","embed/","install/","subscribe/","feedback/","api/")) else 90
         if len(words)<min_words: issues.append(("WARN",rel,f"Thin visible content ({len(words)} words)"))
         exec_hits=len(EXEC_TERMS.findall(visible))
