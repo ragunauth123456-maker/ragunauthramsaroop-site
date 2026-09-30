@@ -17,7 +17,7 @@ for path in sorted(WORKFLOWS.glob("*.y*ml")):
     checked += 1
     text = path.read_text(encoding="utf-8", errors="replace")
     for action, version in REQUIRED.items():
-        for found in re.findall(rf"{re.escape(action)}@(v\\d+)", text):
+        for found in re.findall(rf"{re.escape(action)}@(v\d+)", text):
             if found != version:
                 errors.append(f"{path.relative_to(ROOT)} uses {action}@{found}; required {action}@{version}")
     if "ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION" in text:
