@@ -1,0 +1,52 @@
+name: Spaceship account domain audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/spaceship-domain-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Query Spaceship domain and DNS read-only
+        env:
+          SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
+          SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const domain='ragunauthramsaroop.com';
+          const headers={
+            'X-API-Key':process.env.SPACESHIP_API_KEY,
+            'X-API-Secret':process.env.SPACESHIP_API_SECRET,
+            'Accept':'application/json'
+          };
+          async function get(url){
+            const r=await fetch(url,{headers});
+            const text=await r.text();
+            if(!r.ok) throw new Error(url+' HTTP '+r.status+' '+text);
+            return JSON.parse(text);
+          }
+          const d=await get('https://spaceship.dev/api/v1/domains/'+domain);
+          const dns=await get('https://spaceship.dev/api/v1/dns/records/'+domain+'?take=500&skip=0');
+          const safe={
+            domain:{
+              name:d.name,
+              unicodeName:d.unicodeName,
+              autoRenew:d.autoRenew,
+              registrationDate:d.registrationDate,
+              expirationDate:d.expirationDate,
+              lifecycleStatus:d.lifecycleStatus,
+              verificationStatus:d.verificationStatus,
+              privacyProtection:d.privacyProtection,
+              nameservers:d.nameservers
+            },
+            websiteDns:(dns.items||[]).filter(r=>r.name==='@'||String(r.name).toLowerCase()==='www')
+          };
+          console.log(JSON.stringify(safe,null,2));
+          NODE
