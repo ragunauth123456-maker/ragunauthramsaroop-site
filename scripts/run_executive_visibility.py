@@ -58,7 +58,7 @@ def main():
         report['postiz_publishing']='unavailable'
     report['free_native_linkedin_scheduler']='available_separately'
     if not x.no_indexnow:
-        pages=run(['gh','api','repos/ragunauth123456-maker/ragunauthramsaroop-site/pages/builds/latest','--jq','{status,commit}'],timeout=20)
+        pages=run(['gh','api','repos/ragunauthramsaroop/ragunauthramsaroop-site/pages/builds/latest','--jq','{status,commit}'],timeout=20)
         try:build=json.loads(pages.get('output','')) if pages['exit']==0 else {}
         except ValueError:build={}
         report['github_pages_status']=build.get('status','not_verified')
