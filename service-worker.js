@@ -1,4 +1,5 @@
 /* Fast homepage shell, stale-while-revalidate home navigation, on-demand platform assets. */
+/* Homepage shell refreshed after 2026-09-30 executive redesign. */
 const V="rr-public-v14";
 const CORE=["/","/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
