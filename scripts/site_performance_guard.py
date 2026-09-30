@@ -36,7 +36,7 @@ check((ROOT / "index.html").stat().st_size <= 25_000, "Homepage HTML exceeded 25
 for path in ("/tools/assets/distribution.js", "/tools/assets/report-export.js"):
     check(path not in page.scripts, f"Tool-only script unnecessarily loaded on homepage: {path}")
 
-hero_url = "/assets/preview.png"
+hero_url = "/assets/randy-portrait.jpg"
 check("ragunauth-ramsaroop.floot.app" not in homepage_text, "Homepage must not depend on the legacy Floot image host")
 check('http-equiv="Content-Security-Policy"' in homepage_text, "Homepage must enforce a Content Security Policy")
 check("'unsafe-inline'" not in homepage_text, "Homepage CSP must not permit unsafe-inline")
@@ -52,7 +52,7 @@ urls = re.findall(r'"(/[^"]*)"', match.group(1)) if match else []
 check(bool(match), "Service worker precache not found")
 check(len(urls) <= 5, f"Service worker precaches {len(urls)} resources; budget is 5")
 check("/" in urls, "Homepage document must be part of the fast shell")
-for forbidden in ("/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/assets/preview.png"):
+for forbidden in ("/start/","/assets/site.css","/assets/platform.css","/tools/assets/tools.css","/assets/preview.png","/assets/randy-portrait.jpg"):
     check(forbidden not in urls, f"Heavy or non-home asset must not be precached: {forbidden}")
 core_bytes = 0
 for url in urls:
