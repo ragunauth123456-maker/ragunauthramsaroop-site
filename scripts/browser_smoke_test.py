@@ -28,6 +28,10 @@ def main():
             page.goto(base + "/", wait_until="load")
             expect(page.locator("h1")).to_contain_text("Ragunauth")
             expect(page.locator(".nav-links")).to_be_visible()
+            expect(page.locator('.nav-links a[href="/resume.html"]')).to_be_visible()
+            expect(page.locator("body")).to_contain_text("Liaison Director, Social Responsibility Department")
+            expect(page.locator("body")).to_contain_text("CREF 2026")
+            assert "five role progressions" not in page.locator("body").inner_text().lower()
             expect(page.locator(".hero-portrait img")).to_have_attribute("width", "1200")
             expect(page.locator(".hero-portrait img")).to_have_attribute("src", "/assets/preview.png")
             assert page.locator('link[href^="/assets/home.css"]').count() == 1
