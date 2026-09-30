@@ -226,6 +226,8 @@ a{color:inherit}
   .cv-footer{margin-top:42px}
 }
 
+@media(max-width:620px){.cv-value-card h3{min-height:0}.cv-mandate-strip>div{min-height:auto}}
+
 /* Dedicated three-page A4 executive PDF layout */
 .cv-print-document{display:none}
 
