@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "kdf": "PBKDF2-HMAC-SHA256",
+  "iterations": 600000,
+  "salt": "hVmegXNE14sIJeE87ClNOg==",
+  "nonce": "eEHuZrBjtmMWSCvc",
+  "ciphertext": "9BpgBqf1yfbIaES7E6/EedCXDK+QwfnIYWRN5L/XbbQ9pb4iOHrd7Ju+T4pl64Rd"
+}
