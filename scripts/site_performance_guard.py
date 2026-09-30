@@ -62,7 +62,7 @@ for url in urls:
 check(core_bytes <= 34_000, f"Service worker eager shell is {core_bytes/1024:.1f} KB; budget is 34 KB")
 check(not any("index.json" in u or u.endswith(".wasm") for u in urls),
       "Large indexes and model assets must be fetched on demand")
-check('const V="rr-public-v13"' in sw, "Service worker version must be v13")
+check('const V="rr-public-v14"' in sw, "Service worker version must be v14")
 check("/assets/home.css" in urls, "Dedicated homepage stylesheet must be available offline")
 check("/assets/accessibility.css" in urls, "Accessibility stylesheet must be available offline")
 check("/assets/home-runtime.js" in urls, "Homepage idle runtime must be available offline")
