@@ -26,8 +26,14 @@ for f in (x for x in walk_files() if x.suffix.lower()==".html"):
     if len(p.scripts)>25:warn.append((f,f"{len(p.scripts)} external scripts"))
 for f in walk_files():
     if f.suffix.lower() in {".png",".jpg",".jpeg",".webp",".svg"}:
-        if f.stat().st_size>600_000:fail.append((f,f"image {f.stat().st_size/1024:.0f} KB > 600 KB"))
-        elif f.stat().st_size>250_000:warn.append((f,f"image {f.stat().st_size/1024:.0f} KB"))
+        rel=f.relative_to(ROOT).as_posix()
+        size=f.stat().st_size
+        if rel.startswith("assets/linkedin/"):
+            if size>500_000:fail.append((f,f"social image {size/1024:.0f} KB > 500 KB"))
+            elif size>400_000:warn.append((f,f"social image {size/1024:.0f} KB"))
+        else:
+            if size>600_000:fail.append((f,f"image {size/1024:.0f} KB > 600 KB"))
+            elif size>250_000:warn.append((f,f"image {size/1024:.0f} KB"))
 print("FAILURES",len(fail));print("WARNINGS",len(warn))
 for f,m in fail[:80]:print("FAIL",f.relative_to(ROOT),m)
 for f,m in warn[:80]:print("WARN",f.relative_to(ROOT),m)

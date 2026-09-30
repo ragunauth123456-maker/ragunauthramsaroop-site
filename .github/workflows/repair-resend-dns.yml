@@ -33,10 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Test safe append-only DNS repair
         run: node scripts/test_apply_spaceship_resend_dns.mjs
 
@@ -46,10 +47,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Enforce approved www CNAME for GitHub Pages
         env:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
@@ -72,10 +74,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 6
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Inspect registrar DNS or apply four approved entries
         env:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}

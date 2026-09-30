@@ -1,6 +1,13 @@
 name: Forensic design and alignment audit
 
 on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - 'assets/**'
+      - 'tools/assets/**'
+      - 'scripts/visual_alignment_audit.py'
+      - '.github/workflows/forensic-design-audit.yml'
   push:
     branches: [main]
     paths:
@@ -15,7 +22,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: forensic-design-audit
+  group: forensic-design-audit-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -23,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Install Playwright
@@ -35,7 +42,7 @@ jobs:
         run: python scripts/visual_alignment_audit.py --strict
       - name: Upload forensic report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: forensic-design-audit
           path: audit/visual-alignment-audit.json
