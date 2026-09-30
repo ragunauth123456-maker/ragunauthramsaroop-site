@@ -3,7 +3,7 @@
 if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("/service-worker.js").catch(()=>{}));
 function run(){
  const main=document.querySelector("main");if(main&&!main.id)main.id="main-content";
- if(main&&!document.querySelector(".rr-skip-link")){const a=document.createElement("a");a.className="rr-skip-link";a.href="#main-content";a.textContent="Skip to main content";document.body.insertBefore(a,document.body.firstChild)}
+ if(main&&!document.querySelector(".rr-skip-link,.skip-link,a[href=\"#main\"],a[href=\"#main-content\"]")){const a=document.createElement("a");a.className="rr-skip-link";a.href="#main-content";a.textContent="Skip to main content";document.body.insertBefore(a,document.body.firstChild)}
  document.querySelectorAll(".field").forEach((box,i)=>{const label=box.querySelector("label"),control=box.querySelector("input,select,textarea");if(label&&control&&!label.htmlFor){if(!control.id)control.id="rr-field-"+i;label.htmlFor=control.id}});
  document.querySelectorAll(".result,#out").forEach(x=>{if(!x.hasAttribute("aria-live"))x.setAttribute("aria-live","polite")});
  document.querySelectorAll('a[target="_blank"]').forEach(a=>{const rel=new Set((a.getAttribute("rel")||"").split(/\s+/).filter(Boolean));rel.add("noopener");rel.add("noreferrer");a.setAttribute("rel",[...rel].join(" "))});
