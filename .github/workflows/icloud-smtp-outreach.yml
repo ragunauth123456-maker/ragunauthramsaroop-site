@@ -28,6 +28,7 @@ jobs:
     env:
       ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
       ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+      ICLOUD_OUTREACH_TO: ${{ secrets.ICLOUD_OUTREACH_TO }}
     steps:
       - uses: actions/checkout@v4
         with:
