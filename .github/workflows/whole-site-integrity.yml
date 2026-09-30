@@ -1,0 +1,42 @@
+name: Whole-site executive integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - 'assets/**'
+      - 'tools/assets/**'
+      - 'scripts/full_site_audit.py'
+      - '.github/workflows/whole-site-integrity.yml'
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: whole-site-executive-integrity
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Static integrity and executive-content audit
+        run: python scripts/full_site_audit.py
+      - name: Allow GitHub Pages deployment to settle
+        if: github.event_name == 'push'
+        run: sleep 75
+      - name: Live load audit of every public HTML route
+        run: python scripts/full_site_audit.py --live
+      - name: Publish audit reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: whole-site-audit
+          path: audit/*.json
+          retention-days: 30
