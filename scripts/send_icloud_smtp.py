@@ -92,6 +92,21 @@ def load_payload(path: Path) -> dict:
     data = json.loads(path.read_text(encoding="utf-8"))
     if data.get("approved") is not True:
         raise ValueError("Payload must set approved=true.")
+    if data.get("recipients_from_env") is True:
+        raw = os.environ.get("ICLOUD_OUTREACH_TO", "").strip()
+        recipients = [item.strip() for item in raw.split(",") if item.strip()]
+        if not recipients:
+            raise ValueError("ICLOUD_OUTREACH_TO is not configured as a GitHub Actions secret.")
+        template = data.get("message_template") or {}
+        if not isinstance(template.get("subject"), str) or not template["subject"].strip():
+            raise ValueError("Secure-recipient payload requires message_template.subject.")
+        if not isinstance(template.get("body"), str) or not template["body"].strip():
+            raise ValueError("Secure-recipient payload requires message_template.body.")
+        data["messages"] = [
+            {"to": address, "subject": template["subject"], "body": template["body"]}
+            for address in recipients
+        ]
+
     recipients = data.get("messages")
     if not isinstance(recipients, list) or not recipients:
         raise ValueError("Payload must contain a non-empty messages list.")
