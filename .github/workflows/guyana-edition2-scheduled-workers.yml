@@ -16,18 +16,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 18
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: research/guyana-petroleum-blueprint-2026
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: python "$D/edition2_cloud_workers.py" editorial
       - run: python "$D/petroleum_fiscal_sensitivity.py"
       - run: python "$D/audit_edition2_development.py"
       - run: python "$D/edition2_cloud_workers.py" package
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: edition2-scheduled-editable-package
           if-no-files-found: error
@@ -43,15 +43,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: research/guyana-petroleum-blueprint-2026
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: python "$D/edition2_cloud_workers.py" sources
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: edition2-scheduled-source-status
           if-no-files-found: error
@@ -62,15 +62,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: research/guyana-petroleum-blueprint-2026
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: python "$D/edition2_cloud_workers.py" exhibits
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: edition2-scheduled-draft-figures
           if-no-files-found: error
