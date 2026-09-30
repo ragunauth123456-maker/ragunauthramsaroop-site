@@ -75,6 +75,11 @@ check("validStaticResponse" in sw and 'type.includes("text/css")' in sw, "Cached
 
 platform = (ROOT / "assets/platform.js").read_text(encoding="utf-8")
 platform_compact = "".join(platform.split())
+check("HAS_TOOLS_CSS" in platform and "!HAS_TOOLS_CSS" in platform,
+      "Tool-shell pages must not receive the 229 KB legacy site stylesheet after first paint")
+platform_css = (ROOT / "assets/platform.css").read_text(encoding="utf-8")
+check("RR Uniform Theme Bundle" in platform_css,
+      "Uniform theme must ship in the blocking platform stylesheet to prevent late layout shifts")
 check("afterLoadIdle" in platform
       and 'elseif(location.pathname!=="/")afterLoadIdle(startBrain,4500);' in platform_compact
       and 'elseafterLoadIdle(startBrain,12000);' in platform_compact,
