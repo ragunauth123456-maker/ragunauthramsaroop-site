@@ -38,3 +38,26 @@ code{overflow-wrap:anywhere}.rr-language-note{border-left:4px solid #315f8c}
 #rr-smart-history a{display:inline-block;margin-right:8px}
 @media(max-width:900px){.rr-smart-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.rr-smart-card{transition:none}.rr-smart-card:hover{transform:none}}
+
+
+/* Executive presentation layer: restrained hierarchy, legibility and finish */
+html{font-kerning:normal}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(181,139,69,.22);color:#08271d}
+.page-hero h1,.hero h1,.section-heading h2,.panel h2,.longform h2{text-wrap:balance;letter-spacing:-.025em}
+.page-hero p,.hero p,.longform p,.path-card p,.method-card p,.resource-card p{text-wrap:pretty}
+.topbar,.site-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.panel,.path-card,.method-card,.resource-card,.rr-related,.rr-conversion-band{
+  box-shadow:0 10px 30px rgba(8,39,29,.055);
+}
+.btn,.contact-chip,.path-card,.method-card,.resource-card,.rr-conversion-band a{
+  transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease,border-color .16s ease;
+}
+.btn:hover,.contact-chip:hover{transform:translateY(-1px)}
+.path-card:hover,.method-card:hover,.resource-card:hover{box-shadow:0 14px 36px rgba(8,39,29,.08)}
+.longform h2,.panel h2{color:#08271d}
+.longform p,.panel p{color:#33473d}
+@media (prefers-reduced-motion:reduce){
+  .btn,.contact-chip,.path-card,.method-card,.resource-card,.rr-conversion-band a{transition:none}
+  .btn:hover,.contact-chip:hover{transform:none}
+}
