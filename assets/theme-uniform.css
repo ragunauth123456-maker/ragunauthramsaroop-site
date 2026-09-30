@@ -1,0 +1,83 @@
+:root{
+  --rr-ink:#10261f;
+  --rr-ink-soft:#33473d;
+  --rr-muted:#5d6f68;
+  --rr-forest:#0b2a21;
+  --rr-forest-2:#123b2f;
+  --rr-forest-3:#2d6a4c;
+  --rr-paper:#f6f4ee;
+  --rr-paper-2:#ece9e0;
+  --rr-surface:#ffffff;
+  --rr-surface-soft:#fbfaf6;
+  --rr-line:#d9ddd7;
+  --rr-line-strong:#cbd3cd;
+  --rr-gold:#b58b45;
+  --rr-gold-soft:#d6b878;
+  --rr-success:#2d6a4c;
+  --rr-focus:#d0a354;
+}
+html,body{
+  background:var(--rr-paper);
+  color:var(--rr-ink);
+}
+a{color:inherit}
+:focus-visible{
+  outline:3px solid var(--rr-focus)!important;
+  outline-offset:3px!important;
+}
+.eyebrow,.card-index,.link-card>span,.research-card>span,.mandate span,.resource-type,.rr-smart-kicker{
+  color:var(--rr-gold)!important;
+}
+.topbar,.site-header{
+  background:color-mix(in srgb,var(--rr-paper) 94%,transparent)!important;
+  border-color:color-mix(in srgb,var(--rr-ink) 10%,transparent)!important;
+}
+.nav-cta,.btn.primary,.btn:not(.alt):not(.ghost):not(.light),.contact-chip.is-active{
+  background:var(--rr-forest)!important;
+  color:var(--rr-surface)!important;
+}
+.card,.link-card,.research-card,.platform-card,.panel,.method-card,.path-card,.resource-card,.rr-related,.rr-conversion-band{
+  background:color-mix(in srgb,var(--rr-surface) 92%,var(--rr-paper))!important;
+  border-color:var(--rr-line)!important;
+}
+.footer,.engage,.template-box{
+  background:var(--rr-forest)!important;
+  color:var(--rr-surface)!important;
+}
+.rr-platform-nav{
+  background:var(--rr-paper-2)!important;
+  border-color:var(--rr-line)!important;
+}
+.rr-platform-nav a,.rr-related h2,.rr-conversion-band a,.method-card h2,.path-card h2{
+  color:var(--rr-forest)!important;
+}
+.rr-utility-dock,.rr-a11y-toggle,#rr-free-tools-launcher{
+  background:var(--rr-forest)!important;
+}
+.rr-utility-dock a,.rr-utility-dock button,#rr-free-tools-launcher{
+  color:var(--rr-surface)!important;
+}
+.is-active,.rr-method-trust,.rr-conversion-band{
+  border-color:var(--rr-gold)!important;
+}
+.status.live{
+  background:#e6efe9!important;
+  color:var(--rr-success)!important;
+}
+.status.next{
+  background:#f2eadb!important;
+  color:#6f5527!important;
+}
+.status.explore{
+  background:#e9edef!important;
+  color:#425a68!important;
+}
+body[data-tool]:not([data-tool=""]) .hero{
+  background:
+    radial-gradient(circle at 88% 15%,color-mix(in srgb,var(--tool-accent,var(--rr-gold)) 24%,transparent),transparent 32%),
+    linear-gradient(135deg,var(--rr-forest),var(--rr-forest-2))!important;
+}
+@supports not (background:color-mix(in srgb,#000 50%,#fff)){
+  .topbar,.site-header{background:var(--rr-paper)!important}
+  .card,.link-card,.research-card,.platform-card,.panel,.method-card,.path-card,.resource-card,.rr-related,.rr-conversion-band{background:var(--rr-surface)!important}
+}
