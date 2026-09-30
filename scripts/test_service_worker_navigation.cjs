@@ -72,8 +72,8 @@ async function eventFor(handler, request) {
 }
 
 (async () => {
-  assert.ok(source.includes('const V="rr-public-v12"'), "Version should replace v11");
-  stores.set("rr-public-v11", new Map());
+  assert.ok(source.includes('const V="rr-public-v14"'), "Version should be v14");
+  stores.set("rr-public-v13", new Map());
   stores.set("some-other-app", new Map());
   const installWork = [];
   listeners.install({ waitUntil(p) { installWork.push(Promise.resolve(p)); } });
@@ -81,9 +81,9 @@ async function eventFor(handler, request) {
   const activateWork = [];
   listeners.activate({ waitUntil(p) { activateWork.push(Promise.resolve(p)); } });
   await Promise.all(activateWork);
-  assert.equal(stores.has("rr-public-v11"), false, "Retire old caches on upgrade");
+  assert.equal(stores.has("rr-public-v13"), false, "Retire prior RR cache on upgrade");
   assert.equal(stores.has("some-other-app"), true, "Never delete unrelated caches");
-  const cache = await cacheAPI.open("rr-public-v12");
+  const cache = await cacheAPI.open("rr-public-v14");
   assert.ok(await cache.match("/"), "Homepage shell should be precached");
   assert.ok(await cache.match("/assets/home.css"), "Homepage CSS should remain available offline");
   assert.ok(await cache.match("/assets/home-runtime.js"), "Homepage runtime should remain available offline");
