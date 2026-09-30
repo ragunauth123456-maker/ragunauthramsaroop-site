@@ -53,6 +53,16 @@ jobs:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
           SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
         run: node scripts/repair_www_cname.mjs
+      - name: Verify public www HTTPS after DNS repair
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --retry 4 --retry-all-errors --retry-delay 5 --max-time 30 \
+            https://www.ragunauthramsaroop.com/ --output /tmp/www-home.html
+          grep -qi 'Ragunauth Ramsaroop' /tmp/www-home.html
+          echo | openssl s_client -servername www.ragunauthramsaroop.com -connect www.ragunauthramsaroop.com:443 2>/dev/null \
+            | openssl x509 -noout -checkend 604800
+          echo "PASS: www HTTPS redirects successfully and the certificate is valid for at least seven days."
 
   owner-dns:
     if: github.event_name == 'workflow_dispatch'
