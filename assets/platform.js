@@ -1,6 +1,15 @@
 (()=>{
 "use strict";
 const RR_SITE_CSS="/assets/site.css?v=20260928-2";
+const RR_THEME_CSS="/assets/theme-uniform.css?v=20260929-1";
+if(!document.querySelector('link[href^="/assets/theme-uniform.css"]')){
+  const rrTheme=document.createElement("link");
+  rrTheme.rel="stylesheet";
+  rrTheme.href=RR_THEME_CSS;
+  rrTheme.dataset.rrTheme="1";
+  document.head.appendChild(rrTheme);
+}
+
 if(!document.querySelector('link[href^="/assets/site.css"]')){
   const rrStyle=document.createElement("link");
   rrStyle.rel="stylesheet";
