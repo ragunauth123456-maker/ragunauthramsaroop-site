@@ -138,6 +138,8 @@ def static_audit(report_path:Path):
             if missing: issues.append(("ERROR",rel,f"Executive navigation missing: {', '.join(missing)}"))
             if "RR_STATIC_TOOLS_LINK" in raw or "RR_PLATFORM_NAV" in raw:
                 issues.append(("ERROR",rel,"Platform navigation chrome remains on executive page"))
+            if "/tools/assets/launcher.js" in raw or "/tools/assets/launcher.css" in raw:
+                issues.append(("ERROR",rel,"Floating tools launcher remains on executive page"))
             if rel in {"executive-profile/index.html","contact/index.html"} and "30 September 2026" not in raw:
                 issues.append(("ERROR",rel,"Executive record review date not current"))
         if rel=="index.html":
