@@ -123,19 +123,22 @@ a{color:inherit}
   .cv-metrics{grid-template-columns:1fr}.cv-metric{padding:16px 0;border-top:1px solid var(--cv-line)}.cv-metric:first-child{border-top:0}
 }
 
-  .cv-header,.cv-actions,.cv-footer{display:none!important}
-  .cv-page{width:100%;padding:0}
-  .cv-hero{grid-template-columns:1fr 140px;gap:24px;padding:0 0 20px}
-  .cv-portrait-wrap{width:140px}.cv-portrait-caption{display:none}
-  .cv-hero h1{font-size:36pt}
-  .cv-metrics{grid-template-columns:repeat(4,1fr)}
-  .cv-main{grid-template-columns:1fr 220px;gap:28px;padding-top:28px}
-  .cv-side-inner{position:static}
-  .cv-section{padding-bottom:24px;margin-bottom:24px;break-inside:avoid}
-  .cv-side-card{break-inside:avoid}
-  .cv-btn{display:none!important}
-}
 
+
+.cv-positioning{max-width:840px;margin:18px 0 0!important;padding-left:16px;border-left:2px solid var(--cv-gold);color:#29443a!important;font-size:14px!important;line-height:1.65!important;font-weight:650}
+.cv-mandate-strip{display:grid;grid-template-columns:repeat(4,1fr);margin:30px 0 0;border:1px solid var(--cv-line);border-radius:20px;overflow:hidden;background:var(--cv-surface);box-shadow:0 12px 34px rgba(16,38,31,.055)}
+.cv-mandate-strip>div{min-width:0;padding:20px 18px;border-right:1px solid var(--cv-line)}
+.cv-mandate-strip>div:last-child{border-right:0}
+.cv-mandate-strip span{display:block;margin-bottom:18px;color:var(--cv-gold);font-size:9px;font-weight:900;letter-spacing:.14em}
+.cv-mandate-strip strong{display:block;color:var(--cv-forest);font:500 18px/1.15 var(--cv-serif)}
+.cv-mandate-strip small{display:block;margin-top:7px;color:var(--cv-muted);font-size:10px;line-height:1.45;font-weight:650}
+.cv-section h2{max-width:760px}
+.cv-value-card{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.cv-value-card:hover{transform:translateY(-2px);border-color:#c7cfc9;box-shadow:0 10px 28px rgba(16,38,31,.06)}
+.cv-side-card.dark{box-shadow:0 16px 34px rgba(11,42,33,.14)}
+@media(max-width:980px){.cv-mandate-strip{grid-template-columns:1fr 1fr}.cv-mandate-strip>div:nth-child(2){border-right:0}.cv-mandate-strip>div:nth-child(-n+2){border-bottom:1px solid var(--cv-line)}}
+@media(max-width:620px){.cv-mandate-strip{grid-template-columns:1fr}.cv-mandate-strip>div{border-right:0!important;border-bottom:1px solid var(--cv-line)}.cv-mandate-strip>div:last-child{border-bottom:0}.cv-positioning{font-size:13px!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cv-value-card,.cv-btn{transition:none}.cv-value-card:hover,.cv-btn:hover{transform:none}}
 
 /* Dedicated three-page A4 executive PDF layout */
 .cv-print-document{display:none}
