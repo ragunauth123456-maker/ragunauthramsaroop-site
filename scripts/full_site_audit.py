@@ -15,6 +15,17 @@ SKIP_DIRS={".git","node_modules","_next","pagefind",".pagefind-public","skills"}
 PLACEHOLDERS=re.compile(r"\b(lorem ipsum|todo\b|tbd\b|coming soon|placeholder text)\b",re.I)
 LEGACY=re.compile(r"ragunauth123456(?:-maker)?",re.I)
 EXEC_TERMS=re.compile(r"\b(decision|strategy|strategic|governance|evidence|leadership|executive|risk|stakeholder|institution|responsib|value|outcome|method|regulat|operat|investment|research|professional)\w*",re.I)
+EXECUTIVE_PAGES={
+    "index.html","executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html",
+    "leadership/index.html","professional-engagement/index.html","executive-engagement/index.html",
+    "executive-search/index.html","engage/index.html","media/index.html","recognition-media/index.html",
+    "case-studies/index.html","insights/index.html","executive-perspectives/index.html",
+    "research-library/index.html","white-papers/index.html","start/index.html","contact/index.html"
+}
+EDITORIAL_RED_FLAGS=re.compile(
+    r"\b(owner-ratified|without inflated|not a marketing|deserves a serious interview|contact book|"
+    r"world[- ]class|visionary|guru|rockstar|dynamic professional|results[- ]driven|click here)\b", re.I
+)
 
 class P(HTMLParser):
     def __init__(self):
