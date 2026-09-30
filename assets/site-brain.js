@@ -25,8 +25,12 @@ async function boot(){
  }catch(e){console.warn("RR Site Brain unavailable",e)}
 }
 async function addSmartNav(){
- const nav=document.querySelector(".rr-platform-nav");if(nav&&!nav.querySelector('[href="/smart/"]')){const a=document.createElement("a");a.href="/smart/";a.textContent="Smart Guide";a.dataset.brainLink="1";nav.insertBefore(a,nav.children[1]||null)}
- const top=document.querySelector(".topbar .nav");if(top&&!top.querySelector('[href="/smart/"]')&&top.children.length<8){const a=document.createElement("a");a.href="/smart/";a.textContent="Smart Guide";top.insertBefore(a,top.querySelector(".cta")||null)}
+ const nav=document.querySelector(".rr-platform-nav");
+ if(nav&&!nav.querySelector('[href="/smart/"]')){
+  const a=document.createElement("a");
+  a.href="/smart/";a.textContent="Smart Guide";a.dataset.brainLink="1";
+  nav.insertBefore(a,nav.children[1]||null)
+ }
 }
 function pageContext(){
  const meta=document.querySelector('meta[name="description"]')?.content||"";
