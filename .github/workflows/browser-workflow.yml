@@ -2,6 +2,8 @@ name: Browser workflow regression
 on:
   pull_request:
     paths:
+      - 'index.html'
+      - 'resume.html'
       - 'start/**'
       - 'resources/**'
       - 'project-workspace/**'
@@ -19,6 +21,8 @@ on:
   push:
     branches: [main]
     paths:
+      - 'index.html'
+      - 'resume.html'
       - 'start/**'
       - 'resources/**'
       - 'project-workspace/**'
