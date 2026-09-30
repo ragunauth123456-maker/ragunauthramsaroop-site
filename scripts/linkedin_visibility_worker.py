@@ -26,7 +26,7 @@ def check_site():
     for k,v in checks.items():
         if not v:problems.append(k)
     try:
-        req=Request('https://ragunauth123456-maker.github.io/executive-search/',headers={'User-Agent':'RandyVisibilityAudit/1.0'})
+        req=Request('https://ragunauthramsaroop.github.io/ragunauthramsaroop-site/executive-search/',headers={'User-Agent':'RandyVisibilityAudit/1.0'})
         with urlopen(req,timeout=12) as response:
             checks['verified_fallback_online']=response.status==200
     except Exception:
