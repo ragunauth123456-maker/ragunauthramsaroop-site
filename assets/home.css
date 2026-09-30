@@ -195,3 +195,47 @@ img{display:block;max-width:100%}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important}
 }
+
+
+/* Executive editorial refinement · 2026-09-30 */
+.hero{min-height:690px;align-items:center;padding-top:88px;padding-bottom:84px}
+.hero-copy{max-width:720px}
+.hero h1{max-width:760px;font-size:clamp(56px,7vw,94px);line-height:.93;letter-spacing:-.055em}
+.hero h1 span{font-style:italic;font-weight:500;color:var(--gold)}
+.role{margin-top:24px;font-size:13px;letter-spacing:.15em;text-transform:uppercase;font-weight:800;color:var(--forest-2)}
+.hero-thesis{max-width:690px;font-size:clamp(21px,2.1vw,28px);line-height:1.42;letter-spacing:-.018em}
+.hero-support{max-width:650px;font-size:16px;line-height:1.75}
+.hero-portrait{max-width:410px;margin-left:auto}
+.portrait-frame{border-radius:28px;box-shadow:0 28px 70px rgba(11,42,33,.16);border:1px solid rgba(11,42,33,.12)}
+.hero-proof{margin-top:16px;font-size:12px;letter-spacing:.035em}
+.mandate{margin-top:18px;padding:22px 2px 0;border-top:1px solid var(--line)}
+.mandate span{letter-spacing:.13em;text-transform:uppercase;font-size:10px;font-weight:800;color:var(--gold)}
+.mandate strong{display:block;margin-top:8px;font-size:18px;line-height:1.35}
+.hero-facts{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+.hero-facts dt{font-size:23px;letter-spacing:-.03em}
+.section{padding-top:94px;padding-bottom:94px}
+.section-heading{margin-bottom:42px}
+.section-heading h2{max-width:820px;font-size:clamp(38px,4.7vw,62px);line-height:1.02;letter-spacing:-.04em}
+.section-heading>p,.section-heading.split>p{font-size:16px;line-height:1.72}
+.card,.link-card,.research-card,.platform-card{border-radius:18px;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.link-card:hover,.research-card:hover,.platform-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(11,42,33,.08);border-color:rgba(181,139,69,.48)}
+.card-index{font-variant-numeric:tabular-nums;letter-spacing:.12em}
+.engage{margin-top:36px;margin-bottom:72px;border-radius:30px;padding:64px}
+.engage h2{font-size:clamp(38px,4.6vw,60px);line-height:1.03;letter-spacing:-.04em}
+.footer{padding-top:44px;padding-bottom:44px}
+@media(max-width:900px){
+ .hero{min-height:0;padding-top:60px;padding-bottom:60px}
+ .hero h1{font-size:clamp(50px,12vw,72px)}
+ .hero-portrait{max-width:360px;margin:12px 0 0}
+ .section{padding-top:72px;padding-bottom:72px}
+ .engage{padding:44px 32px}
+}
+@media(max-width:620px){
+ .hero{padding-top:42px;padding-bottom:48px}
+ .hero h1{font-size:clamp(46px,14vw,62px)}
+ .hero-thesis{font-size:21px}
+ .hero-facts{margin-top:30px}
+ .section{padding-top:60px;padding-bottom:60px}
+ .section-heading{margin-bottom:30px}
+ .engage{margin-bottom:42px;padding:36px 24px;border-radius:22px}
+}
