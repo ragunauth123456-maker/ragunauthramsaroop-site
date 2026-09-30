@@ -108,6 +108,9 @@ def static_audit(report_path:Path):
         if not parser.canonical: issues.append(("WARN",rel,"Missing canonical URL"))
         if PLACEHOLDERS.search(visible): issues.append(("ERROR",rel,"Placeholder/draft language visible"))
         if LEGACY.search(raw): issues.append(("ERROR",rel,"Legacy GitHub identity present"))
+        if rel in EXECUTIVE_PAGES:
+            hit=EDITORIAL_RED_FLAGS.search(visible)
+            if hit: issues.append(("ERROR",rel,f"Executive editorial red flag: {hit.group(0)}"))
         min_words=55 if rel in {"contact.html","brief-me.html"} or rel.startswith(("contact/","embed/","install/","subscribe/","feedback/","api/")) else 90
         if len(words)<min_words: issues.append(("WARN",rel,f"Thin visible content ({len(words)} words)"))
         exec_hits=len(EXEC_TERMS.findall(visible))
