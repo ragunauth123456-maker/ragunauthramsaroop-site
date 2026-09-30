@@ -70,7 +70,7 @@ for path in sorted(ROOT.rglob("*.html")):
         "description":parser.description.strip(),
         "url":url,
         "type":doc_type(url),
-        "text":visible[:24000]
+        "text":visible[:3000]
     })
 
 payload={"version":2,"updated":PROFILE["reviewed"],"documents":docs}
