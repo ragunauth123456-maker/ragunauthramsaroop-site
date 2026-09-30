@@ -13,7 +13,10 @@ for rel in targets:
     if rel=="assets/theme-uniform.css":
         for key in ("--rr-forest:#0b2a21","--rr-paper:#f6f4ee","--rr-gold:#b58b45","--rr-line:#d9ddd7"):
             if key not in s: errors.append(f"theme token missing in {rel}: {key}")
-for rel in ("index.html","resume.html","research-library/index.html"):
+home=(ROOT/"index.html").read_text(encoding="utf-8",errors="replace")
+if "/assets/home.css" not in home:
+    errors.append("dedicated homepage theme missing from index.html")
+for rel in ("resume.html","research-library/index.html"):
     s=(ROOT/rel).read_text(encoding="utf-8",errors="replace")
     if "/assets/theme-uniform.css" not in s:
         errors.append(f"canonical theme missing from {rel}")
