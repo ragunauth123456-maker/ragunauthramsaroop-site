@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
       - name: Install Playwright
@@ -42,7 +42,7 @@ jobs:
         run: python scripts/visual_alignment_audit.py --strict
       - name: Upload forensic report
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: forensic-design-audit
           path: audit/visual-alignment-audit.json
