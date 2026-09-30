@@ -10,6 +10,7 @@ on:
       - 'scripts/build_pagefind_public.py'
       - 'scripts/build_semantic_index.mjs'
       - 'scripts/normalize_pagefind.mjs'
+      - 'scripts/sync_sitemap.py'
       - 'package.json'
       - 'package-lock.json'
   workflow_dispatch:
@@ -39,9 +40,11 @@ jobs:
         run: npm run search:index
       - name: Rebuild semantic index
         run: npm run smart:index
+      - name: Sync sitemap
+        run: python scripts/sync_sitemap.py
       - name: Commit generated search assets when changed
         run: |
-          git add assets/search-index.json assets/semantic-index.json pagefind
+          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml
           if git diff --cached --quiet; then
             echo "Search indexes already current."
             exit 0
