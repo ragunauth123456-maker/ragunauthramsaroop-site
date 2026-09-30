@@ -2,7 +2,9 @@
 "use strict";
 const RR_SITE_CSS="/assets/site.css?v=20260928-2";
 const RR_THEME_CSS="/assets/theme-uniform.css?v=20260929-1";
-if(!document.querySelector('link[href^="/assets/theme-uniform.css"]')){
+const HAS_PLATFORM_CSS=!!document.querySelector('link[href^="/assets/platform.css"]');
+const HAS_TOOLS_CSS=!!document.querySelector('link[href^="/tools/assets/tools.css"]');
+if(!HAS_PLATFORM_CSS&&!document.querySelector('link[href^="/assets/theme-uniform.css"]')){
   const rrTheme=document.createElement("link");
   rrTheme.rel="stylesheet";
   rrTheme.href=RR_THEME_CSS;
@@ -10,7 +12,7 @@ if(!document.querySelector('link[href^="/assets/theme-uniform.css"]')){
   document.head.appendChild(rrTheme);
 }
 
-if(!document.querySelector('link[href^="/assets/site.css"]')){
+if(!HAS_TOOLS_CSS&&!document.querySelector('link[href^="/assets/site.css"]')){
   const rrStyle=document.createElement("link");
   rrStyle.rel="stylesheet";
   rrStyle.href=RR_SITE_CSS;
