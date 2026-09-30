@@ -4,6 +4,8 @@ from email.message import EmailMessage
 from email.utils import formataddr
 from pathlib import Path
 
+from send_icloud_smtp import build_cv_pdf, CV_SOURCE
+
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import x25519
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
@@ -15,6 +17,7 @@ SMTP_PORT=587
 SENDER="ragunauthramsaroop@icloud.com"
 SENDER_NAME="Ragunauth Ramsaroop"
 WRAPPED_KEY=Path("outreach/secure/wrapped_private_key.json")
+CV_PDF=Path("/tmp/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 def b64(s): return base64.b64decode(s)
 
@@ -56,10 +59,9 @@ def decrypt_payload(path: Path, private_key):
     return payload
 
 def attach_cv(msg: EmailMessage):
-    path=Path("career-assets/Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
-    if not path.exists():
-        return
-    msg.add_attachment(path.read_bytes(), maintype="application", subtype="pdf",
+    if not CV_PDF.exists():
+        build_cv_pdf(CV_SOURCE, CV_PDF)
+    msg.add_attachment(CV_PDF.read_bytes(), maintype="application", subtype="pdf",
                        filename="Ragunauth_Ramsaroop_Executive_CV_2026.pdf")
 
 def send(payload, password):
