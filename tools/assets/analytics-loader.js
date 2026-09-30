@@ -56,8 +56,8 @@
     box.id = "rr-analytics-choice";
     box.setAttribute("aria-label", "Analytics preference");
     box.innerHTML =
-      '<div><strong>Privacy-respecting analytics</strong><p>This site uses Google Analytics to understand visits and improve the free tools. Analytics cookies are off unless you allow them.</p></div>' +
-      '<div class="rr-analytics-actions"><button type="button" data-choice="denied">No thanks</button><button type="button" class="allow" data-choice="granted">Allow analytics</button><a href="/tools/privacy/">Privacy</a></div>';
+      '<div><strong>Optional analytics</strong><p>Analytics help improve the site. They remain off unless you choose to allow them.</p></div>' +
+      '<div class="rr-analytics-actions"><button type="button" data-choice="denied">Decline</button><button type="button" class="allow" data-choice="granted">Allow</button><a href="/tools/privacy/">Privacy</a></div>';
     if (!document.querySelector('link[href="/tools/assets/analytics-consent.css"]')) {
       const style = document.createElement("link");
       style.rel = "stylesheet";
