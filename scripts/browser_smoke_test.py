@@ -33,7 +33,8 @@ def main():
             expect(page.locator("body")).to_contain_text("CREF 2026")
             assert "five role progressions" not in page.locator("body").inner_text().lower()
             expect(page.locator(".hero-portrait img")).to_have_attribute("width", "800")
-            expect(page.locator(".hero-portrait img")).to_have_attribute("height", "1030")\n            expect(page.locator(".hero-portrait img")).to_have_attribute("src", "/assets/randy-portrait.jpg")
+            expect(page.locator(".hero-portrait img")).to_have_attribute("height", "1030")
+            expect(page.locator(".hero-portrait img")).to_have_attribute("src", "/assets/randy-portrait.jpg")
             assert page.locator('link[href^="/assets/home.css"]').count() == 1
             assert page.locator('script[src]').count() == 1
             expect(page.locator('script[src]')).to_have_attribute("src", "/assets/home-runtime.js")
