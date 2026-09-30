@@ -239,3 +239,16 @@ img{display:block;max-width:100%}
  .section-heading{margin-bottom:30px}
  .engage{margin-bottom:42px;padding:36px 24px;border-radius:22px}
 }
+
+
+/* Forensic alignment pass · 2026-09-30 */
+@media(min-width:981px){
+  .hero{align-items:start}
+  .hero-copy{padding-top:4px}
+  .hero-portrait{width:100%;max-width:410px;margin:0;align-self:start;justify-self:end}
+}
+.grid>*,.hero>*,.section-heading.split>*{min-width:0}
+.footer nav{justify-content:flex-end}
+@media(max-width:620px){
+  .footer nav{justify-content:flex-start}
+}
