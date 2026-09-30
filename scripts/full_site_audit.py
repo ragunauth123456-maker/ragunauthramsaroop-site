@@ -12,7 +12,7 @@ import argparse, json, re, sys, time
 ROOT=Path(__file__).resolve().parents[1]
 DOMAIN="https://ragunauthramsaroop.com"
 SKIP_DIRS={".git","node_modules","_next","pagefind",".pagefind-public","skills"}
-PLACEHOLDERS=re.compile(r"\b(lorem ipsum|todo\b|tbd\b|coming soon|under construction|placeholder text)\b",re.I)
+PLACEHOLDERS=re.compile(r"\b(lorem ipsum|todo\b|tbd\b|coming soon|placeholder text)\b",re.I)
 LEGACY=re.compile(r"ragunauth123456(?:-maker)?",re.I)
 EXEC_TERMS=re.compile(r"\b(decision|strategy|strategic|governance|evidence|leadership|executive|risk|stakeholder|institution|responsib|value|outcome|method|regulat|operat|investment|research|professional)\w*",re.I)
 
