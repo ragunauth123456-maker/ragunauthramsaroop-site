@@ -149,7 +149,7 @@ def live_one(route):
     return {"route":route,"ok":False,"error":last}
 
 def live_audit(rows, report_path:Path):
-    routes=sorted({r["route"] for r in rows if not r.get("redirect")})
+    routes=sorted({r["route"] for r in rows})
     results=[]
     with ThreadPoolExecutor(max_workers=12) as ex:
         futs=[ex.submit(live_one,r) for r in routes]
