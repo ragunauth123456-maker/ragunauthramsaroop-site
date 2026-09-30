@@ -130,3 +130,35 @@ body[data-tool]:not([data-tool=""]) .hero{
   .shell .section h2{font-size:clamp(32px,9vw,44px)!important}
   .footer{padding-left:18px!important;padding-right:18px!important}
 }
+
+
+/* Institutional editorial layer · 2026-09-30 */
+.shell{background:var(--rr-surface)}
+.shell .topbar{border-bottom:1px solid rgba(16,38,31,.10)}
+.shell .authority-hero,.shell .mode-hero{
+  border-radius:0 0 34px 34px;
+  box-shadow:inset 0 -1px rgba(255,255,255,.08);
+}
+.shell .authority-hero h1,.shell .mode-hero h1{
+  max-width:900px;
+  font-size:clamp(46px,5.8vw,78px)!important;
+  line-height:.98!important;
+  letter-spacing:-.045em!important;
+}
+.shell .authority-hero p,.shell .mode-hero p{max-width:760px;line-height:1.7}
+.shell .mode-section-head{max-width:860px;margin-bottom:40px}
+.shell .mode-section-head h2{font-size:clamp(36px,4.3vw,58px);line-height:1.04;letter-spacing:-.035em}
+.shell .enterprise-problem-grid article,.shell .first-hundred-grid article,.shell .mode-path-grid>a{
+  border-radius:18px!important;
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.shell .enterprise-problem-grid article:hover,.shell .first-hundred-grid article:hover,.shell .mode-path-grid>a:hover{
+  transform:translateY(-3px);box-shadow:0 18px 42px rgba(16,38,31,.08);border-color:rgba(179,144,83,.46)!important
+}
+.shell .board-evaluation,.shell .mode-boundary{border-radius:24px!important}
+.shell .footer-grid-premium{max-width:1180px;margin:0 auto}
+.shell .footer-base{max-width:1180px;margin-left:auto;margin-right:auto}
+@media(max-width:760px){
+ .shell .authority-hero,.shell .mode-hero{border-radius:0 0 22px 22px}
+ .shell .authority-hero h1,.shell .mode-hero h1{font-size:clamp(42px,12vw,58px)!important}
+}
