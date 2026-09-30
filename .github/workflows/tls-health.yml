@@ -74,3 +74,30 @@ jobs:
               | openssl x509 -noout -checkend 604800
             echo "${host}: certificate valid for at least seven more days" >> "$GITHUB_STEP_SUMMARY"
           done
+      - name: Open incident if public health check fails
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="[AUTO] Website availability incident"
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -z "$existing" ]; then
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body "Automated public health checks failed at $(date -u +'%Y-%m-%d %H:%M:%S UTC'). Check DNS, TLS, HTTP-to-HTTPS redirects, homepage content and critical assets. Workflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          else
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "Health check failed again at $(date -u +'%Y-%m-%d %H:%M:%S UTC'). Workflow: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+      - name: Close automated incident after recovery
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          title="[AUTO] Website availability incident"
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "$title in:title" --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "Automated public checks recovered at $(date -u +'%Y-%m-%d %H:%M:%S UTC')."
+            gh issue close "$existing" --repo "$GITHUB_REPOSITORY"
+          fi
