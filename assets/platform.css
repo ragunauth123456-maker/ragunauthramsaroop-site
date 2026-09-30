@@ -46,7 +46,6 @@ body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
 ::selection{background:rgba(181,139,69,.22);color:#08271d}
 .page-hero h1,.hero h1,.section-heading h2,.panel h2,.longform h2{text-wrap:balance;letter-spacing:-.025em}
 .page-hero p,.hero p,.longform p,.path-card p,.method-card p,.resource-card p{text-wrap:pretty}
-.topbar,.site-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .panel,.path-card,.method-card,.resource-card,.rr-related,.rr-conversion-band{
   box-shadow:0 10px 30px rgba(8,39,29,.055);
 }
