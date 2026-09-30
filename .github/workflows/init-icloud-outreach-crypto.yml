@@ -1,3 +1,4 @@
+# Trigger secure outreach key initialization
 name: Initialize secure iCloud outreach key
 
 on:
