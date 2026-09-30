@@ -26,6 +26,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: "22"
+          package-manager-cache: false
       - name: Test DNS matching logic without network
         run: node scripts/test_resend_dns.mjs
       - name: Inspect live public DNS without changing it
