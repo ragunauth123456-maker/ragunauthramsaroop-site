@@ -33,11 +33,11 @@
       "185.199.110.153",
       "185.199.111.153"
     ],
-    "www_CNAME": "ragunauth123456-maker.github.io",
+    "www_CNAME": "ragunauthramsaroop.github.io",
     "nameservers": [
       "launch1.spaceship.net",
       "launch2.spaceship.net"
     ]
   },
-  "notes": "No private credentials here: the DKIM value is a public DNS verification key. Do not change existing web A, www CNAME, or nameservers."
+  "notes": "No private credentials here: the DKIM value is a public DNS verification key. Preserve the approved GitHub Pages A records, www CNAME, and nameservers."
 }
