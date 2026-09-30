@@ -11,6 +11,8 @@ on:
     paths:
       - 'scripts/repair_www_cname.mjs'
       - '.github/workflows/repair-resend-dns.yml'
+  schedule:
+    - cron: '11 * * * *'
   workflow_dispatch:
     inputs:
       operation:
@@ -39,7 +41,7 @@ jobs:
         run: node scripts/test_apply_spaceship_resend_dns.mjs
 
   www-cname-repair:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || github.event_name == 'schedule'
     needs: tests
     runs-on: ubuntu-latest
     timeout-minutes: 6
@@ -48,7 +50,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Repair stale www CNAME for GitHub Pages
+      - name: Enforce approved www CNAME for GitHub Pages
         env:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
           SPACESHIP_API_SECRET: ${{ secrets.SPACESHIP_API_SECRET }}
