@@ -60,6 +60,36 @@ def main():
             page.set_viewport_size({"width": 1280, "height": 900})
             results.append("PASS fast homepage: one critical runtime, no platform CSS, delayed analytics, desktop and mobile")
 
+            alignment_routes = [
+                "/", "/executive-profile/", "/leadership/", "/evidence/",
+                "/research-library/", "/media/", "/resume.html", "/engage/",
+                "/recruiter-mode/", "/board-ceo-mode/"
+            ]
+            for width, height in ((1440, 1000), (1024, 900), (390, 844)):
+                page.set_viewport_size({"width": width, "height": height})
+                for route in alignment_routes:
+                    page.goto(base + route, wait_until="domcontentloaded")
+                    metrics = page.evaluate("""() => {
+                        const root = document.documentElement;
+                        const main = document.querySelector('main');
+                        const rect = main ? main.getBoundingClientRect() : null;
+                        return {
+                            innerWidth: window.innerWidth,
+                            scrollWidth: root.scrollWidth,
+                            mainLeft: rect ? rect.left : 0,
+                            mainRight: rect ? rect.right : window.innerWidth
+                        };
+                    }""")
+                    assert metrics["scrollWidth"] <= metrics["innerWidth"] + 2, (
+                        f"Horizontal overflow on {route} at {width}px: "
+                        f"{metrics['scrollWidth']} > {metrics['innerWidth']}"
+                    )
+                    assert metrics["mainLeft"] >= -2 and metrics["mainRight"] <= metrics["innerWidth"] + 2, (
+                        f"Main content escapes viewport on {route} at {width}px: {metrics}"
+                    )
+            page.set_viewport_size({"width": 1280, "height": 900})
+            results.append("PASS executive alignment: ten priority routes fit desktop, tablet and mobile viewports")
+
             page.goto(base + "/start/", wait_until="domcontentloaded")
             routes = [
                 "/project-workspace/", "/research-explorer/", "/observatory/explorer/",
