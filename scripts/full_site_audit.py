@@ -16,7 +16,7 @@ PLACEHOLDERS=re.compile(r"\b(lorem ipsum|todo\b|tbd\b|coming soon|placeholder te
 LEGACY=re.compile(r"ragunauth123456(?:-maker)?",re.I)
 EXEC_TERMS=re.compile(r"\b(decision|strategy|strategic|governance|evidence|leadership|executive|risk|stakeholder|institution|responsib|value|outcome|method|regulat|operat|investment|research|professional)\w*",re.I)
 EXECUTIVE_PAGES={
-    "index.html","executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html",
+    "index.html","resume.html","executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html",
     "leadership/index.html","professional-engagement/index.html","executive-engagement/index.html",
     "executive-search/index.html","engage/index.html","media/index.html","recognition-media/index.html",
     "case-studies/index.html","insights/index.html","executive-perspectives/index.html",
@@ -25,7 +25,7 @@ EXECUTIVE_PAGES={
     "2126/index.html","2126/evidence/index.html","2126/timeline/index.html"
 }
 EXECUTIVE_SHELL_PAGES={
-    "executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html","leadership/index.html",
+    "resume.html","executive-profile/index.html","recruiter-mode/index.html","board-ceo-mode/index.html","leadership/index.html",
     "engage/index.html","media/index.html","recognition-media/index.html","case-studies/index.html",
     "insights/index.html","white-papers/index.html","authority/index.html","decision-brief/index.html","contact/index.html"
 }
@@ -147,6 +147,9 @@ def static_audit(report_path:Path):
         if rel=="executive-profile/index.html":
             if 'class="exec-headshot"' not in raw or "/assets/randy-portrait.jpg" not in raw:
                 issues.append(("ERROR",rel,"Executive profile portrait missing") )
+        if rel=="resume.html":
+            if 'class="cv-photo"' not in raw or "/assets/randy-portrait.jpg" not in raw:
+                issues.append(("ERROR",rel,"Executive CV portrait missing"))
         min_words=55 if rel in {"contact.html","brief-me.html"} or rel.startswith(("contact/","embed/","install/","subscribe/","feedback/","api/")) else 90
         if len(words)<min_words: issues.append(("WARN",rel,f"Thin visible content ({len(words)} words)"))
         exec_hits=len(EXEC_TERMS.findall(visible))
