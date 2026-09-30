@@ -1,0 +1,38 @@
+name: Initialize secure iCloud outreach key
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/init-icloud-outreach-crypto.yml'
+      - 'scripts/init_icloud_outreach_crypto.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    env:
+      ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check cryptography
+      - run: python scripts/init_icloud_outreach_crypto.py
+      - name: Commit initialized keys
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- outreach/secure; then
+            echo "No key changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add outreach/secure/public_key.b64 outreach/secure/wrapped_private_key.json
+          git commit -m "Initialize secure iCloud outreach encryption"
+          git push
