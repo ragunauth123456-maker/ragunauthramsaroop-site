@@ -71,7 +71,7 @@ JS=r"""
    if(text.length>24 && e.clientWidth>0 && e.scrollWidth>e.clientWidth+3 && ["hidden","clip"].includes(cs.overflowX)){
      clippedText.push({el:selector(e),text:text.slice(0,90),client:e.clientWidth,scroll:e.scrollWidth});
    }
-   if(e.tagName==="IMG" && (!e.complete || e.naturalWidth===0)) badImages.push({el:selector(e),src:e.getAttribute("src")});
+   if(e.tagName==="IMG" && e.complete && e.naturalWidth===0) badImages.push({el:selector(e),src:e.getAttribute("src")});
    if((e.matches("button,summary,[role=button],.btn,.contact-chip")) && vw<=420 && (r.height<34||r.width<34)){
      tinyControls.push({el:selector(e),w:Math.round(r.width),h:Math.round(r.height)});
    }
