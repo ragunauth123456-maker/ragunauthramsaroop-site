@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 /**
- * Owner-authorized repair for the public www CNAME used by GitHub Pages.
- * This script changes one registrar record only:
- *   www: ragunauth123456-maker.github.io -> ragunauthramsaroop.github.io
- * It verifies the apex GitHub Pages A records first and stops on any unexpected DNS state.
+ * Owner-authorized self-healing DNS guard for the GitHub Pages www hostname.
+ *
+ * Allowed automatic changes are intentionally narrow:
+ * 1. Add www -> ragunauthramsaroop.github.io when www CNAME is missing and no
+ *    other record occupies www.
+ * 2. Replace the retired www target ragunauth123456-maker.github.io with the
+ *    current GitHub Pages target.
+ *
+ * Any unexpected www target, extra www record, or change to the approved four
+ * apex GitHub Pages A records causes a hard stop with no automatic overwrite.
  */
 const ROOT="ragunauthramsaroop.com";
 const API="https://spaceship.dev/api/v1/dns/records/"+encodeURIComponent(ROOT);
@@ -56,6 +62,19 @@ function wwwRecords(records){
   return records.filter(r=>lower(r.name)==="www");
 }
 
+async function verify(){
+  const records=await list();
+  assertApexIntact(records);
+  const atWww=wwwRecords(records);
+  const nonCname=atWww.filter(r=>r.type!=="CNAME");
+  if(nonCname.length) throw Error("Unexpected non-CNAME record exists at www. Stopping without changes.");
+  const cnames=atWww.filter(r=>r.type==="CNAME");
+  if(cnames.length!==1 || lower(cnames[0].cname)!==NEW){
+    throw Error("Registrar verification failed. Expected exactly one www CNAME to "+NEW+".");
+  }
+  return records;
+}
+
 async function main(){
   let records=await list();
   assertApexIntact(records);
@@ -65,34 +84,37 @@ async function main(){
   if(nonCname.length) throw Error("Unexpected non-CNAME record exists at www. Stopping without changes.");
 
   const cnames=atWww.filter(r=>r.type==="CNAME");
-  if(cnames.length!==1) throw Error("Expected exactly one registrar CNAME at www. Found "+cnames.length+". Stopping.");
+  if(cnames.length>1) throw Error("More than one www CNAME exists. Stopping without changes.");
+
+  if(cnames.length===0){
+    console.log("www CNAME is missing. Restoring approved GitHub Pages target "+NEW+".");
+    await spaceship("PUT",{force:false,items:[{type:"CNAME",name:"www",cname:NEW,ttl:300}]});
+    await verify();
+    console.log("PASS: Missing www CNAME restored to "+NEW+".");
+    console.log("No unrelated DNS records were changed.");
+    return;
+  }
 
   const current=lower(cnames[0].cname);
   if(current===NEW){
     console.log("PASS: www CNAME is already correct: "+NEW);
     return;
   }
+
   if(current!==OLD){
-    throw Error("Unexpected www CNAME target "+current+". Stopping without changes.");
+    throw Error("Unexpected www CNAME target "+current+". Automatic overwrite refused.");
   }
 
-  console.log("Verified apex GitHub Pages A records.");
-  console.log("Replacing stale www CNAME "+OLD+" with "+NEW+".");
-
+  console.log("Replacing retired www CNAME "+OLD+" with "+NEW+".");
   await spaceship("DELETE",[{type:"CNAME",name:"www",cname:cnames[0].cname}]);
   await spaceship("PUT",{force:false,items:[{type:"CNAME",name:"www",cname:NEW,ttl:300}]});
+  await verify();
 
-  records=await list();
-  assertApexIntact(records);
-  const after=wwwRecords(records).filter(r=>r.type==="CNAME");
-  if(after.length!==1 || lower(after[0].cname)!==NEW){
-    throw Error("Registrar verification failed after update.");
-  }
-  console.log("PASS: Spaceship registrar now returns www CNAME "+NEW+".");
-  console.log("No other DNS records were changed.");
+  console.log("PASS: Spaceship registrar returns www CNAME "+NEW+".");
+  console.log("No unrelated DNS records were changed.");
 }
 
 main().catch(err=>{
-  console.error("WWW DNS REPAIR FAILED: "+err.message);
+  console.error("WWW DNS GUARD FAILED: "+err.message);
   process.exitCode=1;
 });
