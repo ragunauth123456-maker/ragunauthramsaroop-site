@@ -189,3 +189,14 @@ body[data-tool]:not([data-tool=""]) .hero{
   .evidence-page .hero>.wrap,.evidence-page main>.wrap{width:min(calc(100% - 28px),1184px)!important}
   .rr-a11y-panel{left:10px!important;right:auto!important;bottom:58px!important;width:min(260px,calc(100vw - 20px))!important}
 }
+
+.evidence-mobile-nav{display:none;position:relative}
+@media(max-width:820px){
+  .evidence-page .topbar .nav{display:none!important}
+  .evidence-mobile-nav{display:block}
+  .evidence-mobile-nav summary{list-style:none;cursor:pointer;padding:9px 13px;border:1px solid var(--rr-line);border-radius:999px;background:var(--rr-surface);color:var(--rr-forest);font-size:13px;font-weight:800}
+  .evidence-mobile-nav summary::-webkit-details-marker{display:none}
+  .evidence-mobile-nav>div{position:absolute;right:0;top:48px;width:220px;padding:10px;border:1px solid var(--rr-line);border-radius:16px;background:var(--rr-surface);box-shadow:0 18px 42px rgba(16,38,31,.12)}
+  .evidence-mobile-nav a{display:block;padding:10px 12px;border-radius:9px;color:var(--rr-ink)!important;text-decoration:none;font-size:13px;font-weight:750}
+  .evidence-mobile-nav a:hover{background:var(--rr-paper-2)}
+}
