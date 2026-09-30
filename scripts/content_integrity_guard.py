@@ -1,4 +1,5 @@
 """Guard the canonical public executive record against content drift."""
+# Generated search assets are validated separately by the performance workflow.
 from pathlib import Path
 import json
 import sys
