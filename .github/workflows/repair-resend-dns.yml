@@ -37,6 +37,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Test safe append-only DNS repair
         run: node scripts/test_apply_spaceship_resend_dns.mjs
 
@@ -50,6 +51,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Enforce approved www CNAME for GitHub Pages
         env:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
@@ -76,6 +78,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+          package-manager-cache: false
       - name: Inspect registrar DNS or apply four approved entries
         env:
           SPACESHIP_API_KEY: ${{ secrets.SPACESHIP_API_KEY }}
