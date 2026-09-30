@@ -28,7 +28,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- outreach/secure; then
+          if [ -z "$(git status --porcelain -- outreach/secure)" ]; then
             echo "No key changes to commit."
             exit 0
           fi
