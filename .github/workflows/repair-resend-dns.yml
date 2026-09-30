@@ -12,7 +12,7 @@ on:
       - 'scripts/repair_www_cname.mjs'
       - '.github/workflows/repair-resend-dns.yml'
   schedule:
-    - cron: '11 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       operation:
