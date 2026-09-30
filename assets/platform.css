@@ -60,3 +60,7 @@ body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
   .btn,.contact-chip,.path-card,.method-card,.resource-card,.rr-conversion-band a{transition:none}
   .btn:hover,.contact-chip:hover{transform:none}
 }
+
+/* Mobile disclosure alignment */
+details>summary{min-height:40px;display:flex;align-items:center;line-height:1.35}
+@media(max-width:640px){details>summary{min-height:44px}}
