@@ -1,6 +1,13 @@
 name: Forensic design and alignment audit
 
 on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - 'assets/**'
+      - 'tools/assets/**'
+      - 'scripts/visual_alignment_audit.py'
+      - '.github/workflows/forensic-design-audit.yml'
   push:
     branches: [main]
     paths:
@@ -15,7 +22,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: forensic-design-audit
+  group: forensic-design-audit-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
