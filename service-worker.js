@@ -1,5 +1,5 @@
 /* Fast homepage shell, stale-while-revalidate home navigation, on-demand platform assets. */
-const V="rr-public-v12";
+const V="rr-public-v13";
 const CORE=["/","/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;
@@ -52,22 +52,11 @@ async function navigation(request,event){
   const cache=await caches.open(V);
   const url=new URL(request.url);
 
-  // Homepage: return the tiny cached shell immediately and refresh it in the background.
-  if(url.pathname==="/"){
-    const cached=await cache.match("/",{ignoreSearch:true});
-    const refresh=(async()=>{try{return await fromNetwork(request,event,cache)}catch{return null}})();
-    if(cached){
-      event.waitUntil(refresh.then(()=>{}));
-      return cached;
-    }
-    const fresh=await refresh;
+  // Navigation is network-first so design and content changes are visible immediately.
+  try{
+    const fresh=await fromNetwork(request,event,cache);
     if(fresh)return fresh;
-  }else{
-    try{
-      const fresh=await fromNetwork(request,event,cache);
-      if(fresh)return fresh;
-    }catch{}
-  }
+  }catch{}
 
   // Never substitute another route when offline.
   const exact=await cache.match(request,{ignoreSearch:true});
