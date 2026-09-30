@@ -27,7 +27,7 @@ on:
       - 'data/research-pages.json'
       - 'data/academy-assessments.json'
       - 'sitemap.xml'
-      - '.github/workflows/site-performance.yml'
+      - '.github/workflows/**'
   push:
     branches: [main]
     paths:
@@ -56,7 +56,7 @@ on:
       - 'data/research-pages.json'
       - 'data/academy-assessments.json'
       - 'sitemap.xml'
-      - '.github/workflows/site-performance.yml'
+      - '.github/workflows/**'
   schedule:
     - cron: '0 12 * * 1'
   workflow_dispatch:
@@ -74,6 +74,8 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: '22'
+      - name: Guard GitHub Actions runtime health
+        run: python scripts/workflow_health.py
       - name: Guard homepage, caching and third-party budgets
         run: python scripts/site_performance_guard.py
       - name: Check browser script syntax
