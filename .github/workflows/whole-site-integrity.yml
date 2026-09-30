@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Static integrity and executive-content audit
         run: python scripts/full_site_audit.py --strict
       - name: Allow GitHub Pages deployment to settle
@@ -35,7 +35,7 @@ jobs:
         run: python scripts/full_site_audit.py --live --strict
       - name: Publish audit reports
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: whole-site-audit
           path: audit/*.json
