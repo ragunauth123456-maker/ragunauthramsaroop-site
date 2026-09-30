@@ -8,21 +8,38 @@ on:
     paths:
       - '.github/workflows/tls-health.yml'
   schedule:
-    - cron: '17 8,20 * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 permissions:
   contents: read
+  issues: write
 jobs:
   tls:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     steps:
-      - name: Verify HTTPS, homepage and critical assets on apex and www
+      - name: Verify DNS, HTTP redirect, HTTPS, homepage and critical assets
         shell: bash
         run: |
           set -euo pipefail
           for host in ragunauthramsaroop.com www.ragunauthramsaroop.com; do
-            echo "Checking HTTPS for ${host}"
+            echo "Checking ${host}"
+
+            echo "DNS for ${host}:"
+            getent ahostsv4 "$host" | awk '{print $1}' | sort -u
+
+            http_headers="/tmp/${host//./_}-http.headers"
+            curl --silent --show-error --head --max-time 20 "http://${host}/" -o "$http_headers"
+            location="$(awk 'BEGIN{IGNORECASE=1} /^location:/{print $2}' "$http_headers" | tr -d '\r' | tail -1)"
+            test -n "$location"
+            case "$location" in https://*) ;; *) echo "HTTP did not redirect to HTTPS: $location"; exit 1;; esac
+
+            https_headers="/tmp/${host//./_}-https.headers"
+            curl --fail --silent --show-error --head --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
+              "https://${host}/" -D "$https_headers" -o /dev/null
+            echo "Security headers for ${host}:"
+            grep -Ei '^(strict-transport-security|content-security-policy|x-content-type-options|referrer-policy):' "$https_headers" || true
+
             body="/tmp/${host//./_}.html"
             curl --fail --silent --show-error --location --retry 2 --retry-all-errors --retry-delay 3 --max-time 25 \
               "https://${host}/" --output "$body"
