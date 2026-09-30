@@ -4,11 +4,11 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
 
-DEPRECATED = {
-    "actions/checkout@v4": "actions/checkout@v5",
-    "actions/setup-python@v5": "actions/setup-python@v6",
-    "actions/setup-node@v4": "actions/setup-node@v5",
-    "actions/upload-artifact@v4": "actions/upload-artifact@v6",
+REQUIRED = {
+    "actions/checkout": "v7",
+    "actions/setup-python": "v7",
+    "actions/setup-node": "v7",
+    "actions/upload-artifact": "v7",
 }
 
 errors = []
@@ -16,9 +16,10 @@ checked = 0
 for path in sorted(WORKFLOWS.glob("*.y*ml")):
     checked += 1
     text = path.read_text(encoding="utf-8", errors="replace")
-    for old, replacement in DEPRECATED.items():
-        if old in text:
-            errors.append(f"{path.relative_to(ROOT)} uses deprecated {old}; use {replacement}")
+    for action, version in REQUIRED.items():
+        for found in re.findall(rf"{re.escape(action)}@(v\\d+)", text):
+            if found != version:
+                errors.append(f"{path.relative_to(ROOT)} uses {action}@{found}; required {action}@{version}")
     if "ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION" in text:
         errors.append(f"{path.relative_to(ROOT)} opts into an insecure deprecated Node runtime")
     for ref in re.findall(r"uses:\s*(actions/(?:checkout|setup-python|setup-node|upload-artifact)@v\d+)", text):
