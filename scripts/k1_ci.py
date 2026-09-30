@@ -4,7 +4,7 @@ import datetime, os, shutil, subprocess, sys, json
 REPO=Path(r"C:\AgentSwarm\ragunauth-site")
 WORK=Path(r"C:\AgentSwarm\rr-site-ci-worktree")
 LOGDIR=Path(r"C:\AgentSwarm\rr-site-ci-logs")
-REPO_FULL="ragunauth123456-maker/ragunauthramsaroop-site"
+REPO_FULL="ragunauthramsaroop/ragunauthramsaroop-site"
 CONTEXT="rr-k1/automatic-qa"
 LOGDIR.mkdir(parents=True, exist_ok=True)
 stamp=datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
