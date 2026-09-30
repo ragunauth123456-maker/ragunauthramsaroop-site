@@ -199,7 +199,7 @@ img{display:block;max-width:100%}
   margin:0 auto;padding:104px 0;
   border-bottom:1px solid var(--line)
 }
-.thesis-section{
+.record-section,.research-section,.career-section,.engage{content-visibility:auto;contain-intrinsic-size:auto 900px}\n.thesis-section{
   display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);
   gap:92px;align-items:start
 }

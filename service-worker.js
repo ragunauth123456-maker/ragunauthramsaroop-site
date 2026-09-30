@@ -1,5 +1,5 @@
 /* Fast homepage shell, stale-while-revalidate home navigation, on-demand platform assets. */
-const V="rr-public-v13";
+const V="rr-public-v14";
 const CORE=["/","/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/favicon-96.png"];
 const STATIC_FIRST=new Set(["/assets/home.css","/assets/home-runtime.js","/assets/accessibility.css","/assets/preview.png","/favicon-96.png"]);
 const MAX_DYNAMIC_ENTRIES=60;

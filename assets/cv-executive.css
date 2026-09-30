@@ -259,7 +259,7 @@ a{color:inherit}
     margin:0 0 2mm;color:#9a7336;font-size:6.6pt;font-weight:800;
     letter-spacing:.12em;text-transform:uppercase
   }
-  .print-hero h1{
+  .print-hero .print-name{
     margin:0;font:500 28pt/1 Georgia,"Times New Roman",serif;
     letter-spacing:-.035em;color:#10261f
   }
