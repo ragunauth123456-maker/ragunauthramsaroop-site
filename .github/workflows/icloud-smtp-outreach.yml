@@ -39,8 +39,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install PDF dependency
-        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5'
+      - name: Install outreach dependencies
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' cryptography
 
       - name: Resolve approved payload
         id: payload
@@ -77,4 +77,11 @@ jobs:
 
       - name: Send approved executive outreach through Apple iCloud SMTP
         if: steps.payload.outputs.payload != ''
-        run: python scripts/send_icloud_smtp.py "${{ steps.payload.outputs.payload }}"
+        shell: bash
+        run: |
+          set -euo pipefail
+          PAYLOAD="${{ steps.payload.outputs.payload }}"
+          case "$PAYLOAD" in
+            *.secure.json) python scripts/secure_icloud_send.py "$PAYLOAD" ;;
+            *) python scripts/send_icloud_smtp.py "$PAYLOAD" ;;
+          esac
