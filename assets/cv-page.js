@@ -1,0 +1,1 @@
+(()=>{"use strict";const b=document.getElementById("cv-print");if(b)b.addEventListener("click",()=>window.print());})();
