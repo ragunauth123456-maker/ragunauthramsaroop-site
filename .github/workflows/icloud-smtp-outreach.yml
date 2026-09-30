@@ -30,12 +30,12 @@ jobs:
       ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
       ICLOUD_OUTREACH_TO: ${{ secrets.ICLOUD_OUTREACH_TO }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
           fetch-depth: 2
 
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
