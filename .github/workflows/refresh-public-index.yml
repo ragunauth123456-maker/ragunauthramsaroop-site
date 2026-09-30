@@ -1,0 +1,28 @@
+name: Refresh public indexes
+on:
+  push:
+    branches: [main]
+    paths: ['**/*.html','data/public-profile.json']
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22', cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run search:index
+      - run: python scripts/compact_search_payload.py
+      - run: npm run smart:index
+      - run: python scripts/sync_sitemap.py
+      - run: |
+          git add assets/search-index.json assets/semantic-index.json pagefind sitemap.xml
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh public indexes"
+          git pull --rebase origin main
+          git push origin HEAD:main
