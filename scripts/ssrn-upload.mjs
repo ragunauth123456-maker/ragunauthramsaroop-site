@@ -274,7 +274,6 @@ try {
   }
 } finally {
   await fs.writeFile(path.join(outDir, 'results.json'), JSON.stringify(results, null, 2))
-  await context.storageState({ path: path.join(outDir, 'storage-state.json') }).catch(() => {})
   await browser.close()
 }
 
