@@ -240,6 +240,22 @@ const results = []
 try {
   await signIn(page)
 
+  if (process.env.SSRN_MODE === 'inspect') {
+    const item = papers[0]
+    await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
+    })
+    await dismissCookieOverlay(page)
+    const selects = await page.locator('select').evaluateAll(nodes => nodes.map(n => ({
+      name:n.name||'', id:n.id||'', value:n.value||'',
+      options:[...n.options].map(o=>({text:o.text,value:o.value,selected:o.selected}))
+    })))
+    console.log('SSRN_SELECTS=' + JSON.stringify(selects))
+    console.log('SSRN_PAGE_TEXT=' + (await page.locator('body').innerText()).replace(/\s+/g,' ').slice(0,10000))
+    process.exit(0)
+  }
+
   for (const item of papers) {
     const record = {
       submissionId: item.submissionId,
