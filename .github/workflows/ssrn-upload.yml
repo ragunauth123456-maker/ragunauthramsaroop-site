@@ -43,8 +43,8 @@ jobs:
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
 
-      - name: Upload nine PDFs to SSRN drafts
-        run: node scripts/ssrn-upload.mjs
+      - name: Inspect SSRN submission options
+        run: SSRN_MODE=inspect node scripts/ssrn-upload.mjs
 
       - name: Save run evidence
         if: always()
@@ -57,4 +57,4 @@ jobs:
             ssrn-run/results.json
             ssrn-run/*.png
 
-# Retry marker: SSRN email selector fix
+# Retry marker: inspect SSRN submission options
