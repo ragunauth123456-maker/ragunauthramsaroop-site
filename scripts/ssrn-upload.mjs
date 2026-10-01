@@ -252,8 +252,10 @@ try {
     if (opener) await opener.click({ force: true }).catch(() => {})
     await page.waitForTimeout(700)
     console.log('SSRN_OPTIONS_TEXT=' + (await page.locator('body').innerText()).replace(/\s+/g,' ').slice(0,12000))
-    const roles = await page.locator('[role="option"],[role="listbox"],li').evaluateAll(nodes => nodes.map(n => ({
-      role:n.getAttribute('role')||'', text:(n.innerText||'').trim(), cls:n.className||''
+    const roles = await page.locator('[role="combobox"],[role="option"],[role="listbox"],button,input:not([type="password"])').evaluateAll(nodes => nodes.map(n => ({
+      tag:n.tagName, role:n.getAttribute('role')||'', type:n.getAttribute('type')||'', name:n.getAttribute('name')||'',
+      id:n.id||'', text:(n.innerText||n.value||'').trim(), aria:n.getAttribute('aria-label')||'',
+      expanded:n.getAttribute('aria-expanded')||'', controls:n.getAttribute('aria-controls')||'', cls:n.className||''
     }))).catch(() => [])
     console.log('SSRN_OPTION_NODES=' + JSON.stringify(roles))
     process.exit(0)
