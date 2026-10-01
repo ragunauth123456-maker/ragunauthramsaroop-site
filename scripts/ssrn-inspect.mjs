@@ -26,14 +26,27 @@ async function signIn() {
   await dismissCookieOverlay(page)
   const pw=await firstVisible(page.locator('input[type="password"]'))
   if(!pw) return
-  const email=await firstVisible(page.locator('input[placeholder*="Email" i],input[type="email"],input[name*="email" i],input[id*="email" i],input[name*="user" i],input[id*="user" i]'))
-  if(email) await email.fill(EMAIL)
+  const meta = await page.locator('input').evaluateAll(els => els.map((e,i)=>({i,type:e.getAttribute('type'),name:e.getAttribute('name'),id:e.id,placeholder:e.getAttribute('placeholder'),visible:!!(e.offsetWidth||e.offsetHeight||e.getClientRects().length)})))
+  console.log('LOGIN_INPUTS='+JSON.stringify(meta))
+  const email=await firstVisible(page.locator('input[placeholder*="Email" i],input[type="email"],input[name*="email" i],input[id*="email" i],input[name*="user" i],input[id*="user" i],input[type="text"]'))
+  if(!email) throw new Error('No visible email/user input found')
+  console.log('EMAIL_FIELD='+JSON.stringify({name:await email.getAttribute('name'),id:await email.getAttribute('id'),placeholder:await email.getAttribute('placeholder'),type:await email.getAttribute('type')}))
+  await email.fill(EMAIL)
   await pw.fill(PASSWORD)
+  console.log('FILLED_LENGTHS='+JSON.stringify({email:(await email.inputValue()).length,password:(await pw.inputValue()).length}))
+  const forms=await page.locator('form').evaluateAll(fs=>fs.map((f,i)=>({i,action:f.getAttribute('action'),method:f.getAttribute('method'),id:f.id,name:f.getAttribute('name')})))
+  console.log('FORMS='+JSON.stringify(forms))
   const btn=await firstVisible(page.getByRole('button',{name:/sign in/i}))
   if(!btn) throw new Error('No sign in button')
   await btn.click({force:true})
-  await page.waitForTimeout(2500)
-  if(await firstVisible(page.locator('input[type="password"]'))) throw new Error('Login failed')
+  await page.waitForTimeout(6000)
+  if(await firstVisible(page.locator('input[type="password"]'))) {
+    const body=await page.locator('body').innerText().catch(()=> '')
+    console.log('LOGIN_FAIL_URL='+page.url())
+    console.log('LOGIN_FAIL_TEXT='+body.slice(0,3000).replace(/\n/g,' | '))
+    await page.screenshot({path:'ssrn-inspect.png',fullPage:true}).catch(()=>{})
+    throw new Error('Login failed')
+  }
 }
 function safe(s){return String(s??'').replace(/\s+/g,' ').trim().slice(0,600)}
 async function dump(label){
