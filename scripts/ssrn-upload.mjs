@@ -248,7 +248,7 @@ try {
     })
     await dismissCookieOverlay(page)
     await page.waitForTimeout(3500)
-    const opener = await firstVisible(page.getByText('Select an Item', { exact: true })).catch(() => null)
+    const opener = await firstVisible(page.locator('#trigger-input-content-type')).catch(() => null)
     if (opener) await opener.click({ force: true }).catch(() => {})
     await page.waitForTimeout(700)
     console.log('SSRN_OPTIONS_TEXT=' + (await page.locator('body').innerText()).replace(/\s+/g,' ').slice(0,12000))
