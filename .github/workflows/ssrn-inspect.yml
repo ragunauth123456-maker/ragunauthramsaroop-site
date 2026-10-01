@@ -32,3 +32,5 @@ jobs:
           if-no-files-found: ignore
           retention-days: 3
           path: ssrn-inspect.png
+
+# Retry marker: login diagnostics
