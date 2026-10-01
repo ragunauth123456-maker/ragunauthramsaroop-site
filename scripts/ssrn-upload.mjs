@@ -120,10 +120,12 @@ async function signIn(page) {
   }
 
   const emailSelectors = [
+    'input[placeholder*="Email" i]',
     'input[type="email"]',
     'input[name*="email" i]',
     'input[id*="email" i]',
-    'input[name*="user" i]'
+    'input[name*="user" i]',
+    'input[id*="user" i]'
   ]
   for (const selector of emailSelectors) {
     const email = await firstVisible(page.locator(selector))
