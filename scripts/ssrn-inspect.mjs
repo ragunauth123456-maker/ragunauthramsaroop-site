@@ -16,10 +16,15 @@ async function firstVisible(locator) {
   return null
 }
 async function dismissCookieOverlay(page) {
-  for (const selector of ['#onetrust-accept-btn-handler','#onetrust-reject-all-handler','.onetrust-close-btn-handler']) {
-    const b=await firstVisible(page.locator(selector)).catch(()=>null); if(b) await b.click({force:true}).catch(()=>{})
+  const accept = page.locator('#onetrust-accept-btn-handler')
+  await accept.waitFor({state:'visible',timeout:7000}).catch(()=>{})
+  if(await accept.isVisible().catch(()=>false)) {
+    await accept.click({force:true}).catch(()=>{})
+    await page.waitForTimeout(800)
   }
-  await page.evaluate(()=>{document.querySelector('#onetrust-consent-sdk')?.remove();document.documentElement.style.overflow='';document.body.style.overflow=''}).catch(()=>{})
+  const close = await firstVisible(page.locator('.onetrust-close-btn-handler')).catch(()=>null)
+  if(close) await close.click({force:true}).catch(()=>{})
+  await page.locator('#onetrust-consent-sdk').waitFor({state:'hidden',timeout:5000}).catch(()=>{})
 }
 async function signIn() {
   await page.goto('https://hq.ssrn.com/submissions/MyPapers.cfm',{waitUntil:'domcontentloaded',timeout:60000})
