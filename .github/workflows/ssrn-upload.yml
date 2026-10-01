@@ -58,4 +58,4 @@ jobs:
             ssrn-run/final-results.json
             ssrn-run/*.png
 
-# Retry marker: finalizer control-flow fix
+# Retry marker: no-reuse copyright selection
