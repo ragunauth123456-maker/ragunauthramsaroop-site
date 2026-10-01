@@ -241,32 +241,24 @@ try {
   await signIn(page)
 
   if (process.env.SSRN_MODE === 'inspect') {
-    for (const item of papers) {
-      await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
-        waitUntil: 'domcontentloaded',
-        timeout: 60000
-      })
-      await dismissCookieOverlay(page)
-      await page.waitForTimeout(3200)
-      let body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-      if (/Step 1:\s*Upload Submission/i.test(body)) {
-        const combo = await firstVisible(page.locator('#trigger-input-content-type'))
-        if (!combo) throw new Error('Content type combobox not found for ' + item.submissionId)
-        await combo.click({ force: true })
-        await page.waitForTimeout(400)
-        const preprint = await firstVisible(page.getByRole('option', { name: /^Preprint$/i }))
-        if (!preprint) throw new Error('Preprint option not found for ' + item.submissionId)
-        await preprint.click({ force: true })
-        await page.waitForTimeout(500)
-        const next = await firstVisible(page.getByRole('button', { name: /^Next Step$/i }))
-        if (!next) throw new Error('Next Step button not found for ' + item.submissionId)
-        await next.click({ force: true })
-        await page.waitForTimeout(3500)
-        body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-      }
-      const step = body.match(/Step\s+\d+\s*:\s*[^0-9]+?(?=\s+(?:Save|Previous Step|Next Step|Submission Progress|$))/i)?.[0] || body.slice(0,260)
-      console.log('SSRN_ADVANCE=' + item.submissionId + ' :: ' + step)
-    }
+    const item = papers[1]
+    await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
+    })
+    await dismissCookieOverlay(page)
+    await page.waitForTimeout(3500)
+    const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+    console.log('SSRN_STEP2_TEXT=' + body.slice(0,14000))
+    const fields = await page.locator('input:not([type="password"]),textarea').evaluateAll(nodes => nodes.map(n => ({
+      tag:n.tagName,type:n.getAttribute('type')||'',name:n.getAttribute('name')||'',id:n.id||'',
+      value:(n.value||'').slice(0,4000),placeholder:n.getAttribute('placeholder')||'',required:!!n.required
+    }))).catch(() => [])
+    console.log('SSRN_STEP2_FIELDS=' + JSON.stringify(fields))
+    const buttons = await page.locator('button').evaluateAll(nodes => nodes.map(n => ({
+      text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
+    }))).catch(() => [])
+    console.log('SSRN_STEP2_BUTTONS=' + JSON.stringify(buttons))
     process.exit(0)
   }
 
