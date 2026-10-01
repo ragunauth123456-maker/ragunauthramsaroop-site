@@ -248,17 +248,12 @@ try {
     })
     await dismissCookieOverlay(page)
     await page.waitForTimeout(3500)
-    const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-    console.log('SSRN_STEP2_TEXT=' + body.slice(0,14000))
-    const fields = await page.locator('input:not([type="password"]),textarea').evaluateAll(nodes => nodes.map(n => ({
-      tag:n.tagName,type:n.getAttribute('type')||'',name:n.getAttribute('name')||'',id:n.id||'',
-      value:(n.value||'').slice(0,4000),placeholder:n.getAttribute('placeholder')||'',required:!!n.required
+    const editable = await page.locator('[contenteditable="true"],[role="textbox"]').evaluateAll(nodes => nodes.map(n => ({
+      tag:n.tagName,id:n.id||'',role:n.getAttribute('role')||'',aria:n.getAttribute('aria-label')||'',
+      cls:n.className||'',text:(n.innerText||n.textContent||'').trim().slice(0,5000),
+      html:(n.innerHTML||'').slice(0,1200)
     }))).catch(() => [])
-    console.log('SSRN_STEP2_FIELDS=' + JSON.stringify(fields))
-    const buttons = await page.locator('button').evaluateAll(nodes => nodes.map(n => ({
-      text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
-    }))).catch(() => [])
-    console.log('SSRN_STEP2_BUTTONS=' + JSON.stringify(buttons))
+    console.log('SSRN_STEP2_EDITABLE=' + JSON.stringify(editable))
     process.exit(0)
   }
 
