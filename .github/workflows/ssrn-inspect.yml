@@ -34,4 +34,4 @@ jobs:
           retention-days: 3
           path: ssrn-inspect.png
 
-# Retry marker: login diagnostics
+# Retry marker: inspect steps 1-3 now
