@@ -81,32 +81,6 @@ async function dump(label){
   }
 }
 await signIn()
-await page.goto('https://hq.ssrn.com/submission.cfm?submission-id=20260925-200912623',{waitUntil:'domcontentloaded',timeout:60000})
-await dismissCookieOverlay(page)
-await dump('DRAFT-FIRST-PAGE')
-
-const license6 = page.locator('#license-option-6')
-if (await license6.count()) {
-  await license6.check({ force: true }).catch(()=>{})
-  console.log('LICENSE6_CHECKED=' + await license6.isChecked().catch(()=>false))
-}
-const next6 = await firstVisible(page.getByRole('button',{name:/Next Step/i}))
-if(!next6) throw new Error('Step 6 Next Step not found')
-await next6.click({force:true})
-await page.waitForTimeout(2000)
-await dump('STEP-7-REVIEW')
-const labels7 = await page.locator('label').allTextContents().catch(()=>[])
-console.log('STEP7_LABELS='+JSON.stringify(labels7.map(x=>safe(x)).filter(Boolean)))
-const body7 = await page.locator('body').innerText().catch(()=> '')
-console.log('STEP7_BODY_LONG='+body7.slice(0,14000).replace(/\n/g,' | '))
-
-const submit = await firstVisible(page.getByRole('button',{name:/^Submit$/i}))
-if(!submit) throw new Error('Submit button not found on Step 7')
-await submit.click({force:true})
-await page.waitForLoadState('domcontentloaded').catch(()=>{})
-await page.waitForTimeout(2500)
-console.log('AFTER_SUBMIT_URL='+page.url())
-console.log('AFTER_SUBMIT_TEXT='+(await page.locator('body').innerText().catch(()=> '')).slice(0,9000).replace(/\n/g,' | '))
 
 await page.goto('https://hq.ssrn.com/submission.cfm?submission-id=20260930-150901833',{waitUntil:'domcontentloaded',timeout:60000})
 await dismissCookieOverlay(page)
