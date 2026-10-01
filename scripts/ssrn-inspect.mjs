@@ -41,10 +41,15 @@ async function signIn() {
   console.log('FILLED_LENGTHS='+JSON.stringify({email:(await email.inputValue()).length,password:(await pw.inputValue()).length}))
   const forms=await page.locator('form').evaluateAll(fs=>fs.map((f,i)=>({i,action:f.getAttribute('action'),method:f.getAttribute('method'),id:f.id,name:f.getAttribute('name')})))
   console.log('FORMS='+JSON.stringify(forms))
-  const btn=await firstVisible(page.getByRole('button',{name:/sign in/i}))
+  await dismissCookieOverlay(page)
+  let btn=await firstVisible(page.locator('#signinBtn'))
+  if(!btn) btn=await firstVisible(page.getByRole('button',{name:/sign in/i}))
   if(!btn) throw new Error('No sign in button')
-  await btn.click({force:true})
-  await page.waitForTimeout(6000)
+  await Promise.all([
+    page.waitForLoadState('domcontentloaded').catch(()=>{}),
+    btn.click()
+  ])
+  await page.waitForTimeout(5000)
   if(await firstVisible(page.locator('input[type="password"]'))) {
     const body=await page.locator('body').innerText().catch(()=> '')
     console.log('LOGIN_FAIL_URL='+page.url())
