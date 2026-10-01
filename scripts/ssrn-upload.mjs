@@ -493,10 +493,9 @@ try {
     const failed = finalResults.filter(x => x.status === 'failed' || x.status === 'draft').length
     console.log('SSRN_FINAL_SUMMARY=' + JSON.stringify({submitted:finalResults.filter(x=>x.status==='submitted').length,remaining:failed}))
     if (failed) process.exitCode = 1
-    return
   }
 
-  for (const item of papers) {
+  if (process.env.SSRN_MODE !== 'finalize') for (const item of papers) {
     const record = {
       submissionId: item.submissionId,
       file: item.name,
