@@ -247,6 +247,8 @@ try {
       timeout: 60000
     })
     await dismissCookieOverlay(page)
+    await page.waitForTimeout(8000)
+    await page.waitForLoadState('networkidle').catch(() => {})
     const selects = await page.locator('select').evaluateAll(nodes => nodes.map(n => ({
       name:n.name||'', id:n.id||'', value:n.value||'',
       options:[...n.options].map(o=>({text:o.text,value:o.value,selected:o.selected}))
