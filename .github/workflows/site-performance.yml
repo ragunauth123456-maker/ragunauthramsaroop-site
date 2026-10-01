@@ -8,6 +8,8 @@ on:
       - 'data/public-profile.json'
       - 'service-worker.js'
       - 'assets/**'
+      - 'gateway/**'
+      - 'gateway/**'
       - 'tools/assets/**'
       - 'scripts/**'
       - 'tools/geolibre/**'
@@ -86,6 +88,8 @@ jobs:
           node --check assets/accessibility.js
           node --check assets/research-assistant.js
           node --check assets/ask-research-ui.js
+          node --check gateway/research-ask.mjs
+          node --check gateway/vercel/api/research/ask.mjs
           node --check assets/platform.js
           node --check tools/assets/analytics-loader.js
           node --check tools/geolibre/geolibre.js
@@ -97,6 +101,8 @@ jobs:
           node --check assets/academy-learning-lab.js
       - name: Verify research assistant grounding
         run: node scripts/test_research_assistant.cjs
+      - name: Verify research AI gateway controls
+        run: node scripts/test_research_gateway.mjs
       - name: Verify route-safe service worker offline behavior
         run: node scripts/test_service_worker_navigation.cjs
       - name: Verify opt-in GeoLibre GIS integration
