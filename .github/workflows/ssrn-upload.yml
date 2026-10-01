@@ -57,4 +57,4 @@ jobs:
             ssrn-run/results.json
             ssrn-run/*.png
 
-# Retry marker: SSRN login diagnostics
+# Retry marker: SSRN email selector fix
