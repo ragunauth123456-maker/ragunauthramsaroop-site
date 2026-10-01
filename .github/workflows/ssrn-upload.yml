@@ -57,4 +57,4 @@ jobs:
             ssrn-run/results.json
             ssrn-run/*.png
 
-# Retry marker: inspect SSRN text editors
+# Retry marker: populate SSRN step 2
