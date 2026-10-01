@@ -115,7 +115,7 @@ def load_payload(path: Path) -> dict:
     return data
 
 
-def send_one(server: smtplib.SMTP, sender: str, item: dict, attachment: bytes) -> None:
+def send_one(server: smtplib.SMTP, sender: str, item: dict, attachment: bytes, attachment_filename: str) -> None:
     to = item.get("to")
     subject = item.get("subject")
     body = item.get("body")
@@ -136,7 +136,7 @@ def send_one(server: smtplib.SMTP, sender: str, item: dict, attachment: bytes) -
         attachment,
         maintype="application",
         subtype="pdf",
-        filename="Ragunauth_Ramsaroop_Executive_CV_2026.pdf",
+        filename=attachment_filename,
     )
     server.send_message(msg, from_addr=sender, to_addrs=[to])
     print(f"Sent iCloud SMTP outreach to {to}")
@@ -156,7 +156,18 @@ def main() -> None:
         print("Dry run validated. No email was sent.")
         return
 
-    build_cv_pdf(CV_SOURCE, CV_PDF)
+    cv_source_raw = payload.get("cv_source") or str(CV_SOURCE)
+    if not isinstance(cv_source_raw, str):
+        raise ValueError("cv_source must be a string.")
+    cv_source = Path(cv_source_raw)
+    if not cv_source_raw.startswith("career-assets/") or cv_source.suffix.lower() != ".md" or not cv_source.exists():
+        raise ValueError("cv_source must be an existing Markdown file under career-assets/.")
+
+    attachment_filename = payload.get("attachment_filename") or "Ragunauth_Ramsaroop_Executive_CV_2026.pdf"
+    if not isinstance(attachment_filename, str) or not attachment_filename.lower().endswith(".pdf") or "/" in attachment_filename or "\\" in attachment_filename:
+        raise ValueError("attachment_filename must be a simple PDF filename.")
+
+    build_cv_pdf(cv_source, CV_PDF)
     attachment = CV_PDF.read_bytes()
 
     context = ssl.create_default_context()
@@ -166,7 +177,7 @@ def main() -> None:
         server.ehlo()
         server.login(sender, password)
         for item in payload["messages"]:
-            send_one(server, sender, item, attachment)
+            send_one(server, sender, item, attachment, attachment_filename)
 
 
 if __name__ == "__main__":
