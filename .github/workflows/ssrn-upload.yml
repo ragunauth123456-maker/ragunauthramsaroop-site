@@ -56,3 +56,5 @@ jobs:
           path: |
             ssrn-run/results.json
             ssrn-run/*.png
+
+# Retry marker: SSRN cookie overlay handling
