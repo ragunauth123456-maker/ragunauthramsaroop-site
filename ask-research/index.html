@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b24">
+  <title>Ask Randy's Research | Evidence-Grounded Research Assistant</title>
+  <meta name="description" content="Ask questions across Ragunauth Ramsaroop's public research, white papers and executive record. Answers are grounded in published website sources and link back to the supporting material.">
+  <meta name="author" content="Ragunauth Ramsaroop">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://ragunauthramsaroop.com/ask-research/">
+  <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png">
+  <link rel="stylesheet" href="/assets/ask-research.css?v=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ask Randy's Research">
+  <meta property="og:description" content="Search the public research record across ESG, mining, energy, Guyana, governance and executive leadership.">
+  <meta property="og:url" content="https://ragunauthramsaroop.com/ask-research/">
+  <meta property="og:image" content="https://ragunauthramsaroop.com/assets/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Ask Randy's Research","url":"https://ragunauthramsaroop.com/ask-research/","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"Ragunauth Ramsaroop","url":"https://ragunauthramsaroop.com/"},"description":"Evidence-grounded browser-side assistant for Ragunauth Ramsaroop's public research and executive record."}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to research assistant</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="/">
+        <span class="brand-mark">RR</span>
+        <span class="brand-text">Ragunauth Ramsaroop<small>Research &amp; executive intelligence</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="/executive-profile/">Profile</a>
+        <a href="/research-library/">Research</a>
+        <a href="/tools/">Tools</a>
+        <a href="/evidence/">Evidence</a>
+        <a href="/engage/">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Public research assistant</p>
+        <h1>Ask Randy's Research</h1>
+        <p class="lead">Ask a question across the published research, white papers and public executive record. The assistant searches an approved evidence index and returns the closest supporting sources.</p>
+      </div>
+      <div class="hero-proof" aria-label="Assistant principles">
+        <span>Evidence first</span>
+        <strong>Answers stay tied to published material.</strong>
+        <p>No confidential records. No invented citations. Sources remain visible.</p>
+      </div>
+    </section>
+
+    <section class="assistant-shell" aria-labelledby="ask-title">
+      <div class="ask-panel">
+        <p class="eyebrow">Research query</p>
+        <h2 id="ask-title">What are you trying to understand?</h2>
+        <form id="research-question-form">
+          <label for="research-question">Your question</label>
+          <textarea id="research-question" name="question" rows="5" maxlength="700" placeholder="Example: What does the research say about Guyana's energy security and power demand through 2030?" required></textarea>
+          <div class="form-row">
+            <div>
+              <label for="research-mode">Answer lens</label>
+              <select id="research-mode" name="mode">
+                <option value="general">General research</option>
+                <option value="board">Board and advisory</option>
+                <option value="institutional">Government and institutional</option>
+                <option value="recruiter">Executive search</option>
+                <option value="media">Media and public context</option>
+              </select>
+            </div>
+            <button id="research-submit" type="submit">Search published research</button>
+          </div>
+        </form>
+
+        <div class="examples" aria-label="Example research questions">
+          <span>Try a question</span>
+          <button type="button" data-question="What does the research say about Guyana's electricity demand and energy security through 2030?">Guyana energy</button>
+          <button type="button" data-question="What are the main strategic risks in critical mineral supply chains?">Critical minerals</button>
+          <button type="button" data-question="How should mining companies think about stakeholder trust and social licence?">Social licence</button>
+          <button type="button" data-question="What themes connect ESG, government relations and responsible mining in the public record?">ESG and institutions</button>
+        </div>
+      </div>
+
+      <aside class="result-panel" aria-live="polite" aria-labelledby="result-title">
+        <div class="result-heading">
+          <div>
+            <p class="eyebrow">Evidence response</p>
+            <h2 id="result-title">Research answer</h2>
+          </div>
+          <span id="research-confidence" class="confidence">Ready</span>
+        </div>
+        <p id="research-status" class="status">Enter a question to search the public research record.</p>
+        <div id="research-answer" class="answer" hidden></div>
+        <div id="research-sources" class="sources" hidden>
+          <h3>Supporting sources</h3>
+          <ol id="research-source-list"></ol>
+        </div>
+      </aside>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <div class="section-heading">
+        <p class="eyebrow">How the assistant works</p>
+        <h2 id="principles-title">Useful answers without hiding the evidence.</h2>
+      </div>
+      <div class="principle-grid">
+        <article>
+          <span>01</span>
+          <h3>Searches approved public material</h3>
+          <p>The first release searches a curated index of research, white papers, sector perspectives and the public executive record.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Returns source links</h3>
+          <p>Every useful response points back to the relevant publication or website page so readers can inspect the underlying material.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Keeps inference separate from evidence</h3>
+          <p>The evidence layer works locally in the browser. A future AI reasoning service sits behind a secured same-origin gateway, keeping provider credentials off the public website.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="next-step">
+      <div>
+        <p class="eyebrow light">Continue exploring</p>
+        <h2>Go from an answer to the full research.</h2>
+        <p>Open the research library for long-form publications, or use the public tools for structured assessments and calculators.</p>
+      </div>
+      <div class="actions">
+        <a href="/research-library/">Open research library</a>
+        <a class="secondary" href="/tools/">Open public tools</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Ragunauth "Randy" Ramsaroop</strong>
+    <span>Independent public research and executive record</span>
+  </footer>
+
+  <script defer src="/assets/research-assistant.js"></script>
+  <script defer src="/assets/ask-research-ui.js"></script>
+  <script defer src="/assets/accessibility.js"></script>
+  <script defer src="/tools/assets/analytics-loader.js"></script>
+</body>
+</html>
