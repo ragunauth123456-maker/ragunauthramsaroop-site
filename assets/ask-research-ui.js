@@ -10,6 +10,7 @@
   const sources = document.getElementById("research-sources");
   const sourceList = document.getElementById("research-source-list");
   const confidence = document.getElementById("research-confidence");
+  const researchActions = document.getElementById("research-actions");
   const exampleButtons = document.querySelectorAll("[data-question]");
   let gatewayConfigPromise = null;
 
@@ -26,6 +27,7 @@
     sources.hidden = true;
     answer.textContent = "";
     sourceList.replaceChildren();
+    if(researchActions) researchActions.hidden = true;
   }
 
   function sourceItem(source){
@@ -91,6 +93,24 @@
     return window.RRResearchAsk({question:text,mode:lens});
   }
 
+  function saveResearchHandoff(text,result){
+    try{
+      const safeSources = (Array.isArray(result.sources) ? result.sources : []).slice(0,5).map(function(item){
+        return {label:String(item.label||"Published source").slice(0,140),href:String(item.href||"/research-library/").slice(0,240)};
+      });
+      sessionStorage.setItem("rrResearchHandoff",JSON.stringify({
+        question:text.slice(0,700),
+        answer:String(result.answer||"").slice(0,1800),
+        sources:safeSources,
+        mode:mode.value,
+        createdAt:Date.now()
+      }));
+      return true;
+    }catch(_){
+      return false;
+    }
+  }
+
   async function runResearchQuery(){
     const text = question.value.trim();
     if(text.length < 4){
@@ -128,6 +148,7 @@
       items.forEach(function(item){ sourceList.appendChild(sourceItem(item)); });
       sources.hidden = items.length === 0;
       confidence.textContent = confidenceLabel(result);
+      if(researchActions) researchActions.hidden = !saveResearchHandoff(text,result);
     }catch(_){
       status.textContent = "The research service is unavailable right now. Open the research library for direct access to the publications.";
       confidence.textContent = "Unavailable";
