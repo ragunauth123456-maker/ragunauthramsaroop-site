@@ -11,6 +11,7 @@
   const sourceList = document.getElementById("research-source-list");
   const confidence = document.getElementById("research-confidence");
   const exampleButtons = document.querySelectorAll("[data-question]");
+  let gatewayConfigPromise = null;
 
   if(!form || !question || !mode || !submit || !status || !answer || !sources || !sourceList || !confidence) return;
 
@@ -38,10 +39,56 @@
 
   function confidenceLabel(result){
     const value = String(result && result.confidence || "").toLowerCase();
-    if(value === "high") return "Strong match";
-    if(value === "medium") return "Good match";
-    if(value === "low") return "Limited match";
-    return result && result.sources && result.sources.length ? "Evidence match" : "No match";
+    const prefix = result && result.ai_assisted ? "AI + " : "";
+    if(value === "high") return prefix + "Strong match";
+    if(value === "medium") return prefix + "Good match";
+    if(value === "low") return prefix + "Limited match";
+    return result && result.sources && result.sources.length ? prefix + "Evidence match" : "No match";
+  }
+
+  async function loadGatewayConfig(){
+    if(gatewayConfigPromise) return gatewayConfigPromise;
+    gatewayConfigPromise = fetch("/assets/research-gateway-config.json",{cache:"no-store"})
+      .then(function(response){ return response.ok ? response.json() : null; })
+      .then(function(config){
+        if(!config || config.enabled !== true) return null;
+        const endpoint = String(config.endpoint || "").trim();
+        if(!/^https:\/\//i.test(endpoint)) return null;
+        return {
+          endpoint:endpoint,
+          timeoutMs:Math.max(3000,Math.min(30000,Number(config.timeoutMs)||12000))
+        };
+      })
+      .catch(function(){ return null; });
+    return gatewayConfigPromise;
+  }
+
+  async function askGateway(text,lens){
+    const config = await loadGatewayConfig();
+    if(!config) return null;
+    const controller = new AbortController();
+    const timer = setTimeout(function(){ controller.abort(); },config.timeoutMs);
+    try{
+      const response = await fetch(config.endpoint,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({question:text,mode:lens}),
+        signal:controller.signal,
+        credentials:"omit",
+        referrerPolicy:"strict-origin-when-cross-origin"
+      });
+      if(!response.ok) throw new Error("gateway_unavailable");
+      const result = await response.json();
+      if(!result || typeof result.answer !== "string" || !Array.isArray(result.sources)) throw new Error("gateway_invalid");
+      return result;
+    }finally{
+      clearTimeout(timer);
+    }
+  }
+
+  async function askLocal(text,lens){
+    if(typeof window.RRResearchAsk !== "function") throw new Error("local_index_unavailable");
+    return window.RRResearchAsk({question:text,mode:lens});
   }
 
   async function runResearchQuery(){
@@ -54,30 +101,35 @@
       return;
     }
 
-    if(typeof window.RRResearchAsk !== "function"){
-      status.textContent = "The research index did not load. Open the research library directly while the assistant reloads.";
-      confidence.textContent = "Unavailable";
-      clearResult();
-      return;
-    }
-
     setBusy(true);
     clearResult();
     status.textContent = "Searching the approved public research index.";
     confidence.textContent = "Searching";
 
     try{
-      const result = await window.RRResearchAsk({question:text, mode:mode.value});
-      status.textContent = "Response grounded in the closest matching published material.";
+      let result = null;
+      try{
+        result = await askGateway(text,mode.value);
+      }catch(_){
+        result = null;
+      }
+      if(!result) result = await askLocal(text,mode.value);
+
+      if(result.ai_assisted){
+        status.textContent = "AI-assisted response grounded in approved published evidence. Supporting sources remain visible below.";
+      }else{
+        status.textContent = "Response grounded in the closest matching published material.";
+      }
+
       answer.textContent = result.answer || "No answer was returned.";
       answer.hidden = false;
 
       const items = Array.isArray(result.sources) ? result.sources : [];
-      items.forEach(item => sourceList.appendChild(sourceItem(item)));
+      items.forEach(function(item){ sourceList.appendChild(sourceItem(item)); });
       sources.hidden = items.length === 0;
       confidence.textContent = confidenceLabel(result);
-    }catch(err){
-      status.textContent = "The local research index is unavailable right now. Open the research library for direct access to the publications.";
+    }catch(_){
+      status.textContent = "The research service is unavailable right now. Open the research library for direct access to the publications.";
       confidence.textContent = "Unavailable";
       clearResult();
     }finally{
