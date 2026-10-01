@@ -15,8 +15,18 @@ async function dump(tag){console.log('=== '+tag+' ===');console.log('URL='+page.
 await login()
 await page.goto('https://hq.ssrn.com/submission.cfm?submission-id=20260925-200912623',{waitUntil:'domcontentloaded',timeout:60000})
 await cookies()
-const body=clean(await page.locator('body').innerText().catch(()=>''))
+let body=clean(await page.locator('body').innerText().catch(()=>''))
 console.log('OPEN='+clean((await page.locator('h1,h2,h3').allTextContents().catch(()=>[])).join(' | ')))
+if(body.includes('Step 4: Classify Your Submission')){
+  const selected=body.split('Previous Classifications')[0]
+  if(!selected.includes('Global Commodity Issues Alert')){
+    const choice=page.getByRole('button',{name:'Global Commodity Issues Alert',exact:true})
+    if(await choice.isVisible().catch(()=>false)){await choice.click({force:true});await page.waitForTimeout(600)}
+  }
+  await save()
+  await clickBtn(/Next Step/i)
+  body=clean(await page.locator('body').innerText().catch(()=>''))
+}
 if(!body.includes('Step 5: Research Integrity'))throw new Error('Not on Step 5')
 await page.locator('#declaration-of-interest').fill('This research was personally funded by the author. No external funding was received.')
 await page.locator('#funder-statement').fill('This research was personally funded by the author. No external funding was received.')
