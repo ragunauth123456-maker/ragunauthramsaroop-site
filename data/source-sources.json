@@ -29,6 +29,48 @@
       "url": "https://api.worldbank.org/v2/country/GUY?format=json",
       "category": "international-data",
       "note": "International development indicator source."
+    },
+    {
+      "name": "Environmental Protection Agency Guyana",
+      "url": "https://epaguyana.org/",
+      "category": "environment",
+      "note": "Environmental authorization, assessment and compliance information."
+    },
+    {
+      "name": "Guyana Power and Light",
+      "url": "https://gplinc.com/",
+      "category": "energy",
+      "note": "Electricity utility, service and grid information."
+    },
+    {
+      "name": "Guyana Revenue Authority",
+      "url": "https://www.gra.gov.gy/",
+      "category": "revenue",
+      "note": "Taxation, customs and revenue administration information."
+    },
+    {
+      "name": "Guyana National Bureau of Standards",
+      "url": "https://gnbsgy.org/",
+      "category": "standards",
+      "note": "Standards, metrology and conformity services."
+    },
+    {
+      "name": "Guyana Civil Aviation Authority",
+      "url": "https://gcaa-gy.org/",
+      "category": "aviation",
+      "note": "Civil aviation regulation and oversight information."
+    },
+    {
+      "name": "Ministry of Public Works",
+      "url": "https://mopw.gov.gy/",
+      "category": "infrastructure",
+      "note": "Public works and transport infrastructure information."
+    },
+    {
+      "name": "GO-Invest",
+      "url": "https://goinvest.gov.gy/",
+      "category": "investment",
+      "note": "Investment facilitation and investor information."
     }
   ]
 }
