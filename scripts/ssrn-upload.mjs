@@ -241,31 +241,73 @@ try {
   await signIn(page)
 
   if (process.env.SSRN_MODE === 'inspect') {
-    for (const item of papers.slice(1)) {
+    const classificationById = {
+      '20260925-200912623': 'Environmental Economics Alert',
+      '20260930-150901833': 'Global Commodity Issues Alert',
+      '20260930-150923239': 'Environmental Economics Alert',
+      '20260930-190908378': 'Environmental, Social & Governance (ESG) Research Alert',
+      '20260930-190910213': 'Environmental, Social & Governance (ESG) Research Alert',
+      '20260930-190913144': 'International Finance Alert',
+      '20260930-190919009': 'Economic Growth Alert',
+      '20260930-190928409': 'New Institutional Economics Alert',
+      '20260930-190934140': 'New Institutional Economics Alert'
+    }
+
+    for (const item of papers) {
       await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
         waitUntil: 'domcontentloaded',
         timeout: 60000
       })
       await dismissCookieOverlay(page)
-      await page.waitForTimeout(3200)
+      await page.waitForTimeout(2500)
       let body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+
       if (/Step 3:\s*Author Information/i.test(body)) {
         const search = page.locator('#author-search')
         await search.fill('Ragunauth Ramsaroop')
         await search.press('Enter')
         await page.waitForTimeout(1200)
         const authorName = await firstVisible(page.getByText('Ragunauth Ramsaroop', { exact: true }))
-        if (!authorName) throw new Error('Ragunauth Ramsaroop search result not found for ' + item.submissionId)
+        if (!authorName) throw new Error('Author search result not found for ' + item.submissionId)
         await authorName.click({ force: true })
-        await page.waitForTimeout(1200)
+        await page.waitForTimeout(1000)
         const next = await firstVisible(page.getByRole('button', { name: /^Next Step$/i }))
         if (!next) throw new Error('Step 3 Next Step not found for ' + item.submissionId)
         await next.click({ force: true })
-        await page.waitForTimeout(3500)
+        await page.waitForTimeout(2500)
         body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
       }
-      const step = body.match(/Step\s+\d+\s*:\s*[^0-9]+?(?=\s+(?:Save|Previous Step|Next Step|Submission Progress|$))/i)?.[0] || body.slice(0,320)
-      console.log('SSRN_STEP3_ADVANCE=' + item.submissionId + ' :: ' + step)
+
+      if (/Step 4:\s*Classify Your Submission/i.test(body)) {
+        const target = classificationById[item.submissionId]
+        let choice = await firstVisible(page.getByText(target, { exact: true })).catch(() => null)
+        if (!choice) {
+          const search = await firstVisible(page.locator('input[placeholder*="search" i], input[type="search"]')).catch(() => null)
+          if (search) {
+            await search.fill(target)
+            await page.waitForTimeout(1500)
+            choice = await firstVisible(page.getByText(target, { exact: true })).catch(() => null)
+          }
+        }
+        if (!choice) throw new Error('Classification not found: ' + target + ' for ' + item.submissionId)
+        await choice.click({ force: true })
+        await page.waitForTimeout(800)
+        const next = await firstVisible(page.getByRole('button', { name: /^Next Step$/i }))
+        if (!next) throw new Error('Step 4 Next Step not found for ' + item.submissionId)
+        await next.click({ force: true })
+        await page.waitForTimeout(2500)
+        body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+      }
+
+      console.log('SSRN_ADVANCE=' + item.submissionId + ' :: ' + body.slice(0,5000))
+
+      if (item.submissionId === papers[0].submissionId) {
+        const inputs = await page.locator('input, textarea, select').evaluateAll(nodes => nodes.map(n => ({
+          tag:n.tagName, type:n.type||'', name:n.name||'', id:n.id||'', value:n.value||'',
+          checked:!!n.checked, placeholder:n.placeholder||''
+        })))
+        console.log('SSRN_STEP5_CONTROLS=' + JSON.stringify(inputs))
+      }
     }
     process.exit(0)
   }
