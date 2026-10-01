@@ -241,90 +241,24 @@ try {
   await signIn(page)
 
   if (process.env.SSRN_MODE === 'inspect') {
-    const metadata = {
-      '20260930-150901833': {
-        title: 'From Ore to Optionality: Why Critical-Mineral Partnerships Must Deliver Industrial Capability, Not Only Supply Security',
-        date: '29/09/2026',
-        abstract: 'This paper examines why critical-mineral partnerships should be judged by the industrial capability they create, not only by volumes secured. It argues that criticality is relational rather than geological and that strategic chokepoints often sit in refining, processing, qualification, infrastructure, technology, finance and market access after the mine. Drawing on current institutional evidence, official policy documents, mineral-market data, comparative case analysis and selected scholarship, the study assesses value addition, export restrictions, supplier qualification, infrastructure, local participation, ESG and recycling. It proposes the OPTION framework and treats strategic optionality as the objective: dependable supply for buyers alongside multiple credible pathways for producer economies into higher-value activity, technology, finance and markets. The paper does not equate value addition with maximum domestic processing; processing choices are assessed against energy, infrastructure, technology, scale and market access.',
-        keywords: ['critical minerals','industrial policy','mining','value addition','supply chains','ESG','strategic partnerships','OPTION framework']
-      },
-      '20260930-150923239': {
-        title: 'Fresh Water: The Next Strategic Commodity',
-        date: '22/09/2026',
-        abstract: 'This paper argues that dependable freshwater access is becoming a strategic constraint on growth, industry, infrastructure, food security and capital allocation. It distinguishes water security from the idea that freshwater will trade like crude oil or metals. Because water is local, heavy, politically sensitive, ecologically connected and indispensable to life, the emerging economic value lies in reliable access and in the infrastructure and systems that support it, including treatment, reuse, storage, desalination, efficient irrigation, leakage reduction, monitoring and industrial closed-loop systems. The analysis examines agriculture, cities, AI and data centres, mining, energy, climate variability, capital markets and policy. It treats safe drinking water and sanitation as a human right and limits the investment thesis to infrastructure, reliability, efficiency and risk management.',
-        keywords: ['water security','freshwater','infrastructure','climate risk','agriculture','data centres','mining','energy','water reuse','capital allocation']
-      },
-      '20260930-190908378': {
-        title: 'Beyond Employment: Enterprise Stewardship and the Ownership Orientation of Executive Leadership',
-        date: '16/09/2026',
-        abstract: 'This paper separates legal ownership from an ownership orientation in executive and employee decision-making. A shareholder owns equity and legal rights; a manager or employee without equity does not become an owner through attitude. The paper defines ownership orientation as enterprise-wide, multi-period judgment that treats organisational resources, risks, relationships and reputation as assets held in stewardship. It integrates agency theory, stewardship theory, psychological ownership, work design, employee voice, governance, risk management and stakeholder management. The evidence does not support claims that ownership language alone transforms performance. The paper instead argues for an enterprise-stewardship system built on decision-relevant information, defined authority, accountability, employee voice, competence, ethical culture, risk controls and reciprocal fairness, with applications to leadership, governance, mining, energy and infrastructure.',
-        keywords: ['enterprise stewardship','ownership orientation','executive leadership','governance','risk','psychological ownership','stakeholder management','employee voice']
-      },
-      '20260930-190910213': {
-        title: 'Karpowership Guyana 2035: From Bridging Power to Strategic Energy Infrastructure',
-        date: '16/09/2026',
-        abstract: 'This strategic white paper examines Karpowership\'s potential long-term role in Guyana as the power system shifts from shortage toward rapid demand growth, new generation blocks, stronger transmission, digital control and new industrial loads. It distinguishes measured load, planning potential and firm commercial demand. The central argument is that Wales Gas-to-Energy changes the economics of Karpowership\'s current role but does not eliminate the need for reliability and system optionality. The paper proposes a portfolio-migration strategy centred on near-term bridge value, post-Wales reliability services, a gated Region Six/Berbice option, industrial and mining power agreements, domestic-gas conversion where feasible, storage and renewable firming, and stronger local technical capability. Scenario triggers, commercial architecture, execution sequencing, governance and risk controls are developed through 2035.',
-        keywords: ['Karpowership','Guyana','energy','power','Gas-to-Energy','reliability','industrial power','LNG','storage','energy strategy']
-      },
-      '20260930-190913144': {
-        title: 'The Geopolitics of Gold: Central Banks, Reserve Diversification and the Strategic Revaluation of a Monetary Asset',
-        date: '14/09/2026',
-        abstract: 'This paper examines gold\'s renewed role in central-bank reserve management and argues that the current cycle is best understood through valuation, diversification, geopolitical optionality and institutional credibility. It distinguishes changes in the market value of official gold holdings from changes in physical holdings and cautions against treating gold and currency reserve shares as directly interchangeable. The paper reviews recent official-sector demand, reserve composition, geopolitical considerations, responsible sourcing and domestic gold-purchase programmes. It does not interpret higher gold holdings as evidence of imminent displacement of the dollar-centred reserve system. For governments and boards, the analysis positions gold within strategic asset allocation, sovereign risk management, responsible sourcing and industrial policy, while emphasizing liquidity, governance, custody, traceability and monetary-policy risks.',
-        keywords: ['gold','central banks','reserve diversification','geopolitics','monetary policy','sovereign risk','responsible sourcing','reserve management']
-      },
-      '20260930-190919009': {
-        title: 'Guyana Development Bank: From Access to Finance to Productive Economic Participation',
-        date: '21/09/2026',
-        abstract: 'This paper evaluates the proposed Guyana Development Bank as a development-finance institution intended to widen productive economic participation rather than merely expand access to credit. It reviews the announced capital structure, zero-interest and collateral-free lending offer, co-financing concept, digital and assisted-access model, mentoring and business-development support, and the relationship with existing financial institutions. The analysis distinguishes implementation announcements from verified operating results and places the Bank within Guyana\'s wider credit and SME-finance system. The central policy test is additionality: whether the Bank generates productive activity that private institutions would not otherwise finance on similar terms. The paper develops governance, risk, implementation, evaluation and performance frameworks focused on borrower survival, repayment, productivity, jobs, regional inclusion and graduation into commercial finance.',
-        keywords: ['Guyana Development Bank','development finance','SMEs','financial inclusion','governance','productive finance','credit','economic participation']
-      },
-      '20260930-190928409': {
-        title: 'Sovereign AI: Who Controls the Intelligence Infrastructure of the Global Economy?',
-        date: '18/09/2026',
-        abstract: 'This monograph examines sovereign artificial intelligence as a system of technological, economic, legal, infrastructural and geopolitical dependencies. It argues that sovereignty cannot be reduced to server location or ownership of a single layer of the AI stack. The study defines sovereign AI as the capacity to preserve strategic choice over critical AI functions under stress and develops a twelve-domain Sovereign AI Systems Framework spanning semiconductors, compute, cloud, physical data-centre infrastructure, energy and water, connectivity, data, models, software, talent, capital and governance. It proposes a Sovereign AI Resilience Index, dependency graph, maturity model, early-warning dashboard and procurement test. Multiple pathways to 2040 are treated as stress tests rather than forecasts. The core objective is strategic optionality, legal authority and credible alternatives that reduce coercive lock-in without requiring full domestic self-sufficiency.',
-        keywords: ['sovereign AI','artificial intelligence','digital sovereignty','AI compute','semiconductors','cloud computing','data governance','geopolitics','strategic autonomy','AI infrastructure']
-      },
-      '20260930-190934140': {
-        title: 'The Trust Deficit: Managing Transformation in a Fragmented World',
-        date: '21/09/2026',
-        abstract: 'This monograph argues that warranted institutional trust functions as strategic infrastructure for collective action. It lowers the friction required to coordinate behaviour, absorb uncertainty, mobilise capital, implement reform, sustain compliance and maintain cooperation when interests diverge. The analysis distinguishes warranted trust from popularity, reputation or blind confidence and examines credibility, competence, fairness, voice, integrity, openness and delivery. It proposes the Trust-Execution Resilience Architecture (TERA) as a diagnostic framework rather than a validated psychometric scale or ranking system. Drawing on official, multilateral, peer-reviewed and clearly identified commercial survey evidence, the paper treats scenarios as exploratory stress tests rather than forecasts. The objective is justified trust grounded in testable claims, credible commitments, explainable decisions, visible trade-offs, correctable errors and demonstrated delivery.',
-        keywords: ['institutional trust','governance','leadership','cooperation','execution capacity','legitimacy','resilience','TERA']
-      }
-    }
-
-    for (const item of papers) {
-      const meta = metadata[item.submissionId]
-      if (!meta) continue
-      await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
-        waitUntil: 'domcontentloaded',
-        timeout: 60000
-      })
-      await dismissCookieOverlay(page)
-      await page.waitForTimeout(3200)
-      let body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-      if (/Step 2:\s*Confirm Key Submission Details/i.test(body)) {
-        const title = page.locator('#title')
-        const abstract = page.locator('#abstract')
-        await title.fill(meta.title)
-        await abstract.fill(meta.abstract)
-        const dateInput = page.locator('input[placeholder="dd/mm/yyyy"]').first()
-        await dateInput.fill(meta.date)
-        const keywordInput = page.locator('#add-keyword')
-        for (const kw of meta.keywords) {
-          await keywordInput.fill(kw)
-          await keywordInput.press('Enter')
-          await page.waitForTimeout(120)
-        }
-        await page.waitForTimeout(500)
-        const next = await firstVisible(page.getByRole('button', { name: /^Next Step$/i }))
-        if (!next) throw new Error('Step 2 Next Step not found for ' + item.submissionId)
-        await next.click({ force: true })
-        await page.waitForTimeout(3500)
-        body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-      }
-      const step = body.match(/Step\s+\d+\s*:\s*[^0-9]+?(?=\s+(?:Save|Previous Step|Next Step|Submission Progress|$))/i)?.[0] || body.slice(0,280)
-      console.log('SSRN_STEP2_ADVANCE=' + item.submissionId + ' :: ' + step)
-    }
+    const item = papers[1]
+    await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
+    })
+    await dismissCookieOverlay(page)
+    await page.waitForTimeout(3500)
+    const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+    console.log('SSRN_STEP3_TEXT=' + body.slice(0,14000))
+    const fields = await page.locator('input:not([type="password"]),textarea,[role="combobox"]').evaluateAll(nodes => nodes.map(n => ({
+      tag:n.tagName,type:n.getAttribute('type')||'',name:n.getAttribute('name')||'',id:n.id||'',
+      value:(n.value||'').slice(0,2000),placeholder:n.getAttribute('placeholder')||'',aria:n.getAttribute('aria-label')||'',required:!!n.required
+    }))).catch(() => [])
+    console.log('SSRN_STEP3_FIELDS=' + JSON.stringify(fields))
+    const buttons = await page.locator('button').evaluateAll(nodes => nodes.map(n => ({
+      text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
+    }))).catch(() => [])
+    console.log('SSRN_STEP3_BUTTONS=' + JSON.stringify(buttons))
     process.exit(0)
   }
 
