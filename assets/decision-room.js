@@ -181,6 +181,13 @@ function dec(s){
 }
 async function share(){
   const url=location.origin+location.pathname+"#review="+enc(state());
+  if(url.length>12000){
+    $("#dr-output-status").textContent="Pack too large for review URL";
+    $("#dr-output-status").className="status next";
+    build();
+    $("#dr-pack").insertAdjacentHTML("beforeend",'<p class="notice">This pack is too large for a practical review URL. Use Print / Save PDF instead.</p>');
+    return;
+  }
   try{
     await navigator.clipboard.writeText(url);
     build();
