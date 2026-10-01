@@ -112,3 +112,9 @@ footer strong{color:var(--ink)}
   .next-step{padding:38px 26px;margin-bottom:38px}
   footer{flex-direction:column}
 }
+.research-actions{margin-top:28px;padding-top:22px;border-top:1px solid var(--line)}
+.research-actions h3{margin:0 0 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.research-actions>div{display:flex;flex-wrap:wrap;gap:9px}
+.research-actions a{min-height:42px;padding:0 15px;display:inline-flex;align-items:center;border-radius:999px;background:var(--forest);color:var(--white);text-decoration:none;font-size:11px;font-weight:820}
+.research-actions a+ a{background:transparent;color:var(--forest);border:1px solid var(--forest)}
+.research-actions p{margin:12px 0 0;color:var(--muted);font-size:10px;line-height:1.55}
