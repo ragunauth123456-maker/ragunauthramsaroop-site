@@ -87,8 +87,31 @@ async function firstVisible(locator) {
   return null
 }
 
+async function dismissCookieOverlay(page) {
+  const selectors = [
+    '#onetrust-accept-btn-handler',
+    '#onetrust-reject-all-handler',
+    '.onetrust-close-btn-handler',
+    'button[aria-label*="Close" i]'
+  ]
+  for (const selector of selectors) {
+    const button = await firstVisible(page.locator(selector)).catch(() => null)
+    if (button) {
+      await button.click({ force: true }).catch(() => {})
+      await page.waitForTimeout(300)
+    }
+  }
+  await page.evaluate(() => {
+    const sdk = document.querySelector('#onetrust-consent-sdk')
+    if (sdk) sdk.remove()
+    document.documentElement.style.overflow = ''
+    document.body.style.overflow = ''
+  }).catch(() => {})
+}
+
 async function signIn(page) {
   await page.goto('https://hq.ssrn.com/submissions/MyPapers.cfm', { waitUntil: 'domcontentloaded', timeout: 60000 })
+  await dismissCookieOverlay(page)
 
   const password = await firstVisible(page.locator('input[type="password"]'))
   if (!password) {
@@ -118,9 +141,10 @@ async function signIn(page) {
   }
   if (!signInButton) throw new Error('SSRN Sign in button was not found')
 
+  await dismissCookieOverlay(page)
   await Promise.all([
     page.waitForLoadState('domcontentloaded').catch(() => {}),
-    signInButton.click()
+    signInButton.click({ force: true })
   ])
 
   await page.waitForTimeout(2000)
@@ -233,6 +257,7 @@ try {
         })
       }
 
+      await dismissCookieOverlay(page)
       const fileInput = page.locator('input[type="file"]').first()
       await fileInput.waitFor({ state: 'attached', timeout: 30000 })
 
