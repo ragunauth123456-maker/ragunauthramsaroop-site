@@ -43,8 +43,8 @@ jobs:
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
 
-      - name: Inspect SSRN submission options
-        run: SSRN_MODE=inspect node scripts/ssrn-upload.mjs
+      - name: Finalize and submit SSRN papers
+        run: SSRN_MODE=finalize node scripts/ssrn-upload.mjs
 
       - name: Save run evidence
         if: always()
@@ -55,6 +55,7 @@ jobs:
           retention-days: 7
           path: |
             ssrn-run/results.json
+            ssrn-run/final-results.json
             ssrn-run/*.png
 
-# Retry marker: inspect remaining drafts
+# Retry marker: finalize and submit all nine papers
