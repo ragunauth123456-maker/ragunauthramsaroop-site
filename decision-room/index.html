@@ -1,2 +1,141 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Decision Room | Ragunauth Ramsaroop</title><meta content="A browser-based workspace for building evidence-led executive decision packs and private review links." name="description"/><meta content="index,follow,max-image-preview:large" name="robots"/><meta content="#08271d" name="theme-color"/><link href="/tools/assets/tools.css" rel="stylesheet"/><link href="/assets/platform.css" rel="stylesheet"/><link href="/site.webmanifest" rel="manifest"/><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Decision Room","description":"A browser-based workspace for building evidence-led executive decision packs and private review links.","isPartOf":{"@type":"WebSite","name":"Ragunauth Ramsaroop","url":"https://ragunauthramsaroop.com/"}}</script><script defer="" src="/tools/assets/analytics-loader.js"></script><script defer="" src="/tools/assets/engagement-tracking.js"></script><script defer="" src="/assets/accessibility.js"></script><script defer="" src="/assets/platform.js"></script><script defer="" src="/assets/intelligence-adapter.js"></script><script defer="" src="/assets/decision-room.js"></script><script defer="" src="/assets/i18n.js"></script><link href="https://ragunauthramsaroop.com/decision-room/" rel="canonical"/><meta content="https://ragunauthramsaroop.com/decision-room/" property="og:url"/></head><body><header class="topbar"><div class="wrap"><a class="brand" href="/">Ragunauth Ramsaroop<small>Public-value intelligence</small></a><nav class="nav"><a href="/copilot/">Copilot</a><a href="/observatory/">Observatory</a><a href="/scenario-lab/">Scenario Lab</a><a href="/academy/">Academy</a><a class="cta" href="/start/">Start</a></nav></div></header><section class="hero"><div class="wrap"><div class="kicker">From issue to decision</div><h1>Decision Room</h1><p>A browser-based workspace for building evidence-led executive decision packs and private review links.</p></div></section><main><div class="wrap"><section class="panel"><h2>Build a decision pack</h2><p>Turn an issue into a structured decision record with facts, assumptions, stakeholders, risks, options, recommendation criteria and next actions.</p><div class="tool-form"><div class="field full"><label for="dr-title">Decision or issue</label><input id="dr-title" placeholder="Example: Approve a renewable-energy expansion"/></div><div class="field full"><label for="dr-facts">Verified facts</label><textarea id="dr-facts"></textarea></div><div class="field full"><label for="dr-unknowns">Unknowns and assumptions</label><textarea id="dr-unknowns"></textarea></div><div class="field full"><label for="dr-stakeholders">Stakeholders</label><textarea id="dr-stakeholders"></textarea></div><div class="field full"><label for="dr-risks">Principal risks</label><textarea id="dr-risks"></textarea></div><div class="field full"><label for="dr-options">Options under consideration</label><textarea id="dr-options"></textarea></div><div class="field full"><label for="dr-criteria">Decision criteria</label><textarea id="dr-criteria"></textarea></div><div class="field full"><label for="dr-actions">Immediate actions</label><textarea id="dr-actions"></textarea></div><div class="field full"><div class="actions"><button class="btn" id="dr-build" type="button">Build decision pack</button><button class="btn alt" id="dr-import" type="button">Import latest Scenario Lab case</button><button class="btn alt" id="dr-share" type="button">Create review link</button><button class="btn alt" id="dr-print" type="button">Print / Save PDF</button></div></div></div><article class="result" hidden="" id="dr-pack"></article></section></div></main><footer class="footer"><div class="wrap footer-grid"><div><strong>RR Public Intelligence Platform.</strong><p>Evidence-bounded tools, research, learning and decision support.</p></div><div><a href="/copilot/">Copilot</a><br/><a href="/observatory/">Observatory</a><br/><a href="/scenario-lab/">Scenario Lab</a></div><div><a href="/academy/">Academy</a><br/><a href="/provenance/">Provenance</a><br/><a href="/api/">API</a></div></div></footer><nav aria-label="Public resource platform" class="rr-platform-nav"><a href="/start/">Start</a><a href="/copilot/">Copilot</a><a href="/observatory/">Observatory</a><a href="/scenario-lab/">Scenario Lab</a><a href="/decision-room/">Decision Room</a><a href="/evidence-graph/">Evidence Graph</a><a href="/academy/">Academy</a><a href="/resources/">Resources</a><a href="/tools/">Tools</a></nav></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b24">
+  <title>Executive Decision Room | Evidence-Led Decision Packs</title>
+  <meta name="description" content="A private browser-based executive workspace for turning Guyana briefings, research and scenarios into evidence-led decision packs, board questions and action records.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://ragunauthramsaroop.com/decision-room/">
+  <link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png">
+  <link rel="stylesheet" href="/tools/assets/tools.css">
+  <link rel="stylesheet" href="/assets/platform.css">
+  <link rel="stylesheet" href="/assets/decision-room-executive.css?v=1">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Executive Decision Room">
+  <meta property="og:description" content="Turn public intelligence, research and scenarios into structured executive decision packs.">
+  <meta property="og:url" content="https://ragunauthramsaroop.com/decision-room/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Executive Decision Room","applicationCategory":"BusinessApplication","operatingSystem":"Web browser","url":"https://ragunauthramsaroop.com/decision-room/","description":"A browser-based workspace for evidence-led executive decision packs and review records."}</script>
+</head>
+<body>
+  <a class="skip-link" href="#dr-main">Skip to Decision Room</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/">Ragunauth Ramsaroop<small>Public-value intelligence</small></a>
+      <nav class="nav">
+        <a href="/guyana-briefing/">Daily Briefing</a>
+        <a href="/observatory/">Observatory</a>
+        <a href="/ask-research/">Ask Research</a>
+        <a href="/scenario-lab/">Scenario Lab</a>
+        <a class="cta" href="/guyana-intelligence/">Guyana Intelligence</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero dr-hero">
+    <div class="wrap dr-hero-grid">
+      <div>
+        <div class="kicker">From evidence to accountable action</div>
+        <h1>Executive Decision Room</h1>
+        <p>Build a decision record that separates verified facts from assumptions, preserves source context, tests options, surfaces unresolved evidence and prepares board-level scrutiny.</p>
+      </div>
+      <aside class="dr-privacy">
+        <span>Private by default</span>
+        <strong>Your working pack stays in this browser.</strong>
+        <p>Imported briefing and research context uses browser storage. A shareable review URL is created only when you explicitly choose that action.</p>
+      </aside>
+    </div>
+  </section>
+
+  <main id="dr-main">
+    <div class="wrap">
+      <section class="panel dr-intake">
+        <div class="dr-section-head">
+          <div>
+            <div class="method-meta">Decision intake</div>
+            <h2>Define the decision before debating the answer.</h2>
+            <p>Import the latest briefing, research or scenario context, then edit everything before building the pack.</p>
+          </div>
+          <div class="dr-import-actions">
+            <button class="btn alt" id="dr-import-context" type="button">Import latest intelligence context</button>
+            <button class="btn alt" id="dr-import" type="button">Import latest Scenario Lab case</button>
+          </div>
+        </div>
+
+        <div class="tool-form dr-meta-grid">
+          <div class="field full"><label for="dr-title">Decision or issue</label><input id="dr-title" placeholder="Example: Approve a renewable-energy expansion"></div>
+          <div class="field"><label for="dr-owner">Decision owner</label><input id="dr-owner" placeholder="Role or accountable owner"></div>
+          <div class="field"><label for="dr-date">Target decision date</label><input id="dr-date" type="date"></div>
+          <div class="field"><label for="dr-status">Decision stage</label><select id="dr-status"><option>Explore</option><option>Prepare</option><option>Decide</option><option>Execute</option></select></div>
+          <div class="field"><label for="dr-evidence-state">Evidence state</label><select id="dr-evidence-state"><option>Exploratory</option><option>Partial</option><option>Reviewed</option></select></div>
+        </div>
+      </section>
+
+      <section class="dr-workspace">
+        <div class="dr-form-panel">
+          <div class="tool-form">
+            <div class="field full"><label for="dr-facts">Verified facts</label><textarea id="dr-facts" rows="6" placeholder="Use dated, source-linked facts."></textarea></div>
+            <div class="field full"><label for="dr-unknowns">Unknowns and assumptions</label><textarea id="dr-unknowns" rows="5" placeholder="What remains unverified, estimated or assumed?"></textarea></div>
+            <div class="field full"><label for="dr-stakeholders">Stakeholders</label><textarea id="dr-stakeholders" rows="4" placeholder="Who is affected, accountable, influential or required for approval?"></textarea></div>
+            <div class="field full"><label for="dr-risks">Principal risks</label><textarea id="dr-risks" rows="5" placeholder="Execution, regulatory, financial, technical, social, environmental or reputation risks."></textarea></div>
+            <div class="field full"><label for="dr-options">Options under consideration</label><textarea id="dr-options" rows="5" placeholder="List credible options, including defer or do nothing where relevant."></textarea></div>
+            <div class="field full"><label for="dr-criteria">Decision criteria</label><textarea id="dr-criteria" rows="4" placeholder="What criteria must the decision satisfy?"></textarea></div>
+            <div class="field full"><label for="dr-recommendation">Working recommendation</label><textarea id="dr-recommendation" rows="4" placeholder="State a recommendation only if the evidence supports one."></textarea></div>
+            <div class="field full"><label for="dr-actions">Immediate actions</label><textarea id="dr-actions" rows="4" placeholder="Owners, dates, evidence required and next review point."></textarea></div>
+          </div>
+          <div class="actions dr-main-actions">
+            <button class="btn" id="dr-build" type="button">Build decision pack</button>
+            <button class="btn alt" id="dr-print" type="button">Print / Save PDF</button>
+            <button class="btn alt" id="dr-share" type="button">Create shareable URL containing pack data</button>
+            <button class="btn alt" id="dr-clear" type="button">Clear private workspace</button>
+          </div>
+          <p class="notice dr-share-note">A shareable URL stores the current pack inside the URL fragment. Anyone you send that URL to can read the encoded pack. It is not suitable for confidential or sensitive information.</p>
+        </div>
+
+        <aside class="dr-evidence-panel">
+          <div class="method-meta">Evidence ledger</div>
+          <h2>Imported public sources</h2>
+          <p>Sources imported from Ask Research, the Executive Guyana Briefing or other connected public-intelligence workflows appear here.</p>
+          <div id="dr-evidence-ledger" class="dr-evidence-ledger"></div>
+          <div class="dr-completeness">
+            <span>Pack completion</span>
+            <strong id="dr-completeness">0/12 fields populated</strong>
+            <small>This counts filled fields only. It is not a quality or readiness score.</small>
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel dr-output-panel">
+        <div class="dr-section-head">
+          <div>
+            <div class="method-meta">Decision output</div>
+            <h2>Decision pack</h2>
+          </div>
+          <span id="dr-output-status" class="status explore">Not built</span>
+        </div>
+        <article class="result dr-pack" hidden id="dr-pack"></article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div><strong>RR Public Intelligence Platform.</strong><p>Evidence-bounded research, tools and decision support.</p></div>
+      <div><a href="/guyana-briefing/">Daily Briefing</a><br><a href="/observatory/">Observatory</a><br><a href="/scenario-lab/">Scenario Lab</a></div>
+      <div><a href="/ask-research/">Ask Research</a><br><a href="/methodology/">Methodology</a><br><a href="/guyana-intelligence/">Guyana Intelligence</a></div>
+    </div>
+  </footer>
+
+  <nav aria-label="Public resource platform" class="rr-platform-nav">
+    <a href="/start/">Start</a><a href="/guyana-briefing/">Briefing</a><a href="/observatory/">Observatory</a><a href="/scenario-lab/">Scenario Lab</a><a href="/decision-room/">Decision Room</a><a href="/research-library/">Research</a><a href="/tools/">Tools</a>
+  </nav>
+
+  <script defer src="/tools/assets/analytics-loader.js"></script>
+  <script defer src="/assets/accessibility.js"></script>
+  <script defer src="/assets/platform.js"></script>
+  <script defer src="/assets/decision-room.js"></script>
+</body>
+</html>
