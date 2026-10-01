@@ -1,0 +1,58 @@
+name: SSRN PDF Upload
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/ssrn-upload.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
+      SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
+
+    steps:
+      - name: Check SSRN credentials
+        shell: bash
+        run: |
+          if [ -z "$SSRN_EMAIL" ]; then
+            echo "::error::Missing repository secret SSRN_EMAIL"
+            exit 1
+          fi
+          if [ -z "$SSRN_PASSWORD" ]; then
+            echo "::error::Missing repository secret SSRN_PASSWORD"
+            exit 1
+          fi
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Upload nine PDFs to SSRN drafts
+        run: node scripts/ssrn-upload.mjs
+
+      - name: Save run evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ssrn-upload-results
+          if-no-files-found: ignore
+          retention-days: 7
+          path: |
+            ssrn-run/results.json
+            ssrn-run/*.png
