@@ -241,17 +241,21 @@ try {
   await signIn(page)
 
   if (process.env.SSRN_MODE === 'inspect') {
-    for (const item of papers) {
-      await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
-        waitUntil: 'domcontentloaded',
-        timeout: 60000
-      })
-      await dismissCookieOverlay(page)
-      await page.waitForTimeout(3500)
-      const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-      const step = body.match(/Step\s+\d+\s*:\s*[^0-9]+?(?=\s+(?:Save|Previous Step|Next Step|Submission Progress|$))/i)?.[0] || body.slice(0,220)
-      console.log('SSRN_STATE=' + item.submissionId + ' :: ' + step)
-    }
+    const item = papers[1]
+    await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
+      waitUntil: 'domcontentloaded',
+      timeout: 60000
+    })
+    await dismissCookieOverlay(page)
+    await page.waitForTimeout(3500)
+    const opener = await firstVisible(page.getByText('Select an Item', { exact: true })).catch(() => null)
+    if (opener) await opener.click({ force: true }).catch(() => {})
+    await page.waitForTimeout(700)
+    console.log('SSRN_OPTIONS_TEXT=' + (await page.locator('body').innerText()).replace(/\s+/g,' ').slice(0,12000))
+    const roles = await page.locator('[role="option"],[role="listbox"],li').evaluateAll(nodes => nodes.map(n => ({
+      role:n.getAttribute('role')||'', text:(n.innerText||'').trim(), cls:n.className||''
+    }))).catch(() => [])
+    console.log('SSRN_OPTION_NODES=' + JSON.stringify(roles))
     process.exit(0)
   }
 
