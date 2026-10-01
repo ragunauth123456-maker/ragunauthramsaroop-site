@@ -150,6 +150,11 @@ async function signIn(page) {
   await page.waitForTimeout(2000)
 
   if (await firstVisible(page.locator('input[type="password"]'))) {
+    const bodyText = await page.locator('body').innerText().catch(() => '')
+    console.log('SSRN_LOGIN_URL=' + page.url())
+    console.log('SSRN_LOGIN_TITLE=' + await page.title().catch(() => ''))
+    console.log('SSRN_LOGIN_TEXT=' + bodyText.slice(0, 5000).replace(/\n/g, ' | '))
+    await page.screenshot({ path: path.join(outDir, 'login-failed.png'), fullPage: true }).catch(() => {})
     throw new Error('SSRN login did not complete. Check credentials or any SSRN verification prompt.')
   }
 }
