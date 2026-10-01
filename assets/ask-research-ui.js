@@ -176,5 +176,15 @@
   if(incoming){
     question.value = incoming.slice(0,700);
     runResearchQuery();
+  }else if(params.get("from")==="guyana"){
+    try{
+      const raw = sessionStorage.getItem("rrGuyanaQuestion");
+      const handoff = raw ? JSON.parse(raw) : null;
+      if(handoff && handoff.question && handoff.createdAt && Date.now()-Number(handoff.createdAt)<7200000){
+        question.value = String(handoff.question).slice(0,700);
+        sessionStorage.removeItem("rrGuyanaQuestion");
+        runResearchQuery();
+      }
+    }catch(_){}
   }
 })();
