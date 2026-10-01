@@ -156,19 +156,27 @@ def main() -> None:
         print("Dry run validated. No email was sent.")
         return
 
-    cv_source_raw = payload.get("cv_source") or str(CV_SOURCE)
-    if not isinstance(cv_source_raw, str):
-        raise ValueError("cv_source must be a string.")
-    cv_source = Path(cv_source_raw)
-    if not cv_source_raw.startswith("career-assets/") or cv_source.suffix.lower() != ".md" or not cv_source.exists():
-        raise ValueError("cv_source must be an existing Markdown file under career-assets/.")
-
     attachment_filename = payload.get("attachment_filename") or "Ragunauth_Ramsaroop_Executive_CV_2026.pdf"
     if not isinstance(attachment_filename, str) or not attachment_filename.lower().endswith(".pdf") or "/" in attachment_filename or "\\" in attachment_filename:
         raise ValueError("attachment_filename must be a simple PDF filename.")
 
-    build_cv_pdf(cv_source, CV_PDF)
-    attachment = CV_PDF.read_bytes()
+    attachment_path_raw = payload.get("attachment_path")
+    if attachment_path_raw is not None:
+        if not isinstance(attachment_path_raw, str):
+            raise ValueError("attachment_path must be a string.")
+        attachment_path = Path(attachment_path_raw)
+        if not attachment_path_raw.startswith("career-assets/outreach-pdfs/") or attachment_path.suffix.lower() != ".pdf" or not attachment_path.exists():
+            raise ValueError("attachment_path must be an existing PDF under career-assets/outreach-pdfs/.")
+        attachment = attachment_path.read_bytes()
+    else:
+        cv_source_raw = payload.get("cv_source") or str(CV_SOURCE)
+        if not isinstance(cv_source_raw, str):
+            raise ValueError("cv_source must be a string.")
+        cv_source = Path(cv_source_raw)
+        if not cv_source_raw.startswith("career-assets/") or cv_source.suffix.lower() != ".md" or not cv_source.exists():
+            raise ValueError("cv_source must be an existing Markdown file under career-assets/.")
+        build_cv_pdf(cv_source, CV_PDF)
+        attachment = CV_PDF.read_bytes()
 
     context = ssl.create_default_context()
     with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
