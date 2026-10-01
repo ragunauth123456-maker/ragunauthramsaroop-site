@@ -248,17 +248,16 @@ try {
     })
     await dismissCookieOverlay(page)
     await page.waitForTimeout(3500)
+    const search = page.locator('#author-search')
+    await search.fill('Ragunauth Ramsaroop')
+    await search.press('Enter')
+    await page.waitForTimeout(1500)
     const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-    console.log('SSRN_STEP3_TEXT=' + body.slice(0,14000))
-    const fields = await page.locator('input:not([type="password"]),textarea,[role="combobox"]').evaluateAll(nodes => nodes.map(n => ({
-      tag:n.tagName,type:n.getAttribute('type')||'',name:n.getAttribute('name')||'',id:n.id||'',
-      value:(n.value||'').slice(0,2000),placeholder:n.getAttribute('placeholder')||'',aria:n.getAttribute('aria-label')||'',required:!!n.required
+    console.log('SSRN_AUTHOR_SEARCH_TEXT=' + body.slice(0,12000))
+    const nodes = await page.locator('button,[role="option"],[role="listbox"],li').evaluateAll(nodes => nodes.map(n => ({
+      tag:n.tagName,role:n.getAttribute('role')||'',text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
     }))).catch(() => [])
-    console.log('SSRN_STEP3_FIELDS=' + JSON.stringify(fields))
-    const buttons = await page.locator('button').evaluateAll(nodes => nodes.map(n => ({
-      text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
-    }))).catch(() => [])
-    console.log('SSRN_STEP3_BUTTONS=' + JSON.stringify(buttons))
+    console.log('SSRN_AUTHOR_SEARCH_NODES=' + JSON.stringify(nodes))
     process.exit(0)
   }
 
