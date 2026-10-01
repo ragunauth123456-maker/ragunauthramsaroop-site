@@ -89,6 +89,7 @@ jobs:
           node --check assets/research-assistant.js
           node --check assets/ask-research-ui.js
           node --check assets/guyana-intelligence.js
+          node --check assets/observatory-sector-briefs.js
           node --check gateway/research-ask.mjs
           node --check gateway/vercel/api/research/ask.mjs
           node --check assets/platform.js
@@ -106,6 +107,8 @@ jobs:
         run: node scripts/test_research_gateway.mjs
       - name: Verify Guyana Intelligence Centre
         run: node scripts/test_guyana_intelligence.cjs
+      - name: Verify Observatory sector briefings
+        run: node scripts/test_observatory_sector_briefs.cjs
       - name: Verify route-safe service worker offline behavior
         run: node scripts/test_service_worker_navigation.cjs
       - name: Verify opt-in GeoLibre GIS integration
