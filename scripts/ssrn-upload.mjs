@@ -241,23 +241,32 @@ try {
   await signIn(page)
 
   if (process.env.SSRN_MODE === 'inspect') {
-    const item = papers[1]
-    await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
-      waitUntil: 'domcontentloaded',
-      timeout: 60000
-    })
-    await dismissCookieOverlay(page)
-    await page.waitForTimeout(3500)
-    const search = page.locator('#author-search')
-    await search.fill('Ragunauth Ramsaroop')
-    await search.press('Enter')
-    await page.waitForTimeout(1500)
-    const body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
-    console.log('SSRN_AUTHOR_SEARCH_TEXT=' + body.slice(0,12000))
-    const nodes = await page.locator('button,[role="option"],[role="listbox"],li').evaluateAll(nodes => nodes.map(n => ({
-      tag:n.tagName,role:n.getAttribute('role')||'',text:(n.innerText||'').trim(),aria:n.getAttribute('aria-label')||'',disabled:!!n.disabled
-    }))).catch(() => [])
-    console.log('SSRN_AUTHOR_SEARCH_NODES=' + JSON.stringify(nodes))
+    for (const item of papers.slice(1)) {
+      await page.goto(`https://hq.ssrn.com/submission.cfm?submission-id=${item.submissionId}`, {
+        waitUntil: 'domcontentloaded',
+        timeout: 60000
+      })
+      await dismissCookieOverlay(page)
+      await page.waitForTimeout(3200)
+      let body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+      if (/Step 3:\s*Author Information/i.test(body)) {
+        const search = page.locator('#author-search')
+        await search.fill('Ragunauth Ramsaroop')
+        await search.press('Enter')
+        await page.waitForTimeout(1200)
+        const authorName = await firstVisible(page.getByText('Ragunauth Ramsaroop', { exact: true }))
+        if (!authorName) throw new Error('Ragunauth Ramsaroop search result not found for ' + item.submissionId)
+        await authorName.click({ force: true })
+        await page.waitForTimeout(1200)
+        const next = await firstVisible(page.getByRole('button', { name: /^Next Step$/i }))
+        if (!next) throw new Error('Step 3 Next Step not found for ' + item.submissionId)
+        await next.click({ force: true })
+        await page.waitForTimeout(3500)
+        body = (await page.locator('body').innerText()).replace(/\s+/g,' ')
+      }
+      const step = body.match(/Step\s+\d+\s*:\s*[^0-9]+?(?=\s+(?:Save|Previous Step|Next Step|Submission Progress|$))/i)?.[0] || body.slice(0,320)
+      console.log('SSRN_STEP3_ADVANCE=' + item.submissionId + ' :: ' + step)
+    }
     process.exit(0)
   }
 
