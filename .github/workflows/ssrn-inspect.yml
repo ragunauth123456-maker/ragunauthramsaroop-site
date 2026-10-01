@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - '.github/workflows/ssrn-inspect.yml'
+      - 'scripts/ssrn-inspect.mjs'
 
 permissions:
   contents: read
