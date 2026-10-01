@@ -22,18 +22,18 @@ def build_cv_pdf(source: Path, output: Path) -> None:
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
     from reportlab.lib.units import mm
-    from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+    from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, PageBreak
 
     styles = getSampleStyleSheet()
     title = ParagraphStyle(
         "CVTitle", parent=styles["Title"], fontName="Helvetica-Bold",
         fontSize=18, leading=21, spaceAfter=4, alignment=TA_CENTER,
-        textColor=colors.HexColor("#111827")
+        textColor=colors.HexColor("#142743")
     )
     subtitle = ParagraphStyle(
         "CVSubtitle", parent=styles["Normal"], fontName="Helvetica-Bold",
         fontSize=8.5, leading=11, spaceAfter=5, alignment=TA_CENTER,
-        textColor=colors.HexColor("#374151")
+        textColor=colors.HexColor("#AA7E30")
     )
     heading = ParagraphStyle(
         "CVHeading", parent=styles["Heading2"], fontName="Helvetica-Bold",
@@ -73,7 +73,9 @@ def build_cv_pdf(source: Path, output: Path) -> None:
         if not line:
             story.append(Spacer(1, 1.8 * mm))
             continue
-        if line.startswith("# "):
+        if line == "[[PAGEBREAK]]":
+            story.append(PageBreak())
+        elif line.startswith("# "):
             story.append(Paragraph(escape(line[2:]), title))
         elif line.startswith("## "):
             story.append(Paragraph(escape(line[3:]).upper(), heading))
@@ -86,6 +88,44 @@ def build_cv_pdf(source: Path, output: Path) -> None:
         else:
             story.append(Paragraph(escape(line), body))
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
+
+
+def build_overlay_source(base_source: Path, overlay: dict, output: Path) -> Path:
+    base = base_source.read_text(encoding="utf-8")
+    marker = "## PROFESSIONAL EXPERIENCE"
+    if marker not in base:
+        raise ValueError("Base CV source is missing PROFESSIONAL EXPERIENCE.")
+    _, tail = base.split(marker, 1)
+
+    required = ["company", "headline", "profile", "relevance", "capabilities"]
+    for key in required:
+        if key not in overlay:
+            raise ValueError(f"cv_overlay missing {key}.")
+    if not isinstance(overlay["relevance"], list) or not overlay["relevance"]:
+        raise ValueError("cv_overlay.relevance must be a non-empty list.")
+
+    impact = overlay.get("impact") or [
+        "Progressed through successive AGM appointments since 2020 into Director-level leadership, expanding scope across government relations, corporate affairs, compliance, ESG, social responsibility and executive advisory.",
+        "Lead senior engagement with ministries, regulators, public institutions, industry bodies, communities and strategic partners across mining, environment, energy, labour, aviation, standards, taxation, trade and investment.",
+        "Coordinate multi-agency regulatory and stakeholder matters, official visits, permits, commitments and corrective actions across operations, HSE, environment, legal, HR, finance, procurement, security, aviation and technical teams.",
+        "Support governance and external positioning around AGM's approximately 46-50 MWp solar platform and more than 80 MWh of battery storage.",
+        "Coordinated a 2026 carbon-accounting proof of concept using physical operating data, strengthening traceability and review readiness.",
+    ]
+
+    lines = [
+        "# RAGUNAUTH RAMSAROOP",
+        "SUBTITLE: " + str(overlay["headline"]),
+        "Georgetown, Guyana | +592 608 4735 | ragunauthramsaroop@icloud.com | ragunauthramsaroop.com | linkedin.com/in/ragunauth-ramsaroop",
+        "",
+        "## EXECUTIVE VALUE FOR " + str(overlay["company"]).upper(),
+        str(overlay["profile"]),
+    ]
+    lines += ["- " + str(x) for x in overlay["relevance"]]
+    lines += ["", "## SELECTED LEADERSHIP IMPACT"]
+    lines += ["- " + str(x) for x in impact]
+    lines += ["", "## CORE EXECUTIVE CAPABILITIES", str(overlay["capabilities"]), "", "[[PAGEBREAK]]", "", marker + tail]
+    output.write_text("\n".join(lines), encoding="utf-8")
+    return output
 
 
 def load_payload(path: Path) -> dict:
@@ -169,12 +209,19 @@ def main() -> None:
             raise ValueError("attachment_path must be an existing PDF under career-assets/outreach-pdfs/.")
         attachment = attachment_path.read_bytes()
     else:
-        cv_source_raw = payload.get("cv_source") or str(CV_SOURCE)
-        if not isinstance(cv_source_raw, str):
-            raise ValueError("cv_source must be a string.")
-        cv_source = Path(cv_source_raw)
-        if not cv_source_raw.startswith("career-assets/") or cv_source.suffix.lower() != ".md" or not cv_source.exists():
-            raise ValueError("cv_source must be an existing Markdown file under career-assets/.")
+        overlay = payload.get("cv_overlay")
+        if overlay is not None:
+            if not isinstance(overlay, dict):
+                raise ValueError("cv_overlay must be an object.")
+            overlay_source = Path("/tmp/Ragunauth_Ramsaroop_Tailored_CV_2026.md")
+            cv_source = build_overlay_source(CV_SOURCE, overlay, overlay_source)
+        else:
+            cv_source_raw = payload.get("cv_source") or str(CV_SOURCE)
+            if not isinstance(cv_source_raw, str):
+                raise ValueError("cv_source must be a string.")
+            cv_source = Path(cv_source_raw)
+            if not cv_source_raw.startswith("career-assets/") or cv_source.suffix.lower() != ".md" or not cv_source.exists():
+                raise ValueError("cv_source must be an existing Markdown file under career-assets/.")
         build_cv_pdf(cv_source, CV_PDF)
         attachment = CV_PDF.read_bytes()
 
