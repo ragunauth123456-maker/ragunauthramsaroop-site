@@ -45,6 +45,7 @@ async function renderSector(){
   $("#obs-sector-status").textContent=latest.length?latest.length+" dated public indicators loaded. Missing series are not estimated.":"Live requests unavailable in this browser. Use the Indicator Explorer or official source links.";
   $("#obs-sector-ask").onclick=()=>handoffAsk(sector);
   $("#obs-sector-brief").onclick=()=>handoffBrief(sector);
+  $("#obs-sector-decision").onclick=()=>handoffDecision(sector);
 }
 function handoffAsk(sector){
   const q="What should decision-makers examine in Guyana's "+sector.label+" sector, using the published research and dated public-source evidence?";
@@ -62,6 +63,18 @@ function handoffBrief(sector){
     createdAt:Date.now()
   }))}catch(e){}
   location.href=(sector.brief||"/tools/executive-brief-generator/")+"?from=research";
+}
+function handoffDecision(sector){
+  const observations=latest.map(x=>x.label+": "+fmt(x)+" ("+x.year+", "+x.unit+")").join("\n");
+  const sources=sector.watch.map(x=>({label:x.name,href:x.url})).concat(sector.research.map(x=>({label:x.label,href:x.href}))).slice(0,5);
+  try{sessionStorage.setItem("rrResearchHandoff",JSON.stringify({
+    question:"Assess current Guyana "+sector.label+" conditions and decision implications",
+    answer:sector.summary+(observations?"\n\nLatest dated observations:\n"+observations:""),
+    sources,
+    mode:"observatory",
+    createdAt:Date.now()
+  }))}catch(e){}
+  location.href="/decision-room/?from=observatory";
 }
 async function init(){
   try{

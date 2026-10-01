@@ -1,0 +1,68 @@
+.dr-hero{background:
+  radial-gradient(circle at 84% 14%,rgba(181,139,69,.17),transparent 30%),
+  linear-gradient(135deg,#0b2a21,#102f25 72%,#0a211a)!important}
+.dr-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:54px;align-items:end}
+.dr-hero .wrap{padding-top:64px;padding-bottom:58px}
+.dr-hero h1{font-size:clamp(48px,6vw,78px);line-height:.99;max-width:820px}
+.dr-hero p{max-width:760px}
+.dr-privacy{padding-top:20px;border-top:1px solid rgba(255,255,255,.18);color:#fff}
+.dr-privacy span{display:block;color:#d6b878;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.dr-privacy strong{display:block;margin-top:9px;font:500 25px/1.2 Georgia,serif}
+.dr-privacy p{margin:9px 0 0;color:rgba(255,255,255,.67);font-size:12px;line-height:1.65}
+.dr-intake{margin-top:28px}
+.dr-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px}
+.dr-section-head>div:first-child{max-width:780px}
+.dr-section-head h2{margin:5px 0 8px}
+.dr-section-head p{margin-bottom:0}
+.dr-import-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.dr-meta-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:22px}
+.dr-meta-grid .field.full{grid-column:1/-1}
+.dr-workspace{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.7fr);gap:18px;margin:20px 0}
+.dr-form-panel,.dr-evidence-panel{background:#fff;border:1px solid #dfe6e2;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(8,39,29,.055)}
+.dr-main-actions{margin-top:8px;flex-wrap:wrap}
+.dr-share-note{margin-top:12px}
+.dr-evidence-panel h2{margin:6px 0 8px;color:#08271d}
+.dr-evidence-panel>p{font-size:13px;line-height:1.6;color:#596a63}
+.dr-evidence-ledger{margin-top:16px;border-top:1px solid #dfe6e2}
+.dr-evidence-item{padding:12px 0;border-bottom:1px solid #dfe6e2}
+.dr-evidence-item a{font-weight:800;color:#08271d;text-decoration:none}
+.dr-evidence-item small{display:block;margin-top:4px;color:#6a7972;font-size:11px;line-height:1.45}
+.dr-completeness{margin-top:20px;padding:16px;border-radius:12px;background:#f4f7f5}
+.dr-completeness span{display:block;color:#8a6a33;font-size:10px;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+.dr-completeness strong{display:block;margin-top:5px;font-size:18px;color:#08271d}
+.dr-completeness small{display:block;margin-top:5px;color:#6a7972;line-height:1.45}
+.dr-output-panel{margin-top:20px}
+.dr-pack{margin-top:18px}
+.dr-pack .dr-pack-meta{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0 22px}
+.dr-pack .dr-pack-meta div{padding:12px;border:1px solid #dfe6e2;border-radius:10px;background:#f8faf9}
+.dr-pack .dr-pack-meta span{display:block;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#8a6a33}
+.dr-pack .dr-pack-meta strong{display:block;margin-top:4px;color:#08271d}
+.dr-pack h3{margin-top:24px;color:#08271d}
+.dr-pack ul,.dr-pack ol{padding-left:22px}
+.dr-pack li{margin-bottom:7px;line-height:1.55}
+.dr-pack .dr-pack-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.dr-pack .dr-pack-box{border:1px solid #dfe6e2;border-radius:12px;padding:16px;background:#fff}
+.dr-pack .dr-pack-box h3{margin-top:0}
+.dr-pack .dr-source-list a{display:block;padding:8px 0;border-bottom:1px solid #e7ece9;text-decoration:none;font-weight:800}
+.dr-pack .dr-source-list a:last-child{border-bottom:0}
+@media(max-width:900px){
+  .dr-hero-grid,.dr-workspace{grid-template-columns:1fr}
+  .dr-section-head{align-items:flex-start;flex-direction:column}
+  .dr-import-actions{justify-content:flex-start}
+  .dr-meta-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dr-pack .dr-pack-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  .dr-hero .wrap{padding-top:46px;padding-bottom:42px}
+  .dr-meta-grid,.dr-pack .dr-pack-meta,.dr-pack .dr-pack-grid{grid-template-columns:1fr}
+  .dr-form-panel,.dr-evidence-panel{padding:17px}
+}
+@media print{
+  .topbar,.dr-hero .kicker,.dr-hero p,.dr-privacy,.dr-intake,.dr-workspace,.dr-output-panel>.dr-section-head,.footer,.rr-platform-nav,.rr-utility-dock,.rr-a11y-toggle,.rr-a11y-panel{display:none!important}
+  .dr-hero{background:#fff!important;color:#000!important;padding:0!important}
+  .dr-hero .wrap{padding:0!important}
+  .dr-hero h1{font-size:32px!important;color:#000!important}
+  .dr-output-panel{border:0!important;box-shadow:none!important;margin:0!important;padding:0!important}
+  .dr-pack{display:block!important;border:0!important;box-shadow:none!important}
+  body{background:#fff!important}
+}

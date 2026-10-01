@@ -165,6 +165,7 @@ function bindActions(){
     location.href="/ask-research/?from=guyana";
   };
   $("#brief-executive").onclick=()=>{if(saveDecisionHandoff()) location.href="/tools/executive-brief-generator/?from=research"};
+  $("#brief-decision").onclick=()=>{if(saveDecisionHandoff()) location.href="/decision-room/?from=briefing"};
   $("#brief-board").onclick=()=>{if(saveDecisionHandoff()) location.href="/tools/board-question-generator/?from=research"};
 }
 async function init(){
