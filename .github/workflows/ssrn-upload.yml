@@ -58,4 +58,4 @@ jobs:
             ssrn-run/final-results.json
             ssrn-run/*.png
 
-# Retry marker: finalize and submit all nine papers
+# Retry marker: finalizer control-flow fix
