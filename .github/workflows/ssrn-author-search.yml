@@ -1,0 +1,31 @@
+name: SSRN Author Search
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/ssrn-author-search.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SSRN_EMAIL: ${{ secrets.SSRN_EMAIL }}
+      SSRN_PASSWORD: ${{ secrets.SSRN_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+      - run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - run: node scripts/ssrn-author-search.mjs
+      - if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ssrn-author-search
+          if-no-files-found: ignore
+          retention-days: 3
+          path: ssrn-author-search.png
