@@ -386,13 +386,13 @@ try {
     }
 
     async function completeStep6() {
-      let choice = await firstVisible(page.getByText(/All Rights Reserved/i)).catch(() => null)
+      let choice = await firstVisible(page.getByText(/No reuse\/adaptation without permission/i)).catch(() => null)
       if (!choice) {
         const labels = page.locator('label')
         const n = await labels.count()
         for (let i=0;i<n;i++) {
           const label = labels.nth(i)
-          if (/All Rights Reserved/i.test(await label.innerText().catch(() => ''))) {
+          if (/No reuse\/adaptation without permission/i.test(await label.innerText().catch(() => ''))) {
             choice = label
             break
           }
@@ -400,7 +400,7 @@ try {
       }
       if (!choice) {
         console.log('SSRN_UNEXPECTED_LICENSE_PAGE=' + (await stepBody()).slice(0,6000))
-        throw new Error('Expected All Rights Reserved licence option was not found')
+        throw new Error('Expected no-reuse copyright option was not found')
       }
       await choice.click({ force: true })
       await page.waitForTimeout(500)
