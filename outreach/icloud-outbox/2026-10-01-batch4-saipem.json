@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch4-saipem.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Saipem_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media.relations@saipem.com",
+      "subject": "Saipem | Public affairs, stakeholder strategy and sustainable-project execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch4-saipem.txt"
+    }
+  ]
+}
