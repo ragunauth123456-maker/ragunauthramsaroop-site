@@ -82,6 +82,7 @@ jobs:
           set -euo pipefail
           PAYLOAD="${{ steps.payload.outputs.payload }}"
           case "$PAYLOAD" in
+            *.batch.json) python scripts/send_icloud_batch.py "$PAYLOAD" ;;
             *.secure.json) python scripts/secure_icloud_send.py "$PAYLOAD" ;;
             *) python scripts/send_icloud_smtp.py "$PAYLOAD" ;;
           esac
