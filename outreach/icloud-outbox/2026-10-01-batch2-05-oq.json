@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-oq.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_OQ_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "business.center@oq.com",
+      "subject": "OQ | Energy transition, in-country value and institutional execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-oq.txt"
+    }
+  ]
+}
