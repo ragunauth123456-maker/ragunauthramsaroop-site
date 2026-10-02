@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch4-slb.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_SLB_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "jbreed@slb.com",
+      "subject": "For Olivier Le Peuch | Mining, sustainability and emerging-market execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch4-slb.txt"
+    }
+  ]
+}
