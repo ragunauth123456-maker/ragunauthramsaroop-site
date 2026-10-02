@@ -1,0 +1,29 @@
+{
+  "approved": true,
+  "purpose": "Serialized recovery of Thailand executive outreach runs cancelled or not started due GitHub concurrency. Excludes confirmed successful sends and active GPSC run.",
+  "payload_files": [
+    "outreach/icloud-outbox/2026-10-01-thailand-01-siemens-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-02-hitachi-energy-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-03-schneider-electric-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-04-michelin-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-05-bosch-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-07-bmw-group-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-08-abb-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-09-mercedes-benz-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-10-volvo-group-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-11-ford-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-13-ptt-global-chemical.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-14-scg-chemicals.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-15-banpu.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-16-banpu-power.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-17-bgrimm-power.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-20-egco-group.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-21-ratch-group.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-22-bangchak.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-23-thai-oil.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-26-indorama-ventures.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-27-dhl-supply-chain-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-28-maersk-thailand.json",
+    "outreach/icloud-outbox/2026-10-01-thailand-29-central-pattana.json"
+  ]
+}
