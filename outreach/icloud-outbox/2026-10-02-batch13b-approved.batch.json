@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch13-edf.json",
+    "outreach/icloud-staged/2026-10-02-batch13-siemens-energy.json",
+    "outreach/icloud-staged/2026-10-02-batch13-linde.json",
+    "outreach/icloud-staged/2026-10-02-batch13-air-products.json",
+    "outreach/icloud-staged/2026-10-02-batch13-rolls-royce-holdings.json",
+    "outreach/icloud-staged/2026-10-02-batch13-alstom.json",
+    "outreach/icloud-staged/2026-10-02-batch13-saint-gobain.json",
+    "outreach/icloud-staged/2026-10-02-batch13-hitachi.json",
+    "outreach/icloud-staged/2026-10-02-batch13-omv.json",
+    "outreach/icloud-staged/2026-10-02-batch13-snam.json"
+  ]
+}
