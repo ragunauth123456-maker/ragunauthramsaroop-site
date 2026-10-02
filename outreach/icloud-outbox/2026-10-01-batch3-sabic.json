@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-sabic.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_SABIC_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "Noaman.khan@sabic.com",
+      "subject": "SABIC | Sustainability, technology and responsible-growth execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-sabic.txt"
+    }
+  ]
+}
