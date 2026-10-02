@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch15-orange.json",
+    "outreach/icloud-staged/2026-10-02-batch15-vodafone.json",
+    "outreach/icloud-staged/2026-10-02-batch15-telefonica.json",
+    "outreach/icloud-staged/2026-10-02-batch15-mtn-group.json",
+    "outreach/icloud-staged/2026-10-02-batch15-america-movil.json",
+    "outreach/icloud-staged/2026-10-02-batch15-equinix.json",
+    "outreach/icloud-staged/2026-10-02-batch15-digital-realty.json",
+    "outreach/icloud-staged/2026-10-02-batch15-ntt-data.json",
+    "outreach/icloud-staged/2026-10-02-batch15-oracle.json",
+    "outreach/icloud-staged/2026-10-02-batch15-sap.json"
+  ]
+}
