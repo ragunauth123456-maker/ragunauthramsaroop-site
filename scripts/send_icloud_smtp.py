@@ -159,6 +159,14 @@ def send_one(server: smtplib.SMTP, sender: str, item: dict, attachment: bytes, a
     to = item.get("to")
     subject = item.get("subject")
     body = item.get("body")
+    body_path = item.get("body_path")
+    if body is None and body_path is not None:
+        if not isinstance(body_path, str):
+            raise ValueError("body_path must be a string.")
+        p = Path(body_path)
+        if not body_path.startswith("outreach/email-bodies/") or p.suffix.lower() != ".txt" or not p.exists():
+            raise ValueError("body_path must be an existing .txt file under outreach/email-bodies/.")
+        body = p.read_text(encoding="utf-8")
     if not isinstance(to, str) or "@" not in to:
         raise ValueError("Each message needs one valid recipient address.")
     if not isinstance(subject, str) or not subject.strip():
@@ -210,6 +218,14 @@ def main() -> None:
         attachment = attachment_path.read_bytes()
     else:
         overlay = payload.get("cv_overlay")
+        overlay_path_raw = payload.get("cv_overlay_path")
+        if overlay is None and overlay_path_raw is not None:
+            if not isinstance(overlay_path_raw, str):
+                raise ValueError("cv_overlay_path must be a string.")
+            overlay_path = Path(overlay_path_raw)
+            if not overlay_path_raw.startswith("career-assets/overlays/") or overlay_path.suffix.lower() != ".json" or not overlay_path.exists():
+                raise ValueError("cv_overlay_path must be an existing JSON file under career-assets/overlays/.")
+            overlay = json.loads(overlay_path.read_text(encoding="utf-8"))
         if overlay is not None:
             if not isinstance(overlay, dict):
                 raise ValueError("cv_overlay must be an object.")
