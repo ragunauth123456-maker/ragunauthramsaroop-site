@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-fluor.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Fluor_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media.relations@fluor.com",
+      "subject": "Fluor | Corporate development, strategy and sustainability execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-fluor.txt"
+    }
+  ]
+}
