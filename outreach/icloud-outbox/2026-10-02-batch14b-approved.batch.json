@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch14-blackrock.json",
+    "outreach/icloud-staged/2026-10-02-batch14-kkr.json",
+    "outreach/icloud-staged/2026-10-02-batch14-carlyle.json",
+    "outreach/icloud-staged/2026-10-02-batch14-stonepeak.json",
+    "outreach/icloud-staged/2026-10-02-batch14-blackstone.json",
+    "outreach/icloud-staged/2026-10-02-batch14-skanska.json",
+    "outreach/icloud-staged/2026-10-02-batch14-bouygues.json",
+    "outreach/icloud-staged/2026-10-02-batch14-sacyr.json",
+    "outreach/icloud-staged/2026-10-02-batch14-webuild.json",
+    "outreach/icloud-staged/2026-10-02-batch14-acs-group.json"
+  ]
+}
