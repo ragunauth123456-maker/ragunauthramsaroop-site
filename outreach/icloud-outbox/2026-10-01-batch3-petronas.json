@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-petronas.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_PETRONAS_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "stakeholder.governance@petronas.com",
+      "subject": "PETRONAS | Sustainability, carbon governance and stakeholder execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-petronas.txt"
+    }
+  ]
+}
