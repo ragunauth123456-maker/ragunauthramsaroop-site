@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch15-lufthansa-group.json",
+    "outreach/icloud-staged/2026-10-02-batch15-iag.json",
+    "outreach/icloud-staged/2026-10-02-batch15-singapore-airlines.json",
+    "outreach/icloud-staged/2026-10-02-batch15-ge-aerospace.json",
+    "outreach/icloud-staged/2026-10-02-batch15-boeing.json",
+    "outreach/icloud-staged/2026-10-02-batch15-kier.json",
+    "outreach/icloud-staged/2026-10-02-batch15-costain.json",
+    "outreach/icloud-staged/2026-10-02-batch15-royal-bam.json",
+    "outreach/icloud-staged/2026-10-02-batch15-strabag.json",
+    "outreach/icloud-staged/2026-10-02-batch15-sweco.json"
+  ]
+}
