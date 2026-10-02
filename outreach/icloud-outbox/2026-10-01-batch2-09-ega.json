@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-ega.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_EGA_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "sbuerk@ega.ae",
+      "subject": "EGA | ESG execution around low-carbon aluminium and responsible growth",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-ega.txt"
+    }
+  ]
+}
