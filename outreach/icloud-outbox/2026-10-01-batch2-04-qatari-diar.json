@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-qatari-diar.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Qatari_Diar_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "customerservice@qataridiar.com",
+      "subject": "Qatari Diar | Government, local value and stakeholder execution for international development",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-qatari-diar.txt"
+    }
+  ]
+}
