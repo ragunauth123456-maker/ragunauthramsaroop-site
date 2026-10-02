@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch14-eand.json",
+    "outreach/icloud-staged/2026-10-02-batch14-stc-group.json",
+    "outreach/icloud-staged/2026-10-02-batch14-ooredoo-group.json",
+    "outreach/icloud-staged/2026-10-02-batch14-zain-group.json",
+    "outreach/icloud-staged/2026-10-02-batch14-du.json",
+    "outreach/icloud-staged/2026-10-02-batch14-emirates-group.json",
+    "outreach/icloud-staged/2026-10-02-batch14-riyadh-air.json",
+    "outreach/icloud-staged/2026-10-02-batch14-qatar-airways.json",
+    "outreach/icloud-staged/2026-10-02-batch14-swissport.json",
+    "outreach/icloud-staged/2026-10-02-batch14-bahrain-airport-company.json"
+  ]
+}
