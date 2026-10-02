@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-worley.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Worley_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media.relations@worley.com",
+      "subject": "Worley | Sustainability, corporate affairs and emerging-market project execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-worley.txt"
+    }
+  ]
+}
