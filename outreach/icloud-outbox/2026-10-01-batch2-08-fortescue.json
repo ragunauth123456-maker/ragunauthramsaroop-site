@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-fortescue.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Fortescue_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media@fortescue.com",
+      "subject": "Fortescue Growth and Energy | Country execution and strategic partnerships",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-fortescue.txt"
+    }
+  ]
+}
