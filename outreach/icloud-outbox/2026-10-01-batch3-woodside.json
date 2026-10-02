@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-woodside.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Woodside_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media@woodside.com",
+      "subject": "Woodside | Sustainability, policy and external-affairs leadership",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-woodside.txt"
+    }
+  ]
+}
