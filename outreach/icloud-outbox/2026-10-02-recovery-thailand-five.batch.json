@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "purpose": "Recovery reroute for five bounced Thailand executive outreaches using published HR, recruitment or corporate contact channels.",
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-recovery-golden-lime.json",
+    "outreach/icloud-staged/2026-10-02-recovery-kce.json",
+    "outreach/icloud-staged/2026-10-02-recovery-svi.json",
+    "outreach/icloud-staged/2026-10-02-recovery-pruksa.json",
+    "outreach/icloud-staged/2026-10-02-recovery-leo.json"
+  ]
+}
