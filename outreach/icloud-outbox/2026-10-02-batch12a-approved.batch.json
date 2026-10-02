@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch12-iberdrola.json",
+    "outreach/icloud-staged/2026-10-02-batch12-wsp-global.json",
+    "outreach/icloud-staged/2026-10-02-batch12-dhl-group.json",
+    "outreach/icloud-staged/2026-10-02-batch12-kuehne-nagel.json",
+    "outreach/icloud-staged/2026-10-02-batch12-dsv.json",
+    "outreach/icloud-staged/2026-10-02-batch12-fraport.json",
+    "outreach/icloud-staged/2026-10-02-batch12-changi-airport-group.json",
+    "outreach/icloud-staged/2026-10-02-batch12-rockwell-automation.json",
+    "outreach/icloud-staged/2026-10-02-batch12-eaton.json",
+    "outreach/icloud-staged/2026-10-02-batch12-trane-technologies.json"
+  ]
+}
