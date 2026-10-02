@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch11-vinci.json",
+    "outreach/icloud-staged/2026-10-02-batch11-maersk.json",
+    "outreach/icloud-staged/2026-10-02-batch11-psa-international.json",
+    "outreach/icloud-staged/2026-10-02-batch11-air-liquide.json",
+    "outreach/icloud-staged/2026-10-02-batch11-honeywell.json",
+    "outreach/icloud-staged/2026-10-02-batch11-acciona.json",
+    "outreach/icloud-staged/2026-10-02-batch11-ferrovial.json",
+    "outreach/icloud-staged/2026-10-02-batch11-veolia.json",
+    "outreach/icloud-staged/2026-10-02-batch11-emerson.json",
+    "outreach/icloud-staged/2026-10-02-batch11-johnson-controls.json"
+  ]
+}
