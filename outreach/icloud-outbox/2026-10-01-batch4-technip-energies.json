@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch4-technip-energies.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Technip_Energies_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media_@ten.com",
+      "subject": "For Benjamin Lechuga | Strategy, sustainability and international-growth execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch4-technip-energies.txt"
+    }
+  ]
+}
