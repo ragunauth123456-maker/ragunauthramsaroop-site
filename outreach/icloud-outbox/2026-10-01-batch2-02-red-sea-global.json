@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-red-sea-global.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Red_Sea_Global_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "Jack.Williams@RedSeaGlobal.com",
+      "subject": "Red Sea Global | Regenerative growth, communities and stakeholder execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-red-sea-global.txt"
+    }
+  ]
+}
