@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch4-baker-hughes.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Baker_Hughes_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "media.relations@bakerhughes.com",
+      "subject": "For Allyson Anderson Book | Sustainability, policy and energy-transition execution",
+      "body_path": "outreach/email-bodies/2026-10-01-batch4-baker-hughes.txt"
+    }
+  ]
+}
