@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch3-gunvor.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Gunvor_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "seth.pietras@gunvorgroup.com",
+      "subject": "Gunvor | Corporate affairs, ESG and stakeholder execution across global growth",
+      "body_path": "outreach/email-bodies/2026-10-01-batch3-gunvor.txt"
+    }
+  ]
+}
