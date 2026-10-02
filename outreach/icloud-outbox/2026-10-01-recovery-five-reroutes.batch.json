@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "purpose": "Bounce and routing recovery for five approved executive outreaches. Each message uses a corrected employment or executive-search channel and a company-specific CV overlay.",
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-01-recovery-01-qatari-diar.json",
+    "outreach/icloud-staged/2026-10-01-recovery-02-boyden-thailand.json",
+    "outreach/icloud-staged/2026-10-01-recovery-03-siam-piwat.json",
+    "outreach/icloud-staged/2026-10-01-recovery-04-banpu-power.json",
+    "outreach/icloud-staged/2026-10-01-recovery-05-bangkok-airways.json"
+  ]
+}
