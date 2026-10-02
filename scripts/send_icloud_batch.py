@@ -77,7 +77,7 @@ def main():
 
     prepared = []
     for index, raw in enumerate(files, start=1):
-        if not isinstance(raw, str) or not raw.startswith("outreach/icloud-outbox/") or not raw.endswith(".json") or raw.endswith(".batch.json"):
+        if not isinstance(raw, str) or not (raw.startswith("outreach/icloud-outbox/") or raw.startswith("outreach/icloud-staged/")) or not raw.endswith(".json") or raw.endswith(".batch.json"):
             raise ValueError(f"Invalid payload path: {raw}")
         path = Path(raw)
         if not path.exists():
