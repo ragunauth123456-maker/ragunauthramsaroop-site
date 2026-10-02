@@ -1,0 +1,13 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-batch2-kinross.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_Kinross_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "samantha.sheffield@kinross.com",
+      "subject": "Kinross | Community relations and sustainability leadership",
+      "body_path": "outreach/email-bodies/2026-10-01-batch2-kinross.txt"
+    }
+  ]
+}
