@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch12-carrier-global.json",
+    "outreach/icloud-staged/2026-10-02-batch12-cummins.json",
+    "outreach/icloud-staged/2026-10-02-batch12-mitsubishi-heavy-industries.json",
+    "outreach/icloud-staged/2026-10-02-batch12-cisco.json",
+    "outreach/icloud-staged/2026-10-02-batch12-ibm.json",
+    "outreach/icloud-staged/2026-10-02-batch12-salesforce.json",
+    "outreach/icloud-staged/2026-10-02-batch12-adq.json",
+    "outreach/icloud-staged/2026-10-02-batch12-temasek.json",
+    "outreach/icloud-staged/2026-10-02-batch12-aiib.json",
+    "outreach/icloud-staged/2026-10-02-batch12-ebrd.json"
+  ]
+}
