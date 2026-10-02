@@ -1,0 +1,7 @@
+{
+  "approved": true,
+  "purpose": "Final serialized retry for GPSC after earlier concurrency cancellation.",
+  "payload_files": [
+    "outreach/icloud-outbox/2026-10-01-thailand-19-gpsc.json"
+  ]
+}
