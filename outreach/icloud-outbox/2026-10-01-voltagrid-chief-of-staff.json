@@ -1,0 +1,18 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "cv_overlay_path": "career-assets/overlays/2026-10-01-voltagrid-chief-of-staff.json",
+  "attachment_filename": "Ragunauth_Ramsaroop_VoltaGrid_Chief_of_Staff_Executive_CV_2026.pdf",
+  "messages": [
+    {
+      "to": "Nathan.Ough@VoltaGrid.com",
+      "subject": "Chief of Staff | Executive execution for VoltaGrid's next stage",
+      "body_path": "outreach/email-bodies/2026-10-01-voltagrid-chief-of-staff-ceo.txt"
+    },
+    {
+      "to": "recruiting@voltagrid.com",
+      "subject": "Chief of Staff, Houston | Ragunauth Ramsaroop",
+      "body_path": "outreach/email-bodies/2026-10-01-voltagrid-chief-of-staff-recruiting.txt"
+    }
+  ]
+}
