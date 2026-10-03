@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-03-remediation-c01-rtx-raytheon.json",
+    "outreach/icloud-staged/2026-10-03-remediation-c02-safran.json",
+    "outreach/icloud-staged/2026-10-03-remediation-c03-thales.json",
+    "outreach/icloud-staged/2026-10-03-remediation-c04-technipfmc.json",
+    "outreach/icloud-staged/2026-10-03-remediation-c05-tenaris.json"
+  ]
+}
