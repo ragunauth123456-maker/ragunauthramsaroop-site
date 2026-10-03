@@ -75,3 +75,6 @@ data/skills/
 .env.*.local
 
 .pagefind-public/
+
+# Track only the reviewed root Claude instructions, not local Claude settings
+!/CLAUDE.md

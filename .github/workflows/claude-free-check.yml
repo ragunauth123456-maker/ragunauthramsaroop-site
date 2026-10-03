@@ -1,0 +1,25 @@
+name: Claude free setup offline validation
+on:
+  pull_request:
+    paths:
+      - 'CLAUDE.md'
+      - 'docs/claude-code-free.md'
+      - 'scripts/claude-free.sh'
+      - 'scripts/claude_free_preflight.py'
+      - 'scripts/test_claude_free_preflight.py'
+      - '.github/workflows/claude-free-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check shell syntax
+        run: bash -n scripts/claude-free.sh
+      - name: Run offline cost-guard tests
+        run: python3 -m unittest discover -s scripts -p 'test_claude_free_preflight.py' -v
