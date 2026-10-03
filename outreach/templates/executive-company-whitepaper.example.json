@@ -1,0 +1,96 @@
+{
+  "approved": false,
+  "dry_run": true,
+  "campaign_type": "executive_company",
+  "messages": [
+    {
+      "to": "named.executive@company.com",
+      "recipient_name": "Named Executive",
+      "recipient_title": "Chief Executive Officer",
+      "email_verified": true,
+      "email_verification_source": "Verified professional contact provider or official company source",
+      "recipient_role_source_url": "https://company.com/leadership",
+      "subject": "Strategic value creation brief | Company Name",
+      "body": "Dear Named Executive,\n\nI have prepared a concise strategic assessment of several areas where my experience may be relevant to Company Name's priorities. Rather than sending a conventional application, I wanted to demonstrate how I would think about the organisation, the challenges ahead and where I could potentially contribute.\n\nThe attached paper is specific to Company Name and sets out practical opportunities, a 90-180 day action framework and the potential business impact. My three-page executive CV is included as the final three pages for background.\n\nKind regards,\nRagunauth Ramsaroop\nragunauthramsaroop@icloud.com"
+    }
+  ],
+  "strategic_brief": {
+    "company": "Company Name",
+    "title": "Strategic Value Creation Brief for Company Name",
+    "executive_summary": "Write a substantive company-specific executive summary of at least 60 words based on current public research. Explain the strategic context, why the issues matter now, and the few areas where Ragunauth Ramsaroop's experience may add value. Do not write a generic career summary.",
+    "company_context": "Write at least 80 words describing the company's current strategic context using current, attributable public information. Address expansion, investment, regulation, sustainability, operating model, country exposure or stakeholder conditions relevant to the specific company.",
+    "opportunities": [
+      {
+        "title": "Opportunity one",
+        "rationale": "Explain the company-specific opportunity or risk in at least 25 words and ground it in the research sources.",
+        "how_i_can_help": "Explain in at least 20 words how Ragunauth Ramsaroop's government relations, ESG, corporate affairs, stakeholder or executive advisory experience could contribute."
+      },
+      {
+        "title": "Opportunity two",
+        "rationale": "Explain the company-specific opportunity or risk in at least 25 words and ground it in the research sources.",
+        "how_i_can_help": "Explain in at least 20 words how Ragunauth Ramsaroop could contribute."
+      },
+      {
+        "title": "Opportunity three",
+        "rationale": "Explain the company-specific opportunity or risk in at least 25 words and ground it in the research sources.",
+        "how_i_can_help": "Explain in at least 20 words how Ragunauth Ramsaroop could contribute."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": [
+        "Stakeholder and regulatory mapping",
+        "Executive interviews and strategic-priority diagnosis"
+      ],
+      "days_31_60": [
+        "Prioritise institutional, ESG and external-affairs gaps",
+        "Build executive alignment and an engagement roadmap"
+      ],
+      "days_61_90": [
+        "Launch priority stakeholder and government engagement",
+        "Create accountability, governance and reporting mechanisms"
+      ],
+      "days_91_180": [
+        "Scale successful interventions",
+        "Measure impact and institutionalise the operating model"
+      ]
+    },
+    "potential_impact": [
+      "Describe one credible business impact",
+      "Describe a second credible business impact",
+      "Describe a third credible business impact"
+    ],
+    "background_relevance": [
+      "Connect one relevant part of Ragunauth Ramsaroop's experience directly to the company",
+      "Connect a second relevant capability directly to the company",
+      "Connect a third relevant capability directly to the company"
+    ],
+    "sources": [
+      {
+        "title": "Official company source one",
+        "published_at": "YYYY-MM-DD",
+        "url": "https://company.com/source-one"
+      },
+      {
+        "title": "Official company source two",
+        "published_at": "YYYY-MM-DD",
+        "url": "https://company.com/source-two"
+      },
+      {
+        "title": "Reliable external or official source three",
+        "published_at": "YYYY-MM-DD",
+        "url": "https://example-source.com/source-three"
+      }
+    ]
+  },
+  "cv_overlay": {
+    "company": "Company Name",
+    "headline": "GOVERNMENT RELATIONS | ESG | CORPORATE AFFAIRS | STRATEGIC PARTNERSHIPS",
+    "profile": "Tailor this executive profile specifically to the company while remaining strictly factual.",
+    "relevance": [
+      "Company-specific relevance point one.",
+      "Company-specific relevance point two.",
+      "Company-specific relevance point three."
+    ],
+    "capabilities": "Government Relations | ESG | Corporate Affairs | Stakeholder Strategy | Strategic Partnerships | Executive Advisory"
+  }
+}
