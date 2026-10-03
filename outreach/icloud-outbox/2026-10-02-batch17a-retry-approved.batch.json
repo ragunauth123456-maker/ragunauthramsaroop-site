@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch17-pg.json",
+    "outreach/icloud-staged/2026-10-02-batch17-reckitt.json",
+    "outreach/icloud-staged/2026-10-02-batch17-kimberly-clark.json",
+    "outreach/icloud-staged/2026-10-02-batch17-colgate-palmolive.json",
+    "outreach/icloud-staged/2026-10-02-batch17-loreal-safe.json",
+    "outreach/icloud-staged/2026-10-02-batch17-hyundai-motor.json",
+    "outreach/icloud-staged/2026-10-02-batch17-stellantis.json",
+    "outreach/icloud-staged/2026-10-02-batch17-renault-group.json",
+    "outreach/icloud-staged/2026-10-02-batch17-kia.json",
+    "outreach/icloud-staged/2026-10-02-batch17-byd.json"
+  ]
+}
