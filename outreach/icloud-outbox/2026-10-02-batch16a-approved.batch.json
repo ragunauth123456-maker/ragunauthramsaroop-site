@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch16-unilever.json",
+    "outreach/icloud-staged/2026-10-02-batch16-danone.json",
+    "outreach/icloud-staged/2026-10-02-batch16-coca-cola.json",
+    "outreach/icloud-staged/2026-10-02-batch16-adm.json",
+    "outreach/icloud-staged/2026-10-02-batch16-bayer.json",
+    "outreach/icloud-staged/2026-10-02-batch16-roche.json",
+    "outreach/icloud-staged/2026-10-02-batch16-novartis.json",
+    "outreach/icloud-staged/2026-10-02-batch16-sanofi.json",
+    "outreach/icloud-staged/2026-10-02-batch16-gsk.json",
+    "outreach/icloud-staged/2026-10-02-batch16-mondelez.json"
+  ]
+}
