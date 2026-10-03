@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch18-rtx.json",
+    "outreach/icloud-staged/2026-10-02-batch18-safran.json",
+    "outreach/icloud-staged/2026-10-02-batch18-thales.json",
+    "outreach/icloud-staged/2026-10-02-batch18-technipfmc.json",
+    "outreach/icloud-staged/2026-10-02-batch18-tenaris.json",
+    "outreach/icloud-staged/2026-10-02-batch18-atlas-copco.json",
+    "outreach/icloud-staged/2026-10-02-batch18-danfoss.json",
+    "outreach/icloud-staged/2026-10-02-batch18-ericsson.json",
+    "outreach/icloud-staged/2026-10-02-batch18-nokia.json",
+    "outreach/icloud-staged/2026-10-02-batch18-servicenow.json"
+  ]
+}
