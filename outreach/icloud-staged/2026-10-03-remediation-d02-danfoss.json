@@ -1,0 +1,56 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [{
+    "to": "kasper.elbjorn@danfoss.com",
+    "recipient_name": "Kasper Elbjørn",
+    "recipient_title": "Senior Vice President, Head of Corporate Communications",
+    "recipient_role_source_url": "https://www.danskindustri.dk/brancher/di-energi/bestyrelse/",
+    "email_verified": true,
+    "email_verification_source": "Prior successful iCloud SMTP delivery record for kasper.elbjorn@danfoss.com, 2026-10-03; Danfoss public contact materials also list this address",
+    "subject": "Follow-up | Strategic Value Creation Brief for Danfoss",
+    "body": "Dear Mr. Elbjørn,\n\nFollowing my earlier introduction to Danfoss, I prepared a concise strategic value brief focused on the company's growth agenda across electrification, energy efficiency, industrial expansion and international stakeholder engagement.\n\nThe paper addresses post-acquisition integration, government and industrial-policy alignment, energy-efficiency positioning and evidence-based sustainability communications. These areas connect closely with my experience across government relations, ESG, corporate affairs, regulatory coordination and strategic partnerships.\n\nMy executive CV is included in the final three pages. I would welcome a confidential discussion regarding leadership needs across corporate affairs, public affairs, government relations, strategic partnerships, sustainability or related international functions.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "Danfoss",
+    "title": "Strategic Value Creation Brief for Danfoss",
+    "executive_summary": "Danfoss is entering a stronger growth phase across electrification, data centers, energy efficiency and industrial technologies while also expanding through acquisition. First-half 2026 performance showed strong organic growth, higher profitability and increased momentum in North America and Asia. The planned integration of Alfagomma and continued development of electrification solutions broaden the stakeholder agenda around governments, industrial policy, workforce, suppliers, customers and sustainability claims. My director-level experience across government relations, ESG, corporate affairs and regulated stakeholder execution would support Danfoss by connecting external priorities with accountable cross-functional delivery across strategic markets.",
+    "company_context": "Danfoss reported first-half 2026 organic growth of 15 percent, a 44 percent increase in EBITA and an EBITA margin of 15.3 percent, supported by demand across data centers, electrification and industrial applications. In July 2026, Danfoss announced a definitive agreement to acquire Alfagomma, expanding its fluid-conveyance platform and global reach. The company is also advancing high-efficiency electrification solutions, including the Dextreme Max system validated with support from a GBP 4.29 million UK Government grant, where testing showed substantial reductions in excavator power consumption. These developments create opportunities to align corporate communications, public affairs, government engagement, integration governance and sustainability evidence around measurable business outcomes.",
+    "opportunities": [
+      {
+        "title": "Post-acquisition stakeholder integration",
+        "rationale": "The Alfagomma transaction expands Danfoss into a larger global fluid-conveyance platform with new employees, customers, suppliers and local institutional relationships. Early stakeholder integration can preserve trust, clarify commitments and help leadership identify market-specific issues before they affect commercial or operational integration.",
+        "how_i_can_help": "I would establish an external-integration framework covering institutional relationships, local commitments, stakeholder ownership, communications and escalation, with clear responsibilities across corporate affairs, business leadership, HR, procurement and sustainability teams."
+      },
+      {
+        "title": "Government and industrial-policy alignment",
+        "rationale": "Danfoss technologies sit directly within policy priorities around energy efficiency, electrification, data centers, heat pumps and industrial decarbonization. Coordinated engagement with governments and industry bodies can help connect technical solutions with investment, infrastructure and competitiveness agendas in priority markets.",
+        "how_i_can_help": "I would translate operating evidence and business priorities into focused institutional engagement plans for ministries, regulators, industry bodies and strategic partners, supported by clear issue ownership and executive reporting."
+      },
+      {
+        "title": "Energy efficiency value positioning",
+        "rationale": "Danfoss has a strong evidence base around energy savings and system efficiency, including externally supported technology validation. Converting technical results into country-level economic, productivity and emissions narratives can strengthen public-affairs engagement and help customers connect efficiency investments with wider policy and competitiveness objectives.",
+        "how_i_can_help": "I would connect product evidence, customer outcomes and policy priorities into stakeholder-specific narratives supported by source data, measurable impacts and clear review controls for government, industry and executive audiences."
+      },
+      {
+        "title": "Sustainability evidence governance",
+        "rationale": "As Danfoss grows across technologies associated with the energy transition, external claims need clear linkage to operating evidence and accountable ownership. Stronger data governance supports credibility with customers, governments and investors while reducing inconsistency across markets and business units.",
+        "how_i_can_help": "I would strengthen evidence ownership, traceability and cross-functional review for material sustainability and local-value commitments, informed by experience with carbon-data controls, environmental systems and executive stakeholder reporting."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority markets, institutions, acquisition stakeholders and public-policy dependencies.", "Review material sustainability, local-value and external commitments.", "Identify issues with direct growth, integration or reputation impact."],
+      "days_31_60": ["Align corporate affairs, public affairs, business and sustainability engagement plans.", "Create a consolidated issue and commitment register with named owners.", "Define executive indicators for institutional alignment and external delivery."],
+      "days_61_90": ["Run focused engagement on priority energy-efficiency and industrial-policy issues.", "Embed periodic cross-functional review of market risks and commitments.", "Strengthen evidence controls for sustainability and efficiency claims."],
+      "days_91_180": ["Scale the governance model across priority markets and integration workstreams.", "Measure issue closure and commitment performance.", "Codify lessons into a repeatable international stakeholder playbook."]
+    },
+    "potential_impact": ["Stronger stakeholder continuity through acquisition integration.", "Better alignment between Danfoss technologies and government energy-efficiency priorities.", "More credible evidence behind sustainability and efficiency positioning.", "Faster executive visibility and resolution of external market issues."],
+    "background_relevance": ["Director-level responsibility across government relations, ESG, corporate affairs, social performance and executive advisory in a multinational regulated environment.", "Direct engagement with ministries, regulators, public institutions and industry stakeholders around strategic projects and operating commitments.", "Experience translating external expectations into actions across operations, procurement, environment, finance, legal, HR and leadership teams.", "Practical work on carbon-data traceability, renewable-energy positioning and stakeholder governance."],
+    "sources": [
+      {"title": "Danfoss H1 2026 results", "published_at": "2026-08-20", "url": "https://www.danfoss.com/en/about-danfoss/news/cf/our-h1-2026-results-are-out/"},
+      {"title": "Danfoss to create a leading global player in fluid conveyance", "published_at": "2026-07-09", "url": "https://www.danfoss.com/en/about-danfoss/news/cf/danfoss-to-create-a-leading-global-player-in-fluid-conveyance/"},
+      {"title": "Danfoss Dextreme Max system reduces electric excavator power consumption by 35 percent", "published_at": "2026-06-02", "url": "https://www.danfoss.com/en/about-danfoss/news/dps/danfoss-dextreme-max-system-reduces-electric-excavator-power-consumption-by-35-extending-runtime-by-53/"}
+    ]
+  }
+}
