@@ -24,7 +24,7 @@ concurrency:
 jobs:
   send:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 10
     env:
       ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
       ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
@@ -40,7 +40,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install outreach dependencies
-        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' cryptography
+        run: python -m pip install --disable-pip-version-check 'reportlab==4.2.5' 'pypdf==6.1.1' cryptography
 
       - name: Resolve approved payload
         id: payload
@@ -66,6 +66,13 @@ jobs:
           fi
           echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
 
+      - name: Enforce outreach policy and prepare attachment
+        if: steps.payload.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/prepare_outreach_payload.py "${{ steps.payload.outputs.payload }}"
+
       - name: Verify iCloud credential is configured
         if: steps.payload.outputs.payload != ''
         shell: bash
@@ -75,7 +82,7 @@ jobs:
             exit 1
           fi
 
-      - name: Send approved executive outreach through Apple iCloud SMTP
+      - name: Send approved outreach through Apple iCloud SMTP
         if: steps.payload.outputs.payload != ''
         shell: bash
         run: |
