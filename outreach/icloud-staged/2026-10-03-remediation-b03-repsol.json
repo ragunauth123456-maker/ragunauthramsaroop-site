@@ -1,0 +1,96 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [
+    {
+      "to": "pablo.bannatyne@repsol.com",
+      "recipient_name": "Pablo Bannatyne",
+      "recipient_title": "Head of Investor Relations",
+      "recipient_role_source_url": "https://www.repsol.com/en/shareholders-and-investors/contact/index.cshtml",
+      "email_verified": true,
+      "email_verification_source": "Clay public work-email enrichment for Pablo Bannatyne at Repsol, verified 2026-10-03",
+      "subject": "Follow-up | Strategic Value Creation Brief for Repsol",
+      "body": "Dear Mr. Bannatyne,\n\nFollowing my earlier introduction to Repsol, I prepared a concise strategic value brief focused on the company's current multi-energy strategy and the external execution required across complex markets.\n\nThe paper addresses institutional and country stakeholder governance, portfolio commitments, energy-transition evidence and cross-functional executive issue management. My operating background across government relations, ESG, corporate affairs, social performance and regulated project coordination is directly relevant to these interfaces.\n\nMy executive CV is included in the final three pages. I would welcome a confidential discussion regarding international leadership needs across government relations, stakeholder strategy, strategic partnerships, sustainability or country-facing execution.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+    }
+  ],
+  "strategic_brief": {
+    "company": "Repsol",
+    "title": "Strategic Value Creation Brief for Repsol",
+    "executive_summary": "Repsol is executing an updated 2026-2028 roadmap while balancing financial discipline, energy security, upstream growth and industrial transformation. The portfolio spans mature and emerging jurisdictions, including Alaska, Libya, Venezuela and the UK North Sea, alongside lower-carbon investments and changing market conditions. This mix places government relations, regulatory coordination, local participation, social confidence and evidence-based sustainability at the center of successful execution. My director-level experience across government relations, ESG, corporate affairs, social performance and strategic partnerships would support Repsol by strengthening country-facing governance and translating external expectations into accountable actions across operations and corporate functions.",
+    "company_context": "Repsol's 2026 agenda combines portfolio growth, disciplined capital allocation and a multi-energy transition strategy. First-half 2026 results reported net income of EUR 2.201 billion and adjusted income of EUR 2.711 billion amid volatile energy markets. The company has continued advancing major upstream opportunities, including Pikka in Alaska, activity in Libya and Venezuela, and a UK North Sea joint venture, while maintaining industrial and lower-carbon priorities. Repsol's March 2026 Capital Markets Day also set an updated outlook through 2028. These priorities create a broad external execution agenda involving governments, regulators, joint-venture partners, communities, local suppliers and investors. Strong governance across those interfaces helps protect schedule, value, social acceptance and the credibility of transition commitments.",
+    "opportunities": [
+      {
+        "title": "Country and institutional stakeholder governance",
+        "rationale": "Repsol's portfolio spans jurisdictions with different regulatory systems, political institutions, local-content expectations and public-policy priorities. A structured country model can improve visibility of external dependencies and align government engagement with commercial, operational and investment decisions across diverse markets.",
+        "how_i_can_help": "I would establish country stakeholder maps, issue registers and executive escalation protocols connecting ministries, regulators, public institutions, partners and internal owners, supported by clear accountability for permits, commitments, local participation and emerging external risks."
+      },
+      {
+        "title": "Complex market portfolio execution",
+        "rationale": "Projects in markets such as Libya and Venezuela require disciplined coordination across operating, legal, financial, regulatory and stakeholder dimensions. External developments can affect schedule, investment assumptions and reputation, making early issue visibility and cross-functional ownership essential for executive decision-making.",
+        "how_i_can_help": "I would create a cross-functional governance process for country risks and commitments, linking external developments to operational owners, decision thresholds and evidence so leadership receives a concise view of material issues and required actions."
+      },
+      {
+        "title": "Energy transition evidence and confidence",
+        "rationale": "Repsol's multi-energy strategy requires credible linkage between capital allocation, operational performance, emissions outcomes and public commitments. Governments, investors and communities increasingly expect transition claims to be supported by clear evidence, traceability and practical delivery rather than broad corporate narratives.",
+        "how_i_can_help": "I would strengthen the connection between ESG narratives and operating evidence through clear ownership, source-data controls and stakeholder-specific reporting, informed by experience with carbon-accounting traceability, environmental-management systems and renewable-energy positioning in a resource business."
+      },
+      {
+        "title": "Executive issue and commitment management",
+        "rationale": "Large portfolios generate commitments across permits, communities, local procurement, environmental obligations and strategic partnerships. When ownership is fragmented, unresolved issues can move slowly between functions. A single executive view improves accountability and supports earlier intervention on matters with value or reputation implications.",
+        "how_i_can_help": "I would implement a concise commitment and issue dashboard covering regulatory, social, environmental and institutional matters, with named owners, deadlines, escalation thresholds and periodic executive review across operations, legal, finance, procurement, sustainability and external affairs."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": [
+        "Map priority countries, institutions, regulators, partners and external commitments.",
+        "Review current ownership of material country, ESG and stakeholder issues.",
+        "Identify risks with direct schedule, capital, reputation or social-license impact."
+      ],
+      "days_31_60": [
+        "Align government, operations, legal, sustainability and commercial engagement plans.",
+        "Create a consolidated commitment and issue register with named owners and deadlines.",
+        "Define executive indicators for external-risk visibility and commitment performance."
+      ],
+      "days_61_90": [
+        "Run focused engagement on priority regulatory, institutional and community dependencies.",
+        "Embed monthly cross-functional review of country risks and external commitments.",
+        "Strengthen evidence controls around transition, environmental and local-value claims."
+      ],
+      "days_91_180": [
+        "Scale the governance model across priority markets and major projects.",
+        "Measure issue closure, stakeholder response times and commitment delivery.",
+        "Codify a repeatable country-facing governance framework for international operations."
+      ]
+    },
+    "potential_impact": [
+      "Earlier identification and resolution of country and regulatory risks.",
+      "Stronger executive visibility across external commitments in complex operating markets.",
+      "Improved evidence behind energy-transition and ESG positioning.",
+      "Better alignment between government engagement, portfolio strategy and operational delivery."
+    ],
+    "background_relevance": [
+      "Director-level responsibility across government relations, ESG, corporate affairs, social performance and executive advisory in multinational mining.",
+      "Direct engagement with ministries, regulators, public institutions, communities and contractors around permits, commitments and strategic projects.",
+      "Cross-functional coordination across operations, legal, finance, procurement, environment, HR and executive teams.",
+      "Practical experience with carbon-data traceability, renewable-energy positioning and regulated stakeholder delivery."
+    ],
+    "sources": [
+      {
+        "title": "Repsol posts net income of EUR 2.201 billion in the first half of 2026",
+        "published_at": "2026-07-23",
+        "url": "https://www.repsol.com/en/press-room/press-releases/2026/repsol-posts-net-income-2201-billion-euros/index.cshtml"
+      },
+      {
+        "title": "Repsol posts adjusted net income of EUR 2.568 billion in 2025",
+        "published_at": "2026-02-19",
+        "url": "https://www.repsol.com/en/press-room/press-releases/2026/repsol-posts-adjusted-net-income-2568-billion/index.cshtml"
+      },
+      {
+        "title": "Repsol Capital Markets Day 2026 webcast transcript",
+        "published_at": "2026-03-10",
+        "url": "https://www.repsol.com/content/dam/repsol-corporate/es/conocenos/documentos-conocenos/transcripcion-webcast-capital-markets-day.pdf"
+      }
+    ]
+  }
+}
