@@ -1,0 +1,85 @@
+{
+  "approved": true,
+  "dry_run": true,
+  "campaign_type": "executive_company",
+  "messages": [
+    {
+      "to": "jane.doe@exampleindustrial.com",
+      "recipient_name": "Jane Doe",
+      "recipient_title": "Chief Executive Officer",
+      "email_verified": true,
+      "email_verification_source": "Dry-run smoke test only",
+      "recipient_role_source_url": "https://example.com/leadership",
+      "subject": "Dry-run strategic value creation brief",
+      "body": "Dear Ms. Doe,\n\nThis is a dry-run validation of the executive strategic-brief workflow. No email should be sent.\n\nKind regards,\nRagunauth Ramsaroop"
+    }
+  ],
+  "strategic_brief": {
+    "company": "Example Industrial Holdings",
+    "title": "Strategic Value Creation Brief for Example Industrial Holdings",
+    "executive_summary": "Example Industrial Holdings is used only to validate the executive white-paper automation in a controlled dry run. The brief tests whether company-specific executive content can be structured, converted into a professional PDF, combined with the three-page executive CV, and passed through the policy gate without transmitting an email. The workflow also verifies that a named senior recipient, verified business address metadata, research-source fields, strategic opportunities, action framework, impact statements, and background relevance are all present before an executive-company campaign can proceed.",
+    "company_context": "This dry-run company context deliberately contains enough substantive text to exercise the document builder while making no factual claim about a real organisation. The automation is expected to treat this material as structured research input, render it into the strategic context section, preserve the executive layout, and then continue through the opportunity, action-framework, business-impact, relevance, source, and CV append stages. In live use, this section must be replaced by current company research from official releases, strategy documents, sustainability reporting, leadership information, regulatory context, credible news, and other attributable public sources relevant to the specific organisation and decision-maker.",
+    "opportunities": [
+      {
+        "title": "Institutional stakeholder alignment",
+        "rationale": "A complex international business often benefits when government relations, regulatory engagement, sustainability commitments, community expectations, and operating priorities are coordinated through one clear executive framework with accountable ownership, current stakeholder intelligence, and disciplined follow-through across functions and geographies.",
+        "how_i_can_help": "I can contribute an operating-side perspective that connects senior institutional engagement, ESG commitments, corporate affairs, stakeholder mapping, executive advisory, and cross-functional execution so that external commitments translate into practical internal accountability and measurable delivery."
+      },
+      {
+        "title": "Responsible expansion governance",
+        "rationale": "Growth programmes can create execution risk when market-entry decisions, public-sector relationships, local expectations, permitting, infrastructure dependencies, and sustainability obligations develop faster than internal coordination mechanisms, leaving leadership without a single integrated view of stakeholder and regulatory exposure.",
+        "how_i_can_help": "I can help establish a structured country and stakeholder governance model, clarify escalation routes, strengthen regulator and government interfaces, and support leadership with concise decision-ready reporting that links external risk to operational priorities."
+      },
+      {
+        "title": "Sustainability execution discipline",
+        "rationale": "Public sustainability commitments create value only when evidence, ownership, timelines, reporting, operational controls, and stakeholder communication are sufficiently disciplined to withstand executive, regulator, investor, community, and assurance scrutiny across the organisation's most material programmes.",
+        "how_i_can_help": "I can support the integration of ESG governance with operational evidence, stakeholder engagement, executive reporting, carbon-data discipline, social-performance commitments, and cross-functional accountability based on experience working across complex regulated operations."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": [
+        "Map critical government, regulator, community, partner, investor, and internal decision interfaces.",
+        "Review major strategic commitments, live risks, dependencies, and executive information gaps."
+      ],
+      "days_31_60": [
+        "Prioritise the highest-value stakeholder and governance interventions.",
+        "Align executive owners, decision rights, reporting lines, and engagement priorities."
+      ],
+      "days_61_90": [
+        "Launch the priority engagement and governance roadmap.",
+        "Introduce measurable accountability for commitments, actions, issues, and executive follow-through."
+      ],
+      "days_91_180": [
+        "Scale successful interventions across relevant markets and business units.",
+        "Measure impact, refine the operating model, and embed repeatable executive governance."
+      ]
+    },
+    "potential_impact": [
+      "Stronger coordination between corporate strategy, public institutions, sustainability commitments, and operating execution.",
+      "Earlier identification and escalation of regulatory, stakeholder, social-license, and market-entry risks.",
+      "Clearer executive accountability for external commitments and stronger evidence for leadership review and assurance."
+    ],
+    "background_relevance": [
+      "Director-level responsibility spanning government and regulatory relations, ESG, corporate affairs, strategic partnerships, and executive advisory in a complex multinational mining environment.",
+      "Senior engagement with ministries, regulators, public institutions, industry bodies, communities, and strategic partners across multiple regulated operating interfaces.",
+      "Experience coordinating cross-functional stakeholder commitments, renewable-energy positioning, social responsibility, and carbon-data evidence across operational and corporate teams."
+    ],
+    "sources": [
+      {
+        "title": "Dry-run strategy source",
+        "published_at": "2026-10-01",
+        "url": "https://example.com/strategy"
+      },
+      {
+        "title": "Dry-run sustainability source",
+        "published_at": "2026-10-01",
+        "url": "https://example.com/sustainability"
+      },
+      {
+        "title": "Dry-run leadership source",
+        "published_at": "2026-10-01",
+        "url": "https://example.com/leadership"
+      }
+    ]
+  }
+}
