@@ -1,0 +1,49 @@
+{
+  "series_title": "Four Executive White Papers",
+  "author": "Ragunauth Ramsaroop",
+  "date": "2026-09",
+  "status": "editorial-overviews-only-in-github-branch",
+  "third_party_affiliation": "None; original independent research inspired by public posts, not endorsed by McKinsey",
+  "papers": [
+    {
+      "slug": "where-capital-meets-capability",
+      "title": "Where Capital Meets Capability",
+      "print_pdf": "technology_capital.pdf",
+      "source_manuscript": "technology_capital/paper.md",
+      "linkedin_brief": "technology_capital_LinkedIn_Carousel.pdf",
+      "pdf_pages": 11,
+      "carousel_pages": 6,
+      "github_asset_status": "not_uploaded"
+    },
+    {
+      "slug": "from-climate-data-to-cash-flow",
+      "title": "From Climate Data to Cash Flow",
+      "print_pdf": "climate_value.pdf",
+      "source_manuscript": "climate_value/paper.md",
+      "linkedin_brief": "climate_value_LinkedIn_Carousel.pdf",
+      "pdf_pages": 11,
+      "carousel_pages": 6,
+      "github_asset_status": "not_uploaded"
+    },
+    {
+      "slug": "architecture-of-asian-leadership",
+      "title": "The Architecture of Asian Leadership",
+      "print_pdf": "asian_leadership.pdf",
+      "source_manuscript": "asian_leadership/paper.md",
+      "linkedin_brief": "asian_leadership_LinkedIn_Carousel.pdf",
+      "pdf_pages": 11,
+      "carousel_pages": 6,
+      "github_asset_status": "not_uploaded"
+    },
+    {
+      "slug": "trust-is-infrastructure",
+      "title": "Trust Is Infrastructure",
+      "print_pdf": "ai_trust.pdf",
+      "source_manuscript": "ai_trust/paper.md",
+      "linkedin_brief": "ai_trust_LinkedIn_Carousel.pdf",
+      "pdf_pages": 12,
+      "carousel_pages": 6,
+      "github_asset_status": "not_uploaded"
+    }
+  ]
+}
