@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch18-suez.json",
+    "outreach/icloud-staged/2026-10-02-batch18-orsted.json",
+    "outreach/icloud-staged/2026-10-02-batch18-fedex.json",
+    "outreach/icloud-staged/2026-10-02-batch18-ups.json",
+    "outreach/icloud-staged/2026-10-02-batch18-halliburton.json",
+    "outreach/icloud-staged/2026-10-02-batch18-wood.json",
+    "outreach/icloud-staged/2026-10-02-batch18-aker-solutions.json",
+    "outreach/icloud-staged/2026-10-02-batch18-repsol.json",
+    "outreach/icloud-staged/2026-10-02-batch18-balfour-beatty.json",
+    "outreach/icloud-staged/2026-10-02-batch18-subsea7.json"
+  ]
+}
