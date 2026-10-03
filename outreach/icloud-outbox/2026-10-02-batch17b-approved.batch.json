@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch17-tsmc.json",
+    "outreach/icloud-staged/2026-10-02-batch17-broadcom.json",
+    "outreach/icloud-staged/2026-10-02-batch17-nvidia.json",
+    "outreach/icloud-staged/2026-10-02-batch17-amd.json",
+    "outreach/icloud-staged/2026-10-02-batch17-qualcomm.json",
+    "outreach/icloud-staged/2026-10-02-batch17-legrand.json",
+    "outreach/icloud-staged/2026-10-02-batch17-prysmian.json",
+    "outreach/icloud-staged/2026-10-02-batch17-te-connectivity.json",
+    "outreach/icloud-staged/2026-10-02-batch17-corning.json",
+    "outreach/icloud-staged/2026-10-02-batch17-mitsubishi-electric.json"
+  ]
+}
