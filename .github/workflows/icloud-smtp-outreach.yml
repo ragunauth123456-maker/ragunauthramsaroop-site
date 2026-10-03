@@ -24,7 +24,7 @@ concurrency:
 jobs:
   send:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     env:
       ICLOUD_SMTP_USER: ragunauthramsaroop@icloud.com
       ICLOUD_APP_PASSWORD: ${{ secrets.ICLOUD_APP_PASSWORD }}
@@ -66,15 +66,33 @@ jobs:
           fi
           echo "payload=$PAYLOAD" >> "$GITHUB_OUTPUT"
 
-      - name: Enforce outreach policy and prepare attachment
+      - name: Expand approved executive campaign
+        id: expanded
         if: steps.payload.outputs.payload != ''
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/prepare_outreach_payload_exec.py "${{ steps.payload.outputs.payload }}"
+          PAYLOAD="${{ steps.payload.outputs.payload }}"
+          if [[ "$PAYLOAD" == *.campaign.json ]]; then
+            SEND_PAYLOAD="$(python scripts/build_executive_campaign.py "$PAYLOAD" | tail -n 1)"
+          else
+            SEND_PAYLOAD="$PAYLOAD"
+          fi
+          if [ -z "$SEND_PAYLOAD" ] || [ ! -f "$SEND_PAYLOAD" ]; then
+            echo "Resolved send payload does not exist: $SEND_PAYLOAD"
+            exit 1
+          fi
+          echo "payload=$SEND_PAYLOAD" >> "$GITHUB_OUTPUT"
+
+      - name: Enforce outreach policy and prepare combined proposal attachment
+        if: steps.expanded.outputs.payload != ''
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/prepare_outreach_payload_exec.py "${{ steps.expanded.outputs.payload }}"
 
       - name: Verify iCloud credential is configured
-        if: steps.payload.outputs.payload != ''
+        if: steps.expanded.outputs.payload != ''
         shell: bash
         run: |
           if [ -z "$ICLOUD_APP_PASSWORD" ]; then
@@ -83,11 +101,11 @@ jobs:
           fi
 
       - name: Send approved outreach through Apple iCloud SMTP
-        if: steps.payload.outputs.payload != ''
+        if: steps.expanded.outputs.payload != ''
         shell: bash
         run: |
           set -euo pipefail
-          PAYLOAD="${{ steps.payload.outputs.payload }}"
+          PAYLOAD="${{ steps.expanded.outputs.payload }}"
           case "$PAYLOAD" in
             *.batch.json) python scripts/send_icloud_batch.py "$PAYLOAD" ;;
             *.secure.json) python scripts/secure_icloud_send.py "$PAYLOAD" ;;
