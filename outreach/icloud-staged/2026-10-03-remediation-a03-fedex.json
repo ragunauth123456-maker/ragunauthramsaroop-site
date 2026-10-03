@@ -1,0 +1,41 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [{
+    "to": "lance.mangum@fedex.com",
+    "recipient_name": "Lance Mangum",
+    "recipient_title": "Corporate Officer and Staff Vice President, Government Affairs",
+    "recipient_role_source_url": "https://www.linkedin.com/in/lancemangum",
+    "email_verified": true,
+    "email_verification_source": "Prior successful iCloud SMTP delivery record for lance.mangum@fedex.com, 2026-10-02",
+    "subject": "Follow-up | Strategic Value Creation Brief for FedEx",
+    "body": "Dear Mr. Mangum,\n\nFollowing my earlier introduction, I prepared a concise strategic value brief focused on FedEx's current transformation, trade-policy environment and global stakeholder priorities.\n\nThe paper considers regulatory change, customs and market access, public-policy execution, sustainability positioning and institutional coordination as FedEx builds a more focused and digitally enabled global network. My executive CV is included in the final three pages.\n\nI would welcome a confidential discussion regarding international government affairs, external affairs, stakeholder strategy or market-facing leadership needs where my operating experience may add value.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "FedEx",
+    "title": "Strategic Value Creation Brief for FedEx",
+    "executive_summary": "FedEx is reshaping its portfolio and network while global trade rules, customs requirements, aviation policy, sustainability expectations and geopolitical risk continue to change quickly. The company's 2026 Investor Day placed premium growth, digital intelligence, network transformation and efficiency at the center of its strategy, while recent portfolio actions have sharpened focus on the core global network. My experience across government relations, regulated operations, ESG, corporate affairs and cross-functional executive coordination would support FedEx by connecting policy developments with operational priorities, strengthening institutional relationships and creating disciplined ownership for market-access, stakeholder and reputation risks across complex jurisdictions.",
+    "company_context": "FedEx entered a new strategic phase in 2026 after completing the FedEx Freight spin-off and advancing further portfolio simplification. Management has emphasized a smarter industrial network, high-margin verticals, data and AI, network transformation and continued efficiency gains. At the same time, FedEx customers are managing frequent tariff, customs and trade-rule changes across the United States, Europe, Latin America and other regions. FedEx also continues its carbon-neutral operations goal for 2040 and expanded sustainable aviation fuel procurement during 2026. This combination of commercial transformation, regulatory volatility, aviation policy and sustainability creates a strong need for government affairs that is closely integrated with operations, customer impact, risk management and executive decision-making.",
+    "opportunities": [
+      {"title": "Trade and customs intelligence", "rationale": "Rapid tariff and customs changes affect customer cost, clearance, service design and market access. A structured government-affairs process can convert regulatory developments into clear operational implications, accountable actions and customer-facing priorities.", "how_i_can_help": "I would build an executive issue architecture linking policy developments to business owners, deadlines, operational impacts and external engagement so regulatory change moves quickly from monitoring to coordinated action."},
+      {"title": "Emerging-market institutional strategy", "rationale": "Growth markets often require close coordination with customs authorities, transport regulators, investment agencies and other public institutions. Consistent market diagnostics can improve entry, expansion and issue resolution while protecting service reliability.", "how_i_can_help": "I would apply direct experience with ministries and regulators to develop market-specific stakeholder maps, escalation routes, regulatory dependency registers and executive engagement plans for priority jurisdictions."},
+      {"title": "Sustainable aviation stakeholder alignment", "rationale": "Scaling lower-carbon aviation requires policy support, fuel availability, infrastructure, credible reporting and coordination across industry and government. Strong external engagement helps connect climate commitments with practical implementation constraints.", "how_i_can_help": "I would support institutional engagement around sustainable aviation, evidence governance and stakeholder communications, linking public commitments with measurable operational data and cross-functional ownership."},
+      {"title": "Transformation reputation governance", "rationale": "Portfolio simplification and network redesign create external questions for employees, communities, customers and policymakers. A disciplined stakeholder approach can keep transformation messages aligned with service, investment and long-term economic value.", "how_i_can_help": "I would establish integrated stakeholder reporting for major transformation initiatives, identifying affected institutions, emerging concerns, evidence needs and executive actions before issues become larger reputation or policy risks."}
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority policy issues, regulators and business dependencies.", "Review trade, aviation and sustainability engagement priorities.", "Identify unresolved external risks with direct commercial impact."],
+      "days_31_60": ["Create a consolidated policy and stakeholder register.", "Assign cross-functional owners and escalation thresholds.", "Align executive engagement with network and market priorities."],
+      "days_61_90": ["Run targeted engagement on priority regulatory issues.", "Introduce monthly policy-to-operations review.", "Strengthen evidence for sustainability and economic-impact messages."],
+      "days_91_180": ["Scale the model across selected regions.", "Measure issue resolution and regulatory response times.", "Create a repeatable emerging-market government-affairs playbook."]
+    },
+    "potential_impact": ["Faster translation of regulatory change into operational action.", "Stronger institutional relationships in priority growth markets.", "Better alignment between government affairs and network transformation.", "More defensible sustainability and aviation-policy positioning."],
+    "background_relevance": ["Director-level government and regulatory relations experience across multiple public agencies.", "Cross-functional coordination spanning operations, legal, finance, procurement, environment and executive leadership.", "Experience in a capital-intensive multinational business where permits, public institutions and stakeholder confidence affect operations.", "ESG and carbon-data governance experience relevant to evidence-based sustainability engagement."],
+    "sources": [
+      {"title": "FedEx Completes Sale of FedEx Supply Chain to CMA CGM Group", "published_at": "2026-10-01", "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Completes-Sale-of-FedEx-Supply-Chain-to-CMA-CGM-Group/default.aspx"},
+      {"title": "FedEx Expands Sustainable Aviation Fuel Agreements Across U.S. Air Network", "published_at": "2026-09-15", "url": "https://www.fedex.com/en-us/sustainability.html"},
+      {"title": "FedEx Reports Strong Fourth Quarter and Full-Year Results", "published_at": "2026-06-23", "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Reports-Strong-Fourth-Quarter-and-Full-Year-Results/default.aspx"},
+      {"title": "FedEx Corporation Hosts 2026 Investor Day", "published_at": "2026-02-12", "url": "https://investors.fedex.com/news-and-events/investor-news/investor-news-details/2026/FedEx-Corporation-Hosts-2026-Investor-Day/"}
+    ]
+  }
+}

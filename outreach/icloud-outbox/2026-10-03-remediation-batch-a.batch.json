@@ -1,0 +1,10 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-03-remediation-a01-suez.json",
+    "outreach/icloud-staged/2026-10-03-remediation-a02-orsted.json",
+    "outreach/icloud-staged/2026-10-03-remediation-a03-fedex.json",
+    "outreach/icloud-staged/2026-10-03-remediation-a04-ups.json",
+    "outreach/icloud-staged/2026-10-03-remediation-a05-halliburton.json"
+  ]
+}

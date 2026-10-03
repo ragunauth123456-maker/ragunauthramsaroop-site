@@ -1,0 +1,41 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [{
+    "to": "mkiely@ups.com",
+    "recipient_name": "Michael Kiely",
+    "recipient_title": "President, Global Government Affairs",
+    "recipient_role_source_url": "https://www.mdchamber.org/2026/05/06/2026-2027-board-of-directors-announced/",
+    "email_verified": true,
+    "email_verification_source": "Prior successful iCloud SMTP delivery record for mkiely@ups.com, 2026-10-02",
+    "subject": "Follow-up | Strategic Value Creation Brief for UPS",
+    "body": "Dear Mr. Kiely,\n\nFollowing my earlier introduction, I prepared a concise strategic value brief focused on UPS's new global operating model, cross-border growth and government-affairs priorities.\n\nThe paper considers trade and customs policy, institutional alignment, resilient supply chains, market access and stakeholder governance as UPS accelerates profitable growth across International, Healthcare and Supply Chain Solutions. My executive CV is included in the final three pages.\n\nI would value a confidential discussion regarding international government affairs, external affairs, country strategy or stakeholder leadership mandates where my operating experience may support UPS.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "UPS",
+    "title": "Strategic Value Creation Brief for UPS",
+    "executive_summary": "UPS is moving into a more globally integrated operating model after major network reconfiguration and the planned reduction of Amazon volume. The company is investing more than USD 2 billion across International, Healthcare and Supply Chain Solutions while customers face changing trade routes, regulation and supply-chain uncertainty. This creates a direct need for government affairs to sit close to commercial and operational execution. My experience in government relations, regulated operations, stakeholder governance and cross-functional executive coordination would support UPS by strengthening market-access strategy, translating policy change into accountable business actions and building institutional relationships across priority international markets.",
+    "company_context": "UPS completed its Amazon volume glide-down and network reconfiguration initiatives in June 2026, then announced a new global operating model effective September 1. The company described a shift from an international company toward a more integrated global enterprise, with standardized critical processes and local flexibility. UPS also announced more than USD 2 billion of investment across Europe, Asia-Pacific and the Americas to improve speed, resilience and cross-border services. Q2 2026 results showed year-over-year revenue and adjusted operating-profit growth. These developments increase the strategic importance of customs policy, trade facilitation, public-sector relationships, local market intelligence and disciplined coordination between government affairs, operations, brokerage, commercial teams and senior leadership.",
+    "opportunities": [
+      {"title": "Global trade policy execution", "rationale": "Changing tariffs, customs procedures and trade routes affect customer cost, service design and cross-border reliability. Government affairs has greater value when policy intelligence is connected directly to brokerage, operations and commercial decisions.", "how_i_can_help": "I would create a policy-to-operations governance model with issue ownership, impact assessment, executive escalation and targeted institutional engagement across customs, trade and transport authorities."},
+      {"title": "Priority market institutional strategy", "rationale": "UPS's global growth investments span jurisdictions with different regulatory systems and public-sector expectations. Structured country diagnostics can improve expansion, issue resolution and resilience while preserving local accountability.", "how_i_can_help": "I would build market-specific stakeholder maps and regulatory dependency registers, supported by direct experience coordinating ministries, regulators, investment bodies and operating teams in an emerging market."},
+      {"title": "Healthcare and critical logistics policy", "rationale": "Healthcare and time-sensitive logistics depend on border processes, quality requirements, transport rules and public confidence. Strong institutional alignment can protect service continuity and support investment in complex logistics capabilities.", "how_i_can_help": "I would support cross-functional engagement on regulatory dependencies, government relationships and stakeholder assurance, translating operational requirements into clear external priorities and measurable commitments."},
+      {"title": "Global operating model stakeholder governance", "rationale": "A more integrated global structure creates opportunities to standardize external-affairs disciplines while retaining local market judgment. Common governance can improve visibility of policy risk and reduce duplicated or inconsistent engagement.", "how_i_can_help": "I would develop a common stakeholder governance framework covering issue classification, ownership, executive reporting, engagement planning and lessons learned across regions and major strategic initiatives."}
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority markets, policy issues and regulatory dependencies.", "Review existing escalation routes between government affairs and operations.", "Identify external risks affecting growth investments or service reliability."],
+      "days_31_60": ["Create a consolidated policy and stakeholder register.", "Align regional government-affairs priorities with commercial and operational plans.", "Define executive indicators for market-access and regulatory risk."],
+      "days_61_90": ["Run targeted engagement on highest-impact trade and transport issues.", "Embed monthly cross-functional policy reviews.", "Strengthen evidence for economic-impact and investment messages."],
+      "days_91_180": ["Scale the governance model across selected regions.", "Measure issue closure and institutional response times.", "Codify a repeatable country and market-entry stakeholder playbook."]
+    },
+    "potential_impact": ["Faster response to trade and customs changes affecting customers and operations.", "Stronger institutional support for international growth investments.", "More consistent government-affairs execution under the global operating model.", "Better executive visibility of market-access and stakeholder risks."],
+    "background_relevance": ["Director-level responsibility for government and regulatory relations in a multinational operating environment.", "Direct work with ministries, regulators, public agencies, contractors and communities on business-critical matters.", "Experience coordinating external commitments across legal, operations, finance, procurement, environment and executive teams.", "Country-facing leadership experience suited to markets where public-private relationships affect investment and operating continuity."],
+    "sources": [
+      {"title": "UPS Announces Executive Leadership Changes and New Global Operating Model", "published_at": "2026-08-31", "url": "https://about.ups.com/gb/en/newsroom/press-releases/our-strategy/ups-announces-executive-leadership-changes-and-new-global-operat.html"},
+      {"title": "UPS Invests More Than USD 2 Billion for Faster Service and Resilient Global Supply Chains", "published_at": "2026-08-24", "url": "https://about.ups.com/us/en/newsroom/press-releases/customer-first/ups-invests-more-than--2-billion-to-give-customers-even-faster-s.html"},
+      {"title": "UPS Releases 2Q 2026 Earnings", "published_at": "2026-07-28", "url": "https://investors.ups.com/news-events/press-releases/detail/2164/ups-releases-2q-2026-earnings"},
+      {"title": "UPS 2025 Annual Report", "published_at": "2026-02-17", "url": "https://investors.ups.com/sec-filings/all-sec-filings/content/0001628280-26-008432/ups-20251231.htm"}
+    ]
+  }
+}
