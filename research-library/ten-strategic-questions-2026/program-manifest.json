@@ -1,0 +1,127 @@
+{
+  "series": "Ten Strategic Questions for the Next Decade",
+  "author": "Ragunauth Ramsaroop",
+  "as_of": "2026-09-26",
+  "release_stage": "PHASE_ONE_COMPLETE_FULL_LENGTH_PENDING",
+  "github_scope": "Editorial blueprints and release metadata only; no full manuscript or PDF binary currently in this branch",
+  "local_deliverables": {
+    "combined_pdf_pages": 171,
+    "individual_pdfs": 10,
+    "each_pdf_pages": 17,
+    "editable_manuscripts": 10,
+    "substantive_chapter_openings": 100,
+    "fictional_adversarial_case_exercises": 50,
+    "illustrative_numeric_scenarios": 40,
+    "source_register_entries": 26,
+    "model_validation_tests_passed": 10,
+    "archive_integrity": "PASS"
+  },
+  "papers": [
+    {
+      "slug": "01-investor-communications-ai",
+      "title": "The Accountable Investor Communication System",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/01-investor-communications-ai/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "02-strategy-mobilization",
+      "title": "From Strategy to Mobilization",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/02-strategy-mobilization/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "03-founder-scale",
+      "title": "Beyond the Founder’s Formula",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/03-founder-scale/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "04-farm-gate",
+      "title": "The New Economics of the Farm Gate",
+      "full_length_target_pages": 135,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/04-farm-gate/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "05-physical-ai",
+      "title": "Physical AI and the Next Frontier of Work",
+      "full_length_target_pages": 135,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/05-physical-ai/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "06-four-leadership-questions",
+      "title": "Four Questions Defining Leadership in the AI Era",
+      "full_length_target_pages": 135,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/06-four-leadership-questions/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "07-commercial-intelligence",
+      "title": "Commercial Intelligence in Real Time",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/07-commercial-intelligence/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "08-asian-wealth-insurance",
+      "title": "Insuring Wealth in a Transforming Asia",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/08-asian-wealth-insurance/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "09-operating-model",
+      "title": "Why Operating Model Transformations Fail",
+      "full_length_target_pages": 125,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/09-operating-model/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    },
+    {
+      "slug": "10-global-balance-sheet",
+      "title": "The Global Balance Sheet 2026",
+      "full_length_target_pages": 135,
+      "phase_one_pdf_pages": 17,
+      "phase_one_pdf_status": "delivered separately in downloadable package",
+      "github_blueprint": "research-library/ten-strategic-questions-2026/10-global-balance-sheet/RESEARCH_BLUEPRINT.md",
+      "external_peer_review": "pending",
+      "case_data_independent_verification": "pending"
+    }
+  ],
+  "publication_gate": [
+    "Obtain original verified source tables and case rights",
+    "Add complete Markdown PDFs and code to repository",
+    "Independently review methodology and sensitive claims",
+    "Check PDFs, sitemap, website and checksum manifest"
+  ]
+}
