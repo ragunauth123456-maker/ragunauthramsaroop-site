@@ -1,0 +1,56 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [{
+    "to": "lucile.turpin@technipfmc.com",
+    "recipient_name": "Lucile Turpin",
+    "recipient_title": "Vice President, Communications",
+    "recipient_role_source_url": "https://www.technipfmc.com/en/investors/financial-news-releases/press-release/technipfmc-announces-second-quarter-2026-results/",
+    "email_verified": true,
+    "email_verification_source": "Prior successful iCloud SMTP delivery record for lucile.turpin@technipfmc.com, 2026-10-03",
+    "subject": "Follow-up | Strategic Value Creation Brief for TechnipFMC",
+    "body": "Dear Ms. Turpin,\n\nFollowing my earlier introduction, I prepared a concise strategic value brief focused on TechnipFMC's offshore growth, international project execution and stakeholder priorities.\n\nThe paper addresses country and government alignment, local-value delivery, offshore project commitment governance and energy-transition evidence across major markets. These areas closely match my experience across government relations, ESG, corporate affairs, regulatory coordination and strategic partnerships.\n\nMy executive CV is included in the final three pages. I would welcome a confidential discussion regarding international leadership needs across government relations, external affairs, stakeholder strategy, strategic partnerships, sustainability or related country-facing functions.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "TechnipFMC",
+    "title": "Strategic Value Creation Brief for TechnipFMC",
+    "executive_summary": "TechnipFMC is benefiting from a resilient offshore market and a growing subsea order base while clients increasingly favor integrated portfolio execution, standardized solutions and lower-carbon project economics. Second-quarter 2026 results showed strong subsea activity across Norway, Angola and Côte d'Ivoire, followed by additional awards in Malaysia and Angola. This international growth places government relations, local-content expectations, environmental commitments and stakeholder confidence alongside technical execution. My director-level experience across government relations, ESG, corporate affairs, social performance and regulated project coordination would support TechnipFMC by strengthening country-facing governance and connecting external commitments to accountable delivery across priority markets.",
+    "company_context": "TechnipFMC reported second-quarter 2026 revenue of $2.763 billion, Subsea inbound orders of $2.507 billion and strong cash generation. The quarter included major awards for Vår Energi in Norway, Equinor projects, Azule Energy in Angola and Eni's Baleine Phase 3 in Côte d'Ivoire. Subsequent awards included PETRONAS' Limbayong project offshore Malaysia and Azule's West Hub Tails project. These projects span jurisdictions with different government structures, local-content regimes, environmental requirements and community expectations. As TechnipFMC expands integrated execution through iEPCI and standardized subsea solutions, a consistent external-governance model can help protect schedule, client relationships, local value and long-term market positioning.",
+    "opportunities": [
+      {
+        "title": "Country and government alignment",
+        "rationale": "Offshore developments depend on national energy policy, regulators, state-linked companies, permitting authorities and local institutions. Coordinated government engagement helps project teams understand external dependencies early and aligns country relationships with client, commercial and delivery priorities.",
+        "how_i_can_help": "I would build country stakeholder maps linking ministries, regulators, national companies, project owners and executive escalation routes, supported by issue registers and commitment tracking so non-technical risks remain visible throughout project execution."
+      },
+      {
+        "title": "Local value and supplier participation",
+        "rationale": "Major offshore projects often carry expectations for domestic fabrication, supplier development, workforce participation and economic contribution. Clear governance strengthens client and government confidence while helping procurement, HR and project teams deliver measurable commitments across different markets.",
+        "how_i_can_help": "I would translate local-value expectations into measurable plans with named owners, evidence requirements and periodic executive reporting across procurement, workforce, operations, sustainability and stakeholder teams."
+      },
+      {
+        "title": "Project commitment governance",
+        "rationale": "Integrated offshore projects generate obligations across permits, environment, communities, logistics, suppliers and clients. When ownership sits across separate functions, unresolved issues can move slowly. A consolidated governance view supports earlier intervention before external matters affect schedule or reputation.",
+        "how_i_can_help": "I would implement a cross-functional issue and commitment dashboard with deadlines, accountable owners, evidence status and escalation thresholds tied to project milestones, giving leadership a concise view of external execution risks."
+      },
+      {
+        "title": "Energy transition evidence",
+        "rationale": "TechnipFMC positions integrated technology around improved project economics, reduced carbon intensity and clients' transition ambitions. Government, investors and customers increasingly expect these claims to connect with measurable project evidence and clear environmental ownership.",
+        "how_i_can_help": "I would strengthen traceability between sustainability narratives and operating evidence, drawing on experience with carbon-data controls, environmental-management systems and executive stakeholder communications to support credible external positioning."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority markets, projects, institutions and local-content dependencies.", "Review material regulatory, environmental and stakeholder commitments.", "Identify external issues with direct schedule or client impact."],
+      "days_31_60": ["Align project, government, sustainability and commercial engagement plans.", "Create a consolidated commitment register with named owners.", "Define executive indicators for country risk and external delivery."],
+      "days_61_90": ["Run focused engagement on priority government and regulatory dependencies.", "Embed monthly cross-functional review of external risks and commitments.", "Strengthen evidence controls for local-value and sustainability claims."],
+      "days_91_180": ["Scale the governance model across priority offshore markets.", "Measure issue closure and commitment performance.", "Codify lessons into a repeatable international project stakeholder playbook."]
+    },
+    "potential_impact": ["Earlier resolution of government and regulatory issues affecting offshore projects.", "Stronger local-value delivery across international markets.", "Improved executive visibility across project commitments and external risks.", "More credible evidence behind sustainability and transition positioning."],
+    "background_relevance": ["Director-level responsibility across government relations, ESG, corporate affairs and executive advisory in a regulated multinational resource environment.", "Direct engagement with ministries, regulators, communities and contractors around permits and strategic projects.", "Experience coordinating external obligations across operations, procurement, environment, legal, HR and executive teams.", "Practical work on carbon-data traceability, renewable-energy positioning and local participation."],
+    "sources": [
+      {"title": "TechnipFMC Announces Second-Quarter 2026 Results", "published_at": "2026-07-30", "url": "https://www.technipfmc.com/en/investors/financial-news-releases/press-release/technipfmc-announces-second-quarter-2026-results/"},
+      {"title": "TechnipFMC Awarded Subsea Contracts by Equinor for Multiple Projects in Norway", "published_at": "2026-07-07", "url": "https://www.technipfmc.com/en/investors/financial-news-releases/press-release/technipfmc-awarded-subsea-contracts-by-equinor-for-multiple-projects-in-norway/"},
+      {"title": "TechnipFMC Awarded Flexible Pipe Contract for Azule's West Hub Tails Project", "published_at": "2026-08-11", "url": "https://www.technipfmc.com/en/investors/financial-news-releases/press-release/technipfmc-awarded-flexible-pipe-contract-for-azule-s-west-hub-tails-project/"}
+    ]
+  }
+}
