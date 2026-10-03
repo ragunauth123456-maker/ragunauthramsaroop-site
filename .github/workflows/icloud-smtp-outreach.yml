@@ -50,7 +50,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             PAYLOAD="${{ inputs.payload_file }}"
           else
-            PAYLOAD="$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-outbox/[^/]+\.json$' | head -n 1 || true)"
+            PAYLOAD="$(git diff-tree --diff-filter=AM --no-commit-id --name-only -r "$GITHUB_SHA" | grep -E '^outreach/icloud-outbox/[^/]+\.json$' | head -n 1 || true)"
           fi
           if [ -z "$PAYLOAD" ]; then
             echo "No outbox payload found in this change."
