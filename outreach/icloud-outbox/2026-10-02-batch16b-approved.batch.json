@@ -1,0 +1,15 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-02-batch16-novo-nordisk.json",
+    "outreach/icloud-staged/2026-10-02-batch16-pfizer.json",
+    "outreach/icloud-staged/2026-10-02-batch16-merck.json",
+    "outreach/icloud-staged/2026-10-02-batch16-eli-lilly.json",
+    "outreach/icloud-staged/2026-10-02-batch16-bms.json",
+    "outreach/icloud-staged/2026-10-02-batch16-amgen.json",
+    "outreach/icloud-staged/2026-10-02-batch16-abbvie.json",
+    "outreach/icloud-staged/2026-10-02-batch16-johnson-johnson.json",
+    "outreach/icloud-staged/2026-10-02-batch16-moderna.json",
+    "outreach/icloud-staged/2026-10-02-batch16-medtronic.json"
+  ]
+}
