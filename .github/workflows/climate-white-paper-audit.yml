@@ -1,0 +1,39 @@
+name: Climate white-paper reproducibility
+on:
+  pull_request:
+    paths:
+      - 'research-manuscripts/climate-data-value-2026/**'
+      - '.github/workflows/climate-white-paper-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate-research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify numerical calculations
+        run: python research-manuscripts/climate-data-value-2026/model_reproducibility.py
+      - name: Check manuscript source register and claim labels
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          base=Path('research-manuscripts/climate-data-value-2026')
+          s=(base/'white-paper.md').read_text()
+          a=(base/'AUDIT_LOG.md').read_text()
+          t=(base/'technical-appendices.md').read_text()
+          refs=set(map(int,re.findall(r'^\[(\d+)\]',s,flags=re.M)))
+          assert set(range(1,19)) <= refs, f"Missing source ids: {set(range(1,19))-refs}"
+          for term in ('hypothetical','financed emissions','uncertainty'):
+              assert term in (s+' '+a+' '+t).lower()
+          assert 'independent assurance' in s.lower()
+          assert 'No' in a and 'third-party' in a
+          print('PASS source register, research boundaries, and accompanying files')
+      - name: Run full offline editorial and numerical audit
+        run: python scripts/audit_climate_data_value.py
+          PY
