@@ -1,0 +1,81 @@
+name: Guyana research working PDF
+on:
+  push:
+    branches: [research/guyana-petroleum-blueprint-2026]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/*.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.py'
+      - '.github/workflows/guyana-working-pdf.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/*.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.py'
+      - '.github/workflows/guyana-working-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-working-edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install reproducible PDF build dependencies
+        run: python -m pip install 'reportlab>=4,<5' 'pymupdf>=1.26,<2'
+      - name: Test illustrative fiscal model and emit data
+        run: python research-library/guyana-petroleum-blueprint-2026/illustrative_model.py
+      - name: Typeset, inspect and audit the actual manuscript
+        run: python research-library/guyana-petroleum-blueprint-2026/build_working_pdf.py
+      - name: Assert research integrity
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          d=pathlib.Path("research-library/guyana-petroleum-blueprint-2026")
+          audit=json.loads((d/"WORKING_PDF_AUDIT.json").read_text())
+          pdf=d/audit["document"]
+          assert pdf.is_file() and pdf.stat().st_size > 50_000
+          assert audit["pages_actual"] >= 18
+          assert audit["manuscript_words"] >= 6500
+          assert audit["source_records"] >= 34
+          assert audit["full_volume_complete"] is False
+          assert audit["external_peer_review"] == "pending"
+          assert hashlib.sha256(pdf.read_bytes()).hexdigest() == audit["sha256"]
+          assert len((d/"ILLUSTRATIVE_SCENARIOS.csv").read_text().splitlines()) == 17
+          assert len((d/"ILLUSTRATIVE_PRODUCTION_SHOCKS.csv").read_text().splitlines()) == 19
+          assert len((d/"ILLUSTRATIVE_FUND_STRESS.csv").read_text().splitlines()) == 21
+          assert audit["source_records"] >= 80
+          assert audit.get("flagship_target_pages_min") == 520
+          assert audit.get("flagship_target_pages_max") == 560
+          print("PASS: typeset PDF, live source register, 54 illustrative stress rows, checksum, draft disclaimers")
+          print("Actual working PDF pages:", audit["pages_actual"])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guyana-research-working-edition
+          if-no-files-found: error
+          path: |
+            research-library/guyana-petroleum-blueprint-2026/working-research-edition.pdf
+            research-library/guyana-petroleum-blueprint-2026/WORKING_PDF_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
+            research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
+            research-library/guyana-petroleum-blueprint-2026/_preview_*.png
+      - name: Commit the independently audited working PDF to research branch
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research-library/guyana-petroleum-blueprint-2026/working-research-edition.pdf
+          git add research-library/guyana-petroleum-blueprint-2026/WORKING_PDF_AUDIT.json
+          git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_SCENARIOS.csv
+          git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_PRODUCTION_SHOCKS.csv
+          git add research-library/guyana-petroleum-blueprint-2026/ILLUSTRATIVE_FUND_STRESS.csv
+          if git diff --cached --quiet; then echo "No artifact changes"; exit 0; fi
+          git commit -m "research: add validated Guyana working PDF [skip ci]"
+          git push origin HEAD:research/guyana-petroleum-blueprint-2026

@@ -1,0 +1,8 @@
+project_number,development,fields_or_resources,fpsO,approval_or_fid_date,first_oil_or_status_at_2026_09_27,design_oil_capacity_bpd,project_cost_usd_bn,primary_source_ids,evidence_status,notes
+1,Liza Phase 1,Liza,Liza Destiny,,2019-12-20,120000,,S01;S81;S86,observed startup,"First commercial production. Capacity is engineering/design information and must remain separate from realized output."
+2,Liza Phase 2,Liza,Liza Unity,,2022-02-11,220000,,S82;S86,observed startup,"Operator startup date; realized production should use regulator series."
+3,Payara,Payara,Prosperity,,2023-11-14,220000,,S83,observed startup,"Government records first oil in November 2023."
+4,Yellowtail,Yellowtail,ONE GUYANA,,2025-08-08,250000,,S84;S85,observed startup,"Fourth FPSO. November 2025 900,000-bpd national milestone is a point-in-time observation, not an annual average."
+5,Uaru,"Uaru; Mako; Snoek",Errea Wittu,2023-04,"Commissioning / no first-oil confirmation located by cutoff",250000,12.7,S51;S56;S99;S124;S125,pre-production at cutoff,"FPSO arrived August 2026. Government/operator sources still described commissioning ahead of first oil. Do not backfill first oil without a dated operating source."
+6,Whiptail,"Whiptail; Pinktail; Tilapia",Jaguar,2024-04,"Construction and offshore installation; startup targeted 2027",250000,12.7,S51;S126,approved under development,"Current project-source expansion should be pinned to operator/government approval record in next source pass."
+7,Hammerhead,Hammerhead,"VLCC conversion-type FPSO",2025-09-22,"Approved / FID; startup anticipated 2029",150000,6.8,S127;S128,approved under development,"Planned 18 production/injection wells and 2029 startup are forward-looking."

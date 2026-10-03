@@ -1,0 +1,40 @@
+{
+  "source_records": 133,
+  "first_source_id": "S01",
+  "last_source_id": "S133",
+  "source_ids_unique": true,
+  "source_ids_sequential": true,
+  "source_url_syntax_valid": true,
+  "duplicate_source_urls": [
+    "https://corporate.exxonmobil.com/locations/guyana/news-releases/11122025-daily-oil-production-hits-900000-barrels-in-guyanas-stabroek-block",
+    "https://corporate.exxonmobil.com/news/news-releases/2025/0808_exxonmobil-guyana-begins-production-at-fourth-offshore-guyana-project",
+    "https://dpi.gov.gy/press-release-ag-hails-coas-ruling-on-exxonmobil-epas-financial-guarantees/",
+    "https://eiti.org/es/node/28602",
+    "https://eiti.org/offers/guyana-2026-eiti-validation-call-views-stakeholder-engagement",
+    "https://eiti.org/validation-schedule",
+    "https://finance.gov.gy/wp-content/uploads/2026/01/Budget_Speech_2026.pdf",
+    "https://lcds.gov.gy/guyanas-low-carbon-development-strategy-lcds-2030-october-2024-update/",
+    "https://officialgazette.gov.gy/index.php/publications/2778-extraordinary-gazettes-28th-may-2025-act-no-6-of-2025-the-oil-pollution-prevention-preparedness-response-and-responsibility-bill-2025",
+    "https://parliament.gov.gy/publications/acts-of-parliament/oil-pollution-prevention-preparedness-response-and-responsibility-act-2025-act-6-of-2025",
+    "https://petroleum.gov.gy/data-chart/oil-production/",
+    "https://petroleum.gov.gy/docs-and-pubs/liza-phase-1-modified-environmental-permit/",
+    "https://petroleum.gov.gy/oil-blocks/stabroek-block/",
+    "https://petroleum.gov.gy/wp-content/uploads/2024/10/Uaru-Signed-Permit.pdf",
+    "https://totalenergies.sr/press/suriname-granmorgu-project-takes-shape-major-production-equipment-arrives",
+    "https://www.imf.org/en/news/articles/2026/07/31/mcs073126-guyana-staff-concluding-statement-of-the-2026-article-iv-mission"
+  ],
+  "core_registered_source_refs": 117,
+  "core_unknown_source_refs": [],
+  "high_risk_claims": 50,
+  "high_risk_claim_source_refs": 74,
+  "high_risk_claim_source_refs_valid": true,
+  "open_or_limited_high_risk_claims": [
+    "C021",
+    "C023",
+    "C025",
+    "C048"
+  ],
+  "legal_evidence_ledger_entries": 14,
+  "corrections_register_entries": 16,
+  "external_peer_review": "pending"
+}

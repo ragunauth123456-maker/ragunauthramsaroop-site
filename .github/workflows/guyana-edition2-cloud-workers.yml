@@ -1,0 +1,78 @@
+name: Edition 2 — parallel cloud research workers
+on:
+  push:
+    branches: [research/guyana-petroleum-blueprint-2026]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PART_*_MANUSCRIPT.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/*.csv'
+      - 'research-library/guyana-petroleum-blueprint-2026/SOURCE_REGISTER.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/edition2_cloud_workers.py'
+      - '.github/workflows/guyana-edition2-cloud-workers.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: edition2-cloud-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  D: research-library/guyana-petroleum-blueprint-2026
+jobs:
+  editorial-and-package:
+    name: Editor and editable manuscript packager
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" editorial
+      - run: python "$D/petroleum_fiscal_sensitivity.py"
+      - run: python "$D/audit_edition2_development.py"
+      - run: python "$D/edition2_cloud_workers.py" package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-editable-manuscript
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            edition2-worker-artifacts/edition2-editable-development-package.zip
+            edition2-worker-artifacts/manuscript_gap_audit.*
+            edition2-worker-artifacts/working_package_sha256.json
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PROGRESS_AUDIT.json
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PART_COVERAGE.csv
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_FISCAL_MODEL_AUDIT.json
+  source-availability:
+    name: Primary-source link monitor (not fact checking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" sources
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-source-availability
+          retention-days: 30
+          if-no-files-found: error
+          path: edition2-worker-artifacts/source_availability_audit.*
+  original-exhibits:
+    name: Reproducible core and NRF SVG exhibits
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python "$D/edition2_cloud_workers.py" exhibits
+      - uses: actions/upload-artifact@v4
+        with:
+          name: edition2-original-exhibits
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            edition2-worker-artifacts/*.svg
+            edition2-worker-artifacts/exhibit_manifest.json

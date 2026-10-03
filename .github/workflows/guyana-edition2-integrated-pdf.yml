@@ -1,0 +1,75 @@
+name: Edition 2 integrated working PDF
+on:
+  push:
+    branches: [research/guyana-petroleum-blueprint-2026]
+    paths:
+      - 'research-library/guyana-petroleum-blueprint-2026/build_edition2_integrated_pdf.py'
+      - 'research-library/guyana-petroleum-blueprint-2026/FLAGSHIP_PART_*_MANUSCRIPT.md'
+      - 'research-library/guyana-petroleum-blueprint-2026/SOURCE_REGISTER.md'
+      - '.github/workflows/guyana-edition2-integrated-pdf.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: edition2-integrated-pdf
+  cancel-in-progress: false
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF dependencies
+        run: python -m pip install 'reportlab>=4,<5' 'pymupdf>=1.26,<2'
+      - name: Rebuild full integrated core PDF and run quantitative release checks
+        run: python research-library/guyana-petroleum-blueprint-2026/build_edition2_integrated_pdf.py
+      - name: Audit release status
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          d=pathlib.Path('research-library/guyana-petroleum-blueprint-2026')
+          a=json.loads((d/'EDITION2_PDF_AUDIT.json').read_text())
+          p=d/a['pdf']
+          assert a['ten_core_parts'] and a['sources']>=140
+          assert a['pages']>=150 and a['toc_entries']==10
+          assert a['publication_complete'] is False
+          assert a['external_peer_review']=='pending'
+          assert not a['blank_pages']
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==a['sha256']
+          print('EDITION 2 DEVELOPMENT PDF VALIDATED',a)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: guyana-edition2-expanded-working-pdf
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            research-library/guyana-petroleum-blueprint-2026/guyana-petroleum-edition-2-expanded-working-manuscript.pdf
+            research-library/guyana-petroleum-blueprint-2026/EDITION2_PDF_AUDIT.json
+      - name: Publish working PDF to research branch, never main
+        run: |
+          set -euo pipefail
+          D='research-library/guyana-petroleum-blueprint-2026'
+          TMP="$(mktemp -d)"
+          cp "$D/guyana-petroleum-edition-2-expanded-working-manuscript.pdf" "$TMP/"
+          cp "$D/EDITION2_PDF_AUDIT.json" "$TMP/"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git fetch origin research/guyana-petroleum-blueprint-2026
+            git reset --hard origin/research/guyana-petroleum-blueprint-2026
+            cp "$TMP/guyana-petroleum-edition-2-expanded-working-manuscript.pdf" "$D/"
+            cp "$TMP/EDITION2_PDF_AUDIT.json" "$D/"
+            git add "$D/guyana-petroleum-edition-2-expanded-working-manuscript.pdf" "$D/EDITION2_PDF_AUDIT.json"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'research: attach audited Edition 2 working PDF [skip ci]'
+            if git push origin HEAD:research/guyana-petroleum-blueprint-2026; then exit 0; fi
+            sleep 2
+          done
+          echo 'Artifact remains downloadable, but automated branch publication failed'
+          exit 1
