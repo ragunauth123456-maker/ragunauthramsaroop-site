@@ -71,7 +71,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python scripts/prepare_outreach_payload.py "${{ steps.payload.outputs.payload }}"
+          python scripts/prepare_outreach_payload_exec.py "${{ steps.payload.outputs.payload }}"
 
       - name: Verify iCloud credential is configured
         if: steps.payload.outputs.payload != ''
