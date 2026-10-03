@@ -1,0 +1,9 @@
+{
+  "approved": true,
+  "payload_files": [
+    "outreach/icloud-staged/2026-10-03-remediation-d01-atlas-copco.json",
+    "outreach/icloud-staged/2026-10-03-remediation-d02-danfoss.json",
+    "outreach/icloud-staged/2026-10-03-remediation-d03-ericsson.json",
+    "outreach/icloud-staged/2026-10-03-remediation-d04-nokia.json"
+  ]
+}
