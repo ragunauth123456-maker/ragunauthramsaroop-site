@@ -1,0 +1,56 @@
+{
+  "approved": true,
+  "dry_run": false,
+  "campaign_type": "executive_company",
+  "messages": [{
+    "to": "christopher.sage@raytheon.com",
+    "recipient_name": "Christopher Sage",
+    "recipient_title": "Managing Director, Global Government Relations",
+    "recipient_role_source_url": "https://www.linkedin.com/in/briggensage",
+    "email_verified": true,
+    "email_verification_source": "Prior successful iCloud SMTP delivery record for christopher.sage@raytheon.com, 2026-10-03",
+    "subject": "Follow-up | Strategic Value Creation Brief for RTX",
+    "body": "Dear Mr. Sage,\n\nFollowing my earlier introduction, I prepared a concise strategic value brief focused on RTX's current defense growth, allied-market execution and government-facing priorities.\n\nThe paper addresses European and NATO institutional alignment, defense industrial capacity, allied local-value partnerships and executive stakeholder governance. These areas closely match my operating experience across government relations, regulatory coordination, ESG, corporate affairs and strategic partnerships.\n\nMy executive CV is included in the final three pages. I would welcome a confidential discussion regarding international leadership needs across government relations, external affairs, stakeholder strategy, strategic partnerships or related country-facing functions.\n\nKind regards,\nRagunauth Ramsaroop\nLiaison Director, Social Responsibility Department | AGM Inc.\nragunauthramsaroop@icloud.com\nragunauthramsaroop.com\nlinkedin.com/in/ragunauth-ramsaroop"
+  }],
+  "strategic_brief": {
+    "company": "RTX",
+    "title": "Strategic Value Creation Brief for RTX",
+    "executive_summary": "RTX is operating through a period of strong commercial and defense demand while governments increase attention on defense readiness, production capacity, supply resilience and allied industrial cooperation. Second-quarter 2026 results showed a record backlog, including substantial defense demand, while Raytheon's new multi-year AMRAAM agreement materially raises production expectations. These priorities create a larger government-relations agenda across the United States, Europe and allied markets. My director-level experience across government relations, regulatory coordination, ESG, corporate affairs and strategic stakeholder execution would support RTX by strengthening institutional alignment and translating external commitments into disciplined cross-functional delivery.",
+    "company_context": "RTX reported second-quarter 2026 sales of $24.7 billion and a $289 billion backlog, including $119 billion of defense backlog, while raising its full-year outlook. In September 2026, Raytheon received a multi-year AMRAAM contract valued at up to $20.7 billion, supporting annual production of at least 1,900 missiles for the United States and allies. This scale of growth increases the importance of coordinated relationships with defense ministries, procurement authorities, regulators, industrial partners and local stakeholders across allied markets. Capacity expansion, supply-chain resilience, technology security, local industrial participation and public accountability all require a structured external-affairs model connected directly to business and program execution.",
+    "opportunities": [
+      {
+        "title": "European and NATO institutional alignment",
+        "rationale": "Rising allied defense demand requires coordinated engagement across national ministries, NATO institutions, procurement authorities and industrial policy stakeholders. Different jurisdictions carry distinct security, procurement and local participation requirements, increasing the value of disciplined stakeholder mapping and executive issue management.",
+        "how_i_can_help": "I would build market-specific stakeholder architectures linking institutions, regulatory dependencies, program owners and executive escalation routes, helping government engagement remain connected to commercial priorities, program schedules and measurable commitments across allied markets."
+      },
+      {
+        "title": "Defense industrial capacity partnerships",
+        "rationale": "Higher missile and defense-system production depends on suppliers, workforce, facilities, approvals and long-term public-sector confidence. Expansion plans often intersect with national industrial strategies and regional economic priorities, creating opportunities to strengthen government and community alignment around capacity investments.",
+        "how_i_can_help": "I would coordinate institutional and local stakeholder plans around capacity expansion, linking government priorities, workforce development, supplier participation and internal ownership into one execution framework with evidence, deadlines and executive reporting."
+      },
+      {
+        "title": "Allied local value strategy",
+        "rationale": "International defense customers increasingly seek domestic industrial participation, skills transfer and broader economic value alongside capability acquisition. Clear local-value governance strengthens long-term relationships and helps ensure public commitments remain credible throughout program delivery.",
+        "how_i_can_help": "I would translate local-value commitments into measurable plans across partnerships, suppliers, workforce and community interfaces, using structured ownership and reporting to connect external expectations with program, procurement, legal and leadership teams."
+      },
+      {
+        "title": "Executive stakeholder risk governance",
+        "rationale": "Large defense portfolios generate material issues across policy, permitting, security, supply chains, communities and public reputation. Fragmented ownership can delay escalation. A consolidated external-risk view helps leadership act earlier when non-technical issues begin to affect program value or delivery.",
+        "how_i_can_help": "I would implement an executive issue and commitment dashboard covering government, regulatory, industrial and stakeholder matters, with named owners, clear thresholds and cross-functional review to support faster decisions and consistent follow-through."
+      }
+    ],
+    "action_framework": {
+      "days_0_30": ["Map priority allied institutions, programs and external dependencies.", "Review current government, local-value and stakeholder commitments.", "Identify issues with direct schedule, capacity or reputation impact."],
+      "days_31_60": ["Align government, program, commercial and local-value engagement plans.", "Create a consolidated issue and commitment register with named owners.", "Define executive indicators for institutional alignment and external risk."],
+      "days_61_90": ["Run focused engagement on priority procurement, capacity and industrial-policy issues.", "Embed monthly cross-functional review of commitments and country risks.", "Strengthen evidence controls for local-value and public commitments."],
+      "days_91_180": ["Scale the governance model across priority allied markets.", "Measure issue closure and commitment performance.", "Codify lessons into a repeatable international government-relations playbook."]
+    },
+    "potential_impact": ["Faster resolution of government and regulatory issues affecting program execution.", "Stronger alignment between defense growth, industrial policy and allied local-value expectations.", "Improved executive visibility across external risks and commitments.", "More consistent country-facing execution across allied markets."],
+    "background_relevance": ["Director-level responsibility across government relations, ESG, corporate affairs and executive advisory in a regulated multinational resource environment.", "Direct engagement with ministries, regulators and public institutions on permits, commitments and strategic projects.", "Experience translating external expectations into cross-functional actions across operations, legal, finance, procurement and leadership teams.", "Practical experience managing local participation, public-private relationships and evidence-based executive reporting."],
+    "sources": [
+      {"title": "RTX Reports Q2 2026 Results", "published_at": "2026-07-23", "url": "https://www.rtx.com/news/news-center/2026/07/23/rtx-reports-q2-2026-results"},
+      {"title": "RTX's Raytheon awarded $20.7 billion multi-year contract for AMRAAM", "published_at": "2026-09-28", "url": "https://www.rtx.com/news/news-center/2026/09/28/rtxs-raytheon-awarded-20-7-billion-multi-year-contract-for-amraam-under-landmar"},
+      {"title": "RTX Leadership", "published_at": "2026", "url": "https://www.rtx.com/who-we-are/our-leadership"}
+    ]
+  }
+}
