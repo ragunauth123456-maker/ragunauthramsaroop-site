@@ -1,5 +1,6 @@
 {
   "approved": true,
+  "dispatch_nonce": "2026-10-03T12:32:00-04:00",
   "payload_files": [
     "outreach/icloud-staged/2026-10-03-remediation-b01-wood.json",
     "outreach/icloud-staged/2026-10-03-remediation-b02-aker-solutions.json",
